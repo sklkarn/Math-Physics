@@ -1,0 +1,1145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-examplesA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples A</title>
+  
+  <paragraphs>
+    <title>Vectors</title>
+
+    <example>
+      <statement>
+      <p>
+        Prove that the linear velocity <m>v</m> of a point <m>P</m> in figure below of a rigid 
+        body rotating about an axis passing through a point <m>O</m> is given by 
+        <m>\vec{v} = \vec{\omega}\times \vec{r}</m>, where <m>\vec{\omega} </m> and 
+        <m>\vec{r}</m> are an angular velocity of a body and a position vector of point
+         <m>P</m>, respectively. <image source="fig10.png" width ="25%"/>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let <m>\vec{OP} = \vec{r}</m>, <m>\angle AOP = \theta,</m>, and <m>AP</m> is 
+        perpendicular to <m>OA</m>, as shown in figure. Suppose the velocity of the body 
+        at point P be <m>\vec{v}</m> and <m>\hat{n}</m>  be a unit vector perpendicular to
+        <m>\omega</m> and <m>\vec{r}</m>. Then 
+        <me>
+          \vec{\omega}\times\vec{r}  = \left(\omega r \sin\theta\right)\hat{n} 
+          = \left(\omega AP\right)\hat{n}  = \text{(speed of P)} \hat{n}
+        </me>
+         = velocity of P perpendicular to <m>\vec{\omega}</m>  and <m>\vec{r} = \vec{v}</m>.
+        </p>
+        <p>
+          Hence, <m> \vec{v} = \vec{\omega}\times\vec{r}</m>. proved.
+        </p>
+    </solution>
+  </example>
+
+<example>
+  <statement>
+    <p>
+      Show that the vectors <m>\vec{a}-2\vec{b}+3\vec{c}</m>, <m>-2\vec{a}+3\vec{b}-4\vec{c}</m>, 
+      and <m>-\vec{b}+2\vec{c}</m> are coplanar. Where <m>\vec{a}</m>, <m>\vec{b}</m>, 
+      and <m>\vec{c}</m> are non-coplanar.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let 
+      <me>
+        \vec{\alpha} = \vec{a}-2\vec{b}+3\vec{c}{;} \vec{\beta}  
+        = -2\vec{a}+3\vec{b}-4\vec{c}{;} \text{and}\quad \vec{\gamma} 
+        = -\vec{b}+2\vec{c} 
+      </me>
+      then, 
+       <me>
+        \vec{\alpha}\cdot (\vec{\beta}\times \vec{\gamma}) 
+        = \begin{bmatrix} 
+        1 &amp; -2 &amp; 3 \\ 
+         -2 &amp; 3 &amp; -4 \\ 
+         0 &amp; -1 &amp; 2 
+         \end{bmatrix} 
+      </me>
+      <me>
+        = 1(6-4)+2(-4)+3(2)  =2-8+6 = 0.
+      </me>
+      </p>
+      <p> Hence, <m>\vec{\alpha}</m>, <m>\vec{\beta}</m>, and <m>\vec{\gamma}</m> are coplanar.</p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m>\hat {a}\times{(\hat {b}\times\hat {c})} = \frac{1}{2}\hat{b}</m>, find the angles 
+      that <m>\hat{a}</m> makes with <m>\hat{b}</m>  and <m>\hat{c}</m>.
+
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        \hat {a}\times{(\hat {b}\times\hat {c})} = \frac{1}{2}\hat{b} 
+      </me>
+      or, 
+      <me>
+        \left(\hat{a}\cdot\hat{c}\right)\hat{b} - \left(\hat{a}\cdot\hat{b}\right)\hat{c} 
+         = \frac{1}{2}\hat{b}
+      </me>
+      equating the coefficients of <m>\hat{b}</m>  and <m>\hat{c}</m> , we get-
+      <me>
+        \hat{a}\cdot\hat{c}  = \frac{1}{2} = 1.1.\cos\frac{\pi}{3} 
+      </me>
+      and 
+      <me>
+        \hat{a}\cdot\hat{b} = 0 
+      </me>
+
+      <m>\Rightarrow \hat{a} \hspace{3pt} </m> makes <m>60^{o}</m> angle with <m>\hat{c}</m>, 
+      and <m>\hat{a}</m> is <m>\perp</m> on <m>\hat{b}</m>.
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      If <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>\vec{c}</m> are a reciprocal system to 
+      <m>\vec{a'}</m>, <m>\vec{b'}</m>, <m>\vec{c'}</m> then prove that 
+      <m>\left[\vec{a'}\vec{b'}\vec{c'}\right] \left[\vec{a}\vec{b}\vec{c}\right] = 1</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        \left[\vec{a'}\vec{b'}\vec{c'}\right] =  \vec{a'}\cdot\left(\vec{b'}\times\vec{c'}\right)
+      </me>
+    
+    <men xml:id="eqn-1recp">
+      \therefore \left[\vec{a'}\vec{b'}\vec{c'}\right] 
+      = \frac{\left(\vec{b}\times\vec{c}\right)}{\left[\vec{a}\vec{b}\vec{c}\right]} 
+      \cdot\frac{\left[\left(\vec{c}\times\vec{a}\right)\times 
+      \left(\vec{a}\times\vec{b}\right)\right]}{\left[\vec{a}\vec{b}\vec{c}\right]^{2}} 
+    </men>
+    Now, 
+    <md>
+      <mrow> \left(\vec{c}\times\vec{a}\right)\times \left(\vec{a}\times\vec{b}\right)  
+      \amp = \vec{d}\times \left(\vec{a}\times\vec{b}\right), </mrow>
+      <mrow> \text{where}\quad \vec{d} \amp  = \left(\vec{c}\times\vec{a}\right) 
+     =\left(\vec{d}\cdot\vec{b}\right)\vec{a} - \left(\vec{d}\cdot\vec{a}\right)\vec{b} </mrow>
+    <mrow> \amp  = \lbrace\vec{c}\times\vec{a}\cdot \vec{b}\rbrace\vec{a} 
+    - \lbrace\vec{c}\times\vec{a}\cdot \vec{a}\rbrace\vec{b}  </mrow>
+  <mrow> \amp  = \left[\vec{a}\vec{b}\vec{c}\right]\vec{a} 
+  - \left[\vec{c}\vec{a}\vec{a}\right]\vec{b} 
+    = \left[\vec{a}\vec{b}\vec{c}\right]\vec{a} </mrow>
+  </md>    
+    <m> \because \left[\vec{c}\vec{a}\vec{a}\right] = 0.</m>
+    From equation <xref ref="eqn-1recp"/>, we have -
+    <md>
+      <mrow>\left[\vec{a'}\vec{b'}\vec{c'}\right] \amp 
+      = \frac{\left(\vec{b}\times\vec{c}\right)\cdot 
+      \left[\vec{a}\vec{b}\vec{c}\right]\vec{a} }{\left[\vec{a}\vec{b}\vec{c}\right]^{3}} 
+      = \frac{\left[\vec{a}\vec{b}\vec{c}\right]\left(\vec{b}\times\vec{c}\right) 
+      \cdot\vec{a}}{\left[\vec{a}\vec{b}\vec{c}\right]^{3}} </mrow>
+        <mrow> \amp = \frac{\left[\vec{a}\vec{b}\vec{c}\right] 
+        \left[\vec{a}\vec{b}\vec{c}\right]}{\left[\vec{a}\vec{b}\vec{c}\right]^{3}} 
+        = \frac{1}{\left[\vec{a}\vec{b}\vec{c}\right]}  </mrow>
+   <mrow>\therefore \quad \left[\vec{a'}\vec{b'}\vec{c'}\right] 
+   \left[\vec{a}\vec{b}\vec{c}\right] \amp = 1. \hspace{2cm} \text{proved.}   </mrow>
+    </md>
+    <term>Note:</term> The system of unit vectors <m>\hat{i}</m>, <m>\hat{j}</m>, 
+    and <m>\hat{k}</m> has its own reciprocal.
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Prove that
+      <me>
+        \left[\vec{l}\vec{m}\vec{n}\right]\left[\vec{a}\vec{b}\vec{c}\right] 
+        = {\begin{bmatrix} 
+        \vec{l}\cdot \vec{a} &amp; \vec{l}\cdot \vec{b}  &amp; \vec{l}\cdot \vec{c} \\ 
+        \vec{m}\cdot \vec{a}  &amp; \vec{m}\cdot \vec{b}  &amp; \vec{m}\cdot \vec{c} \\ 
+        \vec{n}\cdot \vec{a}  &amp; \vec{n}\cdot \vec{b}  &amp; \vec{n}\cdot \vec{c} 
+        \end{bmatrix}}
+      </me>
+      
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let,
+      <md>
+        <mrow> \vec{a} \amp  = a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}; \
+        quad  \vec{b} = b_{1}\hat{i}+b_{2}\hat{j}+ b_{3}\hat{k}; </mrow>
+          <mrow> and, \vec{c} \amp = c_{1}\hat{i}+c_{2}\hat{j}+ c_{3}\hat{k}</mrow>
+      <mrow> \vec{l} \amp  = l_{1}\hat{i}+l_{2}\hat{j}+ l_{3}\hat{k}, \quad  
+      \vec{m} = m_{1}\hat{i}+m_{2}\hat{j}+ m_{3}\hat{k}, </mrow> 
+      <mrow> and, \vec{n}\amp = n_{1}\hat{i}+n_{2}\hat{j}+ n_{3}\hat{k}, </mrow>
+    </md> 
+    then,
+    <me>
+      \vec{l}\cdot \vec{a} = \left(l_{1}\hat{i}+l_{2}\hat{j}+ l_{3}\hat{k}\right)
+      \cdot \left(a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}\right) 
+      =  l_{1}a_{1} + l_{2}a_{2}  + l_{3}a_{3} 
+    </me>
+       
+    similarly, we can find the value of <m>\vec{l}\cdot \vec{b}</m>, 
+    <m>\vec{l}\cdot \vec{c}</m>, and <m>\vec{m}\cdot \vec{a}</m> etc.
+    Now,
+    <md>
+      <mrow> \left[\vec{l}\vec{m}\vec{n}\right]\left[\vec{a}\vec{b}\vec{c}\right] \amp 
+        = {\begin{bmatrix} 
+        l_{1} &amp; l_{2} &amp; l_{3} \\ 
+        m_{1} &amp; m_{2} &amp; m_{3} \\ 
+        n_{1} &amp; n_{2} &amp; n_{3} 
+        \end{bmatrix}} 
+        {\begin{bmatrix} 
+        a_{1} &amp; a_{2} &amp; a_{3} \\ 
+        b_{1} &amp; b_{2} &amp; b_{3} \\ 
+        c_{1} &amp; c_{2} &amp; c_{3} 
+        \end{bmatrix}} </mrow>
+       <mrow> \amp = {\begin{bmatrix} 
+       l_{1} &amp; l_{2} &amp; l_{3} \\ 
+       m_{1} &amp; m_{2} &amp; m_{3} \\ 
+       n_{1} &amp; n_{2} &amp; n_{3} 
+       \end{bmatrix}} 
+       {\begin{bmatrix} 
+       a_{1} &amp; b_{1} &amp; c_{1} \\ 
+       a_{2} &amp; b_{2} &amp; c_{2} \\ 
+       a_{3} &amp; b_{3} &amp; c_{3} 
+       \end{bmatrix}} </mrow>
+    </md>
+    [using properties of determinant where rows, (or, column) can be exchanged without changing 
+    the value of determinant.]
+    <me>
+      ={\begin{bmatrix} 
+      l_{1} a_{1} + l_{2} a_{2} + l_{3} a_{3} &amp; l_{1} b_{1} + l_{2} b_{2} + l_{3} b_{3} &amp; l_{1} c_{1} + l_{2} c_{2} + l_{3} c_{3} \\ 
+      m_{1} a_{1} + m_{2} a_{2} + m_{3} a_{3}  &amp; m_{1} b_{1} + m_{2} b_{2} + m_{3} b_{3} &amp; m_{1} c_{1} + m_{2} c_{2} + m_{3} c_{3} \\ 
+      n_{1} a_{1} + n_{2} a_{2} + n_{3} a_{3} &amp; n_{1} b_{1} + nl_{2} b_{2} + n_{3} b_{3} &amp; n_{1} c_{1} + n_{2} c_{2} + n_{3} c_{3} 
+      \end{bmatrix}}
+    </me>
+   
+    <me>
+      ={\begin{bmatrix} 
+      \vec{l}\cdot \vec{a} &amp; \vec{l}\cdot \vec{b} &amp; \vec{l}\cdot \vec{c} \\ 
+      \vec{m}\cdot \vec{a} &amp; \vec{m}\cdot \vec{b} &amp; \vec{m}\cdot \vec{c} \\ 
+      \vec{n}\cdot \vec{a} &amp; \vec{n}\cdot \vec{b} &amp; \vec{n}\cdot \vec{c} 
+      \end{bmatrix}}.
+    </me>
+  </p>
+  </solution>
+</example>
+  
+</paragraphs>
+
+<paragraphs>
+  <title>Field</title>
+  
+  <example>
+    <statement>
+      <p>
+        Find the velocity and acceleration of a particle which is moving along the curve 
+        <m>x=a \cos t</m>, <m>y=a \sin t</m>, and <m>z= b t</m> at time <m>t=0</m> and 
+        <m>t=\frac{\pi}{2}</m>. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let  
+        <me>\vec{r}  = x\hat{i}+ y\hat{j} + z\hat{k} 
+        =  a \cos t\hat{i}+a \sin t\hat{j}+ b t \hat{k}</me>.
+ Therefore,
+ <md>
+  <mrow>
+    velocity  \amp = \frac{\vec{\,dr}}{\,dt}  =  -a \sin t\hat{i}+a cost\hat{j}+ b \hat{k},</mrow>
+ <mrow> \text{and}, acceleration \amp = \frac{{\,d^{2}\vec{r}}}{\,dt^{2}}  
+ =\frac{\,d}{\,dt}\left(\frac{\vec{\,dr}}{\,dt} \right)=  -a cost\hat{i} - a sint\hat{j}.</mrow>
+  </md>
+</p>
+<p>
+  At <m>t = 0</m>, velocity  =  <m>a\hat{j}+b\hat{k}</m>  and   acceleration  = <m>-a\hat{i}</m>. 
+</p>
+<p>
+  At <m>t=\frac{\pi}{2}</m>,  velocity  = <m>-a\hat{i}+b\hat{k}</m> and  
+  acceleration  = <m>-a\hat{j}</m>.
+</p> 
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        The position of a particle at time <m>t</m> is 
+         <me>\vec{r}=\cos(t-1)\hat{i}+\sinh(t-1)\hat{j}+\alpha t^{3}\hat{k}</me>. 
+        Find an acceleration of the particle at time <m>t=1</m> when it becomes normal 
+        to the position vector. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+       <md>
+        <mrow>\text{Let} \quad \vec{r} \amp 
+        =\cos(t-1)\hat{i}+\sinh (t-1)\hat{j}+\alpha t^{3}\hat{k}</mrow>
+       <mrow>\text{or, velocity}  \amp = \frac{\vec{dr}}{dt} 
+       = - \sin(t-1)\hat{i}+\cosh (t-1)\hat{j}+3\alpha t^{2}\hat{k} </mrow>
+      <mrow>\text{or, acceleration }  \amp = \frac{{d^{2}\vec{r}}}{dt^{2}} 
+      = - \cos(t-1)\hat{i}+\sin(t-1)\hat{j}+6\alpha t\hat{k}</mrow>
+      </md>
+      At <m>t=1</m>,
+      <me>
+        \vec{a} =  \frac{{d^{2}\vec{r}}}{dt^{2}} = -\hat{i}+6\alpha\hat{k},
+      </me>
+      and 
+      <me>
+        \vec{r}=\hat{i}+\alpha\hat{k}.
+      </me>
+      If <m>\vec{r}</m> and <m>\vec{a}</m> are normal, then <m>\vec{r} \cdot \vec{a}  = 0.</m>.
+      <me>
+        \text{or,}\quad (\hat{i}+\alpha\hat{k})(-\hat{i}+6\alpha\hat{k}) = 0.
+      </me>
+      or, 
+      <me>
+        -1+6\alpha^{2} =0.
+      </me>
+      <me>
+        \therefore \quad \alpha = \pm\frac{1}{\sqrt{6}} \hspace{1cm} Ans.
+      </me>
+      
+    </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        If <m>f(x,y,z)</m> and <m>g(x,y,z)</m> are two scalar functions. Prove 
+        <ol marker="a.">
+          <li>
+            <me>
+              \vec{\nabla} (f\pm g) = \vec{\nabla f}  \pm \vec{\nabla g}  
+            </me>
+          </li>
+          <li>
+            <me>
+              \vec{\nabla} (f g) = f \vec{\nabla g}  + g \vec{\nabla f}
+            </me>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol marker="a.">
+          <li>
+            <md>
+              <mrow>  \vec{\nabla} (f\pm g) \amp  = \left(\frac{\partial}{\partial x} \hat{i} 
+              + \frac{\partial}{\partial y} \hat{j} 
+              + \frac{\partial}{\partial z} \hat{k}\right) (f\pm g)</mrow>
+           <mrow> \amp =\left(\hat{i}\frac{\partial f}{\partial x} 
+           + \hat{j}\frac{\partial f}{\partial y} 
+           + \hat{k}\frac{\partial f}{\partial z}\right) \pm \left(\hat{i}\frac{\partial g}{\partial x} 
+           + \hat{j}\frac{\partial g}{\partial y} + \hat{k}\frac{\partial g}{\partial z}\right)</mrow>
+           <mrow> \amp = \left(\hat{i}\frac{\partial}{\partial x} 
+           + \hat{j}\frac{\partial }{\partial y} 
+           + \hat{k}\frac{\partial }{\partial z}\right)f \pm \left(\hat{i}\frac{\partial}{\partial x} 
+           + \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z}\right)g </mrow>
+          <mrow> \amp = \vec{\nabla f} \pm \vec{\nabla g} </mrow>
+          </md>
+          </li>
+          <li>
+            <md>
+              <mrow>  \vec{\nabla} (f g) \amp = \left(\frac{\partial}{\partial x}\hat{i} 
+              +\frac{\partial}{\partial y}\hat{j} + \frac{\partial}{\partial z}\hat{k}\right)(f g)</mrow>
+            <mrow> \amp = \left(\hat{i}\frac{\partial }{\partial x}(f g) 
+            + \hat{j}\frac{\partial}{\partial y}(f g) 
+            + \hat{k}\frac{\partial}{\partial z}(f g)\right) </mrow>
+           <mrow> \amp =\left(f \frac{\partial g}{\partial x} 
+           +g \frac{\partial f}{\partial x}\right)\hat{i} 
+           +\left(f \frac{\partial g}{\partial y} 
+           +g \frac{\partial f}{\partial y}\right)\hat{j} 
+           + \left(f \frac{\partial g}{\partial z} 
+           +g \frac{\partial f}{\partial z}\right)\hat{k}</mrow>
+          <mrow> \amp =f\left(\frac{\partial g}{\partial x}\hat{i} 
+          + \frac{\partial g}{\partial y}\hat{j} 
+          + \frac{\partial g}{\partial z}\hat{k}\right)+ g \left(\frac{\partial f}{\partial x}\hat{i} 
+          + \frac{\partial f}{\partial y}\hat{j}+ \frac{\partial f}{\partial z}\hat{k}\right)</mrow>
+          <mrow> \amp =f\left(\hat{i}\frac{\partial}{\partial x} 
+          +\hat{j}\frac{\partial}{\partial y} 
+          +\hat{k}\frac{\partial}{\partial z}\right) g + g\left(\hat{i}\frac{\partial}{\partial x} 
+          +\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right) f \quad  </mrow>
+       <mrow> \amp  =f \vec{\nabla g}  + g \vec{\nabla f} </mrow>
+        </md>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Show that <m>\vec{\nabla} r^{n}=n r^{n-2}\vec{r}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow>  \text{Let}\quad \phi \amp = r^{n} 
+          = \left(x^{2}+y^{2}+z^{2}\right)^{\frac{n}{2}}</mrow>
+       <mrow> \text{Hence, }\quad \frac{\partial \phi}{\partial x} \amp =\frac{n}{2}\left(x^{2}+y^{2} 
+       +z^{2}\right)^{\frac{n}{2}-1}\cdot 2 x </mrow>
+        <mrow> \amp = n\cdot\left(r^{2}\right)^{\frac{n-2}{2}}\cdot x 
+        = n\cdot r^{n-2}\cdot x</mrow>
+        <mrow> \text{Similarly,}\quad  \frac{\partial \phi}{\partial y} \amp 
+        = n\cdot r^{n-2}\cdot y,</mrow>
+      <mrow> \text{and} \quad \frac{\partial \phi}{\partial z} \amp 
+      = n\cdot r^{n-2}\cdot z </mrow>
+      <mrow>\therefore    \quad  \vec{\nabla \phi}  \amp 
+      = \left(\hat{i}\frac{\partial \phi}{\partial x} 
+      +\hat{j}\frac{\partial \phi}{\partial y} 
+      +\hat{k}\frac{\partial \phi}{\partial z}\right) </mrow>
+      <mrow>  \amp  = \hat{i} n \cdot r^{n-2}\cdot x 
+      + \hat{j} n \cdot r^{n-2}\cdot y + \hat{k} n \cdot r^{n-2}\cdot z</mrow>
+      <mrow> \amp =n \cdot r^{n-2}\left(\hat{i} x+\hat{j} y+\hat{k} z\right) 
+      =  n r^{n-2}\vec{r} \hspace{1cm} \text{proved.} </mrow>
+    </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        If <m>\phi = 3 x^{2}y-y^{3}z^{2}</m>, find grad <m>\phi</m> at point <m>(1,-2,-1)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <me>
+          \text{grad} \phi = \vec{\nabla \phi} 
+        </me>
+        <me>
+          = \left(\hat{i}\frac{\partial }{\partial x}+\hat{j}\frac{\partial}{\partial y} 
+          +\hat{k}\frac{\partial}{\partial z}\right)\left(3 x^{2}y-y^{3}z^{2}\right)
+        </me>
+        <me>
+          =\hat{i}\frac{\partial}{\partial x}\left(3 x^{2}y-y^{3}z^{2}\right) 
+       + \hat{j}\frac{\partial}{\partial y}\left(3 x^{2}y-y^{3}z^{2}\right)
+        +\hat{k}\frac{\partial}{\partial z}\left(3 x^{2}y-y^{3}z^{2}\right)
+        </me>
+        <me>
+          =\hat{i}(6 x y)+\hat{j}\left((3 x^{2}-3 y^{2}z^{2}\right)+\hat{k}\left(-2 y^{3}z\right)
+        </me>
+        <me>
+          \therefore \quad \text{grad} \phi \hspace{2pt} \text{at} (1,-2,-1) 
+        </me>
+        <me>
+          = \hat{i}[6\cdot1\cdot(-2)]+\hat{j}[3.1^{2}-3(-2)^{2}(-1)^{2}]+\hat{k}[-2(-2)^{3}(-1)] 
+        </me> 
+        <me>
+           = -12\hat{i}-9\hat{j}-16\hat{k}. \quad Ans.
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the unit vector normal to the surface <m>x^{2}+3y^{2}+2z^{2}=6</m> at point P (2,0,1).
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let 
+        <md>
+          <mrow> \phi  \amp  = x^{2}+3y^{2}+2z^{2}-6=0.</mrow> 
+        </md>
+        Then, 
+            <md>
+              <mrow> grad \phi = \vec{\nabla \phi}  \amp = \left(\hat{i}\frac{\partial }{\partial x} 
+              +\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\left(x^{2} 
+              +3y^{2}+2z^{2}-6=0\right) </mrow> 
+            <mrow> \amp = 2x\hat{i}+6y\hat{j}+4z\hat{k} </mrow>
+            </md>
+            <m>\therefore</m>   grad <m> \phi</m> at point (2,0,1) = <m>4\hat{i}+4\hat{k}</m>
+            but, grad <m>\phi = \frac{\partial \phi}{\partial n}\hat{n}</m>, 
+            where <m>\hat{n}</m> is the unit normal vector.
+     <me>
+      \therefore  \hat{n}= \frac{\text{grad}\phi}{\mid \text{grad} \phi\mid} 
+      = \frac{4\hat{i}+4\hat{k}}{\sqrt{16+16}} 
+      = \frac{1}{\sqrt{2}}(\hat{i}+\hat{k}) \hspace{1cm} \text{Ans.}
+     </me>
+          </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        For the function <m>\phi (x,y) = \frac{x}{x^{2}+y^{2}}</m>, 
+        find the magnitude of the directional derivative along a line making an angle <m>30^{o}</m> 
+        with x- axis at position (0,2).
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let,
+        <md>
+          <mrow> \vec{\nabla \phi} \amp  = \left(\hat{i}\frac{\partial }{\partial x} 
+          +\hat{j}\frac{\partial}{\partial y} 
+          +\hat{k}\frac{\partial}{\partial z}\right)\left(\frac{x}{x^{2} 
+          +y^{2}}\right) </mrow> 
+           <mrow> \amp = \hat{i}\left[\frac{1}{x^{2}+y^{2}} 
+           - \frac{x.2x}{(x^{2}+y^{2})^{2}}\right] 
+           -\hat{j}\left[\frac{x.2y}{(x^{2}+y^{2})^{2}}\right]</mrow>
+        <mrow> \amp= \hat{i}\left[\frac{(x^{2}+y^{2})-2x^{2}}{(x^{2}+y^{2})^{2}}\right]
+        -\hat{j}\left[\frac{x.2y}{(x^{2}+y^{2})^{2}}\right] </mrow>
+          <mrow> \amp = \hat{i}\left[\frac{4-0}{(0+4)^{2}}\right] 
+          -\hat{j}\left[\frac{2.2.0}{(0+4)^{2}}\right] </mrow>
+          </md>
+          <m>\therefore</m>  grad <m>\phi</m> at (0,2) = <m>\frac{\hat{i}}{4}</m>
+      </p>
+       
+      <p>
+        The line <m>\vec{CA} </m> = <m>\vec{CB}+\vec{BA} = CA cos30^{o}\hat{i}+CA sin30^{o}\hat{j}</m>. 
+           <image source="fig12.png" width ="35%"/>
+        </p>
+      <p>
+        Therefore, the unit vector along a line CA 
+        <me>
+          = \frac{\vec{CA}}{|CA|} = \hat{i}\frac{\sqrt{3}}{2}+\hat{j}\frac{1}{2} 
+          = \hat{a} \quad \text{(say).}
+        </me>
+        Hence the directional derivative at (0,2) in figure, in the direction of <term>CA</term> 
+        <me>
+          =  \vec{\nabla \phi}\cdot \hat{a} 
+          = \frac{\hat{i}}{4}\cdot\left(\hat{i}\frac{\sqrt{3}}{2}+\hat{j}\frac{1}{2}\right) 
+          = \frac{\sqrt{3}}{8} \hspace{1cm} \text{Ans.}
+        </me>
+      </p>
+    </solution>
+  </example>
+
+
+<example>
+  <statement>
+    <p>
+      Find the angle between the surfaces <m>\left(x^{2}+y^{2}+z^{2}=9\right)</m> and 
+      <m>z= \left(x^{2}+y^{2}-3\right)</m> at the point (2,-1,2).
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let a normal to the surface <m>\left(x^{2}+y^{2}+z^{2} = 9\right)</m> at (2,-1,2) be 
+      <me>
+        \vec{\nabla \phi_{1}} =\vec{\nabla} \left(x^{2}+y^{2}+z^{2}-9\right) 
+        = 2x\hat{i}+2y\hat{j}+2z\hat{k} = 4\hat{i}-2\hat{j}+4\hat{k} 
+      </me>
+      and a normal to the surface <m>z= \left(x^{2}+y^{2}-3\right)</m> at (2,-1,2) is  
+   <me>
+    \vec{\nabla \phi_{2}} =\vec{\nabla} \left(x^{2}+y^{2}-z-3\right) 
+    = 2x\hat{i}+2y\hat{j}-\hat{k} = 4\hat{i}-2\hat{j}-\hat{k} 
+   </me>
+   The angle between the surfaces at any point is the angle between the normals to 
+   the surfaces at that point.
+          <me>
+            \therefore   \vec{\nabla \phi_{1}}\cdot \vec{\nabla \phi_{2}} 
+            = \mid\vec{\nabla \phi_{1}}\mid\mid\vec{\nabla \phi_{2}}\mid \cos\theta, 
+          </me>
+where <m>\theta</m>  is the required angle. Now,
+  <me>
+    (4\hat{i}-2\hat{j}+4\hat{k})\cdot (4\hat{i}-2\hat{j}-\hat{k}) 
+    = \sqrt{16+4+16}\sqrt{16+4+1} \cos\theta
+  </me>
+  or, 
+  <me>
+    \cos\theta = \frac{16+4-4}{\sqrt{36}\sqrt{21}}=\frac{16}{6\sqrt{21}} 
+    = \frac{8\sqrt{21}}{63}=0.5891
+  </me>
+  <md>
+    <mrow>  \therefore \quad  \theta\amp  = 54^{o}25'.</mrow>
+  </md>
+  </p> 
+  </solution>
+</example>
+</paragraphs>
+
+<paragraphs>
+  <title>Divergence of a vector field</title>
+  <example>
+    <statement>
+      <p>
+        Prove that 
+        <ol marker ="a.">
+          <li>
+            <m>
+              \vec{\nabla}\cdot\left(\vec{F}+\vec{G}\right)= \vec{\nabla}\cdot\vec{F} 
+              +\vec{\nabla}\cdot\vec{G}
+            </m>
+           </li>
+          <li>
+            <m>
+              \vec{\nabla}\cdot\left(\phi\vec{F}\right) 
+              = \left(\vec{\nabla \phi}\right)\cdot \vec{F} 
+              +\phi \left(\vec{\nabla} \cdot \vec{F}\right)
+            </m>
+           </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+       <ol marker="a.">
+        <li>
+          Let <m>\vec{F}=F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}</m> 
+          and <m>\vec{G}=G_{1}\hat{i}+G_{2}\hat{j}+G_{3}\hat{k}</m>.
+          Then,
+          <me>
+           \vec{\nabla}\cdot\left(\vec{F}+\vec{G}\right)  
+           = \left(\hat{i}\frac{\partial}{\partial x} 
+           +\hat{j}\frac{\partial}{\partial y} 
+           +\hat{k}\frac{\partial}{\partial z}\right)
+            </me>
+            <me>
+            \cdot \left[\left(F_{1}+G_{1}\right)\hat{i}+\left(F_{2}+G_{2}\right)\hat{j} 
+            +\left(F_{3}+G_{3}\right)\hat{k}\right]
+         </me> 
+         <me>
+         =\frac{\partial}{\partial x}\left(F_{1}+G_{1}\right) 
+         + \frac{\partial}{\partial y}\left(F_{2}+G_{2}\right) 
+         +\frac{\partial}{\partial z}\left(F_{3}+G_{3}\right)
+      </me>
+      <me>
+         =\left(\frac{\partial F_{1}}{\partial x} 
+         +\frac{\partial F_{2}}{\partial y} 
+         +\frac{\partial F_{3}}{\partial z}\right) 
+         +\left(\frac{\partial G_{1}}{\partial x} 
+         +\frac{\partial G_{2}}{\partial y} 
+         +\frac{\partial G_{3}}{\partial z}\right)
+       </me> 
+       <me> 
+       =\left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y} 
+       +\hat{k}\frac{\partial}{\partial z}\right)\cdot \left(F_{1}\hat{i}+F_{2}\hat{j} 
+       +F_{3}\hat{k}\right) 
+       </me> 
+       <me>
+       + \left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y} 
+       +\hat{k}\frac{\partial}{\partial z}\right) 
+       \cdot \left(G_{1}\hat{i}+G_{2}\hat{j}+G_{3}\hat{k}\right)
+     </me> 
+     <me>
+      =\vec{\nabla}\cdot\vec{F} +\vec{\nabla}\cdot\vec{G}  \quad Proved.
+      </me>
+        </li>
+        <li>
+          <md>
+            <mrow> \vec{\nabla}\cdot\left(\phi\vec{F}\right) \amp 
+            = \vec{\nabla}\cdot\left(\phi F_{1}\hat{i} 
+            + \phi F_{2}\hat{j}+\phi F_{3}\hat{k}\right) </mrow>
+           <mrow>   \amp = \frac{\partial}{\partial x}\left(\phi F_{1}\right) 
+           + \frac{\partial}{\partial y}\left(\phi F_{2}\right) 
+           +\frac{\partial}{\partial z}\left(\phi F_{3}\right) </mrow>
+          <mrow> \amp =\frac{\partial\phi}{\partial x} F_{1} 
+          +\phi\frac{\partial F_{1}}{\partial x} 
+          +\frac{\partial\phi}{\partial y} F_{2} 
+          +\phi\frac{\partial F_{2}}{\partial y} 
+          +\frac{\partial\phi}{\partial z} F_{3} 
+          +\phi\frac{\partial F_{3}}{\partial z}</mrow>
+          <mrow> \amp =\frac{\partial\phi}{\partial x} F_{1} 
+          + \frac{\partial\phi}{\partial y} F_{2} 
+          +\frac{\partial\phi}{\partial z} F_{3}+
+            \phi\left(\frac{\partial F_{1}}{\partial x} 
+            +\frac{\partial F_{2}}{\partial y} 
+            +\frac{\partial F_{3}}{\partial z}\right)</mrow>
+        <mrow> \amp =\left(\hat{i}\frac{\partial}{\partial x} 
+        +\hat{j}\frac{\partial}{\partial y} 
+        +\hat{k}\frac{\partial}{\partial z}\right)\phi 
+        \cdot \left(F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}\right) </mrow>
+        <mrow> \amp + \phi \left(\hat{i}\frac{\partial}{\partial x} 
+        +\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right) 
+        \cdot \left(F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}\right) </mrow>
+        <mrow> \amp =\left(\vec{\nabla \phi}\right) 
+        \cdot \vec{F}+\phi \left(\vec{\nabla} \cdot \vec{F}\right) \quad proved.</mrow>
+      </md>
+          </li>
+       </ol> 
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Prove that
+        <m>
+          \vec{\nabla}\cdot \left(\frac{\vec{r}}{r^{3}}\right)=0.
+        </m>
+        </p>
+    </statement>
+    <solution>
+      <p>
+        Let <m>\phi=r^{-3}</m>   and <m>\vec{F}=\vec{r}</m>, then
+        <md>
+          <mrow> \vec{\nabla}\cdot\left(\phi\vec{F}\right) \amp 
+           = \left(\vec{\nabla \phi}\right) 
+           \cdot \vec{F}+\phi \left(\vec{\nabla} \cdot \vec{F}\right) </mrow>
+        <mrow> \amp  =\left(\vec{\nabla}r^{-3}\right) 
+        \cdot \vec{r}+r^{-3} \left(\vec{\nabla} \cdot \vec{r}\right) </mrow>
+        <mrow> \amp = -3r^{-3-2}\vec{r}\cdot\vec{r}+3r^{-3}=-3r^{-3}+3r^{-3} = 0 </mrow>
+      </md>
+      <me>
+        \left[ \because \vec{\nabla}r^{n}= n r^{n-2}\vec{r} \right] 
+      </me>
+      or, 
+      <md>
+        <mrow> \vec{\nabla}\cdot \vec{r} \amp =\left(\hat{i}\frac{\partial}{\partial x} 
+        +\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right) 
+        \cdot \left(x\hat{i}+y\hat{j}+z\hat{k}\right) =3.</mrow>
+       </md>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Prove that <m>\vec{\nabla}\cdot\vec{\nabla\phi}=\nabla^{2}\phi</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <md>
+          <mrow> \vec{\nabla}\cdot\vec{\nabla\phi} \amp = \left(\hat{i}\frac{\partial}{\partial x} 
+          + \hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right) 
+          \cdot \left(\frac{\partial \phi}{\partial x}\hat{i} 
+          +\frac{\partial \phi}{\partial y}\hat{j} 
+          +\frac{\partial \phi}{\partial z}\hat{k}\right)</mrow>
+        <mrow> \amp = \frac{\partial}{\partial x}\left(\frac{\partial \phi}{\partial x}\right) 
+        +\frac{\partial}{\partial y}\left(\frac{\partial \phi}{\partial y}\right) 
+        +\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial z}\right) </mrow>
+        <mrow> \amp =\frac{\partial^{2} \phi}{\partial x^{2}} 
+        +\frac{\partial^{2} \phi}{\partial y^{2}}+\frac{\partial^{2} \phi}{\partial z^{2}}
+          = \left(\frac{\partial^{2}}{\partial x^{2}} 
+          +\frac{\partial^{2}}{\partial y^{2}} 
+          +\frac{\partial^{2}}{\partial z^{2}}\right)\phi</mrow>
+          <mrow> \amp  = \nabla^{2}\phi. Proved.</mrow>
+      </md>
+      Where,
+      <me>
+        \nabla^{2}=\left(\frac{\partial^{2}}{\partial x^{2}} 
+        +\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}\right) 
+      </me>
+     is called <term>Laplacian Operator</term>.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Determine the constant <m>a</m> if a vector 
+        <m>\vec{v}=(x+3y)\hat{i}+(y-2z)\hat{j}+(x+az)\hat{k}</m> is solenoidal.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        If <m>\vec{\nabla}\cdot \vec{v}=0,</m> then <m>\vec{v}</m> is solenoidal.
+        <md>
+          <mrow> 0 \amp =\vec{\nabla}\cdot \vec{v} </mrow>
+        <mrow> \amp =\frac{\partial}{\partial x}(x+3y) 
+        +\frac{\partial}{\partial y}(y-2z)+\frac{\partial}{\partial z}(x+az) </mrow>
+        <mrow> \amp =1+1+a = a+2 </mrow>
+        </md>
+        Hence, <m>a+2 =0 \Longrightarrow a =-2.</m>   Ans.
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Prove that <m>\,div\hat{r} = \frac{2}{r}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We have
+        <md>
+          <mrow> \hat{r} \amp =\frac{\vec{r}}{|\vec{r}|} 
+          =\frac{x\hat{i}+y\hat{j}+z\hat{k}}{r} 
+          = \frac{x}{r}\hat{i}+\frac{y}{r}\hat{j}+\frac{z}{r}\hat{k}</mrow>
+        <mrow> \therefore    \vec{\nabla}\cdot\hat{r}\amp 
+        = \frac{\partial}{\partial x}\left(\frac{x}{r}\right) 
+        +\frac{\partial}{\partial y}\left(\frac{y}{r}\right) 
+        +\frac{\partial}{\partial z}\left(\frac{z}{r}\right) </mrow>
+       <mrow> \amp = \frac{1}{r^{2}}\left[3r-\left(x\frac{\partial r}{\partial x} 
+       +y\frac{\partial r}{\partial y}+z\frac{\partial r}{\partial z}\right)\right] </mrow>
+      </md> 
+      since, <m>r^{2}=x^{2}+y^{2}+z^{2}</m>, we have 
+      <me>
+        \frac{\partial r}{\partial x}=\frac{x}{r},\quad 
+         \frac{\partial r}{\partial y}=\frac{y}{r}\quad
+        \text{and}\quad \frac{\partial r}{\partial z}=\frac{z}{r}.
+      </me>
+      Hence,
+      <md>
+        <mrow>\vec{\nabla}\cdot\hat{r} \amp = \frac{1}{r^{2}}\left[3r-\left(x\frac{x}{r} 
+        +y\frac{y}{r}+z\frac{z}{r}\right)\right] </mrow>
+     <mrow> \amp  = \frac{1}{r^{2}}\left[3r-\left(\frac{x^{2}}{r}+\frac{y^{2}}{r} 
+     +\frac{z^{2}}{r}\right)\right]  </mrow>
+     <mrow> \amp = \frac{1}{r^{2}}\left[3r-\left(\frac{r^{2}}{r}\right)\right] 
+     =\frac{1}{r^{2}}(2r)=\frac{2}{r}. \quad Proved.</mrow>
+    </md>
+      </p>
+    </solution>
+  </example>
+</paragraphs>
+
+<paragraphs>
+  <title>Curl of Vector</title>
+  <example>
+    <statement>
+      <p>
+        Prove that 
+        <me>
+          \vec{\nabla}\times\left(\phi\vec{F}\right) 
+           = \left(\vec{\nabla \phi}\right)\times \vec{F} 
+           +\phi \left(\vec{\nabla} \times \vec{F}\right)
+        </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We have
+       <md>
+        <mrow>\vec{\nabla}\times\left(\phi\vec{F}\right)\amp 
+        =  \vec{\nabla}\times\left(\phi\vec{F_{1}\hat{i}} 
+        +\phi\vec{F_{2}\hat{j}}+\phi\vec{F_{3}\hat{k}}\right)</mrow>
+       <mrow> \amp = {det\begin{bmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+       \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+       \phi F_{1} &amp; \phi F_{2} &amp; \phi F_{3} \end{bmatrix}}</mrow>
+      <mrow> \amp  =\left[\frac{\partial}{\partial y}\left(\phi F_{3}\right) 
+      -\frac{\partial}{\partial z}\left(\phi F_{2}\right)\right]\hat{i}</mrow>
+     <mrow> \amp \quad -\left[\frac{\partial}{\partial x}\left(\phi F_{3}\right) 
+     -\frac{\partial}{\partial z}\left(\phi F_{1}\right)\right]\hat{j}</mrow>
+    <mrow> \amp \quad +\left[\frac{\partial}{\partial x}\left(\phi F_{2}\right) 
+    -\frac{\partial}{\partial y}\left(\phi F_{1}\right)\right]\hat{k} </mrow>
+    </md>
+    <me>
+      =\left[\phi\frac{\partial F_{3}}{\partial y} 
+      +F_{3}\frac{\partial \phi}{\partial y}-\phi\frac{\partial F_{2}}{\partial z} 
+      -F_{2}\frac{\partial \phi}{\partial z}\right]\hat{i}
+    </me>
+    <me>
+      -\left[\phi\frac{\partial F_{3}}{\partial x}+F_{3}\frac{\partial \phi}{\partial x} 
+      -\phi\frac{\partial F_{1}}{\partial z}-F_{1}\frac{\partial \phi}{\partial z}\right]\hat{j}
+    </me>
+    <me>
+      +\left[\phi\frac{\partial F_{2}}{\partial x}+F_{2}\frac{\partial \phi}{\partial x} 
+      -\phi\frac{\partial F_{1}}{\partial y}-F_{1}\frac{\partial \phi}{\partial y}\right]\hat{k}
+    </me>
+    <me>
+      =\phi \left[\left(\frac{\partial F_{3}}{\partial y} 
+      -\frac{\partial F_{2}}{\partial z}\right)\hat{i}+\left(\frac{\partial F_{1}}{\partial z} 
+      -\frac{\partial F_{3}}{\partial x}\right)\hat{j}+\left(\frac{\partial F_{2}}{\partial x} 
+      -\frac{\partial F_{1}}{\partial y}\right)\right]\hat{k}
+    </me>
+    <me>
+      + \left[\left(F_{3}\frac{\partial \phi}{\partial y} 
+      -F_{2}\frac{\partial \phi}{\partial z}\right)\hat{i} 
+      +\left(F_{1}\frac{\partial \phi}{\partial z} 
+      -F_{3}\frac{\partial \phi}{\partial x}\right)\hat{j} 
+      +\left(F_{3}\frac{\partial \phi}{\partial x} 
+      -F_{3}\frac{\partial \phi}{\partial y}\right)\right]\hat{k}
+    </me>
+    <me>
+      =\phi \left(\vec{\nabla}\times\vec{F}\right) 
+      +{\begin{vmatrix} \hat{i} &amp; \hat{j}  &amp; \hat{k} \\ 
+      \frac{\partial \phi}{\partial x}  &amp; \frac{\partial \phi}{\partial y}  &amp; \frac{\partial \phi}{\partial z}\\ 
+      F_{1}  &amp; F_{2}  &amp;  F_{3} \end{vmatrix}}
+    </me>
+    <me>
+      =  \left(\vec{\nabla}\phi\times\vec{F}\right) 
+      + \phi\left(\vec{\nabla}\times\vec{F}\right) \quad  proved.
+    </me>
+      </p>
+    </solution>
+  </example>
+  
+  <example>
+    <statement>
+      <p>
+        Prove that   
+        <ol marker ="a.">
+          <li>
+            <m>\vec{\nabla}\times \left(\vec{\nabla}\phi\right) = 0 </m> \quad and 
+          </li>
+          <li>
+            <m>\vec{\nabla}\cdot \left(\vec{\nabla}\times\vec{A}\right) = 0.</m>
+          </li>
+        </ol> 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol marker ="a.">
+          <li>
+            <me>
+              \vec{\nabla}\times \left(\vec{\nabla}\phi\right) = \vec{\nabla}\times 
+              \left(\frac{\partial \phi}{\partial x}\hat{i} 
+              +\frac{\partial \phi}{\partial y}\hat{j}+\frac{\partial \phi}{\partial z}\hat{k}\right) 
+            </me>
+            <me>
+              = {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+              \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+              \frac{\partial \phi}{\partial x} &amp; \frac{\partial\phi}{\partial y} &amp; \frac{\partial \phi}{\partial z} 
+              \end{vmatrix}}
+            </me>
+            <me>
+              =\left[\frac{\partial}{\partial y}\left(\frac{\partial \phi}{\partial z}\right) 
+              -\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial y}\right)\right]\hat{i} 
+              +\left[\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial x}\right) 
+              -\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial x}\right)\right]\hat{j}
+            </me>
+            <me>
+              +\left[\frac{\partial}{\partial x}\left(\frac{\partial \phi}{\partial y}\right) 
+              -\frac{\partial}{\partial y}\left(\frac{\partial \phi}{\partial x}\right)\right]\hat{k}
+            </me>
+            <me>
+              =\left(\frac{\partial^{2} \phi}{\partial y \partial z} 
+              -\frac{\partial^{2} \phi}{\partial z \partial y}\right)\hat{i} 
+              +\left(\frac{\partial^{2} \phi}{\partial z \partial x} 
+              -\frac{\partial^{2} \phi}{\partial x \partial z}\right)\hat{j} 
+              +\left(\frac{\partial^{2} \phi}{\partial x \partial y} 
+              -\frac{\partial^{2} \phi}{\partial y \partial x}\right)\hat{k}
+            </me>
+            <me>
+              =0
+            </me>
+          </li>
+          <li>
+            <me>
+              \vec{\nabla}\cdot \left(\vec{\nabla}\times\vec{A}\right) 
+              = \vec{\nabla}\cdot {det\begin{bmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+              \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+              A_{1} &amp; A_{2} &amp; A_{3} \end{bmatrix}}
+            </me>
+            <me>
+              = \vec{\nabla}\cdot \left\{\left[\frac{\partial A_{3}}{\partial y} 
+              -\frac{\partial A_{2}}{\partial z}\right]\hat{i}+\left[\frac{\partial A_{1}}{\partial z} 
+              -\frac{\partial A_{3}}{\partial x}\right]\hat{j}+\left[\frac{\partial A_{2}}{\partial x} 
+              -\frac{\partial A_{1}}{\partial y}\right]\hat{k}\right\}
+            </me>
+            <me>
+              =\frac{\partial}{\partial x}\left[\frac{\partial A_{3}}{\partial y} 
+              -\frac{\partial A_{2}}{\partial z}\right] 
+              +\frac{\partial}{\partial y}\left[\frac{\partial A_{1}}{\partial z} 
+              -\frac{\partial A_{3}}{\partial x}\right] 
+              +\frac{\partial}{\partial z}\left[\frac{\partial A_{2}}{\partial x} 
+              -\frac{\partial A_{1}}{\partial y}\right]
+            </me>
+            <me>
+              =\frac{\partial^{2}A_{3}}{\partial x\partial y} 
+              -\frac{\partial^{2}A_{2}}{\partial x\partial z} 
+              +\frac{\partial^{2}A_{1}}{\partial y\partial z} 
+              -\frac{\partial^{2}A_{3}}{\partial y\partial x} 
+              +\frac{\partial^{2}A_{2}}{\partial z\partial x} 
+              -\frac{\partial^{2}A_{1}}{\partial z\partial y}=0.
+            </me>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Prove that  
+        <me>
+          \vec{\nabla}\times \left(\vec{\nabla}\times\vec{A}\right) 
+          = - \nabla^{2}\vec{A}+\vec{\nabla}\left(\vec{\nabla}\cdot\vec{A}\right)
+        </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We have
+        <me>
+          \vec{a}\times\left(\vec{b}\times\vec{c}\right) 
+          = \left(\vec{a}\cdot\vec{c}\right)\vec{b}-\left(\vec{a}\cdot\vec{b}\right)\vec{c}
+        </me>
+        Put, <m>\vec{a}=\vec{b}=\vec{\nabla}</m>, then
+        <me>
+          \vec{\nabla}\times \left(\vec{\nabla}\times\vec{A}\right) = \left(\vec{\nabla}\cdot\vec{A}\right)\vec{\nabla}-\left(\vec{\nabla}\cdot\vec{\nabla}\right)\vec{A}=\vec{\nabla}\left(\vec{\nabla}\cdot\vec{A}\right)-\nabla^{2}\vec{A}.
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        If a vector <m>\vec{v}=(x+y+az)\hat{i}+(bx+3y-z)\hat{j}+(3x+cy+z)\hat{k}</m> 
+        is irrotational, find the values of the constants <m>a</m>, <m>b</m>, and <m>c</m>. 
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We have  <m>\,curl\vec{v}=0</m>, or,  <m>\vec{\bigtriangledown}\times\vec{v}=0</m>, or,
+        <me>
+          {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+          \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+          x+y+az &amp; bx+3y-z &amp; 3x+cy+z 
+          \end{vmatrix}} = 0
+        </me>
+        <me>
+          or, \quad (c+1)\hat{i}-(3-a)\hat{j}+(b-1)\hat{k} = 0.\hat{i}+0.\hat{j}+0.\hat{k} 
+        </me>
+        now, equating the coefficients of <m>\hat{i}</m>, <m>\hat{j}</m>, <m>\hat{k}</m>, we get- 
+        <me>
+          c+1=0  \Rightarrow c=-1, \quad  3-a=0  \Rightarrow a=3,\quad \text{and}\quad b-1=0  \Rightarrow b=1.
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        If <m>r=(x^{2}+y^{2}+z^{2})^{1/2}</m> and <m>(1/r)</m> is a solution of Laplace's equation, 
+        then show that
+        <ol marker ="a.">
+          <li>
+            <m>\bigtriangledown^{2}\left(\frac{1}{r}\right)=0</m>, and
+          </li>
+          <li>
+            evaluate <m>\vec{\bigtriangledown}\times\left(\frac{\vec{r}}{r^{2}}\right)</m>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <ol marker ="a.">
+          <li>
+            <me>
+              \nabla^{2}\left(\frac{1}{r}\right) = \left(\frac{\partial^{2}}{\partial x^{2}} 
+              +\frac{\partial^{2}}{\partial y^{2}} 
+              +\frac{\partial^{2}}{\partial z^{2}}\right)\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right], 
+            </me>
+            here,
+            <me>
+              \nabla^{2} = \frac{\partial^{2}}{\partial x^{2}} 
+              +\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
+            </me>
+            is a Laplacian operator. But,
+            <me>
+              \frac{\partial}{\partial x}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+              = -\frac{1}{2}\left[\frac{1(2x)}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
+            </me>
+            and 
+            <me>
+              \frac{\partial^{2}}{\partial x^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+              = \frac{\partial}{\partial x}\left[\frac{-x}{(x^{2}+y^{2}+z^{2})^{3/2}}\right] 
+            </me>
+            <me>
+              = \left[\frac{+\frac{3}{2}(x)2x}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
+              - \left[\frac{-1}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
+            </me>
+            Similarly, 
+            <me>
+              \frac{\partial^{2}}{\partial y^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+            </me>
+            <me>
+              = \left[\frac{+3y^{2}}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
+              - \left[\frac{-1}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
+            </me>
+            also,
+            <me>
+              \frac{\partial^{2}}{\partial z^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+            </me>
+            <me>
+              = \left[\frac{3(x^{2}+y^{2}+z^{2})}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
+              - \left[\frac{3}{(x^{2}+y^{2}+z^{2})^{3/2}}\right] = 0. 
+            </me>
+          </li>
+          <li>
+            Let <me>\vec{r}=x\hat{i}+y\hat{J}+z\hat{k}</me>, 
+             so that <me>r^{2}=x^{2}+y^{2}+z^{2}</me> 
+            also, suppose <m>r^{2}=\phi</m> and <m>\vec{r}=\vec{F}</m>.  Then as
+            <me>
+              \vec{\nabla}\times\left(\phi\vec{F}\right) 
+              = \left(\vec{\nabla \phi}\right)\times \vec{F} 
+              +\phi \left(\vec{\nabla} \times \vec{F}\right)
+            </me>
+            we have 
+            <me>
+              \vec{\nabla}\times \left(\frac{\vec{r}}{r^{2}}\right)
+               = \vec{\nabla}\left(\frac{1}{r^{2}}\right)\times \vec{r}  
+               + \frac{1}{r^{2}}\left(\vec{\nabla}\times \vec{r}\right)
+            </me>
+            <me>
+              =\left[\vec{\nabla}\left(\frac{1}{x^{2}+y^{2} +z^{2}}\right)\right]
+              \times (x\hat{i}+y\hat{J}+z\hat{k})
+            </me>
+            <me>
+              +\frac{1}{x^{2}+y^{2}+z^{2}}\left[\vec{\nabla} 
+              \times (x^{2}+y^{2}+z^{2})\right]
+            </me>
+            
+            <me>
+              =\left[\left(\hat{i}\frac{\partial}{\partial x} 
+              +\hat{j}\frac{\partial}{\partial y} 
+              +\hat{k}\frac{\partial}{\partial z}\right) 
+              \left(\frac{1}{x^{2}+y^{2}+z^{2}}\right)\right] 
+              \times  (x\hat{i}+y\hat{J}+z\hat{k}) +0
+            </me>
+            <me>
+              = \frac{-2}{(x^{2}+y^{2}+z^{2})^{2}}(x\hat{i}+y\hat{J}+z\hat{k}) 
+              \times (x\hat{i}+y\hat{J}+z\hat{k})=0.
+            </me>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the curl of a vector field <m>\vec{v}=2xy\hat{i}+3\sin y\hat{j}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We have 
+        <me>
+          \left(\vec{\nabla}\times\vec{v}\right) 
+          = {\begin{vmatrix} 
+          \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+          \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+          v_{1} &amp; v_{2} &amp; v_{3} 
+          \end{vmatrix}} 
+        </me>
+        <me>
+          =  \left[\frac{\partial v_{3}}{\partial y} 
+          -\frac{\partial v_{2}}{\partial z}\right]\hat{i} 
+          +\left[\frac{\partial v_{1}}{\partial z} 
+          -\frac{\partial v_{3}}{\partial x}\right]\hat{j} 
+          +\left[\frac{\partial v_{2}}{\partial x} 
+          -\frac{\partial v_{1}}{\partial y}\right]\hat{k}
+        </me>
+        <me>
+          = \hat{k}(-\frac{\partial v_{1}}{\partial y})=  (-2x)\hat{k}
+        </me>
+        
+      </p>
+    </solution>
+  </example>
+</paragraphs>
+
+</section>

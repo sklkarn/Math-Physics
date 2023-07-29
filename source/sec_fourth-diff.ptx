@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-diff" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Solution of a Differential Equation</title>
+  <introduction>
+   <p>
+    Let the differential equation
+    <men xml:id="eqn-diffsol1">
+      \frac{\,dy}{\,dx}=\frac{1}{x}
+    </men>
+    Integrating both sides of eqn. <xref ref="eqn-diffsol1"/>, we get -
+    <men xml:id="eqn-diffsol2">
+      y=\int\frac{1}{x}\,dx = \log x+C
+    </men>
+    The eqn. <xref ref="eqn-diffsol2"/> is called the general solution of differential eqn. 
+    <xref ref="eqn-diffsol1"/> and <m>C</m> is an arbitrary constant. 
+    Consider the another differential equation 
+    <men xml:id="eqn-diffsol3">
+      \frac{\,d^{2}y}{\,dx^{2}}=x
+    </men>
+    Integrating both sides, we get -
+    <me>
+       \int\,d\left(\frac{\,dy}{\,dx}\right)=\int x\,dx
+    </me>
+    or,
+    <men xml:id="eqn-diffsol4">
+    \frac{\,dy}{\,dx}=\frac{x^{2}}{2}+C  
+    </men>
+    Integrating again, we get -
+    <men xml:id="eqn-diffsol5">
+      y=\frac{x^{3}}{6}+Cx+D
+    </men>
+    The eqn. <xref ref="eqn-diffsol5"/> is the general solution of differential eqn. <xref ref="eqn-diffsol3"/> 
+    and C and D are two arbitrary constants. Hence it is clear from eqns. <xref ref="eqn-diffsol2"/> and 
+    <xref ref="eqn-diffsol5"/> that if the order of differential equation is one the solution contains only 
+    one arbitrary constant but if it is second ordered then its solution also contains two arbitrary constants. 
+    The number of arbitrary constants in the solution is equal to the order of the differential equation. 
+    An equation containing dependent variable y, independent variable x and free from derivative which 
+    also satisfies the differential equation is called the <term>solution of the differential equation</term>. 
+    The general solution becomes a particular solution by assigning the particular value of arbitrary 
+    constant. Suppose we find C = 1 and D = 2 for eqn. <xref ref="eqn-diffsol5"/> then,
+    <m>y=\frac{x^{3}}{6}+Cx+D</m> is the particular solution of differential eqn. <xref ref="eqn-diffsol3"/>.
+    </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-first_order-diff">
+  <title>First Order Linear Differential Equation</title>
+  <p>
+    The first order linear differential equation is obtained by putting <m>n = 1</m> in the standard form 
+    of linear equation <xref ref="eqn-diffeq1"/>, i.e., 
+    <me>
+       f_{o}(x)\frac{\,dy}{\,dx}+ f_{o}(x)y =F(x)
+    </me>
+    or,
+    <men xml:id="eqn-diffsol6">
+      \frac{\,dy}{\,dx}+P(x)y = Q(x)
+    </men>
+    where <m>P(x)</m> and <m>Q(x)</m> are functions of <m>x</m> or constants. 
+    To find its solution, first consider the homogeneous equation by setting <m>Q(x) = 0</m>.
+    <me>
+      \frac{\,dy}{\,dx}+P(x)y = 0 
+    </me>
+    <me>
+       \frac{1}{y}\frac{\,dy}{\,dx} =-P(x)y
+    </me>
+    integrating, we get - 
+    <me>
+      \log y =-\int P(x)\,dx +C
+    </me>
+    where <m>C</m> is an arbitrary constant of integration.
+    <me>
+       y=exp\left[-\int P(x)\,dx +C\right] = exp\left[-\int P(x)\,dx\right]e^{C}
+    </me>
+    or,
+    <me>
+       y=A exp\left[-\int P\,dx\right]
+    </me>
+    where <m>A=e^{C}</m>.
+   
+    <me>
+      \text{or,} \quad ye^{\int P\,dx}=A
+    </me>
+    Let,
+    <me>
+      I = \int P(x)\,dx \quad \text{so that}\quad \frac{\,dI}{\,dx} =P(x)
+    </me>
+    <men xml:id="eqn-diffsol7">
+      \therefore \quad ye^{I}=A
+    </men>
+    Differentiate eqn. <xref ref="eqn-diffsol7"/>w.r.t. 'x', we get -
+    <me>
+      \frac{\,d}{\,dx}\left(ye^{I}\right)=0 
+    </me>
+    or,
+    <me>
+      \frac{\,dy}{\,dx}e^{I}+ye^{I}\frac{\,dI}{\,dx}=0
+    </me>
+    or,
+    <me>
+      \frac{dy}{dx}e^{I}+ye^{I}P=0
+    </me>
+    or,
+    <men xml:id="eqn-diffsol8">
+      e^{I}\left(\frac{dy}{dx}+yP\right)=0
+    </men>
+    Now multiplying eqn. <xref ref="eqn-diffsol6"/> by <m>e^{I} </m>, we get -
+    <men xml:id="eqn-diffsol9">
+     \left(\frac{\,dy}{\,dx}+Py\right)e^{I}=Qe^{I} 
+    </men>
+    which by using eqn. <xref ref="eqn-diffsol9"/>, becomes
+    <men xml:id="eqn-diffsol10">
+      \frac{\,d}{\,dx}\left(ye^{I}\right)=Qe^{I}
+    </men>
+    Integrating, we get - 
+    <me>
+      ye^{I}=\int Qe^{I}\,dx+C_{1}
+    </me>
+      where <m>C_{1}</m> is an arbitrary constant.
+      <men xml:id="eqn-diffsol11">
+         \text{or,} \quad ye^{\int P\,dx}=\int\left(Qe^{\int P\,dx}\right)\,dx+C_{1}
+      </men>
+     This is  the required solution and the factor <m>e^{\int P\,dx}</m> is known as 
+     <term>integration factor (I.F.)</term>. Therefore the solution of first order linear 
+     differential equation can be easily found by the formula  
+     <me>
+       y[I.F.] = \int Q[I.F.]\,dx + \quad\text{constant}.
+     </me>
+     Equation <xref ref="eqn-diffsol11"/> may be written as
+     <men xml:id="eqn-diffsol12">
+      y=C_{1}e^{-\int P\,dx}+e^{-\int P\,dx}\int\left(Qe^{\int P\,dx}\right)\,dx
+     </men>
+     i.e. the general solution of differential equation <xref ref="eqn-diffsol6"/> consists of two parts.
+     <men xml:id="eqn-diffsol13">
+      y=cu+v  \quad  \text{(say)}
+     </men>
+     where <m>u= e^{-\int P\,dx }</m>  and  <m>v=e^{-\int P\,dx}\int\left(Qe^{\int P\,dx}\right)\,dx</m> 
+     also <m>C_{1}=c </m>.
+    </p>
+    <p>
+      Now differentiating <m>u= e^{-\int P\,dx }</m> with respect to 'x', we have
+      <me>
+        \frac{\,du}{\,dx} =-P e^{-\int P\,dx}=-Pu
+      </me>
+      or,
+      <me>
+        \frac{\,du}{\,dx} +Pu =0 
+      </me>
+      or,
+      <me>
+        \frac{\,d(cu)}{\,dx} +P(cu) =0
+      </me>
+      which shows that <m>y=cu</m> is the solution of <m>\frac{\,du}{\,dx} +Pu =0</m>, again, differentiating 
+      <me>
+         v=e^{-\int P\,dx}\int\left(Qe^{\int P\,dx}\right)\,dx
+      </me>
+      w.r.t. 'x', we have -
+      <me>
+         \frac{\,dv}{\,dx}=-Pe^{-\int P\,dx}\left(Qe^{\int P\,dx}\right)\,dx + e^{-\int P\,dx}Qe^{\int P\,dx}
+      </me>
+      or,
+      <me>
+         \frac{\,dv}{\,dx} =-Pv+Q 
+      </me>
+      <me>
+       \text{or,}\quad  \frac{\,dv}{\,dx} +Pv=Q 
+      </me>
+      which shows that <m>y=v</m> is the solution of <m>\frac{\,dy}{\,dx} +Py=Q</m>.
+       Hence, the first part of the solution of differential equation is the solution of its 
+       homogeneous equation and <m>cu </m> is known as <term>Complementry Function</term>. 
+       Second part is free from any arbitrary constant and <m>v</m> is known as <term>Particular Integral</term>. 
+       <m>\therefore</m> <term>Complete Solution = Complementry Function + Particular Integral</term>. That is,
+       <me>
+         y   =    C.F.   +    P.I.
+       </me>
+      </p>
+ </subsection>
+
+<subsection xml:id="subsec-second_order-diff">
+  <title>Second Order Linear Differential Equations</title>
+  <introduction>
+     <p>
+    Putting <m>n = 2</m> in the standard form of linear differential equation <xref ref="eqn-diffeq1"/>
+    gives the second order linear differential equation.
+    <me>
+      f_{o}(x)\frac{\,d^{2}y}{\,dx^{2}}+f_{1}(x)\frac{\,dy}{\,dx}+Qy=R
+    </me>
+    or,
+    <me>
+       \frac{\,d^{2}y}{\,dx^{2}}+P\frac{\,dy}{\,dx}+Qy=R
+    </me>
+    where <m>P {,} Q</m>, and <m>R</m> are functions of <m>x</m> or constants.
+    </p>
+    <p>
+       The method for finding the solution of linear differential equations is depends on the nature 
+       of <m>P</m> and <m>Q</m>. If <m>P</m> and <m>Q</m> are constants then the differential 
+       equation is said to be second order linear differential equation with constant coefficients. 
+       But if <m>P</m> and <m>Q</m> are functions of <m>x</m> then the differential equation 
+       is said to be differential equation with variable coefficients.
+      </p>
+  </introduction>
+ 
+      <subsubsection xml:id="subsubsec-leqconst_coeff">
+        <title>Linear Equations with Constant Coefficients</title>
+        <p>
+          The general form of linear differential equation of second order is 
+        <men xml:id="eqn-diffsol14">
+          	\frac{\,d^{2}y}{\,dx^{2}}+P\frac{\,dy}{\,dx}+Qy=R	
+        </men>
+        where <m>P</m> and <m>Q</m> are constants and <m>R</m> is a function of <m>x</m> or constant. 
+        In the operator form,
+        <me>
+          (D^{2}+PD+Q)y = R [f(D)]y=R 
+        </me>
+        where,
+        <me>
+          \frac{\,d}{\,dx}\equiv D.
+        </me>
+          </p>
+     
+
+            <ol marker="a.">
+            <li> 
+              <p>
+               Let <m>y=Ce^{mx}</m> be the trial solution of <m>C. F.</m> of eqn. <xref ref="eqn-diffsol14"/> 
+              with m being root of the equation, then it satisfies the equation.
+              <me>
+                \therefore \quad \frac{\,dy}{\,dx}= mCe^{mx} = my
+              </me>
+              or,
+              <me>
+                \frac{\,d^{2}y}{\,dx^{2}}=m^{2}Ce^{mx} =m^{2}y
+              </me>
+              from eqn. <xref ref="eqn-diffsol14"/>,
+              <me>
+                m^{2}y+Pmy+Qy=0  \quad [\because  R=0]
+              </me>
+              or,
+              <me>
+                (m^{2}+Pm+Q)y =0.
+              </me>
+              <me>
+               \text{Since}, y=\frac{R}{f(D)}
+              </me>
+              or,
+              <me>
+                 \frac{R}{f(m)}\neq 0
+              </me>
+              or,
+              <me>
+                \therefore \quad m^{2}+Pm+Q=0.
+              </me>
+              It is called an <term>Auxiliary Equation (A.E.)</term>. Which is quadratic in m (or D), 
+              roots of which can be appeared by three ways. Viz. real and unequal, real and equal, 
+              or a complex pair. Also it should be noted that if <m>y_{1}</m> and <m>y_{2}</m> are two 
+              linearly independent solution of the corresponding homogenous equation then 
+              <m>y=C_{1}y_{1}+C_{2}y_{2}</m>. The condition for <m>y_{1}</m> and <m>y_{2}</m> to be linearly 
+              independent is 	
+              <me>
+                \begin{vmatrix} 
+                y_{1} &amp; y_{2}\\ 
+                y'_{1} &amp; y'_{2} 
+                \end{vmatrix} \neq 0
+              </me>
+               This determinant is called <term>Wornskian</term> of <m>y_{1}</m> and <m> y_{2}</m>.
+              </p>
+              
+               <p>
+                 <alert>Case I. Roots are real and unequal:</alert> 
+               If <m> m_{1}</m> and <m>m_{2}</m> are the roots of an A.E. then a C.F. is given by
+               <me>
+                y=C_{1}e^{m_{1}x}+C_{2}e^{m_{2}x} = C_{1} y_{1}+C_{2} y_{2}.
+               </me>
+               The wronskian for <m>y_{1}</m> and <m>y_{2}</m> is 
+               <me>
+                \begin{vmatrix} 
+                C_{1}e^{m_{1}x} &amp; C_{2}e^{m_{2}x}\\ 
+                m_{1}C_{1}e^{m_{1}x} &amp; m_{2}C_{2}e^{m_{2}x} 
+                \end{vmatrix} 
+               </me>
+                since <m>m_{1}  \neq m_{2}</m>.  The wronskian <m>\neq 0</m>.  Hence <m>y_{1}</m> and 
+                <m>y_{2}</m> are linearly independent.
+               </p>
+              <p>
+                <alert>Case II. Roots are real and equal:</alert>
+            If <m>m_{1} = m_{2} =m </m> (say), then C.F. is <m>y=(C_{1}+C_{2}x)e^{mx}</m>. why?
+             </p>
+             <p>
+              If <m>m_{1} = m_{2} =m </m> then from case I, <m>y=(C_{1}+C_{2})e^{mx} =Ce^{mx}</m>. 
+              Where C is only one constant in this solution. But the order of given equation is two 
+              the solution must contain two constants in order to satisfy the given equation. 
+              Hence we have to seek its solution by another way. Let's write equation 
+              <xref ref="eqn-diffsol14"/> in the form
+            <me>
+              (D-m)(D-m)y=0
+            </me>
+            put 
+            <me>
+             (D-m)y=z 
+            </me>
+            then,
+            <me>
+             (D-m)z=0
+            </me>
+            or,
+            <me>
+              Dz-mz=0
+            </me>
+            or,
+            <me>
+               \frac{\,dz}{\,dx}-mz=0 \quad\Rightarrow z=Ae^{mx}
+            </me>
+            Thus,
+            <me>
+               (D-m)y=Ae^{mx}
+            </me>
+            or,
+            <me>
+               \frac{\,dy}{\,dx}-my=Ae^{mx}.
+            </me>
+            which is an inhomogenous first order linear differential equation. whose integrating factor is given by 
+            <me>
+              I.F. = e^{\int P\,dx}=e^{-mx}
+            </me>
+            Hence, the solution of this differential equation is given by equation <xref ref="eqn-diffsol11"/>
+            <me>
+              ye^{-mx} = \int Ae^{mx}\cdot e^{-mx}\,dx+B = \int A\,dx+B=Ax+B 
+            </me>
+            <me>
+              \therefore  \quad y=(Ax+B)e^{mx}.
+            </me>
+             </p>
+             <p>
+              <term>Case III. Roots are imaginary pair.</term> 
+              If the roots are <m>\alpha \pm i\beta,</m> then the solution will be
+              <me>
+                 y=C_{1}e^{(\alpha + i\beta)x}+C_{2}e^{(\alpha - i\beta)x} = e^{\alpha x}\left[C_{1}e^{i\beta x}+C_{2}e^{-i\beta x}\right]
+              </me>
+              <me>
+                = e^{\alpha x}\left[C_{1}(\cos\beta x+i\sin\beta x)+C_{2}(\cos\beta x-i\sin\beta x)\right]
+              </me>
+              <me>
+                  =e^{\alpha x}\left[(C_{1}+C_{2})\cos\beta x+i(C_{1}-C_{2})\sin\beta x)\right]
+              </me>
+              <me>
+                  =e^{\alpha x}\left[A\cos\beta x+iB\sin\beta x)\right]
+              </me>
+              <me>
+                 =Ce^{\alpha x}\sin(\beta x+\gamma).
+              </me>
+              where C and <m> \gamma</m> are arbitrary constants.
+             </p>
+            </li>
+            <li>
+              <p>
+                There are various methods to find the particular integral of a differential equation, 
+                here we discuss some of the easy methods.
+              </p>
+              </li>
+          </ol>
+           </subsubsection>  
+
+
+<subsubsection xml:id="subsubsec-PI-funct">
+  <title>General Method of Finding the Particular Integral of Any Function <m>\phi(x)</m></title>
+  <p>
+    <me>
+      P.I.=\frac{1}{D-a}\phi(x) =v
+    </me>
+    or,
+    <me>
+      \phi(x) = (D-a)v
+    </me>
+    or,
+    <me>
+      \phi(x) = Dv-av
+    </me>
+    or,
+    <me>
+      \frac{\,dv}{\,dx}-av = \phi(x)
+    </me>
+    which is a first order linear differential equation. Its solution is  
+    <me>
+      ve^{-\int a\,dx}=\int e^{-\int a\,dx}\phi(x)\,dx =\int e^{-ax}\phi(x) \,dx
+    </me>
+    <men xml:id="eqn-pisol1">
+      \therefore \quad v=e^{ax}\int e^{-ax}\phi(x)\,dx=P.I.
+    </men>
+    Particular Integral can also be obtained by inspection method which will be discussed 
+    in examples given below. However, there may be developed a general method for solving 
+    the differential equation directly, called the successive integration method. 
+    Let the equation in the form 
+    <men xml:id="eqn-pisol2">
+      (D^{2}+PD+Q)y=f(x)
+    </men>
+    If <m>m_{1}=a</m> and <m>m_{2}=b</m> are the roots of A.E., then eqn. <xref ref="eqn-diffsol14"/> 
+    can be written as 
+    <men xml:id="eqn-pisol3">
+      (D-a)(D-b)y=f(x)
+    </men>
+    put,
+    <me>
+       (D-b)y=v
+    </me>
+    so that 
+    <me>
+      (D-a)v=f(x)
+    </me>
+    or,
+    <me>
+       \frac{\,dv}{\,dx}-av=f(x)
+    </me>
+    Its solution is 
+    <me>
+      v\cdot e^{-\int a\,dx}=\int f(x)e^{-\int a\,dx}\,dx+C_{1}
+    </me>
+    <men xml:id="eqn-pisol4">
+      \therefore \quad v= e^{ax}\int f(x) e^{-ax}\,dx+C_{1} e^{ax}
+    </men>
+    from eqn. <xref ref="eqn-pisol3"/>, we have
+    <me>
+       (D-b)y=e^{ax}\int f(x)e^{-ax}\,dx+C_{1}e^{ax}
+    </me>
+    or,
+    <me>
+      \frac{\,dy}{\,dx}-by=\bar{Q}(x)
+    </me>
+    or,
+    <men xml:id="eqn-pisol5">
+       \therefore  \quad y=e^{bx}\int\bar{Q}(x)e^{-bx}\,dx+C_{2}e^{bx}
+    </men>
+    where,
+    <men xml:id="eqn-pisol6">
+      \bar{Q}(x)=e^{ax}\int f(x) e^{-ax}\,dx+C_{1}e^{ax}
+    </men>
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-var_coef">
+  <title>Linear Equations with Variable Coefficients</title>
+  <p>
+    The linear equation of the form
+    <me>
+      f_{o}(x)\frac{\,d^{2}y}{\,dx^{2}}+f_{1}(x)\frac{\,dy}{\,dx}+f_{2}(x)y=F(x)
+    </me>
+    or,
+    <me>
+      \frac{\,d^{2}y}{\,dx^{2}}+P\frac{\,dy}{\,dx}+Qy=X
+    </me>
+    is called a linear differential equation with variable coefficient if <m>P {,} Q</m> and <m>X</m> 
+    are function of <m>x</m> only.
+    </p>
+    <p>In fact, there is no general method to solve such differential equations. 
+    However, we discuss one artificial but elegent method to solve such type of equations. 
+    This method is known as <term>Method of Variation of Parameters</term>. 
+    Lagrange developed it. It provides the complete solution of a linear equation whose 
+    complementary function is known.
+    </p>
+    <p>Let the equation is
+    <men xml:id="eqn-varcoef1">
+      \frac{\,d^{2}y}{\,dx^{2}}+P(x)\frac{\,dy}{\,dx}+Q(x)y=X(x) 
+    </men>
+    The C.F. of which is given as
+   <men xml:id="eqn-varcoef2">
+    y=v_{1}y_{1}+v_{2}y_{2}
+   </men>
+   where <m>y_{1}</m> and <m>y_{2}</m> are two linearly independent solution of the 
+   correspnding homogenous eqn. i.e.,	
+    <men xml:id="eqn-varcoef3">
+      y''_{1}+Py'_{1}+Qy_{1} =0
+    </men>
+    <men xml:id="eqn-varcoef4">
+      y''_{2}+Py'_{2}+Qy_{2} =0
+    </men>
+    clearly equation <xref ref="eqn-varcoef2"/> will not satisfy the given equation 
+    <xref ref="eqn-varcoef1"/>. As <m>X(x) \neq 0 </m>, so we should consider the 
+    constants <m>v_{1}</m> and <m>v_{2}</m> as unknown parameters which are the functions of <m>x</m>, then  
+    <men xml:id="eqn-varcoef5">
+      y=v_{1}y_{1}+v_{2}y_{2}	 
+    </men>
+    be a complete solution of the given equation <xref ref="eqn-varcoef1"/>. Hence equation 
+    <xref ref="eqn-varcoef5"/> must satisfy the equation <xref ref="eqn-varcoef1"/>.
+      Now,
+      <men xml:id="eqn-varcoef6">
+         y' = v'_{1}y_{1}+v_{1}y'_{1}+v'_{2}y_{2}+v_{2}y'_{2}
+      </men>
+      If we set,
+      <men xml:id="eqn-varcoef7">
+         v'_{1}y_{1}+v'_{2}y_{2} =0
+      </men>
+      by assuming <m> v_{1}</m> and <m>v_{2} </m> to be the arbitrary constants for complementary 
+      part of the equation. Then,
+      <men xml:id="eqn-varcoef8">
+         y' = v_{1}y'_{1}+v_{2}y'_{2}
+      </men>
+      and 
+      <men xml:id="eqn-varcoef9">
+         y''= v'_{1}y'_{1}+v_{1}y''_{1}+v'_{2}y'_{2}+v_{2}y''_{2}
+      </men>
+      Therefore, from given eqn. <xref ref="eqn-varcoef1"/>, we have -
+      <me>
+        v'_{1}y'_{1}+v_{1}y''_{1}+v'_{2}y'_{2}+v_{2}y''_{2}+P(v_{1}y'_{1}+v_{2}y'_{2})+Q(v_{1}y_{1}+v_{2}y_{2})=X
+      </me>
+      or, 
+      <me>
+         v_{1}(y''_{1}+Py'_{1}+Qy_{1})+v_{2}(y''_{2}+Py'_{2}+Qy_{2})+(v'_{1}y'_{1}+v'_{2}y'_{2})=X
+      </me>
+      from eqns. <xref ref="eqn-varcoef3"/> and <xref ref="eqn-varcoef4"/>, 
+      we have the first two terms equal to zero.
+      <men xml:id="eqn-varcoef10">
+        \therefore \quad v'_{1}y'_{1}+v'_{2}y'_{2}=X
+      </men>
+      Solving eqns. <xref ref="eqn-varcoef7"/> and <xref ref="eqn-varcoef10"/>, we get -
+      <me>
+        \left.\begin{aligned}
+        v'_{1}y'_{1}+v'_{2}y'_{2}=X \\
+        v'_{1}y_{1}+v'_{2}y_{2}=0 
+        \end{aligned}\right\}
+      </me>
+      multiplying top equation by <m>y_{2}</m> and bottom equation by <m>y'_{2}</m> we get-
+      <me>
+        v'_{1}(y'_{1}y_{2}-y_{1}y'_{2} = Xy_{2}
+      </me>
+      <me>
+        \therefore \quad v'_{1} = \frac{-Xy_{2}}{y_{1}y'_{2}-y'_{1}y_{2}}
+      </me>
+      and 
+      <me>
+        v'_{2} = \frac{Xy_{1}}{y_{1}y'_{2}-y'_{1}y_{2}}
+      </me>
+      <men xml:id="eqn-varcoef11">
+        \therefore v'_{1} = \frac{-Xy_{2}}{|W|} \quad \text{and}  \quad v'_{2} = \frac{Xy_{1}}{|W|}
+      </men>
+      where 
+      <me>
+        |W| = y_{1}y'_{2}-y'_{1}y_{2} =\begin{vmatrix}
+        y_{1} &amp; y_{1}\\
+        y'_{1} &amp; y'_{2}
+        \end{vmatrix}
+      </me>
+      is known as the Wronskian for solutions <m>y_{1}</m> and <m>y_{2}</m>. 
+      Which does not equal to zero if <m>y_{1}</m> and <m>y_{2}</m> are two 
+      linearly independent solution of eqn. <xref ref="eqn-varcoef1"/>.
+    </p>
+    <p>
+       Integrating eqn. <xref ref="eqn-varcoef11"/>, we get - 
+       <men xml:id="eqn-varcoef12">
+        v_{1} = -\int\frac{Xy_{2}}{|W|}	\,dx+C_{1};  \qquad  v_{2} = \int\frac{Xy_{1}}{|W|}\,dx+C_{2}
+       </men>
+       Substituting <m>v_{1}</m> and <m>v_{2}</m> in equation <xref ref="eqn-varcoef5"/>, we get -
+       <men xml:id="eqn-varcoef13">
+        y(x) = y_{1}(x)\left[-\int\frac{Xy_{2}}{|W|}\,dx+C_{1}\right]+y_{2}(x)\left[\int\frac{Xy_{1}}{|W|}\,dx+C_{2}\right]
+       </men>
+       <term>Note:</term>
+        There are no specific method to solve the differential equation with variable 
+        coefficients but it can be solved by many method according to the type of eqution. 
+        If the equation containing decreasing power of x then put <m>x=e^{z}</m> 
+        so that equation can be converted into variable coefficient to constant coefficient. 
+        Here are some rules which help us to find the complementary function of the given 
+        differential equation. When C.F. is not easily obtained we should use <term>Power Series</term> 
+        method to solve such equation.
+      </p>
+      <p>
+         Assume 
+        <ol marker="i.">
+          <li>
+            <m>y_{1}=e^{mx}</m> be a known integral of C.F.  if <m>m^{2}+mP+Q=0</m>.
+          </li>
+          <li>
+            <m>y_{1}=e^{x}</m> be a known integral of C.F.  if <m>1+P+Q=0 </m>.
+            </li>
+            <li>
+              <m>y_{1}=e^{-x} </m> be a known integral of C.F.  if <m>1-P+Q=0</m>.
+              </li>
+              <li>
+                <m>y_{1}=x </m> be a known integral of C.F.  if <m>P+Qx=0</m>. 
+                </li>
+                <li>
+                 <m>y_{1}=x^{2}</m> be a known integral of C.F.  if <m>2+2Px+Qx^{2}=0 </m>.
+                  </li>
+            <li>
+              and put <m>y=vy_{1}</m> be the solution of corresponding homogeneous differential 
+              equation. Where <m>v</m> is any parameter depends on <m>x</m>.
+              </li>
+        </ol>
+        </p>
+</subsubsection>
+</subsection>
+  </section>
+

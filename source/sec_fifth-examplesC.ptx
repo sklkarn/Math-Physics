@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fifth-examplesC" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples C</title>
+ 
+<example>
+  <statement>
+    <p>
+       A periodic function of period 4 is defined as <m>f(x) = |x|</m> 
+       for <m>-2 \leq x \leq 2</m>. Find its Fourier series expansion.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Here,	<m>f(-x) =|-x| = |x| = f(x)</m> and so is even. Therefore it can be 
+      expanded only in cosine series and the coefficients can be evaluated 
+      from half range only. i.e., the Fourier series is  
+      <men xml:id="eqn-fr_intg1">
+        f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{c}\right)\right] 
+      </men>
+      where
+      <me>
+         a_{0}= \frac{2}{c}\int\limits_{0}^{c}f(x) \,dx = \frac{2}{2}\int\limits_{0}^{2}|x| \,dx =\int\limits_{0}^{2}x \,dx = 2.
+      </me>
+      <me>
+        a_{n}=	\frac{2}{c}\int\limits_{0}^{c}f(x)\cos \left(\frac{n\pi x}{c}\right) \,dx  
+      </me>
+      <me>
+        = \frac{2}{c}\int\limits_{0}^{c}|x|\cos \left(\frac{n\pi x}{c}\right) \,dx = \frac{2}{2}\int\limits_{0}^{2}x\cos \left(\frac{n\pi x}{2}\right) \,dx 
+      </me>
+      
+      <me>
+        =\left[x \frac{2}{n\pi}\sin \left(\frac{n\pi x}{2}\right) -1-\frac{4}{-n^{2}\pi^{2}}\cos \left(\frac{n\pi x}{2}\right)\right]_{0}^{2}
+      </me>
+      <me>
+        =0+\frac{4}{n^{2}\pi^{2}}(\cos n\pi-1)
+      </me>
+      
+      <me>
+        =\frac{4}{n^{2}\pi^{2}}\left[(-1)^{n}-1\right]
+         = \begin{cases}
+              -\frac{8}{n^{2}\pi^{2}},\quad \text{if n is odd}\\
+                  0, \quad \text{if n is even} 
+                  \end{cases} 
+      </me>
+      <men xml:id="eqn-fr_intg2">
+        f(x) = 1-\frac{8}{\pi^{2}}\left[\frac{\cos \pi x/2}{1^{2}}+\frac{\cos 3\pi x/2}{3^{2}}+\frac{\cos 5\pi x/2}{5^{2}}+\cdots\right] 
+      </men>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+       Find the Fourier series expansion of the periodic function of period <m>1</m>.
+       <me>
+        f(x)= 
+         \begin{cases} 
+              \frac{1}{2}+x, \quad \text{for} \quad -1/2 \lt x \lt 0\\ 
+                 \frac{1}{2}-x,\quad \text{for}\quad 0 \lt x \lt 1/2. 
+          \end{cases}
+       </me>
+
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Here, <m>2c=1,</m> <m> \therefore c = 1/2</m>.
+      <me>
+        a_{0}= \frac{1}{c}\int\limits_{-c}^{c}f(x) \,dx 
+      </me>
+      <me>
+        = \frac{1}{1/2}\left[\int\limits_{-1/2}^{0}\left( \frac{1}{2}+x\right) \,dx + \int\limits_{0}^{1/2}\left( \frac{1}{2}+x\right) \,dx\right]
+      </me>
+      
+        <me>
+          =2\left[\left\{\frac{x}{2}+\frac{x^{2}}{2}\right\}_{-1/2}^{0} +  \left\{\frac{x}{2}-\frac{x^{2}}{2}\right\}_{0}^{1/2}\right]
+        </me>
+        <me>
+          =2\left[\frac{1}{2}\left\{+\frac{1}{2}-\frac{1}{4}\right\} +\frac{1}{2}\left\{\frac{1}{2}-\frac{1}{4}\right\}\right] = \frac{1}{2}.
+        </me>
+          <me>
+            a_{n}=	\frac{1}{c}\int\limits_{-c}^{c}f(x)\cos \left(\frac{n\pi x}{c}\right) \,dx 
+          </me>
+          <me>
+             = 2\left[\int\limits_{-1/2}^{0}\left( \frac{1}{2}+x\right)\cos \left(\frac{n\pi x}{1/2}\right) \,dx \right.
+          </me>
+          <me>
+            \left.+ \int\limits_{0}^{1/2}\left( \frac{1}{2}-x\right)\cos \left(\frac{n\pi x}{1/2}\right) \,dx\right]
+          </me>
+          <me>
+            =	2\left[\int\limits_{-1/2}^{0}\left( \frac{1}{2}+x\right)\cos 2n\pi x\,dx +\int\limits_{0}^{1/2}\left( \frac{1}{2}-x\right)\cos 2n\pi x\,dx\right]
+          </me>
+          <me>
+            =\frac{1}{\pi^{2}}\left[\frac{1}{n^{2}}-\frac{(-1)^{n}}{n}\right] 
+            =\begin{cases} 
+            \frac{2}{n^{2}\pi^{2}}, &amp; \text{if n is odd}\\ 
+            0,  &amp; \text{if n is even}. 
+            \end{cases}
+          </me>
+          <me>
+            b_{n}=	\frac{1}{c}\int\limits_{-c}^{c}f(x)\sin \left(\frac{n\pi x}{c}\right) \,dx =0
+          </me>
+          <me>
+            \therefore f(x) = \frac{1}{4}+\frac{2}{\pi^{2}}\left[\frac{\cos \pi x}{1^{2}}+\frac{\cos 3\pi x}{3^{2}}+\frac{\cos 5\pi x}{5^{2}}+\cdots\right]
+          </me>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Expand <m>f(x) = e^{x}</m> in cosine series over [0,1].
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        f(x) = e^{x}= \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{c}\right)\right] 
+      </me>
+      where,
+      <me>
+        a_{0}= \frac{2}{c}\int\limits_{0}^{c}f(x) \,dx = \frac{2}{1}\int\limits_{0}^{1} e^{x}\,dx = 2\left(e^{x}\right)_{0}^{1}=2(e^{1}-1).
+      </me>
+      <me>
+        a_{n}=	\frac{2}{c}\int\limits_{0}^{c}f(x)\cos \left(\frac{n\pi x}{c}\right) \,dx = 	\frac{2}{1}\int\limits_{0}^{1}e^{x}\cos n\pi x \,dx 
+      </me>
+      <me>
+        =2\left[\frac{e^{x}}{1+n^{2}\pi^{2}}(\cos n\pi x + n \pi \sin n\pi x)\right]_{0}^{1}
+      </me>
+      <me>
+         =2\left[\frac{e^{1}}{1+n^{2}\pi^{2}}(\cos n\pi  + n \pi \sin n\pi -1-0)\right]_{0}^{1} = \frac{2e^{1}}{1+n^{2}\pi^{2}}\left[(-1)^{n}-1)\right] 
+      </me>
+      <me>
+         \therefore \quad e^{x} = (e^{1}-1)+\sum\limits_{n=1}^{\infty}\frac{2e^{1}}{1+n^{2}\pi^{2}}\left[(-1)^{n}-1)\right]\cos n \pi x. 
+      </me>
+    </p>
+  </solution>
+</example>
+    
+    <example>
+      <statement>
+        <p>
+           Find a series of sines of multiples of  which will represent  in the interval.
+        </p>
+      </statement>
+      <solution>
+        <p> Let
+          <me>
+            f(x) = \sum\limits_{n=1}^{\infty}\left[b_{n}\sin  nx\right]
+          </me>
+          where,
+          <me>
+            b_{n}=	\frac{2}{\pi}\int\limits_{0}^{\pi}f(x)\sin nx \,dx =	\frac{2}{\pi}\int\limits_{0}^{\pi}x\sin nx \,dx
+          </me>
+          <me>
+            =	\frac{2}{\pi}\left[x.\frac{\cos nx}{-n}-1.\frac{\sin nx}{-n^{2}}\right]^{\pi}_{0}
+          </me>
+          <me>
+             = \frac{2}{\pi}\left[\pi.\frac{\cos n\pi}{-n}-1.\frac{\sin n\pi}{-n^{2}}\right] = -\frac{2}{n}(-1)^{n}=(-1)^{n+1}\frac{2}{n}	
+          </me>
+          <me>
+            \therefore \quad  x = \sum\limits_{n=1}^{\infty}\left[2(-1)^{n+1}\right]\frac{\sin nx}{n} 
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          A saw tooth wave is given by <m>f(x) = x</m> for <m>-\pi \leq x \leq \pi</m> 
+          or, <m>f(t) = a(1-t/T)</m> for <m>0 \leq t \leq T</m>, find the Fourier series 
+          representation of the wave.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The Fourier series expansion of a function <m>f(x)</m> is written as:
+          <me>
+            f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right],
+          </me>
+          where, 
+          <me>
+             a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} x\,dx = 0.
+          </me>
+          <me>
+            a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}x \cos nx \,dx = 0
+          </me>
+          and 
+          <me>
+            b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}x\sin nx\,dx = -\frac{2}{n}\cos n\pi = (-1)^{n+1}\frac{2}{n}
+          </me>
+          <me>
+            \therefore f(x) = x = 2\sum\limits_{n=1}^{\infty}\left[(-1)^{n+1}\frac{\sin nx}{n}\right]
+          </me>
+        </p>
+        <p>
+          The graphical representation of the functions <m>f(x)</m> and <m>f(t)</m> is shown in figure below.
+           <image source="fig56a.png" width ="45%"/> 
+          </p>
+          <p>
+           <alert>or,</alert>
+           <me>
+            f(t) =  \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi t}{T}\right) + b_{n}\sin \left(\frac{n\pi t}{T}\right)\right]
+           </me>
+           where,
+           <me>
+            a_{0}= \frac{2}{T}\int\limits_{0}^{T}f(t) \,dt = \frac{2}{T}\int\limits_{0}^{T}a\left(1-\frac{t}{T}\right)\,dt 
+           </me>
+           <me>
+            =\frac{2a}{T}\left[t-\frac{t^{2}}{2T}\right]_{0}^{T}= \frac{2a}{T}\left[T-\frac{T^{2}}{2T}\right] = a
+           </me>
+           which gives the ordinate of the axis of the curve.
+           <me>
+            a_{n}= \frac{2}{T}\int\limits_{0}^{T}f(t) \cos \left(\frac{n\pi t}{T}\right)\,dt = \frac{2}{T}\int\limits_{0}^{T}a\left(1-\frac{t}{T}\right) \cos \left(\frac{n\pi t}{T}\right)\,dt
+           </me>
+           <me>
+            =	\frac{2a}{T}\int\limits_{0}^{T}\cos \left(\frac{n\pi t}{T}\right)\,dt - \frac{2a}{T^{2}}\int\limits_{0}^{T}t\cos \left(\frac{n\pi t}{T}\right)\,dt
+           </me>
+           <me>
+            =-  \frac{2a}{T^{2}}\int\limits_{0}^{T}t\cos \left(\frac{n\pi t}{T}\right)\,dt 
+           </me>
+           <me>
+            = -\frac{2a}{T^{2}}\left[t.\frac{(\sin n\pi t/T)}{n\pi/T}-1.\frac{\cos (n\pi t/T)}{-n^{2}\pi^{2}/T^{2}}\right]_{0}^{T}
+           </me>
+           <me>
+            \left[ \because \quad \int\limits_{0}^{T}\cos \left(\frac{n \pi t}{T}\right)\,dt =0\right]
+           </me>
+           <me>
+            =-\frac{2a}{T^{2}}\left[T.\frac{\sin n\pi}{n\pi/T}+\frac{\cos n\pi}{n^{2}\pi^{2}/T^{2}}-0-\frac{1}{n^{2}\pi^{2}/T^{2}}\right]
+           </me>
+           <me>
+            =\frac{2a}{T^{2}(n^{2}\pi^{2}/T^{2})}\left[1-(-1)^{n}\right]	  
+            	     	=\begin{cases} 
+                         	0, &amp; \text{for n is even}\\ 
+                          \frac{4a}{n^{2}\pi^{2}},  &amp; \text{for n is odd}. 
+                          	     	\end{cases}
+           </me>
+           However, if the wave is expressed in terms of angular velocity <m>\omega</m>, 
+           the term <m>\cos (n\pi t/T)</m> had better replaced by <m>cos n\omega t</m> and 
+           in that case <m>a_{n}=0</m>.	<m>[\because \omega = \frac{2\pi}{T}]</m>.  
+           For <m>b_{n}</m>, we have
+           <me>
+            b_{n} = \frac{2}{T}\int\limits_{0}^{T}f(t) \sin \left(\frac{n\pi t}{T}\right)\,dt = \frac{2}{T}\int\limits_{0}^{T}a\left(1-\frac{t}{T}\right) \sin \left(\frac{n\pi t}{T}\right)\,dt 
+           </me>
+           <me>
+            =\frac{2a}{T}\int\limits_{0}^{T} \sin \left(\frac{n\pi t}{T}\right)\,dt-\frac{2a}{T^{2}}\int\limits_{0}^{T} t\sin \left(\frac{n\pi t}{T}\right)\,dt
+           </me>
+           <me>
+            =\frac{2a}{T}\left[\frac{\cos (n\pi t/T)}{-n\pi/T}\right]_{0}^{T}-\frac{2a}{T^{2}}\left[t\frac{\cos (n\pi t/T)}{-n\pi/T}-1.\frac{\sin (n\pi t/T)}{-n^{2}\pi^{2}/T^{2}}\right]_{0}^{T}
+           </me>
+          <me>
+            = \frac{2a}{T}\left[\frac{T\cos n\pi}{-n\pi}+\frac{T}{n\pi}\right]-\frac{2a}{T^{2}}\left[\frac{T \cos n\pi}{-n\pi/T}-0+\frac{\sin n\pi}{n^{2}\pi^{2}/T^{2}}-0\right] = \frac{2a}{n\pi}
+          </me>
+          <me>
+            \therefore  \quad f(t) = \frac{a}{2}+\sum\limits_{n=1}^{\infty}\left[\frac{2a}{n^{2}\pi^{2}}\left\{1-(-1)^{n}\right\} \cos \left(\frac{n\pi t}{T}\right)+\frac{2a}{n\pi} \sin \left(\frac{n\pi t}{T}\right)\right].
+          </me>
+          The graph  of the given function is shown in figure below. <image source="fig56b.png" width ="45%"/> 
+            </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Triangular wave is given by  
+          <me>
+            f(x) = \begin{cases} 
+            2at/T,  \quad \text{for} \quad  0 \lt t \lt T/2\\ 
+            2a(T-t)/T,  \quad \text{for} \quad   T/2 \lt t \lt T. 
+            \end{cases} 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            f(t) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos n\omega t + b_{n}\sin n\omega t\right],
+          </me>
+          where 
+          <me>
+            a_{0}= \frac{2}{T}\int\limits_{0}^{T}f(t) \,dt = \frac{2}{T}\left[\int\limits_{0}^{T/2} \frac{2\omega t}{T}\,dt + \int\limits_{T/2}^{T} \frac{2\omega (T-t)}{T}\,dt\right]
+          </me>
+          <me>
+            =\frac{2}{T}\left[\frac{2a}{T}\left(\frac{t^{2}}{2}\right)_{0}^{T/2}+\frac{2a}{T}\left(Tt-\frac{t^{2}}{2}\right)_{T/2}^{T}\right]
+          </me>
+          <me>
+            	=\frac{4a}{T^{2}}\left[\frac{T^{2}}{8}+\left(T^{2}-\frac{T^{2}}{2}\right)-\left(\frac{T^{2}}{2}-\frac{T^{2}}{8}\right)\right] = a.
+          </me>
+          This is the displacement of the axis of the curve from the axis of the co-ordinate system. Now,
+            <me>
+              a_{n}= \frac{2}{T}\int\limits_{0}^{T}f(t) \cos n\omega t \,dt=\frac{4a}{T^{2}}\left[\frac{2}{n^{2}\omega^{2}}\left\{(-1)^{n}-1\right\}\right]
+            </me>
+            <me>
+              =\frac{4a}{T^{2}}\left[\frac{2}{n^{2}(2\pi/T)^{2}}\left\{(-1)^{n}-1\right\}\right]
+            </me>
+            <me>
+              =\frac{2a}{n^{2}\pi^{2}}\left\{(-1)^{n}-1\right\} 
+              =\begin{cases} 
+              0,   &amp; \text{if n is even}\\ 
+              -\frac{4a}{n^{2}\pi^{2}}. &amp; \text{if n is odd} 
+              \end{cases}
+            </me>
+            thus only odd harmonics with cosine terms would appear in the series.
+            <me>
+              b_{n}= \frac{2}{T}\int\limits_{0}^{T}f(t) \sin n\omega t \,dt 
+            </me>
+            <me>
+              =\frac{2}{T}\left[\int\limits_{0}^{T/2}\frac{2at}{T} \sin n\omega   t \, dt  + \int\limits_{T/2}^{T}\frac{2a(T-t)}{T} \sin n\omega t \,dt\right]
+            </me>
+            
+            <me>
+              =\frac{4a}{T^{2}}\left[\int\limits_{0}^{T/2} t \sin n\omega t \,dt + \int\limits_{T/2}^{T} T \sin n\omega t \,dt - \int\limits_{T/2}^{T} \sin n\omega t \,dt\right] = 0.
+            </me>
+            Hence,
+            <me>
+              f(t) = \frac{a}{2}-\frac{4a}{\pi^{2}}\sum\limits_{n=1}^{\infty}\frac{\cos n\omega t}{n^{2}},
+            </me>
+           where n is an odd number.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find the Fourier series expansion a given square - wave 
+           <me>
+            f(x) = \begin{cases} 
+            	0, &amp; \text{for} \quad  -\pi \leq x \leq 0 \\ 
+              	h, &amp; \text{for} \quad  0 \leq x \leq \pi 
+                	\end{cases}
+           </me>
+           or,
+           <me> 	
+                  		f(t) = \begin{cases} 
+                      	-1, &amp; \text{for} \quad  0 \leq x \lt T/2 \\ 
+                        	0, &amp; \text{for} \quad  t =T/2\\ 
+                          	+1,  &amp; \text{for} \quad  T/2 \lt t \lt T 
+                            	\end{cases}
+           </me>
+           
+        </p>
+      </statement>
+      <solution>
+        <p> Let 
+        <me>
+          f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+        </me>
+        where  
+        <me>
+          a_{0}=\frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \,dx = \frac{1}{\pi}\left[\int\limits_{-\pi}^{0}f(x) \,dx + \int\limits_{0}^{\pi}f(x) \,dx\right]
+        </me>
+        <me>
+           = \frac{1}{\pi}\left[\int\limits_{-\pi}^{0}0.\,dx + \int\limits_{0}^{\pi}h\,dx\right] = \frac{1}{\pi}\left[h(x)_{0}^{\pi}\right] = \frac{h}{\pi}(\pi) = h.
+        </me>
+        <me>
+          a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx \,dx=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}0.\cos nx\,dx + \int\limits_{0}^{\pi}h.\cos nx\,dx\right]
+        </me>
+        <me>
+          =\frac{h}{\pi}\left[\int\limits_{0}^{\pi}\cos nx\,dx\right] = \frac{h}{\pi}\left[\left(\frac{\sin nx}{n}\right)_{0}^{\pi}\right]=0
+        </me>
+        <me>
+          b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx \,dx=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}0.\sin nx\,dx + \int\limits_{0}^{\pi}h.\sin nx\,dx\right]
+        </me>
+        <me>
+          =\frac{h}{\pi}\left[\int\limits_{0}^{\pi}\sin nx \,dx\right]=\frac{h}{\pi}\left[-\frac{\cos nx}{n}\right]_{0}^{\pi}
+         = \begin{cases}  
+         0, &amp; \text{for n even}\\ 
+         \frac{2h}{n\pi}, &amp; \text{for n odd} 
+         \end{cases}
+        </me>
+        Therefore, the required Fourier series is 
+        <me>
+          f(x) = \frac{h}{2}+\frac{2h}{\pi}\sum\limits_{n_{odd}=1}^{\infty}\left[\frac{\sin nx}{n}\right].
+        </me>
+        The graphical representation of the functions <m>f(x)</m> is shown in the figure below. 
+        <image source="fig57.png" width ="45%"/> 
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          A full - wave rectifier is given by 
+          <me>
+            f(x) = \begin{cases} 
+            		\sin x, &amp; 0 \lt x \lt \pi\\ 
+                -\sin x, &amp; -\pi \lt x \lt 0. 
+                		\end{cases}	
+          </me>
+       Find the Fourier series expansion.   
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let 
+          <me>
+            f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+          </me>
+          where  
+          <me>
+            a_{0}=\frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \,dx = \frac{1}{\pi}\left[\int\limits_{-\pi}^{0}f(x) \,dx + \int\limits_{0}^{\pi}f(x) \,dx\right]
+          </me>
+          <me>
+            =\frac{1}{\pi}\left[-\int\limits_{-\pi}^{0}\sin x\,dx + \int\limits_{0}^{\pi}\sin x\,dx\right] 
+          </me>
+          <me>
+            = \frac{2}{\pi}  \int\limits_{0}^{\pi}\sin x\,dx = \frac{4}{\pi}.
+          </me>
+          <me>
+             a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx \,dx=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}f(x)\cos nx\,dx + \int\limits_{0}^{\pi} f(x)\cos nx\,dx\right]
+          </me>
+          <me>
+             =\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}-\sin x \cos nx\,dx + \int\limits_{0}^{\pi}\sin x \cos nx\,dx\right] 
+          </me>
+          <me>
+            = \frac{2}{\pi}\int\limits_{0}^{\pi}\sin x \cos nx\,dx  
+             =\begin{cases} 
+                -\frac{4}{\pi(n^{2}-1)}, &amp; \text{for n even}\\ 
+                   0,   &amp; \text{for n odd} 
+                      \end{cases}
+          </me>
+          and 
+          <me>
+            b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx \,dx
+          </me>
+          <me>
+             =\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}-\sin x \sin nx\,dx + \int\limits_{0}^{\pi} \sin x \sin nx\,dx\right]
+          </me>
+          <me>
+           = \frac{2}{\pi}\int\limits_{0}^{\pi} \sin x \sin nx \,dx =1.  
+          </me>
+          <m>\because</m> for n=1, <m>b_{1}=\frac{1}{2}</m>]  
+        </p> 
+        <p>
+           Hence the required Fourier series is 
+          <me>
+            f(x) = \frac{2}{\pi}-\frac{4}{\pi}\sum\limits_{n_{even}=2}^{\infty}\frac{\cos nx}{(n^{2}-1)}+\sin x
+          </me>
+          The graphical representation of the functions <m>f(x)</m> is shown in figure below.	
+           <image source="fig58.png" width ="45%"/> 
+          </p>
+      </solution>
+    </example>
+</section>

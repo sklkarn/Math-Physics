@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-hermtfn" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Hermite Differential Equation</title>
+  <introduction>
+  <p>
+    <idx><h>differential equation</h></idx>
+
+The differential equation 
+<men xml:id="eqn-hermt_eq1">
+  \frac{d^{2}y}{dx^{2}}-2x\frac{\,dy}{\,dx}+2\lambda y=0
+</men>
+ is known as Hermite differential equation. Where <m> \lambda</m> is any constant. 
+ Such type of equation yields on solving the harmonic oscillator problems. 
+ It has no singularity at <m>x=0</m>. Let us assume the solution of 
+ eqn. <xref ref="eqn-hermt_eq1"/> as 
+ <men xml:id="eqn-hermt_eq2">
+  y=\sum\limits_{k=0}^{\infty}a_{k}x^{m+k}
+ </men>
+so that 
+<me>
+  \frac{\,dy}{\,dx} =\sum a_{k}(m+k)x^{m+k-1}
+</me>
+and 
+<me>
+  \frac{d^{2}y}{dx^{2}} = \sum a_{k}(m+k)(m+k-1)x^{m+k-2}
+</me>
+Substituting these values in equation <xref ref="eqn-hermt_eq2"/>, we have 
+<me>
+  \sum a_{k}(m+k)(m+k-1)x^{m+k-2}-2x\sum a_{k}(m+k)x^{m+k-1}
+</me>
+<me>
+  +2\lambda\sum a_{k}x^{m+k}=0 
+</me>
+or,
+<me>
+   \sum a_{k}(m+k)(m+k-1)x^{m+k-2}
+</me>
+
+<men xml:id="eqn-hermt_eq3">
+  -2\sum a_{k}[m+k-\lambda]x^{m+k}=0
+</men>
+Equating the coefficient of lowest power of <m>x</m> i.e., <m>x^{m-2}</m> to zero, we get -
+<me>
+  a_{o}m(m-1)=0 
+</me>
+[for <m>k=0</m>]
+ which is an indicial equation.
+ <men xml:id="eqn-hermt_eq4">
+  \because \quad a_{o}\neq 0, \quad m=0,1
+ </men>
+ Equating the coefficient of <m>x^{m-1}</m> to zero, we get -
+ <me>
+  a_{1}(m+1)m=0 
+ </me>
+ [for <m>k=1</m>]
+ <m>\because m=0</m>, <m>a_{1}</m> may or may not be zero.
+But <m>m \neq -1</m>, hence <m>a_{1}</m> must be zero.	<m> [\because m = 1]</m>
+Equating the coefficient of general term <m>x^{m+k} </m> to zero, we obtain the 
+recurrence relations among the coefficients.
+<me>
+  a_{k+2}	(m+k+2)(m+k+1)-2a_{k}(m+k-\lambda)=0 
+</me>
+or,
+<men xml:id="eqn-hermt_eq5">
+   a_{k+2}	 = \frac{2(m+k-\lambda)}{	(m+k+2)(m+k+1)}a_{k} 
+</men>
+</p>
+	<ol marker="i.">
+    <li>
+      <p>
+         For <m>m=0</m>,
+         <men xml:id="eqn-hermt_eq6">
+          a_{k+2} = \frac{2(k-\lambda)}{(k+2)(k+1)}a_{k}
+         </men>
+         Now,
+         <me>
+          a_{2}=\frac{2(-\lambda)}{2\cdot1}a_{o} =-\frac{2\lambda}{2!}a_{o};\quad a_{3}
+         </me>
+         <me>
+          =\frac{2(1-\lambda)}{3\cdot2}a_{1}=-\frac{2(\lambda-1)}{3!}a_{1};
+         </me>
+         <me>
+          a_{4}=\frac{2(2-\lambda)}{4\cdot3}a_{2}=-\frac{2^{2}(2-\lambda)\cdot\lambda}{4\cdot3\cdot2}a_{o} 
+         </me>
+         <me>
+          =\frac{2^{2}\lambda(\lambda-2)}{4!}a_{o};
+         </me>
+         <me>
+          a_{5}=\frac{2^{2}(\lambda-1)(\lambda-3)}{5!}a_{1};
+         </me>
+         <me>
+           a_{6}=\frac{2^{2}\lambda(\lambda-2)(\lambda-4)}{6!}a_{o}
+         </me>
+         and so on. Thus 
+         <me>
+          a_{2r}= \frac{-2^{r}\lambda(\lambda-2)\cdots(\lambda-2r+2)}{(2r)!}a_{o}
+         </me>
+         and 
+         <me>
+          a_{2r+1}= \frac{(-2)^{r}\lambda(\lambda-1)(\lambda-3)\cdots(\lambda-2r+1)}{(2r+1)!}a_{1}.
+         </me>
+         Thus the series solution for <m>m=0</m> is 
+         <me>
+          y=a_{o}+a_{1}x+a_{2}x^{2}+a_{3}x^{3}+a_{4}x^{4}+\cdots 
+         </me>
+         <me>
+          =a_{o}+a_{2}x^{2}+a_{4}x^{4}+\cdots+a_{1}x+a_{3}x^{3}+a_{5}x^{5}+\cdots
+         </me>
+         
+         <me>
+          =a_{o}\left[1-\frac{2\lambda}{2!}x^{2}+\frac{2^{2}\cdot\lambda(\lambda-2)}{4!}x^{4}-\cdots\right.
+         </me>
+         <me>
+          \left.+\frac{-2^{r}\cdot\lambda(\lambda-2)\cdots(\lambda-2r+2)}{(2r)!}x^{2r}+\cdots\right]
+         </me>
+         <me>
+           +a_{1}x\left[1-\frac{2(\lambda-1)}{3!}x^{2}+\cdots\right.
+         </me>
+         
+         <men xml:id="eqn-hermt_eq7">
+         \left.+\frac{-2^{r}(\lambda-1)(\lambda-3)\cdots(\lambda-2r+1)}{(2r+1)!}x^{2r}+\cdots\right]
+         </men>
+      </p>
+    </li>
+    <li>
+      <p>
+        For <m>m=1</m>,
+        <men xml:id="eqn-hermt_eq8">
+          a_{k+2} = \frac{2(1+k-\lambda)}{(k+3)(k+2)}a_{k}
+        </men>
+        hence,
+        <me>
+          a_{2}=\frac{2(1-\lambda)}{3\cdot2}a_{o}=-\frac{2(\lambda-1)}{3!}a_{o};
+        </me>
+        <me>
+          a_{4}=\frac{2(3-\lambda)}{5\cdot3}a_{2}=\frac{2^{2}(\lambda-3)(\lambda-1)}{5!}a_{o} 
+        </me>
+         and 
+         <me> 
+         a_{1}=a_{3}=a_{5}=\cdots=0.
+        </me>
+      </p>
+    </li>
+  </ol>
+Hence the series solution for <m>m=1</m> is
+<me>
+   y=a_{o}x\left[1-\frac{2(\lambda-1)}{3!}x^{2}+\frac{2^{2}(\lambda-1)(\lambda-3)}{5!}x^{4}-\cdots\right.
+</me>
+<men xml:id="eqn-hermt_eq9">
+\left.+\frac{(-2)^{r}(\lambda-1)(\lambda-3)\cdots(\lambda-2r+1)}{(2r+1)!}x^{2r}+\cdots\right] =y_{2} \hspace{2pt}(say)
+</men> 	
+Equation <xref ref="eqn-hermt_eq9"/> is a part of solution given in equation <xref ref="eqn-hermt_eq7"/>, 
+which is not possible, because solutions <xref ref="eqn-hermt_eq7"/> and <xref ref="eqn-hermt_eq9"/> 
+are two different solutions of the same equation. Hence <m> a_{1}</m> must be zero in 
+solution <xref ref="eqn-hermt_eq7"/>.
+<me>
+   \therefore y=a_{o}x\left[1-\frac{2\lambda}{2!}x^{2}+\frac{2^{2}\lambda(\lambda-2)}{4!}x^{4}-\cdots\right.
+</me>
+
+<men xml:id="eqn-hermt_eq10">
+	\left.+\frac{(-2)^{r}\lambda(\lambda-2)\cdots(\lambda-2r+2)}{(2r)!}x^{2r}+\cdots\right]=y_{1}\hspace{2pt} \text{(say)}
+</men>
+The general solution of equation <xref ref="eqn-hermt_eq1"/> is then given by 
+<men xml:id="eqn-hermt_eq11">
+  y=Ay_{1}+By_{2}
+</men>   
+ Where <m>A</m> and <m>B</m> are arbitrary constants.
+    
+     </introduction>
+ 
+ <subsection xml:id="subsec-hermit-pol">
+  <title>Hermite Polynomials <m>H_{n}(x)</m></title>
+  <introduction>
+   
+   <figure xml:id="fig-fig45">
+    <caption>hermite's Polynomial</caption>
+    <image source="fig45.png" width ="45%"/>
+</figure>
+   <p>
+  If we choose <m>a_{o}=(-1)^{\frac{n}{2}}\frac{n!}{\frac{n}{2}!}</m> and <m>\lambda=n</m> 
+  is an even integer then the series <xref ref="eqn-hermt_eq10"/> is terminating which 
+  gives the even polynomial, known as Hermite Polynomial, <m> H_{n}(x) </m>.
+  The term containing <m>x^{n} </m> in equation <xref ref="eqn-hermt_eq10"/> is 
+    <me>
+      (-1)^{\frac{n}{2}}\frac{n!}{\frac{n}{2}!} (-2)^{\frac{n}{2}}\frac{n(n-2)\cdots(n-n+2)}{n!}x^{n}
+    </me>
+    <me>
+      =(-1)^{\frac{n}{2}}\frac{n!}{\frac{n}{2}!} (-1)^{\frac{n}{2}}(2)^{\frac{n}{2}}\frac{\frac{n}{2}(\frac{n}{2}-2)\cdots1}{n!}2^{\frac{n}{2}}x^{n}
+    </me>
+    <me>
+      =(-1)^{n}2^{n}\frac{(\frac{n}{2})!}{(\frac{n}{2})!}x^{n}=(2x)^{n}.
+    </me>
+      The term containing <m>x^{n-2}</m> is	  
+    </p>
+<p>
+  <me>
+    (-1)^{\frac{n}{2}}\frac{n!}{\frac{n}{2}!} (-2)^{\frac{n-2}{2}}\frac{n(n-2)\cdots(n-n+4)}{(n-2)!}x^{n-2}
+  </me>
+  <me>
+    =  (-1)^{\frac{n}{2}} \frac{n(n-1)!(n-2)}{\frac{n}{2}!} (-1)^{\frac{n}{2}} (2)^{\frac{n-2}{2}}
+  </me>
+  <me>
+    \times (-1)^{-1}\frac{\frac{n}{2}(\frac{n}{2}-2)\cdots2\cdot1}{1!(n-2)!}2^{\frac{n}{2}}(2)^{\frac{n-2}{2}}x^{n-2}
+  </me>
+  
+  <me>
+    =-\frac{n(n-1)}{1!} 2^{n-2}x^{n-2}=-\frac{n(n-1)}{1!}(2x)^{n-2}
+  </me>
+  and so on.
+Therefore, the Hermite Polynomial <m> H_{n}(x)</m> is defined as 
+<me>
+  H_{n}(x)=\left[(2x)^{n}-\frac{n(n-1)}{1!}(2x)^{n-2}+\frac{n(n-1)(n-2)(n-3)}{2!}(2x)^{n-4} \right.
+</me>
+<me>
+   \left.+\cdots+(-1)^{r}\frac{n(n-1)(n-2)\cdots(n-2r+1)}{r!}(2x)^{n-2r}\right.
+</me>
+
+<men xml:id="eqn-herm_pol1">
+\left. +\cdots+(-1)^{r}\frac{n!}{(\frac{n}{2})!}\right]
+</men>
+Similarly, equation <xref ref="eqn-hermt_eq9"/> reduces to a polynomial if 
+<m>\lambda=m </m>  is an odd integer. Let's choose 
+<me>
+  a_{o}=(-1)^{\frac{m-1}{2}}\frac{(m+1)!}{(\frac{m+1}{2})!},
+</me>
+then the term containing <m> x^{m}</m> in the equation <xref ref="eqn-hermt_eq9"/> is
+<me>
+  (-1)^{\frac{m-1}{2}}\frac{(m+1)!}{(\frac{m+1}{2})!}(-2)^{\frac{m-1}{2}}\frac{(m-1)(m-3)\cdots(m-m+1+1)}{m!}x^{m}
+</me>
+<m>[\because m=2r+1]</m>
+<me>
+  =(-1)^{m-1}(2)^{\frac{m-1}{2}}\frac{(m+1)(m-1)(m-3)\cdots2}{(\frac{m+1}{2})!}x^{m}
+</me>
+<me>
+  =2^{(\frac{m-1}{2})}\frac{(\frac{m+1}{2})(\frac{m-1}{2})\cdots1}{(\frac{m+1}{2})!}2^{(\frac{m+1}{2})}x^{m}
+</me>
+<me>
+  =2^{m}x^{m}=(2x)^{m}
+</me>
+and so on. 
+Hence, we have the Hermite polynomia for odd integer is 
+<me>
+    H_{m}(x)=\left[(2x)^{m}-\frac{m(m-1)}{1!}(2x)^{m-2}+\cdots\right.
+</me>
+<me>
+   \left.+(-1)^{r}\frac{m(m-1)\cdots(m-2r+1)}{r!}(2x)^{m-2r}+\cdots\right.
+</me>
+
+<men xml:id="eqn-herm_pol2">
+  \left.+(-1)^{(\frac{m-1}{2})}\frac{(m+1)!}{(\frac{m+1}{2})!}x\right]
+</men>
+   
+From equations <xref ref="eqn-herm_pol1"/> and <xref ref="eqn-herm_pol2"/>, we get - 
+<me>
+  H_{n}(0)=(-1)^{n}\frac{n!}{(\frac{n}{2})!}
+</me>
+where <m>n</m> is even and <m> H_{m}(0)</m> where <m>m</m> is odd.
+	For particulars, we have 
+  <me>
+    H_{o}(x)=1, \quad   H_{1}(x)=2x,\quad    H_{2}(x)=4x^{2}-2, \quad   H_{3}(x)=8x^{3}-12,
+  </me>
+  <me>
+      H_{4}(x)=16x^{4}-48x^{2}+12,
+  </me>
+  and so on.
+  In general 
+  <me>
+    H_{n}(x)=\sum\limits_{r=0}^{N}(-1)^{r}\frac{n!}{r!(n-2r)!}(2x)^{n-2r}
+  </me>
+  where 
+  <me>
+     N=\begin{cases} 
+     	\frac{n}{2}, &amp; \text{if n is even}\\ 
+      	\frac{n-1}{2}, &amp; \text{if n is odd}. 
+        	\end{cases}
+  </me>
+The graph of these functions is shown in figure <xref ref="fig-fig45"/>.
+  </p>
+
+  </introduction>
+
+<paragraphs>
+    <title>Pythone Code:</title>
+    <p>  import math </p>
+ <p> import numpy as np </p>
+ <p> import matplotlib.pyplot as plt </p>
+ <p> from scipy.special import hermite    </p>
+  <p> def HERMITE(X,N):</p>
+    <p> HER = hermite(N)</p>
+   <p>  sn  = HER(X)</p>
+   <p>  return sn</p>
+ <p> x = np.linspace(-2.5,2.5,1000)</p>
+ <p> for n in np.arange(0,5,1):</p>
+  <p>   y = HERMITE(x,n)</p>
+  <p>   plt.plot(x, y, label=r'$H_{}(x)$'.format(n))</p>
+   <p>  plt.title("Hermite Polynomials")</p>
+    <p> plt.xlabel("x")</p>
+      <p> plt.ylabel(r'$H_n(x)$')</p>
+      <p> plt.legend(loc='lower right')</p>
+     <p> plt.show()</p>
+  
+  </paragraphs>
+
+<subsubsection xml:id="subsubsec-hermt_genfn">
+  <title>Generating Function for <m>H_{n}(x)</m></title>
+  <p>
+    <idx><h>generating function</h></idx> Hermite polynomial <m>H_{n}(x)</m> is 
+    the coefficient of <m> \frac{z^{n}}{n!}</m> in the expansion of <m>e^{2zx-z^{2}} </m> i.e.,
+    <men xml:id="eqn-hermt_gen1">
+      e^{2zx-z^{2}}=\sum_{n=0}^{\infty} \frac{z^{n}}{n!}H_{n}(x) 
+    </men>
+ </p>
+
+<proof>
+  <p>
+    We have 
+    <me>
+      e^{2zx-z^{2}}=e^{2zx}\cdot e^{-z^{2}}
+    </me>
+    <me>
+      =\left[1+2zx+\frac{(2x)^{2}}{2!}z^{2}+\cdots+\frac{(2x)^{r}}{r!}z^{r}+\cdots\right]
+    </me>
+    <me>
+      \cdot\left[1-\frac{z^{2}}{1!}+\frac{(z^{2})^{2}}{2!}-\cdots+(-1)^{s}\frac{z^{2s}}{s!}+\cdots\right]
+    </me>
+    
+    <me>
+      =\sum_{r=0}^{\infty} \frac{(2x)^{r}}{r!}z^{r}\cdot\sum_{s=0}^{\infty} (-1)^{s}\frac{(z)^{2s}}{s!}
+    </me>
+    <men xml:id="eqn-hermt_gen2">
+      =\sum_{r=0}^{\infty}\sum_{s=0}^{\infty}(-1)^{s}\frac{(2x)^{r}}{r!s!} z^{r+2s}
+    </men>
+    for fixed value of <m>s</m>, (as <m>r</m> in the general term of <m>H_{n}(x)</m>) 
+    the coefficient of <m>z^{n}</m> is obtained by putting 	<m>r+2s=n</m> or, <m>r=n-2s</m>
+<me>
+  \therefore e^{2zx-z^{2}}=\sum_{s=0}^{\infty}\frac{(-1)^{s}(2x)^{n-2s}}{s!(n-2s)!}z^{n}
+</me>
+Now, we know that since <m>r \geq 0</m>, we must have  <m>n-2s \geq 0 </m> 
+or, <m>s\leq \frac{n}{2} </m>. Thus, if <m>n</m> is even <m>s</m> varies from 0 
+to <m>\frac{n}{2}</m> and when <m>n</m> is odd <m>s</m> varies from 0 to <m>\frac{n-1}{2}</m>. 
+Hence, the coefficient of <m>z^{n}</m>
+<me>
+  =\sum_{s=0}^{\infty}\frac{(-1)^{s}(2x)^{n-2s}}{s!(n-2s)!}\frac{n!}{n!}=\frac{H_{n}(x)}{n!}
+</me>
+Hence,
+<men xml:id="eqn-hermt_gen3">
+  e^{2zx-z^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n}
+</men>
+The function <m>e^{2zx-z^{2}} </m> is thus said to be the generating function of Hermite polynomials. 
+    </p>
+    
+</proof>	
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-hermt_rodrg">
+  <title>Rodrigue's Formula for Hermite Polynomials</title>
+  <p>
+    <me>
+      H_{n}(x)=(-1)^{n}e^{x^{2}}\frac{d^{n}}{dx^{n}}(e^{-x^{2}}) 
+    </me>
+      is the Rodrigue's formula for Hermite polynomials.
+         </p>
+	<proof>
+    <p>
+      We know that
+      <men xml:id="eqn-hermt_rodrg1">
+        e^{2zx-z^{2}}= e^{x^{2}-(z-x)^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n}
+      </men>
+      Differentiating <m>n</m> times w. r. t. <m>z</m>, we get - 
+      <men xml:id="eqn-hermt_rodrg2">
+        e^{x^{2}}\frac{d^{n}}{dx^{n}}[e^{-(z-x)^{2}}]=	H_{n}(x)+H_{n+1}(x)z+\cdots
+      </men>
+      But, we have
+      <me>
+        \frac{\,d}{\,dz}[e^{-(z-x)^{2}}]=-2(z-x)e^{-(z-x)^{2}}
+      </me>
+      and 
+      <me>
+         \frac{\,d}{\,dx}[e^{-(z-x)^{2}}]=+2(z-x)e^{-(z-x)^{2}}
+      </me>
+      or, 
+      <me>
+        \lim\limits_{z\to 0}\frac{\,d}{\,dz}[e^{-(z-x)^{2}}]=2xe^{-x^{2}}=(-1)^{1}\lim\limits_{z\to 0}\frac{d}{dx}[e^{-(z-x)^{2}}]
+      </me>
+      similarly, 
+      <me>
+        \lim\limits_{z\to 0}\frac{d^{2}}{dz^{2}}[e^{-(z-x)^{2}}]=(-1)^{2}\lim\limits_{z\to 0}\frac{d^{2}}{dx^{2}}[e^{-(z-x)^{2}}]
+      </me>
+      and so on. In general, 
+      <me>
+         \lim\limits_{z\to 0}\frac{d^{n}}{dz^{n}}[e^{-(z-x)^{2}}]
+      </me>
+      
+      <men xml:id="eqn-hermt_rodrg3">
+       =(-1)^{n}\lim\limits_{z\to 0}\frac{d^{n}}{dx^{n}}[e^{-(z-x)^{2}}]=(-1)^{n}\frac{d^{n}}{dx^{n}}[e^{-x^{2}}]
+      </men>
+      Hence from equation <xref ref="eqn-hermt_rodrg2"/>, we have 
+      <me>
+        \lim\limits_{z\to 0}e^{x^{2}}\frac{d^{n}}{dz^{n}}[e^{-(z-x)^{2}}]=H_{n}(x) 
+      </me>
+      <me>
+        =	 e^{x^{2}}\lim\limits_{z\to 0}\frac{d^{n}}{dz^{n}} [e^{-(z-x)^{2}}]=  e^{x^{2}}(-1)^{n}\frac{d^{n}}{dx^{n}}e^{-x^{2}} 
+      </me>
+      [from equation <xref ref="eqn-hermt_rodrg3"/>]
+      <men xml:id="eqn-hermt_rodrg4">
+        \therefore H_{n}(x)=(-1)^{n} e^{x^{2}}\frac{d^{n}}{dx^{n}}[e^{-x^{2}}]  
+      </men>
+      This is differential form of Hermite polynomial, which gives 
+      <me>
+         H_{o}(x)=1,  H_{1}(x)=2x,  H_{2}(x)=4x^{2}-2,
+      </me>
+      and so on.
+    </p>
+  </proof>
+   
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-hermt_recr">
+  <title>Recurrence Relation for Hermite Polynomials</title>
+  
+    <ol marker ="I.">
+      <li>
+        <p>
+          <me>
+            2n H_{n-1}(x) = H'_{n}(x)
+          </me>
+          </p>
+
+           <proof>
+            <p>
+          We know that
+          <men xml:id="eqn-hermt_rec1">
+             e^{2zx-z^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n}
+          </men>
+          Differentiating w. r. to <m>x</m>, we get -
+          <men xml:id="eqn-hermt_rec2">
+            2z e^{2zx-z^{2}}=\sum_{n=0}^{\infty}\frac{H'_{n}(x)}{n!}z^{n}
+          </men>
+          or,
+          <me>
+            2z\frac{H_{n}(x)}{n!}z^{n}=\sum_{n=0}^{\infty}\frac{H'_{n}(x)}{n!}z^{n}
+          </me>
+          or,
+          <me>
+            2\frac{H_{n}(x)}{n!}z^{n+1}=\sum_{n=0}^{\infty}\frac{H'_{n}(x)}{n!}z^{n}
+          </me>
+            Equating the coefficients of <m>z^{n}</m> on both sides, we get -
+            <me>
+               2\frac{H_{n-1}}{(n-1)!}=\frac{H'_{n}}{n!}
+            </me>
+            or,
+            <me>
+              2\frac{H_{n-1}}{(n-1)!}=\frac{H'_{n}}{n(n-1)!}
+            </me>
+            or,
+            <me>
+              2n H_{n-1}=H'_{n}
+            </me>
+             </p>
+          </proof>    
+      </li>
+      <li>
+        <p>
+           <me>
+            2x H_{n}= 2nH_{n-1}+H_{n+1} 
+          </me>
+          </p>
+            
+          <proof>
+          <p>
+          We know that
+          <men xml:id="eqn-hermt_rec3">
+            e^{2zx-z^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n}
+          </men>
+              Differentiating w. r. to <m>z</m>, we get -
+              <me>
+                (2x-2z) e^{2zx-z^{2}}=\sum_{n=0}^{\infty}n\frac{H_{n}(x)}{n!}z^{n-1}
+              </me>
+                or, 
+                <me>
+                  2x\frac{H_{n}(x)}{n!}z^{n}-2\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n+1}
+                </me>
+                
+                <men xml:id="eqn-hermt_rec4">
+                   =\sum_{n=0}^{\infty}\frac{H_{n}(x)}{(n-1)!}z^{n-1}
+                </men>
+                Equating the coefficient of <m>z^{n}</m> on both sides, we get -
+               <me>
+                2x\frac{H_{n}}{(n)!}-2\frac{H_{n-1}}{(n-1)!}=\frac{H_{n+1}}{(n)!}
+               </me>
+               or,
+               <me>
+                2x\frac{H_{n}}{n}-2H_{n-1}=\frac{H_{n+1}}{n}
+               </me>
+               or,
+               <me>
+                2xH_{n}=2nH_{n-1}+H_{n+1}
+               </me>
+                </p>
+          </proof>
+      </li>
+      <li>
+        <p>
+          <me>
+            H'_{n}=2xH_{n}-H_{n+1}
+          </me>
+        </p>
+        <proof>
+          <p>
+            We have
+           <men xml:id="eqn-hermt_rec5">
+            2n H_{n-1}=H'_{n}
+           </men>
+            [from relation 1.]
+            and 
+            <men xml:id="eqn-hermt_rec6">
+              2x H_{n}=2nH_{n-1}+H_{n+1}
+            </men>
+            [from relation 2.] 
+          Substituting equation <xref ref="eqn-hermt_rec5"/> in equation 
+          <xref ref="eqn-hermt_rec6"/>, we get -
+          <me>
+            	H'_{n}=2xH_{n}-H_{n+1} 
+          </me>
+          </p>
+        </proof>
+      </li>
+      <li>
+        <p>
+          <me>
+            H''_{n}-2xH'_{n}+2nH_{n}=0. 
+          </me>
+        </p>
+        <proof>
+          <p>
+            Differentiating relation 3. w. r. to <m>x</m> we get -
+            <men xml:id="eqn-hermt_rec7">
+              H''_{n}=2H_{n}+2xH'_{n}-H'_{n+1}
+            </men>
+            From relation 1, we have -
+            <me>
+              2nH_{n-1}=H'_{n}
+            </me>
+            put, <m> n=n+1</m> we get -
+            <men xml:id="eqn-hermt_rec8">
+              2(n+1)H_{n}=H'_{n+1}
+            </men>
+            Substituting equation <xref ref="eqn-hermt_rec8"/> in equation 
+            <xref ref="eqn-hermt_rec7"/>, we get - 
+            <me>
+              H''_{n}=2H_{n}+2xH'_{n}-2(n+1)H_{n}
+            </me>
+            <me>
+              H''_{n}-2xH'_{n}+2nH_{n}=0. 
+            </me>
+          </p>
+        </proof>
+      </li>
+    </ol> 
+</subsubsection>
+
+	<subsubsection xml:id="subsubsec-hermt_orth">
+    <title>Orthogonality of Hermite Polynomials</title>
+    <p>
+      <me>
+        \int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x) H_{n}(x)\,dx =2^{n}n!\sqrt{\pi}\delta_{m,n}  
+      </me>
+      where 
+      <me>
+       \delta_{m,n}= \begin{cases} 
+       1, &amp; \text{for}\quad m=n\\ 
+       0, &amp; \text{for}\quad m \neq n 
+       \end{cases}
+      </me>
+      </p>
+      <proof>
+        <p>
+          We know that 
+          <men xml:id="eqn-hermt_orth1">
+            e^{2tx-t^{2}}=\sum_{m=0}^{\infty}\frac{H_{m}(x)}{m!}t^{m}
+          </men>
+          and 
+          <men xml:id="eqn-hermt_orth2">
+            e^{2sx-s^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}s^{n}
+          </men>
+          Multiplying equations <xref ref="eqn-hermt_orth1"/> and <xref ref="eqn-hermt_orth2"/>, 
+          we get -
+          <me>
+            e^{2tx-t^{2}}\times e^{2sx-s^{2}}=	\sum_{m=0}^{\infty}\frac{H_{m}(x)}{m!}t^{m} \times \sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}s^{n}	
+          </me>
+          or,
+          <me>
+             \sum_{m,n=0}^{\infty}\frac{H_{m}(x)}{m!}\frac{H_{n}(x)}{n!}t^{m}s^{n}=e^{2tx-t^{2}+2sx-s^{2}}
+          </me>
+          
+          <men xml:id="eqn-hermt_orth3">
+           =e^{2x(t+s)-(t^{2}+s^{2})}
+          </men>
+            Now multiplying equation <xref ref="eqn-hermt_orth3"/> by <m>e^{-x^{2}}</m> 
+            on both sides and integrating w. r. t. 'x' from <m>-\infty</m> to <m> \infty </m>, we get -
+            <me>
+              \sum_{m,n=0}^{\infty}\left[\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx\right]\frac{t^{m}s^{n}}{m!n!} =\int\limits_{-\infty}^{\infty}e^{-x^{2}+2x(t+s)-(t^{2}+s^{2})}\,dx
+            </me>
+        
+            <me>
+              =\int\limits_{-\infty}^{\infty}e^{-x^{2}+2x(t+s)-(t+s)^{2}}\cdot e^{2ts}\,dx
+            </me>
+            putting <m>[x-(t+s)]=y</m>	so that <m> \,dx=\,dy</m>.
+            <me>
+              =e^{2ts}\int\limits_{-\infty}^{\infty}e^{-y^{2}}\,dy =e^{2ts}\sqrt{\pi} \hspace{1cm}  \left[\because \int\limits_{-\infty}^{\infty}e^{-y^{2}}\,dy=\sqrt{\pi}\right]
+            </me>
+
+            <men xml:id="eqn-hermt_orth4">
+              =\sqrt{\pi}\sum_{n=0}^{\infty}\frac{(2ts)^{n}}{n!}=\sum_{n=0}^{\infty}\sqrt{\pi}\frac{2^{n}t^{n}s^{n}}{n!}
+            </men>
+              The RHS of series contains only the terms having equal powers of <m>'t'</m> 
+              and <m>'s'</m>. Therefore the coefficient of <m>t^{n}s^{n}</m> 
+              provided <m> m \neq n</m> will be zero. Hence equating the coefficient of <m>t^{m}s^{n}</m> 
+              on both sides of equation <xref ref="eqn-hermt_orth4"/>, we get -
+              <men xml:id="eqn-hermt_orth5">
+                \int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =0 \text{when} \quad m \neq n
+              </men>
+                and 
+                <men xml:id="eqn-hermt_orth6">
+                  \int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =\sqrt{\pi} 2^{n}n! \quad \text{when}\quad m = n
+                </men>
+                 Hence from equations <xref ref="eqn-hermt_orth5"/> and 
+                 <xref ref="eqn-hermt_orth6"/>, we have 
+                 <men xml:id="eqn-hermt_orth7">
+                  \int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =2^{n}\sqrt{\pi} n!	\delta_{m,n};	
+                 </men>
+                 where, 
+                 <me>
+                  \delta_{m,n}= \begin{cases} 
+                  1, &amp; \text{for}\quad m=n\\ 
+                  0, &amp; \text{for}\quad m \neq n 
+                  \end{cases}
+                 </me>
+        </p>
+      </proof>
+  </subsubsection>
+ </subsection>
+
+  </section>
+

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_third-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Rank of a Tensor</title>
+  <introduction>
+   <p>
+    The rank (order) of a tensor is the number of indices in the symbol representing a tensor. 
+    For example: <m>A</m> is a tensor of rank zero (scalar), <m>B^{i}</m> is a contravarient 
+    tensor of rank one (vector), <m>C_{k}</m> is a covarient tensor of rank one (vector), 
+    <m>D_{ij}</m> is a covarient tensor of rank two (dyadic), 
+    <m>M^{p q r}</m>	is a contravarient tensor of rank three (triadic), 
+    and	<m>T_{kl.....}^{ij....}</m> is a mixed tensor of rank four. 
+    </p>
+   <p>
+    In an <m>n</m>- dimensional space, the number of components of a tensor of rank <m>r</m> is <m>n^{r}</m>. 
+    For example: A scalar has one component (magnitude only) and hence zero basis vector per component. 
+    A vector has two components (magnitude and one direction) in <m>2D</m> and hence has 1 basis vector 
+    per component. A vector has 3 components (magnitude and one direction) in 3D and hence has 1 basis 
+    vector per component. A tensor of rank 2 (dyad) has <m>3^{2} = 9</m> components 
+    (magnitude and two directions) in 3D hence has 2 basis vectors per component. 
+    A tensor of rank 3 (triad) has <m>3^{3} = 27</m> components (magnitude and three directions) 
+    in 3D hence has 3 basis vectors per component and so on.
+    </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-cont_cov">
+  <title>Contravarient and Covarient Tensors</title>
+  <introduction>
+    <p>
+      Covariance and contravariance describe how the quantitative description of physical entities 
+      change with a change of basis. A covariant tensor is one that transforms in the same way 
+      as the coordinate system itself. This means that the components of the tensor change in a 
+      particular way when the coordinates of the system are changed. A contravariant tensor, 
+      on the other hand, transforms in the opposite way to the coordinate system. 
+      This means that the components of the tensor change in a particular way when the coordinates 
+      of the system are changed. For a contravariant vector to be basis independent, 
+      the components of the vector must contra-vary 
+      (opposite manner) with a change of basis to compensate. That is, the components must vary with 
+      the inverse transformation to that of the change of basis. These componets of vectors are said 
+      to be contravariant. Examples of vectors with contravariant componets include the position of 
+      an object (displacement) relative to an observer, or any derivative of position with respect 
+      to time including velocity, acceleration, and jerk. For a covariant vector to be basis-independent, 
+      the components of the vector must co-vary (same manner) with change of basis to remain representing 
+      the same vector. That is, the componets must vary by the same transformation as the change of basis. 
+      The componets of these vectors are said to be covariant. Examples of covariant vectors apear when 
+      taking a gradiant of a function.
+    </p>
+    <p>
+      If a set of components <m>A^{j}</m> of a physical quantity in a coordinate system 
+      <m>(x^{1}{,} x^{2}{,} x^{3}{,} \cdots{,} x^{n})</m> are related to the set of components 
+      <m>\bar{A}^{i}</m>  of the same quantity in another coordinate system  
+      <m>(\bar{x}^{1}{,} \bar{x}^{2}{,} \bar{x}^{3}{,} \cdots{,} \bar{x}^{n})</m> by the transformation equation.
+      <men xml:id="eqn-tens4">
+        \bar{A}^{i} = \frac{\partial \bar{x}^{i} }{\partial x^{j}}A^{j}\quad [i, j = 1,2,3 \cdots n]
+      </men>
+      then they are called components of a contravarient vector or contravarient tensor of rank one. 
+      Multiply eqn. <xref ref="eqn-tens4"/> by <m>\frac{\partial x^{k}}{\partial \bar{x}^{i}}</m>, we get - 
+      <me>
+        \frac{\partial x^{k}}{\partial \bar{x}^{i}}\bar{A}^{i} 
+        = \frac{\partial x^{k}}{\partial \bar{x}^{i}} \frac{\partial \bar{x}^{i} }{\partial x^{j}}A^{j} 
+        = \frac{\partial x^{k}}{\partial x^{j}} A^{j} = \delta^{k}_{j}A^{j} = A^{k}
+      </me>
+      or, we can also say,
+     <men xml:id="eqn-tens5">
+      A^{j} = \frac{\partial x^{j}}{\partial \bar{x}^{i}}\bar{A}^{i}
+     </men>
+     by replacing <m>k</m> with <m>j</m>.
+      </p>
+      <p>
+        Thus eqn. <xref ref="eqn-tens5"/> is an alternative to eqn. <xref ref="eqn-tens4"/>. where Kronecker delta, 
+        <me>
+          \delta_{j,k} = 
+          \begin{cases} 
+              1, &amp; \text{if } j = k \\
+                  0,  &amp; \text{if } j \neq k 
+                  \end{cases}	
+        </me>
+        A set of quantities <m>B</m> is called the components of a covarient vector or covarient tensor of 
+        rank one if <m>A^{k}B_{k}</m> = invarient (a scalar)  = <m>\bar{A}^{k}\bar{B}_{k}</m>. Or,
+        <me>
+          \bar{A}^{k}\bar{B}_{k} = A^{k}B_{k} = \frac{\partial x^{k}}{\partial \bar{x}^{i}}\bar{A}^{i} B_{k} 
+          = \frac{\partial x^{\alpha}}{\partial \bar{x}^{k}}\bar{A}^{k} B_{\alpha}
+        </me>
+        by changing <m>k</m> with <m>\alpha</m> and  <m>i</m> with <m>k</m>. Or,
+        <me>
+          \bar{A}^{k} \left[B_{k}-\frac{\partial x^{\alpha}}{\partial \bar{x}^{k}}B_{\alpha}\right] = 0 
+        </me>
+        <men xml:id="eqn-tens6">
+          \therefore  \bar{B}_{k} = \frac{\partial x^{\alpha}}{\partial \bar{x}^{k}}B_{\alpha}
+        </men>
+        or,
+        <men xml:id="eqn-tens7">
+          \bar{A}_{j} = \frac{\partial x^{i}}{\partial \bar{x}^{j}}A_{i} 
+        </men>
+        also, 
+        <men xml:id="eqn-tens8">
+          A_{i}=\frac{\partial \bar{x}^{j}}{\partial x^{i}}\bar{A}_{j}
+        </men>
+        are covarient tensor of rank one.
+        </p>
+        <p>
+          If <m>n^{2}</m> quantities <m>A^{kl}</m> in a coordinate system 
+          <m>(x^{1}{,} x^{2}{,} x^{3}{,} \cdots{,} x^{n})</m> are related to <m>n^{2}</m> 
+          other quantities <m>\bar{A}^{ij}</m> in another coordinates 
+          <m>(\bar{x}^{1}{,} \bar{x}^{2}{,} \bar{x}^{3}{,} \cdots{,} \bar{x}^{n})</m> by the transformation eqn.
+          <men xml:id="eqn-tens9">
+            \bar{A}^{ij}=\frac{\partial \bar{x}^{i}}{\partial x^{k}} \frac{\partial \bar{x}^{j}}{\partial x^{l}} A^{kl}
+          </men>
+          <m>here, [i,j = 1,2,3, \cdots n]</m>, The <m>A^{kl}</m> are the components of a second rank 
+          contravarient tensor. Similarly,
+          <men xml:id="eqn-tens10">
+            \bar{A}_{ij}=\frac{\partial x^{k}}{\partial \bar{x}^{i}} \frac{\partial x^{l}}{\partial \bar{x}^{j}} A_{kl}
+          </men>
+          and the <m>A_{kl}</m> are the components of a second rank covarient tensor. 
+          Also,
+          <men xml:id="eqn-tens11">
+            \bar{A}^{i}_{j}=\frac{\partial \bar{x}^{i}}{\partial x^{k}} \frac{\partial x^{l}}{\partial \bar{x}^{j}} A^{k}_{l}
+          </men>
+          and the <m>A^{k}_{l}</m> are the components of a second rank mixed tensor. Again,
+          <men xml:id="eqn-tens12">
+            \bar{A}^{prm}_{ij} = \frac{\partial \bar{x}^{p}}{\partial x^{q}} \frac{\partial \bar{x}^{r}}{\partial x^{s}} \frac{\partial \bar{x}^{m}}{\partial x^{t}}  \frac{\partial x^{k}}{\partial \bar{x}^{i}} \frac{\partial x^{l}}{\partial \bar{x}^{j}}A^{qst}_{kl}
+          </men>
+          and <m>A^{qst}_{kl}</m> are a components of fifth - rank mixed tensor.
+          </p>
+          <p>
+            <term>Note:</term> The contravarient tensor is represented by components in the directions 
+          of coordinate increase whereas a covarient tensor is represented by components in the directions 
+          orthogonal to constant coordinate surfaces. In case of a cartesian coordinate system, the 
+          coordinate direction <m>x^{i}</m> concides with the direction orthogonal to the constant 
+          <m>x^{i}</m> surface so that the direction between the covarient and contravarient tensors 
+          vanishes. Hence we can not distinguish between them in cartesian systems. 
+          The covariance or contravariance of the tensor components is not intrinsic property of the 
+          entity but this distinction is due to the way in which the entity is related to coordinate 
+          system to which it is referred. It is to be noted that in a cartesian system
+          <me>
+            \frac{\partial x^{j}}{\partial \bar{x}^{i}}= \frac{\partial \bar{x}^{i}}{\partial x^{j}}.
+          </me>
+          That is, both these partial derivatives are equal to the direction cosines between 
+          <m>\bar{x}^{i}</m> - and  <m>x^{i}</m> - axes. Hence there is no difference between 
+          contravariant and covariant transformations in cartesian coordinates. In other coordinate 
+          system this is not true in general, thus the difference in covariant and contravariant is observed. 
+            </p>
+          <p>
+            The tensor whose components transform like coordinate differential are called contravariant tensors. In this expression 
+            <me>
+              \bar{A}^{i} = \sum\limits_{j=1}^{3}\frac{\partial \bar{x}^{i}}{\partial x^{j}}{A}^{j};
+            </me>
+            where <m>\frac{\partial \bar{x}^{i}}{\partial x^{j}}</m> are the coordinate differentials. For example:
+            <ol>
+              <li>
+                In cartesian coordinates <m>(x,y)</m>, suppose the velocity components are 
+                <m>\dot{x}=\frac{\,dx}{\,dt}</m>, <m>\dot{y}=\frac{dy}{dt}</m>;
+              </li>
+              <li>
+                 In oblique coordinats <m>(\alpha{,}\beta)</m> the velocity components are 
+                 <m>\dot{\alpha}=\frac{\,d \alpha}{\,dt}</m>, <m>\dot{\beta}=\frac{\,d \beta}{\,dt}</m>; and
+                </li>
+                <li>
+                  In polar coordinates <m>(r, \theta)</m>, the velocity components are 
+                  <m>\dot{r}=\frac{\,dr}{\,dt}</m>, <m>\dot{\theta}=\frac{\,d\theta}{\,dt}</m>.
+                  </li>
+            </ol>
+Since all these relations express the velocity of same particle, they are related to each other in the following way:
+<me>
+  \frac{\,d\alpha}{\,dt} = \frac{\,d\alpha}{\,dx} \frac{\,dx}{\,dt} + \frac{\,d\alpha}{\,dy}\frac{\,dy}{\,dt}
+</me>
+or,
+<me>
+  \dot{\alpha} = \frac{\,d\alpha}{\,dx} \dot{x}  + \frac{\,d\alpha}{\,dy} \dot{y}
+</me>
+also,
+<me>
+  \dot{\beta} = \frac{\,d\beta}{\,dx}\dot{x}  + \frac{\,d\beta}{\,dy} \dot{y}
+</me>
+Now,
+<me>
+  \dot{r} = \frac{\,dr}{\,dx} \dot{x}  + \frac{\,dr}{\,dy}\dot{y}
+</me>
+and,
+<me>
+  \dot{\theta} = \frac{\,d\theta}{\,dx}\dot{x}  + \frac{\,d\theta}{\,dy} \dot{y}
+</me>
+or,
+<me>
+  \bar{v}^{i} = \sum\limits_{j=1}^{3}\frac{\partial \bar{x}^{i}}{\partial x^{j}}{v}^{j}	
+</me>
+The components transforming like this equation are known as the contravariant tensor components of 
+a vector and are characterised by coordinates differential transformation or transforms like the 
+coordinate differentials. 
+            </p>
+            <p>
+              The tensor whose components transform like the partial derivatives of the coordinate are 
+              called covariant tensors. In the expression
+              <me>
+                \bar{A}_{j} = \sum\limits_{i=1}^{3}\frac{\partial x^{i}}{\partial \bar{x}^{j}}{A}_{i};
+              </me>
+              where, <m>\frac{\partial x^{i}}{\partial \bar{x}^{j}}</m> are partial derivatives of the coordinates.
+              If <m>\psi</m> expresses a velocity function, then the components of velocity in 
+              <m>(x,y)</m> system are <m>\frac{\,d\psi}{\,dx}</m> and <m>\frac{\,d\psi}{\,dy}</m>. 
+              The transformations of these resolved parts are given as
+              <me>
+                \frac{\,d\psi}{\,d\alpha} = \frac{\,d\psi}{\,dx} \frac{\,dx}{\,d\alpha} 
+                + \frac{\,d\psi}{\,dy}\frac{\,dy}{\,d\alpha}
+              </me>
+              <me>
+                \frac{\,d\psi}{\,d\beta} = \frac{\,d\psi}{\,dx} \frac{\,dx}{\,d\beta} 
+                + \frac{\,d\psi}{\,dy} \frac{\,dy}{\,d\beta}
+              </me>
+              <me>
+                \frac{\,d\psi}{\,dr} = \frac{\,d\psi}{\,dx}\frac{\,dx}{\,dr} + \frac{\,d\psi}{\,dy} \frac{\,dy}{\,dr}
+              </me>
+              and 
+              <me>
+                \frac{\,d\psi}{\,d\theta} = \frac{\,d\psi}{\,dx}\frac{\,dx}{\,d\theta} 
+                + \frac{\,d\psi}{\,dy}\frac{\,dy}{\,d\theta}
+              </me>
+              or,
+              <me>
+                \bar{v}_{j} = \sum\limits_{j=1}^{3}\frac{\partial x^{i}}{\partial \bar{x}^{j}}{v}_{i}
+              </me>
+              The components which transform like this equation are called the covariant tensor components 
+              of a vector because the transformation is characterised by the partial derivatives of the 
+              coordinates or transforms like the derivatives of a scalar.
+              </p>
+  </introduction>
+
+  <subsubsection xml:id="subsubsec-discus_trans">
+    <title>Discussion</title>
+       <figure>
+      <caption>Axis Transormation</caption>
+        <sidebyside widths="35% 30%">
+            <figure xml:id="fig-transaxis">
+                <caption></caption>
+                <image source="transaxis.png"/>
+            </figure>
+             <figure xml:id="fig-transaxis1">
+                <caption></caption>
+                <image source="transaxis1.png"/>
+            </figure>
+          </sidebyside>
+    </figure>
+    <p>
+      In coordinate transformation component of a tensor changes either by a contravariant 
+      manner or a covariant manner. In <xref ref="fig-transaxis1"/>
+      <me>
+        x'=OL'= OT+TL' = OT +SL = OL\cos\theta +PL\sin\theta
+      </me>
+      <me>
+        \therefore x'  = x\cos\theta +y\sin\theta
+      </me>
+      <me>
+        y'=PL'= PS-L'S =PS-TL = PL\cos\theta -OL\sin\theta
+      </me>
+      <me>
+        \therefore y'  = y\cos\theta -x\sin\theta
+      </me>
+      <me>
+        \therefore \hat{i'}=\hat{i}\cos\theta +\hat{j}\sin\theta 
+      </me>
+      also
+      <me>
+         \hat{j'}=-\hat{i}\sin\theta +\hat{j}\cos\theta
+      </me>
+       also,
+       <me>
+        \vec{r}=\hat{i'}x'+\hat{j'}y'= [\hat{i}\cos\theta +\hat{j}\sin\theta]x'+[-\hat{i}\sin\theta +\hat{j}\cos\theta]y'
+       </me>
+      <me>
+        \therefore \vec{r}=\hat{i}[x'\cos\theta -y'\sin\theta] +\hat{j}[x'\sin\theta +y'\cos\theta] =\hat{i}x+\hat{i}y
+      </me>
+      In coordinate transformation, vectors remains the same but its components change. 
+      Suppose we have two types of cartesian coordinates where the basis vectors are 
+      related as <m>\hat{i'}=2\hat{i}</m> and <m>\hat{j'}=\hat{j}</m>, then <m>x'= x/2</m> 
+      and <m> y'= y </m>. For example, consider a  vector <m>\vec{a} = 4\hat{i}+ 3\hat{j}</m> 
+      in unprimed system then <m>\vec{a} = 2\hat{i'}+ 3\hat{j'}</m> in the primed system, 
+      meaning if basis vectors increase the components decrease. Such type of transformation 
+      is called the contravariant transformation. Displacement, velocity, acceleration, etc. 
+      obey such type of  transformation. Now consider a gradiant of scalar function 
+      <me>
+        \vec{\nabla \psi} = \frac{\partial\psi}{\partial x}\hat{i} +\frac{\partial\psi}{\partial y}\hat{j}.
+      </me>
+      Gradiant of a scalar function is a vector which represents the magnitude of maximum rate 
+      of change of the function. In previous case for a vector if <m>\hat{i'}=2\hat{i}</m> 
+      then it's component <m>x'= x/2</m> and hence the component of the gradiant 
+      <me>
+        \frac{\partial\psi}{\partial x'}(\hat{i'}) 
+        = \frac{1}{2}\frac{\partial\psi}{\partial x}(\hat{2i}) 
+        = \frac{\partial\psi}{\partial x}(\hat{i}).
+      </me>
+       Here as basis vector increses component also has to increase by the same fasion 
+       otherwise the maximum rate of sclar changes differently in different coordinate systems. 
+       Such system where component increases as basis vector increases is called a covariant vector. 
+      </p>
+      <p>
+        The <xref ref="fig-transaxis1"/> has shown <m>a^{1}</m> and <m>a^{2}</m> are parallel 
+        projection of a vector <m>\vec{r}</m> and <m>a_{1}</m> and <m>a_{2}</m> are perpendicular 
+        projection of the same vector <m>\vec{r}</m>. Hence 
+        <me>
+          \vec{r} = a^{1} \hat{e}_{1}+ a^{2} \hat{e}_{2}
+        </me>
+        where <m>a^{1}</m> and <m>a^{2}</m> are a contravariant vectors, 
+        and 
+        <me>
+           \vec{r} = a_{1} \hat{e}_{1}+ a_{2} \hat{e}_{2}
+        </me>
+        where <m>a_{1} </m> and <m>a_{2}</m> are covariant vectors.
+        </p>
+  </subsubsection>
+ </subsection>
+
+<subsection xml:id="subsec-skew_tens">
+  <title>Symmetric and Antisymmetric Tensors</title>
+  <p>
+    A tensor whose two contravariant or covariant indices can be interchanged without 
+    affecting the value of the tensor, then it is called symmetric tensor in these indices. 
+    If <m>A^{ij} = A^{ji}</m> then the tensor is symmetric contravariant tensor in the 
+    indices <m>i</m> and <m>j</m>.  Again,  if <m>A^{ij} = -A^{ji}</m>  then the tensor 
+    is called skew symmetric contravariant tensor <idx><h>contravariant tensor</h></idx>. 
+    The same is true for covariant tensor <idx><h>covariant tensor</h></idx>. 
+    The symmetric or antisymmetric is defined for a pair of contravariant or covariant 
+    indices. However, the Kronecker delta which is a mixed tensor for one contravariant 
+    and covariant indices is symmetric in its indices.
+    </p>
+</subsection>
+
+<subsection xml:id="subsec-coord_trans">
+  <title>Transformation of Coordinates</title>
+   <figure xml:id="fig-fig331">
+                <caption></caption>
+                <image source="fig331.png" width ="40%"/>
+            </figure>
+  <p>
+    Let <m>(x,y,z)</m> and <m>(x', y', z')</m> are the coordinates of point P in prime 
+    and unprimed systems, respectively as shown in <xref ref="fig-fig331"/>. Now, if the 
+    frame rotates about <m>z</m> axis, then their relations are given as
+    <me>
+      x' =  OQ  =  OM + MN + NQ  
+    </me>
+    <me>
+       = x\cos\theta + \lambda_{2}\sin\theta +\lambda_{1}\sin\theta 
+	      = x\cos\theta + (\lambda_{1}+\lambda_{2})\sin\theta
+    </me>
+    <men xml:id="eqn-trans_cord1">
+      \therefore \quad  x^{'} = x\cos\theta + y \sin\theta
+    </men>
+    and 
+    <me>
+      y^{'} =  OR =  QP = \lambda_{1} \sin(90^{o}-\theta)
+    </me>
+    <me>
+      = \lambda_{1} \cos\theta 
+        = (y-\lambda_{2})\cos\theta 
+         =y \cos\theta-\lambda_{2}\cos\theta 
+          =  y \cos\theta -TM 
+    </me>
+    <men xml:id="eqn-trans_cord2">
+      \therefore  y^{'} = y \cos\theta -x\sin\theta
+    </men>
+     If we replace <m>x'</m> by <m>x^{'}_{1}</m>,   <m>y'</m> by <m>x^{'}_{2}</m>,  
+     <m>x</m> by <m>x_{1}</m> and <m>y</m> by <m>x_{2}</m>, 
+      <me>
+        x'_{1} = x_{1}\cos\theta + x_{2} \sin\theta 
+      </me>
+      and 
+      <me>
+        x'_{2} = -x_{1}\sin\theta + x_{2} \cos\theta 
+      </me>
+      or,
+      <me>
+        x'_{1} = x_{1}a_{11} + x_{2} a_{12}
+      </me>
+      and 
+      <me>
+        x'_{2} = -x_{1}a_{21} + x_{2} a_{22}
+      </me>
+      or,
+      <men xml:id="eqn-trans_cord3">
+        x'_{i} = \sum\limits_{j=1}^{2}a_{ij}x_{j}\quad [i=1,2]
+      </men>
+      If we take rotation in three dimensional space, then the transformation of the 
+      coordinates can be written as 
+      <men xml:id="eqn-trans_cord4">
+        x'_{i} = \sum\limits_{j=1}^{3}a_{ij}x_{j} \quad [i=1,2,3]
+      </men>
+      where	<m>a_{ij} = \cos(x'_{i}, x_{j})</m>	[for <m>i,j = 1,2,3</m>],  
+      the direction cosines of prime components w.r.t. unprimed.  
+     or, simply,
+     <men xml:id="eqn-trans_cord5">
+      x'_{i}  = a_{ij}x_{j}
+     </men>
+     and 
+     <men xml:id="eqn-trans_cord6">
+      x'_{j}  = a_{ij}x_{i}
+     </men>
+     when a suffix is repeated in expressions like <xref ref="eqn-trans_cord5"/> and 
+     <xref ref="eqn-trans_cord6"/>, they denote the sum of three quantities by giving 
+     a dummy index of values 1, 2, and 3. Hence, 
+     <me>
+      x'_{1} = a_{11}x_{1} + a_{21}x_{2} + a_{31}x_{3} = \lambda_{1}x_{1} + m_{1}x_{2}+n_{1}x_{3}
+     </me>
+     <me>
+      and, x'= \lambda_{1}x + m_{1}y+n_{1}z
+     </me>
+     where <m>\lambda_{1}</m>, <m>m_{1}</m>, <m>n_{1}</m> are directions cosines of 
+     <m>OX'{,} OY'{,} OZ'</m> in <m>X{,}Y{,}Z</m> system. 
+
+    </p>
+</subsection>
+  </section>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_third" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+  <exercise>
+    <p>
+       Show that the symmetric or antisymmetric property of a tensor is conserved under a transformation of coordinates.
+      </p>
+  </exercise>
+ 
+ <exercise>
+  <p>
+    Show that the quantities <m>\delta_{q}^{p}A_{p}</m> transform like the components of a tensor.
+    </p>
+ </exercise>
+
+<exercise>
+  <p>
+     Prove that <m>\delta_{ik} u_{k} =u_{i}</m>.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    If <m>A_{ij}</m> is an antisymmetric tensor, Show that <m>\delta_{j}^{i}A_{ij} =0</m>.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    If <m>A_{ij}</m> is a skewsymmetric tensor of rank two, then prove that <m>(\delta_{ij}\delta_{lk} +\delta_{il}\delta_{jk})T_{ik} = 0</m>.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that if a physical quantity has no component in one coordinate system, then it does not have 
+    a component in any other coordinate systems.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    How many independent commponents are there in an antisymmetric tensor of rank two?
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that the direct product of a <m>0^{th}</m> rank tensor and a <m>2^{nd}</m> rank tensor is a tensor of rank two. 
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that the sum of diagonal components of a second-rank tensor is an invariant.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    State the transformation properties of tensors <m>A_{i}</m> and <m>B^{ij}</m>. 
+    Obtain the transformation properties of <m>A_{i}B^{ij}</m>. Explain your result.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Contract and provide direct product of two tensors <m>A_{\sigma}^{\mu \nu}</m> and <m>B_{l}^{m}</m>. 
+    What will be the rank of the contracted tensor and the direct product?
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that any tensor of rank 2 can be expressed as the sum of a symmetric and an antisymmetric tensors of rank 2.
+    </p>
+    <hint>
+      <p>
+        Any tensor <m>A^{ij}</m> of rank 2, may be expressed as 
+        <me>
+          A^{ij} = \frac{1}{2}\left(A^{ij}+A^{ji}\right)+\frac{1}{2}\left(A^{ij}-A^{ji}\right)
+        </me>
+      </p>
+    </hint>
+</exercise>
+
+<exercise>
+  <p>
+    <m>\vec{\omega}</m> is any arbitrary contravarient vector. It is known that <m>A_{ij}\vec{\omega}</m> is a 
+    covariant vector. Show that <m>A_{ij}</m> is a covariant tensor of rank 2.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+     Using the inner product of a tensor and applying contraction principle obtain the length 
+     L of a tensor <m>A^{i}</m>.
+    </p>
+    <hint>
+      <p>
+        take direct product  of <m>A^{i}</m> and <m>A_{j}</m>. 
+      </p>
+    </hint>
+</exercise>
+
+ </exercises>
+

@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-examplesA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>ExamplesA</title>
+ 
+<example>
+  <statement>
+    <p>
+      The current in a circuit, containing a resistance <m>R</m>, an induction <m>L</m>, and 
+      a constant e.m.f. <m>E</m>, at time <m>t</m>, is given by <m>i=\frac{E}{R}\left(1-e^{-\frac{Rt}{L}}\right)</m>. 
+      Obtain a suitable approximation to <m>i</m> when <m>t</m> is very small.
+    </p>
+  </statement>
+  <solution>
+    <p>
+       From a circuit <image source="fig41.png" width="30%"/>, we have potential drop across resistance <m> =iR</m> and	voltage induced at 
+       inductance <m>=-L\frac{\,di}{\,dt} </m>. Using Kirchoff's Voltage law, 
+       </p>
+       <p>
+       <me>
+        E-L\frac{\,di}{\,dt} = iR
+       </me>    
+       or,
+       <me>
+         \frac{\,di}{\,dt}+\frac{Ri}{L}=\frac{E}{L}
+       </me>
+        or,
+        <me>
+          I.F. = e^{\int \frac{R}{L}\,dt}=e^{\frac{Rt}{L}}
+        </me>
+        Its solution is 	
+        <me>
+           i\cdot e^{\frac{Rt}{L}} = \int \frac{E}{L}e^{\frac{Rt}{L}}\,dt+C =\frac{E}{L}\cdot\frac{L}{R}e^{\frac{Rt}{L}}+C
+        </me>
+        <men xml:id="eqn-diffex1">
+           \therefore \quad i=\frac{E}{R}+Ce^{-\frac{Rt}{L}}  
+        </men>
+        when  <m>t=0,\quad i=0 </m> then, <m>0=\frac{E}{R}+C</m>	 or, <m>C=-\frac{E}{R}</m>. 
+        Therefore, expression <xref ref="eqn-diffex1"/> becomes 
+        <me>
+          i=\frac{E}{R}-\frac{E}{R}e^{-\frac{Rt}{L}} = \frac{E}{R}\left(1-e^{-\frac{Rt}{L}}\right) 
+        </me>
+        but,  when <m>t = \infty,</m>  
+        <me>
+          i=\frac{E}{R}. \qquad \text{ans.}
+        </me>
+           </p>
+  </solution>
+</example>
+    
+    <example>
+      <statement>
+        <p>
+          Find the solution for the equation of motion when a mass <m>m</m> attached to a spring with 
+          spring constant <m>k</m> is pulled and then released, as shown in 
+          figure <image source="fig42.png" width="20%"/>
+        </p>
+      </statement>
+      <solution>
+        <p>
+         The motion executed by a spring is simple harmonic motion, therefore, <m>F=-ky</m> (where <m>y</m> 
+         is the displacement of mass <m>m</m> at any time, <m>t</m>.) 
+         <me>
+           m\frac{\,d^{2}y}{\,dt^{2}}=-ky
+         </me>
+         or,
+         <me>
+           \frac{\,d^{2}y}{\,dt^{2}}+\frac{k}{m}y=0 
+         </me>
+         or,
+         <men xml:id="eqn-diffex2">
+          \frac{\,d^{2}y}{\,dt^{2}}+\omega^{2}y=0
+         </men>
+         where <m>\omega^{2} = \frac{k}{m}</m>. The eqn. <xref ref="eqn-diffex2"/> is the equation of motion.
+         <me>
+           A.E. = m^{2}+\omega^{2}=0 \hspace{0.5cm}  \text{or,} \quad m=\pm i\omega
+         </me>
+         The general solution of eqn. <xref ref="eqn-diffex2"/> is then
+         <men xml:id="eqn-diffeq3">
+          y(t) =C_{1}e^{i\omega}t+C_{2}e^{-i\omega}t = A\cos\omega t+B\sin\omega t
+         </men>
+         If <m>T</m> be the period of motion, then <m>y(t)=y(t+T)</m>.
+         <me>
+           \therefore A \cos\omega t +B\sin\omega t =A\cos(\omega t+\omega T)+B\sin(\omega t+\omega t)
+         </me>
+         <me>
+          = A\left[\cos\omega t\cdot\cos\omega T-\sin\omega t\cdot\sin\omega T\right] 
+          + B\left[\sin\omega t\cdot\cos\omega T+\cos\omega t\cdot\sin\omega T\right]
+         </me>
+         <me>
+          =\left(A\cos\omega T+B\sin\omega T\right)\cos\omega t+\left(B\cos\omega T-A\sin\omega T\right)\sin\omega t
+         </me>
+         equating on both sides, we get -
+         <me>
+          A\cos\omega T+B\sin\omega T = A 
+         </me>
+         <me>
+          \Rightarrow \cos\omega T =1 \hspace{1cm} \text{and} \quad  \sin\omega T =0.
+         </me>
+         i.e.,
+         <me>
+           \cos\omega T =1=\cos 2n\pi  
+         </me>
+         or,
+         <me>
+         \omega T = 2n\pi
+         </me>
+         <me>
+          \therefore  T = \frac{2n\pi}{\omega} = 2n\pi\sqrt{\frac{m}{k}} 
+         </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve 
+          <me>
+            \frac{\,d^{2}y}{\,dx^{2}}+a^{2}y=\sec ax.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+           A.E. is  <m>D^{2}+a^{2}=0</m> or, <m>D=\pm ai</m>.	
+           <me>
+            C.F. = C_{1}\cos ax+C_{2}\sin ax
+           </me>
+           <me>
+            P.I. = \frac{1}{D^{2}+a^{2}}\cdot \sec ax = \frac{1}{(D+ai)(D-ai)}\cdot \sec ax
+           </me>
+           <me>
+            = \frac{1}{2ai}\left[\frac{1}{(D-ai)}-\frac{1}{(D+ai)}\right]\sec ax
+           </me>
+           Therefore,
+           <men xml:id="eqn-diffeq4">
+            P.I. = \frac{1}{2ai}\frac{1}{(D-ai)}\sec ax-\frac{1}{2ai}\frac{1}{(D+ai)}\sec ax 
+           </men>
+           Now,
+           <men xml:id="eqn-diffeq5">
+             \frac{1}{(D-ai)}\sec ax = e^{aix}\int e^{-aix}\sec ax\,dx
+           </men>
+           [using eqns. <xref ref="eqn-pisol3"/>, and <xref ref="eqn-pisol4"/>]
+           <me>
+            =e^{aix}\int\frac{\cos ax-i\sin ax}{\cos ax}\,dx =e^{aix}\int(1-i\tan ax)\,dx 
+           </me>
+           <me>
+             = e^{aix}(x+\frac{i}{a}\log\cos ax)
+           </me>
+            changing <m>i</m> to <m>-i</m>, we have 
+           <me>
+            \frac{1}{(D+ai)}\sec ax =e^{-aix}(x-\frac{i}{a}\log\cos ax)
+           </me>
+           putting these values in eqn. <xref ref="eqn-diffeq4"/>, we get - 
+           <me>
+            P.I. = \frac{1}{2ai}\left[e^{aix}\left(x+\frac{i}{a}\log\cos ax\right)-e^{-aix}\left(x-\frac{i}{a}\log\cos ax\right)\right]
+           </me>
+           <me>
+            =\frac{x}{2ai}e^{aix}-\frac{x}{2ai}e^{-aix}+\frac{e^{aix}\log\cos ax}{2a^{2}}+\frac{e^{-aix}\log\cos ax}{2a^{2}}
+           </me>
+           <me>
+            =\frac{x}{a}\frac{e^{aix}-e^{-aix}}{2i}+\frac{1}{a^{2}}\frac{e^{aix}+e^{-aix}}{2}\log\cos ax
+           </me>
+           <me>
+             =\frac{x}{a}\sin ax +\frac{1}{a^{2}}\cos ax\cdot\log\cos ax
+           </me>
+           <me>
+             \therefore  y= C_{1}\cos ax+C_{2}\sin ax+\frac{x}{a}\sin ax+\frac{1}{a^{2}}\cos ax\cdot\log\cos ax.
+           </me>  
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Solve
+          <me>
+            \frac{\,d^{2}y}{\,dx^{2}}-2\frac{\,dy}{\,dx}+y=2\cos x.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <men xml:id="eqn-diffeq6">
+            (D^{2}-2D+1)y =2\cos x 
+          </men>
+          <me>
+            \text{A.E.,} \quad m^{2}-2m+1=0 
+          </me>
+          or,
+          <me>
+             (m-1)^{2}=0 \quad \Rightarrow  m=1,1
+          </me>
+          <men xml:id="eqn-diffeq7">
+            \therefore \quad C.F. = y_{c}  = (C_{1}+C_{2}x)e^{x}  
+          </men>
+          <men xml:id="eqn-diffeq8">
+            \text{P.I.} = y_{p} \quad \text{(By inspection method)}
+          </men>
+          Let, <m>y_{p} =-\sin x,</m> <m>Dy_{p}=-\cos x</m>,	and, <m>D^{2} y_{p} =\sin x</m>. 
+          Therefore, <m>y=y_{p}</m> is a P.I. of eqn. <xref ref="eqn-diffeq6"/>, becouse it satisfies the equation.
+          <men xml:id="eqn-diffeq9">
+            y=y_{c}+y_{p}=(C_{1}+C_{2}x)e^{x}-\sin x 
+          </men>
+          It is a general solution of eqn. <xref ref="eqn-diffeq6"/>.
+        </p>
+        <p>
+          <term>The solution of eqn. <xref ref="eqn-diffeq6"/> by successive integration method.</term>
+          The roots of A.E. are real and equal, i.e., <m>m=1,1</m>. Hence, from eqn. <xref ref="eqn-pisol5"/>
+          <men xml:id="eqn-diffeq10">
+            y= e^{x}\int \bar{Q}(x)e^{-x}\,dx +C_{2}e^{x}  
+          </men>
+          where,
+          <men xml:id="eqn-diffeq11">
+          \bar{Q}(x) =2e^{x}\int e^{-x}\cos x\,dx+C_{1}e^{x} 
+          </men>
+          using <xref ref="eqn-pisol6"/>. Hence,
+          <me>
+            \int e^{-x}\cos x\,dx=\frac{e^{-x}(\sin x-\cos x)}{1+1}=\frac{e^{-x}(\sin x-\cos x)}{2}
+          </me>
+          <me>
+            \because \quad \int e^{mx}\cos nx\,dx=\frac{e^{mx}(n\sin nx+m\cos nx)}{m^{2}+n^{2}}
+          </me>
+          and 
+          <me>
+            \int e^{mx}\sin nx\,dx=\frac{e^{mx}(m\sin nx-n\cos nx)}{m^{2}+n^{2}}
+          </me>
+          or,
+          <me>
+            \bar{Q}(x)=e^{x}.e^{-x}(\sin x-\cos x)+C_{1}e^{x}
+          </me>
+          <me>
+            \therefore y=e^{x}\int \left\{\left(\sin x-\cos x\right)+C_{1}e^{x}\right\}e^{-x}\,dx +C_{2}e^{x}
+          </me>
+          <me>
+            =e^{x}\left[\int e^{-x}\sin x\,dx-\int e^{-x}\cos x\,dx+C_{1}\int\,dx\right]+C_{2}e^{x}
+          </me>
+          <me>
+            =e^{x}\left[\frac{e^{-x}(-\sin x-\cos x)}{2}-\frac{e^{-x}(\sin x-\cos x)}{2}+C_{1}x\right]+C_{2}e^{x}
+          </me>
+          <me>
+            =\frac{(-\sin x-\cos x)}{2}-\frac{(\sin x-\cos x)}{2}+C_{1}xe^{x}+C_{2}e^{x}
+          </me>
+          <me>
+            =(C_{1}x+C_{2})e^{x}-\sin x.   \qquad \text{ans}.
+          </me>
+          </p>
+      </solution>
+    </example>
+
+<paragraphs>
+  <title>Python Code for Differential Equation</title>
+  <ol marker="1.">
+    <li> 
+      <p> For equation 
+         <me>
+         \frac{\,di}{\,dt}+\frac{Ri}{L}=\frac{E}{L}
+       </me>
+      <term>the Python code is</term>  <image source="odeQ1.png" width="60%"/> 
+      </p>
+       <p>
+        from sympy.interactive import printing 
+       </p>
+       <p>
+       printing.init_printing(use_latex=True) 
+       </p>
+<p>
+  from sympy import * 
+</p>
+<p>
+  import sympy as sp 
+</p>
+       <p>
+        t=sp.Symbol('t', real=True) 
+       </p>
+<p>
+   I=sp.Function('I')(t) 
+</p>
+<p>
+  R, L, E=sp.symbols('R, L, E', real=True)
+</p>
+       <p>
+        diffeq=Eq(I.diff(t)+R/L*I,E/L) 
+       </p>
+       <p>
+         display(diffeq)
+       </p>
+       <p>
+         dsolve(diffeq,I)
+       </p>
+       <p>
+        import numpy as np 
+       </p>
+        <p>
+           from scipy.integrate import odeint 
+        </p>
+        <p>
+          import matplotlib.pyplot as plt
+        </p>
+<p>
+  E=5 
+</p>
+       <p>
+         R=5 
+       </p> 
+       <p>
+         L=0.02 
+       </p>
+       <p>
+         Io=0 
+       </p>
+       <p>
+        t=np.arange(0,0.025,0.001)
+       </p>
+
+        <p>
+          def f(I,t,E,L,R): 
+        </p>
+        <p>
+           dIdt =-(R/L)*I+(E/L) 
+        </p>
+        <p>
+           return dIdt
+        </p>
+
+ <p>
+  Is=odeint(f,Io,t,args=(E,L,R))
+ </p>
+ <p>
+   plt.plot(t,Is, '-') 
+ </p>
+ <p>
+  plt.plot(t,Is, 'ro') 
+ </p>
+ <p>
+  plt.title('DI(t)+RI(t)/L=E/L') 
+ </p>
+ <p>
+  plt.xlabel('t(s)') 
+ </p>
+ <p>
+  plt.ylabel('I(A)') 
+ </p>
+ <p>
+   plt.show()
+ </p>
+
+       <p>
+        Since <m> e^{RC_{1}}</m> is a constant, the general solution of this equation is 
+     <m>I(t) = \left[\frac{E}{R}+Ce^{-Rt/L}\right]</m>. 
+       </p>
+    </li>
+    <li>
+      <p>
+        <m>y"+a^2*y=0</m>
+        <image source="odeQ2.png" width="60%"/> 
+      </p>
+      <p> 
+        from sympy.interactive import printing
+      </p>
+      <p>
+        printing.init_printing(use_latex=True) 
+      </p>
+      <p>
+         from sympy import * 
+      </p>
+      <p>
+        import sympy as sp 
+      </p>
+
+      <p>
+        t,y =sp.symbols('t,y') 
+      </p>
+      <p>
+         a=sp.Symbol('a',positive=True) 
+      </p>
+      <p>
+          y=sp.Function('y')(t) 
+      </p>
+      <p>
+         diffeq=Eq(y.diff(t,2)+a**2*y,0) 
+      </p>
+      <p>
+         display(diffeq)
+      </p>
+      <p>
+         dsolve(diffeq,y)
+      </p>
+<p>
+  import numpy as np
+</p>
+<p>
+  from scipy.integrate import odeint
+</p>
+<p>
+  import matplotlib.pyplot as plt
+</p>
+<p>
+  def f(u,t):
+    return (u[1], -5*u[0])
+</p>
+<p>
+   yo=[0,4]
+</p>
+<p>
+   xs=np.arange(0,5,0.1)
+</p>
+
+<p>
+  us=odeint(f,yo,xs)
+</p>
+<p>
+  ys=us[:,0]
+</p>
+
+
+  <p>
+    plt.plot(xs,ys, '-')
+  </p>
+<p>
+  plt.plot(xs,ys, 'ro')
+</p>
+<p>
+  plt.title('(D**2+5)y=0')
+</p>
+<p>
+  plt.xlabel('t values')
+</p>
+<p>
+  plt.ylabel('y values')
+</p>
+<p>
+  plt.show()
+</p>
+</li>
+<li>
+  <p> 
+    <m>y"+a^2*y=\sec(ax)</m>
+     <image source="odeQ3.png" width="60%"/> 
+  </p>
+  </li>
+  <li>
+  <p>
+    <m>y"-2y'+y=2*\cos(x)</m>
+     <image source="odeQ4.png" width="60%"/> 
+  </p>
+  </li>
+  </ol>
+  
+</paragraphs>
+  
+  <example>
+    <statement>
+      <p>
+        Solve <me>x^{2}y''-(x^{2}+2x)y'+(x+2)y=x^{3}</me>.
+        </p>
+    </statement>
+    <solution>
+      <p>
+        The equation in standard form is 
+        <men xml:id="eqn-vcoef1">
+          y''-\left(1+\frac{2}{x}\right)y' +\left(\frac{1}{x}+\frac{2}{x^{2}}\right)y=x  
+        </men>
+        Here, <m>P=-\left(1+\frac{2}{x}\right) </m>	and <m>Q= \left(\frac{1}{x}+\frac{2}{x^{2}}\right)</m>. 
+        Since, <m>P+Qx=0</m>, we have <m>y_{1} =x </m> is a known integral of C.F. 
+        So we find C.F. of the given differential eqn. <xref ref="eqn-vcoef1"/> by putting <m>y=vx</m>  in 
+        <men xml:id="eqn-vcoef2">
+          y''-\left(1+\frac{2}{x}\right)y' +\left(\frac{1}{x}+\frac{2}{x^{2}}\right)y=0  
+        </men>
+        or,
+        <me>
+          \frac{d^{2}v}{dx^{2}}-\frac{dv}{dx}=0
+        </me>
+        or,
+        <me>
+          [D^{2}-D]v =0,
+        </me>
+        <me>
+          \therefore \quad D =0,1.
+        </me>
+        Hence, <m>v=C_{1}+C_{2}e^{x}</m>	[<m>\because C.F.= C_{1}e^{m_{1}x}+C_{2}e^{m_{2}x}</m>].  
+        Therefore the C.F. of eqn. <xref ref="eqn-vcoef2"/> is <m>y=vx=C_{1}x+C_{2}xe^{x} </m>, 
+        where, <m>y_{1} =x {,} y_{2}=xe^{x}</m>,  and <m>|W| =y_{1}y'_{2} -y'_{1} y_{2} =x^{2}e^{x}</m>. 
+        Now, let <m>y=v_{1}y_{1}+v_{2}y_{2} = v_{1}x+v_{2}xe^{x}</m> be the solution of eqn. <xref ref="eqn-vcoef1"/>.
+        Where,
+        <me>
+           v_{1}=-\int \frac{Xy_{2}}{|W|}\,dx+C_{1} =-x+C_{1}
+        </me>
+        and 
+        <me>
+           v_{2}=\int \frac{Xy_{1}}{|W|}\,dx+C_{2} =-e^{-x}+C_{2}
+        </me>
+        Therefore the complete solution is 
+        <me>
+          y=(-x+C_{1})x+(-e^{-x}+C_{2})xe^{x}=(C_{1}x+C_{2}xe^{x})-(x^{2}+x).
+        </me> 
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Solve  <me>x^{2}y''-2xy'+2y=x\ln{x}</me>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The equation in standard form is 
+        <men xml:id="eqn-vcoef3">
+          y''-\frac{2}{x}y' +\frac{2}{x^{2}}y =\frac{\ln{x}}{x}
+        </men>
+        Since <m>P+Qx=0</m> and <m>2+2Px+Qx^{2} =0 </m> we assume <m>y_{1}=x</m> 
+        and <m>y_{2}=x^{2}</m> to be the two independent solutions of eqn. <xref ref="eqn-vcoef3"/>. 
+        Hence  we have <m>|W|=x^{2}</m>. Therefore the complete solution of eqn. <xref ref="eqn-vcoef3"/> is 
+		     [see eqn. <xref ref="eqn-varcoef13"/>]	
+         <me>
+          y=x\left[-\int\frac{x^{2}\left(\frac{\ln{x}}{x}\right)}{x^{2}}\,dx+C_{1}\right]+x^{2}\left[\int\frac{x\left(\frac{\ln{x}}{x}\right)}{x^{2}}\,dx+C_{2}\right]
+         </me>
+         <me>
+          =-x\int\left(\frac{\ln{x}}{x}\right)\,dx+C_{1}x+x^{2}\int\left(\frac{\ln{x}}{x^{2}}\right)\,dx+C_{2}x^{2}
+         </me>
+         <me>
+          =-x\left\{\frac{1}{2}(\ln x)^{2}\right\}+x^{2}\left\{-\frac{\ln x}{x}-\frac{1}{x}\right\}+(C_{1}x+C_{2}x^{2})
+         </me>
+         <me>
+          =-x\left\{\frac{1}{2}(\ln x)^{2}+\ln x+1\right\}+(C_{1}x+C_{2}x^{2}).
+         </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p> Solve 
+        <me>
+          x^{2}y''+xy' - y=x^{2}e^{x}.
+        </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <men xml:id="eqn-vcoef4">
+           x^{2}y''+xy' - y=x^{2}e^{x} 
+        </men>
+        This is the equation with decreasing power of x. Hence put <m>x=e^{z}</m> and <m>\frac{d}{dz}\equiv D</m>. 
+       We have	
+       <me>
+        D(D-1)y+Dy-y=e^{2z}e^{e^{z}}
+       </me>
+       or,
+       <men xml:id="eqn-vcoef5">
+        (D^{2}-1)y=e^{2z}e^{e^{z}}
+       </men>
+       A.E. is 
+       <me>
+        D^{2}-1 =0 
+       </me>
+       or,
+       <me>
+        D=+1,-1
+       </me>
+       <men xml:id="eqn-vcoef6">
+         \text{C.F.} = C_{1}e^{z}+C_{2}e^{-z} = C_{1}x+\frac{C_{2}}{x} 
+       </men>
+       where <m>y_{1}=x</m> and <m>y_{2}=\frac{1}{x}</m> also 
+       <me>
+        |W| =y_{1}y'_{2} -y'_{1}y_{2} = x(-\frac{1}{x^{2}})-1.\frac{1}{x} =-\frac{2}{x}
+       </me>
+        The standard form of eqn. <xref ref="eqn-vcoef4"/> is  
+       <men xml:id="eqn-vcoef7">
+        y'' +\frac{1}{x}y'-\frac{1}{x^{2}}y = e^{x} 
+       </men>
+       Now the complete solution of eqn. <xref ref="eqn-vcoef7"/> is 
+       <me>
+        y=x\left[-\int\frac{e^{x}.\frac{1}{x}}{-\frac{2}{x}}\,dx +C_{1}\right]+\frac{1}{x}\left[\int\frac{e^{x}.x}{-\frac{2}{x}}\,dx+C_{2}\right]
+       </me>
+       <fn> 
+       If <m>x=e^{z}</m> then <m>z=\log x</m> and  <m>\frac{\,dz}{\,dx}=\frac{1}{x} </m>  
+       hence, 
+       <me>
+        \frac{\,dy}{\,dx} =\frac{\,dy}{\,dz}\cdot \frac{\,dz}{\,dx} =\frac{1}{x}\cdot \frac{\,dy}{\,dz} 
+        </me>
+        or,
+        <me>
+          x\frac{\,dy}{\,dx}=\frac{\,dy}{\,dz}=Dy   
+        </me>
+        also,
+        <me>
+          x^{2}\frac{\,d^{2}y}{\,dx^{2}}
+        </me>
+        <me>
+          = \frac{\,d^{2}y}{\,dz^{2}}-\frac{\,dy}{\,dz}=D^{2}y-Dy =D(D-1)y
+        </me>
+       </fn>
+       <me>
+         =x\left[\frac{e^{x}}{2}+C_{1}\right]+\frac{1}{x}\left[-\frac{1}{2}e^{x}x^{2}+xe^{x}-e^{x}+C_{2}\right] 
+       </me>
+       <me>
+        = (C_{1}x+\frac{C_{2}}{x})+(e^{x}-\frac{e^{x}}{x})
+       </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+         Solve <me>
+           y''-2y' - 3y=\sin(2x)
+         </me> 
+      </p>
+    </statement>
+    <solution>
+      <p>
+       It has <m>1-P+Q=0</m> type auxiliary equaion, hence <m>y_{1} =e^{-x}</m> be the known integral of C.F. 
+       Select <m>y=vy_{1}</m> be the solutioin of corresponding differential equation. 
+       (read page <xref ref="subsubsec-var_coef"/> for details). We may get a homogeneous equation like <m>v''-2v'=0</m> which gives, 
+       <m>D=\pm\sqrt{2}.</m> This corresponds to <m>C.F. = C_{1}e^{m_{1}x}+C_{2}e^{m_{2}x}.</m> 
+       Use Wronskian to find  the complete solution of the differential equation.  
+      </p>
+    </solution>
+  </example>
+</section>

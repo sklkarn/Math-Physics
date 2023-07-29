@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_second-eigen" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Eigen Value Problem</title>
+
+  <introduction>
+   <p>
+   When an operator <m>A</m> acts on a vector <m>X</m> then the resulting vector <m>AX</m> is different 
+   from <m>X</m>. However there may exist certain non-zero vectors for which <m>AX</m> is 
+   just multiplied by a constant <m>\lambda</m>. i.e., 
+   <me>
+    AX=\lambda X
+   </me>
+   is known as an eigen value problem. Now,  
+   <me>
+    AX=\lambda X =(\lambda I)X
+   </me>
+   or, 
+   <men xml:id="eqn-eig_mat1">
+     (A-\lambda I)X = 0
+   </men>
+   where <m>I</m> is a unit matrix, <m>X</m> is an eigen vector or eigen function of an 
+   operator <m>A</m> and the constant <m>\lambda</m> is an eigen value. when  <m>A</m> is 
+   represented by a square matrix, then the eigen values of a matrix <m>A</m> are determined 
+   by an eqn. <xref ref="eqn-eig_mat1"/> is called a secular or a characteristic equation. 
+    </p>
+    <p>
+       Let us consider an example where a matrix, 
+       <me>
+        A=\begin{bmatrix} 
+        1 &amp; 2\\2 &amp; 1 
+        \end{bmatrix}
+       </me>
+       acts on a vector 
+       <me>
+        X= \begin{bmatrix} 
+        1\\3 
+        \end{bmatrix},
+       </me>
+       then the resulting vector would be
+       <me>
+        AX=\begin{bmatrix} 
+        1 &amp; 2\\ 2 &amp; 1 
+        \end{bmatrix} 
+        \begin{bmatrix} 
+        1\\3 
+        \end{bmatrix} = \begin{bmatrix} 
+        7\\5 
+        \end{bmatrix}.
+       </me>
+       In this case the vector <m>AX</m> is transformed into a new vector <xref ref="fig-eigen"/>. 
+       The vector may gets 
+       elongated or shortened or rotated in the transformation process. For a given square matrix, 
+       <m>A</m> there always exits special vector/s which retain/s their original direction, 
+       such vectors are called eigen vectors. The vector which scaled but will not change 
+       its direction is called an eigen vector and its scaled factor is known as eigen value. 
+       An eigenvector of a square matrix A is a non-zero vector X that, when multiplied by A, 
+       results in a scalar multiple of itself. That is, if <m>AX = \lambda λX</m>, 
+       where <m>\lambda </m> is a scalar, then X is an eigenvector of A associated with the eigenvalue <m>\lambda </m>.
+       For example,
+       <me>
+        A=\begin{bmatrix} 
+        1 &amp; 2\\2 &amp; 1 
+        \end{bmatrix}
+       </me>
+       and 
+       <me>
+        X= \begin{bmatrix} 
+        1\\1 
+        \end{bmatrix}, 
+       </me>
+       then,
+       <me>
+        AX= \begin{bmatrix} 
+        3\\3 
+        \end{bmatrix} = 3\begin{bmatrix} 
+        1\\1 
+        \end{bmatrix}.
+       </me>
+       Hence the vector <m>X</m> remains the same with scalar multiplication 3. This scalar value is 
+       called eigen value, <m>\lambda</m> of the vector <m>AX</m>.	
+      </p>
+       <figure xml:id="fig-eigen">
+                <caption></caption>
+                <image source="eigen.png" width="35%"/>
+            </figure>
+<p>
+  Eigenvectors help understand linear transformations easily. There are directions along which a linear 
+  transformation acts simply by <em>stretching/compressing</em> and/or <em>flipping</em>; 
+  eigenvalues give the factors by which this compression occurs. Consider a matrix <m>A</m> 
+  undergoing a physical transformation (e.g rotation). When this matrix is used to transform 
+  a given vector <m>X</m> the result is <m>Y=AX</m>. Now ask a question: Are there any vectors 
+  <m>X</m> which does not change their direction under this transformation, but allow the vector 
+  magnitude to vary by scalar <m>\lambda</m>? Such a question is of the form <m>AX=\lambda X</m> 
+  So, such special <m>X</m> are called eigenvector(s) and the change in magnitude depends 
+  on the eigenvalue <m>\lambda</m>. Eigenvalues characterize important aspect of linear transformations, 
+  such as whether a system of linear equations has a unique solution or not. In many applications 
+  eigenvalues also describe physical propereties of a mathematical model. 
+  In Quantum Mechanics, the <em>eigenvectors</em> of operators which corresponds to observable 
+  quantities, like energy, position, etc., form a complete basis for the space of all possible 
+  states of the system that you're analysing. That is, any state you want can be written as a 
+  linear combination of these <em>eigenvectors</em>. Naturally, this makes to solve problems 
+  much easier, all we need is to find the coefficients in this linear combination for 
+  which there is a neat formula.
+  </p>
+     </introduction>
+ 
+
+  </section>
+

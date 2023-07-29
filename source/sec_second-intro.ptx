@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_second-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Vector Space</title>
+  <introduction>
+   <p>
+    <idx>vector space</idx> A set <m>V_{n} = \left\{u,v,w,\cdots,\right\} </m> is 
+    called a vectorspace if its elements are closed under the rule of both addition 
+    and scalar multiplication. The elements of a vector space <m>V_{n}</m> 
+    are called the vectors if each vector is also a set of <m>n</m> - other vectors such that 
+    <m>\vec{u} = \left\{u_{1},u_{2},u_{3},\cdots, u_{n}\right\}</m>;	
+    <m>\vec{v} = \left\{v_{1}, v_{2}, v_{3},\cdots, v_{n}\right\}</m>;  etc.
+    </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-2add_vects">
+  <title>Addition of Vectors</title>
+  <p>
+    <ol marker ="i.">
+      <li>
+        If <m>u,v \in V_{n}</m>  then <m>(u+v=v+u)\in V_{n}</m> 	<term>(commutative law)</term>
+      </li>
+      <li>
+        If <m>u,v,w \in V_{n}</m>  then <m>u+(v+w)=(v+u)+w \in V_{n}</m> <term>(associative law)</term>	  
+        </li>
+        <li>
+          There exists a unique vector 0 (zero or null vector) in <m>V_{n}</m> such that <m>x+0=x</m>. 
+          For any <m>x</m> in <m>V_{n}</m>. <term>(Existance of a zero vector)</term>
+          </li>
+          <li>
+            For each vector <m>x</m> in <m>V_{n}</m>, there exists a unique vector <m>-x</m> 
+            in <m>V_{n}</m> such that <m>x+(-x)=0</m>. <term>(Existance of additive inverse)</term>
+            </li>
+    </ol>
+    </p>
+     </subsection>
+
+  <subsubsection xml:id="subsubsec-2mult_vects">
+    <title>Multiplication of Vectors by Scalars</title>
+    <p>
+      <ol marker ="i.">
+        <li>
+          If <m>\vec{u},\vec{v}  \in \vec{V_{n}}</m>  then there exists vectors 
+          <m>\alpha (\vec{u}+\vec{v}){,} (\alpha+\beta)\vec{u}</m>,  and <m>\alpha(\beta\vec{u})</m> 
+          in <m>V_{n}</m> such that <m>\alpha (\vec{u}+\vec{v}) = \alpha \vec{u}+\alpha \vec{v})</m>; 
+          <m>(\alpha+\beta)\vec{u} = \alpha\vec{u}+\beta\vec{u}</m>, and <m>\alpha(\beta\vec{u}) = (\alpha\beta)\vec{u}</m> 
+          where <m>\alpha</m> and <m>\beta</m> are two scalars ( real or complex numbers).
+        </li>
+        <li>
+          For the zero and unit vectors in <m>V_{n}</m> there exists the following products <m>0.u=0</m> and <m>1.u=u</m>.
+          </li>
+      </ol>
+      </p>
+  </subsubsection>
+<subsection xml:id="subsec-2lin_depnd">
+  <title>Linear Dependence and Independence</title>
+  <p>
+    Two non - zero vectors u and v of a vector space are said to be linearly dependent 
+    if one is a scalar multiple of the other i.e. if <m>u = c v</m> where <m>c</m> is any scalar. 
+    In other words, <m>u</m> and <m>v</m> are linearly dependent if  
+    <men xml:id="eqn-2lin1">
+      au+bv =0
+    </men>
+    <m>[\,\because au=-bv,\hspace{3pt} \text{or,} \hspace{3pt} u=(-b/a)v =cv ]\,</m> 
+    </p>
+    <p>
+      In eqn. <xref ref="eqn-2lin1"/>, at least one scalar does not equal to zero. The concepts of 
+      linear dependence and independence can also be extended to more than two vectors. 
+      A set of <m>n</m> vectors <m>\left\{u_{i}\right\}</m> is said to be linearly dependent 
+      if there exists a corresponding set of scalars <m>\left\{\alpha_{i}\right\}</m>,  not all zero,  
+      such that 
+      <men xml:id="eqn-2lin2">
+        \sum\limits_{i=1}^{n}\alpha_{i}u_{i}=0
+      </men>
+      If <m>\sum\limits_{i=1}^{n}\beta_{i}v_{i}=0</m> and the set of scalars <m>\beta =0</m> for all <m>i</m>, 
+      then the set of vectors <m>\left\{v_{i}\right\}</m> is said to be linearly independent.
+      <men xml:id="eqn-2lin3">
+        \Rightarrow \lambda=-\frac{(v_{1},u_{2})}{(v_{1},v_{1})}
+      </men>
+      Thus we have two orthogonal vectors <m>v_{1}</m> and <m>v_{2}</m>.
+      </p>
+</subsection>
+
+<subsection xml:id="subsec-2dimen_vect">
+  <title>Dimensionality of a Vector Space</title>
+  <introduction>
+   <p>
+    A vector space is said to be an <m>n</m>- dimensional if it contains <m>n</m> 
+    linearly independent vectors. A vector space is called an infinite - dimensional 
+    if there exists an arbitrary large number of linearly independent vectors in the space. 
+    If an arbitrary vector <m>\phi</m> in <m>V_{n}</m> can be represented as a linear 
+    combination of vectors <m>\left\{\psi_{i}\right\}</m> in <m>V_{n}</m> and scalars 
+    <m>\left\{\alpha_{i}\right\}</m>, \i.e. 
+    <me>
+      \phi=\sum\limits_{i=1}^{n}\alpha_{i}\psi_{i}  =\alpha_{1}\psi_{1}+\alpha_{2}\psi_{2}+\alpha_{3}\psi_{3}+\cdots+\alpha_{n}\psi_{n}
+    </me>
+      then  <m>\left\{\psi_{i}\right\}</m> is said to be a <em>span</em> of the vector space <m>V_{n}</m>. 
+      A linearly independent set of vectors <m>\left\{\psi_{i}\right\}</m> that spans a vector space 
+      <m>V_{n}</m> is called a  <em>basis</em> for <m>V_{n}</m>. For example, the unit vectors <m>i{,}j{,}</m> and 
+      <m>k</m> of a position vector <m>'r'</m> are the basis for the three -  dimensional vector space. 
+      The three mutually perpendicular vectors forms an orthogonal basis for a three - dimensional vector space. 
+      In other words, if the scalar product of two vectors is zero, the vectors are said to be an 
+      orthogonal to each other. The orthogonal bases <idx>orthogonal bases</idx> of unit magnitude such 
+      as <m>\hat{i} {,} \hat{j}{,}</m> and <m>\hat{k}</m> forms a normal orthogonal basis, 
+      called an orthonormal basis. A scalar has one component (magnitude only) and hence zero 
+      basis vector per component, A vector has 3 components (magnitude and one direction) in 3D 
+      and hence has 1 basis vector per component. A tensor of rank 2 (dyad) has <m>3^{2} = 9</m> 
+      components (magnitude and two directions) in 3D hence has 2 basis vectors per component. 
+      A tensor of rank 3 (triad) has <m> 3^{3} = 27</m> components (magnitude and three directions) 
+      in 3D hence has 3 basis vectors per component.
+    </p>
+  </introduction>
+  
+  <subsubsection xml:id="subsubsec-inner_prod">
+  <title>Inner Product</title>
+  <p>
+    The inner or scalar product of two vectors u and v is denoted by  <m>\lt u,v \gt</m> 
+    in vector space <m>V_{n}</m>, which hold the following properties - 
+    <m>\lt u,v+\xi \gt=\lt u,v \gt + \lt u,\xi \gt; </m> 
+    <m>\lt u+v,\xi \gt = \lt u,\xi \gt + \lt v,\xi \gt </m> 
+    and <m> \lt u,u \gt \geq 0</m> (unless <m>u=0</m>). 
+    The length (or Norm), <m>\parallel u \parallel</m>, of a vector <m>u</m> is defined as 
+    <m>\parallel u \parallel = \sqrt{ \lt u,u \gt }</m>. 
+    The inner product of two vectors equals zero, <m> \lt u,v \gt =0</m> for <m>u \neq 0</m> and  <m>v \neq 0</m>, 
+    then the vectors are said to form an orthogonal set. If the norm within an orthogonal set is unity, 
+    i.e. <m>\parallel u \parallel = 1</m>, then the set is called an orthonormal set.
+  </p>
+</subsubsection>
+
+
+<subsubsection xml:id="subsubsec-2gram_orth">
+  <title>Gram Schmidt's Orthogonalization</title>
+  <p>
+    An orthogonal basis is the best basis for a vector space because the coefficients of which 
+    can easily be expressed a vector as a linear combination of basis vectors. However, we are 
+    not always given an orthogonal basis. Gram-Schmidt orthogonalization is a process 
+     used to transform a set of linearly independent vectors into a set of orthonormal vectors,  
+    which may not be orthogonal to each other. This process is named after 
+     Jørgen Pedersen Gram and Erhard Schmidt, who independently developed it in the late <m>19^{th}</m> century. 
+    Let <m>u_{1},u_{2},u_{3},\cdots, u_{n}</m> be a set of linearly independent 
+    vectors which are not necessarily orthogonal to each other. Now, It is required to obtain 
+    a set of orthogonal vectors <m>v_{1},v_{2},v_{3},\cdots, v_{n}</m> from the original set 
+    of vectors <m>u_{1},u_{2},u_{3},\cdots, u_{n}</m> by following the steps below.
+</p>
+<p>
+    In <term>step (1)</term> take <m>v_{1} = u_{1}</m>, in <term>step (2)</term> let	
+    <m>v_{2} = u_{2}+\lambda v_{1}</m> where <m>\lambda</m> is a constant to be 
+    determined from the condition that <m>v_{2}</m> to be orthogonal to <m>v_{1}</m>. 
+    That is, <m>(v_{1},v_{2}=0)</m>	 or, 	
+    <m>\lt v_{1}, u_{2} +\lambda v_{1}\gt =0=\lt v_{1}, u_{2}\gt +\lambda \lt v_{1}, v_{1} \gt </m>, 
+    and in <term>step (3)</term> let <m>v_{3} = u_{3}+\lambda_{1} v_{1}+\lambda_{2} v_{2}</m> 
+    where <m>\lambda_{1}</m> and <m>\lambda_{2}</m> are constants to be determined from the 
+    conditions that <m>v_{3}</m> is orthogonal to <m>v_{1}</m> and <m>v_{2}</m>. 
+    This gives - <m> \lt v_{1}, v_{3} \gt = 0 = \lt v_{1}, u_{3} \gt +\lambda_{1} \lt v_{1}, v_{1} \gt + 
+    \lambda_{2} \lt v_{1}, v_{2}\gt </m>, since <m>\lt v_{1}, v_{2}\gt = 0.</m> Therefore, we have -
+    <men xml:id="eqn-2gram1">
+      \Rightarrow \lambda_{1}=-\frac{\lt v_{1}, u_{3}\gt}{\lt v_{1}, v_{1}\gt}
+    </men>
+    <me>
+      \text{Also,}  \quad \lt v_{2}, v_{3}\gt = 0 = \lt v_{2}, u_{3}\gt +\lambda_{1} \lt v_{2}, v_{1}\gt 
+      +\lambda_{2} \lt v_{2}, v_{2}\gt
+    </me>
+    <men xml:id="eqn-2gram2">
+      \Rightarrow \lambda_{2}=-\frac{\lt v_{2}, u_{3}\gt}{\lt v_{2}, v_{2}\gt } \quad 
+	[\because  \lt v_{2}, v_{1}\gt = \lt v_{1}, v_{2}\gt  = 0]
+    </men>
+    Now, we have three mutually orthogonal vectors <m>v_{1},v_{2}</m> and <m>v_{3}</m>. 
+    The same procedure can be continued to obtain other othogonal vectors. Finally, 
+    all the vectors can be normalized to obtain an orthonormal set <m>\left\{x_{i}\right\}</m>, 
+    where <m>x_{i}= \frac{v_{i}}{\parallel v_{i} \parallel}</m>.
+    </p>
+</subsubsection>
+
+</subsection>
+
+
+<subsection xml:id="subsec-2lin_trans">
+  <title>Linear Transformations</title>
+  <p>
+     The transformation in which the components of a vector in one coordinate system are 
+     linear functions of another coordinate system is called a linear transformation. 
+     In sych transformation origin of two coordinate systems do not displace. 
+     If <m>x_{i}</m> are the components of a vector in one coordinate system and 
+     <m>y_{i}</m> are those in another coordinate system then after a linear transformation, we have -
+     <me>
+       y_{i}=b_{i1}x_{1}+b_{i2}x_{2}+\cdots+b_{in}x_{n} 
+     </me>
+     <men xml:id="eqn-2linetr1">
+     = \sum\limits_{k=1}^{n}b_{ik}x_{k},  \quad 1 \leq i\leq n.
+     </men>
+     Again, the same vector has components <m>z_{i}</m>, which are linearly related to the components 
+     <m>y_{i}</m> then after a linear transformation, we have - 
+     <men xml:id="eqn-2linetr2">
+      z_{i}= \sum\limits_{k=1}^{n}a_{ik}y_{k},  \quad 1 \leq i\leq n.
+     </men>
+     Now it is possible to obtain a transformation directly from the components <m>x_{i}</m>, 
+     from eqns. <xref ref="eqn-2linetr1"/> and <xref ref="eqn-2linetr2"/>, 
+     <me>
+        z_{i}= \sum\limits_{k=1}^{n}a_{ik} \sum\limits_{j=1}^{n}b_{kj}x_{j} 
+     </me>
+     <men xml:id="eqn-2linetr3">
+     = \sum\limits_{j=1}^{n} \sum\limits_{k=1}^{n} a_{ik} b_{kj}x_{j} = \sum\limits_{j=1}^{n}c_{ij}x_{j}, \quad 1 \leq i\leq n.
+     </men>
+    where,  <m>c_{ij} = \sum\limits_{k=1}^{n}a_{ik}b_{kj}, \quad 1 \leq i, j\leq n.</m>
+    </p>
+</subsection>
+
+<subsection xml:id="subsec-2lin_op">
+  <title>Linear Operators</title>
+  <p>
+    An entity <m>\hat{A}</m> which relates every vector <m>\psi_{i}</m> in a vector space <m>V_{n}</m> to 
+    another vector  <m>\phi_{i}</m> in this space by the equation
+    <men xml:id="eqn-2linop1">
+      \phi_{i}=\hat{A} \psi_{i}
+    </men>
+     is called an operator. The operator <m>\hat{A}</m> is said to be linear if it possesses the following properties 
+     <men xml:id="eqn-2linop2">
+      \hat{A} (\psi_{a}+\psi_{b}) = \hat{A} \psi_{a}+\hat{A} \psi_{b})
+     </men>
+     <men xml:id="eqn-2linop3">
+      \text{and}\quad \hat{A} (\lambda \psi) = \lambda\hat{A} \psi
+     </men>
+     where  <m>\lambda</m> is a scalar (a real or complex number).
+    </p>
+</subsection>
+  </section>
+

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_sixth-diffLT" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Solution of Differential Equations by Laplace Transforms</title>
+  <introduction>
+   <p>
+    Ordinary linear differential equtions with constant coefficient or 
+    variable coefficient can easily be solved using Laplace Transform method, 
+    without finding the general solution and arbitrary constants.
+    </p>
+     </introduction>
+ <subsection xml:id="subsec-usf_LT1">
+  <title>Unit Step Function</title>
+
+   <figure xml:id="fig-fig61">
+                <caption>Unit step function</caption>
+                <image source="fig61.png" width="50%"/>
+            </figure>
+            <introduction>
+             
+  <p>
+    <idx>unit step function</idx> 
+    With the help of unit step functions, we can find the inverse transform 
+    of such functions which can not be determined with the previously explained methods. 
+    The unit step functions  <m>u(t-a)</m> is defined as 
+    <me>
+      u(t-a) = \begin{cases}
+ 0,  &amp; \text{where} \quad t \lt a\\
+ 1,  &amp; \text{where} \quad  t\geq a
+ \end{cases}
+    </me>
+and <m>a\geq 0</m>.  The unit step function can be visulized as figure <xref ref="fig-fig61"/>.
+    </p>
+     
+            </introduction>
+ 
+
+<subsubsection xml:id="subsubsec-usf_LT2">
+  <title>Laplace Transform of Unit Step Function</title>
+  <p>
+    	<me>
+        L[u(t-a)] =\frac{e^{-as}}{s}
+      </me>
+    </p>
+    <proof>
+      <p>
+        <me>
+           \mathscr{L}[u(t-a)] =\int\limits_{0}^{\infty} e^{-st}u(t-a)\,dt
+        </me>
+        <me>
+          =\int\limits_{0}^{a} e^{-st}.0\,dt + \int\limits_{a}^{\infty} e^{-st}.1\,dt = 0+\left[\frac{e^{-st}}{-s}\right]_{a}^{\infty}= \frac{e^{-as}}{s}.
+        </me>
+      </p>
+    </proof>
+</subsubsection>
+</subsection>
+
+<subsection xml:id="subsec-ssp_LT">
+  <title>Second-Shifting Property</title>
+  <p> If
+    <me>
+      \mathscr{L}[f(t)] F(s)\text{and}\quad g(t) 
+      = \begin{cases}
+ f(t-a),  &amp; \text{where} \quad t\geq a\\
+ 0,  &amp; \text{where} \quad t \lt a
+ \end{cases}
+    </me>
+  then <me>
+     \mathscr{L}[g(t)] = e^{-as}F(s).
+  </me>
+     </p>
+     <proof>
+      <p>
+      <me>
+        \mathscr{L}[g(t)] = \int\limits_{0}^{\infty} e^{-st}g(t)\,dt
+      </me>
+      <me>
+        = \int\limits_{0}^{a} e^{-st}g(t)\,dt +\int\limits_{a}^{\infty} e^{-st}g(t)\,dt
+      </me>
+      <me>
+        = \int\limits_{0}^{a} e^{-st}.0\,dt +\int\limits_{a}^{\infty} e^{-st}f(t-a)\,dt
+      </me>
+      <me>
+         = \int\limits_{0}^{\infty} e^{-s(h+a)}.f(h)\,dh 	=  e^{-as} \int\limits_{0}^{\infty}f(h)\,dh
+      </me>
+      <me>
+        = e^{-as}F(s) 
+      </me>
+     [put <m>  t-a =h</m>] 
+      </p>
+     </proof>
+</subsection>
+
+<theorem xml:id="thm-usf">
+  <statement>
+    <p>
+      <me>
+        \mathscr{L}[f(t).u(t-a)] =e^{-as}L[f(t+a)]
+      </me>
+    </p>
+    <proof>
+      <p>
+        <me>
+          \mathscr{L}[f(t).u(t-a)]=\int\limits_{0}^{\infty}e^{-st}[f(t).u(t-a)]\,dt
+        </me>
+        <me>
+          =\int\limits_{0}^{a}e^{-st}[f(t).u(t-a)]\,dt+\int\limits_{a}^{\infty}e^{-st}[f(t).u(t-a)]\,dt
+        </me>
+        <me>
+           = 0+ \int\limits_{a}^{\infty}e^{-st}f(t).1\,dt
+        </me>
+        <me>
+          = \int\limits_{0}^{\infty}e^{-s(y+a)}f(y+a)\,dy= e^{-as}\int\limits_{0}^{\infty}e^{-sy}f(y+a)\,dy = e^{-as}F(s+a)
+        </me>
+        [put <m>y+a = t</m>.]
+      </p>
+    </proof>
+  </statement>
+</theorem>
+
+<subsection xml:id="subsec-pf_LT">
+  <title>Priodic Functions</title>
+  <p>
+    Let <m>f(t)</m>  be a periodic function with period <m>T</m>, then 
+    <me>
+      \mathscr{L}\{f(t)\} = \frac{\int\limits_{0}^{T}e^{-st} f(t)\,dt}{1-e^{-sT}}
+    </me>
+    </p>
+    <proof>
+      <p>
+        <me>
+          \mathscr{L}\{f(t)\} = \int\limits_{0}^{\infty}e^{-st} f(t)\,dt
+        </me>
+        <me>
+          = \int\limits_{0}^{T}e^{-st} f(t)\,dt+ \int\limits_{T}^{2T}e^{-st} f(t)\,dt+ \int\limits_{2T}^{3T}e^{-st} f(t)\,dt+\cdots
+        </me>
+        <me>
+           =\sum\limits_{n=0}^{\infty}\int\limits_{nT}^{(n+1)T}e^{-st} f(t)\,dt
+        </me>
+      </p>
+      <p>
+        If we put <m>t=u+nT</m>, then <m>f(u+nT)=f(u)</m> as <m>T</m> is period of the given function. Thus
+        <me>
+          \mathscr{L}\{f(t)\} = \sum\limits_{n=0}^{\infty}\int\limits_{0}^{T}e^{-s(u+nT)} f(u)\,du 
+        </me>
+        <me>
+          = \sum\limits_{n=0}^{\infty}e^{-snt}\int\limits_{0}^{T}e^{-su}f(u)\,du
+        </me>
+        
+        <me>
+          =1+e^{-st}+e^{-2st}+\cdots+\int\limits_{0}^{T}e^{-su}f(u)\,du 
+        </me>
+        <me>
+          = \frac{1}{1-e^{-sT}}\int\limits_{0}^{T}e^{-su}f(u)\,du
+        </me>
+        
+        <m>[\because \quad 1+a+a^{2}+a^{3}+\cdots=\frac{1}{1-a};</m> if <m>a \lt 1]</m>.
+<me>
+  \therefore \quad \mathscr{L}\{f(t)\} = \frac{\int\limits_{0}^{T}e^{-st} f(t)\,dt}{1-e^{-sT}}
+</me>
+by changing <m>u</m> into <m>t</m>.
+        </p>
+    </proof>
+</subsection>
+
+<subsection xml:id="subsec-conv_LT">
+  <title>Convolution Theorem</title>
+  <introduction>
+   
+  <p>
+    Convolution theorem is a mathematical operation widely used in communication physics. 
+    It is a very fine method to find the inverse of Laplace Transform. If 
+    <m>\mathscr{L}\{f_{1}(t)\}=F_{1}(s)</m>  and <m>\mathscr{L}\{f_{2}(t)\}=F_{2}(s)</m> then, 
+    the convolution theorem can be stated as 
+    <me>
+      \mathscr{L}\{\int\limits_{0}^{t}f_{1}(x)f_{2}(t-x)\,dx\} = F_{1}(s)\cdot F_{2}(s).
+    </me>
+    </p>
+    <proof>
+      <p> Let
+        <me>
+          \int\limits_{0}^{t}f_{1}(x)f_{2}(t-x)\,dx = H(t).
+        </me>
+        Then 
+        <me>
+          \mathscr{L}\{H(t)\}=\int\limits_{0}^{\infty}e^{-st}H(t)\,dt 
+        </me>
+<me>
+  = \int\limits_{t=0}^{\infty}e^{-st}\left[\int\limits_{x=0}^{t}f_{1}(x)f_{2}(t-x)\,dx\right]\,dt 
+</me>
+<me>
+ =\int\limits_{t=0}^{\infty}\left[\int\limits_{x=0}^{t}e^{-st}f_{2}(t-x)\,dx\right]\,dt 
+</me>
+the integration is being done w.r.t. 'x' first and then w.r.t 't'. 
+      </p>
+      <figure xml:id="fig-fig64">
+                <caption></caption>
+                <image source="fig64.png" width="50%"/>
+            </figure>
+      <p>
+        The above integration is taken within the region lying below the line OP whose equation 
+        is <m>x=t</m> and above OT, <m>t</m> is taken along OT  and <m>x</m>  is along OX, 
+        with O as the origin, the axes is perpendicular to each other, as shown in figure <xref ref="fig-fig64"/>. 
+
+ If the order of integration is changed, the strip will be taken parallel to OT so that the 
+ limits of <m>t</m> are from <m>x</m> to <m>\infty</m> and the limits of <m>x</m> are from 0 to <m>\infty</m>.                     
+Putting <m>t-x=\theta</m>, we have <m>\,dt=\,d\theta</m>.
+<me>
+  \therefore \quad \mathscr{L}\{H(t)\}=\int\limits_{0}^{\infty}e^{-sx}f_{1}(x)\int\limits_{0}^{\infty}e^{-s\theta}f_{2}(\theta)\,d\theta\,dx 
+</me>
+<me>
+  = \int\limits_{0}^{\infty}e^{-sx}f_{1}(x)F_{2}(s)\,dx   = F_{1}(s)\cdot F_{2}(s) 
+</me>
+
+putting the value of <m>H(t)</m>, we get - 
+<me>
+   \mathscr{L}\{\int\limits_{0}^{t}f_{1}(x)F_{2}(t-x)\,dx\} = F_{1}(s)\cdot F_{2}(s).
+</me>
+        </p>
+    </proof>
+ </introduction>
+ 
+    <subsubsection xml:id="subsubsec-varCoef_LT">
+  <title>Differential Equation with Variable Coefficients</title>
+  <p>
+    see <xref ref="subsubsec-var_coef"/>
+    </p>
+</subsubsection>
+</subsection>
+
+  </section>
+

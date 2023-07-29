@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-lagurfn" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Laguerre Differential Equation</title>
+  <introduction>
+
+    <figure xml:id="fig-fig46">
+    <caption>hermite's Polynomial</caption>
+    <image source="fig46.png" width ="45%"/>
+</figure>
+
+  <p>
+    <idx><h>Laguerre's Differential Equation</h></idx>
+    The differential equation  
+    <men xml:id="eqn-laguer_eq1">
+      x\frac{d^{2}y}{dx^{2}}+(1-x)\frac{dy}{dx}+\lambda y=0
+    </men>
+        where <m>\lambda</m> is constant, is known as Laguerre's differential equation. 
+        Such type of equation yields on solving Shrodinger's equation for Hydrogen atom. 
+        It has regular singularities at <m>x=0</m>. Let us assume the series solution of 
+        such equation is 
+        <men xml:id="eqn-laguer_eq2">
+          y=\sum\limits_{k=0}^{\infty}a_{k}x^{m+k}
+        </men>
+        so that 
+        <me>
+          \frac{dy}{dx}=\sum\limits_{k=0}^{\infty}a_{k}(m+k)x^{m+k-1} 
+        </me>
+        and 
+        <me>
+           \frac{d^{2}y}{dx^{2}}=\sum a_{k}(m+k)(m+k-1)x^{m+k-2}
+        </me>
+          Substituting these values in equation <xref ref="eqn-laguer_eq1"/>, we have
+          <me>
+            \sum a_{k}(m+k)(m+k-1)x^{m+k-1}+\sum a_{k}(m+k)x^{m+k-1} 
+          </me>
+          <me>
+            -\sum a_{k}(m+k)x^{m+k}+\sum a_{k}\lambda x^{m+k}=0
+          </me>
+          
+          or,
+          <me>
+            \sum a_{k}[(m+k)(m+k-1)+(m+k)]x^{m+k-1}
+          </me>
+          <me>
+            -\sum a_{k}[m+k-\lambda]x^{m+k}=0
+          </me>
+          
+          or,
+          <men xml:id="eqn-laguer_eq3">
+            \sum a_{k}[(m+k)^{2}x^{m+k-1}-\sum a_{k}(m+k-\lambda)x^{m+k}=0
+          </men>
+            Equating the coefficient of lowest power of <m>x</m> i.e., <m>x^{m-1}</m> to zero, 
+            we get the indicial equation as <m>a_{o}m^{2}=0</m>	[<m>\because k=0</m>]
+            Since <m>a_{o} \neq 0 </m>, therefore <m>m=0</m>. Again, equating the coefficient 
+            of <m>x^{m+k}</m>, the general term, to zero, we get the recurrence relations 
+            among the coefficients as -
+            <me>
+              a_{k+1}(m+k+1)^{2}-a_{k}(m+k-\lambda)=0
+            </me>
+            or,
+            <men xml:id="eqn-laguer_eq4">
+              a_{k+1}=\frac{m+k-\lambda}{(m+k+1)^{2}}a_{k}
+            </men>
+            for <m>m=0</m>, we have 
+            <men xml:id="eqn-laguer_eq5">
+              a_{k+1}=\frac{k-\lambda}{(k+1)^{2}}a_{k}
+            </men>
+            Thus,
+            <me>
+              a_{1} =-\frac{\lambda}{1^{2}}a_{o}=(-1)\lambda a_{o}  
+            </me>
+             [set <m>k=0</m>]
+              <me>
+                a_{2}=\frac{1-\lambda}{2^{2}}a_{1}=\frac{\lambda-1}{2^{2}}\lambda a_{o} =\frac{\lambda(\lambda-1)}{2^{2}} a_{o}=(-1)^{2}\frac{\lambda(\lambda-1)}{(2!)^{2}} a_{o}
+              </me>
+              <me>
+                a_{3}=\frac{2-\lambda}{3^{2}}a_{2}=\frac{(-1)(\lambda-2)}{3^{2}}\cdot \frac{(-1)^{2}\lambda(\lambda-1)}{(2!)^{2}}a_{o} 
+              </me>
+              <me>
+                =(-1)^{3}\frac{\lambda(\lambda-1)(\lambda-2)}{(3!)^{2}}a_{o}
+              </me>
+              
+              <me>
+                a_{r}=(-1)^{r}\frac{\lambda(\lambda-1)(\lambda-2)\cdots(\lambda-r+1)}{(r!)^{2}}a_{o}
+              </me>
+                so, 
+                <me>
+                  y=\sum\limits_{k=0}^{\infty}a_{k}x^{k} =a_{o}\left[1-\lambda x+\frac{\lambda(\lambda-1)}{(2!)^{2}}x^{2}-\cdots\right.
+                </me>
+                <me>
+                  	\left.\cdots+(-1)^{r}\frac{\lambda(\lambda-1)(\lambda-2)\cdots(\lambda-r+1)}{(r!)^{2}}x^{r}+\cdots\right]
+                </me>
+                <men xml:id="eqn-laguer_eq6">
+                  =a_{o}\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}\lambda !}{(r!)^{2}(\lambda-r)!}x^{r}
+                </men>
+                If <m>\lambda =n</m> is a positive integer then 
+                <men xml:id="eqn-laguer_eq7">
+                 	y= a_{o}\sum\limits_{r=0}^{n+1}\frac{(-1)^{r} n!}{(r!)^{2}(n-r)!}x^{r} 
+                </men>
+                  If we choose <m>a_{o}=n!</m>, then the solution for <m>y</m> becomes 
+                  the Laguerre's Polynomial, <m>L_{n}(x)</m>.
+                    Thus,
+                  <men xml:id="eqn-laguer_eq8">
+                    L_{n}(x) = \sum\limits_{r=0}^{n+1}\frac{(-1)^{r} (n!)^{2}}{(r!)^{2}(n-r)!}x^{r}
+                  </men>
+                  The family of Laguerre's Polynomial is 
+                  <me>
+                    L_{n}(0)=n!; \quad L_{o}(x) =1;  \quad L_{1}(x) =1-x; 
+                  </me>
+                  <me>
+                    L_{2}(x)  =x^{2}-4x+2^{2}; L_{3}(x) =-x^{3}+9x^{2}-36x+6;
+                  </me>
+                  
+                  <me>
+                 L_{4}(x) =x^{4}-16x^{3}+72x^{2}-96x+48;
+                  </me>
+                  and so on. Thus Laguerre's polynomial is the solution of equation.
+                  <me>
+                    xL''_{n}(x)+(1-x)L'_{n}(x)+nL_{n}(x)=0
+                  </me>
+                  The graph of Laguerre's polynomial is shown in figure <xref ref="fig-fig46"/>	
+    </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-laguer_pol">
+  <title>Laguerre's Polynomial</title>
+  <introduction>
+   
+  <paragraphs>
+    <title>Python Code:</title>
+    <p> import numpy as np </p>
+ <p>from scipy.special import genlaguerre </p>
+<p> from scipy.special import laguerre </p>
+<p> import matplotlib.pyplot as plt </p>
+  <p>    x = np.arange(-1.0, 5.0, 0.01) </p>
+<p> fig, ax = plt.subplots() </p>
+<p> ax.set_ylim(-5.0, 5.0) </p>
+<p> ax.set_title(r'Laguerre polynomials $L_n$') </p>
+<p> for n in np.arange(0, 5): </p>
+  <p>  ax.plot(x, laguerre(n)(x), label=rf'$L_{n}(x)$') </p>
+<p> plt.legend(loc='best') </p>
+<p> plt.xlabel("x") </p>
+<p> plt.ylabel(r'$L_n(x)$') </p>
+<p> plt.legend(loc='lower right') </p>
+<p> plt.show() </p>
+ 
+  </paragraphs>
+ 
+  </introduction>
+
+
+  <subsubsection xml:id="subsubsec-laguer_genfn">
+    <title>Generating Function for <m>L_{n}(x)</m></title>
+    <p>
+      <idx><h>generating function for Laguerre's polynomial</h></idx> 
+      The generating function for Laguerre's polynomial is defined as 
+      <me>
+      f(x,t)=\frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n}\quad |t| \lt 1.
+      </me>
+      
+      </p>
+      <proof>
+        <p>
+        We have 
+        <me>
+           e^{-xt/(1-t)}=1-\frac{xt}{1-t}+\frac{1}{2!}\left(\frac{xt}{1-t}\right)^{2}+\cdots
+        </me>
+        
+        <men xml:id="eqn-laguer_gen1">
+         =\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{r}t^{r}}{(1-t)^{r}r!}
+        </men>
+        or,
+        <me>
+          \frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{r=0}^{\infty}(-1)^{r}\frac{t^{r}x^{r}}{r!(1-t)^{r+1}}
+        </me>
+        <me>
+          =\sum\limits_{r=0}^{\infty}(-1)^{r}\frac{x^{r}t^{r}}{r!}(1-t)^{-(r+1)}
+        </me>
+        
+        <me>
+          =\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!}x^{r}t^{r}\left[1+(r+1)t+\frac{(r+1)(r+2)}{2!}t^{2}\right.
+        </me>
+        <me>
+          \left.+\cdots+\frac{(r+1)(r+2)\cdots(r+s)}{s!}t^{s}+\cdots\right]
+        </me>
+        
+        <me>
+           =\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{r}t^{r}}{r!}\sum\limits_{s=0}^{\infty}\frac{(r+1)(r+2)\cdots(r+s)}{s!}t^{s}
+        </me>
+        
+        <men xml:id="eqn-laguer_gen2">
+         =\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{r}t^{r}}{r!}\sum\limits_{s=0}^{\infty}\frac{(r+s)!}{r!s!}t^{s}
+        </men>
+          on putting <m>r+s=n</m>, the coefficient of <m>t^{n}</m> for fixed value of 
+          <m>r</m>  is <m>\frac{(-1)^{r}n!}{(r!)^{2}(n-r)!}x^{r}</m>,  as <m>n-r=s</m>  and  
+          <m>s \geq 0</m>. 	Thus <m> n-r \geq 0</m>	or, <m>r \leq n</m>. Hence the coefficient 
+          of <m>t^{n}</m> on RHS of equation <xref ref="eqn-laguer_gen2"/> is 
+          <me>
+            \sum\limits_{r=0}^{n}\frac{(-1)^{r}n!}{(r!)^{2}(n-r)!}x^{r} =\frac{L_{n}(x)}{n!}
+          </me>
+          Therefore,
+          <me>
+             \frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{r=0}^{n}\frac{L_{n}(x)}{n!}t^{n}
+          </me>
+          is the generating function of <m>L_{n}(x)</m>.		
+	 </p>
+      </proof>
+  </subsubsection>
+
+<subsubsection xml:id="subsubsec-laguer_rodr">
+  <title>Rodrigue's Differential Formula for <m>L_{n}(x)</m></title>
+  <p>
+    <me>
+      L_{n}(x)=e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x}).
+    </me>
+    </p>
+    <proof>
+      <p>
+        We have the generating function for <m>L_{n}(x)</m> is 
+        <me>
+          \frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n}
+        </me>
+        Differentiating <m>n</m> times w. r. to 't', we get - 
+        <me>
+          \frac{d^{n}}{dt^{n}}\left(\frac{e^{-xt/(1-t)}}{1-t}\right)=	L_{n}(x)+L_{n+1}(x)t+\cdots
+        </me>
+        or,
+        <me>
+            e^{x}\frac{d^{n}}{dt^{n}}\left[(1-t)^{-1}e^{-x/(1-t)}\right] 
+        </me>
+        
+        <men xml:id="eqn-laguer_rodr1">
+        =L_{n}(x)+L_{n+1}(x)t+\cdots	
+        </men>
+        But,
+        <me>
+          \frac{d}{dt}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=\frac{1-x-t}{(1-t)^{3}}e^{-x/(1-t)}
+        </me>
+        or,
+        <me>
+          \lim\limits_{t \to 0}\frac{d}{dt}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=(1-x)e^{-x}=\frac{d}{dx}(xe^{-x})
+        </me>
+        similarly,
+        <me>
+           \lim\limits_{t \to 0}\frac{d^{2}}{dt^{2}}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=\frac{d^{2}}{dx^{2}}(x^{2}e^{-x})
+        </me>
+        In general,
+        <me>
+          \lim\limits_{t \to 0}\frac{d^{n}}{dt^{n}}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
+        </me>
+        Hence from equation <xref ref="eqn-laguer_rodr1"/>, we have 
+        <me>
+          e^{x}\lim\limits_{t \to 0}\frac{d^{n}}{dt^{n}}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})=L_{n}(x).
+        </me>
+        Thus, 
+        <me>
+          L_{n}(x)= e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
+        </me>
+        This is the Rodrigue's formula for <m>L_{n}(x)</m>.				
+      </p>
+    </proof>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-laguer_recr">
+  <title>Recurrence Relation for <m>L_{n}(x)</m></title>
+  <ol>
+    <li>
+      <p>
+        <me>
+          (1+2n-x)L_{n}=n^{2}L_{n-1}+L_{n+1}
+        </me>
+      </p>
+      <proof>
+        <p>
+          We have the generating function 
+          <men xml:id="eqn-laguer_recr1">
+            \frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n} \qquad |t| \lt 1.
+          </men>
+        
+          Differentiating equation <xref ref="eqn-laguer_recr1"/> w. r. to 't', we get -
+          <me>
+            \frac{1-x-t}{(1-t)^{3}}e^{-xt/(1-t)}=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n-1}
+          </me>
+          or,
+          <me>
+           (1-x-t)\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n)!}t^{n}=(1-t)^{2}\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n-1}
+          </me>
+          or,
+          <me>
+            (1-x)\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n)!}t^{n}-\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n)!}t^{n+1}	
+          </me>
+          <me>
+            =\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n-1}-2\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n}+\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n+1}
+          </me>
+          Equating the coefficient of <m>t^{n}</m> on both sides, we get -
+          <me>
+            (1-x)\frac{L_{n}}{(n)!}-\frac{L_{n-1}}{(n-1)!}=\frac{L_{n+1}}{(n)!}-2\frac{L_{n}}{(n-1)!}+\frac{L_{n-1}}{(n-2)!}
+          </me>
+          or,
+       <me>
+  (1-x) L_{n}-nL_{n-1}=L_{n+1}-2nL_{n}+n(n-1)L_{n-1} 
+</me>
+ [on multiplying by <m> n!</m>] Or,
+ <me>
+  \therefore (1+2n-x)L_{n}=n^{2}L_{n-1}+L_{n+1}
+ </me>
+        </p>
+      </proof>
+    </li>
+    <li>
+      <p>
+        <me>
+          L'_{n}=n[L'_{n-1}-L_{n+1}
+        </me>
+      </p>
+      <proof>
+        <p>
+          Differentiating above equation <xref ref="eqn-laguer_recr1"/> w. r. to 'x', we get - 
+          <me>
+            -(1-t)^{-1}\frac{1}{(1-t)}e^{-xt/(1-t)}=\sum\limits_{n=0}^{\infty}\frac{L'_{n}}{(n)!}t^{n}
+          </me>
+          or,
+          <me>
+            -t\sum\limits_{n=0}^{\infty}\frac{L_{n}}{(n)!}t^{n}=(1-t)\sum\limits_{n=0}^{\infty}\frac{L'_{n}}{(n)!}t^{n}
+          </me>
+          or,
+          <me>
+            -\sum\limits_{n=0}^{\infty}\frac{L_{n}}{(n)!}t^{n+1}=\sum\limits_{n=0}^{\infty}\frac{L'_{n}}{(n)!}t^{n}-\sum\limits_{n=0}^{\infty}\frac{L'_{n}}{(n)!}t^{n+1}
+          </me>
+          Equating the coefficient of <m>t^{n}</m> on both sides, we get - 
+          <me>
+            -\frac{L_{n+1}}{(n-1)!}=\frac{L'_{n}}{n!}-\frac{L'_{n-1}}{(n-1)!}
+          </me>
+          <me>
+            L'_{n}=nL'_{n-1}-nL_{n-1}
+          </me>
+          or,
+          <me>
+            \therefore L'_{n}=n[L'_{n-1}-L_{n-1}] 
+          </me>
+        </p>
+      </proof>
+    </li>
+    <li>
+      <p>
+        <me>
+          xL'_{n}=n[L_{n}-n^{2}L_{n-1}
+        </me>
+      </p>
+      <proof>
+        <p>
+          Differentiating the recurrence relation (1) w. r. to 'x', we get -
+          <men xml:id="eqn-laguer_recr2">
+            (1+2n-x)L'_{n}-L_{n}=n^{2}L'_{n-1}+L'_{n+1}
+          </men>
+            Replacing <m>n</m> by <m>n+1</m> in relation (2), we get -
+            <me>
+              L'_{n+1}=(n+1)[L'_{n}-L_{n}]
+            </me>
+            or,
+            <men xml:id="eqn-laguer_recr3">
+              L'_{n+1}=(n+1)L'_{n}-(n+1)L_{n}]
+            </men>
+            Also, from relation (2), we have 
+            <men xml:id="eqn-laguer_recr4">
+              L'_{n-1}=L_{n-1}+\frac{1}{n}L'_{n}
+            </men>
+              Substituting equations <xref ref="eqn-laguer_recr3"/> and <xref ref="eqn-laguer_recr4"/> 
+              in equation <xref ref="eqn-laguer_recr2"/>, we get -
+              <me>
+                 (1+2n-x)L'_{n}-L_{n}=n^{2}[L_{n-1}+\frac{1}{n}L'_{n}]
+              </me>
+              <me>
+                \qquad +(n+1)L'_{n}-(n+1)L_{n}
+              </me>
+              
+              or,
+              <me>
+                 (1+2n-x)L'_{n}-L_{n}=n^{2}L_{n-1}+nL'_{n}+nL'_{n}+L'_{n}-nL_{n}-L_{n}
+              </me>
+              or,
+              <me>
+                (1+2n)L'_{n}-xL'_{n}=n^{2}L_{n-1}+(1+2n)L'_{n}-nL_{n}
+              </me>
+                or,
+                <me>
+                   -xL'_{n}=n^{2}L_{n-1}-nL_{n}
+                </me>
+                or,
+                <me>
+                  \therefore xL'_{n}=nL_{n}-n^{2}L_{n-1} 
+                </me>
+        </p>
+      </proof>
+    </li>
+  </ol>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-laguer-orth">
+  <title>Orthogonal Property of Laguerre Polynomials</title>
+  <p>
+    <me>
+      \int\limits_{0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}\frac{L_{n}(x)}{n!}\,dx = \delta_{m,n} 
+      =\begin{cases}
+	0, &amp; \text{if}\quad m \neq n\\
+	1, &amp; \text{if}\quad m = n
+	\end{cases}
+    </me>
+    </p>
+    <proof>
+      <p>
+        We have 
+        <me>
+          \sum\limits_{m=0}^{\infty}\frac{L_{m}(x)}{m!}s^{m}=\frac{1}{1-s}e^{-xs/(1-s)}
+        </me>
+        and 
+        <me>
+          \sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n}=\frac{1}{1-t}e^{-xt/(1-t)}
+        </me>
+        <me>
+          \therefore \sum\limits_{m,n=0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}s^{m}\frac{L_{n}(x)}{n!}t^{m}s^{m}t^{n}
+        </me>
+        <me>
+          =e^{-x}\frac{1}{(1-s)(1-t)}e^{\frac{-xs}{1-s}}e^{\frac{-xt}{1-t}}
+        </me>
+        
+        thus,
+        <me>
+          \int\limits_{0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}\frac{L_{n}(x)}{n!}\,dx =  \text{coefficient of}\quad  s^{m}t^{n}\quad \text{in}
+        </me>
+        
+        <me>
+          \int\limits_{0}^{\infty}e^{-x}\frac{1}{(1-s)(1-t)}e^{\frac{-xs}{1-s}}e^{\frac{-xt}{1-t}}\,dx.
+        </me>
+        Now,
+        <me>
+          \int\limits_{0}^{\infty}e^{-x}\frac{1}{(1-s)(1-t)}e^{\frac{-xs}{1-s}}e^{\frac{-xt}{1-t}}\,dx  
+        </me>
+        <me>
+          =\frac{1}{(1-s)(1-t)}\int\limits_{0}^{\infty}e^{-x\left[1+\frac{t}{1-t}+\frac{s}{1-s}\right]}\,dx
+        </me>
+        
+        <me>
+          =\frac{1}{(1-s)(1-t)}\frac{1}{[1+\frac{s}{1-s}+\frac{t}{1-t}}\left[e^{-x}\{[1+\frac{s}{1-s}+\frac{t}{1-t}\}\right]_{0}^{\infty}
+        </me>
+        <me>
+          =\frac{1}{(1-s)(1-t)}\frac{(1-s)(1-t)}{(1-s)(1-t)+s(1-t)+t(1-s)}[0-1]
+        </me>
+        <me>
+          =\frac{1}{1-st}=(1-st)^{-1}=1+st+(st)^{2}+\cdots+(st)^{n}+\cdots
+        </me>
+        in which coefficient of <m>s^{m}t^{n}</m> is <m>0</m> if <m>m \neq n</m>  and <m>1</m> 
+         if <m>m=n</m>. Hence,	
+         <me>
+          \int\limits_{0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}\frac{L_{n}(x)}{n!}\,dx = \delta_{m,n} 
+          =\begin{cases} 
+          	0, &amp; \text{if}\quad m \neq n\\ 
+            	1, &amp; \text{if}\quad m = n 
+              	\end{cases}
+         </me>
+      </p>
+    </proof>
+</subsubsection>
+ </subsection>
+
+
+  </section>
+

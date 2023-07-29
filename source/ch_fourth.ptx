@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xml:id="ch_fourth" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- Change title when you have one: -->
+  <title>Differential Equations</title>
+   
+  <introduction>
+    <p>
+      An equation containing differential coefficients is known as <term>differential equation</term>. 
+      The differential equation containing only one independent variable is known as 
+      <term>ordinary differential equation</term>. The differential equation containing more than one independent 
+      variable is known as <term>partial differential equation</term>. The changing entity is a variable 
+      and the rate at which one variable changes with respect to another is its derivative or differential 
+      coefficient. The differential coefficient or derivative of <m>y [=f(x)]</m> with respect to 'x' 
+      (for any particular value of <m>x</m>) is defined as <m>f'(x)</m> or <m>\frac{\,dy}{\,dx}</m> such that
+      <me>
+        f'(x)  = \frac{\,dy}{\,dx} = \lim\limits_{\delta x \to 0}\frac{f(x+\delta x)-f(x)}{\,\delta x},
+      </me> 
+      where <m>x</m> is independent variable and <m>y</m> is dependent variable which depends upon <m>x</m>. 
+      Here are some types of differential equations and their significance: Ordinary Differential 
+      Equations (ODEs): These equations involve derivatives with respect to a single 
+      independent variable. ODEs are essential in modeling dynamic systems, such as population growth, 
+      mechanical vibrations, and electrical circuits. Partial Differential Equations (PDEs): 
+      These equations involve derivatives with respect to multiple independent variables. 
+      PDEs are widely used in physics, engineering, and applied mathematics to describe phenomena like 
+      heat conduction, wave propagation, fluid flow, and quantum mechanics.  
+      Some examples of ordinary differential equations are 
+      <ol marker = "I.">
+        <li>
+          <me>
+             \frac{\,dy}{\,dx} =\frac{1}{x},
+          </me>
+        </li>
+        <li>
+          <me>
+             \frac{\,d^{2}y}{\,dx^{2}}+4\frac{\,dy}{\,dx}-y =0
+          </me>
+          </li>
+          <li>
+            <me>
+               \left[1+\left(\frac{\,dy}{\,dx}\right)^{2}\right]^{3}=\left(\frac{\,d^{2}y}{\,dx^{2}}\right)^{2}
+            </me>
+            </li>
+            <li>
+             If z is a function of two independent variables x and y i.e., <m>z=f(x,y)</m> 
+             then <m>\frac{\,dz}{\,dx}</m> and <m>\frac{\,dz}{\,dy} </m> is partial derivatives 
+             of z with respect to x and y respectively. Hence the differential equation containing 
+             these partial derivatives are the partial differential equation,	e.g., 
+        <me>
+          \frac{\,dz}{\,dx}+\frac{\,dz}{\,dy} =x^{2}.
+        </me>
+         </li>
+      </ol>
+      </p>
+<p>
+  Here, we confine in ordinary differential equation. The <alert>order</alert> of a differential equation 
+  is the order of the highest derivative appearing in the order of above lists, e.g., in list (1) 
+  order is 1 (i.e. first order) and that of (2) and (3) is 2 (i.e. second order). The <alert>degree</alert> 
+  of a differential equation is the highest power of the highest order derivative in the lists. 
+  The degree of lists (1) and (2) are 1 (one) and that of list (3) is 2.
+  </p>
+  <p>
+    If the dependent variable (say, y) and its derivatives appeared in the differential equation 
+    are of the first degree then the differential equation is known as linear differential equation, 
+    e.g., <m>x\frac{dy}{dx}+y =e^{x}</m> is a linear differential equation of <m>1^{st}</m> 
+    order and <m>1^{st}</m> degree. The differential equation is non-linear if it contains the 
+    product of dependent variable and its derivative or higher power of dependent variable 
+    or its derivative, e.g., <m>\frac{dy}{dx}+xy^{2} =1</m> is a non-linear differential equation 
+    as it contains <m>y^{2}</m>.
+    </p>
+    <p>
+      A standard form of a linear differential equation is given as  
+      <men xml:id="eqn-diffeq1">
+       f_{o}(x)\frac{d^{n}y}{dx^{n}} +f_{1}(x)\frac{d^{n-1}y}{dx^{n-1}}+\cdots+f_{n-1}(x)\frac{dy}{dx}+ f_{n}(x)y = F(x)
+      </men>
+      where <m>f_{o}(x){,} f_{1}(x){,} f_{n}(x)</m>, and <m> F(x)</m> are functions of independent variable 
+      x and <m>f_{o}(x) \neq 0</m>. When <m>F(x)</m> is zero, the equation is said to be 
+      <term>homogeneous</term> because each of its terms contains <m>y(x)</m> or a derivative. If <m>F(x) \neq 0</m>, 
+      then the equation is said to be <term>inhomogenous</term>, because some of its terms do not 
+      include <m>y(x)</m>,  e.g., <m>x^{2}\frac{\,dy}{\,dx}-2xy=\frac{1}{x}</m>. The term <m>\frac{1}{x}</m> 
+      does not contain <m>y</m> hence the inhomogenous.
+      </p>
+      <p>
+       For Python code visit <url href="https://apmonitor.com/pdc/index.php/Main/SolveDifferentialEquations"></url>
+        </p>
+      </introduction>
+
+ 
+
+  <xi:include href="./sec_fourth-diff.ptx" />
+ <xi:include href="./sec_fourth-examplesA.ptx" /> 
+  <xi:include href="./sec_fourth-power.ptx" />
+   <xi:include href="./sec_fourth-examplesB.ptx" /> 
+    <xi:include href="./sec_fourth-spfunc.ptx" />
+    <xi:include href="./sec_fourth-examplesC.ptx" />
+     <xi:include href="./sec_fourth-besslfn.ptx" />
+  <xi:include href="./sec_fourth-examplesD.ptx" />
+  <xi:include href="./sec_fourth-hermtfn.ptx" />
+  <xi:include href="./sec_fourth-examplesE.ptx" />
+  <xi:include href="./sec_fourth-lagurfn.ptx" />
+  <xi:include href="./sec_fourth-examplesF.ptx" />
+
+   <xi:include href="./ex_fourth.ptx"/> 
+</chapter>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_third-mit" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Moment of Inertia Tensor</title>
+  <introduction>
+  <figure xml:id="fig-mit1">
+                <caption></caption>
+                <image source="fig332.png" width ="30%"/>
+            </figure>
+   <p>
+    Consider a rigid body rotating about an axis that is passing through a point O as shown in figure
+    <xref ref="fig-mit1"/>. Now the angular momentum of the body about such an axis is given by 
+   <me>
+    L = \sum\limits_{i}m_{i}(\vec{r_{i}}\times \vec{v_{i}}) =  \sum\limits_{i}m_{i}(\vec{r_{i}}\times \vec{\dot{r}_{i}}) 
+   </me>
+   <me>
+     =   \sum\limits_{i}m_{i}[\vec{r_{i}}\times (\vec{\omega}\times\vec{r_{i}})] = \sum\limits_{i}m_{i}\left[\vec{\omega}r^{2}_{i} - (\vec{r_{i}}\cdot \vec{\omega})\vec{r_{i}}\right]
+   </me>
+   or,
+   <me>
+     \hat{i}L_{x}+\hat{j}L_{y}+\hat{k}L_{z} = \sum\limits_{i}m_{i}\left[(\hat{i}\omega_{x}+ \hat{j}\omega_{y}+\hat{k}\omega_{z})r^{2}_{i} - (\vec{r_{i}}\cdot \vec{\omega})(\hat{i}x_{i}+\hat{j}y_{i}+\hat{k}z_{i})\right]
+   </me>
+   <me>
+     = \sum\limits_{i}m_{i} \left[(\hat{i}\omega_{x} + \hat{j}\omega_{y}+\hat{k}\omega_{z})r^{2}_{i} - (x_{i}\omega_{x}+y_{i}\omega_{y}+z_{i}\omega_{z})(\hat{i}x_{i}+\hat{j}y_{i}+\hat{k}z_{i})\right]
+   </me>
+   <me>
+    =\hat{i}\left[\omega_{x}\sum\limits_{i}m_{i}\left(r^{2}_{i}-x^{2}_{i}\right) - \omega_{y} \sum\limits_{i}m_{i}x_{i}y_{i} - \omega_{z}\sum\limits_{i}m_{i}x_{i}z_{i}\right]
+   </me>
+   <me>
+    + \hat{j}\left[-\omega_{x}\sum\limits_{i}m_{i}x_{i}y_{i} + \omega_{y}\sum\limits_{i}m_{i}\left(r^{2}_{i}-y^{2}_{i}\right) - \omega_{z}\sum\limits_{i}m_{i}y_{i}z_{i}\right]
+   </me>
+   <me>
+    +  \hat{k}\left[-\omega_{x}\sum\limits_{i}m_{i}x_{i}z_{i} - \omega_{y}\sum\limits_{i}m_{i}y_{i}z_{i}+\omega_{z}\sum\limits_{i}m_{i}\left(r^{2}_{i}-z^{2}_{i}\right) \right]
+   </me>
+   <me>
+     =\hat{i}\left[I_{xx}\omega_{x} +I_{xy}\omega_{y}+I_{xz}\omega_{z}\right] + \hat{j}\left[I_{yx}\omega_{x} +I_{yy}\omega_{y}+I_{yz}\omega_{z}\right]
+   </me>
+   <me>
+    +\hat{k}\left[I_{zx}\omega_{x} +I_{zx}\omega_{y}+I_{zz}\omega_{z}\right] 
+   </me>
+   or,
+   <men xml:id="eqn-mit_eqn1">
+     \begin{cases} 
+     L_{x} = \left[I_{xx}\omega_{x} +I_{xy}\omega_{y}+I_{xz}\omega_{z}\right];\\ 
+     L_{y}=\left[I_{yx}\omega_{x} +I_{yy}\omega_{y}+I_{yz}\omega_{z}\right];\\ 
+     L_{z} = \left[I_{zx}\omega_{x} +I_{zx}\omega_{y}+I_{zz}\omega_{z}\right] 
+     \end{cases}
+   </men> 
+   or,
+   <me>
+    \begin{bmatrix} 
+    L_{x} \\  L_{y} \\ L_{z} 
+    \end{bmatrix}	= \begin{bmatrix} 
+    I_{xx} &amp; I_{xy} &amp; I_{xz} \\ I_{yx} &amp; I_{yy} &amp; I_{yz} \\ I_{zx} &amp; I_{zy} &amp; I_{zz} 
+    \end{bmatrix} \begin{bmatrix} 
+    \omega_{x} \\ \omega_{y} \\ \omega_{z} 
+    \end{bmatrix}
+   </me>
+   <men xml:id="eqn-mit_eqn2">
+    \therefore   \quad   \vec{L_{i}}=I_{ij}\vec{\omega_{j}}
+   </men>
+   Where,
+   <men xml:id="eqn-mit_eqn3">
+     \begin{cases} 
+      I_{xx} = \sum\limits_{i}m_{i}\left(r^{2}_{i}-x^{2}_{i}\right);  \\  
+      I_{yy} =  \sum\limits_{i}m_{i}\left(r^{2}_{i}-y^{2}_{i}\right); \\ 
+       \quad  I_{zz} =\sum\limits_{i}m_{i}\left(r^{2}_{i}-z^{2}_{i}\right) 
+        \end{cases}
+   </men>
+   are the coefficients of a moment of inertia.
+    </p>
+    <p>
+      and 
+      <men xml:id="eqn-mit_eqn4">
+        \begin{cases} 
+           I_{xy} = I_{yx} = -\sum\limits_{i}m_{i}x_{i}y_{i}; \\ 
+            \quad     I_{yz} = I_{zy} = -\sum\limits_{i}m_{i}y_{i}z_{i}; \\ 
+             \quad    I_{zx} = I_{xz} = -\sum\limits_{i}m_{i}z_{i}x_{i} 
+              \end{cases}
+      </men>
+      are the product of inertia.
+      </p>
+      <p>
+        Eqn. <xref ref="eqn-mit_eqn1"/> shows that the angular momentum <m>\vec{L}</m> is not necessarily 
+        parallel to the angular velocity <m>\vec{\omega}</m>. From eqn. <xref ref="eqn-mit_eqn2"/> 
+        since <m>\vec{L_{i}}</m> and <m>\vec{\omega_{j}}</m> are tensors of rank one, then from quatient 
+        law it is clear that <m>I_{ij}</m> must be a tensor of rank two. The value of <m>I_{ij}</m> 
+        is given by eqns. <xref ref="eqn-mit_eqn3"/> and <xref ref="eqn-mit_eqn4"/>, which is called 
+        a moment of inertia tensor of the body.	
+        </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-stress_tensor">
+  <title>The Stress Tensor</title>
+  <p>
+    The stress tensor is defined as the internal force per unit area acting on a deformed body. 
+    The stress may be directed normally or tangentially to the surfaces on which force act. 
+    If the deforming force act normally to a given area of an elastic medium, they produce pure 
+    elongations and in that case the stresses are called “ tensile or normal stresses” and if deforming 
+    forces act tangentially 'shearing stresses' are produced.
+    </p> 
+     <figure xml:id="fig-mit2">
+                <caption></caption>
+                <image source="fig333.png" width ="30%"/>
+            </figure>
+    <p>
+      Consider a rectangular parallelopiped <m>ABCDEFG</m> of volume <m>\,dx_{1}dx_{2}dx_{3}</m>, 
+      as shown in <xref ref="fig-mit2"/>. Let a deforming force <m>\vec{F}</m> acts on it so that 
+      <men xml:id="eqn-stress_eqn1">
+        \vec{F}= \left\{F_{1},F_{2},F_{3}\right\}
+      </men>
+      Let a component <m>F_{1}</m> acts normal to the face $ABGF$ of area <m>A_{1} = \,dx_{2}dx_{3}</m>, 
+      then the stress acting normal to this face, <m>\sigma_{11}</m> is defined as 
+      <men xml:id="eqn-stress_eqn2">
+      \sigma_{11}	 =  \frac{\partial F_{1}}{\partial A_{1}}  
+      </men>
+       similarly, stress normal to the face OABC is  defined as  
+       <men xml:id="eqn-stress_eqn3">
+        \sigma_{22}	 =  \frac{\partial F_{2}}{\partial A_{2}}
+       </men>
+       and the stress normal to the face OEFA is	 
+       <men xml:id="eqn-stress_eqn4">
+        \sigma_{33}	 =  \frac{\partial F_{3}}{\partial A_{3}}
+       </men>
+       where <m>A_{2}=\,dx_{3}\,dx_{1}</m>, and <m>A_{3}=\,dx_{1}\,dx_{2}</m>. Thus 
+       <m>\sigma_{11} {,} \sigma_{22}</m>, and <m>\sigma_{33}</m> are normal stresses acting on a 
+       volume element. Now, consider the tangential forces acting on the face <m>ABGF</m>,  i.e., 
+       forces acting along <m>X_{2}</m> and <m>X_{3}</m> directions, then the shearing stress in 
+       <m>X_{2}</m> - direction acting on a plane perpendicular to the <m>X_{1}</m>- direction, may be defined by
+       <men xml:id="eqn-stress_eqn5">
+        \sigma_{12}	 =  \frac{\partial F_{2}}{\partial A_{1}}
+       </men>
+       when the force is along <m>X_{3}</m>- direction acting on the same face <m>ABGF</m>, the shearing stress 
+       is defined by
+       <men xml:id="eqn-stress_eqn6">
+        \sigma_{13}	 =  \frac{\partial F_{3}}{\partial A_{1}}
+       </men>
+       similarly, the tangential or shearing stresses acting on the face OABC perpendicular to the 
+       <m>X_{2}</m>- direction along <m>X_{1}</m> and <m>X_{3}</m> directions are given by 
+       <men xml:id="eqn-stress_eqn7">
+        \sigma_{21}	 =  \frac{\partial F_{1}}{\partial A_{2}}
+       </men>
+       and 
+       <men xml:id="eqn-stress_eqn8">
+       \sigma_{23}	 =  \frac{\partial F_{3}}{\partial A_{2}}
+       </men>
+      and those acting on the face OEFA perpendicular to the <m>X_{3}</m>- direction along <m>X_{2}</m> 
+      and <m>X_{1}</m> directions are given by  
+      <men xml:id="eqn-stress_eqn9">
+        \sigma_{32}	 =  \frac{\partial F_{2}}{\partial A_{3}}
+      </men>
+      <men xml:id="eqn-stress_eqn10">
+       \sigma_{31} =  \frac{\partial F_{1}}{\partial A_{3}}
+      </men>
+      Hence total stress may be completely specified by matrix form as 
+      <men xml:id="eqn-stress_eqn11">
+        T = \begin{bmatrix} 
+        	\sigma_{11} &amp; \sigma_{12} &amp; \sigma_{13} \\ \sigma_{21} &amp; \sigma_{22} &amp; \sigma_{23}  \\ 
+          \sigma_{31} &amp; \sigma_{32} &amp; \sigma_{33} 
+          	\end{bmatrix}
+      </men>
+      Since the shearing stresses on mutually perpendicular planes are always equal, we have -
+      <me>
+        \sigma_{12}= \sigma_{21} {;} \quad  \sigma_{13}= \sigma_{31} {;}   \quad  \sigma_{23}= \sigma_{32}
+      </me>
+      because when volume element to be in static equilibrium, the moment of force along <m>X_{3}</m> - direction 
+      would be <me>
+        (\sigma_{12}\,dx_{2}\,dx_{3})\,dx_{1} = (\sigma_{21}\,dx_{1}dx_{3})\,dx_{2}
+      </me>
+       Therefore <m>\sigma_{12} = \sigma_{21}</m>  which is given by the faces ABGF and DEFG. 
+       Thus stress matrix has only six independent components for its complete specification. 
+       <me>
+         	T  =	  \begin{bmatrix} 
+          \frac{\partial F_{1}}{\partial A_{1}} &amp; \frac{\partial F_{2}}{\partial A_{1}} &amp; 
+          \frac{\partial F_{3}}{\partial A_{1}} \\ \frac{\partial F_{1}}{\partial A_{2}} &amp; 
+          \frac{\partial F_{2}}{\partial A_{2}} &amp; \frac{\partial F_{3}}{\partial A_{2}} \\ 
+          \frac{\partial F_{1}}{\partial A_{3}} &amp; \frac{\partial F_{2}}{\partial A_{3}} &amp; 
+          \frac{\partial F_{3}}{\partial A_{3}}
+     		\end{bmatrix}  
+       </me>
+       or, 
+       <men xml:id="eqn-stress_eqn12">
+         T = \begin{bmatrix} 
+         \frac{\partial}{\partial A_{1}}\\\frac{\partial}{\partial A_{2}}\\\frac{\partial}{\partial A_{3}} 
+         \end{bmatrix} \begin{bmatrix} 
+         F_{1} &amp; F_{2} &amp; F_{3} 
+         \end{bmatrix} 
+       </men>
+       Now, since the force <m>F_{i} = \begin{bmatrix} 
+       F_{1} &amp; F_{2} &amp; F_{3} 
+       \end{bmatrix}</m> 
+       is definitely a vector and if <m>\begin{bmatrix}
+     		\frac{\partial}{\partial A_{1}}\\ \frac{\partial}{\partial A_{2}}\\ \frac{\partial}{\partial A_{3}} 
+        \end{bmatrix}</m> is a vector, then <m>T</m>  will certainly be a tensor of rank two. 
+        Since, Area is a vector, it must transform like vector, therefore,  
+        <men xml:id="eqn-stress_eqn13">
+           \bar{A_{j}} = \frac{\partial x^{i}}{\partial \bar{x}^{j}}A_{i} = a_{ij}A_{i}
+        </men>
+        Now,
+        <men xml:id="eqn-stress_eqn14">
+           \frac{\partial}{\partial \bar{A}_{j}} = a_{ij}\frac{\partial}{\partial A_{i}}
+        </men>
+        which is a vector transformation law. Thus, stress matrix eqn. <xref ref="eqn-stress_eqn11"/> is a tensor of rank two and is called a 'stress tensor'.
+    </p>
+ </subsection>
+
+
+  </section>
+

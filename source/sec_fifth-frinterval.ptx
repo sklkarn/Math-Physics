@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fifth-frinterval" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Change of Interval</title>
+  <introduction>
+   <p>  <idx><h>Change of interval</h></idx>
+    The period of a function in Fourier series sometimes appears in time like <m>T</m>  
+    or in length like <m>2c</m>, then in order to use Fourier series expansion such 
+    period must be converted into in angle like <m>2\pi</m>. In that case the independent 
+    variable <m>x</m> of a function <m>f(x)</m> must also be changed proportionally. 
+    Suppose we want to represent the function <m>f(x)</m> defined in the closed 
+    interval <m>(-c, c)</m> by a Fourier series, <m>c</m> being any positive real 
+    number. We consider this interval as a result of elongating (or compressing) 
+    the interval <m>[-\pi, \pi]</m>. The interval <m>-c \leq x \leq c</m> is transformed 
+    into the interval <m>-\pi \leq x \leq \pi</m> by the transformation <m>z=\frac{\pi x}{c}</m>.
+				</p>
+        <p>
+        Suppose the function <m>F(z)</m> is expanded in the interval of <m>2\pi</m> as 
+        <men xml:id="eqn-fourier_chinter1">
+          F(z) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nz + b_{n}\sin nz\right] 
+        </men>
+          If <m>f(x)</m> has an interval of <m>2c</m>, then we can write the <m>2c </m> is a period 
+          of variable <m>x</m>.
+          or, <m>1</m> is the period of variable <m>x/2c,</m>
+          <me>\therefore   2\pi \quad 	\text{is the period of variable} </me>
+          <me>
+             \frac{x}{2c}.2\pi = \frac{\pi x}{c}
+          </me>
+            i.e., <m>z=\frac{\pi x}{c}</m>, (because both the variables have same period of <m>2\pi</m>.)
+    </p>
+    <p>
+      Now, 
+      <me>
+        f(x) = f\left(\frac{cz}{\pi}\right) = F(z)\quad \text{(say)}
+      </me>
+        Hence, 
+        <me>
+          a_{0}=  \frac{1}{\pi}\int\limits_{-\pi}^{\pi}F(z)\,dz
+        </me>
+         <me>
+          =\frac{1}{\pi}\int\limits_{-\pi}^{\pi} f\left(\frac{cz}{\pi}\right)\,dz = \frac{1}{\pi}\int\limits_{-c}^{c} f(x)\,d\left(\frac{\pi x}{c}\right) = \frac{1}{c}\int\limits_{-c}^{c}f(x)\,dx 
+         </me>
+         <me>
+          a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}F(z) \cos nz\,dz = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f\left(\frac{cz}{\pi}\right)\cos nz\,dz 
+         </me>
+         <me>
+          = \frac{1}{\pi}\int\limits_{-c}^{c}f(x)\cos  \left(\frac{n \pi x}{c}\right)\,d \left(\frac{\pi x}{c}\right) = \frac{1}{c}\int\limits_{-c}^{c}f(x)\cos  \frac{n \pi x}{c}\,dx
+         </me>
+         and 
+         <me>
+          b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}F(z) \sin nz\,dz = \frac{1}{c}\int\limits_{-c}^{c}f(x)\sin  \frac{n \pi x}{c}\,dx 
+         </me>
+          The function <m>f(x)</m> is now expressed as 
+          <men xml:id="eqn-fourier_chinter2">
+            f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{c}\right) + b_{n}\sin \left(\frac{n\pi x}{c}\right)\right] 
+          </men>
+          for the period <m>2c</m>.
+      </p>
+   
+     </introduction>
+ 
+ <subsection xml:id="subsec-fourier_complex">
+  <title>Complex Form of Fourier Series</title>
+  <p> <idx><h>complex fourier series</h></idx>
+    The complex form of Fourier series is obtained by expressing  <m>\cos nx</m> and 
+    <m>\sin nx</m> in the exponential form, i.e.,	 
+    <me>
+      f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+    </me>
+    <me>
+      =\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}a_{n}\left[\frac{e^{inx}+e^{-inx}}{2}\right] + \sum\limits_{n=1}^{\infty}b_{n}\left[\frac{e^{inx}-e^{-inx}}{2i}\right]	
+    </me>
+    <me>
+      =\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[\frac{a_{n}}{2}-\frac{ib_{n}}{2}\right]e^{inx}+\sum\limits_{n=1}^{\infty}\left[\frac{a_{n}}{2}+\frac{ib_{n}}{2}\right]e^{-inx} 
+    </me>
+    <me>
+       =c_{0}+\sum\limits_{n=1}^{\infty}c_{n}e^{inx}+\sum\limits_{n=1}^{\infty}c_{-n}e^{-inx}
+    </me>
+    
+      <men xml:id="eqn-comp_fourier1">
+        \therefore  \quad f(x) = \sum\limits_{n=-\infty}^{\infty}c_{n}e^{inx};
+      </men>
+      where,
+        <me>
+          \begin{cases} 
+               c_{0} = \frac{a_{0}}{2}\\
+                   c_{n} = \frac{1}{2}(a_{n}-ib_{n})\\ 
+                      c_{-n} = \frac{1}{2}(a_{n}+ib_{n}) 
+                      \end{cases}	
+        </me>
+          Equation <xref ref="eqn-comp_fourier1"/> is a complex form of Fourier series. 
+          On multiplying both sides of equation <xref ref="eqn-comp_fourier1"/> by  
+          <m>e^{-imx}</m> and integrating w.r.t. 'x', we get -
+           	 	<me>
+                \int\limits_{c}^{c+2\pi}f(x)e^{-imx} \,dx = \sum\limits_{n=-\infty}^{\infty}c_{n}\int\limits_{c}^{c+2\pi}e^{i(n-mx)} \,dx 
+              </me>
+              <me>
+                = \sum\limits_{n=-\infty}^{\infty}c_{n}2\pi \delta_{mn}=2\pi c_{m}
+              </me>
+              
+              	<me>
+                  \therefore  c_{n}	=\frac{1}{2\pi}\int\limits_{c}^{c+2\pi}f(x)e^{-inx} \,dx.
+                </me>
+              The function <m>f(x)</m> is being defined in the interval <m>[c, c+2\pi]</m>. Hence,
+              <me>
+                c_{0}=\frac{1}{2\pi}\int\limits_{c}^{c+2\pi}f(x) \,dx = \frac{a_{0}}{2}.
+              </me>
+    </p>
+ </subsection>
+
+<subsection xml:id="subsec-fourier_intg">
+  <title>Fourier Integral</title>
+  <p>
+    <idx><h>Fourier integral</h></idx>
+    Fourier series of a periodic function <m>f(x)</m> in the interval [-l,l]  is given by 
+    <men xml:id="eqn-fourier_intg1">
+      f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{l}\right) + b_{n}\sin \left(\frac{n\pi x}{l}\right)\right] 
+    </men>
+    	where,
+      <me>
+        a_{0}=\frac{1}{l}\int\limits_{-l}^{l}f(t) \,dt,
+      </me>
+      <me>
+        a_{n} = \frac{1}{l}\int\limits_{-l}^{l}f(t) \cos \left(\frac{n\pi t}{l}\right)\,dt, 
+      </me>
+      and 
+      <me>
+        b_{n} = \frac{1}{l}\int\limits_{-l}^{l}f(t) \sin \left(\frac{n\pi t}{l}\right)\,dt.
+      </me>
+        Substituting these values in equation <xref ref="eqn-fourier_intg1"/>, we get -
+        <me>
+           f(x) = \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt 
+        </me>
+        <me>
+          + \frac{1}{l}\sum\limits_{n=1}^{\infty}\left[\int\limits_{-l}^{l}f(t)\left\{\cos \left(\frac{n\pi x}{l}\right) \cos \left(\frac{n\pi t}{l}\right)\right.
+        </me>
+        <me>
+          \left.+ \sin \left(\frac{n\pi x}{l}\right)\sin \left(\frac{n\pi t}{l}\right)\right\}\,dt \right]
+        </me>
+        
+        or,
+        <men xml:id="eqn-fourier_intg2">
+          f(x) = \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt+ \frac{1}{l}\sum\limits_{n=1}^{\infty}f(t) \cos \left[\frac{n\pi}{l}(x-t)\right]\,dt
+        </men>
+        If we set
+        <m> u=\frac{n\pi}{l} </m>  so that  <m> \bigtriangleup u= \frac{\bigtriangleup n\pi}{l}, </m>
+        where  <m> \bigtriangleup n = 1  </m>  and 
+        <m>\frac{1}{l}=\frac{\bigtriangleup u} {\pi}.</m> Hence, equation 
+        <xref ref="eqn-fourier_intg2"/> becomes
+          <me>
+           f(x) = \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt+ \frac{1}{\pi}\sum\limits_{u=\pi/l}^{\infty}\bigtriangleup u \int\limits_{-l}^{l}f(t) \cos \left[u(x-t)\right]\,dt  
+          </me>
+          or,
+           <men xml:id="eqn-fourier_intg3">
+            f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\, du \int\limits_{-\infty}^{\infty}[u(x-t)]\,dt 
+           </men>
+            Since
+            <me>
+               \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt \rightarrow 0,
+            </me>
+           and 
+           <me>
+             \sum\limits_{u=\pi/l}^{\infty}\bigtriangleup u \rightarrow   \int\limits_{0}^{\infty} \,du 
+           </me>
+          [as <m>l\rightarrow \infty</m>]. Equation <xref ref="eqn-fourier_intg3"/>
+           is called the Fourier integral formula.
+    </p>
+</subsection>
+
+<subsection xml:id="subsec-gibbs_phen">
+  <title>Gibb's Phenomenon</title>
+  <p>
+    <idx><h>Gibb's Phenomenon</h></idx> Gibb's phenomenon describes a special case 
+    where a funciton has a jump discontinuity. An anomaly occurs near the discontinuity 
+    in an approximation of an original function using its Fourier series. 
+    The values of the partial sums near the discontinuity overshoot or undershoot 
+    the fuction value. As more and more terms incorporate in the partial sums the 
+    graph of the function resembles the original function more closely away from 
+    the point of discontinuity. However, the blips near the discontinuity persists. 
+    Although the size of blips decreases in width they appear to remain at the same height. 
+    In other words, the series converges correctly at any point due to increase of terms 
+    in the partial sums, but the blips do not converges to zero as shown in figure <xref ref="fig-Gibbs"/>. 
+    This lack of improvement in the approximation near the discontinuity menifested in 
+    the continual presence of the overshoot or undershoot is the Gibb's phenomenon. 
+    </p>
+     <figure xml:id="fig-Gibbs">
+              <caption>Gibbs Phenomena</caption>
+              <image source="Gibbs.png" width ="65%"/>
+          </figure>
+
+          <p>
+            In the immediate vicinity of a jump discontinuity i.e. at 
+            <m>x{+}</m> or <m>x{-}</m>, the function <m>f(x)</m> is not same and 
+            hence the convergence of the Fourier series is not uniform 
+            since <m>f(x) \rightarrow \frac{1}{2}[f(x+0)+f(x-0)]</m>. 
+            Here partial sums move progressively closer to the function as the number of terms 
+            is increased, but the partial sums (approximating curves) overshoot or undershoot 
+            the function at the jump discontinuity. To verify the validity of Gibbs phenomenon, 
+            i.e. Fourier expansion for functions which are discontinuous but piecewise smooth, 
+            Bocher considered the following specific function defined by 	
+            <men xml:id="eqn-gibbs1">
+              f(x) = \frac{1}{2}(\pi-x)   \quad  (0\leq x \leq 2\pi)
+            </men>
+              here <m>f(0) = 0</m> and <m>f(x+2\pi) =f(x)</m>. i.e., 
+              the function jumps by <m>\pi</m> at the points <m>x = \pm 2m\pi</m> 
+              where <m> m=0,1,2,\cdots</m>. The Fourier coefficients of this function 
+              are <m>a_{0}=a_{n}=0, \quad b_{n}=\frac{1}{n}</m>.
+            </p>
+            <p>
+              Thus, if the Fourier expansion for such functions is valid, we have 
+              <men xml:id="eqn-gibbs2">
+                s(x)=\displaystyle{\lim_{p \to \infty}} s_{p}(x) = \sum\limits_{n=1}^{\infty}\frac{\sin nx}{n}
+              </men>
+              The partial sum is given by 
+              <me>
+                s_{p}(x) =	 \sum\limits_{n=1}^{p}\frac{\sin nx}{n} = \sin x +\frac{1}{2}\sin 2x +\cdots+\frac{1}{p}\sin px
+              </me>
+              <me>
+                =\int\limits_{0}^{x}(\cos u +\cos 2u + \cdots + \cos pu)\,du  =\int\limits_{0}^{x}\left(\sum\limits_{n=1}^{p}\cos nu\right)\,du
+              </me>
+              <me>
+                =\frac{1}{2} \int\limits_{0}^{x}\frac{\sin\left[\left(p+\frac{1}{2}\right)u\right]}{\sin u/2}\,du -\frac{x}{2} 
+              </me>
+              <me>
+                \left[\because  \sum\limits_{n=1}^{p}\cos nx = \frac{\sin \left(p+\frac{1}{2}\right)x}{2\sin x/2}-\frac{1}{2}\right]
+              </me>
+              The remainder, 
+              <me>
+                R_{p}(x) = 	\sum\limits_{n=p+1}^{\infty}\frac{\sin nx}{n}		=f(x)-s_{p}(x) = \frac{\pi-x}{2}-s_{p}(x)
+              </me>
+              <men xml:id="eqn-gibbs3">
+               	\therefore  \quad R_{p}(x)=\frac{\pi}{2}-	\frac{1}{2}\int\limits_{0}^{x}\frac{\sin\left[\left(p+\frac{1}{2}\right)u\right]}{\sin u/2}\,du 
+              </men>
+              or, 
+              <men xml:id="eqn-gibbs4">
+                R_{p}(x)=\frac{\pi}{2}-	\int\limits_{0}^{(p+1/2)x}\frac{\sin u}{u}\,du +\rho_{p}(x)
+              </men>
+              where  
+              <men xml:id="eqn-gibbs5">
+                \rho_{p}(x)=\int\limits_{0}^{x}\left\{ \frac{\sin u/2 -u/2}{u \sin u/2}\right\}\sin \left[\left(p+\frac{1}{2}\right)u\right]\,du
+              </men> 
+              On differentiating equation <xref ref="eqn-gibbs4"/> with respect to 'x', 
+              we find that <m>R_{p}(x)</m> has maxima or minima at	 
+              <me>
+                x_{k}=\frac{2\pi k}{2p+1}   \quad (k=0,1,2,\cdots)	
+              </me>
+              				The value of <m>R_{p}(x)</m> at <m>x_{k}</m> is 
+                      <men xml:id="eqn-gibbs6">
+                        R_{p}(x)=\frac{\pi}{2}-\int\limits_{0}^{\pi k}\frac{\sin u}{u}\,du + \rho_{p}\left(\frac{2\pi k}{2p+1}\right)
+                      </men> 
+                      As <m>p\rightarrow \infty</m> for fixed <m>k, \rho_{p}\rightarrow 0.</m> 
+              </p> 
+              <p>
+                Hence the remainder, the deviation of the approximation from <m>(\pi-x)/2</m> 
+                at <m>x_{k}</m> which approaches the point of the discontinuity 
+                at <m>x=0</m>(end point), tends to the limit 	
+                <men xml:id="eqn-gibbs7">
+                  \displaystyle{\lim_{p \to \infty}} R_{p}(x_{k}) \rightarrow \frac{\pi}{2}-\int\limits_{0}^{\pi_{k}}\frac{\sin u}{u}\, du
+                </men>
+                  For <m>k=1</m>, we find that 
+                  <me>
+                     \displaystyle{\lim_{p \to \infty}} R_{p}(x_{1}) \rightarrow \frac{\pi}{2}-\int\limits_{0}^{\pi}\frac{\sin u}{u}\, du 
+                  </me>
+                  
+                  <men xml:id="eqn-gibbs8">
+                   = \frac{\pi}{2}-\frac{\pi}{2}(1.179) = -0.281
+                  </men>
+                     Hence the negative sign in equation <xref ref="eqn-gibbs8"/> indicates that the 
+                     approximate curve for <m>f(x)</m> is overshooted by about m<m>18 \% </m> 
+                     at a jump discontinuity (i.e., at <m>x=0</m>), in the Fourier series. 		
+                </p>
+</subsection>
+  </section>
+

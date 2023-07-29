@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fifth-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Direchlet's Conditions</title>
+  <introduction>
+  <p>
+    <idx><h>Direchlet's Conditions</h></idx>  Direchlet's Conditions are a set of conditions that need to be satisfied by a 
+    function in order for its Fourier series representation to converge to the function 
+    itself. In other words, to apply Fourier series representation of any 
+    function <m>f(x)</m>, it is necessary that <m>f(x)</m> must satisfy the following conditions. 
+    </p>
+    <ol>
+      <li>
+        <p>
+          Periodicity: The function f(x) must be periodic, meaning it repeats itself over 
+          a specific interval. The period can be any finite value or infinite. 
+          The Fourier series is defined specifically for periodic functions. That is, 
+          <m>f(x)</m> is a singled - valued within the period T.
+        </p>
+      </li>
+      <li>
+        <p>
+           Finite Number of Discontinuities:  <m>f(x)</m> has a finite number of discontinuities 
+           in the period T. Discontinuities can include jump discontinuities 
+           or removable discontinuities (such as isolated points). The presence of an infinite 
+           number of discontinuities or essential discontinuities can prevent the Fourier 
+           series from converging to the function.
+        </p>
+      </li>
+      <li>
+        <p>
+           Finite Total Variation: The function f(x) must have a finite total variation within a given period. The total variation of a function measures the overall "wiggliness" or oscillation of the function. 
+           If the total variation is infinite, the Fourier series may not converge. That is,
+           <m>f(x)</m> has a finite number of maxima and minima in the period T. 
+        </p>
+           <p>
+            and 
+          <m>f(x)</m> is absolutely integrable. i.e., 
+          <me>
+            \int\limits_{-T/2}^{T/2} |f(x)|\, dx \lt \infty, 
+          </me>
+          or, a series must be convergent.
+        </p>
+      </li>
+    </ol>   
+<p>
+If a function satisfies these three conditions, then its Fourier series representation 
+converges to the function pointwise, except at the points of discontinuity where the series 
+converges to the average of the left and right limits. It is important to note that 
+Dirichlet's conditions are necessary but not sufficient for the convergence of 
+the Fourier series. There exist functions that satisfy these conditions but 
+whose Fourier series does not converge at specific points or over the entire interval. 
+Additional conditions, such as the smoothness of the function, are required to ensure 
+convergence in those cases.
+    </p>
+
+    <paragraphs>
+      <title>Some Useful Formulae:</title>
+  <p>
+    <ol marker="i.">
+      <li>
+         <me>
+          \int\limits_{0}^{2\pi} \sin nx \, dx = 0.
+         </me>
+      </li>
+      <li>
+        <me>
+          \int\limits_{0}^{2\pi} \cos nx \, dx = 0.
+        </me> 
+        </li>
+        <li>
+          <me>
+            \int\limits_{0}^{2\pi} \sin^{2} nx\, dx = \pi.
+          </me>
+          </li>
+          <li>
+            <me>
+              \int\limits_{0}^{2\pi} \cos nx \,dx = \pi.
+            </me>
+            </li>
+            <li>
+              <me>
+                \int\limits_{0}^{2\pi} \sin nx .\sin mx\, dx = 0.
+              </me>
+              </li>
+              <li>
+                <me>
+                  \int\limits_{0}^{2\pi} \cos nx .\cos mx\, dx = 0.
+                </me>
+                </li>
+                <li>
+                  <me>
+                    \int\limits_{0}^{2\pi} \sin nx .\cos mx\, dx = 0.
+                  </me>
+                  </li>
+                  <li>
+                    <me>
+                      \int\limits_{0}^{2\pi} \sin nx .\cos nx\, dx = 0
+                    </me>
+                    </li>
+                    <li>
+                      <me>
+                        \sin n\pi = 0.
+                      </me>
+                      </li>
+                      <li>
+                       <me>
+                        \cos n\pi = (-1)^{n}, \quad \text{where n is any integer}.
+                       </me>   
+                        </li>
+                        <li>
+                          <me>
+                            u v\, dx = u v_{1}-u' v_{2}+u''v_{3}-\cdots
+                          </me>
+                          where <m>u' = \frac{\,du}{\,dx}, u'' = \frac{\,d^{2}u}{\,dx^{2}}, \cdots;</m> 
+                          <m>v_{1}=\int v\, dx, v_{2}= \int v_{1}\,dx, \cdots</m>.
+                          </li>    
+                          <li>
+                           <me>
+                            \int e^{ax} \cos bx\, dx = \frac{e^{ax}}{a^{2}+b^{2}}(a\cos bx+b\sin bx)
+                           </me>
+                            </li> 
+                            <li>
+                              <me>
+                                \int e^{ax} \sin bx\, dx = \frac{e^{ax}}{a^{2}+b^{2}}(a\sin bx-b\cos bx)
+                              </me>
+                              </li>  
+                              <li>
+                                <me>
+                                  \int\limits_{-\pi}^{\pi} \sin nx .\sin mx\, dx 
+                                </me>
+                                <me>
+                                  = \begin{cases} =0, \quad m=0 =\pi \delta_{mn}, \quad m\neq 0 \end{cases}
+                                </me>
+                                </li> 
+                                <li>
+                                  <me>
+                                    \int\limits_{-\pi}^{\pi} \sin nx .\cos mx\, dx = 0.
+                                  </me>
+                                  </li>   
+                                  <li>
+                                    <me>
+                                      \int\limits_{-\pi}^{\pi} \cos nx .\cos mx\, dx 
+                                      = \begin{cases} =2\pi, \quad m==n=0\\ 
+                                      =\pi \delta_{mn}, \quad m\neq 0 
+                                      \end{cases}
+                                    </me>
+                                    </li>      
+                                    <li>
+                                      <me>
+                                        \sin A\sin B = \frac{1}{2}\left[\cos (A-B) - \cos(A+B)\right];
+                                      </me>
+                                      </li>    
+                                      <li>
+                                        <me>
+                                          \cos A\cos B = \frac{1}{2}\left[\cos (A-B) + \cos(A+B)\right]; 
+                                        </me>
+                                        </li>
+                                        <li>
+                                          <me>
+                                            \sin A\cos B = \frac{1}{2}\left[\sin (A-B) + \sin (A+B)\right].
+                                          </me>
+                                          </li>
+    </ol>
+     </p>
+  </paragraphs>
+     </introduction>
+
+ 
+    <subsection xml:id="subsec-fourier_coef">
+      <title>Determination of Fourier Coefficients</title>
+      <p>
+        The Fourier series representation is given by
+        <men xml:id="eqn-fourier1">
+          	f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+        </men>
+        </p>
+        <ol>
+          <li>
+            <p>
+              To find <m>a_{o}</m>: Integrate equation <xref ref="eqn-fourier1"/> 
+              from <m>x=0</m> to <m>2\pi</m>, we get - 
+              <me>
+                \int\limits_{0}^{2\pi}f(x)\,dx = \frac{a_{o}}{2}\int\limits_{0}^{2\pi}\,dx + a_{1}\int\limits_{0}^{2\pi} \cos x\,dx + \cdots + a_{n}\int\limits_{0}^{2\pi} \cos nx\,dx 
+              </me>
+              <me>
+                + \cdots+b_{1}\int\limits_{0}^{2\pi} \sin x\,dx  + \cdots + b_{n}\int\limits_{0}^{2\pi} \sin nx\,dx + \cdots
+              </me>
+              <me>
+                	=\frac{a_{o}}{2}\left[x\right]^{2\pi}_{0}+0+0 +\cdots.+ 0+0+ \cdots =\frac{a_{o}}{2}.2\pi =  a_{o}\pi
+              </me>
+              <men xml:id="eqn-fourier2">
+                \therefore  a_{o} = \frac{1}{\pi}\int\limits_{0}^{2\pi}f(x)\,dx.
+              </men>			
+            </p>
+          </li>
+          <li>
+            <p>
+              To find <m>a_{n}</m>:	Multiply equation, <xref ref="eqn-fourier1"/> by 
+              <m>\cos nx</m> and integrate from <m>x=0</m> to <m>2\pi</m>, we get -
+              <me>
+                \int\limits_{0}^{2\pi} f(x)\cos nx \,dx = \frac{a_{o}}{2}\int\limits_{0}^{2\pi} \cos nx \,dx + \cdots 
+              </me>
+              <me>
+                + a_{n}\int\limits_{0}^{2\pi} \cos^{2} nx \,dx + \cdots + b_{n}\int\limits_{0}^{2\pi} \sin nx .\cos nx \,dx + \cdots
+              </me>
+              <me>
+                =0+\cdots + a_{n}\int\limits_{0}^{2\pi} \cos^{2} nx \,dx + 0+ \cdots = a_{n}\pi
+              </me>
+              <men xml:id="eqn-fourier3">
+                 \therefore \quad a_{n}= \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\cos nx \,dx.
+              </men>
+            </p>
+          </li>
+          <li>
+            <p>
+              To find <m>b_{n}</m>: Multiply equation <xref ref="eqn-fourier1"/> 
+              by <m>\sin nx</m> and integrate it from <m>x=0</m> to <m>2\pi</m>, we get - 
+              <me>
+              \int\limits_{0}^{2\pi} f(x)\sin nx \,dx = \frac{a_{o}}{2}\int\limits_{0}^{2\pi} \sin nx \,dx + \cdots + a_{n}\int\limits_{0}^{2\pi} \cos nx.\sin nx \,dx + \cdots  
+              </me>
+              <me>
+                + b_{n}\int\limits_{0}^{2\pi} \sin^{2} nx \,dx + \cdots =b_{n}\int\limits_{0}^{2\pi} \sin^{2} nx \,dx  = b_{n}\pi
+              </me>
+              <men xml:id="eqn-fourier4">
+                \therefore \quad b_{n}= \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\sin nx \,dx
+              </men>
+            </p>
+          </li>
+        </ol>
+    </subsection>
+
+  </section>
+

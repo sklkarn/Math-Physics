@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_seventh" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+  <exercise>
+    <p>
+      Using the transformations <m>p=x+vt</m> and <m>q=x-vt</m>, solve the following, 
+      <me>
+        \frac{\partial^{2} u}{\partial t^{2}} =  v^{2}\frac{\partial^{2} u}{\partial x^{2}};
+      </me>
+      <me>
+        \left.\frac{\partial u}{\partial t}\right\vert_{t=0};\quad u(x,0) = f(x).
+      </me> 
+      </p>
+      <answer>
+        <p>
+          <m>u(x,t) = \sum\limits_{n=1}^{\infty}b_{n}\cos \frac{n\pi vt}{l}\sin \frac{n\pi x}{l}</m>
+        </p>
+      </answer>
+  </exercise>
+ 
+<exercise>
+  <p>
+    Find the solution of the equation of a vibrating string of length <m>l</m> 
+    satisfying the initial conditions <m>y=f(x)</m> and 
+    <m>\frac{\partial y}{\partial t}=g(x)</m>  when <m>t=0</m>. 
+    </p>
+    <p>
+      It is assumed that the equation of a vibrating string is 
+      <me>
+        \frac{\partial^{2} u}{\partial t^{2}} =  v^{2}\frac{\partial^{2} u}{\partial x^{2}}.
+      </me>
+      </p>
+      <answer>
+        <p>
+          <me>
+           y(x,t)=\sum\limits_{n=1}^{\infty}\left[b_{n}\cos \frac{n\pi vt}{l}+c_{n}\sin \frac{n\pi vt}{l}\right]\sin \frac{n\pi x}{l}. 
+          </me>
+         <me>
+          b_{n}=\frac{2}{l}\int\limits_{n=1}^{l}f(x)\sin \frac{n\pi x}{l}\,dx
+         </me>
+         and 
+         <me>
+          c_{n}=\frac{2}{n\pi v}\int\limits_{n=1}^{l}g(x)\sin \frac{n\pi x}{l}\,dx.
+         </me>
+        </p>
+      </answer>
+</exercise>
+
+<exercise>
+  <p>
+    A tightly stretched string of length <m>l</m> fastened at both ends, is disturbed 
+    from the position  of equilibrium by imparting to each of its points an initial 
+    velocity of magnitude <m>f(x)</m>. Show that the solution of the problem is 
+    <me>
+      u(x,t) = \frac{2}{l}\sum\limits_{n=1}^{\infty}\left[\int\limits_{n=1}^{l}f(x)\sin \frac{n\pi x}{l}\,dx\right]\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l}.
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Find the solution of the equation 
+    <me>
+      \frac{\partial^{2} y}{\partial x^{2}} =  \frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}}
+    </me>
+     subject to the boundary conditions 
+     <m>y(0,t)=0=y(l,t); y(x,0)=\phi(x)</m>
+	  and  
+    <me>
+       \left.\frac{\partial y}{\partial t}\right\vert_{t=0}=\psi(x).
+    </me>
+    </p>
+    <answer>
+      <p>
+       <me>
+        y=\phi(x) \cos \frac{n\pi vt}{l}+\frac{l\psi(x)}{n\pi v}\frac{\sin \frac{n\pi vt}{l}}{\frac{n\pi x}{l}}.
+       </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    The vibration of an elastic string of length <m>l</m> are governed by the one - dimensional 
+    wave equation 
+    <me>
+      \frac{\partial^{2} u}{\partial t^{2}} = v^{2}\frac{\partial^{2} u}{\partial x^{2}}.
+    </me>
+    The string is fixed at the ends, <m>u(0,t) =0=u(l,t)</m> for all <m>t</m>. 
+    The initial deflection is 
+    <me>
+      u(x,0)=\begin{cases}
+x, &amp; \text{for} \quad  0\leq x\leq l/2\\
+l-x, &amp; \text{for}  \quad l/2\leq x\leq l
+\end{cases}
+    </me> 					 
+and the initial velocity is zero. Find the deflection of the string at any instant of time.
+    </p>
+    <answer>
+      <p>
+        <me>
+          u=\sum\limits_{n=1}^{\infty}\left(\frac{4l}{n^{2}\pi^{2}}\sin \frac{n\pi}{2}\right)\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l}
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Find the solution of 
+    <me>
+      \frac{\partial^{2}u}{\partial x^{2}}=h^{2}\frac{\partial u}{\partial t}
+    </me>	
+for which 
+<me>
+  u(0,t) =0=u(\lambda,t), \quad u(x,0) =\sin\frac{\pi x}{\lambda}
+</me>
+  by the method of variables separable.    
+    </p>
+    <answer>
+      <p>
+        <me>
+          	 u=\sin\frac{n\pi}{\lambda}e^{-\pi^{2}t/h^{2}\lambda^{2}}.
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Solve 
+    <me>
+      \frac{\partial^{2}u}{\partial x^{2}}=\frac{\partial u}{\partial t}
+    </me>
+    when <m>u=0</m> for <m>t \to \infty</m> and <m>x=0</m> or, <m>\lambda </m>.
+    </p>
+    <answer>
+      <p>
+        <me>
+           u(x,t) = \sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}t/\lambda^{2}} 
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Solve 
+    <me>
+      \frac{\partial u}{\partial t}= h^{2}  \frac{\partial^{2}u}{\partial x^{2}}, 	
+      0 \lt x \lt \pi, t \lt 0.	 
+    </me>
+   under the boundary conditions 	
+   <me>
+     \left.\frac{\partial u}{\partial x}\right\vert_{(0,t)}=0=\left.\frac{\partial u}{\partial x}\right\vert_{(\pi,t)}, 
+   </me>
+  	and 
+    <me>
+      \left.\frac{\partial u}{\partial x}\right\vert^{(x,0)}=\sin x.
+    </me>
+    </p>
+    <answer>
+      <p>
+        <me>
+           u(x,t) = \frac{2}{\pi}-\frac{4}{\pi}\sum\limits_{m=1}^{\infty}(4m^{2}-1)^{-1}e^{-4m^{2}h^{2}t}\cos 2mx.
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Find the temperature <m>u(x,t)</m> in a bar of length <m>\lambda</m> perfactly 
+    insulated and whose ends are kept at temp. zero while the initial temp. is given by 
+    <me>
+      f(x) = \begin{cases}
+x, &amp; 0 \lt x \lt \lambda/2\\
+\lambda-x, &amp; \lambda/2 \lt x \lt \lambda
+\end{cases}
+    </me>
+    </p>
+    <answer>
+      <p>
+        <me>
+          u(x,t) = \frac{4\lambda}{\pi^{2}}\left[\frac{1}{1^{1}\sin\frac{\pi x}{\lambda}}e^{-\pi^{2}h^{2}t/\lambda^{2}}+\frac{1}{3^{1}\sin\frac{3\pi x}{\lambda}}e^{-3^{2}\pi^{2}h^{2}t/\lambda^{2}}+\cdots \right]
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    The heat flow in a bar of length 10 cm of homogeneous material is 
+    governed by the partial differential equation 
+    <me>
+      \frac{\partial u}{\partial t}= h^{2}  \frac{\partial^{2}u}{\partial x^{2}}.
+    </me>
+    The ends of the bar are kept at temperature <m>0^{o} C</m>, and the initial 
+    temperature is <m>f(x) =x(10-x)</m>. Find the temperature in the bar at 
+    any instant of time.
+    </p>
+    <answer>
+      <p>
+        <me>
+          u=\frac{800}{\pi^{2}}\sum\limits_{m=1}^{\infty}\frac{e^{-n^{2}\pi^{2}h^{2}t/100}}{n^{2}}\sin\frac{n\pi x}{10} 
+        </me>
+        where <m>n</m> is odd.
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Heat flows in a semi - infinite rectangular plate, the end <m>x=0</m> is 
+    kept at temp. <m>T^{o} C</m> and the edges <m>y=0</m> and <m>y=a</m> at temp. 
+    zero, then show that the temp. at any point <m>(x,y) </m> is given by 
+    <me>
+     u(x,y) = \frac{4T}{\pi}\sum\limits_{r=1}^{\infty}\frac{1}{2^{r+1}} \sin\frac{(2r+1)\pi y}{a}e^{-\frac{(2r+1)\pi x}{a}} 
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    A square plate has its faces and its edges <m>x=0</m> and <m>x=\pi</m> for 
+    <m>(0 \lt y \lt \pi)</m> is insulated. Its edges <m>y=0</m> and <m>y=\pi</m> 
+    are kept at  temperatures zero and <m> f(x)</m> respectively. Show that the 
+    steady temperature is given by
+    <me>
+      u(x,y) = \frac{1}{2\pi}a_{o}y+\sum\limits_{n=1}^{\infty}a_{n}\frac{\sinh ny}{\sinh n\pi} \cos nx
+    </me>
+    where 
+    <me>
+      a_{n}=\frac{2}{\pi}\int\limits_{0}^{\pi}f(x) \sin\cos nx\,dx,  \quad  n=0,1,2,3,\cdots.
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Solve 
+    <me>
+      \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} = 0
+    </me>
+
+for <m>0 \lt x \lt \pi, \quad 0 \lt y \lt \pi</m> under the boundary conditions 
+<m>u(x,0)=x^{2}, u(x,\pi)=0,</m> 
+<me>
+  u_{x}(0,y)=\frac{\partial}{\partial x}u_{x}(0,y)=0=u_{x}(\pi,y) 
+</me>
+    </p>
+    <answer>
+      <p>
+        <me>
+          u(x,y)=\frac{\pi}{3}(\pi-y)+4\sum\limits_{n=1}^{\infty}(-1)^{n}\frac{\sinh(\pi-y)\cos nx}{n^{2}\sinh n\pi} 	
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    The boundary of a semi - circular plate of radius <m>a</m> is kept at temperature 
+    <me>
+       u(a,\theta) = k\theta(\pi-\theta),
+    </me>
+    while the diameter of the plate is maintained at <m>0^{o} C</m>. Find the steady state 
+    temperature distribution <m> u(r,\theta) </m> of the plate assuming the lateral 
+    surfaces of the plate to be insulated.
+    </p>
+    <answer>
+      <p>
+        <me>
+           u(r,\theta)= 8\sum\limits_{n=1}^{\infty}(\frac{r}{a})^{2n-1}\frac{\sin(2n-1)\theta}{(2n-1)^{3}\sinh n\pi} 	
+        </me>
+      </p>
+    </answer>
+</exercise>
+ </exercises>
+

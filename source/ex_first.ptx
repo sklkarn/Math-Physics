@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_first" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+  <exercise>
+    <p>
+       Prove that the line joining the midpoints of two sides of a triangle is parallel and half to the third.
+      </p>
+  </exercise>
+ 
+  <exercise>
+  <statement>
+    <p>
+       A particle is displaced from the point whose position vector is <m>5\hat{i}-5\hat{j}-7\hat{k}</m> 
+       to the point whose position vector is <m>6\hat{i}+2\hat{j}-2\hat{k}</m> under the action of a number 
+       of constant forces defined by <m>10\hat{i}-\hat{j}+11\hat{k}</m>, <m>4\hat{i}+5\hat{j}+6\hat{k}</m>, 
+       and <m>-2\hat{i}+\hat{j}-8\hat{k}</m>. Find the work done. 	
+      </p>
+  </statement>
+      <answer>
+        <p>
+          92.
+        </p>
+      </answer>
+  </exercise>
+
+<exercise>
+<statement>
+  <p>
+    A force is represented in magnitude and direction by the line joining the point A(1,-2,4) to the point B(5,2,3). 
+    Find its moment about the point (-2,3,5).
+  </p>
+</statement>
+<answer>
+  <p>
+    <me>
+      9\hat{i}-\hat{j}+32\hat{k}.
+    </me>
+  </p>
+</answer>
+</exercise>
+
+
+<exercise>
+<statement>
+  <p>
+    A rigid body is rotating at the rate of 2.5 radians per second about an axis AB, 
+    where A and B are the points (1,-2,1) and (3,-4,2). Find the velocity of the point 
+    P at (5,-1,1) of the body.
+    </p>
+</statement>
+<answer>
+  <p>
+    <me>
+      \frac{2.5}{3}[3\hat{i}+8\hat{j}+10\hat{k}]
+    </me>
+  </p>
+</answer>
+</exercise>
+
+
+<exercise>
+<statement>
+  <p>
+    A particle P is moving on a circle of radius <m>r</m> with constant angular velocity 
+    <m>\omega = \frac{d\theta}{dt}</m>. Show that its acceleration is <m>-\omega^{2}\vec{r}</m>.
+    </p>
+</statement>
+</exercise>
+
+
+<exercise>
+<statement>
+  <p>
+    If <m>\phi=log\mid r \mid</m>, then show that <m>grad \phi=\frac{\vec{r}}{r^{2}}</m>.
+    </p>
+</statement>
+</exercise>
+
+
+<exercise>
+<statement>
+  <p>
+    Prove that <m>grad \frac{1}{r}=-\frac{r}{r^{3}}</m>.
+    </p>
+</statement>
+</exercise>
+
+<exercise>
+<statement>
+  <p>
+   If <m>\phi(x,y,z)=3x^{2}z-xy^{3}+5</m>, find <m>\phi</m> at the point (a) (0,0,0) and (b) (1,-2,2).
+    </p>
+</statement>
+<answer>
+  <p>
+    (a) 5   and   (b) 19.
+  </p>
+</answer>
+</exercise>
+
+<exercise>
+<statement>
+  <p>
+   Find the directional derivative of <m>x^{2}+y^{2}+4xy</m> at (1,-2,2) in the direction <m>(2\hat{i}-2\hat{j}+\hat{k})</m>.	
+    </p>
+</statement>
+<answer>
+  <p>
+    -44/3.
+  </p>
+</answer>
+</exercise>
+
+
+<exercise>
+<statement>
+  <p>
+   The temperature of the points in room is given by <m>T(x,y,z) = x^{2}+y^{2}-z^{2}</m>. 
+   A fly located at (1,1,1) desires to fly in such a direction that it will get warm as soon as 
+   possible. In what direction should it fly?
+    </p>
+</statement>
+<hint>
+  <p>
+    Find the unit vector normal to the gradient of a Temperature.
+  </p>
+</hint>
+<answer>
+  <p>
+   <m>\frac{1}{2\sqrt{3}}(2\hat{i}+2\hat{j}-2\hat{k})</m>
+  </p>
+</answer>
+</exercise>
+
+<exercise>
+<statement>
+  <p>
+   Evaluate  <m>\vec{\bigtriangledown}\cdot(r^{3}\vec{r})</m>  
+    </p>
+</statement>
+<answer>
+  <p>
+    <m>6r^{3}</m>
+  </p>
+</answer>
+</exercise>
+
+
+<exercise>
+<statement>
+  <p>
+   If <m>\vec{A}=\frac{\vec{r}}{r}</m>, find <m>\text{grad div} \vec{A}</m>
+    </p>
+</statement>
+<answer>
+  <p>
+    <m>-2r^{-3}\vec{r}</m>
+  </p>
+</answer>
+</exercise>
+
+<exercise>
+  <p>
+    Prove <m>\nabla^{2}(\phi \psi) = \phi \nabla^{2}\psi +2\nabla \phi\cdot\nabla \psi +\psi \nabla^{2} \phi</m>.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that the vector <m>\vec{A}=3y^{4}z^{2}\hat{i}+4x^{3}z^{2}\vec{j}-3x^{2}y^{2}\hat{k}</m> is solenoidal.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    If <m>\vec{A}</m> and <m>\vec{B}</m> are irrotational, prove that <m>\vec{A}\times\vec{B}</m> is solenoidal.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that <m>\nabla^{2}\left[\nabla\left(\frac{\vec{r}}{r^{2}}\right)\right]= 2r^{-4}</m>.
+    </p>
+</exercise>
+
+<exercise>
+ <statement>
+  <p>
+     Find the work done when a force  <m>\vec{F}=(x^{2}-y^{2}+x)\hat{i}-(2xy+y)\hat{j}</m> 
+     moves a particle from origin to (1,1) along a parabola <m>y^{2}=x</m>.	
+  </p>
+ </statement>
+ <answer>
+  <p>
+    <m>\frac{2}{3}</m>
+  </p>
+ </answer>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Evaluate  <m>\iint\limits_{R}\sqrt{x^{2}+y^{2}}\,dx\,dy</m> over the region R in the xy - plane 
+      bounded by <m>x^{2}+y^{2}=36</m>.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <m>144\pi</m>
+    </p>
+  </answer>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Evaluate <m>\iiint\limits_{V}(2x+y) \,dV</m>, where V is the closed region bounded by the 
+      cylinder <m>z=4-x^{2}</m> and the planes <m>x=0,y=0,y=2,</m> and <m>z=0</m>.	
+    </p>
+  </statement>
+  <answer>
+    <p>
+    40.
+    </p>
+  </answer>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Use divergence theorem to evaluate <m>\iint\limits_{S}\left(y^{2}z^{2}\hat{i}+z^{2}x^{2}\hat{j}+x^{2}y^{2}\hat{k}\right)\cdot\vec{ds}</m>, 
+      where S is the upper part of the sphere <m>x^{2}+y^{2}+z^{2}=9</m> above the x-y plane. 	
+    </p>
+  </statement>
+  <answer>
+    <p>
+    <m>\frac{243\pi}{8}</m>
+    </p>
+  </answer>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Verify divergence theorem for <m>\vec{F}=4xz\hat{i}+xyz^{2}\hat{j}3z\hat{k}</m> over the 
+      region above XOY plane bounded by the cone <m>z^{2}= x^{2}+y^{2}</m> and  the plane <m>z=4</m>.	
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+       Using Stoke's theorem, evaluate <m>\int\limits_{C}[(x+y)dx+(2x-z)dy+(y-z)dz]</m>, where C is 
+       the boundary of the triangle with vertices (2,0,0), (0,3,0) and (0,0,6). 
+    </p>
+  </statement>
+  <answer>
+    <p>
+       21.
+    </p>
+  </answer>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+       Represent the vector <m>\vec{F}= 2y\hat{i}-z\hat{j}+3x\hat{k}</m> in spherical coordinates 
+       and determine <m>F_{r}, F_{\theta}, F_{\phi}</m>.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <me>
+        \vec{F} =  F_{r}\hat{e}_{r}+F_{\theta}\hat{e}_{\theta}+F_{\phi}\hat{e}_{\phi}
+      </me>
+      <me>
+         F_{r} = 2y\sin\theta\cos\phi-z\sin\theta\sin\phi+3x\cos\theta
+      </me>
+      <me>
+        F_{\theta} = 2y\cos\theta\cos\phi-z\cos\theta\sin\phi-3x
+      </me>
+      <me>
+        F_{\phi} = -2y\sin\phi-z\cos\phi.
+      </me>
+    </p>
+  </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that a spherical coordinate system is orthogonal.
+    </p>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+       Express the velocity <m>\vec{v}</m> and acceleration <m>\vec{a}</m> of a particle in spherical coordinates.
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <me>
+        \vec{v} =  v_{r}\hat{e}_{r}+v_{\theta}\hat{e}_{\theta}+v_{\phi}\hat{e}_{\phi};
+      </me>
+      <me>
+         \vec{a}= a_{r}\hat{e}_{r}+a_{\theta}\hat{e}_{\theta}+a_{\phi}\hat{e}_{\phi}.
+      </me>
+      where, <m> v_{r} =	\dot{r}, \hspace{4pt} v_{\theta} =	r\dot{\theta},  \hspace{4pt} v_{\phi} =	r\sin\theta\dot{\phi}</m>
+     
+      <me>
+       \text{and} \quad a_{r}=\ddot{r}-r\theta^{2}-r\sin^{2}\theta\dot{\phi}^{2};
+      </me>
+      <me>
+        a_{\theta}=\frac{1}{r}\frac{d}{dt}(r^{2}\dot{\theta})-r\sin\theta\cos\phi\dot{\phi}^{2},
+      </me>
+      <me>
+        a_{\phi}=\frac{1}{r\sin\theta}\frac{d}{dt}(r^{2}\sin^{2}\theta\dot{\phi}).
+      </me>
+      
+    </p>
+  </answer>
+</exercise>
+
+ </exercises>
+

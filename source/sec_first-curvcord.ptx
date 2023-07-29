@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-curvcord" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Curvilinear Coordinates</title>
+    <introduction>
+    <p>
+<idx><h>curvilinear coordinates</h></idx> In physics many coordinate systems have been 
+develeoped to solve a problem of particular geometries. We can use a cartesian coordinate 
+system to solve a problem of any kind but finding the solutions of become very tedious. 
+Hence to make things easier some other systems of coordinates such as polar coordinates, 
+cylindrical coordinates, and spherical coordinates are designed. Curvilinear coordinate 
+is used to obtain an easy solution for specific problems, especially when we are solving 
+vector equations. Curvilinear coordinates are useful in many areas of physics and engineering, 
+where problems may be more naturally described in terms of non-Cartesian coordinate systems. 
+For example, the motion of objects in a gravitational field is often more easily described 
+in terms of spherical coordinates, and the behavior of fluids in a pipe may be more easily 
+described in terms of cylindrical coordinates.
+</p>
+<p>
+In curvilinear co-ordinates, at least one of the coordinate axes is 
+curved and the direction of unit vectors vary with their position. Hence the time derivatives 
+of unit vectors are non-zero. In a <em>Cartesian (rectangular) coordinate system</em>, the coordinate 
+lines are straight and intersect at right angles, but in a <em>curvilinear coordinate system</em>, 
+the coordinate lines are curved and may intersect at oblique angles. 
+Let us consider a coordinate system where the rectangular co-ordinates <m>(x,y,z)</m> can be expressed as
+<men xml:id="eqn-curvcord1">
+  x=f_{1}(u,v,w){,} y= f_{2}(u,v,w){,} z=f_{3}(u,v,w)
+</men>
+and on solving eqn. <xref ref="eqn-curvcord1"/>, we will get the values of <m>u</m>, <m>v</m>, <m>w</m>  
+in terms of <m>x</m>, <m>y</m>, and <m>z</m>, i.e. 
+<men xml:id="eqn-curvcord2">
+  u=g_{1}(x,y,z){,} v=g_{2}(x,y,z){,}  w=g_{3}(x,y,z)
+</men>
+The parameters <m>u</m>, <m>v</m>, <m>w</m> are three surfaces such that <m>u = constant</m>, <m>v =  constant</m>, 
+and <m>w = constant</m>. If these surfaces are intersecting at a point <m>P</m> whose rectangular 
+coordinates are <m>x,y,z</m>, then (<m>u,v,w</m>) are called curvilinear coordinates of <m>x,y,z</m>. 
+The surfaces <m>u,v,w</m> are called coordinates surfaces. Each pair of these coordinate surfaces 
+intersect in curves called the coordinate curves. One coordinate is variable on each of the  
+coordinate curves. The curve on which <m>u</m> - varies is known as <m>u-curve</m>. 
+Similarly <m>v</m> and <m>w</m> curves can be defined. One coordinate is constant on each of the 
+coordinate surfaces. The surface on which <m>u</m> is constant is known as <m>u-surface</m>.  
+Similarly  <m>v</m> and <m>w</m> surfaces are defined, as shown in <xref ref="fig-fig28"/>.
+    </p>
+      <figure xml:id="fig-fig28">
+    <caption></caption>
+    <image source="fig28.png" width ="35%"/>
+</figure>
+<p>
+  Let <m>\vec{r}=x\hat{i}+y\hat{j}+z\hat{k}</m> be the  position vector of point P in a rectangular coordinate system, 
+  Then, 
+  <me>
+    \vec{r}=f_{1}(u,v,w)\hat{i}+f_{2}(u,v,w)\hat{j}+f_{3}(u,v,w)\hat{k}  =\vec{F_{1}}(u,v,w)
+  </me>
+  Say, <m>\vec{F_{1}}(u,v,w) =\vec{r}(u,v,w)</m> for simplicity. Then, 
+  <men xml:id="eqn-curvcord3">
+    \vec{\,dr}=\frac{\partial\vec{r}}{\partial u}\,du+\frac{\partial\vec{r}}{\partial v}\,dv+\frac{\partial\vec{r}}{\partial w}\,dw   
+  </men>
+  Where <m>\frac{\partial\vec{r}}{\partial u}</m> is a tangent vector to <m>u</m>-curve at P. If 
+  <m>\hat{e_{1}}</m> is a unit tangent vector at P on <m>u</m>-curve then,
+  <me>
+    \frac{\partial\vec{r}}{\partial u}=h_{1}\hat{e_{1}},\quad \frac{\partial\vec{r}}{\partial v}=h_{2}\hat{e_{2}}, \quad \frac{\partial\vec{r}}{\partial w}=h_{3}\hat{e_{3}}
+  </me>
+  <me>
+    \left[\because  \hat{e_{1}} = \frac{\frac{\partial\vec{r}}{\partial u}}{\mid\frac{\partial\vec{r}}{\partial u}\mid},\quad h_{1}=\mid\frac{\partial\vec{r}}{\partial u}\mid\right] 
+  </me>
+  where <m>h_{1}, h_{2}, h_{3}</m> are called scalar factors.
+  <men xml:id="eqn-curvcord4">
+    \therefore  \vec{\,dr}= h_{1}\hat{e_{1}}\,du + h_{2}\hat{e_{2}}\,dv 
+    +h_{3}\hat{e_{3}}\,dw \equiv \,ds 
+  </men>
+  here <m>\,ds</m> is a magnitude of <m>\vec{\,dr}</m>. If the coordinate surfaces intersect at right angles, 
+  then the curvilinear coordinates are called the orthogonal curvilinear coordinates. The coordinate 
+  curves <m>u,v,w</m> are then analogous to the <m>x,y,z</m> coordinate axes of a rectangular system. 
+  Let us consider a very small parallelopiped whose diagonal is <m>\,ds</m> and faces coincides with 
+  surface <m>u</m> or <m>v</m> or <m>w</m> and the length of edges are 
+  <m>\,ds_{1}=h_{1}\,du, \quad \,ds_{2}=h_{2}\,dv,</m> and <m>\,ds_{3}=h_{3}\,dw</m>. 
+    Then, 
+    Volume of parallelopiped =
+  <men xml:id="eqn-curvcord5">
+     \,ds_{1}\,ds_{2}\,ds_{3} = h_{1}h_{2}h_{3}\,du\,dv\,dw
+  </men>
+  from eq. <xref ref="eqn-curvcord4"/>, we have -
+  <men xml:id="eqn-curvcord6">
+     \,ds^{2}=\vec{\,dr}\cdot\vec{\,dr}=h_{1}^{2}\,du^{2}+h_{2}^{2}\,dv^{2}+h_{3}^{2}\,dw^{2}
+  </men>
+  Let <m>\hat{N}_{1}, \hat{N}_{2}, \hat{N}_{3}</m> are the unit normal vectors on the surfaces 
+  <m>u,v,w</m>, respectively, then 
+  <me>
+    \hat{N_{1}}=\frac{\vec{\nabla}u}{\mid\vec{\nabla}u\mid}; \quad \hat{N_{2}}=\frac{\vec{\nabla}v}{\mid\vec{\nabla}v\mid};\quad \hat{N_{3}}=\frac{\vec{\nabla}w}{\mid\vec{\nabla}w\mid}.
+  </me>
+  </p>
+  </introduction>
+
+    <subsection xml:id="subsec-grad_curvcord">
+      <title>The Gradient in Curvilinear Coordinates</title>
+      <p>
+        Let <m>\phi</m> be the scalar function of orthogonal curvilinear coordinates <m>u,v,w</m>, then, 
+         <idx>gradient in curv. coord.</idx> 
+         <men xml:id="eqn-grad_curv1">
+          \,grad \phi=\vec{\nabla}\phi = f_{1}\hat{e}_{1}+f_{2}\hat{e}_{2}+f_{3}\hat{e}_{3}
+         </men>
+         where <m>f_{1},f_{2},f_{3}</m> are to be determined. We know that 
+         <me>
+          \vec{\,dr}= h_{1}\hat{e}_{1}\,du+h_{2}\hat{e}_{2}\,dv+h_{3}\hat{e}_{3}\,dw
+         </me>
+         Now,
+         <men xml:id="eqn-gradcurv2">
+          \,d\phi=\vec{\nabla}\phi\cdot\vec{\,dr}=h_{1}f_{1}\,du+h_{2}f_{2}\,dv+h_{3}f_{3}\,dw
+         </men>
+         As, <m>\phi=\phi(u,v,w)</m>.
+         <men xml:id="eqn-gradcurv3">
+           \,d\phi= \frac{\partial\phi}{\partial u}\,du+\frac{\partial\phi}{\partial v}\,dv+\frac{\partial\phi}{\partial w}\,dw
+         </men>
+         from eqns. <xref ref="eqn-gradcurv2"/> and <xref ref="eqn-gradcurv3"/>, we get - 
+         <me>
+          h_{1}f_{1}=\frac{\partial\phi}{\partial u}\Rightarrow f_{1} = \frac{1}{h_{1}}\frac{\partial\phi}{\partial u}
+         </me>
+         Similarly,
+         <me>
+          f_{2} = \frac{1}{h_{2}}\frac{\partial\phi}{\partial v}, 
+         </me>
+         and 
+         <me>
+           f_{3} = \frac{1}{h_{3}}\frac{\partial\phi}{\partial w}
+         </me>
+         <me>
+          \therefore \quad \vec{\nabla}\phi =\frac{1}{h_{2}}\frac{\partial\phi}{\partial u}\hat{e_{1}}+ \frac{1}{h_{2}}\frac{\partial\phi}{\partial v}\hat{e_{2}} +  \frac{1}{h_{3}}\frac{\partial\phi}{\partial w}\hat{e_{3}}
+         </me>
+         This indicates the del operator as 
+         <me>
+          \left[\vec{\nabla} = \frac{\hat{e_{1}}}{h_{1}}\frac{\partial}{\partial u}+ \frac{\hat{e_{2}}}{h_{2}}\frac{\partial}{\partial v}+\frac{\hat{e_{3}}}{h_{3}}\frac{\partial}{\partial w}\right] 
+         </me>
+        </p>
+    </subsection>
+
+  <subsection xml:id="subsec-div_curvcord">
+    <title>The Divergence in Curvilinear Coordinates</title>
+    <p>
+       <idx>divergence in curv. coord.</idx> Let <m>\vec{F}=F_{1}\hat{e}_{1}+F_{2}\hat{e}_{2}+F_{3}\hat{e}_{3}</m> be the vector function of orthoganal 
+      curvilinear coordinates <m>u,v,w</m>, then 
+      <me>
+        div\vec{F} =\vec{\nabla}\cdot\vec{F} 
+      </me>
+      <me>
+        = \left(\frac{\hat{e_{1}}}{h_{1}}\frac{\partial}{\partial u}+ \frac{\hat{e_{2}}}{h_{2}}\frac{\partial}{\partial v}+\frac{\hat{e_{3}}}{h_{3}}\frac{\partial}{\partial w}\right)\cdot(F_{1}\hat{e_{1}}+F_{2}\hat{e_{2}}+F_{3}\hat{e_{3}})
+      </me>
+      <me>
+        =\left(\frac{1}{h_{1}}\frac{\partial F_{1}}{\partial u}+ \frac{1}{h_{2}}\frac{\partial F_{2}}{\partial v}+\frac{1}{h_{3}}\frac{\partial F_{3}}{\partial w}\right) 
+      </me>
+      <me>
+        = \frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial u}(F_{1}h_{2}h_{3})+\frac{\partial}{\partial v}(F_{2}h_{3}h_{1})+\frac{\partial}{\partial w}(F_{3}h_{1}h_{2})\right]
+      </me>
+      </p>
+  </subsection>
+
+<subsection xml:id="subsec-curl_curvcord">
+  <title>The Curl in Curvilinear Coordinates</title>
+  <p>
+    <idx>curl in curv. coord.</idx> 
+    <me>
+      \,curl\vec{F} =\vec{\nabla}\times\vec{F} = \vec{\nabla}\times F_{1}\hat{e}_{1}+F_{2}\hat{e}_{2}+F_{3}\hat{e}_{3}
+    </me>
+    <me>
+      =\left(\frac{\hat{e}_{1}}{h_{1}}\frac{\partial}{\partial u}+ \frac{\hat{e}_{2}}{h_{2}}\frac{\partial}{\partial v}+\frac{\hat{e}_{3}}{h_{3}}\frac{\partial}{\partial w}\right)\times(F_{1}\hat{e}_{1}+F_{2}\hat{e}_{2}+F_{3}\hat{e}_{3})
+    </me>
+    <me>
+      = {\begin{vmatrix} 
+       \hat{e}_{1} &amp; \hat{e}_{2} &amp; \hat{e}_{3} \\ 
+        \frac{1}{h_{1}}\frac{\partial}{\partial u} &amp; \frac{1}{h_{1}}\frac{\partial}{\partial v}  &amp; \frac{1}{h_{1}}\frac{\partial}{\partial w} \\ 
+         F_{1} &amp; F_{2} &amp; F_{3} 
+          \end{vmatrix}}
+    </me>
+    <me>
+      =\hat{e}_{1}\left[\frac{1}{h_{2}}\frac{\partial F_{3}}{\partial v} 
+      -\frac{1}{h_{3}}\frac{\partial F_{2}}{\partial w}\right] - 
+      \hat{e}_{2}\left[\frac{1}{h_{1}}\frac{\partial F_{3}}{\partial u} 
+      -\frac{1}{h_{3}}\frac{\partial F_{1}}{\partial w}\right]
+    </me>
+    <me>
+      + \hat{e}_{3}\left[\frac{1}{h_{1}}\frac{\partial F_{2}}{\partial u} 
+      -\frac{1}{h_{2}}\frac{\partial F_{1}}{\partial v}\right]
+    </me>
+    <me>
+      =\frac{\hat{e}_{1}}{h_{2}h_{3}}\left[\frac{\partial}{\partial v}(F_{3}h_{3}) 
+      -\frac{\partial}{\partial w}(F_{2}h_{2})\right]
+    </me>
+    <me>
+       + \frac{\hat{e}_{2}}{h_{3}h_{1}}\left[\frac{\partial}{\partial w}(F_{1}h_{1}) 
+       -\frac{\partial}{\partial u}(F_{3}h_{3})\right]
+    </me>
+    <me>
+       +\frac{\hat{e}_{3}}{h_{1}h_{2}}\left[\frac{\partial}{\partial u}(F_{2}h_{2}) 
+      -\frac{\partial}{\partial v}(F_{1}h_{1})\right]
+    </me>
+    <me>
+      \therefore  	\vec{\nabla}\times\vec{F}= {\begin{vmatrix} 
+       h_{1}\hat{e}_{1} &amp; h_{2}\hat{e}_{2}  &amp; h_{3}\hat{e}_{3} \\ 
+      \frac{\partial}{\partial u} &amp; \frac{\partial}{\partial v} &amp; \frac{\partial}{\partial w} \\ 
+       F_{1}h_{1}  &amp; F_{2}h_{2}  &amp; F_{3}h_{3} 
+        \end{vmatrix}} 
+    </me>
+    </p>
+</subsection>
+
+<subsection xml:id="subsec-lapl_curvcord">
+  <title>Laplacian in Curvilinear Coordinate Systems</title>
+  <p>
+    <idx>Laplacian in curv. coord.</idx> 
+    we know that <m>\nabla^{2}\psi=\vec{\nabla}\cdot\vec{\nabla \psi}</m>,	 
+    put  <m>\vec{\nabla \psi}=\vec{F}</m>, then
+    <me>
+       \vec{\nabla}\cdot\vec{F} 
+    </me>
+    <men xml:id="eqn-lapcurv1">
+     = \frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial u}(F_{1}h_{2}h_{3}) 
+     +\frac{\partial}{\partial v}(F_{2}h_{3}h_{1}) 
+     +\frac{\partial}{\partial w}(F_{3}h_{1}h_{2})\right]
+    </men>
+     also
+    <me>
+      \vec{F} = \vec{\nabla \psi} = \left(\frac{\hat{e_{1}}}{h_{1}}\frac{\partial \psi}{\partial u} 
+      + \frac{\hat{e_{2}}}{h_{2}}\frac{\partial \psi}{\partial v} 
+      +\frac{\hat{e_{3}}}{h_{3}}\frac{\partial \psi}{\partial w}\right) 
+    </me>
+    Hence, 
+    <me>
+       F_{1}= \frac{1}{h_{1}}\frac{\partial \psi}{\partial u}, \quad F_{2} 
+       = \frac{1}{h_{2}}\frac{\partial \psi}{\partial v},\quad F_{3} 
+       = \frac{1}{h_{3}}\frac{\partial \psi}{\partial w} 
+    </me>
+    and from eqn. <xref ref="eqn-lapcurv1"/>, 
+    <me>
+      \vec{\nabla}\cdot\vec{F} = \vec{\nabla}\cdot\vec{\nabla \psi} =  \nabla^{2}\psi 
+    </me>
+    <me>
+      =  \frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial u}\left(\frac{h_{2}h_{3}}{h_{1}}\frac{\partial \psi}{\partial u}\right) 
+      +\frac{\partial}{\partial v}\left(\frac{h_{3}h_{1}}{h_{2}}\frac{\partial \psi}{\partial v}\right) 
+      +\frac{\partial}{\partial w}\left(\frac{h_{1}h_{2}}{h_{3}}\frac{\partial \psi}{\partial w}\right)\right]
+    </me>
+    which is the required expression. 
+    </p>
+
+    <p>
+    <alert>Note:</alert> If <m>h_{1}=h_{2}=h_{3}=1</m>  and 
+    <m>\hat{e}_{1}, \hat{e}_{2}, \hat{e}_{3}</m>, are replaced by <m>\hat{i}, \hat{j}, \hat{k}</m> 
+    then all the above expressions reduce into usual expressions in rectangular coordinates where 
+    <m>(u,v,w)</m> is replaced by <m>(x,y,z)</m>.
+    </p>
+
+</subsection>
+
+<subsection xml:id="subsec-cylind_cord">
+  <title>Cylindrical  Orthogonal Curvilinear Coordinates</title>
+  <p>
+    <idx>cylindrical curv. Coord.</idx> Let  the  curvilinear  coordinates of point P 
+    in space be <m>(u,v,w)</m> and  corresponding  cartesian coordinates be <m>(x,y,z)</m>. The  
+    projection  of  point P on  the z-plane is Q as shown in <xref ref="fig-fig29"/>, whose polar 
+    coordinates  in this plane are <m>(\rho, \phi)</m>. The cylindrical coordinates of point P are 
+    then specified by <m>(\rho, \phi, z)</m> where, <m>(\rho\geq 0, \quad 0\leq\phi\leq 2\pi,\quad -\infty \lt z \lt \infty)</m>. 
+    The corresponding transformation into cartesian systems are 
+    </p>
+      <figure xml:id="fig-fig29">
+    <caption></caption>
+    <image source="fig29.png" width ="30%"/>
+</figure>
+<p>
+  <men xml:id="eqn-cylind_cord1">
+    x=\rho \cos\phi, \quad y= \rho\sin\phi, \quad z=z
+  </men>
+  Let <m>\vec{r}= x\hat{i}+y\hat{j}+z\hat{k}</m> be the position vector of point P in 
+  a cartesian system, then we can write 
+  <men xml:id="eqn-cylind_cord2">
+    \vec{r}= \rho \cos\phi\hat{i}+\rho \sin\phi\hat{j}+z\hat{k} 
+  </men>
+  [from eqn. <xref ref="eqn-cylind_cord1"/>], in a cylindrical system.  
+Now the tangent vectors of <m>\vec{r}</m>  in a cylindrical system are  
+<me>
+  \frac{\partial\vec{r}}{\partial \rho} = \cos\phi\hat{i}+\sin\phi\hat{j}+0.\hat{k}, 
+</me>
+<me>
+  \frac{\partial\vec{r}}{\partial \phi} = -\rho\sin\phi\hat{i}+\rho\cos\phi\hat{j}+0.\hat{k},
+</me>
+<me>
+\text{and} \quad   \frac{\partial\vec{r}}{\partial z} = \hat{k}.
+</me>
+But, scale factors are the magnitude of tangent vectors, then we have -
+<me>
+  h_{1}=\mid\frac{\partial\vec{r}}{\partial \rho}\mid = \sqrt{\cos^{2}\phi + \sin^{2}\phi}=1;
+</me>
+<me>
+  h_{2}=\mid\frac{\partial\vec{r}}{\partial \phi}\mid = \rho ;
+</me>
+<me>
+  \text{and} \quad h_{3}=\mid\frac{\partial\vec{r}}{\partial z}\mid = 1.
+</me>
+If <m>\hat{e}_{\rho}, \hat{e}_{\phi}, \hat{e}_{z}</m>  are the unit tangent vectors along the curves 
+<m>u,v,w</m>, respectively then in cylindrical coordinates, we have - 
+<me>
+  \,grad\psi = \vec{\nabla\psi}= \frac{\hat{e}_{\rho}}{1}\frac{\partial\psi}{\partial \rho} 
+  +\frac{\hat{e}_{\phi}}{\rho}\frac{\partial\psi}{\partial \phi}+\frac{\hat{e}_{z}}{1}\frac{\partial\psi}{\partial z},
+</me>
+<me>
+  \left[\because   \vec{\nabla} = \frac{\hat{e_{1}}}{h_{1}}\frac{\partial}{\partial u} 
+  +\frac{\hat{e_{2}}}{h_{2}}\frac{\partial}{\partial v} 
+  +\frac{\hat{e_{3}}}{h_{3}}\frac{\partial}{\partial w}\right]
+</me>
+in curvilinear coordinates.
+<me>
+  \,div\vec{F} = \vec{\nabla}\cdot\vec{F} 
+  = \frac{1}{\rho}\left[\frac{\partial}{\partial \rho}(F_{1}\rho) 
+  +\frac{\partial}{\partial \phi}(F_{2}) 
+  +\frac{\partial}{\partial z}(F_{3}\rho)\right],
+</me>
+<me>
+  curl\vec{F} = \vec{\nabla}\times\vec{F}= {\begin{vmatrix}
+\hat{e}_{\rho} &amp; \rho\hat{e}_{\phi} &amp; \hat{e}_{z} \\ 
+\frac{\partial}{\partial \rho} &amp; \frac{\partial}{\partial \phi} &amp; \frac{\partial}{\partial z} \\
+F_{1} &amp; \rho F_{2} &amp; F_{3}
+\end{vmatrix}}
+</me>
+and 
+<me>
+ \nabla^{2}\psi 
+ = \frac{1}{\rho}\left[\frac{\partial}{\partial \rho}\left(\rho\frac{\partial \psi}{\partial \rho}\right) 
+ +\frac{\partial}{\partial \phi}\left(\frac{1}{\rho}\frac{\partial \psi}{\partial \phi}\right)) 
+ +\frac{\partial}{\partial z}\left(\rho\frac{\partial \psi}{\partial z}\right)\right]
+</me>
+<me>
+  =\frac{1}{\rho}\frac{\partial\psi}{\partial \rho} 
+  + \frac{\partial^{2}\psi}{\partial \rho^{2}} 
+  + \frac{1}{\rho^{2}}\frac{\partial^{2}\psi}{\partial \phi^{2}} 
+  +\frac{1}{\rho}\frac{\partial^{2}\psi}{\partial z^{2}}.
+</me>
+we can also find the values of <m>h_{1},h_{2},h_{3}</m> as - 
+<me>
+  x=\rho \cos\phi, \quad y= \rho\sin\phi, \quad z=z,  
+</me>
+and 
+<me>
+  \rho^{2} = x^{2} + y^{2}, \quad   \phi= \tan^{-1}\frac{y}{x}, \quad  z=z. 
+</me>
+Now, if <m>x</m> is a function of <m>\rho, \phi, z</m>,  i.e. <m>x=x(\rho, \phi,z)</m>, then 
+<me>
+  \,dx=	 \frac{\partial x}{\partial \rho}\,d\rho + \frac{\partial x}{\partial \phi}\,d\phi 
+  + \frac{\partial x}{\partial z}\,dz=\cos\phi \,d\rho-\rho \sin\phi d\phi+0.
+</me>
+
+<me>
+ \text{similarly,} \,dy= \sin\phi \,d\rho+\rho \cos\phi \,d\phi+0, 
+</me>
+and
+<me>
+    \,dz=\,dz.
+</me>
+<me>
+  \therefore  \,ds^{2}= \vec{dr}\cdot\vec{dr} = \,dx^{2}+\,dy^{2}+\,dz^{2} 
+</me>
+<men xml:id="eqn-cylind_cord3">
+  = \,d\rho^{2}+\rho^{2}\,d\phi^{2}+\,dz^{2}
+</men>
+
+But in curvilinear coordinates, 
+<men xml:id="eqn-cylind_cord4">
+  \,ds^{2}= h_{1}^{2} \,du^{2}+h_{2}^{2} \,dv^{2}+h_{3}^{2} \,dw^{2}
+</men>
+equating eqns. <xref ref="eqn-cylind_cord3"/> and <xref ref="eqn-cylind_cord4"/>, we get -
+</p>
+  <p>
+<m>h_{1} = 1,\quad h_{2}=\rho, \quad  h_{3}=1;</m> and <m>\hat{e}_{1} =\hat{e}_{\rho},\quad 
+ \hat{e}_{2} =\hat{e}_{\phi}, \quad  \hat{e}_{3} =\hat{e}_{z}</m>.
+</p>
+</subsection>
+
+<subsection xml:id="subsec-spher_cord">
+  <title>Spherical  Orthogonal Curvilinear  Coordinates</title>
+  <p>
+    <idx>spherical curv. coord.</idx> Let <m>(u,v,w)</m> be the curvilinear coordinates of 
+    point P and <m>(x,y,z)</m> be its corresponding cartesian coordinates. If <m>\vec{r}</m> be the position 
+    vector of point P then the spherical coordinates of point P are specified by <m>(r, \theta, \phi)</m>, 
+    as shown in <xref ref="fig-fig30"/>. where <m>r\geq 0, \quad 0\leq \theta \leq \pi, \quad 0\leq \phi \leq 2\pi</m>. 
+    The corresponding transformation into cartesian systems are <m>x=OQ\cos\phi = O'P\cos\phi = r\sin\theta \cos\phi</m>, 
+        <m>y=OQ\sin\phi = r\sin\theta \sin\phi</m>, and <m>z=PQ= OO'= OP\cos\theta = r\cos\theta</m>. 
+    Here,
+    <me>
+      x=x(r{,}\theta{,}\phi)
+    </me>
+    or,
+    <me>
+      \,dx=  \frac{\partial x}{\partial r}\,dr +\frac{\partial x}{\partial \theta}\,d\theta 
+      + \frac{\partial x}{\partial \phi}d\phi 
+    </me>
+    <me>
+      = \sin\theta\cos\phi \,dr+ r\cos\theta\cos\phi \,d\theta-r\sin\theta \sin\phi \,d\phi 
+    </me>
+    Similarly,
+    <me>
+      \,dy=  \sin\theta\sin\phi \,dr+ r\cos\theta\sin\phi \,d\theta +r\sin\theta \cos\phi \,d\phi
+    </me>
+    and 
+    <me>
+      \,dz=  \cos\theta \,dr+ -r\sin\theta \,d\theta.
+    </me>
+    <me>
+       \therefore \quad  \,ds^{2}= dx^{2}+dy^{2}+\,dz^{2}
+    </me>
+    <men xml:id="eqn-spher_cord1">
+     = \,dr^{2}+r^{2}\,d\theta^{2}+r^{2}\sin^{2}\phi \,d\phi^{2}
+    </men>
+    </p>
+      <figure xml:id="fig-fig30">
+    <caption></caption>
+    <image source="fig30.png" width ="30%"/>
+</figure>
+<p>
+  But in curvilinear coordinates
+  <me>
+    \,ds^{2}= h_{1}^{2} \,du^{2}+h_{2}^{2} \,dv^{2}+h_{3}^{2} \,dw^{2}  
+  </me>
+  from eqn. <xref ref="eqn-cylind_cord4"/>. Equating eqns. <xref ref="eqn-cylind_cord4"/>
+   and <xref ref="eqn-spher_cord1"/>, we get- 
+   <me>
+    h_{1} = 1,\quad h_{2}=r, \quad h_{3}=r\sin\theta,
+   </me>
+   and (u,v,w) is replaced by
+   <m>(r, \theta, \phi)</m>, and <m>\hat{e}_{1} = \hat{e}_{r}{,} 
+   \hat{e}_{2}=\hat{e}_{\theta}{,} 
+   \hat{e}_{3} =\hat{e}_{\phi}</m>.
+  </p>
+  <p>
+    <alert>Alternative method to find <m>h_{1},h_{2},h_{3}</m></alert>
+    The position vector of point P in spherical coordinates is 
+    <me>
+      \vec{r}= x\hat{i}+y\hat{j}+z\hat{k} 
+      = r\sin\theta \cos\phi\hat{i}+r\sin\theta \sin\phi\hat{j}+r\cos\theta\hat{k}
+    </me>
+    The tangent vectors of which is given as
+    <me>
+      \frac{\partial\vec{r}}{\partial r} 
+      =\sin\theta \cos\phi\hat{i}+\sin\theta \sin\phi\hat{j}+\cos\theta\hat{k} \quad
+       \Rightarrow h_{1}=\mid\frac{\partial\vec{r}}{\partial r}\mid =1.
+    </me>
+    <me>
+       \frac{\partial\vec{r}}{\partial \theta} 
+       =r\cos\theta \cos\phi\hat{i}+r\cos\theta \sin\phi\hat{j}-r\sin\theta\hat{k}\quad 
+        \Rightarrow h_{2}=\mid\frac{\partial\vec{r}}{\partial \theta}\mid =r;
+    </me>
+    <me>
+       \frac{\partial\vec{r}}{\partial \phi} 
+       = -r\sin\theta \sin\phi\hat{i}+r\sin\theta \cos\phi\hat{j} \quad	
+       \Rightarrow h_{3}=\mid\frac{\partial\vec{r}}{\partial \phi}\mid =r\sin\theta.
+    </me>
+    </p>
+  <p>
+    Now, substituting these values in different expressions in curvilinear system, we get - 
+    <me>
+      \vec{\nabla\psi}=\frac{\partial \psi}{\partial r}\hat{e_{r}} 
+      +\frac{1}{r}\frac{\partial \psi}{\partial \theta}\hat{e_{\theta}} 
+      +\frac{1}{r\sin\theta}\frac{\partial \psi}{\partial \phi}\hat{e_{\phi}};
+    </me>
+    <me>
+      \vec{\nabla}\cdot\vec{F}=\frac{1}{r^{2}}\frac{\partial}{\partial r}(r^{2}F_{1}) 
+      +\frac{1}{r\sin\theta}\frac{\partial}{\partial \theta}(\sin\theta F_{2}) 
+      +\frac{1}{r\sin\theta}\frac{\partial F_{3}}{\partial \phi}
+    </me>
+    <me>
+      \vec{\nabla}\times\vec{F} = \frac{1}{r\sin^{2}\theta}{\begin{vmatrix} 
+      \hat{e}_{r} &amp; r\hat{e}_{\theta} &amp; r\sin\theta\hat{e}_{\phi} \\ 
+      \frac{\partial}{\partial r} &amp; \frac{\partial}{\partial \theta} &amp; \frac{\partial}{\partial \phi} \\ 
+      F_{1} &amp; r F_{2} &amp; r\sin\theta F_{3} 
+      \end{vmatrix}}; 
+    </me>
+    <me>
+      \nabla^{2}\psi 
+      = \frac{1}{r^{2}\sin\theta} \left[\sin\theta\frac{\partial}{\partial r}\left(r^{2}\frac{\partial \psi}{\partial r}\right)
+     +\frac{\partial}{\partial \theta}\left(\sin\theta \frac{\partial \psi}{\partial \theta}\right) 
+     +\frac{1}{\sin\theta}\frac{\partial^{2}\psi}{\partial \phi^{2}}\right]
+    </me>   
+    <me>
+      =\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial \psi}{\partial r}\right)+
+      \frac{1}{r^{2}\sin^{2}\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial \psi}{\partial \theta}\right)
+    </me>
+    <me>
+      + \frac{1}{r^{2}\sin^{2}\theta}\frac{\partial^{2}\psi}{\partial \phi^{2}}
+    </me>
+    <me>
+      =\frac{\partial^{2} \psi}{\partial r^{2}} 
+      +\frac{1}{r^{2}}\frac{\partial^{2} \psi}{\partial \theta^{2}} 
+      +\frac{1}{r^{2}\sin^{2}\theta}\frac{\partial^{2}\psi}{\partial \phi^{2}}
+    </me>
+    <me>
+      +\frac{2}{r}\frac{\partial \psi}{\partial r} 
+      +\frac{\cot\theta}{r^{2}}\frac{\partial \psi}{\partial \theta}.
+    </me>
+    </p>
+</subsection>
+</section>
+

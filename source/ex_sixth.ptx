@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_sixth" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+  <exercise>
+    <p>
+       Calculate the cosine transform of <m>e^{-x^{2}}</m>.
+      </p>
+      <answer>
+        <p>
+          <m>\frac{\sqrt{\pi}}{2}e^{-s^{2}/4}</m>.   
+        </p>
+      </answer>
+  </exercise>
+
+ <exercise>
+  <p>
+    Find cosine transform of function <m>f(x)</m> such that 
+    <me>
+      f(x)=\begin{cases}
+\cos x,   &amp; \text{when}  \quad   0 \lt x \lt a\\
+0,    &amp; \text{when}  \quad   x \gt a
+\end{cases}
+    </me>
+    </p>
+    <answer>
+      <p>
+        <me>
+          \frac{1}{2}\left[\frac{\sin(1+s)a}{1+s}+\frac{\sin(1-s)a}{1-s}\right]
+        </me>
+      </p>
+    </answer>
+ </exercise>
+
+ <exercise>
+  <p>
+    Calculate the cosine and sine transforms of <m>e^{-bx}</m>, where  b is a positive integer.
+    </p>
+    <answer>
+      <p>
+        <m>\frac{b}{b^{2}+s^{2}} </m>   and   <m> \frac{s}{s^{2}+b^{2}}</m>
+      </p>
+    </answer>
+ </exercise>
+
+<exercise>
+  <p>
+    Find the Fourier complex transform of <m>f(x)</m>, 
+    if <me>
+      f(x)=\begin{cases}
+e^{-i\omega x},   &amp; \text{when}  \quad   a \lt x \lt b\\
+0,    &amp; \text{when}  \quad   x \lt a, x \gt b
+\end{cases}
+    </me>
+    </p>
+    <answer>
+      <p>
+        <me>
+          i\left[\frac{e^{-i(s_\omega)b}-e^{-i(s_\omega)a}}{s+\omega}\right]
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Find <m>\mathscr{L}\{t\cos at\}</m>			
+    </p>
+    <answer>
+      <p>
+        <me>
+          \frac{s^{2}-a^{2}}{(s^{2}-a^{2})^{2}}.
+        </me>
+        
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Evaluate  <me>
+      \mathscr{L}\{\frac{\sin t}{t}\}
+    </me>
+    </p>
+    <answer>
+      <p>
+        <me>
+          \cot^{-1}s.
+        </me>
+      </p>
+    </answer>
+</exercise>
+<exercise>
+  <p>
+    Find the Laplace Transform of <m>f(t)</m> defined as 
+<me>
+  f(t) =\begin{cases}
+t+1, \quad 0 \leq t \leq 2\\
+3, \quad t  \gt 2
+\end{cases}
+</me>
+    </p>
+    <answer>
+      <p>
+        <me>
+          \frac{1}{s^{2}}[s+1-e^{-2s}].
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Find 	<me>
+      \mathscr{L}^{-1}\{\frac{1}{s^{4}}\}
+    </me>
+    </p>
+    <answer>
+      <p>
+        <me>
+          \frac{t^{3}}{6}.
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Find inverse Laplace transform of  <m>\frac{3s+7}{s^{2}-2s-3}</m>.	  
+    </p>
+    <answer>
+      <p>
+        <m>4e^{3t}-e^{-t}.</m>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+     Evaluate 	<me>
+      \mathscr{L}^{-1}\{\frac{2s-1}{s^{2}-s}\}
+     </me>
+    </p>
+    <answer>
+      <p>
+        <me>
+          1-\frac{3}{2}e^{-t}+\frac{1}{2}e^{t}.
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Use convolution theorem to find 
+    <me>
+      \mathscr{L}^{-1}\{\frac{s^{2}}{(s^{2}+4)^{2}}\}
+    </me> 
+    </p>
+    <answer>
+      <p>
+        <me>
+          \frac{1}{2}\left[t\cos 2t+\frac{1}{2}\sin 2t\right].
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Using Laplace transform, solve the following differential equation  
+<me>
+  y''+2y'+2y = 5\sin t
+</me>
+where <m>y(0)=y'(0)=0</m>  at <m>t=0</m>.  
+    </p>
+    <answer>
+      <p>
+        <me>
+          e^{-t}[\cos t+\sin t]-2\cos t+\sin t.
+        </me>
+      </p>
+    </answer>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that <me>
+      \int\limits_{0}^{\infty}e^{-x^{2}}\,dx = \frac{\pi}{2}.
+    </me>
+    </p>
+</exercise>
+ </exercises>
+

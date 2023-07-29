@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-vectinteg" xmlns:xi="http://www.w3.org/2001/XInclude">
+      <title>Vector Integration</title>
+    <introduction>
+    <p>
+      Integration is the reverse process of differentiation. Thus, if <m>\frac{d}{dt}\vec{F}(t) =\vec{v}(t)</m> then,
+      <me>
+        \int\vec{v}(t)dt=\int \frac{d}{dt}\vec{F}(t) dt=\vec{F}(t)+c 
+      </me>
+      where the constant <m>c</m> is known as the constant of integration. The value of <m>c</m>is determined  
+      by  the initial or the geometrical conditions. The above integral is called an indefinite integral of 
+      <m>\vec{v}(t)</m> with respect to <m>t</m>. 
+      The integral  <idx><h>line integral</h></idx>  between the limits 
+      <m>t = t_{1}</m> to <m>t_{2}</m>, can be written as
+         <me>
+          \int^{t_{2}}_{t_{1}}\left(\vec{v}(t) dt\right)= \left[\vec{F}(t)+c\right]^{t_{2}}_{t_{1}}= \vec{F}(t_{2})-\vec{F}(t_{1})
+         </me>
+         and is called the definite integral of <m>\vec{v}(t)</m>. It is also defined as the limit of the sum. 
+    </p>
+  </introduction>
+
+<subsection xml:id="subsec-lineint">
+  <title>the Line Integral </title>
+  <figure xml:id="fig-fig15">
+    <caption></caption>
+    <image source="fig15.png" width="30%">
+     </image>
+  </figure>
+  <p>
+       Let us consider a curve <m>AB</m>, as shown in <xref ref="fig-fig15"/> and a vector function <m> \vec{F}(x,y,z)</m> 
+       acting  at  a point  P  then the line integral of a vector function <m>\vec{F}</m>  along  that  curve 
+       is  defined  as  integral of  the component of  <m>\vec{F}</m> along the tangent to the curve <m>AB</m>. 
+       Therefore, the component of <m>\vec{F}</m> along a tangent <m>PT</m> at  P = dot product of <m>\vec{F}</m>  
+       with a unit vector along <m>PT</m>. 
+       <me>
+        \text{or,}\quad \vec{F}\cdot \hat{T}=\vec{F}\cdot \frac{\,d\vec{r}}{\,ds} 
+       </me>
+       [<m>\because \frac{\,d\vec{r}}{\,ds}</m>  is a unit vector along <m>PT</m> and <m>\,d\vec{r}</m> 
+       is a small element and <m>\,ds</m> is a  small arc of curve at P.] 
+       <me>
+        \therefore  \text{Line integral}\quad = \sum\vec{F}\cdot \frac{\,d\vec{r}}{\,ds}, 
+       </me>
+      from A to B along the curve 
+      <me>
+        =\int_{c}\left(\vec{F}\cdot \frac{\,d\vec{r}}{\,ds}\right) \,ds = \int_{c}\vec{F}\cdot \,d\vec{r}. 
+      </me>
+      If a force  <m>\vec{F}</m> is acting on a particle along arc AB, then the line integral gives the 
+      total work done by the force as work done = <m>\int^{B}_{A} \vec{F}\cdot \,d\vec{r}</m>. 
+      If <m>\vec{F}</m> be the velocity of a liquid, then the line integral <m>\int_{c}\vec{F}\cdot \,d\vec{r}</m> 
+      is called the flow of a vector field along the curve <m>\mathcal{C}</m> or the circulation of <m>\vec{F}</m> 
+      around the curve <m>\mathcal{C}</m>.  If <m>\int_{c}\vec{F}\cdot \,d\vec{r} = 0</m>, then, <m>\vec{F}</m> 
+      is called an irrotational vector. The integration around a closed curve is denoted by the symbol 
+      <m>\oint</m> in place of <m>\int</m>.
+  </p>
+  
+</subsection>
+
+<subsection xml:id="subsec-surf_int">
+  <title>The Surface Integral</title>
+  <figure xml:id="fig-fig16">
+    <caption></caption>
+    <image source="fig16.png" width="30%"> </image>
+  </figure>
+  <p>
+    <idx><h>surface integral</h></idx> Let us consider the surface S in a vector field of function 
+    <m>\vec{F}</m>, as shown in <xref ref="fig-fig16"/>. The  surface integral of a vector function <m>\vec{F}</m> 
+    over the surface S  is  defined as the integral of  the components of <m>\vec{F}</m> along 
+    the normal to the surface. Therefore, component of <m>\vec{F}</m> along the normal 
+    <m>=\vec{F}\cdot \hat{n}</m> where <m>\hat{n}</m> is the unit normal vector to an element <m>\,ds</m> and 
+    <me>
+      \hat{n} = \frac{\text{\,grad} f}{\mid \text{\,grad} f\mid}
+    </me>
+    here, <m>f</m> is a scalar function and 
+    <me>
+      \vec{\nabla} f = \frac{\partial f}{\partial n}\hat{n} = \mid \vec{\nabla f}\mid \hat{n},
+    </me>
+    also 
+    <me>
+      \,ds= \frac{\,dx\,dy}{\mid \hat{n} \cdot \hat{k}\mid}.
+    </me>
+    [The projection of <m>\,ds</m> on the <m>x~y</m> plane is <m>\mid \hat{n}\,ds\cdot \hat{k}\mid \quad </m>
+      or, <m>\mid \hat{n}\cdot \hat{k}\mid \,ds = \,dx\,dy</m>]. 
+  </p>
+  <p>
+     <m>\therefore</m> Surface integral of <m>\vec{F}</m> over S
+   <me>
+     =\sum  \vec{F}\cdot \hat{n}=\iint\limits_{s}\left(\vec{F}\cdot \hat{n}\right) ds.
+   </me>
+  <term> Note:</term> 
+  <me>
+    Flux  = \iint\limits_{s}\left(\vec{F}\cdot \hat{n}\right) \,ds
+  </me>
+  where <m>\vec{F}</m> is the velocity of fluid and <m>(\vec{F}\cdot \hat{n})\,ds</m> 
+  denotes the amount of fluid passing normally through the surface element  <m>\,ds</m> per unit time. 
+  [If <m>\iint\limits_{s}\left(\vec{F}\cdot \hat{n}\right)\,ds = 0</m>, then <m>\vec{F}</m> 
+  is said to be a solenoidal vector].	
+  </p>
+</subsection>
+    
+<subsection xml:id="subsec-volint">
+  <title>The Volume Integral</title>
+  <figure xml:id="fig-fig17">
+    <caption></caption>
+    <image source="fig17.png" width="30%"> </image>
+  </figure>
+  <p>
+    Let us consider the volume <m>V</m> is enclosed by a closed the surface <m>S</m>, 
+    as shown in <xref ref="fig-fig17"/> which is lying in the vector field of function <m>\vec{F}</m>, then the 
+    <me>
+      \text{Volume Integral} = \iiint\limits_{V}\vec{F}\,dV. 
+    </me>
+     If  <m>\phi</m> is scalar point function in volume <m>V</m>, then  <m>\iiint\phi \,dV</m> is a volume integral.
+  </p>
+</subsection>
+
+<subsection xml:id="subsec-divergence_thrm">
+  <title>Gauss's Divergence Theorem</title>
+  <p>
+    <idx><h>Gauss' divergence theorem</h></idx> The surface integral of the normal component of function 
+    <m>\vec{F}</m> over the boundary of a closed surface <m>S</m> of any shape is equal 
+    to the volume integral of the divergence of <m>\vec{F}</m> taken throughout the enclosed 
+    volume V, i.e.,
+    <me>
+      \iint_{S} \vec{F} \cdot \hat{n} \,dS =\iiint_{V}(\vec{\nabla}\cdot \vec{F})\,dV
+     </me>
+  </p>
+  <proof>
+    <p>
+      From right - hand side of the above equation, we have -
+      <men xml:id="eqn-gauss1">
+        \iiint\limits_{V}(\vec{\nabla}\cdot \vec{F})\,dV=\iiint\limits_{V}\left[\frac{\partial F_{x}}{\partial x}+\frac{\partial F_{y}}{\partial y}+\frac{\partial F_{z}}{\partial z}\right] \,dV
+      </men>
+      Since the theorem is valid for any shape. We chose parallelopiped of volume V enclosed 
+      by the surface S, as showh in the figure <xref ref="fig-fig22"/>. 
+    </p>
+    <figure xml:id="fig-fig22">
+      <caption></caption>
+      <image source="fig22.png" width="30%"> </image>
+    </figure>
+    <p>
+      From eqn. <xref ref="eqn-gauss1"/> let us first evaluate -
+      <me>
+        \iiint\limits_{V}\frac{\partial F_{z}}{\partial z}\,dx\,dy\,dz \quad \text{from z' to z''.} 
+      </me>
+      That is,
+      <me>
+        \iiint\limits_{z'}^{z"}\frac{\delta F_{z}}{\delta z}\,dx\,dy\,dz 
+      </me>
+      [value of <m>\vec{F}</m> along z axis is <m>F_{z}(x,y,z)</m>]
+      <me>
+        \therefore \hspace{2pt} \iint\limits_{S}[F_{z}(x,y,z")-F_{z}(x,y,z')\,dx\,dy]  
+      </me>
+      <men xml:id="eqn-gauss2">
+         =\iint\limits_{S_{2}}F_{z}(x,y,z")\,dx\,dy-\iint\limits_{S_{1}}F_{z}(x,y,z')\,dx\,dy
+      </men>
+      But, <m>\hat{n_{1}}\cdot\hat{k}\,dS_{1}=-\,dx\,dy</m> (bottom surface ) 
+      and <m>\hat{n_{2}}\cdot\hat{k}dS_{2}=\,dx\,dy</m> (top). Hence from eqn. <xref ref="eqn-gauss2"/>, we get-
+      <me>
+        \iiint\limits_{z'}^{z"}\frac{\partial F_{z}}{\partial z}\,dx\,dy\,dz
+      </me>
+      <me>
+        =\iint\limits_{S_{2}}F_{z}(x,y,z")\hat{n_{2}}\cdot\hat{k}\,dS_{2}+\iint\limits_{S_{1}}F_{z}(x,y,z')\hat{n_{1}}\cdot\hat{k}dS_{1}
+      </me>
+      <men xml:id="eqn-gauss3">
+        = \iint_{S} F_{z}\hat{k} \cdot \hat{n} \,dS 
+      </men>
+      where surface integrals of the other sides are zero because <m>\hat{k}</m> is perpendicular to the surfaces 
+      <m>\,dS_{3},\,dS_{4},\,dS_{5},\,dS_{6}</m>.  Similarly, we can show that 
+      <men xml:id="eqn-gauss4">
+        \iiint\limits_{V}\frac{\partial F_{x}}{\partial x}dxdydz = \iint\limits_{S} F_{x}\hat{i} \cdot \hat{n} \,dS 
+      </men>
+      and
+      <men xml:id="eqn-gauss5">
+       \iiint\limits_{V}\frac{\partial F_{y}}{\partial y}\,dx\,dy\,dz = \iint\limits_{S} F_{y}\hat{j} \cdot \hat{n} \,dS 
+      </men>
+      Adding eqns. <xref first="eqn-gauss3" last="eqn-gauss5"/>, we get-  
+      <me>
+        \iiint\limits_{V}(\vec{\nabla}\cdot \vec{F})\,dV  = \iint\limits_{S} (F_{x}\hat{i}+F_{y}\hat{j}+F_{z}\hat{k}) \cdot \hat{n} \,dS =  \iint\limits_{S} \vec{F}\cdot\vec{\,dS} 
+      </me>
+    </p>
+  </proof>
+</subsection>
+
+<subsection xml:id="subsec-stoke_thrm">
+  <title>Stoke's Theorem</title>
+<p>
+  <idx><h>Stoke's theorem</h></idx>The line integral of the tangential component of a vector <m>\vec{F}</m> 
+  taken around a simple closed curve C is equal to the surface integral of normal 
+  component of the curl of <m>\vec{F}</m> taken over any surface S having C as its boundary, i.e.
+  <me>
+    \oint\limits_{C}\vec{F}\cdot\vec{\,dr}=\iint\limits_{S} \left(\vec{\nabla} \times \vec{F}\right)\cdot\hat{n}\,dS
+  </me>
+  where <m>\hat{n}</m> is a unit normal vector over the surface ds, as shown in <xref ref="fig-fig23"/>.
+</p>
+<figure xml:id="fig-fig23">
+  <caption></caption>
+  <image source="fig23.png" width="30%"> </image>
+</figure>
+<proof>
+  <p>
+    <me>
+      \oint\limits_{C}\vec{F}\cdot\vec{\,dr}=\iint\limits_{S} \left(\vec{\nabla} \times \hat{i}F_{x}+\vec{\nabla} \times \hat{j}F_{y}+\vec{\nabla} \times \hat{k}F_{z}\right)\cdot\hat{n}\,dS
+    </me> 
+    Let us first prove,
+    <men xml:id="eqn-stoke1">
+    \iint_{S} \left[\vec{\nabla} \times \hat{i}F_{x}\right]\cdot\hat{n}\,dS = \iint\limits_{S} \left[\frac{\partial F_{x}}{\partial z}\hat{n}\cdot\hat{j}-\frac{\partial F_{x}}{\partial y}\hat{n}\cdot\hat{k}\right]\,dS
+    </men>
+    <me>
+    \left[\because \vec{\nabla} \times \hat{i}F_{x} = \left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\times \hat{i} F_{x}=-\hat{k}\frac{\partial F_{x}}{\partial y}+\hat{j}\frac{\partial F_{x}}{\partial z}\right] 
+    </me>
+    Let <m>f(x,y,z)</m> be the equation of surface S and its projection on x-y plane is 
+    <men xml:id="eqn-stoke2">
+      \hat{n}\cdot\hat{k}\,dS = \,dx\,dy
+    </men>
+    but on the surface S, we have <m>F_{x}(x,y,z)=F_{x}[f(x,y),y,z]</m>. 
+    <men xml:id="eqn-stoke3">
+      \therefore \,dF_{x}= \frac{\partial F_{x}}{\partial y}\,dy+\frac{\partial F_{x}}{\partial z}\,dz
+    </men>
+    and <m>\vec{\,dr}= \,dy\hat{j}+\,dz\hat{k}</m>; where  <m>\vec{\,dr}</m> is tangent to the 
+    surface ds at point A and is perpendicular to <m>\hat{n}</m>.
+    <me>
+      \therefore    \vec{\,dr}\cdot\hat{n} = 0 =\,dy\hat{n}\cdot\hat{j}	+\,dz\hat{n}\cdot\hat{k}
+    </me>
+    or, 
+    <me>
+      \hat{n}\cdot\hat{j}= \frac{\,dz}{\,dy}\hat{n}\cdot\hat{k} = -\frac{\,dz}{\,dy}\left(\frac{\,dx\,dy}{\,dS}\right)
+    </me>
+    <men xml:id="eqn-stoke4">
+      \therefore \hat{n}\cdot\hat{j}\,dS=-\,dx\,dz  
+    </men>
+    putting the values of eqns. <xref first="eqn-stoke2" last="eqn-stoke4"/>  in eqn. <xref ref="eqn-stoke1"/>, we get-
+    <me>
+      \iint\limits_{S} \left[\vec{\nabla} \times \hat{i}F_{x}\right]\cdot\hat{n}\,dS = -\iint\limits_{S} \left[\frac{\partial F_{x}}{\partial z}\,dz +\frac{\partial F_{x}}{\partial y}\,dy\right]\,dx 
+    </me>
+    <me>
+      =\int \,dx\int\limits_{y_{1},z_{1}}^{y_{2},z_{2}}\,dF_{x} =-\int\left[F_{x}(x,y_{2},z_{2})-F_{x}(x,y_{1},z_{1}) \right]\,dx
+    </me>
+    At point <m>P_{1}</m>, <m>\,dx</m> is +ve (front part) and at <m>P_{2}</m>, <m>\,dx</m> is -ve (back part).
+    <me>
+      \therefore \iint\limits_{S} \left[\vec{\nabla} \times \hat{i}F_{x}\right]\cdot\hat{n}\,dS = \int F_{x}(x,y_{2},z_{2})\,dx+F_{x}(x,y_{1},z_{1})\,dx  
+    </me>
+    <me>
+      = \int\limits_{C} F_{x}\,dx
+    </me>
+    Similarly, we can find,
+    <me>
+      \iint\limits_{S} \left[\vec{\nabla} \times \hat{j}F_{y}\right]\cdot\hat{n}\,dS = \int\limits_{C} F_{y}\,dy
+    </me>
+    and 
+    <me>
+      \iint\limits_{S} \left[\vec{\nabla} \times \hat{k}F_{z}\right]\cdot\hat{n}\,dS = \int\limits_{C} F_{z}\,dz 
+    </me>
+    Combining these we get,
+    <me>
+      \iint\limits_{S} \left[\vec{\nabla} \times \vec{F}\right]\cdot\hat{n}\,dS = \oint_{C} \vec{F}\cdot \vec{\,dr} 
+    </me>  
+  </p>
+</proof>
+</subsection>
+</section>
+

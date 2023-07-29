@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_second-matrix" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Matrix</title>
+  <introduction>
+   <p>
+    A matrix <idx>matrix</idx> is a rectangular array of numbers or symbols which describes various aspects of a 
+    phenomenon interrelated in some manner. If you use matrices to describe adjacency relations, 
+    then eigenvalues/vectors may mean one thing; if you use them to represent linear maps it means 
+    something else, etc.  Matrices are a powerful tool in modern mathematics with a wide range of 
+    applications in subjects like sociology, demography, economics, statistics, and engineering, etc. 
+    The most significant contribution of matrices is their extensive use in the solution of a system 
+    of large number of simultaneous linear equations. The numbers in a matrix is arranged in rows 
+    and columns enclosed by a pair of brackets.
+    <men xml:id="eqn-matrx1">
+      A={\begin{bmatrix}
+		a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n} \\
+		a_{21} &amp; a_{22} &amp; \cdots &amp; a_{1n} \\
+		\cdots &amp; \cdots &amp; \cdots &amp; \cdots\\
+		a_{m1} &amp; a_{m2} &amp; \cdots &amp; a_{mn}
+      \end{bmatrix}}	
+    </men>
+    Here, the <m>a_{ij}</m> are called elements of <m>i^{th}</m> row and  <m>j^{th}</m> column, 
+    they may be real or complex numbers or functions. The matrix A has <m>m</m> rows 
+    and <m>n</m> columns and is called a matrix of order <m>m \times n</m> (or, m by n). 
+    If <m>m=n</m>, then the matrix is called a square matrix. The main diagonal of a square matrix 
+    consists of the elements <m>a_{11}, a_{22}, a_{33},\cdots, a_{mn}</m>. The row matrix, 
+    <men xml:id="eqn-matrx2">
+      {\begin{bmatrix} a_{11} &amp; a_{12} &amp; a_{13} &amp; \cdots &amp; a_{1n} \end{bmatrix}}
+    </men>
+    is called a row vector. The column matrix, 	
+    <men xml:id="eqn-matrx3">
+      {\begin{bmatrix} a_{11} \\ a_{21} \\ a_{31} \\ \vdots \\ a_{m1} \end{bmatrix}}
+    </men>
+     is called a column vector.
+    </p>
+   <p>
+    Two matrices (A and B) of the same order are said to be equal if and only if <m>a_{ij} = b_{ij}</m> 
+    for all <m>i</m> and <m>j</m>, e.g.,
+    <men xml:id="eqn-matrx4">
+      A= {\begin{bmatrix} 2i\\1 \end{bmatrix}}; \quad  B= {\begin{bmatrix} 2i\\1 \end{bmatrix}}	
+    </men>
+    	If <m>a_{ij}=0</m> for all <m>i</m> and <m>j</m>, then <m>A</m> is called a null matrix, e.g.		
+      <men xml:id="eqn-matrx5">
+      A= {\begin{bmatrix} 0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 0\\ \end{bmatrix}}  
+      </men>
+      The multiplication of a matrix, <m>A</m> by a scalar, <m>k</m> is given by 
+      <men xml:id="eqn-matrx6">
+        kA=Ak
+      </men>
+      where the elements of <m>kA</m> are <m>ka_{ij}</m> for all (<m>\forall</m>)  <m>i</m> and <m>j</m>, e.g.,
+      <notation>
+        <usage>(<m>\forall</m>)</usage>
+        <description>for all</description>
+      </notation>
+
+      <men xml:id="eqn-matrx7">
+        A= 2{\begin{bmatrix} 1 &amp; 2\\3 &amp; 1\\ \end{bmatrix}} = {\begin{bmatrix} 2 &amp; 4\\6 &amp; 2\\ \end{bmatrix}}
+      </men> 
+    </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-matrx_algb">
+  <title>Matrix Algebra</title>
+  <introduction>
+    <p>
+    Matrix algebra deals with mathematical operations on matrices. Matrix algebra is used to 
+    solve problems related to electrical circuits, control systems, structural analysis, quantum mechanics, 
+    relativity, input-output models, linear regression, and game theory.
+    </p>
+  </introduction>
+ 
+  <subsubsection xml:id="subsubsec-add_subt">
+    <title>Addition</title>
+    <p>
+    The addition or subtraction for two <m>m\times n</m> matrices is defined as <m>C=A\pm B</m>. 
+    where <m>c_{ij}= a_{ij}\pm b_{ij}</m> forall <m>i</m> and <m>j</m>, e.g.,
+    <me>
+      A= {\begin{bmatrix} 3 &amp; 1 &amp; 4\\4 &amp; 0 &amp; 0\\ \end{bmatrix}} 
+      = {\begin{bmatrix} 1 &amp; -1 &amp; 2\\3 &amp; 0 &amp; 1\\ \end{bmatrix}} 
+      +{\begin{bmatrix} 2 &amp; 2 &amp; 2\\1 &amp; 0 &amp; -1\\ \end{bmatrix}}
+    </me>
+    Also, commutative and associative laws are hold good in addition or subtraction of matrices, i.e., 
+    <m>A+B = B+A</m> and  <m>A+(B+C) = (A+B)+C</m>.  
+    </p>
+  </subsubsection>
+
+
+<subsubsection xml:id="subsubsec-multp">
+  <title>Multiplication</title>
+  <p>
+    The product of two matrices A and B is only possible if the numbers of column in A is equal 
+    to the numbers of rows in B. Let <m>A= [a_{ij}]</m> be a <m>m\times n </m> matrix	and 
+    <m>B= [b_{ij}]</m> be a <m>n\times p</m>	be matrix, then <m>AB= C</m> is <m>m\times p</m> matrix, 
+    where <m>C= [c_{ij}]= a_{i1}b_{1j} + a_{i2}b_{2j} + \cdots + a_{in}b_{nj} = \sum\limits_{k=1}^{n}a_{ik}b_{kj}</m>.
+    For example,
+    <me>
+      {\begin{bmatrix} 0 &amp; 0 \\ 0 &amp; 1 \\ \end{bmatrix}} \cdot {\begin{bmatrix} 0 &amp; 0 \\ 2 &amp; 3 \\ \end{bmatrix}} 
+      ={\begin{bmatrix} 0 &amp; 0 \\ 2 &amp; 3 \\ \end{bmatrix}}.
+    </me>
+    </p>
+    <paragraphs>
+      <title>Properties of multiplication</title>
+      <p>
+        <ol marker ="I.">
+          <li>
+           Matrix multiplication is not commutative i.e., <m>AB \neq BA</m>.	
+          </li>
+          <li>
+            Matrix multiplication is Associative i.e.,	<m>A(BC) =(AB)C</m>.
+            </li>
+            <li>
+              Matrix multiplication is Distributive i.e.,	 <m>A(B+C) = AB+AC</m>. 
+              </li>
+              <li>
+                Matrix is multiplicabe by unit matrix i.e., <m>AI=IA=A</m>.	
+                </li>
+                <li>
+                  If the non singular matrix is multiplied by its inverse, a unit matrix is produced, 
+                  i.e., <me>
+                    A\cdot A^{-1}=A^{-1}\cdot A = I 
+                  </me>
+                  (If  <m>|A| \neq 0</m>).
+                  </li>
+        </ol>
+        </p>
+    </paragraphs>
+</subsubsection>
+
+  </subsection>
+
+
+
+<subsection xml:id="subsec-transpose">
+  <title>The Transpose of a Matrix, <m>A^{t}</m></title>
+  <p>
+    If the rows and columns of any matrix A is interchanged then the new matrix is known as 
+    transpose of the matrix A and it is denoted by <m>A^{t}</m> or <m>A'</m>, i.e. 
+    <m>A=a_{ij}</m>  and  <m>A^{t}=a_{ji}</m>. For example: if 
+    <me>
+      A = {\begin{bmatrix} 
+      1 &amp; -1 &amp; 2 \\ 3 &amp; 0 &amp; 1 \\ 
+      \end{bmatrix}}	
+      </me> 
+     then,
+      <me> 
+      A^{t} = {\begin{bmatrix} 
+      1 &amp; 3 \\ -1 &amp; 0 \\ 2 &amp; 1 
+      \end{bmatrix}}
+    </me>
+ </p>
+    <paragraphs>
+      <title>Properties of Transpose Matrix</title>
+      <p>
+        <ol marker="I.">
+          <li>
+            The transpose of the transpose of a matrix <m>A</m> is the matrix itself <m>A</m>, i.e.,  
+            <m>(A^{t})^{t}	= A</m>.
+          </li>
+          <li>
+            The transpose of the sum of two matrices is the sum of their transposes, i.e., 
+            <m>(A+B)^{t}=A^{t}+B^{t}</m>.
+            </li>
+            <li>
+              The transpose of a scalar times the matrix is the scalar times the transpose of the matrix, 
+              i.e., <m>(kA)^{t}	 = kA^{t}</m>	where <m>k</m> is a scalar.
+              </li>
+              <li>
+                The transpose of the product of two matrices is the product in reverse order of their 
+                transpose, i.e., <m>(AB)^{t} = B^{t}A^{t}</m>.  
+                </li>
+                <li>
+                 The magnitude of transpose of a matrix is the magnitude of the matrix, i.e., <m>|A^{t}| = |A|</m>. 
+                  </li>
+        </ol>
+        </p>
+    </paragraphs>
+   
+</subsection>
+ 
+ <subsection xml:id="subsec-comp_conj">
+  <title>Complex - Conjugate of a Matrix, <m>A^{*}</m></title>
+  <p>
+   The matrix formed by taking the complex - conjugate of each element of any matrix A. 
+   It is denoted by <m>A^{*}</m>  or <m>\bar{A}</m>. Hence we have <m>\bar{A}= \bar{a}_{ij}</m>	
+   (for all <m>i</m> and <m>j</m>). For example: let the matrix, 
+   <me>
+    A= \begin{bmatrix} 1+i &amp; 2-3i &amp; 4 \\ 7+2i &amp; -i &amp; 3-2i \end{bmatrix} 
+   </me>
+     then,  it's conjugate matrix is 
+     <me>
+      \bar{A} = \begin{bmatrix} 
+      1-i &amp; 2+3i &amp; 4\\7-2i &amp; i &amp; 3+2i 
+      \end{bmatrix}.
+     </me>
+    If <m>\bar{A}=A</m>, then A is a real matrix. 
+    </p>
+
+      <paragraphs>
+      <title>Properties of Complex-Conjugate Matrix</title>
+      <p>
+        <ol marker="I.">
+          <li>
+            The conjugate of the conjugate of matrix <m>A</m> is the matrix <m>A</m> i.e., <m>(A^{*})^{*}=A</m>.
+          </li>
+          <li>
+            The complex conjugate of the sum of two matrices is the sum of their complex conjugations, 
+            i.e., <m>(A+B)^{*}= A^{*}+B^{*}</m>.
+            </li>
+            <li>
+              The conjugate of scalar multiple of a matrix is the scalar multiple of its comples conjugate, 
+              i.e., <m>(\alpha A^{*})=  \alpha^{*} A^{*}</m>, where <m>\alpha</m> is a complex number. 
+              	or,	<m>(k A^{*})=  k A^{*}</m>,	where <m>k</m> is a real scalar number.
+              </li>
+              <li>
+               The conjugate of the product of two matrices is the product of their conjugates 
+               in the same order, i.e., <m>(AB)^{*}=A^{*}B^{*}</m>. 
+                </li>
+                 </ol>
+        </p>
+    </paragraphs>
+
+ </subsection>
+
+<subsection xml:id="subsec-herm_conj">
+  <title>Hermitian Conjugate of a Matrix, <m>A^{\dagger}</m></title>
+  <p>
+    The transpose of the conjugate of a matrix <m>A</m> is called Hermitian conjugate. 
+    It is denoted by <m>A^{\dagger}</m> or <m>A^{\Theta}</m>, e.g.
+    <me>
+      A= \begin{bmatrix} 
+      1+i &amp; 2-3i &amp; 4 \\ 7+2i &amp; -i &amp; 3-2i \end{bmatrix},	
+    </me>
+    <me>
+     A^{*} = \begin{bmatrix} 1-i &amp; 2+3i &amp; 4 \\ 7-2i &amp; i &amp; 3+2i \end{bmatrix},
+    </me>
+    <me>
+       \text{then}\quad A^{\dagger} = (A^{*})^{t}=\begin{bmatrix} 
+       1-i &amp; 7-2i \\ 2+3i &amp; i \\ 4 &amp; 3+2i \end{bmatrix}
+    </me>
+    </p>
+
+     <paragraphs>
+      <title>Properties of Hermitian Conjugate Matrix</title>
+      <p>
+        <ol marker="I.">
+          <li>
+            Transpose conjugate of a matrix is the same as conjugate of its transpose, 
+            i.e., <m> A^{\dagger} = (A^{*})^{t} = (A^{t})^{*}</m>.
+          </li>
+          <li>
+            Transpose conjugate of the conjugate transpose of a matrix is the matrix itself, i.e., 
+            <m>(A^{\dagger})^{\dagger}= A</m>.
+            </li>
+            <li>
+              Hermitian conjugate of the sum of two matrices is the sum of their Hermitian conjugate, 
+              i.e., <m>(A+B)^{\dagger} = A^{\dagger}	+B^{\dagger}</m>.
+              </li>
+              <li>
+               Hermitian conjugate of the product of two matrices is the product of their Hermitian conjugates in reverse order, 
+               i.e., <m>(AB)^{\dagger} = B^{\dagger} A^{\dagger}</m>.	
+                </li>
+                <li>
+                  Hermitian conjugate of scalar multiple of a matrix is the scalar multiple of its comples conjugate, 
+                  i.e., <m>(\alpha A)^{\dagger} = \alpha^{*} A^{\dagger}</m>, where <m>\alpha</m> is a complex number.
+                  </li>
+                 </ol>
+        </p>
+    </paragraphs>
+
+</subsection>
+
+<subsection xml:id="subsec-sq_mat">
+  <title>Special Square Matrices</title>
+  <introduction>
+    <p>
+      Special square matrices refer to matrices that have certain properties that make them 
+      unique in various applications. Some of them are discussed here: 
+      Identity matrix, Diagonal matrix, Symmetric matrix, Skew-symmetric matrix, etc.   
+    </p>
+  </introduction>
+
+  <subsubsection xml:id="subsubsec-unit_mat">
+    <title>Unit or Identity Matrix:</title>
+    <p>
+      This is a square matrix in which all the diagonal elements are equal to 1, 
+      and all the other elements are 0. It is denoted by I. 
+      <me>
+        I=\delta_{ij} = 
+        \begin{cases} 
+        1, &amp; \text{if } i = j\\ 
+        0,  &amp; \text{otherwise} 
+        \end{cases}
+      </me>
+      and for any matrix A, <m> AI = IA = A </m>. A <m>3\times 3</m> unit matrix is shown as
+      <me>
+        I = \begin{bmatrix}
+        1 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0\\0 &amp; 0 &amp; 1
+        \end{bmatrix}
+      </me>
+      </p>
+  </subsubsection>
+
+<subsubsection xml:id="subsubsec-dia_mat">
+  <title>Diagonal Matrix</title>
+  <p>
+    This is a square matrix in which all the non-diagonal elements are 0. 
+    The diagonal elements can be any numbers, including 0. It is denoted by D. 
+    A diagonal matrix can be used to represent a system of linear equations with diagonal coefficients. 
+    A diagonal matrix is shown as
+    <me>
+      D = \begin{bmatrix} 
+      a &amp; 0 &amp; 0\\0 &amp; b &amp; 0\\0 &amp; 0 &amp; c 
+      \end{bmatrix}
+    </me>
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-inv_mat">
+  <title>The Inverse, Singular, and Non - Singular Matrices</title>
+  <p>
+    The inverse or reciprocal of a square matrix  is denoted by the relation <m>AA^{-1}=I</m>. 
+    Non-square matrix does not have inverse. Some of the square matrices also do not have 
+    inverses, they are called a singular or noninvertible matrices and those which have inverse 
+    are called invertible or non-singular matrices. 
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-cof_mat">
+  <title>Cofactor Matrix, <m>A^{c}</m></title>
+  <p>
+    A cofactor of an element in a given square matrix is the determinant formed by removing 
+    the row and column through the element with proper sign. The determinant is preceded by 
+    plus sign or minus sign according as the sum of the location numbers of the row and column 
+    which have been removed is even or odd. By following the above process of finding a cofactor, 
+    we can have as many cofactors as elements in the given matrix. The matrix formed by these 
+    process is called a cofactor matrix. It is defined by <m>A^{c} = A^{ij}</m>. 
+    For example: if 
+    <me>
+      A=\begin{bmatrix} 
+      a_{11} &amp; a_{12} &amp; a_{13}\\ 
+      a_{21} &amp; a_{22} &amp; a_{23}\\ 
+      a_{31} &amp; a_{32} &amp; a_{33} 
+      \end{bmatrix};
+    </me>
+    then, 
+    <me>
+      A^{c}=\begin{bmatrix} 
+      A_{11} &amp; A_{12} &amp; A_{13}\\ 
+      A_{21} &amp; A_{22} &amp; A_{23}\\ 
+      A_{31} &amp; A_{32} &amp; A_{33} 
+      \end{bmatrix}
+    </me>
+    where,
+    <me>
+      A^{11}= (-1)^{1+1}{\begin{vmatrix} 
+      a_{22} &amp; a_{23} \\ a_{32} &amp; a_{33} 
+      \end{vmatrix}}, \quad  
+      A^{12}= (-1)^{1+2}{\begin{vmatrix} 
+      a_{21} &amp; a_{23} \\ a_{31} &amp; a_{33} 
+      \end{vmatrix}}, 
+    </me>
+    <me>
+     A^{13}= (-1)^{1+3}{\begin{vmatrix} 
+      a_{21} &amp; a_{22} \\ a_{31} &amp; a_{32} 
+      \end{vmatrix}}, 
+    </me>
+
+    <me>
+      A^{21}= (-1)^{2+1}{\begin{vmatrix} 
+      a_{12} &amp; a_{13} \\ a_{32} &amp; a_{33} 
+      \end{vmatrix}}, \quad 
+      A^{22}= (-1)^{2+2}{\begin{vmatrix} 
+      a_{12} &amp; a_{13} \\ a_{31} &amp; a_{33} 
+      \end{vmatrix}}, 
+    </me>
+    <me>
+      A^{23}= (-1)^{2+3}{\begin{vmatrix} 
+      a_{11} &amp; a_{12} \\ a_{31} &amp; a_{32} 
+      \end{vmatrix}},
+    </me>
+    
+    <me>
+      A^{31}= (-1)^{3+1}{\begin{vmatrix} 
+      a_{12} &amp; a_{13} \\ a_{22} &amp; a_{23} 
+      \end{vmatrix}}, \quad  
+      A^{32}= (-1)^{3+2}{\begin{vmatrix} 
+      a_{11} &amp; a_{13} \\ a_{21} &amp; a_{23} 
+      \end{vmatrix}},
+    </me>
+    <me>
+      A^{33}= (-1)^{3+3}{\begin{vmatrix} 
+      a_{11} &amp; a_{12} \\ a_{21} &amp; a_{22} 
+      \end{vmatrix}}.
+    </me>
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-adj_mat">
+  <title>Adjoint of a Matrix, <m>\hat{A}</m></title>
+  <p>
+    The adjoint or adjugate of a matrix is the transpose of its cofactor matrix. i.e., <m>adj A=\hat{A}=A^{ct}</m>, 
+    e.g. 
+    <me>
+      A= \begin{pmatrix} 
+      1 &amp; 3\\2 &amp; 1
+      \end{pmatrix}, \quad 
+      A^{c}= \begin{pmatrix} 
+      1 &amp; -2\\-3 &amp; 1 
+      \end{pmatrix}, 
+    </me>
+    <me>
+        A^{ct}= \begin{pmatrix} 
+      1 &amp; -3\\-2 &amp; 1 
+      \end{pmatrix} = \hat{A}
+    </me>
+    
+  </p>
+  <paragraphs>
+    <title>Properties</title>
+    <p>
+      The matrices <m>A</m> and <m>\hat{A}</m> are commutative and their product is a scalar matrix. 
+      The diagonal element of which is <m>\vert A \vert </m>, i.e., <m>A\cdot (adj A)\equiv (adj A)\cdot A	= |A|I</m>, 
+      where <m>I</m> is an unit matrix. Also, 
+      <me>
+        A^{-1}=\frac{I}{A}=\frac{A\cdot (adj A)}{|A|\cdot A} = \frac{adj A}{|A|} = \frac{A^{c t}}{|A|},
+      </me>
+      where A is a non-singular matrix, i.e., <m>\vert A \vert \neq 0</m>.
+      </p>
+  </paragraphs>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-self_adj">
+  <title>Self - Adjoint Matrix</title>
+  <p>
+    If <m>adj A=A</m> then the matrix <m>A</m> is called a self - adjoint matrix, e.g. 
+    <me>
+      A=\begin{pmatrix} 
+      1 &amp; 0\\0 &amp; 1 
+      \end{pmatrix},	\quad 
+      A^{c} =	\begin{pmatrix} 
+      1 &amp; 0\\0 &amp; 1 
+      \end{pmatrix},
+    </me>
+    and 
+    <me>
+       A^{ct}=\hat{A}=\begin{pmatrix} 
+      1 &amp; 0\\0 &amp; 1 
+      \end{pmatrix} = A.
+    </me>
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-sym_mat">
+  <title>Symmetric Matrix</title>
+  <p>
+    If <m>A^{t}=A</m>, then the matrix <m>A</m> is called a symmetric matrix, e.g. 
+    <me>
+      A=\begin{pmatrix} 
+      0 &amp; 1\\ 1 &amp; 0 
+      \end{pmatrix},   \quad 
+      A^{t}=\begin{pmatrix} 
+      0 &amp; 1\\1 &amp; 0 
+      \end{pmatrix} =A
+    </me>
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-skew_mat">
+  <title>Antisymmetric (Skew) Matrix</title>
+  <p>
+    If <m>A^{t}=-A</m>, then the matrix <m>A</m> is called an antisymmetric matrix, e.g. 
+    <me>
+      A= \begin{pmatrix} 
+      0 &amp; -i\\i &amp; 0 
+      \end{pmatrix}, \quad  
+      A^{t} = \begin{pmatrix} 
+      0 &amp; i\\-i &amp; 0 
+      \end{pmatrix}.
+    </me>
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-herm_mat">
+  <title>Hermitian Matrix</title>
+  <p>
+    If <m>A^{\dagger}=A</m> or <m>a_{ij}=\bar{a}_{ji}</m> in a square matrix, 
+    then the matrix <m>A</m> is said to be a Hermitian matrix, e.g. 
+    <me>
+      A=\begin{pmatrix} 
+      0 &amp; -i\\i &amp; 0 
+      \end{pmatrix},   \quad  
+      A^{*}= \begin{pmatrix} 
+      0 &amp; i\\-i &amp; 0 
+      \end{pmatrix},
+    </me>
+    <me>
+     A^{\dagger}=(A^{*})^{t}= \begin{pmatrix} 
+      0 &amp; -i\\i &amp; 0 
+      \end{pmatrix} = A.
+    </me>
+    If <m>A^{\dagger}=-A</m>, then <m>A</m> is known as a skew Hermitian matrix.
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-unitary_mat">
+  <title>Unitary Matrix</title>
+  <p>
+    A square matrix <m>A</m> is said to be an unitary matrix, if <m>AA^{\dagger}=I</m>, e.g. 
+    <me>
+      A=\begin{pmatrix} 
+      0 &amp; 1\\1 &amp; 0 
+      \end{pmatrix}, \quad  
+      A^{*}=\begin{pmatrix} 
+      0 &amp; 1\\1 &amp; 0 
+      \end{pmatrix},     \quad  
+      (A^{*})^{t} = A^{\dagger} = \begin{pmatrix} 
+      0 &amp; 1\\1 &amp; 0 
+      \end{pmatrix}
+    </me>
+    and 
+    <me>
+      AA^{\dagger}= \begin{pmatrix} 
+      0 &amp; 1\\1 &amp; 0 
+      \end{pmatrix}\begin{pmatrix} 
+      0 &amp; 1\\1 &amp; 0 
+      \end{pmatrix} = \begin{pmatrix} 
+      0+1 &amp; 0+0\\0+0 &amp; 1+0 
+      \end{pmatrix} = \begin{pmatrix} 
+      1 &amp; 0\\0 &amp; 1 
+      \end{pmatrix}=I
+    </me>
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-orth_mat">
+  <title>Orthogonal Matrix</title>
+  <p>
+    A square matrix A is said to be an orthogonal matrix if <m>AA^{t}=I</m>, e.g. 
+    <me>
+      A=\begin{pmatrix} 
+      0 &amp; 1\\1 &amp; 0 
+      \end{pmatrix}, \quad 
+      A^{t}=\begin{pmatrix} 
+      0 &amp; 1\\1 &amp; 0 
+      \end{pmatrix},
+    </me>
+    and,
+    <me>
+ AA^{t} = \begin{pmatrix} 
+0 &amp; 1\\1 &amp; 0 
+\end{pmatrix}\begin{pmatrix} 
+0 &amp; 1\\1 &amp; 0 
+\end{pmatrix} = \begin{pmatrix} 
+0+1 &amp; 0+0\\0+0 &amp; 1+0 
+\end{pmatrix} = \begin{pmatrix} 
+1 &amp; 0\\0 &amp; 1 
+\end{pmatrix}=I.
+    </me> 
+    </p>
+</subsubsection>
+</subsection>
+
+<subsection xml:id="subsec-trace_mat">
+  <title>The Trace of a Matrix</title>
+  <p>
+   The algebric sum of the elements of principal diagonal in any square matrix is called the trace of a matrix, 
+   i.e.,  
+   <me>
+    Tr A = \sum\limits_{k} a_{kk},
+   </me>
+    For example:
+    <me>
+      A=\begin{bmatrix} 
+      a_{11} &amp; a_{12} &amp; \cdots &amp; a_{1n}\\ 
+      a_{21} &amp; a_{22} &amp; \cdots &amp; a_{2n}\\ 
+      \vdots &amp; \vdots &amp; \vdots &amp; \vdots\\ 
+      a_{n1} &amp; a_{n2} &amp; \cdots &amp; a_{nn} 
+      \end{bmatrix}
+    </me>
+    then trace of <m>A = Tr A = a_{11}+a_{22}+ \cdots + a_{nn} = \sum\limits_{k=1}^{n} a_{kk}</m>.
+    </p>
+    <paragraphs>
+      <title>Properties</title>
+      <p>
+        <ol marker="I.">
+          <li>
+           Cyclic Theorem:  The trace of a product of two matrices is independent of the order of multiplication, 
+           i.e., <m>Tr (AB) = Tr(BA)</m>.
+           <proof>
+           We have -
+           <me>
+            Tr (AB) = \sum\limits_{i} (AB)_{ij} = \sum\limits_{i}\left\{\sum\limits_{j} a_{ij}b_{ji}\right\} 
+           </me>
+           <me>
+            = \sum\limits_{j}\sum\limits_{i}a_{ij}b_{ji}  = \sum\limits_{j}\sum\limits_{i}b_{ji}a_{ij} 
+            = \sum\limits_{j}(BA)_{ji} = Tr(BA)
+           </me>
+           This holds even if <m>AB \neq BA</m>. It can be generilezed to <m>Tr(ABCD)= Tr(DCBA)</m>.
+           </proof>
+          </li>
+          <li>
+          Trace of the product of a symmetric and an anti - symmetric matrix is zero.
+          <proof>
+            Let us consider that A is a symmetric and B is an anti - symmetric matrix,
+            <me>
+              A=A^{t}  \quad \text{and}\quad  B=-B^{t}
+            </me>
+            then,
+            <me>
+              Tr (AB) = \sum\limits_{i}(AB)_{ij} = \sum\limits_{i}\sum\limits_{j}a_{ij}b_{ji} = 
+              \sum\limits_{i}\sum\limits_{j}(-b_{ij})a_{ji}
+            </me>
+            [since, <m>A = A'</m> and <m>B = B'</m>]
+            <me>
+              = \sum\limits_{i}\sum\limits_{j}(b_{ij})a_{ji} = - \sum\limits_{i}(BA)_{ii} 
+              = -Tr (BA) = -Tr (AB)  
+            </me>
+            or, <m>2Tr(AB) = 0</m> or, <m>Tr(AB) =0.</m>   
+          </proof>
+          </li>
+        </ol>
+        </p>
+    </paragraphs>
+</subsection>
+  </section>
+

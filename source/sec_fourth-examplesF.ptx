@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-examplesF" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples F</title>
+ 
+
+<paragraphs>
+  <title>Laguerre's Function</title>
+  <example>
+    <statement>
+      <p>
+         Prove that <me>
+          L_{n}(0)=n! 
+         </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+       We have 
+       <me>
+        \sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n}=\frac{1}{1-t}e^{-xt/(1-t)}
+       </me>
+       putting <m>x=0</m>, we get -
+       <me>
+        \sum\limits_{n=0}^{\infty}\frac{L_{n}(0)}{n!}t^{n}=\frac{1}{1-t}=(1-t)^{-1} = 1+t+t^{2}+\cdots+t^{n}+\cdots = \sum\limits_{n=0}^{\infty}t^{n}
+       </me>
+       <me>
+        \therefore L_{n}(0) = n! 
+       </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Prove that 
+        <me>
+          xL''_{n}(x) +(1-x)L'_{n}(x)+nL_{n}(x)=0
+        </me>
+        and hence deduce that <m>L'_{n}(0) =-n(n!)</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Since <m> L_{n}(x)</m> satisfies the Laguerre's equation, 
+        <m>xy''+(1-x)y'+ny =0</m>  [for <m>\lambda =n</m>]. 
+        <me>
+          \therefore, \quad	xL''_{n}(x) +(1-x)L'_{n}(x)+nL_{n}(x)=0 
+        </me>
+          putting <m>x=0</m>, we have <m>L'_{n}(0)=-n L_{n}(0)</m>
+          <me>
+             \therefore L'_{n}(0) =-n(n!).
+          </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+         Evaluate	
+         <me>
+          \int\limits_{0}^{\infty}e^{-x}[L_{n}(x)]^{2}\,dx.
+         </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+       We may have	
+       <me>
+        \int\limits_{0}^{\infty}e^{-x}\sum\limits_{m,n =0}^{\infty}L_{m}(x)L_{n}(x)\frac{s^{m}t^{n}}{m!n!}\,dx
+       </me>
+       <me>
+        =(1-s)^{-1}(1-t)^{-1}\int\limits_{0}^{\infty}exp\left[-x\frac{(1-st)}{(1-s)(1-t)}\right]\,dx
+       </me>
+       <me>
+        =(1-st)^{-1}=\sum\limits_{n}(st)^{n}  \hspace{1cm} \left[\because \int\limits_{0}^{\infty}e^{-\alpha x}\,dx=\frac{1}{\alpha}\right]
+       </me> 
+        put <m>m=n</m> and equate the coefficients of <m>(st)^{n}</m> on both sides, we get -
+        <me>
+          \int\limits_{0}^{\infty}e^{-x}[L_{n}(x)]^{2}\,dx =(n!)^{2}.
+        </me>			
+      </p>
+      <p>
+        <term>Alternative:</term>
+        In case of <m>r=n</m> in eqn. <xref ref="eqn-laguer_eq8"/>, we have	
+        <me>
+          L_{n}(x) =(-1)^{n}x^{n} 
+        </me>
+        	<me>
+             \therefore \int\limits_{0}^{\infty}e^{-x}[L_{n}(x)]^{2}\,dx =(-1)^{n}\int\limits_{0}^{\infty}e^{-x}x^{n}L_{n}(x)\,dx 
+          </me>
+          <me>
+            =(-1)^{n}\int\limits_{0}^{\infty}e^{-x}x^{n}e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})\,dx
+          </me>
+          
+          <me>
+             =(-1)^{n}\int\limits_{0}^{\infty}x^{n}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})\,dx
+          </me>
+              Integrating by parts <m>n</m> times, 
+              <me>
+                =(-1)^{n}n!\int\limits_{0}^{\infty}\frac{d^{n-m}}{dx^{n-m}}(x^{n}e^{-x})\,dx = (-1)^{n}n!\int\limits_{0}^{\infty}x^{n}e^{-x}\,dx=(n!)^{2}.
+              </me>
+        </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Show that
+        <me>
+          L_{2n}(x) = n!\sum\limits_{m=0}^{n}\frac{2^{n-m}(-1)^{m}}{m!(n-m)!}L_{n-m}(x), \hspace{1cm} n \gt m.
+        </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We have	
+        <me>
+          L_{n}(x)=\frac{1}{n!}e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
+        </me>
+        Therefore
+        <me>
+          L_{o}(x)=1, \hspace{1cm} L_{1}(x)=\frac{1}{1!}(1-x) =1-x.
+        </me>
+          Replacing <m>x</m> by <m>2x</m>, we get - 
+          <me>
+            L_{1}(2x)=1-2x =2(1-x)-1=2L_{1}(x)-2\frac{1}{1!}L_{o}(x) 
+          </me>
+          <me>
+            = 1!\sum\limits_{m=0}^{1}\frac{2^{1-m}(-1)^{m}}{m!(1-m)!}L_{1-m}(x)
+          </me>
+          
+          Also,
+          	<me>
+              L_{2}(2x)=\frac{1}{2!}(2-8x+4x^{2}) = 1-4x+2x^{2}
+            </me>
+            <me>
+              =4(1-2x+\frac{x^{2}}{2})-4(1-x)+1
+            </me>
+            
+            	<me>
+                =2^{2}L_{2}(x)-2\frac{2!}{1!1!}L_{1}(x)+\frac{2!}{0!2!}L_{o}(x)
+              </me>
+              <me>
+                =2!\sum\limits_{m=0}^{2}\frac{2^{2-m}(-1)^{m}}{m!(2-m)!}L_{2-m}(x)
+              </me>
+              
+              similarly,
+              <me>
+                L_{3}(2x)=3!\sum\limits_{m=0}^{3}\frac{2^{3-m}(-1)^{m}}{m!(3-m)!}L_{3-m}(x)
+              </me>
+              and in general,
+              <me>
+                L_{n}(2x)=3!\sum\limits_{m=0}^{n}\frac{2^{n-m}(-1)^{m}}{m!(n-m)!}L_{n-m}(x) 
+              </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Show that	if 
+        <me>
+          \int\limits_{0}^{\infty}e^{-x}x^{m}L_{n}(x)\,dx =0 \quad \text{if} \quad n \gt m. 
+        </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+       <me>
+        \int\limits_{0}^{\infty}e^{-x}x^{m}L_{n}(x)\,dx= \int\limits_{0}^{\infty}x^{m}e^{-x}e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})\,dx 
+       </me>
+       Rodrigue's formula for <m>L_{n}(x)</m> is 
+       <me>
+        e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})  =\int\limits_{0}^{\infty}x^{m}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})\,dx
+       </me>
+      
+       <me>
+        =\left.x^{m}\frac{d^{n-1}}{dx^{n-1}}(x^{n}e^{-x})\right\vert_{0}^{\infty}-\int\limits_{0}^{\infty}mx^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{n}e^{-x})\,dx
+       </me>
+       
+       <me>
+         =0+(-1)m\int\limits_{0}^{\infty}x^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{n}e^{-x})\,dx
+       </me>
+       <me>
+        =(-1)^{2}m(m-1)\int\limits_{0}^{\infty}x^{m-2}\frac{d^{n-2}}{dx^{n-2}}(x^{n}e^{-x})\,dx
+       </me>
+       <me>
+        =(-1)^{m}m!\int\limits_{0}^{\infty}\frac{d^{n-m}}{dx^{n-m}}(x^{n}e^{-x})\,dx =0. \quad if \quad  n \gt m.
+       </me>	 
+      </p>
+    </solution>
+  </example>
+</paragraphs>
+   
+</section>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-examplesC" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples C</title>
+ <paragraphs>
+  <title>Legendre's Function</title>
+  <example>
+    <statement>
+      <p>
+        Express <m>f(x)=4x^{3}+6x^{2}+7x+2 </m> in terms of  Legendre's Polynomials.
+      </p>
+    </statement>
+    <solution>
+      <p>
+       Let 
+       <men xml:id="eqn-legneq1">
+        4x^{3}+6x^{2}+7x+2\equiv aP_{3}(x)+bP_{2}(x)+cP_{1}(x)+dP_{0}(x) 
+       </men>
+        <me>
+          =a\left[\frac{5}{2}x^{3}-\frac{3x}{2}\right]+b\left[\frac{3}{2}x^{2}-\frac{1}{2}\right]+c(x)+d(1)
+        </me>
+        <me>
+          =\frac{5ax^{3}}{2}-\frac{3ax}{2}+\frac{3bx^{2}}{2}-\frac{b}{2}+cx+d
+        </me>
+        <me>
+          =\frac{5ax^{3}}{2}+\frac{3bx^{2}}{2}+\left(-\frac{3a}{2}+c\right)x-\frac{b}{2}+d
+        </me>
+        Equating the coefficients of like powers of <m>x</m>, we have 
+        <me>
+          \frac{5a}{2}=4 \quad \Rightarrow a =\frac{8}{5};
+        </me>
+        <me>
+         \frac{3b}{2}=6 \quad \Rightarrow b =4
+        </me>
+        <me>
+          \frac{-3a}{2}+c=7 \quad \Rightarrow -\frac{3}{2}\cdot\frac{8}{5}+c =7 \quad \Rightarrow c=\frac{47}{5}
+        </me>
+        <me>
+          \frac{-b}{2}+d=2 \quad \Rightarrow -\frac{4}{2}+d=2 \quad \Rightarrow d=4.
+        </me>
+        Putting these values in eqn. <xref ref="eqn-legneq1"/>, we get - 
+        <me>
+          \frac{8}{5}P_{3}(x)+4P_{2}(x)+\frac{47}{5}P_{1}(x)+4P_{0}(x) 
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Show that <m>P_{n}(-x)=(-1)^{n}P_{n}(x)</m> and hence prove that 
+        <ol>
+          <li>
+            <me>
+               P_{2m}(-x)=P_{2m}(x) 
+            </me>
+          </li>
+          <li>
+            <me>
+              P_{2m+1}(-x)=-P_{2m+1}(x)
+            </me>
+            </li>
+        </ol>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We know that 
+        <me>
+           P_{n}(x)=\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r};
+        </me>
+        where,
+        <me>
+          N= \begin{cases} 
+          \frac{n}{2},\quad \text{for n even}\\ 
+          =\frac{n-1}{2},\quad \text{for n odd.} 
+          \end{cases}
+        </me>
+        Thus 
+        <me>
+          P_{n}(-x)=\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}(-1)^{n-2r}x^{n-2r}	
+        </me>
+        <me>
+           =(-1)^{n}\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r} =(-1)^{n}  P_{n}(x)
+        </me>
+        <me>
+          \therefore \quad P_{n}(-x)=(-1)^{n}P_{n}(x)
+        </me>
+        Now, 
+        <ol>
+          <li>
+            if <m>n=2m</m>, we have 
+            <me>
+              P_{2m}(-x)=(-1)^{2m}P_{2m}(x)
+            </me>
+            or,
+            <me>
+              P_{2m}(-x)= P_{2m}(x) 
+            </me>
+          </li>
+          <li>
+            if <m>n=2m+1</m>, we have
+            <me>
+              P_{2m+1}(-x)=(-1)^{2m+1}P_{2m+1}(x)
+            </me>
+            or,
+            <me>
+              P_{2m+1}(-x)= - P_{2m+1}(x) 
+            </me>
+            </li>
+        </ol>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Assuming that a polynomial <m>f(x) </m> of degree <m>n</m> can be written as 
+        <me>
+          f(x)=\sum\limits_{n=0}^{\infty}a_{n}P_{n}(x),
+        </me>
+        show that
+        <me>
+          a_{n}\frac{2}{2n+1}= \int\limits_{-1}^{+1}f(x)P_{n}(x)\,dx.
+        </me>	
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <me>
+          f(x) =\sum\limits_{n=0}^{\infty}a_{n}P_{n}(x)=a_{0}P_{0}(x)+a_{1}P_{1}(x)+a_{2}P_{2}(x)+\cdots+a_{n}P_{n}(x)+\cdots
+        </me>
+        Multiplying both sides by <m>P_{n}(x)</m>, we get - 
+        <me>
+          f(x)P_{n}(x)= a_{0}P_{0}(x)P_{n}(x)+a_{1}P_{1}(x)P_{n}(x)
+        </me>
+        <me>
+          +a_{2}P_{2}(x)P_{n}(x)+\cdots+a_{n}P^{2}_{n}(x)+\cdots
+        </me>
+        
+        or,
+        <me>
+          \int\limits_{-1}^{+1}f(x)P_{n}(x)\,dx
+        </me>
+        <me>
+          =\int\limits_{-1}^{+1}\left[a_{0}P_{0}(x)P_{n}(x)+a_{1}P_{1}(x)P_{n}(x)\right.
+        </me>
+        <me>
+          \left. +a_{2}P_{2}(x)P_{n}(x)+\cdots+a_{n}P^{2}_{n}(x)+\cdots\right]\,dx
+        </me>
+        
+        <me>
+          =[0+0+\cdots+a_{n}\frac{2}{2n+1}+\cdots]
+        </me>
+        <me>
+          \therefore \quad a_{n}\frac{2}{2n+1} = \int\limits_{-1}^{+1}f(x)P_{n}(x)\,dx 
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        From the values of Legendre's polynomials, prove that 
+        <me>
+          x^{3}=\frac{1}{5}\left[2P_{3}(x) +3P_{1}(x)\right].
+        </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Let 
+        <men xml:id="eqn-legneq2">
+          x^{3} = aP_{3}(x)+bP_{2}(x)+cP_{1}(x)+dP_{0}(x)
+        </men>
+        <me>
+          =a\frac{1}{2}(5x^{3}-3x)+b\frac{1}{2}(3x^{2}-1)+c(x)+d(1) 
+        </me>
+        <me>
+           =\frac{5ax^{3}}{2}-\frac{3ax}{2}+\frac{3bx^{2}}{2}-\frac{b}{2}+d 
+        </me>
+        
+        <me>
+          =\frac{5ax^{3}}{2}+\frac{3bx^{2}}{2}+\left(-\frac{3a}{2}+c\right)x-\frac{b}{2}+d
+        </me>
+        equating the coefficients of like powers of <m>x</m>, we get -
+        <me>
+          \frac{5a}{2}=1 \quad \Rightarrow a = \frac{2}{5};
+        </me>
+        <me>
+          \frac{3b}{2}=0 \quad \Rightarrow b = 0;
+        </me>
+        <me>
+          -\frac{3a}{2}+c=0 \quad \Rightarrow c = \frac{3}{2}\cdot\frac{2}{5}=\frac{3}{5};
+        </me>
+        and 
+        <me>
+          -\frac{b}{2}+d=0 \quad \Rightarrow d =0.
+        </me>
+        Putting these values in eqn. <xref ref="eqn-legneq2"/>, we get - 
+        <me>
+          x^{3} = \frac{2}{5}P_{3}(x)+\frac{3}{5}P_{1}(x) 
+          =\frac{1}{5}\left[2P_{3}(x)+3P_{1}(x)\right]. 
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+         Using Rodrigue's formula, prove that <m>\int\limits_{-1}^{+1}x^{m}P_{n}(x)\,dx =0</m> 
+         if  <m>m \lt n</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <me>
+          \int\limits_{-1}^{+1}x^{m}P_{n}(x)\,dx =\int\limits_{-1}^{+1}x^{m}\frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}\,dx 
+        </me>
+        <me>
+          = \frac{1}{2^{n}n!}\int\limits_{-1}^{+1}x^{m}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}\,dx
+        </me>
+        On integrating by parts we get - 
+        <me>
+          =\frac{1}{2^{n}n!}\left[\left\{x^{m}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\right\}_{-1}^{+1}-\int\limits_{-1}^{+1}mx^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\,dx\right]
+        </me>
+        <me>
+          =0-\frac{m}{2^{n}n!}\int\limits_{-1}^{+1}x^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\,dx
+        </me>
+        Integrating we have
+        <me>
+          =(-1)^{2}\frac{m(m-1)}{2^{n}n!}\int\limits_{-1}^{+1}x^{m-2}\frac{d^{n-2}}{dx^{n-2}}(x^{2}-1)^{n}\,dx
+        </me>
+        Integrating <m>m-2 </m> times, we get -
+        <me>
+          =(-1)^{m}\frac{m(m-1)\cdots 2\cdot 1}{2^{n}n!}\int\limits_{-1}^{+1}\frac{d^{n-m}}{dx^{n-m}}(x^{2}-1)^{n}\,dx 
+        </me>
+        <me>
+          =\frac{(-1)^{m}m!}{2^{n}n!}\left[\frac{d^{n-m-1}}{dx^{n-m-1}}(x^{2}-1)^{n}\right]_{-1}^{+1}=0.
+        </me>
+      </p>
+    </solution>
+  </example>
+ </paragraphs>
+
+ 
+</section>

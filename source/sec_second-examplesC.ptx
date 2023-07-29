@@ -1,0 +1,820 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_second-examplesC" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>ExamplesC</title>
+ 
+<example>
+  <statement>
+    <p>
+      Show that there is only one eigen value for each eigen vector in a square matrix 
+      and also show that in such a matrix there may exist one or more eigen vectors for 
+      each eigen value.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let us assume that there exist two distinct eigen values <m>\lambda_{1}</m> 
+      and <m>\lambda_{2}</m> corresponding to a given eigen vector <m>X</m> of a 
+      square matrix <m>A</m>. Then, we have 
+      <me>
+        AX=\lambda_{1}X,   \quad    AX=\lambda_{2}X
+      </me>
+      on subtracting, we get -
+      <me>
+        (\lambda_{1}-\lambda_{2})X=0
+      </me>
+      as,
+      <me>
+        (\lambda_{1}-\lambda_{2}) \neq 0
+      </me>
+      hence,
+      <me>
+         X=0 
+      </me>
+      This is a contradiction that <m>X</m> is a non - zero vector. Hence corresponding to 
+      an eigen vector <m>X</m> there is only one eigen value of the square matrix <m>A</m>. 
+      Again, if <m>\lambda</m> be the eigen value of <m>A</m>, then the corresponding 
+      characteristic (eigen) vector <m>X</m> will be given by <m>AX=\lambda_{1}X</m>.
+    </p>
+    <p>
+      Let <m>k</m> be any non - zero scalar, then <m>A(kX) = \lambda (kX)</m>. 
+      Thus, <m>kX</m> is also an eigen vector of <m>A</m> corresponding to the same eigen 
+      value <m>\lambda</m>.
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      The eigen values of an orthogonal matrix have unit modulus.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let <m>A</m> be an orthogonal matrix. Hence  <m>A^{'}A=AA^{'}=I</m>.  
+      Now, from a characteristic equation, we have 
+      <men xml:id="eqn-eigen2">
+        AX=\lambda X 
+      </men>
+      on taking the transpose on both sides of eqn. <xref ref="eqn-eigen2"/>, we get -
+      <men xml:id="eqn-eigen3">
+        (AX)' =(\lambda X)'
+      </men>
+      on multiplying eqns. <xref ref="eqn-eigen2"/> and <xref ref="eqn-eigen3"/>, we get -
+      <md>
+        <mrow> (AX)' (AX) \amp =(\lambda X)' (\lambda X)</mrow>
+        <mrow> \text{or,} \quad (X' A')(AX) \amp =\lambda^{2} X' X  </mrow>
+        <mrow> \text{or,} \quad X'(A' A)X \amp =\lambda^{2} X' X </mrow>
+        <mrow>  \text{or,} \quad X' X \amp =\lambda^{2} X' X </mrow>
+        <mrow> \text{or,} \quad (1-\lambda^{2})X' X \amp = 0 </mrow>
+      </md>
+      Since <m>X</m> is an eigen vector, <m>X \neq 0</m> and consequently <m>X' X \neq 0</m>. 
+      Hence, we get -
+      <me>
+        (1-\lambda^{2}) = 0	
+      </me>
+      or,
+      <me>
+        \lambda = \pm 1. \hspace{5pt}     proved.
+      </me>
+    </p>
+  </solution>
+</example>
+    
+    <example>
+      <statement>
+        <p>
+          The eigen values of a unitary matrix have unit modulus.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>A</m> be a unitary matrix. Hence	
+          <men xml:id="eqn-eigen4">
+            A^{\dagger}A = AA^{\dagger} =I  
+          </men>
+          If <m>\lambda</m> be an eigen value of the matrix <m>A</m> and <m>X</m> is its 
+          eigen vector then from characteristic equation 
+          <men xml:id="eqn-eigen5">
+            AX=\lambda X 
+          </men>
+          on taking the transpose conjugate of eqn. <xref ref="eqn-eigen5"/>, we get -
+          <me>
+            (AX)^{\dagger}=(\lambda X)^{\dagger}
+          </me>
+          or, 
+          <men xml:id="eqn-eigen6">
+            X^{\dagger}A^{\dagger}= \bar{\lambda}X^{\dagger}  
+          </men>
+          on multiplying eqns. <xref ref="eqn-eigen5"/> and <xref ref="eqn-eigen6"/>, we get -
+          <me>
+            (X^{\dagger}A^{\dagger})(AX)= (\bar{\lambda}X^{\dagger})(\lambda X)
+          </me>
+          or,
+          <me>
+             X^{\dagger}(A^{\dagger}A)X= (\lambda\bar{\lambda})(X^{\dagger} X)
+          </me>
+          or,
+          <me>
+            X^{\dagger}X = (\lambda\bar{\lambda})(X^{\dagger} X)
+          </me>
+          <men xml:id="eqn-eigen7">
+           (1-\lambda\bar{\lambda})X^{\dagger} X =0    
+          </men>
+          Since <m>X</m> is an eigen vector, it is a non - zero vector. 
+          Hence, <m>X^{\dagger} X \neq 0</m>. 
+          Therefore, frome eqn. <xref ref="eqn-eigen7"/>, we get - 
+          <me>
+            1-\lambda\bar{\lambda} = 0
+          </me>
+          <me>
+            \Rightarrow \lambda\bar{\lambda} = 1
+          </me>
+          or,
+          <me>
+            |\lambda|^{2} = 1
+          </me>
+          <me>
+            \therefore  \vert\lambda \vert = 1 \hspace{3pt} proved.
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example xml:id="prob-eigvect1">
+      <statement>
+        <p>
+           Find the eigen values and eigen vector for the matrix,
+           <me>
+            A=\begin{pmatrix} 
+            3 &amp; 1\\2 &amp; 2 
+            \end{pmatrix}
+           </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          To find the eigen value, the secular equation is given by 
+          <me>
+            \vert A-\lambda I\vert=0
+          </me>
+          That is,
+          <me>
+            \begin{vmatrix}
+            \begin{pmatrix} 
+            3 &amp; 1\\2 &amp; 2 
+            \end{pmatrix} - \lambda \begin{pmatrix} 
+             1 &amp; 0\\0 &amp; 1 
+             \end{pmatrix}
+             \end{vmatrix}  = 0
+          </me>
+          or,
+          <me>
+            \begin{vmatrix} 
+            3-\lambda &amp; 1\\ 2 &amp; 2-\lambda 
+            \end{vmatrix} =0
+          </me>
+          <md>
+            <mrow>  or, (3-\lambda)(2-\lambda)-2 \amp  = 0</mrow>
+            <mrow> or, \quad 6-2\lambda -3 \lambda + \lambda^{2} \amp =0</mrow>
+            <mrow>or,  \lambda^{2} -5\lambda +4  \amp =0</mrow>
+            <mrow> or, (\lambda -1)(\lambda -4)  \amp =0 </mrow>
+            <mrow> \Rightarrow  \lambda \amp = 1, 4 </mrow>
+          </md>
+          Hence the eigen values are <m>\lambda_{1} = 1</m>, and <m>\lambda_{2} = 4</m>. 
+        </p>
+        <p>
+          The eigen vector associated with <m>\lambda_{1}</m> is given by 
+          <me>(A-\lambda I)X =0</me>.
+          i.e.,
+          <me>
+            \begin{bmatrix} 
+            3-1 &amp; 1\\2 &amp; 2-1 
+            \end{bmatrix} \begin{bmatrix} 
+            x_{1}\\x_{2} 
+            \end{bmatrix} = \begin{bmatrix} 
+            0\\0 \end{bmatrix} \quad  \text{for}\quad  \lambda = 1
+          </me>
+          <me>
+            \text{or,}  \quad \begin{bmatrix} 
+            2 &amp; 1\\2 &amp; 1 
+            \end{bmatrix} \begin{bmatrix} 
+            x_{1}\\x_{2} 
+            \end{bmatrix} = \begin{bmatrix} 
+            0\\0  \end{bmatrix} 
+          </me>
+          This gives 
+          <me>
+            2x_{1} + x_{2} = 0 \Rightarrow x_{1} = -x_{2}/2
+          </me>
+          and 
+          <me>
+            2x_{1} + x_{2} = 0 \Rightarrow x_{1} = -x_{2}/2
+          </me>
+          or,
+          <me>
+            \frac{x_{1}}{1} = -\frac{x_{2}}{2} = k_{1} \quad \text{(say)}
+          </me>
+          Hence the required eigen vector corresponding to the eigen value <m>\lambda_{1} = 1</m>, is 
+          <me>
+            X= \begin{bmatrix} 
+            x_{1}\\x_{2} 
+            \end{bmatrix} = \begin{bmatrix} 
+            k_{1}\\-2k_{1} 
+            \end{bmatrix}  = \begin{bmatrix} 
+            1\\-2 
+            \end{bmatrix}
+          </me>
+          by choosing <m>k_{1}=1</m>. 
+          </p>
+          <p>Similarly, eigen vector for eigen value <m>\lambda_{2} =4</m> can also be found.</p>
+      </solution>
+    </example>
+
+    <example xml:id="prob-eigvect2">
+      <statement>
+        <p>
+          Find the eigen values and associated eigen vector for the matrix 
+          <me>
+           A = \begin{bmatrix} 
+           2 &amp; -1 &amp; 1\\-1 &amp; 2 &amp; -1\\1 &amp; -1 &amp; 2 
+           \end{bmatrix} 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We know that the secular equation is <m>|A-\lambda I|=0,</m> i.e.,
+          <me>
+           \begin{vmatrix} 
+            2-\lambda &amp; -1 &amp; 1 \\ 
+            -1 &amp; 2-\lambda &amp; -1 \\ 
+            1 &amp; -1 &amp; 2-\lambda 
+            \end{vmatrix} =0 
+          </me>
+          or,
+          <me>
+            (2-\lambda)[(2-\lambda)(2-\lambda)-1]-1[-1+1(2-\lambda)] +1[1-(2-\lambda)]=0
+          </me>
+          or,
+          <me>
+            (2-\lambda)[(4-4\lambda + \lambda^{2}-1]-1[-1+2-\lambda] +1[1-2+\lambda]=0
+          </me>
+          or,
+          <me>
+            (2-\lambda)[ \lambda^{2}-4\lambda +3]-(1-\lambda) +(\lambda -1)=0
+          </me>
+          or,
+          <me>
+            2 \lambda^{2}- \lambda^{3}-8\lambda +4 \lambda^{2}+6 - 3 \lambda-1+\lambda +\lambda -1=0
+          </me>
+          or,
+          <me>
+            6 \lambda^{2}- \lambda^{3}-9\lambda +4=0
+          </me>
+          or,
+          <me>
+            \lambda^{3}- 6 \lambda^{2}+ 9\lambda - 4=0
+          </me>
+          Now from zero method, <m>\lambda = 1</m> satisfies the above equation. 
+          Hence we can write the above equation as 
+          <me>
+            \lambda^{3}- \lambda^{2} -5\lambda^{2}+ 5\lambda +4\lambda - 4=0
+          </me>
+          or,
+          <me>
+            \lambda^{2}(\lambda-1)-5\lambda (\lambda-1) + 4(\lambda-1)=0
+          </me>
+          or,
+          <me>
+            (\lambda-1)(\lambda^{2}-5\lambda + 4)=0\quad \Rightarrow \lambda = 1,1,4
+          </me>
+          Hence the eigen values are <m>\lambda_{1} = 1</m>,  and <m>\lambda_{2} = 4</m>. 
+          The eigen vector associated with <m>\lambda_{1} = 1</m> is given by <m>(A-\lambda I)X = 0</m>, i.e.,
+          <me>
+            \begin{bmatrix} 
+            1 &amp; -1 &amp; 1 \\ -1 &amp; 1 &amp; -1 \\ 1 &amp; -1 &amp; 1 
+            \end{bmatrix}  \begin{bmatrix} 
+            x_{1}\\x_{2}\\x_{3} 
+            \end{bmatrix} = \begin{bmatrix} 
+            0\\0\\0 
+            \end{bmatrix}
+          </me>
+           this gives 
+           <me>
+            x_{1} - x_{2}+x_{3}=0
+           </me>
+           or,
+           <me>
+            -x_{1} + x_{2} - x_{3}=0  
+           </me>
+           and 
+           <me>
+            x_{1} - x_{2}+x_{3}=0
+           </me>
+           on solving these, we get -
+        </p>
+        
+        <p>
+          On solving these we get -
+          <me>
+            \frac{x_{1}}{1-1} = \frac{x_{2}}{-1+1} =\frac{x_{3}}{1-1} = k_{1}  \quad	 \text{(say)}
+          </me>
+          or,
+          <me>
+            \frac{x_{1}}{0} = \frac{x_{2}}{0} =\frac{x_{3}}{0} = k_{1}	
+          </me>
+          Hence the required eigen vector corresponding to the eigen value <m>\lambda_{1}=1</m>, is 
+          <me>
+            X_{1} = \begin{bmatrix} 
+            x_{1}\\x_{2}\\x_{3} 
+            \end{bmatrix}=\begin{bmatrix} 
+            0\\0\\0 
+            \end{bmatrix}.
+          </me>
+          The eigen vector corresponding to the root, <m>\lambda_{2}=4</m> is given by
+          <me>
+            \begin{bmatrix} 
+            2-4 &amp; -1 &amp; 1 \\ -1 &amp; 2-4 &amp; -1 \\ 1 &amp; -1 &amp; 2-4 
+            \end{bmatrix} 
+            \begin{bmatrix} 
+            x_{1}\\x_{2}\\x_{3} 
+            \end{bmatrix}=\begin{bmatrix} 
+            0\\0\\0 
+            \end{bmatrix}.
+          </me>
+          or,
+          <me>
+            \begin{bmatrix} 
+            -2 &amp; -1 &amp; 1 \\ -1 &amp; -2 &amp; -1 \\ 1 &amp; -1 &amp; -2 
+            \end{bmatrix} 
+            \begin{bmatrix} 
+            x_{1}\\x_{2}\\x_{3} 
+            \end{bmatrix}=\begin{bmatrix} 
+            0\\0\\0 
+            \end{bmatrix}
+          </me>
+          This gives 
+          <md>
+            <mrow> -2x_{1} - x_{2}+x_{3}\amp =0 </mrow>
+            <mrow>or, -x_{1} -2 x_{2} - x_{3} \amp =0</mrow>
+            <mrow>and x_{1} - x_{2}-2x_{3} \amp =0</mrow>
+          </md>
+          On solving these equations, we get -
+          <me>
+            \frac{x_{1}}{4-1} = \frac{x_{2}}{-1-2} =\frac{x_{3}}{+1+2} = k_{2} \quad \text{(say)}
+          </me>
+          or,
+          <me>
+            \frac{x_{1}}{3} = \frac{x_{2}}{-3} =\frac{x_{3}}{3} = k_{2}
+          </me>
+          Hence an eigen vector corresponding to the eigen value, <m>\lambda_{2}=4</m>  will be 
+          <me>
+            X_{2} = \begin{bmatrix} 
+            x_{1}\\x_{2}\\x_{3} 
+            \end{bmatrix}=3k_{2}\begin{bmatrix} 
+            1\\-1\\1 
+            \end{bmatrix}.
+          </me>
+          </p>
+      </solution>
+    </example>
+
+
+   <example>
+      <statement>
+        <p>
+          Find the eigen values and eigen vectors of the given Hermitian matrix 
+          <me>
+            A = \begin{bmatrix} 
+            		0 &amp; 1 &amp; 1 \\ 1 &amp; 0 &amp; 1 \\ 1 &amp; 1 &amp; 0 
+                		\end{bmatrix}.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          The characteristic equation is <m>|A-\lambda I| = 0</m>, i.e.,
+          <me>
+            \begin{vmatrix} 
+             -\lambda &amp; 1 &amp; 1 \\1 &amp; -\lambda &amp; 1 \\ 1 &amp; 1 &amp; -\lambda 
+              \end{vmatrix} = 0
+          </me>
+          <md>
+            <mrow> or, -\lambda(\lambda^{2}-1) +1(+\lambda)+1(1+\lambda)\amp =0 </mrow>
+            <mrow> or, -\lambda(\lambda+1)(\lambda -1)+2(\lambda+1)\amp =0 </mrow>
+            <mrow>or, (\lambda+1)[-\lambda(\lambda -1)+2] \amp =0 </mrow>
+            <mrow>or, (\lambda+1)[-\lambda^{2}+\lambda +2] \amp =0 </mrow>
+          </md>
+          <me>
+            or, \lambda  =-1,-1,2 
+          </me>
+          The eigen vector corresponding to eigen value <m>\lambda_{1}=-1</m> is given by <m>(A-\lambda I)X = 0</m>. 
+         
+           <me>
+            \begin{bmatrix} 
+            	1 &amp; 1 &amp; 1 \\ 
+              1 &amp; 1 &amp; 1 \\ 
+              1 &amp; 1 &amp; 1 
+              \end{bmatrix}	\begin{bmatrix} 
+              	x_{1} \\ x_{2} \\ x_{3} 
+                \end{bmatrix} = \begin{bmatrix} 
+                	0 \\ 0 \\ 0 
+                  \end{bmatrix}
+              </me>
+          <md>
+            <mrow> or, x_{1} + x_{2}+ x_{3} \amp =0</mrow>
+            <mrow> or, x_{1} + x_{2} + x_{3}\amp =0</mrow>
+            <mrow>and, x_{1} + x_{2} + x_{3} \amp =0</mrow>
+          </md>
+          on solving these we get -
+          <me>
+            \frac{x_{1}}{0} = \frac{x_{2}}{0} = \frac{x_{3}}{0} = k_{1} \quad \text{(say)}
+          </me>
+          <me>
+            \therefore  \quad  X_{1} = \begin{bmatrix} 
+            	x_{1} \\ x_{2} \\ x_{3} 
+              \end{bmatrix} = \begin{bmatrix} 
+              	0 \\ 0 \\ 0 
+                \end{bmatrix}
+          </me>
+          The eigen vector corresponding to eigen value <m>\lambda_{2}=2</m> is given by 
+          <me>
+            \begin{bmatrix} 
+            	-2 &amp; 1 &amp; 1 \\ 1 &amp; -2 &amp; 1 \\ 1 &amp; 1 &amp; -2 
+              \end{bmatrix}	
+              \begin{bmatrix} 
+              	x_{1} \\ x_{2} \\ x_{3} 
+                \end{bmatrix} = \begin{bmatrix} 
+                	0 \\ 0 \\ 0 
+                  \end{bmatrix}
+          </me>
+         
+          <md>
+            <mrow>or,  -2x_{1} + x_{2}+ x_{3}\amp =0</mrow>
+            <mrow>or, x_{1} -2x_{2} + x_{3} \amp =0 </mrow>
+            <mrow> or, x_{1} + x_{2}-2x_{3}\amp =0 </mrow>
+          </md>
+          on solving these we get -
+          <me>
+            \frac{x_{1}}{4-1} = \frac{x_{2}}{1+2} = \frac{x_{3}}{1+2} = k_{2} \quad   \text{(say)}
+          </me>
+          or,
+          <me>
+            \frac{x_{1}}{3} = \frac{x_{2}}{3} = \frac{x_{3}}{3} = k_{2}
+          </me>
+          or,
+          <me>
+            X_{1}=\begin{bmatrix} 
+            	x_{1} \\ x_{2} \\ x_{3} 
+              \end{bmatrix} = \begin{bmatrix} 
+              	3k_{2} \\ 3k_{2} \\ 3k_{2} 
+                \end{bmatrix}   = 3k_{2} \begin{bmatrix} 
+                	1 \\ 1 \\ 1 
+                  \end{bmatrix}
+          </me>
+           where <m>k_{2}</m> may have any value. For <m>3k_{2}=1</m>, We have <m>X_{2}=(1,1,1)</m>. 
+           Since the matrix is Hermitian, we have -
+           <me>
+            X \cdot X^{\dagger} = \begin{bmatrix} 
+            1 &amp; 1 &amp; 1 
+            \end{bmatrix}	 \begin{bmatrix} 
+            	1\\1\\1 
+              \end{bmatrix} = [1+1+1] = 3 
+              </me>
+           <m>\therefore</m> Normalized eigen vector corresponding to <m>\lambda_{2}=2</m> is  
+           <me>
+              \hat{X}= \frac{X}{\parallel X \parallel} = \frac{1}{\sqrt{3}} \begin{bmatrix} 
+                  1\\1\\1 
+                      \end{bmatrix}.
+           </me>
+        </p>
+      </solution>
+    </example> 
+
+
+
+    <example>
+      <statement>
+        <p>
+          Find the eigen values and eigen vectors of 
+          <me>
+            A=\begin{bmatrix} 
+            \cos\theta &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
+            \end{bmatrix}
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+         The characteristic equation is <m>|A-\lambda I| = 0</m>
+         or,
+         <me>
+          \begin{bmatrix} 
+          \cos\theta - \lambda &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta -\lambda 
+          \end{bmatrix}=0
+         </me>
+         <md>
+          <mrow>or, (\cos\theta - \lambda)^{2}+\sin^{2}\theta  \amp =0 </mrow>
+          <mrow>or, \cos^{2}\theta - 2\lambda\cos\theta)+\lambda^{2}+\sin^{2}\theta \amp =0</mrow>
+          <mrow>or, 1-2\lambda \cos\theta+\lambda^{2} \amp =0</mrow>
+          <mrow>or, \lambda^{2}-2\lambda \cos\theta +1 \amp =0 </mrow>
+         </md>
+         <me>
+           or, \lambda  = \frac{+2\cos\theta \pm \sqrt{4\cos^{2}\theta -4}}{2.1}  
+         </me>
+         <me>
+          = \cos\theta \pm i\sin\theta = e^{i\theta}\cdot e^{-i\theta} 
+         </me>
+         
+         <me>
+          \therefore  \quad   \lambda_{1}=e^{i\theta}\quad  \text{and}\quad  \lambda_{2}=e^{-i\theta}
+         </me>
+         The eigen vector corresponding to eigen value <m>\lambda_{1}=e^{i\theta}</m> is given by 
+         <m>(A-\lambda I)X=0</m>, i.e.,
+         <me>
+          \begin{bmatrix} 
+          \cos\theta - e^{i\theta} &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta -e^{i\theta} 
+          \end{bmatrix} \begin{bmatrix} 
+          x_{1}\\x_{2} 
+          \end{bmatrix} = \begin{bmatrix} 
+          0\\0 
+          \end{bmatrix}
+         </me>
+         or,
+         <me>
+          \begin{bmatrix} 
+          \cos\theta - \cos\theta - i\sin\theta &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta - \cos\theta - i\sin\theta 
+          \end{bmatrix} \begin{bmatrix} 
+          x_{1}\\x_{2} 
+          \end{bmatrix} = \begin{bmatrix} 
+          0\\0 
+          \end{bmatrix}
+         </me>
+         or,
+         <me>
+          \begin{bmatrix} 
+          - i\sin\theta &amp; -\sin\theta \\  \sin\theta  &amp; - i\sin\theta 
+          \end{bmatrix} \begin{bmatrix} 
+          x_{1}\\x_{2} 
+          \end{bmatrix} = \begin{bmatrix} 
+          0\\0 
+          \end{bmatrix}
+         </me>
+         <me>
+          or, \hspace{3pt} -ix_{1}\sin\theta - x_{2}\sin\theta =0 \quad \Rightarrow x_{1}=ix_{2} 
+         </me>
+         <me>
+          and \hspace{6pt} x_{1}\sin\theta -ix_{2}\sin\theta =0 \quad \Rightarrow x_{1}=ix_{2}.
+         </me>
+         Putting <m>x_{2}=c_{1}</m> gives <m>x_{1}=ic_{1}</m>.
+         Hence,
+         <men xml:id="eqn-eig_mat3">
+          X_{1}=c_{1}\begin{bmatrix} 
+          i\\1 
+          \end{bmatrix}, 
+         </men>
+         similarly,
+         <men xml:id="eqn-eig_mat4">
+          X_{2}=c_{1}\begin{bmatrix} 
+          -i\\1 
+          \end{bmatrix} \quad \text{for}\quad \lambda_{2}=e^{i\theta}
+         </men>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Prove that
+          <me>
+            \begin{bmatrix} 
+            \cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
+            \end{bmatrix}^{n}=\begin{bmatrix} 
+            \cos n\theta  &amp; -\sin n\theta \\  \sin n\theta  &amp; \cos n\theta 
+            \end{bmatrix}
+          </me>
+          
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let,
+          <me>
+            A = \begin{bmatrix} 
+            \cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
+            \end{bmatrix}
+          </me>
+          The characteristic equation is <m>|A-\lambda I|=0</m>, which gives the eigen values 
+          <m>\lambda_{1} = e^{i\theta},</m>  <m>\lambda_{2} = e^{-i\theta}</m>. 
+          The corresponding eigen vector associated with <m>\lambda_{1} = e^{i\theta}</m> 
+           and <m>\lambda_{2} = e^{-i\theta}</m> are given by 
+           <me>
+            X_{1}= \begin{bmatrix} 
+            		i\\1 
+                \end{bmatrix}, 
+           </me>
+           and 
+           <me>
+            X_{2}= \begin{bmatrix} 
+            		1\\i 
+                \end{bmatrix}
+           </me>
+           by setting <m>c_{1}=1</m> in eqns. <xref ref="eqn-eig_mat3"/> and <xref ref="eqn-eig_mat4"/>.
+           Now a matrix that diagonalize <m>A</m> is 
+           <me>
+            P = \begin{bmatrix} 
+            	      X_{1} &amp; X_{2}  
+                    \end{bmatrix}	= \begin{bmatrix} 
+                    i &amp; 1 \\ 1 &amp; i 
+                    \end{bmatrix}
+           </me>
+           and 
+           <me>
+            P^{-1} =\frac{adj P}{|P|} =-\frac{1}{2}\begin{bmatrix} 
+            	      i &amp; -1 \\ -1 &amp; i  
+                    \end{bmatrix}
+           </me>
+           Hence a diagonal matrix is <m>D =P^{-1}AP</m>
+           <me> or, \quad
+            D = -\frac{1}{2} \begin{bmatrix} 
+            	      i &amp; -1 \\ -1 &amp; i  
+                    \end{bmatrix} \begin{bmatrix} 
+                    \cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
+                    \end{bmatrix} \begin{bmatrix} 
+                    	      i &amp; 1 \\ 1 &amp; i  
+                            \end{bmatrix} 
+           </me>
+           <me>
+            =\begin{bmatrix} 
+            	      e^{i\theta} &amp; 0 \\ 0 &amp; e^{-i\theta}  
+                    \end{bmatrix}
+           </me>
+           <me>
+            \therefore    D^{n}=  \begin{bmatrix} 
+            	      e^{in\theta} &amp; 0 \\ 0 &amp; e^{-in\theta}  
+                    \end{bmatrix}
+           </me>
+           But,
+           <me>
+            D^{n} =  (P^{-1}AP)^{n} = (P^{-1}AP)(P^{-1}AP)  \cdots (P^{-1}AP)
+           </me>
+           <me>
+            = P^{-1}A^{n}P \Rightarrow  A^{n}=PD^{n}P^{-1}
+           </me>
+           <me>
+            \therefore A^{n} = -\frac{1}{2}\begin{bmatrix} 
+            	      i &amp; 1 \\ 1 &amp; i  
+                    \end{bmatrix} \begin{bmatrix} 
+                     e^{in\theta} &amp; 0 \\ 0 &amp; e^{-in\theta} 
+                     \end{bmatrix} \begin{bmatrix} 
+                     	      i &amp; -1 \\ -1 &amp; i  
+                            \end{bmatrix}
+           </me>
+           or,
+           <me>
+            \begin{bmatrix} 
+            \cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
+            \end{bmatrix}^{n} = \begin{bmatrix} 
+            \cos n\theta  &amp; -\sin n \theta \\  \sin n\theta  &amp; \cos n\theta 
+            \end{bmatrix}
+           </me>
+            </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Examine whether the transformation is orthogonal and find its inverse.
+           <md>
+            <mrow>  y_{1}\amp  = \frac{1}{\sqrt{2}}x_{1} + \frac{1}{\sqrt{2}}x_{3}, </mrow>
+            <mrow> y_{2}  \amp = x_{2}, </mrow>
+            <mrow>and \quad y_{3}  \amp = -\frac{1}{\sqrt{2}}x_{1} + \frac{1}{\sqrt{2}}x_{3}</mrow>
+           </md>           
+        </p>
+      </statement>
+      <solution>
+        <p>
+          This set of equations is equivalent to the single matrix equation  
+          <me>
+            Y=AX
+          </me>
+          i.e.,
+          <me>
+            \begin{bmatrix} 
+	       y_{1} \\  y_{2} \\  y_{3} 
+	       \end{bmatrix} = \begin{bmatrix}
+	       \frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}} \\ 
+         0 &amp; 1 &amp; 0 \\ 
+         -\frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}}
+	       \end{bmatrix} \begin{bmatrix}
+	       x_{1} \\  x_{2} \\  x_{3} 
+	       \end{bmatrix} 
+          </me>
+           For orthogonal matrix <m>A^{t}A = I</m>, 
+           or, 
+           <me>
+            \begin{bmatrix}
+	       \frac{1}{\sqrt{2}} &amp; 0 &amp; -\frac{1}{\sqrt{2}} \\ 
+         0 &amp; 1 &amp; 0 \\ 
+         \frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}}
+	       \end{bmatrix} \begin{bmatrix}
+	       \frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}} \\ 
+         0 &amp; 1 &amp; 0 \\ 
+         -\frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}}
+	       \end{bmatrix} = \begin{bmatrix}
+	       1 &amp; 0 &amp; 0 \\ 
+         0 &amp; 1 &amp; 0 \\ 
+         0 &amp; 0 &amp; 1
+	       \end{bmatrix} I 
+           </me>
+           Now, <m>X= A^{-1}Y</m> where <m>A^{-1} = \frac{A^{ct}}{|A|}.</m>. Hence,
+           <me>
+            \begin{bmatrix}
+	       x_{1} \\  x_{2} \\ x_{3} 
+	       \end{bmatrix} = \begin{bmatrix}
+	       \frac{1}{\sqrt{2}} &amp; 0 &amp; -\frac{1}{\sqrt{2}} \\ 
+         0 &amp; 1 &amp; 0 \\ 
+         \frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}}
+	       \end{bmatrix} \begin{bmatrix}
+	       y_{1} \\  y_{2} \\  y_{3} 
+	       \end{bmatrix}
+           </me>
+           Thus the inverse transformation equation is
+           <me>
+             x_{1} =  \frac{1}{\sqrt{2}}y_{1} -	\frac{1}{\sqrt{2}}y_{3},
+           </me>
+           <me>
+            x_{2} =  y_{2},
+           </me>
+           and 
+           <me>
+            x_{3} =  \frac{1}{\sqrt{2}}y_{1} +	\frac{1}{\sqrt{2}}y_{3}
+           </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          If the matrices <m>A</m> and <m>B</m> are Hermitian and matrices <m>C</m>and <m>D</m> 
+          are unitary then show that 
+          <ol marker ="i.">
+            <li>
+             <m>C^{-1}AC</m> is Hermitian, 
+            </li>
+            <li>
+              <m>C^{-1}DC</m> is unitary, 
+              </li>
+              <li>
+                <m>i(AB-BA)</m> is Hermitian.
+                </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We know that,if <m>C^{\dagger}=C^{-1}</m>, then <m>C</m> is unitary and 
+          if <m>A^{\dagger} = A</m> then <m>A</m> is Hermitian.
+          <ol marker ="i.">
+            <li>
+              Since <m>C</m> is unitary, let <m>M = C^{-1}AC = C^{\dagger}AC</m> for Hermitian matrix, 
+              we have <m>M^{\dagger} = M</m>, i.e., 
+              <me>
+                \left[C^{\dagger}AC\right]^{\dagger} = \left[(C^{\dagger}AC)^{*}\right]^{t} = \left[C^{\dagger *}A^{*}C^{*}\right]^{t}
+              </me>
+              <me>
+                 = \left[C^{'}A^{*}C^{*}\right]^{'} = C^{*'}A^{*^{'}}C^{''} = C^{\dagger} A^{\dagger} C = C^{-1}AC = M.
+              </me>
+              <m>\therefore  C^{-1}AC</m> is Hermitian matrix.
+            </li>
+            <li>
+              Let <me>
+                M= C^{-1}DC = C^{\dagger}DC
+              </me>
+              taking conjugate, we have 
+              <me>
+                M^{*}= \left[C^{\dagger}DC\right]^{*} = C^{\dagger *}D^{*}C^{*} = C^{t}D^{*}C^{*}
+              </me>
+              taking transpose, we get -
+              <me>
+                \left(M^{*}\right)^{t} =  M^{\dagger}= \left[C^{t}D^{*}C^{*}\right]^{t} = C^{*t}D^{*t}C^{*t} = C^{\dagger}D^{\dagger}C
+              </me>
+              Now,
+              <me>
+                M^{\dagger} M = (C^{\dagger}D^{\dagger}C)(C^{\dagger}DC) = C^{\dagger}D^{\dagger}C C^{\dagger}DC = C^{\dagger}D^{\dagger}DC = C^{\dagger}C = I 
+              </me> 
+              <m>\therefore  C^{-1}DC</m>	is unitary.
+              </li>
+              <li>
+                By taking conjugate transpose of <m>M = i(AB_BA) = iAB-iBA,</m> we can easily prove it as a Hermitian.
+                </li>
+          </ol>
+        </p>
+      </solution>
+    </example>
+</section>

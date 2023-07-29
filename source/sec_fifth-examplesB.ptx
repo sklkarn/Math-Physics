@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fifth-examplesB" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples B</title>
+ 
+<example>
+  <statement>
+    <p>
+       Obtain Fourier series expansion of <m>f(x) = x^{2}</m> from <m>-\pi</m> to <m>\pi</m>, 
+       and deduce  <m>\sum\limits_{n=1}^{\infty}\frac{1}{n^{2}}</m>, also find the 
+       sum of series 
+       <me>
+        \frac{1}{1^{2}} -\frac{1}{2^{2}}+\frac{1}{3^{2}}-\frac{1}{4^{2}}+\cdots.
+       </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let the given function is expanded in a Fourier series 
+      <me>
+        f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+      </me>
+      here, the function <m>f(x) = x^{2}</m> is an even function. Hence,
+      <me>
+        a_{0}= \frac{2}{\pi}\int\limits_{0}^{\pi}f(x)\,dx = \frac{2}{\pi}\int\limits_{0}^{\pi}x^{2} \,dx = \frac{2}{3}\pi^{2};
+      </me>
+      <me>
+        a_{n}= \frac{2}{\pi}\int\limits_{0}^{\pi}f(x) \cos nx\,dx = \frac{2}{\pi}\int\limits_{0}^{\pi} x^{2} \cos nx\,dx 
+      </me>
+      <me>
+        =\frac{2}{\pi}\left[x^{2}\left(\frac{\sin nx}{n}\right) -2 x \left(\frac{\cos nx}{-n^{2}}\right) + 2\left(\frac{\sin nx}{-n^{3}}\right)\right]_{0}^{\pi}
+      </me>
+      <me>
+         = \frac{2}{\pi}\left[\frac{2 \pi \cos n \pi}{n^{2}}\right] = \frac{4}{n^{2}}(-1)^{n}
+      </me>
+        <m>\left[\because  \left(\sin nx\right)_{0}^{\pi}=0\right]</m>
+        <me>
+            \therefore  x^{2} = \frac{2}{3.2}\pi^{2}+\sum\limits_{n=1}^{\infty}\frac{4}{n^{2}}(-1)^{n} \cos nx 
+        </me>
+        
+          <men xml:id="eqn-fourier_sum1">
+          = \frac{\pi^{2}}{3} -4\left[\frac{\cos x}{1^{2}}-\frac{\cos 2x}{2^{2}}+\frac{\cos 3x}{3^{2}}-\cdots\right] 
+          </men>
+            which is the required Fourier series expansion of the given function. 
+            The graphical representation of this function is parabolic curves as 
+            shown in figure below. <image source="fig53.png" width ="55%"/>
+      </p>
+      <p>
+        As <m>x=\pm \pi</m> is a point of discontinuity, the series converges to
+        <me>
+           f(x) = \frac{1}{2}[f(-\pi+0) + f(\pi -0)] =  \frac{1}{2}[\pi^{2}+\pi^{2}] = \pi^{2}.
+        </me>
+          Therefore, from eqn. <xref ref="eqn-fourier_sum1"/>, we have 
+          <me>
+            \pi^{2}=\frac{\pi^{2}}{3} - 4\left[-1-\frac{1}{2^{2}}-\frac{1}{3^{2}}-\cdots\right]
+          </me>
+          or,
+          <me>
+            \frac{\pi^{2}}{6}=\sum\limits_{n=1}^{\infty}\frac{1}{n^{2}}.
+          </me>
+            Also, at the point of continuity, i.e., at <m>x=0</m>, we have from 
+            eqn. <xref ref="eqn-fourier_sum1"/>,
+            <me>
+              0= \frac{\pi^{2}}{3} -4\left[1-\frac{1}{2^{2}}+\frac{1}{3^{2}}-\cdots\right]
+            </me>
+            or,
+            <me>
+              1-\frac{1}{2^{2}}+\frac{1}{3^{2}}-\cdots = \frac{\pi^{2}}{12}.
+            </me>
+        </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Obtain a Fourier series expansion of <m>f(x) = x^{3}</m> for <m>-\pi \lt x \lt \pi</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let
+      <me>
+        f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+      </me>
+      here, the given function is an odd function. Hence,
+      <me>
+         b_{n}= \frac{2}{\pi}\int\limits_{0}^{\pi} f(x) \sin nx \,dx = \frac{2}{\pi}\int\limits_{0}^{\pi} x^{3} \sin nx \,dx
+      </me>
+      <me>
+        =\frac{2}{\pi}\left[x^{3}\frac{\cos nx}{-n} -3x^{2}\left(\frac{\sin nx}{-n^{2}}\right) +6 x \left(\frac{\cos nx}{-n^{3}}\right) -6\left(\frac{\sin nx}{n^{4}}\right)\right]_{0}^{\pi}
+      </me>
+      <me>
+        = \frac{2}{\pi}\left[\pi^{3}\frac{\cos n\pi}{-n}+6\pi\left(\frac{\cos n\pi}{n^{3}}\right)\right]
+      </me>
+      <m>[\because \left(\sin nx\right)_{0}^{\pi}=0] </m>
+      <me>
+        =2(\cos n\pi)\left[-\frac{\pi^{2}}{n}+\frac{6}{n^{3}}\right] = 2(-1)^{n}\left[-\frac{\pi^{2}}{n}+\frac{6}{n^{3}}\right].	
+      </me>
+      <me>
+        \therefore  \quad  x^{3}=2\sum\limits_{n=1}^{\infty}(-1)^{n}\left[-\frac{\pi^{2}}{n}+\frac{6}{n^{3}}\right]\sin nx.
+      </me>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Obatin the Fourier series expansion of <m>f(x)=x+x^{2}</m> in the interval 
+      <m>-\pi \lt x \lt \pi </m>, also deduce
+      <me>
+        \frac{\pi^{2}}{6}=1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\cdots.
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let
+      <me>
+        f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+      </me>
+ here, 
+ <me>
+  a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx
+ </me>
+ <me>
+  = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}(x+x^{2}) \,dx = \frac{1}{\pi}\left[\frac{x^{2}}{2}+\frac{x^{3}}{3}\right]_{-\pi}^{\pi}=\frac{2 \pi^{2}}{3}.
+ </me>
+ <me>
+   a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} (x+x^{2}) \cos nx\,dx
+ </me>
+ <me>
+  =\frac{1}{\pi}\left[\left\{(x+x^{2})\left(\frac{\sin nx}{n}\right)\right\}_{-\pi}^{\pi} \left\{(1+2 x) \left(\frac{\cos nx}{-n^{2}}\right)\right\}_{-\pi}^{\pi} \right.
+ </me>
+ <me>
+  \left.+ \left\{2\left(\frac{\sin nx}{-n^{3}}\right)\right\}_{-\pi}^{\pi}\right].
+ </me>
+ 
+ <me>
+  =\frac{1}{\pi}\left[0+(1+2\pi)\left(\frac{\cos n\pi}{n^{2}}\right)-(1-2\pi)\left(\frac{\cos n\pi}{n^{2}}\right)+0\right]
+ </me>
+ <m>[\because  \cos (-\theta ) = \cos \theta ] </m>
+ <me>
+  =\frac{1}{n^{2}\pi}	\left[(1+2\pi)\cos n\pi -(1-2\pi)\cos n\pi\right] 
+ </me>
+<me>
+  =\frac{1}{n^{2}\pi}	\left[\cos n\pi +2\pi\cos n\pi-\cos n\pi+2\pi \cos n\pi\right] 
+</me>
+<me>
+  =\frac{1}{n^{2}\pi}	\left[4\pi \cos n\pi\right] = \frac{4}{n^{2}}(-1)^{n}. 
+</me>
+and 
+<me>
+  b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} (x+x^{2}) \sin nx\,dx
+</me>
+<me>
+  =\frac{1}{\pi}\left[(x+x^{2})\left(\frac{\cos nx}{-n}\right)-(1+2x)\left(\frac{\sin nx}{-n^{2}}\right)+2\left(\frac{\cos nx}{+n^{3}}\right)\right]_{-\pi}^{\pi}
+</me>
+<me>
+  =\frac{1}{\pi}\left[\left\{(\pi+\pi^{2})\left(\frac{\cos n\pi}{-n}\right)-(-\pi+\pi^{2})\left(\frac{\cos n\pi}{-n}\right)\right\} \right.
+</me>
+<me>
+  \left. + 0 +2\left(\frac{\cos n\pi}{n^{3}}-\frac{\cos n\pi}{n^{3}}\right)\right]
+</me>
+
+<me>
+  =\frac{1}{\pi}\left[-\frac{1}{n}\left\{\pi+\pi^{2}+\pi-\pi^{2}\right\}\cos n\pi+0\right]
+</me>
+<me>
+  =\frac{1}{\pi}\left[-\frac{2\pi}{n}\cos n\pi\right] = -\frac{2}{n}(-1)^{n}.
+</me>
+Therefore, the expression <m>f(x)</m> becomes -
+<me>
+  x+x^{2} = \frac{\pi^{2}}{3}+\frac{4}{n^{2}}(-)^{n}\cos nx-\frac{2}{n}(-1)^{n}\sin nx 
+</me>
+<me>
+   x+x^{2} = \frac{\pi^{2}}{3}+4\left[-\cos x + \frac{\cos 2x}{2^{2}}-\frac{\cos 3x}{3^{2}}+\cdots\right]
+</me>
+
+<men xml:id="eqn-fourier_sum2">
+  -2\left[-\sin x +\frac{\sin 2x}{2}-\frac{\sin 3x}{3}+\cdots\right]  
+</men>
+
+As <m>-\pi</m> and <m>\pi</m> are points of discontinuties, the sum of the series of 
+eqn. <xref ref="eqn-fourier_sum2"/> is given by	
+<me>
+  f(x)=\frac{1}{2}\left[f(-\pi+0)+f(\pi-0)\right] =\frac{1}{2}\left[(-\pi+\pi^{2})+(\pi+\pi^{2})\right] 
+</me>
+<me>
+  =\frac{1}{2}[-\pi+\pi^{2}+\pi+\pi^{2}] = \frac{1}{2}.2\pi^{2}=\pi^{2}.
+</me>
+Hence, from eqn. <xref ref="eqn-fourier_sum2"/>, we get - 
+<me>
+  \pi^{2}=\frac{\pi^{2}}{3}+4[1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\cdots]-2[0+0+\cdots] 
+</me>
+or,
+<me>
+  \frac{\pi^{2}}{6} =1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\cdots =\sum\limits_{n=1}^{\infty}\frac{1}{n^{2}}.
+</me>	  
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the Fourier series for the periodic function <m>f(x)</m> defined by
+      <me>
+        f(x) = \begin{cases}
+    -\pi, &amp; \text{for } -\pi \lt x \lt 0\\
+    x,   &amp; \text{for}   \quad 0 \lt x \lt \pi. 
+    \end{cases} 
+      </me>
+      Hence deduce that
+      <me>
+        \frac{\pi^{2}}{8}= \frac{1}{1^{2}}+ \frac{1}{3^{2}}+\frac{1}{5^{2}}+\cdots.
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+     Let 	
+     <me>
+      f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+     </me>
+     where
+     <me>
+      a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx =\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}-\pi \,dx + \int\limits_{0}^{\pi} x \,dx \right]
+     </me>
+     <me>
+       = \frac{1}{\pi}\left[-\pi\left(x\right)_{-\pi}^{0}+\left(\frac{x^{2}}{2}\right)_{0}^{\pi}\right]
+     </me>
+    <me>
+     = \frac{1}{\pi}\left[-\pi\left(+\pi\right)+\left(\frac{\pi^{2}}{2}\right)\right] = \frac{1}{\pi}\left[-\pi^{2}+\frac{\pi^{2}}{2}\right] = \frac{1}{\pi}\left[\frac{-\pi^{2}}{2}\right] = -\frac{\pi}{2}, 
+    </me>
+    and 
+    <me>
+       a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{1}{n^{2}\pi}\left[\cos n\pi-1\right] 
+    </me>
+    <me>
+       = \begin{cases}
+    0, &amp; \text{if  n  is  even}\\
+    -\frac{2}{n^{2}\pi},  &amp; \text{if n  is odd}, 
+    \end{cases}
+    </me>
+    and 
+    <me>
+      b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = \frac{1}{\pi}\left[1-2\cos n\pi\right]   
+    </me>
+    <me>
+      =\begin{cases}
+    -\frac{1}{n}, &amp; \text{if  n  is  even}\\
+    \frac{3}{n},  &amp; \text{if   n  is odd,} 
+    \end{cases}
+    </me>         
+Hence, the Fourier series expansion of the given function is  
+<me>
+  f(x) = -\frac{\pi}{4}-\frac{2}{\pi}\left\{\cos x+\frac{\cos 3x}{3^{2}}+\cdots\right\} 
+</me>
+
+<men xml:id="eqn-fourier_sum3">
+   + \left\{3\sin x-\frac{\sin 2x}{2}+\frac{3\sin 3x}{3}-\cdots\right\} 
+</men>
+
+The graphical representation of the function is shown in 
+figure below. <image source="fig54.png" width ="55%"/> 
+    </p>
+    <p>
+       There are three points of discontinuities at <m>x=0</m> <m>\pi</m>, and <m>-\pi</m> 
+       at <m>x=0</m>, the series converges to 
+       <me>
+        f(x)=\frac{1}{2}\left[f(x+0)+f(x-0)\right] 
+       </me>
+       <me>
+        = \frac{1}{2}\left[f(0+0)+f(0-0)\right] = \frac{1}{2}\left[0+(-\pi)\right]=-\frac{\pi}{2}
+       </me>
+       
+          Therefore from eqn. <xref ref="eqn-fourier_sum3"/>, we have  
+          <me>
+            -\frac{\pi}{2} = -\frac{\pi}{4}-\frac{2}{\pi}\left[\frac{1}{1^{2}}+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\cdots\right] +0
+          </me>
+          or,
+          <me>
+            \frac{\pi}{8}	 = \frac{1}{1^{2}}+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\cdots. 
+          </me>
+      </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+       Find the Fourier series of 
+       <me>
+        f(x) = \begin{cases} 
+           0, &amp; \text{for } \quad -\pi \lt x \lt 0\\ 
+              \sin x,   &amp; \text{for}   \quad 0 \lt x \lt \pi. 
+              \end{cases}.
+       </me>
+       Hence deduce that 
+       <ol marker="a.">
+        <li>
+          <me>
+            \frac{1}{1.3}+\frac{1}{3.5}+\frac{1}{5.7}+\cdots =\frac{1}{2}
+          </me>
+        </li>
+        <li>
+          <me>
+            
+          </me>
+          
+          </li>
+       </ol>
+       <me>
+        \frac{1}{1.3}-\frac{1}{3.5}+\frac{1}{5.7}-\cdots =\frac{\pi-2}{4} 
+       </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let  
+      <me>
+        f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right] 
+      </me>
+        where, 
+        <me>
+          a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx
+        </me>
+        <me>
+          =\frac{1}{\pi}\left[ 0 + \int\limits_{0}^{\pi} \sin x \,dx \right]  = \frac{1}{\pi}\left[-\cos x \right]_{0}^{\pi}  = \frac{2}{\pi}
+        </me>
+        <me>
+          a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{1}{\pi}\int\limits_{0}^{\pi} \sin x \cos nx\,dx 
+        </me>
+        <me>
+          = \begin{cases} 
+              -\frac{2}{\pi(n^{2}-1)}, &amp; \text{if  n  is  even}\\ 
+                  0,  &amp; \text{if n  is odd}, 
+                  \end{cases}
+        </me>
+          <me>
+            b_{n}= \frac{1}{\pi}\int\limits_{0}^{\pi}\sin x \sin nx\,dx = \frac{1}{2}+0 
+          </me>
+          [<m>\because </m>  for n=1, <m>b_{1}=\frac{1}{2}</m>]
+            <men xml:id="eqn-fourier-sum4">
+              \therefore \quad f(x) = \frac{1}{\pi}-\sum\limits_{m=0}^\infty \left(\frac{2}{\pi(4m^2-1)}\right)\cos 2mx +\frac{1}{2}\sin x; 
+            </men>
+            where n=2m.  
+            The graphical representation of the function is shown in figure 
+            below. <image source="fig55.png" width ="55%"/>  put <m>x=0</m> and <m>x=\frac{\pi}{2}</m> in 
+            eqn. <xref ref="eqn-fourier-sum4"/> to deduce the series for a. and b., respectively. 
+    </p>
+  </solution>
+</example>
+</section>

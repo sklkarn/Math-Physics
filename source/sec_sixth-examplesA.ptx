@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_sixth-examplesA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>ExamplesA</title>
+ 
+ <example>
+  <statement>
+    <p>
+      Find the Fourier Transform of 
+      <me>
+        f(x) = \begin{cases}
+x,   &amp; |x| \leq a   \quad  \text{or,} \quad (-a \leq x\leq a)\\
+0,   &amp; |x| \gt a  \quad   \text{or,} \quad (-a \gt x \gt a)
+\end{cases}	
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+       Fourier transform of <m>f(x)</m> is  
+       <me>
+        \mathscr{F}\{f(x)\} =  F(s) = \int\limits_{0}^{\infty}f(x)e^{-ikx} \, dx
+       </me>
+          <me>
+            =\int\limits_{-\infty}^{-a}x e^{-isx} \, dx+ \int\limits_{-a}^{a}x e^{-isx} \, dx +\int\limits_{a}^{\infty}0. e^{-isx} \, dx
+          </me>
+          <me>
+            =\int\limits_{\infty}^{a}f(-t)e^{+ist} \,(-dt)+ \left[\frac{x.e^{-isx}}{-is}+\frac{e^{-isx}.1}{s^{2}}\right]_{-a}^{a}+0
+          </me>
+          <me>
+            =\int\limits_{a}^{\infty}0.e^{+ist} \,(dt)+ \frac{a}{is}\left(e^{-isa}+e^{isa}\right)+\frac{1}{s^{2}}\left(e^{-isa}-e^{isa}\right)
+          </me>
+          <me>
+            =0+ \frac{ia}{s}.2\cos sa + \frac{1}{s^{2}}.2\sin sa
+          </me>
+          <me>
+            =\frac{2i}{s^{2}}(sa\cos sa- \sin sa)
+          </me>
+    </p>
+  </solution>
+ </example>
+
+    <example>
+      <statement>
+        <p>
+          Find the Fourier transform of <m>f(x)</m> defined by
+          <me>
+            f(x) = \begin{cases}
+1,   &amp; |x| \lt a   \\
+0,   &amp; |x| \gt a  
+\end{cases}
+          </me>
+          and hence evalute
+          <ol marker="I.">
+            <li>
+               <me>
+            \int\limits_{-\infty}^{\infty}\frac{\sin sa.\cos sa}{s}\,ds 
+          </me>
+            </li>
+            <li>
+              <me>
+                \int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds 
+              </me>
+              </li>
+          </ol>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          we have 
+          <me>
+             \mathscr{F}\{f(x)\}=F(s)=\int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx
+          </me>
+          <me>
+            = \int\limits_{-\infty}^{a}f(x) e^{-isx}\,dx + \int\limits_{-a}^{a}f(x) e^{-isx}\,dx + \int\limits_{a}^{\infty}f(x) e^{-isx}\,dx
+          </me>
+          <me>
+            =\int\limits_{\infty}^{a}f(-t) e^{+ist}\,(-dt)+\int\limits_{-a}^{a}1. e^{-isx}\,(dx)+ \int\limits_{a}^{\infty}0. e^{-isx}\,dx  
+          </me>
+          <me>
+            =\int\limits_{a}^{\infty}f(-t) e^{+ist}\,(dt)+\left[\frac{e^{-isx}}{-is}\right]_{a}^{a}+0
+          </me>
+          <me>
+            = \int\limits_{a}^{\infty}0. e^{+ist}\,(dt)+\left[\frac{e^{isa}-e^{-isa}}{is}\right]+0 
+          </me>
+          
+          <men xml:id="eqn-ftrans1">
+             = \frac{2}{s}\sin sa
+          </men>
+        </p>
+        <p>
+          Again, if 
+          <me>
+            \mathscr{F}\{f(x)\}=F(s)=\int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx
+          </me>
+          then
+          <me>
+            f(x) = \mathscr{F}^{-1}\{F(s)\} = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}F(s) e^{isx}\,ds
+          </me>
+          <me>
+            \therefore \quad  \int\limits_{-\infty}^{\infty}F(s) e^{isx}\,ds = 2\pi f(x) 
+            = \begin{cases}
+2\pi, &amp; \text{if} \quad |x| \lt a \\
+0, &amp; \text{if} \quad |x| \gt a
+\end{cases} 
+          </me>
+but,
+<me>
+  F(s) = \frac{2\sin sa}{s}, 
+</me>
+from <xref ref="eqn-ftrans1"/>
+<me>
+  \therefore \quad  \int\limits_{-\infty}^{\infty}\left(\frac{2\sin sa}{s}\right)(\cos sx+i\sin sx)\, dx 
+</me>
+<me>
+   = \begin{cases}
+2\pi, &amp; \text{if} \quad |x| \lt a\\
+0, &amp; \text{if} \quad |x| \gt a
+\end{cases}
+</me>
+
+or, 
+<me>
+  \int\limits_{-\infty}^{\infty}\left(\frac{\sin sa\cos sx}{s}\right)\,ds +i \int\limits_{-\infty}^{\infty}\left(\frac{\sin sa\sin sx}{s}\right)\,ds 
+</me>
+<me>
+    = \begin{cases}
+\pi, &amp; \text{if} \quad |x| \lt a\\
+0, &amp; \text{if} \quad |x| \gt a
+\end{cases}
+</me>
+
+equating real parts on both sides, we get -
+          </p>
+          <p>
+            <men xml:id="eqn-ftrans2">
+              \int\limits_{-\infty}^{\infty}\left(\frac{\sin sa\cos sx}{s}\right)\,ds 
+              = \begin{cases}
+\pi, &amp; \text{if} \quad |x| \lt a  \\
+0, &amp; \text{if} \quad |x| \gt a
+\end{cases} 
+            </men>
+            Also, if <m>x=0, a=1,</m>  then from expression <xref ref="eqn-ftrans2"/> we have
+            <me>
+              \int\limits_{-\infty}^{\infty}\frac{\sin s}{s}\,ds =\pi 
+            </me>
+   [for <m>|x| \lt a \Rightarrow 0 \lt 1,</m>  and <m>\cos 0 =1</m>] 
+   Or,        
+<me>
+  2\int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds =\pi
+</me>
+or,
+<me>
+   \int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds=\frac{\pi}{2} 
+</me>
+            </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find  
+          <me>
+            \mathscr{F}\{f(x)\}\quad \text{where}\quad f(x) 
+            = \begin{cases}
+1-x^{2}, &amp;  \text{if} \quad |x| \leq 1\\
+0, &amp;  \text{if} \quad |x| \gt 1
+\end{cases}. 
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Given that
+          <me>
+            f(x) = \begin{cases}
+1-x^{2}, &amp;  -1 \leq x \leq 1\\
+0, &amp;  -1 \gt x \gt 1
+\end{cases}
+          </me>
+          <me>
+           \therefore   \mathscr{F}\{f(x)\} = F(s) = \int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx  
+          </me>
+          <me>
+            = \int\limits_{-\infty}^{-1}f(x) e^{-isx}\,dx+\int\limits_{-1}^{1}f(x) e^{-isx}\,dx + \int\limits_{1}^{\infty}f(x) e^{-isx}\,dx
+          </me>
+          <me>
+            = \int\limits_{\infty}^{1}f(-y) e^{isy}\,(-dy)+\int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx + \int\limits_{1}^{\infty}0. e^{-isx}\,dx
+          </me>
+          <me>
+            =\int\limits_{1}^{\infty}f(-y) e^{isy}\,(dy)+\int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx + 0 
+          </me>
+          <me>
+            = \int\limits_{1}^{\infty}0. e^{isy}\,(dy)+\int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx + 0
+          </me>
+          <me>
+            = \int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx = \int\limits_{-1}^{1} e^{-isx}\,dx - \int\limits_{-1}^{1} x^{2} e^{-isx}\,dx 
+          </me>
+  <me>
+    =\left[\frac{e^{-isx}}{-is}\right]_{-1}^{1} - \left[\frac{x^{2}e^{-isx}}{-is}-2x \frac{e^{-isx}}{i^{2}s^{2}}+2\frac{e^{-isx}}{+is^{3}}\right]_{-1}^{1}
+  </me>
+  <me>
+    =\frac{1}{-is}\left[e^{-is}-e^{is}\right]-\frac{e^{-is}}{-is}+2\frac{e^{-is}}{-s^{2}}-2\frac{e^{-is}}{is^{3}}+\frac{e^{is}}{-is}+2\frac{e^{is}}{-s^{2}}+2\frac{e^{is}}{is^{3}}
+  </me>
+  <me>
+    =\frac{1}{-is}\left[e^{-is}-e^{is}\right]+\frac{1}{is}\left[e^{-is}-e^{is}\right] - \frac{2}{s^{2}}\left[e^{-is}+e^{is}\right]+\frac{2}{is^{3}}\left[e^{is}-e^{-is}\right]
+  </me>
+  <me>
+    =-\frac{2s}{s^{3}}\left[e^{-is}+e^{is}\right]-\frac{2i}{s^{3}}\left[e^{is}-e^{-is}\right] 
+  </me>
+  <me>
+    = \frac{1}{s^{3}}(4\sin s-4s\cos s).
+  </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find the Fourier sine and cosine transform  of <m>f(x) =x^{2}, 0 \lt x \lt 4</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \mathscr{F}\{f(x)\} = F(s) = \int\limits_{0}^{t}f(x) \frac{\sin n\pi x}{l}\,dx
+          </me>
+          <me>
+            =	\int\limits_{0}^{4}x^{2} \frac{\sin n\pi x}{4}\,dx
+          </me>
+          <me>
+            =\left[-\frac{4}{n\pi}x^{2}\cos \frac{n\pi x}{4}\right]_{0}^{4}+ \int\limits_{0}^{4}2x\frac{4}{n\pi}\cos \frac{n\pi x}{4}\,dx
+          </me>
+          <me>
+            =-\frac{4^{3}}{n\pi}\cos n\pi+ \frac{8}{n\pi}\left[\frac{4x}{n\pi} \sin \frac{n\pi x}{4}+ \frac{4^{2}}{n^{2}\pi^{2}}\cos \frac{n\pi x}{4}\right]_{0}^{4}
+          </me>
+ similarly Fourier cosine transform can be obtained.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find Fourier sine and cosine transform of 
+          <me>
+            f(x) = \begin{cases}
+1, &amp;  0 \lt x \lt a\\
+0, &amp;   x \gt a
+\end{cases}.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+           we have 
+           <me>
+            \mathscr{F}_{s}\{f(x)\} = F(s) = \int\limits_{0}^{\infty}f(x) \sin sx \,dx
+           </me>
+           <me>
+             = \int\limits_{0}^{a}1.\sin sx \,dx = \left[-\frac{\cos sx}{s}\right]_{0}^{a} = -\frac{\cos as}{s}+\frac{1}{s}
+           </me>
+           and 
+           <me>
+            \mathscr{F}_{c}\{f(x)\} = F(s) = \int\limits_{0}^{\infty}f(x) \cos sx \,dx\
+           </me>
+           <me>
+             = \int\limits_{0}^{a}1.\cos sx \,dx = \left[-\frac{\sin sx}{s}\right]_{0}^{a} = \frac{\sin as}{s}.
+           </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find <me>
+            \mathscr{F}_{s}\{f(x)\}  
+           </me>
+           and 
+           <me>
+             \mathscr{F}_{c}\{f(x)\}
+           </me>
+           if 
+	<me>
+     f(x) = \begin{cases}
+x, &amp;  \text{for} \quad 0 \lt x \lt 1\\
+2-x, &amp;  \text{for} \quad 1 \lt x \lt 2\\
+0, &amp; \text{for} \quad    x \gt 2
+\end{cases}
+  </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+           we have 
+           <me>
+            \mathscr{F}_{s}\{f(x)\} =\int\limits_{0}^{\infty} f(x)\sin sx \,dx 
+           </me>
+           <me>
+            =\int\limits_{0}^{1} f(x)\sin sx \,dx + \int\limits_{1}^{2} f(x)\sin sx \,dx + \int\limits_{2}^{\infty} f(x)\sin sx \,dx
+           </me>
+           <me>
+            =\int\limits_{0}^{1} x\sin sx \,dx + \int\limits_{1}^{2} (2-x)\sin sx \,dx + \int\limits_{2}^{\infty} 0.\sin sx \,dx
+           </me>
+           <me>
+            =\left[-\frac{x\cos sx}{s}+\frac{\sin sx}{s^{2}}\right]_{0}^{1} +\left[	\frac{2\cos sx}{s}\right]_{1}^{2}
+           </me>
+           <me>
+           -\left[-	\frac{x\cos sx}{s}+	\frac{\sin sx}{s^{2}}\right]_{1}^{2}
+           </me>
+           
+           <me>
+            =\left[-\frac{\cos s}{s}+\frac{\sin s}{s^{2}}\right]-\frac{2}{s}\cos 2s+\frac{2}{s}\cos s 
+           </me>
+           <me>
+            +\frac{2\cos 2s-\cos s}{s}-	\left[\frac{\sin 2s-\sin s}{s^{2}}\right]
+           </me>
+           
+           <me>
+            = \frac{2\sin s-2\sin s\cos s}{s^{2}}= \frac{2(1-\cos s)\sin s}{s^{2}}.
+           </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find the Fourier Cosine transform of <m>e^{-x^{2}/2}</m>.	
+        </p>
+      </statement>
+      <solution>
+        <p>
+          By definition 
+          <me>
+            \mathscr{F}_{c}\{e^{-x^{2}/2}\}=\int\limits_{0}^{\infty}e^{-x^{2}/2}\cos sx\,dx= I \quad (say)
+          </me>
+          Now, differentiating w.r.t. 's', we get -
+          <me>
+             \frac{\,dI}{\,ds}=\int\limits_{0}^{\infty}\left(-xe^{-x^{2}/2}\right)\sin sx\,dx 
+          </me>
+          <me>
+            = \left[\left.e^{-x^{2}/2} \sin sx\right\vert_{0}^{\infty} - \int\limits_{0}^{\infty} s.\cos sx. e^{-x^{2}/2}\,dx\right] 
+          </me>
+          <me>
+              =0-s\int\limits_{0}^{\infty}e^{-x^{2}/2} \cos sx\,dx = -sI
+          </me>
+          or, 
+          <me>
+             \frac{\,dI}{\,ds} =-sI 
+          </me>
+          or,
+          <me>
+            \frac{\,dI}{I} = -s\,ds
+          </me>
+ on integrating, we get -
+ <me>
+  \log I = -\frac{s^{2}}{2} +\log A
+ </me>
+ or,
+ <men xml:id="eqn-FC_trans1">
+  I=Ae^{-s^{2}/2}  
+ </men>
+ when  s =0,
+<me>
+  I = \int\limits_{0}^{\infty}e^{-x^{2}/2}\cos 0\,dx = \frac{1}{2}\sqrt{\pi/2}
+</me>
+putting this value in eqn. <xref ref="eqn-FC_trans1"/>, we get -
+<me>
+  \frac{\sqrt{\pi}}{2\sqrt{2}}=A  
+</me>
+<me>
+  \therefore  I = \frac{\sqrt{\pi}}{2\sqrt{2}}e^{-s^{2}/2}.
+</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that Fourier transform of <m>e^{-x^{2}/2}</m> is its own Fourier transform.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          we have 
+          <me>
+            \mathscr{F}\{f(x)\} =F(s) = \int\limits_{-\infty}^{\infty}e^{-isx}f(x) \,dx 
+          </me>
+          <me>
+            = \int\limits_{-\infty}^{\infty}e^{-x^{2}/2}e^{-isx}\,dx
+          </me>
+          <me>
+            =\int\limits_{-\infty}^{\infty}e^{-\frac{1}{2}(x^{2}+2isx)}\,dx = \int\limits_{-\infty}^{\infty}e^{-\frac{1}{2}(x+is)^{2}s^{2}/2}\,dx 
+          </me>
+          <me>
+            = e^{-s^{2}/2}\int\limits_{-\infty}^{\infty}e^{-\frac{1}{2}(x+is)^{2}}\,dx
+          </me>
+          put <m>x+is = y</m> so that <m>\,dx =\,dy</m>.
+<me>
+  \therefore  F(s)=	e^{-s^{2}/2}\int\limits_{-\infty}^{\infty}e^{-y^{2}/2}\,dy = e^{-s^{2}/2}.1
+</me>
+[<m>\because   \int\limits_{-\infty}^{\infty}e^{-y^{2}/2}\,dy =1</m>]
+ Hence, <m>f(x)=e^{-x^{2}}</m> is its own Fourier transform.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find <m>\mathscr{F}_{s}^{-1}\{e^{-\pi x}\}</m>.
+ </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \mathscr{F}_{s}^{-1}\{e^{-\pi x}\} =F_{s}(s) = \frac{2}{\pi}\int\limits_{0}^{\infty}e^{-\pi s}\sin sx\,ds 
+          </me>
+          <me>
+            = \frac{2}{\pi}\frac{x}{\pi^{2}+x^{2}} = \frac{2x}{\pi(\pi^{2}+x^{2})}. 
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find complex Fourier transform of <m>e^{-|x|}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \mathscr{F}\{e^{-|x|}\} = F(s)=\int\limits_{-\infty}^{\infty}e^{-|x|}e^{-isx}\,dx 
+          </me>
+          <me>
+            = \int\limits_{-\infty}^{0}e^{-|x|}e^{-isx}\,dx + \int\limits_{0}^{\infty}e^{-|x|}e^{-isx}\,dx
+          </me>
+          
+         <me>
+          =\int\limits_{-\infty}^{0}e^{x}e^{-isx}\,dx + \int\limits_{0}^{\infty}e^{-x}e^{-isx}\,dx 
+         </me>
+         <me>
+          = \int\limits_{-\infty}^{0}e^{x(1-is)}\,dx + \int\limits_{0}^{\infty}e^{-x(1+is)}\,dx
+         </me>
+         
+          <me>
+            =\left[\left.\frac{e^{x(1-is)}}{1-is}\right\vert_{-\infty}^{0}+\left.\frac{e^{-x(1+is)}}{-(1-is)}\right\vert_{0}^{\infty}\right] 
+          </me>
+          <me>
+            = \frac{1}{1-is}+\frac{1}{1+is}= \frac{2}{1+s^{2}}. 
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find the Fourier sine transform of the function 
+           <me>
+            f(x) = \begin{cases}
+	\sin x,    &amp; \text{when}  \quad   0 \lt x \lt a \\
+	0,  &amp; \text{when}  \quad   x \gt a 
+\end{cases}.
+           </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+  \mathscr{F}_{s}\{f(x)\}=\int\limits_{0}^{\infty}f(x) \sin sx\,dx 
+ </me>
+ <me>
+  = \int\limits_{0}^{a}f(x) \sin sx\,dx + \int\limits_{a}^{\infty}f(x) \sin sx\,dx
+ </me>
+ <me>
+  =\int\limits_{0}^{a}f(x) \sin x\sin sx\,dx + 0 
+ </me>
+ <me>
+  = \frac{1}{2}\int\limits_{0}^{a}\left[\cos (1-s)x-\cos(1+s)x\right]\,dx
+ </me>
+ <me>
+  =\frac{1}{2}\left[\frac{\sin (1-s)x}{1-s}-\frac{\sin (1+s)x}{1+s}\right]_{0}^{a} 
+ </me>
+ <me>
+  = \frac{1}{2}\left[\frac{\sin (1-s)a}{1-s}-\frac{\sin (1+s)a}{1+s}\right].
+ </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find the Fourier sine and cosine transform of <m>x</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <men xml:id="eqn-FS_trans1">
+             \mathscr{F}_{c}\{f(x)\} =F_{c}(s) = \int\limits_{0}^{\infty}f(x) \cos sx \,dx = \int\limits_{0}^{\infty} x \cos sx \,dx 
+          </men>
+          <men xml:id="eqn-FS_trans2">
+            \mathscr{F}_{s}\{f(x)\} =F_{s}(s) = \int\limits_{0}^{\infty} x \sin sx \,dx 
+          </men>
+          Let <m>F(s) =\int\limits_{0}^{\infty} x e^{-isx} \,dx</m> 	put <m>isx=y</m> so that <m>\,dx=\,dy/s</m>.
+        <me>
+          \therefore  F(s) = 	\int\limits_{0}^{\infty}\frac{y}{is}e^{-y}\frac{\,dy}{is} 
+        </me>
+        <me>
+          = -\frac{1}{s^{2}}\int\limits_{0}^{\infty}y^{2-1}e^{-y}\,dy  = -\frac{\Gamma(2)}{s^{2}}.
+        </me>
+        <m> [\because  \Gamma(n+1) =n!]</m>
+        </p>
+      </solution>
+    </example>
+
+    <paragraphs>
+      <title>Application of Fourier Transform to the solution of One Dimensional Equation</title>
+  <p>
+    As Fourier transform method is very useful to find the solutoin of partial differential equation,
+     we  can use it solve diffusion equation, wave equation, and heat flow equation in boundary vlaue conditions.
+    </p>
+    <example>
+      <statement>
+        <p>
+          Solve 
+          <men xml:id="eqn-FT_appl1">
+            \frac{\partial u(x,t)}{\partial t}=k\frac{\partial^{2}u(x,t)}{\partial x^{2}}
+          </men>
+           (heat flow or diffusion equation) where  <m>u(0,t) =0</m> 	and 
+           <men xml:id="eqn-FT_appl2">
+            u(x,0) = \begin{cases}
+1,  &amp; x \lt 1\\
+0, &amp; x \gt 1
+\end{cases}
+           </men>
+           	also <m>u(x,t)</m> is bounded. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          As <m>(u)_{x=0}</m> is given we can apply sine transform to the given equation so that 
+          <me>
+            \mathscr{F}_{s}\{\frac{\partial u}{\partial t}\} =k\mathscr{F_{s}}\{\frac{\partial^{2}u}{\partial x^{2}}\}
+          </me>
+          or,
+          <me>
+            \int\limits_{0}^{\infty}\frac{\partial u}{\partial t}\sin sx\,dx = k \int\limits_{0}^{\infty}\frac{\partial^{2}u}{\partial x^{2}}\sin sx\,dx
+          </me>
+          or,
+          <me>
+            \frac{\partial}{\partial t}\int\limits_{0}^{\infty}u\sin sx\,dx = k\{\left.\frac{\partial u}{\partial x}\sin sx\right\vert_{0}^{\infty}-s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\cos sx\,dx\}
+          </me>
+or,
+<me>
+  \frac{\partial}{\partial t}\bar{u_{s}}=k\{0-s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\cos sx\,dx\}
+</me>
+<m>[\because  {\frac{\partial u}{\partial x}\to 0}</m> as  <m>{x\to \infty}</m>]
+<me>
+  =	ks\{\left.u\cos sx\right\vert_{0}^{\infty}+s \int\limits_{0}^{\infty}u\sin sx\,dx\}
+</me>
+<me>
+  =ks\{u(0,t)\cos (0.s) - s\bar{u}_{s}\}
+</me>
+as <m>{u\to 0}</m>,  for <m>{x \to \infty}</m>.
+Or,
+<men xml:id="eqn-FT_appl3">
+  \frac{\partial}{\partial t}\bar{u}_{s} = ks^{2}\bar{u}_{s}
+</men>
+        </p>
+        <p>
+          The solution of this equation is 	
+          <men xml:id="eqn-FT_appl4">
+            \bar{u}_{s} = A e^{-ks^{2}t}
+          </men>
+
+To find <m>A</m>, set  <m>t=0</m> in equation <xref ref="eqn-FT_appl4"/>, then 
+<me>
+  A=\bar{u}_{s}(s,0) = \int\limits_{0}^{\infty}u(x,0)\sin sx\,dx
+</me>
+or,
+<me>
+  A = \int\limits_{0}^{1}1.\sin sx\,dx + \int\limits_{1}^{\infty}0.\sin sx\,dx
+</me>
+or,
+<me>
+  A = -\left.\frac{\cos sx}{s}\right\vert_{0}^{1} = \frac{1-\cos s}{s}
+</me>
+
+substituting this value of <m>A</m> in equation <xref ref="eqn-FT_appl4"/>, we have 
+<men xml:id="eqn-FT_appl5">
+  \bar{u}_{s}=\frac{1-\cos s}{s}e^{-ks^{2}t}
+</men>
+				
+applying inverse Fourier sine transform, we have	-
+<men xml:id="eqn-FT_appl6">
+  u(x,t) = \frac{2}{\pi}\int\limits_{0}^{\infty}\frac{1-\cos s}{s}e^{-ks^{2}t}\sin sx\,ds
+</men>
+          </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+         Solve 
+         <me>
+          \frac{\partial^{2}y(x,t)}{\partial x^{2}}=\frac{1}{v^{2}}\frac{\partial^{2}y(x,t)}{\partial t^{2}};
+         </me>
+      where  <m>y(x,0) = f(x)</m> and
+      <me>
+         \left.\frac{\partial y}{\partial t}\right\vert_{t=0}=0.
+      </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+           The given equation is 	
+           <men xml:id="eqn-FT_applinv1">
+            \frac{\partial^{2}y(x,t)}{\partial x^{2}}=\frac{1}{v^{2}}\frac{\partial^{2}y(x,t)}{\partial t^{2}}
+           </men>
+           and 
+           <men xml:id="eqn-FT_applinv2">
+            \mathscr{F}\{y(x,t)\} = Y(s,t) = \int\limits_{-\infty}^{\infty}y(x,t) e^{-isx}\,dx
+           </men>
+Now, equation <xref ref="eqn-FT_applinv1"/> becomes 
+<me>
+  \mathscr{F}\{\frac{\partial^{2}y}{\partial x^{2}}\} = \frac{1}{v^{2}}\mathscr{F}\{\frac{\partial^{2}y}{\partial t^{2}}\}
+</me>
+or,
+<me>
+  (is)^{2}\mathscr{F}\{y(x,t)\} = \frac{1}{v^{2}}\frac{\partial^{2}}{\partial t^{2}}Y(s,t)
+</me>
+or,
+<me>
+  -s^{2}Y(s,t) = \frac{1}{v^{2}}\frac{\partial^{2}}{\partial t^{2}}Y(s,t)
+</me>
+or,
+<men xml:id="eqn-FT_applinv3">
+  \frac{\partial^{2}Y}{\partial t^{2}}+v^{2}s^{2}Y =0
+</men>
+			
+This is a second order differential equation. whose solution is given as
+<men xml:id="eqn-FT_applinv4">
+   Y(s,t) = C_{1}e^{+ivst}+C_{2}e^{-ivst}
+</men>
+   
+Imposing the initial condition in equation <xref ref="eqn-FT_applinv2"/> 
+<men xml:id="eqn-FT_applinv5">
+  Y(s,0) = \int\limits_{-\infty}^{\infty}y(x,0) e^{-isx}\,dx = \int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx=F(s)
+</men>
+
+Also, from equation ,<xref ref="eqn-FT_applinv5"/>, we have  
+<men xml:id="eqn-FT_applinv6">
+  Y(s,0) = C_{1}+C_{2}
+</men>
+
+Therefore, from equations <xref ref="eqn-FT_applinv5"/> and <xref ref="eqn-FT_applinv6"/>, we have 
+<men xml:id="eqn-FT_applinv7">
+  F(s) = C_{1}+C_{2}
+</men>
+
+now, differentiating equation <xref ref="eqn-FT_applinv2"/> and <xref ref="eqn-FT_applinv6"/>, we get -
+<me>
+  Y'(s,t) = \int\limits_{-\infty}^{\infty}\left(\frac{\partial y}{\partial t}\right)e^{-isx}\,dx = ivsC_{1}e^{ivst} -ivsC_{2}e^{-ivst}
+</me>
+or,
+<me>
+  Y'(s,0) = \int\limits_{-\infty}^{\infty}\left(\frac{\partial y}{\partial t}\right)_{t=0}e^{-isx}\,dx = 0= ivs C_{1} -ivs C_{2}
+</me>
+<men xml:id="eqn-FT_applinv8">
+  \therefore  \quad C_{1} = C_{2} 
+</men>
+Hence,
+<men xml:id="eqn-FT_applinv9">
+  Y(s,t) = \frac{F(s)}{2}\left[e^{+ivst}+e^{-ivst}\right]
+</men>
+[from equations <xref ref="eqn-FT_applinv8"/>, <xref ref="eqn-FT_applinv7"/>, 
+and <xref ref="eqn-FT_applinv4"/>]
+  
+   Now, the inverse Fourier transform is 
+   <me>
+    \mathscr{F}^{-1}\{Y(s,t)\}=y(x,t)	 = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}Y(s,t)e^{isx\,ds}
+   </me>
+   <me>
+    = \frac{1}{4\pi}\int\limits_{-\infty}^{\infty}F(s)\left[e^{ivst}+e^{-ivst}\right]\,ds
+   </me>
+   [from eqn.<xref ref="eqn-FT_applinv9"/>]
+<me>
+  =\frac{1}{4\pi}\int\limits_{-\infty}^{\infty}\{f(x')e^{-isx}\,dx'\}\{\left[e^{+ivst}+ e^{-ivst}\right]e^{isx}\}\,ds
+</me>
+<me>
+  =\frac{1}{4\pi}\int\limits_{-\infty}^{\infty}\{f(x')\,dx'\}\{\int\limits_{-\infty}^{\infty}\left[e^{is(x-x' +vt)}+ e^{is(x-x'-vt)}\right]\,ds\}
+</me>
+<me>
+ =\frac{1}{2}\int\limits_{-\infty}^{\infty}\{f(x')\,dx'\}\{\delta(x+vt-x') + \delta(x-vt-x')\}
+</me>
+<men xml:id="eqn-FT_applinv10">
+ \mathscr{F}^{-1}\{Y(s,t)\}=y(x,t) = \frac{1}{2}\left[f(x+vt) +f(x-vt)\right] 
+</men>
+
+This is the general solution of wave equation.
+		[from Dirac Delta function]  
+    <me>
+      \delta (x)	=\frac{1}{2\pi} \int\limits_{-\infty}^{\infty}e^{isx}\,ds
+    </me>
+    and 
+    <me>
+     \int\limits_{-\infty}^{\infty}f(x) \delta (a-x)\,dx =f(a)]. 
+    </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find the Fourier sine and cosine transform of <m>f(x) = \frac{e^{-ax}}{x}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+         <me>
+          \mathscr{F}_{s}\{f(x)\} = F(s) = \int\limits_{0}^{\infty}f(x)\sin sx\,dx = \int\limits_{0}^{\infty}\frac{e^{-ax}}{x}\sin sx\,dx
+         </me>
+         Differentiating w.r.t. 's', we get-
+         <me>
+          \frac{\,d}{\,ds}\left[F(s)\right] = \int\limits_{0}^{\infty}\frac{e^{-ax}}{x}(x\cos sx)\,dx = \int\limits_{0}^{\infty}e^{-ax}\cos sx\,dx = \frac{a}{a^{2}+s^{2}}
+         </me>
+
+Integrating w.r.t. 's', we get - 
+<me>
+  	F_{s}(s)= \int\limits_{0}^{\infty}\frac{a}{a^{2}+s^{2}}\,ds = \tan^{-1}\frac{s}{a}+c.
+</me>
+        </p>
+      </solution>
+    </example>
+    </paragraphs>
+</section>

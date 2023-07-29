@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xml:id="ch_seventh" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- Change title when you have one: -->
+  <title>Partial Differential Equation (PDE)</title>
+   
+  <introduction>
+    <p>
+    <idx><h>partial differential equation</h></idx> 
+    The equations which contain partial differential coefficients, the independent 
+    variables and dependent variable are known as partial differential equations. 
+    In other words, a partial differential equation (PDE) relates a function of 
+    multiple variables to its partial derivatives. It involves the derivatives of 
+    the unknown function with respect to two or more independent variables.   
+    The order of partial differential equaion is the same as the order of highest 
+    derivative occuring in the equation. If z is taken as dependent variable and 
+    x, y, and t as independent variables then the equation 
+    <me>
+      y\frac{\partial z}{\partial x}+x\frac{\partial z}{\partial y}+\frac{\partial z}{\partial t} =0
+    </me>
+    is the first order PDE in three variables, the equation 
+    <me>
+      \left(\frac{\partial z}{\partial x}\right)^{3}+\frac{\partial z}{\partial t} =0 
+    </me>	      
+is a first - order equation in two variables, while  
+<me>
+  \frac{\partial^{2} z}{\partial x^{2}}=\frac{\partial z}{\partial t} 
+</me>
+   and 
+   <me>
+    \frac{\partial^{2} z}{\partial x^{2}}+2\frac{\partial^{2} z}{\partial x \partial y}+\frac{\partial^{2} z}{\partial y^{2}}=0  
+   </me>
+        
+are a second order eqution in two variables. The coefficients of derivaritives 
+<me>
+  \frac{\partial z}{\partial x}, \frac{\partial^{2} z}{\partial x^{2}}, \frac{\partial^{2} z}{\partial y^{2}}, \frac{\partial^{2} z}{\partial x \partial y}, \frac{\partial z}{\partial t}
+</me>
+
+etc. are called the partial differential coefficients.
+      </p>
+      <p>
+        PDEs can be classified into different types based on their characteristics. 
+        Some common types of PDEs include: <term> Elliptic PDEs:</term>  These equations 
+        involve second-order derivatives and typically arise in steady-state problems. 
+        Examples include Laplace's equation and Poisson's equation. <term>  Parabolic PDEs:</term> 
+         These equations involve a first-order time derivative and second-order spatial 
+         derivatives. They often describe phenomena that evolve over time. The heat equation 
+         and the diffusion equation are examples of parabolic PDEs. <term>Hyperbolic PDEs:</term> 
+        These equations involve second-order time derivatives and second-order spatial derivatives. 
+        They are often used to describe wave-like phenomena. The wave equation and the 
+        telegraph equation are examples of hyperbolic PDEs.
+        </p>
+        <p>
+          The following equations are partial differential equations that are generally 
+          appeared in the problems of physics.  
+          <ol marker="i.">
+            <li>
+             wave equation: <me>
+             \nabla^{2}\psi = \frac{1}{v^{2}}\frac{\partial^{2} \psi}{\partial t^{2}},
+             </me>
+            </li>
+            <li>
+              Diffusion (heat) equation: 
+              <me>
+                \nabla^{2}\psi = \frac{1}{h^{2}}\frac{\partial \psi}{\partial t}, \quad \text{and}
+              </me>
+              </li>
+              <li>
+                Laplace's equation: 
+                <me>
+                  \nabla^{2}\psi =0
+                </me>
+                </li>
+          </ol>
+In this chaptor we shall try to find their solutions by using a very powerful method, 
+known as a method of <em>separation of variables</em>. In this method the dependent 
+variable is assumed to be the product of two functions, each of which involves 
+only one of the independent variables and forms two ordinary differential equations. 
+          </p>
+          <p>
+         For python code of PDE, go to 
+         <url href="https://docs.sympy.org/latest/modules/solvers/pde.html"></url>   
+            </p>
+      </introduction>
+
+ 
+
+   <xi:include href="./sec_seventh-waveeq.ptx" />
+ <xi:include href="./sec_seventh-examplesA.ptx" /> 
+  <xi:include href="./sec_seventh-heateq.ptx" />
+  <xi:include href="./sec_seventh-examplesB.ptx" /> 
+
+   <xi:include href="./ex_seventh.ptx"/> 
+</chapter>

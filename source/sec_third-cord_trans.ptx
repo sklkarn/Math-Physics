@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_third-tens_alg" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Tensor Algebra</title>
+  <introduction>
+   <p>
+    Like vector algebra, tensor also obeys the laws of algebra.
+   ,<ol>
+    <li>
+      <term>Addition:</term> when two similar tensors are added the third tensor of same type 
+      will yield.
+       <me>A_{q}^{mp} + B_{q}^{mp} = C_{q}^{mp}</me>
+    </li>
+    <li>
+      <term>Multiplication (outer product or direct product):</term> when two tensors of 
+      any rank will be multiplied as outer product the third tensor has the rank multiple 
+      of their ranks. such as <m>A_{q}^{pr} \bigotimes B_{s}^{m} = C_{qs}^{prm}</m>. The 
+      result of the direct product is a tensor whose rank is the sum of the ranks of the 
+      tensors being multiplied. <em>The division of a tensor of rank greater than zero by 
+      another tensor of rank greater than zero is not defined</em>.
+      </li>
+      <li>
+        <term>Contraction:</term> The process of reducing the number of indices of a mixed 
+        tensor by one. for example: to contract the components of <m>A_{klm}^{ij}</m> into 
+        <m>B_{lm}^{j}</m> we have to set <m>i=j</m>, then <m>A_{klm}^{ij}= B_{lm}^{j}</m>, 
+        	again, if <m>j=l</m>, then <m>B_{lm}^{j} = C_{m}</m>, a tensor of rank one.
+        </li>
+        <li>
+          <term>Inner multiplication:</term> The inner product between two tensors results 
+          from first forming the direct product, and then setting the two nearest indices 
+          (with one index coming from each tensor) equal to one another and performing the 
+          sum according to the summation convention, e.g. If we multiply <m>A_{q}^{mp}</m> and 
+          <m>B_{st}^{r}</m> then the outer product is <m>A_{q}^{mp}B_{st}^{r}</m>. 
+          Now set <m>q=r</m> we get the inner product as <m>A_{r}^{mp}B_{st}^{r}</m>, 
+          again if <m>q=r</m> and <m>p=s</m>, then another inner product 
+          <m>A_{r}^{mp}B_{pt}^{r}</m> is obtained. 
+          </li>
+          <li>
+            <term>Quotient Law:</term>  This law is useful to determine whether the given 
+            quantity is a tensor or not. Suppose it is not known whether X is a tensor 
+            or not but its inner product with an arbitrary tensor is a tensor then X itself 
+            is also a tensor. This is called a quotient law. The quotient rule can generally 
+            be written as <m>KA = B</m> where <m>A</m> and <m>B</m> are tensors of known rank 
+            and <m>K</m> is an unknown quantity. The quotient rule gives the rank of <m>K</m>, 
+            e.g., in <m> \vec{L}=I\vec{\omega}</m>, where <m> \vec{l}</m> and 
+            <m>\vec{\omega}</m> are known vectors, then from quotient rule we come to know 
+            that <m>I</m> is a second rank tensor. Some well know quotient rules are 
+            <md>
+              <mrow> K_{i}A_{i} \amp =B;</mrow>
+              <mrow> K_{ij}A_{j} \amp =B_{i};</mrow>
+              <mrow> K_{ij}A_{jk} \amp =B_{ik}; </mrow>
+              <mrow> K_{ijkl}A_{ij} \amp =B_{kl}; </mrow>
+              <mrow> K_{ij}A_{k} \amp =B_{ijk}.</mrow>
+            </md>
+            </li>
+   </ol>
+    </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-dummy">
+  <title>Dummy Suffix</title>
+  <p>
+  If suffix <m>i</m> occurs twice in a term, then that suffix <m>i</m> is called dummy suffix. 
+  For example, <m>i</m> is a dummy suffix in <m>a_{ij}x_{i}</m>. Also a dummy suffix can be 
+  replace by another dummy suffix i.e., <m>a_{ij}x_{i}\equiv a_{kj}x_{k}</m>.   
+    </p>
+ </subsection>
+
+<subsection xml:id="subsec-metric">
+  <title>The line element and a metric tensor</title>
+  <p>
+    The length of arc <m>\,ds</m> is obtained by <m>\,ds^{2} = \,dx^{2}+\,dy^{2}+\,dz^{2}</m> 
+    in rectangular coordinates and it is 
+    <me>
+      \,ds^{2}  = \sum\limits_{p=1}^{3} \sum\limits_{q=1}^{3} g_{pq} \,du_{p}\,du_{q}
+    </me>
+    in curvilinear coordinates. we define the line element $ds$ in the <m>n</m>- dimensional 
+    space to be given by the quadratic form called metric. The quantities <m>g_{pq}</m> are 
+    called metric coefficients and are symmetric, i.e., <m>g_{pq} = g_{qp}</m>. If 
+    <m>g_{pq} = 0</m> and <m>p \neq q</m>, then the coordinate system is orthogonal. In this 
+    case <m>g_{11} = h_{1}^{2}{,} g_{22} = h_{2}^{2} {,} g_{33} = h_{3}^{2}</m>. 
+    The generalized form of element of length <m>\,ds</m> between the points <m>x^{i}</m> and 
+    <m>x^{i} + \,dx^{i}</m> is given by <m>\,ds^{2}=g_{ij}\,dx^{i}\,dx^{j}</m>, 
+    where <m>g_{ij}</m> are functions of <m>x^{i}</m>, and <m>g_{ij} = g_{ji}</m>.	
+    (symmetric)<fn>
+    Let,
+    <me>
+      \vec{r}=\vec{r}(u_{1},	u_{2},u_{3}),
+    </me>
+    then,
+    <me>
+      \,d\vec{r} = \frac{\partial\vec{r}}{\partial u_{1}}\,du_{1}
+      +\frac{\partial\vec{r}}{\partial u_{2}}\,du_{2} 
+      + \frac{\partial\vec{r}}{\partial u_{3}}\,du_{3} 
+    </me>
+    <me>
+      = \alpha_{1}\,du_{1} + \alpha_{2}\,du_{2} + \alpha_{3}\,du_{3},
+    </me>
+    where,
+    <me>
+      \alpha_{p}= \frac{\partial\vec{r}}{\partial u_{p}} ; 
+    </me>
+    Now,
+    <me>
+      \,ds^{2} = \vec{\,dr}\cdot\vec{\,dr} = \alpha_{1} \alpha_{1}du^{2}_{1} 
+      + \alpha_{1}\alpha_{2}\,du_{1}\,du_{2} 
+    </me>
+    <me>
+      + \alpha_{1}\alpha_{3}\,du_{1}\,du_{3} 
+      +\alpha_{2}\alpha_{1}\,du_{2}\,du_{1} 
+      +\alpha_{2}\alpha_{2}\,du^{2}_{2}
+    </me>
+    
+    <me>
+       + \alpha_{2}\alpha_{3}\,du_{2}\,du_{3} 
+       +\alpha_{3}\alpha_{1}\,du_{3}\,du_{1} 
+    </me>
+    <me>
+      +\alpha_{3}\alpha_{2}\,du_{3}\,du_{2} 
+       +\alpha_{3}\alpha_{3}\,du^{2}_{3} 
+       =\sum\limits_{p=1}^{3} \sum\limits_{q=1}^{3} g_{pq} \,du_{p}du_{q}
+    </me>
+     where <m>g_{pq}= \alpha_{p}\alpha_{q}</m> also in a tensor, <m>g_{pq}\rightarrow g_{ij}</m> 
+    and <m>\,du_{p}\rightarrow \,du^{i}, \,du_{q}\rightarrow \,du^{j}</m>.
+    </fn>
+    </p>
+</subsection>
+  </section>
+

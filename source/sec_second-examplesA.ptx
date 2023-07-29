@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_second-examplesA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>ExamplesA</title>
+ 
+
+    <example>
+      <statement>
+      <p>
+       Obtain a set of three orthonormal vectors by the Schmidt's method from the vectors <m>u_{1}=(1,0,0)</m>, 
+       <m>u_{2}=(1,1,0)</m>, and <m>u_{3}=(1,1,1).</m>
+      </p>
+    </statement>
+    <solution>
+      <p>
+       The given vectors are linearly independent, hence set, 
+       <me>
+        v_{1}=u_{1}.
+       </me>
+       Let,
+       <me>
+        v_{2}=u_{2}+\lambda v_{1}
+       </me>
+       We have -
+       <me>
+        \lt v_{1}, u_{2}\gt = (1\times 1+0\times 1+0\times 0) =1
+       </me>
+       and 
+       <me>
+        \lt v_{1}, v_{1}\gt = (1\times 1+0\times 0+0\times 0) =1
+       </me>
+       <me>
+        \therefore  \lambda = -\frac{\lt v_{1}, u_{2}\gt}{\lt v_{1}, v_{1}\gt} = -\frac{1}{1}=-1
+       </me>
+       Hence,
+       <me>
+        v_{2}=u_{2}-v_{1} = (1,1,0)-(1,0,0) = (1-1, 1-0, 0-0)=(0,1,0)
+       </me>
+       Now take 
+       <me>
+        v_{3}=u_{3}+\lambda_{1} v_{1} + \lambda_{2} v_{2}
+       </me>
+       where,
+       <me>
+        \lambda_{1}= -\frac{\lt v_{1}, u_{3}\gt}{\lt v_{1}, v_{1}\gt}
+       </me>
+       and 
+       <me>
+        \lambda_{2}= -\frac{\lt v_{2}, u_{3}\gt}{\lt v_{2}, v_{2}\gt}
+       </me>
+       Here,
+       <me>
+        \lt v_{1}, u_{3}\gt = (1\times 1+0\times 1+0\times 1) =1;
+       </me>
+       <me>
+         \lt v_{1}, v_{1}\gt = (1\times 1+0\times 0+0\times 0) =1;
+       </me>
+       <me>
+        \lt v_{2}, u_{3}\gt = (0\times 1+1\times 1+0\times 1)=1;
+       </me>
+       and 
+       <me>
+        \lt v_{2}, v_{2}\gt = (0\times 0+1\times 1+0\times 0)	=1.
+       </me>
+       <me>
+        \therefore  \lambda_{1} = -\frac{1}{1} =-1, \quad  \text{and}\quad \lambda_{2} = -\frac{1}{1} =-1.
+       </me>
+       Hence,
+       <me>
+         v_{3} = u_{3}=v_{1}-v_{2} =(1-1-0, 1-0-1, 1-0-0) =(0,0,1).
+       </me>
+        </p>
+        <p>
+          The corresponding orthonormal set is 
+          <me>
+            x_{1}= \frac{v_{1}}{\parallel v_{1} \parallel} = \frac{(1,0,0)}{\sqrt{1+0+0}} = \frac{1}{\sqrt{1}}(1,0,0);
+          </me>
+          <me>
+            x_{2}= \frac{v_{2}}{\parallel v_{2} \parallel} = \frac{(0,1,0)}{\sqrt{1}};
+          </me>
+          
+          <me>
+           \text{and} \quad x_{3}= \frac{(0,0,1)}{\sqrt{1}}. 
+          </me>
+          </p>
+    </solution>
+  </example>
+
+<example>
+  <statement>
+    <p>
+      Test whether the vectors 
+      <me>
+        \begin{bmatrix} 1\\2\\3 \end{bmatrix},\quad \begin{bmatrix} 3\\-1\\1 \end{bmatrix},\quad 
+        \text{and}\quad \begin{bmatrix} 1\\1\\2 \end{bmatrix}.
+      </me>
+      are linearly independent. If so construct an orthonormal system using Gram-Schmidt's method.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+         \text{Let} \quad u_{1}= {\begin{bmatrix} 1\\2\\3 \end{bmatrix}}, 
+         \quad	u_{2}={\begin{bmatrix} 3\\-1\\1 \end{bmatrix}}, 
+         \quad \text{and}\quad u_{3}= {\begin{bmatrix} 1\\1\\2 \end{bmatrix}}
+      </me>
+      then, <m>k_{1}u_{1}+k_{2}u_{2}+k_{3}u_{3}=0</m> implies 
+      <mdn>
+        <mrow> k_{1}+3k_{2}+k_{3} \amp =0 </mrow>
+        <mrow> 2k_{1}-k_{2}+k_{3} \amp = 0</mrow>
+        <mrow> \text{and} \hspace{3pt} 3k_{1}+k_{2}+2k_{3} \amp =0</mrow>
+      </mdn>
+     These equations are satisfied only when <m>k_{1} = k_{2} =k_{3} =0</m>, i.e. <m>u_{1}{,} u_{2}</m>, and 
+     <m>u_{3}</m>  are linearly independent. Again, Let <m>\left\{x_{1},x_{2},x_{3}\right\}</m> be an 
+     orthonormal basis. Then by Gram-Schmidt's method:
+     <me>
+      v_{1}=u_{1},  \qquad \therefore	 x_{1}= \frac{v_{1}}{\parallel v_{1} \parallel} = {\begin{bmatrix}
+       \frac{1}{\sqrt{14}}\\ \frac{2}{\sqrt{14}}\\ \frac{3}{\sqrt{14}} \end{bmatrix}};
+     </me>
+     <me>
+       \text{Now,}\quad \lambda=-\frac{(v_{1},u_{2})}{(v_{1},v_{1})}  = - \frac{4}{14} = -\frac{2}{7}
+     </me>
+     <me>
+        \left[\because  (v_{1},v_{1})= v_{1}'\cdot v_{1} = [1 2 3]{\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}} 
+        =1+4+9 =14;\right.
+     </me>
+     <me>
+      \left.(v_{1},u_{2})= v_{1}'\cdot u_{2} = [1 2 3]{\begin{bmatrix} 3 \\ -1 \\ 1 \end{bmatrix}}=3-2+3=4\right].
+     </me>
+     We have -
+     <me>
+      v_{2} = u_{2}+\lambda v_{1} = {\begin{bmatrix} 3 \\ -1 \\ 1 \end{bmatrix}} - \frac{2}{7}{\begin{bmatrix} 
+      1 \\ 2 \\ 3 \end{bmatrix}} = {\begin{bmatrix} 19/7 \\ -11/7 \\ 1/7 \end{bmatrix}}
+     </me>
+     <me>
+      \therefore   x_{2}= \frac{v_{2}}{\parallel v_{2} \parallel} =\frac{1}{\sqrt{483}} {\begin{bmatrix} 
+      19\\ -11\\ 1 \end{bmatrix}};
+     </me>
+     <me>
+       v_{3} = u_{3}+\lambda_{1} v_{1}+\lambda_{2} v_{2}
+     </me>
+     where, 
+     <me>
+       \lambda_{1} = -\frac{(v_{1},u_{3})}{(v_{1},v_{1})}\quad \text{and} \quad \lambda_{2} =-\frac{(v_{2},u_{3})}{(v_{2},v_{2})} 
+     </me>
+     <me>
+      \therefore   \quad x_{3}= \frac{v_{3}}{\parallel v_{3} \parallel}
+     </me>
+      can be obtained.
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+       How are the components of vectors and linear operator transform when we change the coordinate system.
+    </p>
+  </statement>
+  <solution>
+    <p>
+     Consider a basis vector <m>\psi'_{j}</m> defined in terms of the unprimed system 
+     by	<m>\psi'_{j}=\sum\limits_{i}r_{ij}\psi_{i}</m>.	The coefficient <m>r_{ij}</m> is 
+     <m>i^{th}</m> components of <m>\psi'_{j}</m> in the unprimed system. 
+     Consider an arbitrary vector <m>\psi</m> with components <m>c_{i}</m> and <m>c'_{j}</m> 
+     in the two systems, then  
+     <me>
+      \psi=\sum\limits_{i}c_{i}\psi_{i} = \sum\limits_{j}c'_{j}\psi'_{j} = \sum\limits_{j}c'_{j}\sum\limits_{i}r_{ij}\psi_{i} 
+     </me>
+     Therefore,  <m>c_{i} =  \sum\limits_{j}r_{ij}c'_{j}</m> which is equivalent to the matrix equation 
+     <m>\psi = \gamma\psi'</m> multiplying it by  <m>\gamma^{-1}</m> on both sides, we get -
+     <me>
+      \gamma^{-1}\psi =\gamma^{-1}\psi'\gamma^{-1}
+     </me>
+     
+     <me>
+     \text{or,} \quad \psi' =\gamma^{-1}\psi
+     </me>
+     then we find the transformation for the components of linear operators by
+     <m> \phi = \hat{A} \psi </m> as matrix equations in the two coordinates system, 
+     <m>\phi = \hat{A} \psi</m>	and <m>\phi' = \hat{A'} \psi' </m>. As
+     <md>
+      <mrow> \gamma\phi' \amp = \hat{A'} \gamma\psi' </mrow>
+      <mrow> \phi' \amp  = \gamma^{-1}\hat{A'} \gamma\psi'= \hat{A'} \psi'  </mrow>
+     </md>
+     	Thus the desired transformation is
+      <me>
+        A'=\gamma^{-1}A\gamma
+      </me>
+      <me>
+        \text{or,}\hspace{5pt}  A=\gamma A' \gamma^{-1}.
+      </me>
+      This is an example of a similarity transformation which is defined to be a transformation of square 
+      matrices of the form <m>A'=s^{-1} A s</m>. Any algebric matrix remains unchanged under a 
+      similarity transformation. For example:
+      <me>
+        ABCD + \lambda D = 0 \quad \Rightarrow  s^{-1}A(s s^{-1})B(s s^{-1})Cs+ s^{-1}\lambda D s = 0
+      </me>
+      <me>
+        \text{	or,}\quad	A'B'C'+\lambda D' = 0.
+      </me>
+      
+    </p>
+  </solution>
+</example>
+</section>

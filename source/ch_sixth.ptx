@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xml:id="ch_sixth" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- Change title when you have one: -->
+  <title>Integral Transform</title>
+   
+  <introduction>
+  <p>
+    An integral transform is a mathematical operation that transforms a function 
+    into another function through the use of an integral. It is a tool used to 
+    solve differential equations and some analyze functions. There are several important 
+    integral transforms, each with its own properties and applications. Some of the commonly 
+    used integral transforms include: 
+    <term>Laplace Transform:</term> The Laplace transform converts a function of time 
+    into a function of a complex variable. It is particularly useful for solving ordinary 
+    and partial differential equations, analyzing linear time-invariant systems, 
+    and studying transient behavior. <term>Fourier Transform: </term> The Fourier transform 
+    converts a function of time into a function of frequency. It decomposes a function 
+    into its constituent frequency components and is extensively used in signal processing, 
+    image processing, and various other fields. There are various transforms used in practice 
+    for various purposes.
+    </p>
+    <p>
+    The solution of differential equations with boundary value can easily be determined with 
+    the help of integral transforms. The integral transform <m>F(s)</m> of a function 
+    <m>f(x)</m> is defined as 
+    <me>
+      \mathscr{F}\{f(x)\}=F(s) = \int\limits_{a}^{b}f(x)k(s,x)\,dx
+    </me>
+   where <m>k(s,x)</m> is called a kernal of the function. For example, 
+   </p>
+   <ol>
+    <li>
+      <p>
+        Fourier transform 
+        </p>
+        <ol marker ="a.">
+          <li>
+            <p>
+              Fourier complex transform <m>k(s,x) = e^{-isx}</m>.
+              <me>
+                \mathscr{F}\{f(x)\}=F(s) = \int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+              Fourier sine transform <m>k(s,x) = \sin sx</m>. 
+              <me>
+                \mathscr{F}_{s}\{f(x)\}=F(s) = \int\limits_{0}^{\infty}f(x) \sin sx\,dx
+              </me>
+            </p>
+          </li>
+          <li>
+            <p>
+               Fourier cosine transform <m>k(s,x) = \cos sx</m>.
+               <me>
+                 \mathscr{F}_{c}\{f(x)\}=F(s) = \int\limits_{0}^{\infty}f(x) \cos sx\,dx
+               </me>
+            </p>
+          </li>
+        </ol>
+    </li>
+    <li>
+        <p>
+           Laplace transform  <m>k(s,x) = e^{-sx}</m>.
+           <me>
+            \mathscr{L}\{f(x)\}=F(s) = \int\limits_{0}^{\infty}f(x) e^{-sx}\,dx  
+           </me>
+        </p>
+      </li>
+   </ol>
+      <p>
+        For python code visit <url href="https://docs.sympy.org/latest/modules/integrals/integrals.html"></url>
+        </p>
+      </introduction>
+
+ 
+
+   
+  <xi:include href="./sec_sixth-Ftrans.ptx" />
+ <xi:include href="./sec_sixth-examplesA.ptx" /> 
+  <xi:include href="./sec_sixth-Ltrans.ptx" />
+  <xi:include href="./sec_sixth-examplesB.ptx" /> 
+   <xi:include href="./sec_sixth-diffLT.ptx" />
+  <xi:include href="./sec_sixth-examplesC.ptx" /> 
+
+   <xi:include href="./ex_sixth.ptx"/> 
+</chapter>

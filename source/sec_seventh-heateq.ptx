@@ -1,0 +1,1333 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_seventh-heateq" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Heat Equation</title>
+  <introduction>
+   <figure xml:id="fig-fig78">
+    <caption></caption>
+    <image source="fig78.png" width ="45%"/>
+</figure>
+   <p>
+    we know that heat flows from hotter region to colder region inside a solid by 
+    conduction. Physical experiments reveal that the rate of flow is proportional 
+    to the temperature gradient, which implies that the velocity <m>v</m> of the heat 
+    flow in a body is given by 	<m>\vec{v}=-k  \,grad \,u =-k \vec{\nabla} u</m>. 
+    Where k is a constant, known as thermal conductivity of the body; 
+    <m>u(x,y,z,t)</m> is the temperature at a point P and <m>t</m> is the time. 
+    Now, consider a volume <m>V</m> of the body enclosed by the boundary surface <m>S</m>, 
+    as shown in figure <xref ref="fig-fig78"/>. Then the amount of heat leaving the body per unit time 
+    is given by 
+    <men xml:id="eqn-heat_eqn1">
+      -\frac{\partial Q}{\partial t}=\iint\limits_{s}\vec{v}\cdot \hat{n}\,ds
+    </men>
+    
+  
+    But from Gauss's Divergence Theorem,  we have 
+    <me>
+      \iint\limits_{s}\vec{v}\cdot \hat{n}\,ds =\iiint\limits_{V}div\,\vec{v}\,dV
+    </me>
+
+where <m>V</m> is the volume enclosed by surface S. 
+<me>
+  =  \iiint\limits_{V}\vec{\nabla}\cdot\vec{v}\,dV =\iiint\limits_{V}\vec{\nabla}\cdot\left(-k \vec{\nabla} u\right)\,dV 
+</me>
+<men xml:id="eqn-heat_eqn2">
+   =-k\iiint\limits_{V}\vec{\nabla}\cdot\vec{\nabla} u\,dV = -k\iiint\limits_{V}\nabla^{2}u\,dV 
+</men>
+    </p>
+   <p>
+    Now if <m> \rho</m> be the density of the body, <m>c</m> be the specific heat 
+    capacity, then the total heat <m>Q</m> contained in the body is given by 
+    <men xml:id="eqn-heat_eqn3">
+      	Q=\iiint\limits_{V}c\rho u\,dV  
+    </men>
+    <m>[\because\quad Q = mc\theta =V\rho c \theta ] </m> here <m>\theta</m> = temperature, <m>u</m>]
+
+so the rate of decrease of <m>Q</m> is given by
+<men xml:id="eqn-heat_eqn4">
+  -\frac{\partial Q}{\partial t}=-\iiint\limits_{V}c\rho \frac{\partial u}{\partial t}\,dV
+</men>
+
+This must be equal to the amount of heat leaving the body in unit time, i.e., 
+<me>
+  -\iiint\limits_{V}c\rho \frac{\partial u}{\partial t}\,dV = -k \iiint\limits_{V}\nabla^{2}u\,dV
+</me>
+or,
+<men xml:id="eqn-heat_eqn5">
+  \iiint\limits_{V}\left[c\rho \frac{\partial u}{\partial t}-k\nabla^{2}u\right]\,dV=0
+</men>
+ 	
+Since the surface <m>S</m> is arbitrary, the volume enclosed by surface <m>\,dS</m> is 
+<m>\,dV\neq 0</m>.Thus the integrands must be zero. i.e., 
+<me>
+  c\rho \frac{\partial u}{\partial t}= k\nabla^{2}u
+</me>
+
+	or, 	
+  <me>
+    \frac{\partial u}{\partial t}=\frac{k}{c\rho} \nabla^{2}u
+  </me>
+<men xml:id="eqn-heat_eqn6">
+  \therefore \quad \frac{\partial u}{\partial t} =h^{2}\nabla^{2}u
+</men>
+	
+This equation is known as heat equation. The quantity <m>h^{2}</m> is known 
+as diffusivity of the solid, and is defined as the ratio of thermal conductivity 
+and heat capacity of solid per unit volume.
+    </p>
+    <p><term>note:</term>   </p>
+      <ol marker="i.">
+        <li>
+          <p>
+            If there is no heat flow in <m>z</m>- direction (or temperature of the body 
+            is independent of <m>z</m>), then 
+            <me>
+              \frac{\partial^{2}u}{\partial z^{2}}=0
+            </me>
+            and heat equation 
+            <men xml:id="eqn-heat_eqn7">
+             \frac{1}{h^{2}} \frac{\partial u}{\partial t}= \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} 
+            </men>
+            is known as heat equation for two - dimensional flow parallel to <m>xy</m> plane.
+          </p>
+        </li>
+        <li>
+          <p>
+            If the flow of heat is only along <m>x</m>- axis, the heat equation reduces 
+            to 
+            <men xml:id="eqn-heat_eqn8">
+              \frac{1}{h^{2}} \frac{\partial u}{\partial t}= \frac{\partial^{2}u}{\partial x^{2}} 
+            </men>
+           and is known as the heat equation for one - dimensional flow.
+          </p>
+        </li>
+        <li>
+          <p>
+            When the temperature does not change with time (or <m>u</m> is independent 
+            of time) then 
+            <me>
+              \frac{\partial u}{\partial t} =0
+            </me>
+            and equation <xref ref="eqn-heat_eqn6"/> reduces to 	
+            <men xml:id="eqn-heat_eqn9">
+              \nabla^{2}u=0
+            </men>
+            and is known as heat equation for steady - state <idx><h>steady-state 
+            equation </h></idx> flow, which is a famous Laplace's Equation.
+          </p>
+        </li>
+      </ol> 
+     </introduction>
+ 
+ <subsection xml:id="subsec-1D_heat">
+  <title>One Dimensional Equation of Heat Flow</title>
+  <introduction>
+    <p>
+      The one-dimensional heat equation describes the flow of heat in a medium along 
+      a single spatial dimension. It is a partial differential equation that relates 
+      the rate of change of temperature with respect to time to the second derivative 
+      of temperature with respect to the spatial coordinate.
+
+The general form of the one-dimensional heat equation is given in <xref ref="eqn-heat_eqn8"/>.
+where <m>u(x, t)</m> represents the temperature at position x and time t, <m>h^2</m> is the 
+thermal diffusivity (a material-specific constant), and <m>\frac{\partial}{\partial t} </m> 
+and <m>\frac{\partial^2}{\partial x^2}</m> denote the partial derivatives with 
+respect to time and space, respectively. This equation describes how the temperature 
+at a given point changes over time due to the heat flow and diffusion within the medium. 
+The second derivative term on the right-hand side accounts for the spatial variations in 
+temperature, while the left-hand side represents the rate of change of temperature with 
+respect to time. 
+    </p>
+    <p>
+      Solving the one-dimensional heat equation involves finding the temperature 
+      distribution <m>u(x, t)</m>  as a function of both position and time, 
+      given the initial condition <m>u(x, 0)</m>  and appropriate boundary conditions 
+      that specify the temperature at the boundaries of the medium. The solution to 
+      the one-dimensional heat equation can be obtained using various analytical 
+      or numerical methods, such as separation of variables, finite difference methods, 
+      or Fourier series expansion, depending on the specific problem and boundary conditions.
+      </p>
+  </introduction>
+
+  <subsubsection xml:id="subsubsec-1Dheat_0ed">
+    <title>If ends of a bar are at temperature zero</title>
+    <p>
+      Consider a bar of uniform cross section of length <m>\lambda</m> whose both 
+      ends are maintained at temperature zero, and the initial temperature to be 
+      given as <m>f(x)</m> as shown in figure <xref ref="fig-fig79"/>. If one end of the bar is fixed at the origin and distances 
+      along the bar are denoted by <m>x</m>, then we have 
+      <men xml:id="eqn-1Dheat_0ed1">
+        \frac{\partial u}{\partial t} =h^{2}\frac{\partial^{2}u}{\partial x^{2}}	
+      </men>
+      </p>
+      <figure xml:id="fig-fig79">
+    <caption></caption>
+    <image source="fig79.png" width ="45%"/>
+</figure>
+      <p>
+        The boundary conditions are <m>u(0,t)=0=u(\lambda,t) </m>	for 
+        <m>t\geq 0 </m>  and the initial condition <m>u(x,0) =f(x)</m> for 
+        <m>0 \lt x \lt \lambda</m>. Let us assume that 	
+        <men xml:id="eqn-1Dheat_0ed2">
+          u(x,t) = X(x)T(t)
+        </men>
+ 
+be the solution of equation <xref ref="eqn-1Dheat_0ed1"/>.
+Hence equation <xref ref="eqn-1Dheat_0ed1"/> becomes -
+<men xml:id="eqn-1Dheat_0ed3">
+  \frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =\frac{1}{h^{2}T}\frac{\partial T}{\partial t} =-\lambda^{2}  \quad \text{(say)}
+</men>
+or,
+<me>
+  \frac{1}{h^{2}T}\frac{\partial T}{\partial t}= -\lambda^{2} \Rightarrow T =Ce^{-\lambda^{2}h^{2}t} 
+</me>
+and 
+<me>
+  \frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} = -\lambda^{2} \Rightarrow X=A\cos\lambda x+B\sin\lambda x 
+</me>
+
+Therefore, solution <xref ref="eqn-1Dheat_0ed2"/> becomes
+<men xml:id="eqn-1Dheat_0ed4">
+  u(x,t) = (A\cos\lambda x+B\sin\lambda x)Ce^{-\lambda^{2}h^{2}t}
+</men>
+        </p>
+        <p>
+          But, 
+          <me>
+            u(0,t)=0=A\cdot Ce^{-\lambda^{2}h^{2}t} \Rightarrow A=0 \quad \because C \neq 0 
+          </me>
+      again, 
+      <me>
+        u(\lambda,t) =0= B\sin\lambda \lambda)Ce^{-\lambda^{2}h^{2}t}
+      </me>
+			
+As <m>B</m> should not be zero, <m>\sin\lambda \lambda =0 =\sin n\pi</m>. Or,
+<me>
+  \lambda = \frac{n\pi}{\lambda}, \quad  n=1,2,3,\cdots 
+</me>
+
+putting <m>A</m> and <m>\lambda </m> in equation,<xref ref="eqn-1Dheat_0ed4"/>, we get- 
+<me>
+  u(x,t)=B\sin\frac{n\pi x}{\lambda} Ce^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} = A_{n}\sin\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}}
+</me>
+put <m>[BC=A_{n}].</m>
+          </p>
+          <p>
+            summing over for all values of <m>n</m>, this eqn. becomes 
+            <men xml:id="eqn-1Dheat_0ed5">
+              u(x,t) = \sum\limits_{n=1}^{\infty} A_{n}\sin\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} 
+            </men>
+            	
+also, <m>u(x,0) =f(x),</m>  we have 
+<men xml:id="eqn-1Dheat_0ed6">
+  	f(x) = \sum\limits_{n=1}^{\infty} A_{n}\sin\frac{n\pi x}{\lambda}
+</men>
+
+which is Fourier sine series with 
+<men xml:id="eqn-1Dheat_0ed7">
+  A_{n} = \frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\sin\frac{n\pi x}{l}\,dx	 
+</men>
+            </p>
+  </subsubsection>
+
+<subsubsection xml:id="subsubsec-1Dheat_inslbar">
+  <title>If ends of the bar are insulated</title>
+  <p>
+   The boundary conditions of the problem are 
+   <m>\frac{\partial u}{\partial x}=0	</m> at <m>x=0</m>  and <m>\lambda</m>	[for <m>t\geq 0 </m>].
+and <m>u=f(x)</m>	at <m>t=0</m>	[for <m>0 \lt x \lt \lambda</m>].
+Then solution of equation <xref ref="eqn-1Dheat_0ed1"/> becomes
+<men xml:id="eqn-1Dheat_inslbar2">
+  u=(A\cos\lambda x+B\sin\lambda x)Ce^{-\lambda^{2}h^{2}t}
+</men>
+or,
+<men xml:id="eqn-1Dheat_inslbar3">
+  \frac{\partial u}{\partial x}=\left(-A\lambda\sin\lambda x+ B\lambda\cos\lambda x\right)Ce^{-\lambda^{2}h^{2}t}	
+</men>
+
+Putting <m>\frac{\partial u}{\partial x}=0</m> at <m>x=0</m> in equation 
+<xref ref="eqn-1Dheat_inslbar3"/>, we get -
+<me>
+   0=B\lambda Ce^{-\lambda^{2}h^{2}t}
+</me>
+
+		or, <m>B=0 </m>, since, <m>C\neq 0{,} \lambda \neq 0</m>. 
+Therefore, equation <xref ref="eqn-1Dheat_inslbar2"/> becomes 
+<men xml:id="eqn-1Dheat_inslbar4">
+  u=A\cos\lambda x\cdot Ce^{-\lambda^{2}h^{2}t}
+</men>
+or,
+<men xml:id="eqn-1Dheat_inslbar5">
+  \frac{\partial u}{\partial x}=-A\lambda\sin\lambda x\cdot Ce^{-\lambda^{2}h^{2}t} 
+</men>
+    </p>
+    <p>
+      Putting <m>\frac{\partial u}{\partial x}=0</m> at <m>x=\lambda </m>  
+      in equation <xref ref="eqn-1Dheat_inslbar5"/>, we get - 
+      <me>
+        0=-AC\lambda\sin\lambda\lambda e^{-\lambda^{2}h^{2}t}
+      </me>
+      or,
+      <me>
+      \sin\lambda\lambda =0 =\sin n\pi \quad	[\text{since,}\quad  A, C \neq 0 ]  
+      </me>
+      or,
+      <me>
+        \lambda = \frac{n\pi}{\lambda}, 
+      </me>
+      where <m> n=1,2,3,\cdots</m>.
+ 
+Hence the general solution of equation <xref ref="eqn-1Dheat_0ed1"/> becomes - 
+<me>
+  u=AC\cos\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} =B_{n}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} \cos\frac{n\pi x}{\lambda}   
+</me>
+		put <m>AC= B_{n} </m>.] 
+		
+However, for the given boundary conditions the above solution satisfies all the 
+values of <m>n</m> including zero.  Hence the solution of equation <xref ref="eqn-1Dheat_0ed1"/> 
+is given by 
+<men xml:id="eqn-1Dheat_inslbar6">
+  u=B_{o}+\sum\limits_{n=1}^{\infty}B_{n}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} \cos\frac{n\pi x}{\lambda}
+</men>
+Now,
+<men xml:id="eqn-1Dheat_inslbar7">
+  f(x) = u(x,0) = B_{o}+\sum\limits_{n=1}^{\infty} B_{n} \cos\frac{n\pi x}{\lambda}
+</men>
+
+
+from which we can find, 	
+<men xml:id="eqn-1Dheat_inslbar8">
+  	B_{n}=\frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\cos\frac{n\pi x}{\lambda}\,dx
+</men>
+and 
+<men xml:id="eqn-1Dheat_inslbar9">
+   B_{o}=\frac{1}{\lambda}\int\limits_{0}^{\lambda}f(x)\,dx
+</men>
+      </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-1Dheat_u0">
+  <title>If one end of a bar at temperature <m>u_{o}</m> and the other at temperature zero</title>
+  <p>
+    Suppose the bar is given the constant temperature <m>f(x)</m> initially and face 
+    <m>x=0</m> is kept at temperature zero, while the face <m>x=\lambda</m> is kept at 
+    constatn temperature <m>u_{o}</m> for <m>t \gt 0</m>, then the boundary conditions 
+    of the problem becomes
+    <men xml:id="eqn-1Dheat_u01">
+      \left.\begin{aligned}	
+		u(0,t) = 0\\
+		u(\lambda,t) = u_{o}
+	\end{aligned}\right\} \text{for all}\quad t
+    </men>
+    and 
+  <men xml:id="eqn-1Dheat_u02">
+    	u(x,0)=f(x)  \quad (say)
+  </men>
+  
+			   
+The equation of heat flow is given by 
+<men xml:id="eqn-1Dheat_u03">
+  \frac{\partial u}{\partial t} =h^{2}\frac{\partial^{2}u}{\partial x^{2}}		
+</men>
+
+Let the solution of equation <xref ref="eqn-1Dheat_u03"/> be
+<men xml:id="eqn-1Dheat_u04">
+  u(x,t) = X(x)T(t)
+</men>
+or,
+<me>
+  \frac{\partial u}{\partial t} =X\frac{\partial T}{\partial t} 		
+</me>
+and 
+<me>
+  \frac{\partial^{2}u}{\partial x^{2}}=T\frac{\partial^{2}X}{\partial x^{2}} 
+</me>
+	
+Substituting these in equation <xref ref="eqn-1Dheat_u03"/>, we get -
+<men xml:id="eqn-1Dheat_u05">
+  \frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =\frac{1}{h^{2}T}\frac{\partial T}{\partial t} =-\alpha^{2}  \quad  (say)
+</men>
+Hence,
+<men xml:id="eqn-1Dheat_u06">
+ \frac{\partial T}{\partial t} =-\alpha^{2}h^{2}T  \quad \Rightarrow T =Ae^{-\alpha^{2}h^{2}t} 
+</men>
+and 
+<men xml:id="eqn-1Dheat_u07">
+  \frac{\partial^{2}X}{\partial x^{2}}  = -\alpha^{2}X
+</men>
+or,
+<men xml:id="eqn-1Dheat_u08">
+  \frac{\partial^{2}X}{\partial x^{2}} + \alpha^{2}X = 0 \quad \Rightarrow X=B\cos\alpha x+C\sin\alpha x
+</men>
+Hence, 
+<men xml:id="eqn-1Dheat_u09">
+  u(x,t)=(a\cos\alpha x+b\sin\alpha x)e^{-\alpha^{2}h^{2}t}
+</men>
+
+This solution shows <m>u(x,t) \to 0 </m> at <m>t \to \infty</m> for all <m>x</m> 
+but the boundary condition shows that <m>u(x,t) = u_{o} </m> at <m>x=\lambda</m>, 
+a non - zero constant. Therefore, the solution <xref ref="eqn-1Dheat_u09"/> 
+though satisfies the boundary condition at <m>x=0</m> does not satisfy it at <m>x=\lambda</m>. 
+Hence we should add one more solution to this solution so that <m>u(x,t) \to u_{o} </m> at 
+<m>x=\lambda</m> when <m>t \to \infty</m> and at the same time it becomes zero at 
+<m>x=0</m>. Such solution may be obtained by choosing the constant <m>\alpha^{2}</m>  
+equal to zero. Then equation <xref ref="eqn-1Dheat_u07"/> becomes <m>T=A</m> 
+and equation <xref ref="eqn-1Dheat_u08"/> reduces to 	
+<me>
+  \frac{\partial^{2}X}{\partial x^{2}}=0 \Rightarrow X=Bx+C.
+</me>
+
+Hence, solution of equation <xref ref="eqn-1Dheat_u03"/> in this case is given by
+
+<men xml:id="eqn-1Dheat_u010">
+  	u(x,t) =A(Bx+C)=a' x+b'
+</men>
+
+	    		
+The complete solution of equation <xref ref="eqn-1Dheat_u03"/> is thus -
+<men xml:id="eqn-1Dheat_u011">
+  u(x,t)=(a' x+b')+(a\cos\alpha x+b\sin\alpha x)e^{-\alpha^{2}h^{2}t}
+</men>
+or,
+<men xml:id="eqn-1Dheat_u012">
+  u(x,t)=u_{s}(x)+u_{T}(x,t)
+</men>
+
+
+where <m>u_{s}(x)</m> is the temperature distribution after a long interval of time 
+when there exists steady state of temperature and <m>u_{T}(x,t)</m> is the transient 
+temperature which tends to zero as  <m>t</m> increases. Now, for <m>t \to \infty</m>,  
+<m>u(0,t)= 0</m>, and <m>u(\lambda,t)=u_{o}</m> and from equation <xref ref="eqn-1Dheat_u011"/>, 
+we have -
+<me>
+  0=b'+0 \quad  \therefore  b' =0 
+</me>
+and 
+<me>
+  u_{o}=a' \lambda
+</me>
+
+<men xml:id="eqn-1Dheat_u013">
+  \therefore a'=u_{o}/\lambda
+</men>
+     
+
+so that	<m>u_{s}(x)=(u_{o}/\lambda)x </m>. Thus solution <xref ref="eqn-1Dheat_u011"/> (7.2.1.12) 
+reduces to 
+<men xml:id="eqn-1Dheat_u014">
+  u(x,t)=\frac{u_{o}x}{\lambda}+(a\cos\alpha x+b\sin\alpha x)e^{-\alpha^{2}h^{2}t}
+</men>
+
+which must be zero at <m>x=0</m> for every value of <m>t</m>. Thus we have <m>a=0</m>.
+and 		
+<men xml:id="eqn-1Dheat_u015">
+  u(x,t)=\frac{u_{o}x}{\lambda}+b\sin\alpha x \,e^{-\alpha^{2}h^{2}t}
+</men>
+
+which must give <m>u(\lambda,t)=u_{o}</m> for every <m>t</m>  and hence 
+<m>\sin\alpha\lambda =0=\sin n\pi</m>.
+    </p>
+    <p>
+      Or, <m>\alpha =\frac{n\pi}{\lambda}</m>,	where <m>n=1,2,3,\cdots</m>.
+      Or,
+      <men xml:id="eqn-1Dheat_u016">
+        u(x,t) = \frac{u_{o}x}{\lambda}+\sum\limits_{n=1}^{\infty} b_{n}\sin\frac{n\pi x}{\lambda} \,e^{-n^{2}\pi^{2}h^{2}t/\lambda}
+      </men>
+      
+Constant <m>b_{n}</m> may be calculated by using the initial condition <m>u(x,0)=f(x)</m>.
+Hence,
+<men xml:id="eqn-1Dheat_u017">
+  f(x)-\frac{u_{o}x}{\lambda}=\sum\limits_{n=1}^{\infty} b_{n}\sin\frac{n\pi x}{\lambda}
+</men>
+and 
+<men xml:id="eqn-1Dheat_u018">
+  b_{n}=\frac{2}{\lambda}\int\limits_{0}^{\lambda}\left[f(x)-\frac{u_{o}x}{\lambda}\right]\sin\frac{n\pi x}{\lambda}\,dx
+</men>
+      </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-1Dheat_infbar">
+  <title>Temperature in an infinite bar</title>
+  <p>
+    Let us consider an infinite bar of insulated surfaces. The initial temperature 
+    on the bar is given as 
+    <men xml:id="eqn-1Dheat_infbar1">
+      u(x,0)=f(x), \quad \text{for}  \quad -\infty \lt x \lt \infty
+    </men>
+
+The solution of one dimensional heat equaiton is given as
+<men xml:id="eqn-1Dheat_infbar2">
+  	u(x,t) =X(x)T(t)=(a\cos\alpha x+b\sin \alpha x)e^{-\alpha^{2}h^{2}t}
+</men>
+
+This solution is periodic in <m>x</m> at <m>t=0</m>. But <m>f(x)</m> is not taken 
+as periodic function, we shall therefore, use Fourier integral instead of Fourier 
+series for the determination of constants  <m>a</m> and <m>b</m>. Let us assume 
+the  arbitrary coefficients <m>a</m> and <m>b</m> to be the functions of  
+<m>\alpha</m> i.e., <m>a=a(\alpha)</m>  and  <m>b=b(\alpha)</m>. Then 
+<me>
+  u(x,t)=\int\limits_{0}^{\infty}u(x,t,\alpha)\,d\alpha 
+</me>
+
+<men xml:id="eqn-1Dheat_infbar3">
+  =\int\limits_{0}^{\infty}\{a(\alpha)\cos\alpha x+b(\alpha)\sin\alpha x\}e^{-\alpha^{2}h^{2}t}\,d\alpha
+</men>
+using initial condition, we have -
+<men xml:id="eqn-1Dheat_infbar4">
+  u(x,0) =\int\limits_{0}^{\infty}\{a(\alpha)\cos\alpha x+b(\alpha)\sin\alpha x\}\,d\alpha =f(x)
+</men>
+  
+from this equation, we get -
+<me>
+  a(\alpha) = \frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(x)\cos\alpha x\,dx=\frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(\mu)\cos\alpha \mu\,d\mu
+</me>
+and 
+<me>
+  b(\alpha) = \frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(x)\sin\alpha x\,dx=\frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(\mu)\sin\alpha \mu\,d\mu 
+</me>
+so that 
+<me>
+  u(x,0) = \frac{1}{\pi}\int\limits_{0}^{\infty}\left[\int\limits_{-\infty}^{\infty}f(\mu)\cos\alpha (x-\mu)\,d\mu\right]\,d\alpha
+</me>
+
+as such the equation <xref ref="eqn-1Dheat_infbar3"/> takes the form,
+<me>
+  	u(x,t) = \frac{1}{\pi}\int\limits_{0}^{\infty}\left[\int\limits_{-\infty}^{\infty}f(\mu)\cos\alpha (x-\mu)e^{-\alpha^{2}h^{2}t}\,d\mu\right]\,d\alpha
+</me>
+<men xml:id="eqn-1Dheat_infbar5">
+  	=\frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(\mu)\left[\cos\alpha(x-\mu)e^{-\alpha^{2}h^{2}t}\,d\alpha\right]\,d\mu
+</men>
+
+which gives the required temperature at any point at any time.
+    </p>
+</subsubsection>
+ </subsection>
+
+<subsection xml:id="subsec-2D_heat">
+  <title>Two Dimensional Equation of Heat Flow</title>
+  <figure xml:id="fig-fig710">
+    <caption></caption>
+    <image source="fig710.png" width ="45%"/>
+</figure>
+  <p>
+    Consider the flow of heat in a metal plate of uniform thickness in the directions 
+    parallel to the breadth of the plate. The surface of the plate is insulated as shown in 
+    figure <xref ref="fig-fig710"/>. 
+    Let <m>u(x,y,t)</m> be the temperature at any point <m>(x,y)</m> of the plate at 
+    any time <m>t</m> is given by 
+
+<men xml:id="eqn-2Dheat_sol1">
+  \frac{\partial u}{\partial t}= h^{2} \left( \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}\right)	
+</men>
+
+If the edges are kept at zero temperature then the boundary conditions are 
+<me>
+   u(0,y,t) = u(a,y,t) =u(x,0,t) = u(x,b,t)= 0
+</me>
+
+and the initial condition is given as <m> u(x,y,0) = f(x,y)</m>.
+	
+	Let us assume that
+  <men xml:id="eqn-2Dheat_sol2">
+    u(x,y,t) = X(x)Y(y)T(t)
+  </men>
+ 
+	be  the solution of equation <xref ref="eqn-2Dheat_sol1"/>. 
+
+ 
+ Then from equation <xref ref="eqn-2Dheat_sol1"/> we have -
+ <me>
+  YT\frac{\partial^{2}X}{\partial x^{2}}+XT\frac{\partial^{2}Y}{\partial y^{2}} =\frac{XY}{h^{2}}\frac{\partial T}{\partial t}
+ </me>
+ or,
+ <men xml:id="eqn-2Dheat_sol3">
+  h^{2}\left[\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}}+\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}}\right] = \frac{1}{T}\frac{\partial T}{\partial t} = -m \quad (\text{or,}  -\lambda^{2})
+ </men>
+ 
+or,
+<men xml:id="eqn-2Dheat_sol4">
+  \frac{\partial T}{\partial t} =-mT \text{or,}  \frac{\partial T}{\partial t}+mT=0 \Rightarrow T=Ae^{-mt}
+</men>
+
+and 
+<me>
+  \frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} +\frac{m}{h^{2}}=-\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}}=k^{2}\quad \text{(say)}
+</me>
+or,
+<men xml:id="eqn-2Dheat_sol5">
+  \frac{\partial^{2}Y}{\partial y^{2}}+k^{2}Y=0  \quad \Rightarrow Y=B\cos ky+C\sin ky
+</men>
+also, 
+<me>
+  \frac{\partial^{2}X}{\partial x^{2}}+\left(\frac{m}{h^{2}}-k^{2}\right)X = 0
+</me>
+
+<men xml:id="eqn-2Dheat_sol6">
+  \frac{\partial^{2}X}{\partial x^{2}}+p^{2}X = 0 \quad \Rightarrow  X=D\cos px+E\sin px
+</men>
+where, 
+<men xml:id="eqn-2Dheat_sol7">
+  p^{2}= \frac{m}{h^{2}}-k^{2}
+</men>
+    </p>
+    		 
+Imposing the boundary conditions, we have 
+<ol marker="i.">
+  <li>
+    <p>
+      <m> u(x,y,t) = 0</m> at <m>x=0</m> give <m>D=0</m>,
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>u(x,y,t)= 0</m> at <m>y=0</m> gives <m>B=0</m>,     
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>u(x,y,t)= 0 </m> at <m>x=a</m> i.e., <m>0=Ae^{-mt}[C\sin ky][E\sin pa] </m> 
+      <m>\Rightarrow \sin pa =0=\sin r\pi </m>, <m>\therefore  p=\frac{r\pi}{a}</m>, <m>r=1,2,3,\cdots</m>, 
+    </p>
+  </li>
+  <li>
+    <p>
+     <m>u(x,y,t) = 0</m>  at <m>y=b</m> i.e., <m>0=Ae^{-mt}[C\sin kb][E\sin px]</m>  
+     <m>\Rightarrow \sin kb =0=\sin s\pi </m>. <m>\therefore   k=\frac{s\pi}{b}</m>, 
+     <m>s=1,2,3,\cdots</m>.
+    </p>
+  </li>
+</ol>
+		<p>    
+Putting these values in equation <xref ref="eqn-2Dheat_sol7"/>, we get - 
+<me>
+   \frac{r^{2}\pi^{2}}{a^{2}} =\frac{m}{h^{2}}- \frac{s^{2}\pi^{2}}{b^{2}}
+</me>
+or,
+<me>
+  \frac{m}{h^{2}}=\left[\frac{r^{2}}{a^{2}}+ \frac{s^{2}}{b^{2}}\right]\pi^{2}
+</me>
+<men xml:id="eqn-2Dheat_sol8">
+   \therefore   m= h^{2}\pi^{2}\left[\frac{r^{2}}{a^{2}}+ \frac{s^{2}}{b^{2}}\right] = m_{rs}  	\quad (say)
+</men>
+
+		
+The solution <xref ref="eqn-2Dheat_sol2"/> now becomes -
+<me>
+  u=\sum\limits_{r=1}^{\infty}\sum\limits_{s=1}^{\infty}A_{rs}e^{-m_{rs}t}\left(E_{r}\sin\frac{r\pi x}{a}\right)\left(C_{s}\sin\frac{s\pi y}{b}\right)
+</me>
+
+<men xml:id="eqn-2Dheat_sol9">
+  	=\sum\limits_{r,s=1}^{\infty}a_{rs}e^{-m_{rs}t}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}
+</men>
+
+To determine the value of constant <m>a_{rs}</m> imposing the initial condition, 
+<m>u(x,y,0)=f(x,y)</m>, we get - 
+<men xml:id="eqn-2Dheat_sol10">
+  f(x,y)=\sum\limits_{r,s=1}^{\infty}a_{rs}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}
+</men>
+			
+multiplying both sides by <m>\sin\frac{r\pi x}{a}\cdot \sin\frac{s\pi y}{b} </m> and 
+integrating from 0 to <m>a</m> and <m>b</m>, we get -
+<men xml:id="eqn-2Dheat_sol11">
+  a_{rs} =\frac{4}{ab}\int\limits_{0}^{a}\int\limits_{0}^{b}	f(x,y)\sin\frac{r\pi x}{a}\cdot \sin\frac{s\pi y}{b}\,dx \,dy			
+</men>
+  </p>		
+</subsection>
+
+<subsection xml:id="subsec-Lapleqn">
+  <title>Laplace's Equation</title>
+  <introduction>
+    <p>
+      The equation of heat flow in steady state is known as Laplace's equation. i.e., 
+      <m>u</m> does not change with time. 
+      <me>
+         \therefore   \frac{\partial u}{\partial t} =0
+      </me>
+      and 
+      <me>
+        \nabla^{2}u = \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =0.
+      </me>
+ 
+which is a cartesian form of Laplace's equation in three dimensions.
+    </p>
+    <p>
+      In cylindrical coordinates, 
+      <me>
+        \nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =0.
+      </me>
+      
+In spherical polar coordinates, 
+<me>
+  \nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}}+\frac{2}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{1}{r^{2}\sin\theta}\frac{\partial^{2}u}{\partial \phi^{2}} =0.
+</me>
+      </p>
+  </introduction>
+</subsection>
+
+<subsection xml:id="subsec-2D_lapleqn">
+    <title>Two Dimensional Laplace's Equation</title>
+   <introduction>
+    <p>
+      The two-dimensional Laplace equation is a partial differential equation that 
+      describes the behavior of a scalar function in two dimensions. 
+      The general form of the two-dimensional Laplace equation is:
+      <me>
+        \nabla^{2}u =0
+      </me>
+where u is the scalar function and <m>\nabla^{2}</m>  is the Laplacian operator. 
+In two dimensions, the Laplacian operator can be expressed as the sum of the second 
+partial derivatives with respect to the spatial coordinates x and y:
+<me>
+  \nabla^{2}u = \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^2}
+</me>
+
+This equation states that the sum of the second partial derivatives of the function with 
+respect to both x and y is equal to zero. The Laplace equation is a special case of the 
+more general Poisson equation, where a non-zero source term is present on the right-hand side:
+<me>
+  \nabla^{2}u =f(x, y)
+</me>
+    </p>
+   </introduction>
+   <subsubsection xml:id="subsubsec-2DLapl_cartsn">
+    <title>In Cartesian Coordinates</title>
+     <figure xml:id="fig-fig711">
+    <caption></caption>
+    <image source="fig711.png" width ="45%"/>
+</figure>
+    <p>
+      Consider a thin plate with insulated surfaces bounded by the lines 
+      <m>x=0</m>, <m>x=\lambda {,}y=0 </m>, and <m>y=\infty</m>.
+Let at steady state, the temp. <m>u(x,y)</m> at any point <m>p(x,y)</m> satisfies the equation 
+<men xml:id="eqn-2DLapl_cartsn1">
+  \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} =0
+</men>
+	
+assuming the edges <m>x=0</m> and  <m>x=\lambda </m> is kept at temperature zero and also 
+the lower edge <m>y=0</m> is kept at tempemperature <m>f(x)</m> and the edge <m>y=\infty</m> at zero temperature.
+      </p>
+      <p>
+        Then solution of equation <xref ref="eqn-2DLapl_cartsn1"/> is given by	
+        <men xml:id="eqn-2DLapl_cartsn2">
+          u(x,y) = X(x)Y(y)
+        </men>
+
+Now three possible solutions of equation <xref ref="eqn-2DLapl_cartsn1"/> are 
+<men xml:id="eqn-2DLapl_cartsn3">
+  u=\left(C_{1}e^{px}+C_{2}e^{-px}\right)\left(C_{3}\cos py+C_{4}\sin py\right)
+</men>
+<men xml:id="eqn-2DLapl_cartsn4">
+  u=\left(C_{5}\cos px+C_{6}\sin px\right)\left(C_{7}e^{py}+C_{8}e^{-py}\right)
+</men>
+<men xml:id="eqn-2DLapl_cartsn5">
+  u=\left(C_{9}x+C_{10}\right)\left(C_{11}y+C_{12}\right)
+</men>
+
+Of these, we have to choose that solution which is consistant with the physical nature 
+of the problem. The solution <xref ref="eqn-2DLapl_cartsn3"/> and <xref ref="eqn-2DLapl_cartsn5"/> 
+can not satisfy the boundary conditions. Therefore,  possible solution is only 
+<xref ref="eqn-2DLapl_cartsn4"/>. From the boundary condition, <m>u(0,y) =0</m>, 
+we have from solution <xref ref="eqn-2DLapl_cartsn4"/>, 
+<me>
+  0= C_{5}\left(C_{7}e^{py}+C_{8}e^{-py}\right)\Rightarrow C_{5} =0.
+</me>
+
+therefore, solution <xref ref="eqn-2DLapl_cartsn4"/> reduces to 
+<men xml:id="eqn-2DLapl_cartsn6">
+  u=C_{6}\sin px\left(C_{7}e^{py}+C_{8}e^{-py}\right)		
+</men>
+
+using  <m>u(\lambda,y) =0</m>, we have - 
+<me>
+   0= C_{6}\sin p\lambda\left(C_{7}e^{py}+C_{8}e^{-py}\right)\quad \because  C_{6} \neq 0,
+</me>
+and 
+<me>
+  \sin p\lambda = 0=\sin n\pi   \quad  \therefore  p=\frac{n\pi}{\lambda},  \quad n=1,2,3,\cdots	
+</me>
+	
+also to satisfy the condition <m>u(x,\infty)=0, \quad  C_{7} =0</m>. 
+Hence equation <xref ref="eqn-2DLapl_cartsn6"/> takes the form 
+<m>u(x,y) = C_{6}C_{8}\sin px \cdot e^{-py}</m>. Or,
+<men xml:id="eqn-2DLapl_cartsn7">
+  u(x,y) = \sum\limits_{n=1}^{\infty}b_{n}\sin\frac{n\pi x}{\lambda}\cdot e^{-\frac{n\pi y}{\lambda}}
+</men>
+
+But the initial condition <m>u(x,0) =f(x)</m>, we have 
+<men xml:id="eqn-2DLapl_cartsn8">
+  f(x)=\sum\limits_{n=1}^{\infty}b_{n}\sin\frac{n\pi x}{\lambda}
+</men>
+where 
+<me>
+  b_{n} = \frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\sin\frac{n\pi x}{\lambda}\,dx
+</me>
+
+If the given plate is of finite length <m>a</m> and the temp. at this end is 
+<m>u=f(x) </m>, then the boundary conditions are  <m>u(0,y) =0=u(\lambda,y)=u(x,0)</m> 
+and <m>u(x,a)=f(x) </m>. 
+        </p>
+        <p>
+          Let the solution of this problem is 
+          <men xml:id="eqn-2DLapl_cartsn9">
+            	u=\left(C_{1}\cos px+C_{2}\sin px\right)\left(C_{3}e^{py}+C_{4}e^{-py}\right)
+          </men>
+          putting <m>x=0</m> and <m>u=0</m> in eqn. <xref ref="eqn-2DLapl_cartsn9"/>, we have
+<me>
+  0=C_{1}\left(C_{3}e^{py}+C_{4}e^{-py}\right) \quad \Rightarrow  C_{1} =0 
+</me>
+hence eqn. <xref ref="eqn-2DLapl_cartsn9"/> reduces to 
+<men xml:id="eqn-2DLapl_cartsn10">
+  u=C_{2}\sin px\left(C_{3}e^{py}+C_{4}e^{-py}\right)	
+</men>
+
+on putting <m>x=\lambda</m> and <m>u=0</m>, we have -
+<me>
+  0=C_{2}\sin p\lambda\left(C_{3}e^{py}+C_{4}e^{-py}\right)
+</me>
+or,
+<me>
+  \sin p\lambda =0=\sin n\pi	\quad \text{as}\quad  C_{2} \neq 0 
+</me>
+or,
+<me>
+  p=\frac{n\pi}{\lambda},	\quad n=1,2,3,\cdots 
+</me>
+
+Now equation <xref ref="eqn-2DLapl_cartsn10"/> becomes -
+<men xml:id="eqn-2DLapl_cartsn11">
+  u=C_{2}\sin\frac{n\pi x}{\lambda}\left(C_{3}e^{\frac{n\pi y}{\lambda}}+C_{4}e^{-\frac{n\pi y}{\lambda}}\right)
+</men>
+		
+on putting <m>u=0</m> and <m>y=0</m> in equation <xref ref="eqn-2DLapl_cartsn11"/>, we get - 
+<me>
+  0= C_{2}\sin\frac{n\pi x}{\lambda}(C_{3}+C_{4}) \quad  \Rightarrow  C_{3}+C_{4} =0 
+</me>
+or, <m>C_{4} =-C_{3}</m>
+	
+therefore, equation <xref ref="eqn-2DLapl_cartsn11"/> becomes 
+<me>
+  u=C_{2}C_{3}\sin\frac{n\pi x}{\lambda}\left(e^{\frac{n\pi y}{\lambda}}-e^{-\frac{n\pi y}{\lambda}}\right)
+</me>
+or,
+<me>
+  u=\sum\limits_{n=1}^{\infty}b_{n}\sin\frac{n\pi x}{\lambda}\left(e^{\frac{n\pi y}{\lambda}}-e^{-\frac{n\pi y}{\lambda}}\right)\times\frac{2}{2}
+</me>
+or,
+<men xml:id="eqn-2DLapl_cartsn12">
+  u=\sum\limits_{n=1}^{\infty}c_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}  
+</men>
+<m>[\because  \quad 2b_{n} =c_{n}]</m>.
+
+on putting <m>y=a</m> and <m>u=f(x)</m> in equation <xref ref="eqn-2DLapl_cartsn12"/>, we get -
+<men xml:id="eqn-2DLapl_cartsn13">
+  f(x) =\sum\limits_{n=1}^{\infty}c_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}
+</men>
+where 
+<me>
+   c_{n}\sinh \frac{n\pi a}{\lambda} = \frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\sin\frac{n\pi x}{\lambda}\,dx.
+</me>
+
+          </p>
+   </subsubsection>
+
+  <subsubsection xml:id="subsubsec-2DLapl_ccylnd">
+    <title>In Cylindrical Coordinates</title>
+    <p>
+      The Laplace equation in two dimensional case is 
+      <men xml:id="eqn-2DLapl_ccylnd1">
+        	\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}=0	
+      </men>
+      Let 
+      <men xml:id="eqn-2DLapl_ccylnd2">
+        u(r,\theta) = R(r)\Theta(\theta) 
+      </men>
+      	be the solution of equation <xref ref="eqn-2DLapl_ccylnd1"/>, so that	
+        <men xml:id="eqn-2DLapl_ccylnd3">
+          \Theta\frac{\partial^{2}R}{\partial r^{2}}+\frac{\Theta}{r}\frac{\partial R}{\partial r}+\frac{R}{r^{2}}\frac{\partial^{2}\Theta}{\partial \theta^{2}}
+        </men>
+        or,
+        <men xml:id="eqn-2DLapl_ccylnd4">
+           \frac{1}{R}\left(r^{2}\frac{\partial^{2}R}{\partial r^{2}}+r\frac{\partial R}{\partial r}\right) =-\frac{1}{\Theta}\frac{\partial^{2}\Theta}{\partial \theta^{2}}=n^{2} \quad	\text{(say)}	
+        </men>
+        <men xml:id="eqn-2DLapl_ccylnd5">
+          r^{2}\frac{\partial^{2}R}{\partial r^{2}}+r\frac{\partial R}{\partial r}=-n^{2}R=0	
+        </men>
+      </p>
+      <p>
+        This is a homogenous linear differential equation. Its solution can be found by 
+        putting <m>r=e^{z}</m> or, <m>\log r=z</m> or, 
+        
+        <me>
+          \frac{1}{r}\frac{\partial r}{\partial z} =1.
+        </me>
+        or,
+
+      <men xml:id="eqn-2DLapl_ccylnd6">
+        \frac{\partial r}{\partial z} =r
+      </men>
+      Also,
+      <me>
+         \frac{\partial R}{\partial r} =\frac{\partial R}{\partial z}\cdot\frac{\partial z}{\partial r} = \frac{1}{r}\frac{\partial R}{\partial z}
+      </me>
+    or,  
+<men xml:id="eqn-2DLapl_ccylnd7">
+   r\frac{\partial R}{\partial r}=\frac{\partial R}{\partial z}= DR   
+</men>
+assume 
+<me>
+  D\equiv \frac{\partial }{\partial z}.
+</me>
+ 
+again, 
+<me>
+  \frac{\partial^{2}R}{\partial r^{2}} = \frac{\partial }{\partial r}\left(\frac{\partial R}{\partial r}\right)  = \frac{\partial }{\partial z}\left(\frac{1}{r}\frac{\partial R}{\partial z}\right)\frac{\partial z}{\partial z}	
+</me>
+
+<me>
+  	= \frac{1}{r}\left[\frac{1}{r}\frac{\partial^{2}R}{\partial z^{2}}- \frac{1}{r^{2}}\frac{\partial r}{\partial z}\frac{\partial R}{\partial z}\right]  = \frac{1}{r}\left[\frac{1}{r}D^{2}R- \frac{1}{r^{2}}\cdot r\cdot DR\right]
+</me>
+
+  or,
+  <me>
+    r^{2}\frac{\partial^{2}R}{\partial r^{2}}=D^{2}R-DR=D(D-1)R 
+  </me>
+  
+from eqn.<xref ref="eqn-2DLapl_ccylnd5"/>,
+<me>
+   D(D-1)R+DR-n^{2}R =0
+</me>
+or,
+<me>
+  D^{2}R -DR+DR-n^{2}R =0
+</me>
+or,
+<men xml:id="eqn-2DLapl_ccylnd8">
+  (D^{2}-n^{2})R=0
+</men>
+
+or,
+<me>
+  D=\pm n
+</me>
+or,
+<me>
+  R=C_{1}e^{nz} +C_{2}e^{-nz}
+</me>
+<men xml:id="eqn-2DLapl_ccylnd9">
+ \therefore  R=C_{1}r^{n}+C_{2}r^{-n} 
+</men>
+
+<me>
+  [e^{nz}=e^{n\log r}=e^{\log r^{n}} = r^{n}].
+</me>
+and 
+<men xml:id="eqn-2DLapl_ccylnd10">
+  \frac{\partial^{2}\Theta}{\partial \theta^{2}}+n^{2}\Theta =0 \quad  \Rightarrow  \Theta =C_{3}\cos n\theta + C_{4}\sin n\theta 
+</men>
+
+ Hence, 
+ <men xml:id="eqn-2DLapl_ccylnd11">
+  u_{n}=\left(C_{1}r^{n}+C_{2}r^{-n}\right)\left(C_{3}\cos n\theta+C_{4}\sin n\theta\right)
+ </men>
+        </p>
+        <p>
+          If <m>n=0</m>, we have from equation <xref ref="eqn-2DLapl_ccylnd10"/>, 
+          <men xml:id="eqn-2DLapl_ccylnd12">
+            \frac{\partial^{2}\Theta}{\partial \theta^{2}} =0 \quad \Rightarrow  \Theta = A_{o}\theta+B_{o}
+          </men>
+          
+
+from equation <xref ref="eqn-2DLapl_ccylnd8"/>, we get -	
+<men xml:id="eqn-2DLapl_ccylnd13">
+  D^{2}R =0  \quad  \Rightarrow  R = C_{o}z+D_{o} =  C_{o}\log r + D_{o}
+</men>
+	Hence, 
+  <men xml:id="eqn-2DLapl_ccylnd14">
+     u_{o}=(A_{o}\theta+B_{o})(C_{o}\log r + D_{o})
+  </men>
+  		
+				
+But the general single - valued solution of equation <xref ref="eqn-2DLapl_ccylnd1"/> 
+for all possible value of <m>n</m> may be written as 
+<me>
+    u=a_{o}\log r+\sum\limits_{n=1}^{\infty}r^{n}(a_{n}\cos n\theta +b_{n}\cos n\theta)
+</me>
+
+<men xml:id="eqn-2DLapl_ccylnd15">
++\sum\limits_{n=1}^{\infty}r^{-n}(p_{n}\cos n\theta +q_{n}\cos n\theta)+c_{o}
+</men>
+          </p>
+  </subsubsection>
+  </subsection>
+
+<subsection xml:id="subsec-3D_heat">
+  <title>Three Dimensional Equation of Heat Flow</title>
+  <p>
+    Three dimensional heat equation is given by 
+    <men xml:id="eqn-3D_heat1">
+      \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =\frac{1}{h^{2}}\frac{\partial u}{\partial t}
+    </men>
+ 
+the solution of which is assumed as      
+<men xml:id="eqn-3D_heat2">
+  u=u(x,y,z,t)=X(x)Y(y)Z(z)T(t)
+</men>
+
+By substitution of this in equation <xref ref="eqn-3D_heat1"/>, we get -
+<men xml:id="eqn-3D_heat3">
+  \frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}}+\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}}+\frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}} =\frac{1}{h^{2}T}\frac{\partial T}{\partial t} =-\lambda^{2}   \text{(say)}
+</men>
+Now
+<me>
+\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =-\lambda_{1}^{2}; 
+</me>
+or,
+<me>
+  \frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}} = -\lambda_{2}^{2}; 
+</me>
+or,
+<me>
+  \frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}} =-\lambda_{3}^{2}, 
+</me>
+so that 
+<me>
+  \lambda^{2} = \lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2}
+</me>
+Yielding 
+<me>
+  X=A\cos\lambda_{1}x+B\sin\lambda_{1}x = a\cos(\lambda_{1}x+\alpha\lambda_{1});
+</me>
+or,
+<me>
+  Y=b\cos(\lambda_{2}y+\alpha\lambda_{2}),
+</me>
+or,
+<me>
+   Z =c\cos(\lambda_{3}z+\alpha\lambda_{3}),
+</me>
+and 
+<me>
+  T=de^{-\lambda^{2}h^{2}t}=de^{-(\lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2})h^{2}t}
+</me>
+    	
+Hence for all values of <m>t</m>,  the general solution of equation <xref ref="eqn-3D_heat1"/> is
+   <me>
+   u=\sum\limits_{\lambda_{1}=0}^{\infty}\sum\limits_{\lambda_{2}=0}^{\infty}\sum\limits_{\lambda_{3}=0}^{\infty}A_{\lambda_{1}\lambda_{2}\lambda_{3}}\cos(\lambda_{1}x+\alpha\lambda_{1})\cos(\lambda_{2}y+\alpha\lambda_{2}) 
+   </me>
+   <me>
+    \cos(\lambda_{3}z+\alpha\lambda_{3})e^{-h^{2}(\lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2})t} 
+   </me>   
+    </p>
+</subsection>
+
+<subsection xml:id="subsec-3D_lapleq">
+  <title>Three Dimensional Laplace's Equation</title>
+  <introduction>
+    <p>
+      The Laplace equation arises in various physical problems, including electrostatics, 
+      heat conduction, fluid flow, and potential theory. Solving the 3D Laplace equation 
+      involves finding a function <m>u(x)</m> that satisfies the equation <m>\nabla^{2}u =0</m>. 
+      This typically involves specifying appropriate boundary conditions or constraints 
+      on the function at the boundaries of the domain. The solutions to the Laplace equation
+       are harmonic functions, which have many interesting mathematical properties.
+    </p>
+  </introduction>
+  <subsubsection xml:id="subsubsec-3D_laplRect">
+    <title>In Rectangular Coordinates</title>
+    <p> <idx>rectangular coordinates</idx>
+      The equation is 		
+      <men xml:id="eqn-3D_laplRect1">
+        \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =0
+      </men>
+      Let 
+      <men xml:id="eqn-3D_laplRect2">
+        u=X(x)Y(y)Z(z) 
+      </men>
+      be the solution of equation <xref ref="eqn-3D_laplRect1"/>
+Then 
+<men xml:id="eqn-3D_laplRect3">
+  \frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}}+\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}}+\frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}} =0
+</men>
+
+In equation <xref ref="eqn-3D_laplRect3"/> all are independent to each other 
+hence each may be seperately equal to some constant, i.e., 
+<me>
+  \frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =n^{2} \quad  \Rightarrow X=A\cos nx+B\sin nx,
+</me>
+or,
+<me>
+  \frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}} =-m^{2} \quad  \Rightarrow Y=C\cos my+D\sin my,
+</me>
+and 
+<me>
+  \frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}}=p^{2} \quad  \Rightarrow Z=Ee^{pz}+Fe^{-pz}
+</me>
+Thus, the general solution of equation <xref ref="eqn-3D_laplRect1"/> is 
+<me>
+  u=(A\cos nx+B\sin nx)
+</me>
+
+<men xml:id="eqn-3D_laplRect4">
+  (C\cos my+D\sin my)(Ee^{pz}+Fe^{-pz})
+</men>
+	where <m>p^{2}=m^{2}+n^{2}</m>.					
+      </p>
+      <p>
+        Alternative solution of equation <xref ref="eqn-3D_laplRect1"/> is 
+        <me>
+           u=(Ae^{nx}+Be^{-nx})
+        </me>
+        
+ <men xml:id="eqn-3D_laplRect5">
+  (Ce^{my}+De^{-my})(E\cos{pz}+F\sin{pz})
+ </men>
+        </p>
+  </subsubsection>
+
+<subsubsection xml:id="subsubsec-3D_laplcyl">
+  <title>In Cylindrical Coordinates</title>
+  <p>
+    <idx>cylindrical coordinates</idx>
+    We have,
+    <men xml:id="eqn-3D_laplcyl1">
+      \frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =0
+    </men>
+    Let 
+    <men xml:id="eqn-3D_laplcyl2">
+      u(r,\theta,z) =R(r)\Theta(\theta)Z(z) 
+    </men>
+    be the solution of eqn.<xref ref="eqn-3D_laplcyl1"/>. Hence,
+    <men xml:id="eqn-3D_laplcyl3">
+      \frac{1}{R}\frac{\partial^{2}R}{\partial r^{2}}+\frac{1}{rR}\frac{\partial R}{\partial r}+\frac{1}{r^{2}\Theta}\frac{\partial^{2}\Theta}{\partial \theta^{2}}+\frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}} =0
+    </men>
+
+As variables are separated, we may take - 
+<me>
+  \frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}}=\lambda^{2}
+</me>
+or,
+<men xml:id="eqn-3D_laplcyl4">
+  \frac{\partial^{2}Z}{\partial z^{2}}-\lambda^{2}Z =0 \quad \Rightarrow Z=Ae^{\lambda z}+Be^{-\lambda z}
+</men>
+and 
+<men xml:id="eqn-3D_laplcyl5">
+  \frac{r^{2}}{R}\frac{\partial^{2}R}{\partial r^{2}}+\frac{r}{R}\frac{\partial R}{\partial r}+\lambda^{2}r^{2}=-\frac{1}{\Theta}\frac{\partial^{2}\Theta}{\partial \theta^{2}}=\mu^{2}
+</men>
+
+also, 
+<men xml:id="eqn-3D_laplcyl6">
+  \frac{1}{\Theta}\frac{\partial^{2}\Theta}{\partial \theta^{2}}+\mu^{2}\Theta =0 \quad \Rightarrow \Theta = C\cos \mu \theta +D\sin \mu\theta
+</men>
+and 
+<men xml:id="eqn-3D_laplcyl7">
+  r^{2}\frac{\partial^{2}R}{\partial r^{2}}+r\frac{\partial R}{\partial r}+(\lambda^{2}r^{2}-\mu^{2})R=0
+</men>
+
+Now put <m>\lambda  r=s </m> so that 
+<me>
+  \frac{\partial }{\partial r} = \frac{\partial }{\partial s}\cdot \frac{\partial s}{\partial r}=+\lambda \frac{\partial }{\partial s}
+</me>
+and 
+<me>
+  \frac{\partial^{2} }{\partial r^{2}} =\lambda^{2} \frac{\partial^{2} }{\partial s^{2}}
+</me>
+
+therefore equation <xref ref="eqn-3D_laplcyl7"/> reduces to
+<me>
+  \frac{s^{2}}{\lambda^{2}}\lambda^{2}\frac{\partial^{2} R}{\partial s^{2}}+\frac{s}{\lambda}\lambda \frac{\partial R}{\partial s}+(s^{2}-\mu^{2})R =0
+</me>
+or,
+<me>
+  s^{2}\frac{\partial^{2} R}{\partial s^{2}}+s\frac{\partial R}{\partial s}+(s^{2}-\mu^{2})R =0 
+</me>
+
+which is Bessel's equation and it's general solution is given as  
+<me>
+  R=EJ_{\mu}(s)+FJ_{-\mu}(s)
+</me>
+or,
+<men xml:id="eqn-3D_laplcyl8">
+  R=EJ_{\mu}(\lambda r)+FJ_{-\mu}(\lambda r)
+</men>
+
+
+since <m>u(r,\theta,z)</m> be finite at <m>r \to 0 </m>, we have  
+<me>
+  s=\lambda r =0 \Rightarrow  J_{-\mu} \to \infty
+</me>
+or,
+<men xml:id="eqn-3D_laplcyl9">
+  \therefore  R= EJ_{\mu}(\lambda r)
+</men>
+Hence, 
+<me>
+  u(r,\theta,z)  = (Ae^{\lambda z}+Be^{-\lambda z})(C\cos \mu \theta +D\sin \mu\theta)[EJ_{\mu}(\lambda r)]
+</me>			
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-3D_lalpsph">
+  <title>In Spherical Coordinates</title>
+  <p>
+    <me>
+       \frac{\partial^{2}u}{\partial r^{2}}
+    </me>
+    
+    <men xml:id="eqn-3D_lalpsph1">
+     +\frac{2}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{\cot\theta}{r^{2}}\frac{\partial u}{\partial \theta}+\frac{1}{r^{2}\sin ^{2}\theta}\frac{\partial^{2}u}{\partial \phi^{2}} =0
+    </men>
+    or,
+    <me>
+       r^{2}\frac{\partial^{2}u}{\partial r^{2}}
+    </me>
+    
+    <men xml:id="eqn-3D_lalpsph2">
+     +2r\frac{\partial u}{\partial r}+\frac{1}{\sin\theta}\frac{\partial }{\partial \theta}\left(\sin\theta\frac{\partial u}{\partial \theta}\right)+\frac{1}{\sin ^{2}\theta}\frac{\partial^{2}u}{\partial \phi^{2}} =0
+    </men>
+    Suppose, 
+    <men xml:id="eqn-3D_lalpsph3">
+     u(r,\theta,\phi) = R(r)\Theta(\theta)\Phi(\phi)
+    </men>
+    be its solution.
+    Then, 
+    <me>
+       \left[\frac{r^{2}}{R}\frac{\partial^{2}R}{\partial r^{2}}+\frac{2r}{R}\frac{\partial R}{\partial r}+\frac{1}{\Theta\sin\theta}\frac{\partial }{\partial \theta}\left(\sin\theta\frac{\partial \Theta}{\partial \theta}\right)\right]\sin ^{2}\theta 
+    </me>
+ <men xml:id="eqn-3D_lalpsph4">
+  = -\frac{1}{\Phi}\frac{\partial^{2}\Phi}{\partial \phi^{2}} = \lambda^{2}  \quad  \text{(say)}
+ </men>
+
+ considering eqn.<xref ref="eqn-3D_lalpsph4"/>,
+ <men xml:id="eqn-3D_lalpsph5">
+  \frac{1}{\Phi}\frac{\partial^{2}\Phi}{\partial \phi^{2}} = -\lambda^{2} \quad \Rightarrow \Phi=Ce^{\pm i\lambda \phi}
+ </men>
+ and 
+ <me>
+   \frac{1}{R}\frac{\partial }{\partial r}\left(r^{2}\frac{\partial R}{\partial r}\right) 
+ </me>
+ 
+ <men xml:id="eqn-3D_lalpsph6">
+  -\frac{1}{\Theta\sin\theta}\frac{\partial }{\partial \theta}\left(\sin\theta\frac{\partial \Theta}{\partial \theta}\right)+\frac{\lambda^{2}}{\sin^{2}\theta} =n(n+1) \quad \text{(say)}
+ </men>
+ or,
+ <men xml:id="eqn-3D_lalpsph7">
+  \frac{\partial }{\partial r}\left(r^{2}\frac{\partial R}{\partial r}\right)-n(n+1)R =0
+ </men>
+ and 
+ <men xml:id="eqn-3D_lalpsph8">
+  \frac{1}{\sin\theta}\frac{\partial }{\partial \theta}\left(\sin\theta\frac{\partial \Theta}{\partial \theta}\right)+\left[n(n+1)-\frac{\lambda^{2}}{\sin^{2}\theta}\right]\Theta =0
+ </men>	
+
+As equation <xref ref="eqn-3D_lalpsph7"/> being the homogenous, put <m>r=e^{z} </m>, 
+hence equation <xref ref="eqn-3D_lalpsph7"/> reduces to 
+<me>
+  [D(D-1)+2D-n(n+1)]R=0  
+</me>
+where, <m>D\equiv \frac{\partial }{\partial z}</m>.
+or, 
+<me>
+  [D^{2}+D-n(n+1)]R =0
+</me>
+or,
+<me>
+  (D-n)(D+n+1)R =0
+</me>
+
+or,
+<me>
+   D=n,-(n+1),
+</me>
+<men xml:id="eqn-3D_lalpsph9">
+  \therefore R=Ae^{nz}+Be^{-(n+1)z} = Ar^{n}+Br^{-n-1}
+</men>
+
+			 	
+again, if we put <m>\cos\theta =\mu </m> in equation <xref ref="eqn-3D_lalpsph8"/>, then since 
+<me>
+   \frac{\partial \Theta}{\partial\theta} = \frac{\partial \Theta}{\partial\mu} \cdot \frac{\partial \mu}{\partial\theta} =-\sin\theta \frac{\partial \Theta}{\partial\mu}
+</me>
+or, 
+<me>
+ \frac{1}{\sin\theta} \frac{\partial }{\partial\theta}=-\frac{\partial }{\partial\mu}  
+</me>
+
+
+ we have,
+ <me>
+   \frac{\partial }{\partial\mu} \left\{(1-\mu^{2})\frac{\partial \Theta}{\partial\mu} \right\}+\left\{n(n+1)-\frac{\lambda^{2}}{1-\mu^{2}}\right\}\Theta =0 
+ </me>
+ Now,
+<men xml:id="eqn-3D_lalpsph10">
+  (1-\mu^{2})\frac{\partial^{2} \Theta}{\partial\mu^{2}}-2\mu \frac{\partial \Theta}{\partial\mu}+\left\{n(n+1)--\frac{\lambda^{2}}{1-\mu^{2}}\right\}\Theta =0
+</men>
+
+
+which is Legendre's associated differential equational and hence has the solution,
+<men xml:id="eqn-3D_lalpsph11">
+  \Theta =AP^{\lambda}_{n}(\mu)+BQ^{\lambda}_{n}(\mu)=AP^{\lambda}_{n}(\cos\theta)+BQ^{\lambda}_{n}(\cos\theta)
+</men>
+   		
+Now as <m>\Theta</m> is the function of <m>\cos\theta </m>, then solution of equation 
+<xref ref="eqn-3D_lalpsph1"/> is in the form 
+<me>
+  u=(Ar^{n}+Br^{-n-1})\Theta(\cos\theta)e^{\pm i\lambda\phi}
+</me>
+
+The summing over all <m>n</m>, the general solution of equation 
+<xref ref="eqn-3D_lalpsph1"/> may be written as 
+<men xml:id="eqn-3D_lalpsph12">
+  u(r,\theta,\phi) = \sum\limits_{n=0}^{\infty}(Ar^{n}+Br^{-n-1})\Theta(\cos\theta)e^{\pm i\lambda\phi}
+</men>
+ </p>
+
+<p>
+  <term>Note 1.</term>
+If <m>\lambda=0</m>, then equation <xref ref="eqn-3D_lalpsph10"/> reduces to Legendre's equation, 
+<me>
+  \Theta = P_{n}(\mu)=P_{n}(\cos\theta)
+</me>
+also, 
+<me>
+  \Theta = Q_{n}(\mu)=Q_{n}(\cos\theta).
+</me>
+Thus, 
+<me>
+  \Theta = C_{n}P_{n}(\mu)+D_{n}Q_{n}(\mu) 
+</me>
+
+so that	
+<me>
+    u(r,\theta,\phi) = \sum\limits_{n=0}^{\infty}\left(A_{n}r^{n}+\frac{B_{n}}{r^{n+1}}\right)\{C_{n}P_{n}(\cos\theta) 
+</me>
+ 
+<men xml:id="eqn-3D_lalpsph13">
++D_{n}Q_{n}(\cos\theta)\} e^{\pm i\lambda\phi}
+</men>
+
+
+In case <m>D_{n}=0</m> under specific boundary conditions, 
+then <m>\Theta =  C_{n}P_{n}(\cos\theta)</m> 
+
+
+<men xml:id="eqn-3D_lalpsph14">
+   \therefore u= \sum\limits_{n=0}^{\infty}\left(A_{n}r^{n} +\frac{B_{n}}{r^{n+1}}\right)C_{n}P_{n}(\cos\theta) e^{\pm i\lambda\phi}
+</men>
+</p>
+
+		<p>
+   <term>Note 2.</term>   If there is axial symmetry about z - axis, then <m>u</m> 
+   depens only upon <m>r</m> and <m>\theta</m> so that <m>\phi =0 </m> in equation 
+   <xref ref="eqn-3D_lalpsph14"/>, 
+<men xml:id="eqn-3D_lalpsph15">
+  u(r,\theta) = \sum\limits_{n=0}^{\infty}\left(A_{n}r^{n}+\frac{B_{n}}{r^{n+1}}\right)\{C_{n}P_{n}(\cos\theta)+D_{n}Q_{n}(\cos\theta)\}
+</men>
+
+ If <m> D_{n}=0</m>,	
+ <men xml:id="eqn-3D_lalpsph16">
+   u(r,\theta) = \sum\limits_{n=0}^{\infty}\left(A_{n}r^{n}+\frac{B_{n}}{r^{n+1}}\right)C_{n}P_{n}(\cos\theta)
+ </men>
+      </p> 
+</subsubsection>
+</subsection>
+  </section>
+

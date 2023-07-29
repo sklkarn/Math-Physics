@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fifth-trig" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>The Fourier Cosine and Sine Series</title>
+  <introduction>
+  <p>
+    A function <m>f(x)</m> is said to be an even function if <m>f(x)=f(-x).</m> 
+    e.g., <m>\cos x {,} \sec x {,} x^{2} {,} x \sin nx {,} </m> etc. are even functions. 
+    The graph of such a function is symmetrical with respect to <m>f(x)</m> axis. 
+    The area under such a curve from <m>-\pi</m>  to <m>\pi</m> is double the 
+    area from 0 to <m>\pi</m>.
+    <me>
+     \therefore  \int\limits_{-\pi}^{\pi}f(x)\,dx = 2\int\limits_{0}^{\pi}f(x)\,dx 
+    </me>
+    here,
+    <me>
+    a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx = 2\int\limits_{0}^{\pi}f(x)\,dx;
+    </me>
+    <me>
+      a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{2}{\pi}\int\limits_{0}^{\pi}f(x)\cos nx\,dx;
+    </me>
+    and 
+    <me>
+      b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = 0  \quad \text{[Half-Range Series]}
+    </me>
+    </p>
+
+<figure>
+      <sidebyside widths="35% 35%">
+          <figure xml:id="fig-fig52a">
+              <caption>Even Function</caption>
+              <image source="fig52a.png"/>
+          </figure>
+          <figure xml:id="fig-fig52b">
+              <caption>Odd Function</caption>
+              <image source="fig52b.png"/>
+          </figure>
+        </sidebyside>
+  </figure>
+
+    <p>
+      In this case, Fourier Series is represented by 
+      <me>
+        f(x) =\frac{a_{0}}{2}+\sum\limits_{n=1}^{\infty}a_{n} \cos nx
+      </me>
+      and is called Fourier cosine series as <m>b_{n}=0</m> for all the even 
+      function [figure <xref ref="fig-fig52a"/>]. 
+      Again, a function <m>f(x)</m> is said to be an odd function if <m>f(-x) = -f(x)</m>. For example,
+      <m>x {,} \tan x {,}x^{3}{,} \sin x{,}</m> etc. are odd functions. The graph of such a function is 
+      skew symmetrical with respect to <m>f(x)</m> axis. The area under such a curve from 
+      <m>-\pi</m> to <m>\pi</m> is zero. That is, 
+      <me>
+        \int\limits_{-\pi}^{\pi}f(x) \,dx =0; 
+      </me>
+      here 
+      <me>
+        a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx = 0; 
+      </me>
+        <me>
+          a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = 0;
+        </me>
+        and 
+        <me>
+          b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = \frac{2}{\pi}\int\limits_{0}^{\pi}f(x) \sin nx\,dx \quad \text{[Half-Range Series]}
+        </me>
+            In this case, Fourier series is represented by  
+            <me>
+              f(x) = \sum\limits_{n=1}^{\infty}b_{n} \sin nx
+            </me>
+             is called Fourier sine series as <m>a_{0}</m> and <m>a_{n}</m> are zero in 
+             all the odd function [figure <xref ref="fig-fig52b"/>].
+      </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-fourier_sum">
+  <title>Summing of Fourier Series</title>
+  <introduction>  
+  <p>
+     Since the Fouries series is a convergent series, it converges to 
+  </p>
+     <ol>
+      <li>
+        <p>
+          <m>f(x)</m>, if <m>x</m> is a point of continuity.
+        </p>
+      </li>
+      <li>
+        <p>
+          <m>\frac{f(x+0) + f(x-0)}{2}</m>, if <m>x</m> is a point of discontinuity. 
+        </p>
+      </li>
+      <li>
+        <p>
+         <m>\frac{f(-\pi+0) + f(\pi-0)}{2}</m> at <m>x=\pm \pi</m>, if <m>x</m> is a point of discontinuity.
+        </p>
+      </li>
+     </ol>
+  </introduction>
+
+  <subsubsection xml:id="subsubsec-half_range">
+  <title>Half - Range Series</title>
+  <p>
+    If a half - range series for a function  <m>f(x)</m> is desired, then the function 
+    is generally defined in an open interval <m>[0.\pi]</m>, which is half of the 
+    interval <m>[-\pi, \pi]</m> and hence the name half - range. In this case the 
+    function <m>f(x)</m> is expressed as an odd or even function. For interval (0,c) 
+    <me>
+      a_{0}= \frac{2}{c}\int\limits_{0}^{c}f(x)\,dx;
+    </me>
+    <me>
+      a_{n}= \frac{2}{c}\int\limits_{0}^{c} f(x) \cos (\frac{n\pi x}{c}) \,dx; 
+    </me>
+    <me>
+      b_{n}= \frac{2}{c}\int\limits_{0}^{c} f(x) \sin (\frac{n\pi x}{c}) \,dx
+    </me> 
+    </p>
+</subsubsection>
+ </subsection>
+
+
+  </section>
+

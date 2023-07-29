@@ -1,0 +1,733 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_sixth-ftrans" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Dirac Delta Function</title>
+  <introduction>
+   <p>
+    <idx><h>Dirac Delta function</h></idx> 
+    The Dirac delta function or simply, delta function or impulse function, is a mathematical 
+    function that is defined to be zero everywhere except at a single point, 
+    usually at the origin, where it is infinitely tall and integrates to one over 
+    an infinitesimally small interval. In order to deal with an impulsive force, 
+    which is a very large force acting for a short interval of time, 
+    and that of a load acting at a point of a beam which generates a very large 
+    pressure over a very small area, Dirac introduced this function in mechanics, 
+    called the Dirac Delta Function. This function is utilized 
+    to express physical quantities that are defined as a distinct point in time 
+    or in space as quantities which are distributed throughout time or space. 
+    This function is widely used in quantum mechanics and boundary values problems 
+    in mathematical physics.  
+    </p>
+   <p>
+    The Dirac delta function is denoted by 
+    <men xml:id="eqn-dirac1">
+      	\delta(x) = \begin{cases}
+			0, \quad \text{if} \quad   x \neq 0\\
+			\infty, \quad \text{if} \quad   x = 0
+			\end{cases}\\
+    </men>
+    together with the condition that 
+    <me>
+       \int\limits_{-\infty}^{\infty}\delta(x)\,dx = 1
+    </me>
+    It is clear that <m>\delta(x)</m> is a function which is very large in the neighbourhood 
+    of the point <m>x=0</m> but is zero outside a very small interval surrounding the origin. 
+    <m>\delta(x)</m> may vary in this interval in an arbitrary manner without making its 
+    oscillations indefinitely large.
+    </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-dirac_prop">
+  <title>Properties of Delta functions</title>
+    <ol>
+      <li>
+        <p>
+        If <m>f(x)</m> is continuous in a certain interval which includes the origin, then 
+        </p>
+        <ol marker ="a.">
+          <li>
+            <p>
+            <me>
+              \int\limits_{-\infty}^{\infty}f(x)\delta(x)\,dx = f(0)
+            </me>
+            </p>
+          </li>
+          <li>
+            <p>
+            <me>
+              \int\limits_{-\infty}^{\infty}f(x)\delta(x-a)\,dx = f(a)
+            </me>
+            </p>
+            </li>
+            <li>
+              <p>
+              <me>
+                \int\limits_{-\infty}^{\infty}f(x)\delta(a-x)\,dx = f(a)
+              </me>
+              </p>
+              </li>
+        </ol>
+      </li>
+      <li>
+        <p>
+        <me>
+          \delta(-x)=\delta(x)
+        </me>
+        </p>
+        </li>
+        <li>
+          <p>
+          <me>
+            \delta(ax) = \frac{1}{a}\delta(x),  \quad a \gt 0
+          </me>
+          </p>
+          </li>
+    </ol>
+   
+ </subsection>
+
+<subsection xml:id="subsec-fourier_trans">
+  <title>Fourier Transforms</title>
+  <introduction>
+  <p> <idx>Fourier transforms</idx>
+    The Fourier transform is a mathematical tool used to analyze functions and signals, 
+    particularly in the field of signal processing. It decomposes a function of time, <m>f(t)</m>, 
+    into its frequency components <m>F(\omega)</m>. The Fourier transform allows us to 
+    represent a function in terms of its constituent frequencies. <em>It is useful in finding 
+    the solution of partial differential equation with boundary value conditions.</em> 
+    The Fourier transform can also be used to transform functions from one spatial domain to another. 
+    In particular, the Fourier transform can convert a function from the <em>spatial domain</em> 
+    to the <em>wavevector domain</em>, which is analogous to the frequency domain. 
+    When considering functions in multiple dimensions, such as functions of 
+    space variables, the Fourier transform can be extended to perform spatial 
+    transformations. For instance, in one dimension, if we have a function <m>f(x) </m> 
+    defined in the spatial domain, its Fourier transform <m> F(k) </m> is given by:
+    
+    <me>
+      \mathscr{F}\{f(x)\}=F(k) = \int\limits_{-\infty}^{\infty}f(x)e^{ikx}\,dx
+    </me>
+and inverse Fourier Transform is 
+<me>
+  f(x) = \mathscr{F}^{-1}\{f(k)\} =  \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}f(k)e^{-ikx}\,dk.
+</me>
+The Fourier transform of a function in the spatial domain provides information 
+about the spatial frequencies present in the function. It allows us to analyze 
+the spatial components of a function, study diffraction patterns, analyze images, 
+and perform various other spatial domain operations.
+    </p>
+ 
+  </introduction>
+
+    <subsubsection xml:id="subsubsec-fourier_inttrans">
+      <title>Fourier Integral Theorem</title>
+      <p>
+        <idx><h>Fourier integral</h></idx> 
+        If the function <m>f(x)</m> satisfies the Dritchlet conditions in every 
+        interval of <m>-l \leq x \leq l</m> and the integration 
+        <me>
+          \int\limits_{-\infty}^{\infty}\mid f(x)\mid\,dk
+        </me>
+  must be convergent i.e., the function is absolutely integrable in the interval of 
+  <m>-\infty \lt x \lt \infty</m>, then 
+  <me>
+    f(x) = \frac{1}{2\pi}\int\limits_{p=-\infty}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)\cos p(t-x)\,dp \,dt.
+  </me>
+  The integral on right hand side is then called Fourier integral of <m>f(x)</m>.
+        </p>
+        <proof>
+          <p>
+            Fourier series of a function <m>f(x)</m> in interval <m>(-c,c)</m> is given by 
+            <men xml:id="eqn-fint_trans1">
+             f(x) = \frac{a_{o}}{2}+\sum\limits_{n=1}^{\infty}a_{n}\cos \left(\frac{n\pi x}{c}\right)+b_{n}\sin \left(\frac{n\pi x}{c}\right)
+            </men>
+            <me>
+               = \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt + \sum\limits_{n=1}^{\infty}\frac{1}{c}\int\limits_{-c}^{c}f(t)\cos \left(\frac{n\pi t}{c}\right)\cos \left(\frac{n\pi x}{c}\right)\,dt
+            </me>
+            <me>
+               + \sum\limits_{n=1}^{\infty}\frac{1}{c}\int\limits_{-c}^{c}f(t)\sin \left(\frac{n\pi t}{c}\right)\sin \left(\frac{n\pi x}{c}\right)\,dt 
+            </me>
+            
+            <me>
+               =  \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt+ \frac{1}{c}\int\limits_{-c}^{c}f(t)\left[\sum\limits_{n=1}^{\infty}\cos \frac{n\pi (t-x)}{c}\right]\,dt 	  
+            </me>
+            
+            <men xml:id="eqn-fint_trans2">
+		    =\frac{1}{2c}\int\limits_{-c}^{c}f(t)\left[1+2\sum\limits_{n=1}^{\infty}\cos \frac{n\pi (t-x)}{c}\right]\,dt
+            </men>
+          </p>
+          <p>
+            since cosine functions are even function, we have <m>\cos (-\theta) = \cos \theta</m>. 
+            Hence the expression 
+            <me>
+              1+2\sum\limits_{n=1}^{\infty}\cos \frac{n\pi (t-x)}{c} = 1+\sum\limits_{n=1}^{\infty}\left\{\cos \frac{n\pi (t-x)}{c}+\cos \frac{-n\pi (t-x)}{c}\right\}
+            </me>
+            <me>
+              = 1+ \sum\limits_{n=-\infty}^{\infty}\left\{\cos \frac{n\pi (t-x)}{c}\right\}
+            </me>
+            <me>
+              \therefore f(x) = \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt + \frac{1}{2\pi}\int\limits_{-c}^{c}f(t)\left[\sum\limits_{n=-\infty}^{\infty}\left\{\frac{\pi}{c}\cos \frac{n\pi (t-x)}{c}\right\}\right]\,dt 
+            </me>
+             </p>
+             <p>
+              Now assume that <m>c</m> increases indefinitely and making use of definition 
+              of integral as a limit of sum, we can write -
+              <me>
+                \frac{n\pi}{c}=p \quad  \text{and}\quad \frac{\pi}{c}=\frac{p}{n}= \,dp
+              </me>
+              <me>
+                \therefore  \quad \lim\limits_{c\to \infty}\left[\frac{\pi}{c} \sum\limits_{n=-\infty}^{\infty}\cos \frac{n\pi (t-x)}{c}\right] = \int\limits_{-\infty}^{\infty}\cos p(t-x)\,dp
+              </me>
+              and 
+              <men xml:id="eqn-fint_trans3">
+                f(x) = 0+ \frac{1}{2\pi} \int\limits_{-\infty}^{\infty} f(t)\,dt\int\limits_{-\infty}^{\infty}\cos p(t-x)\,dp
+              </men>
+                here  
+                <me>
+                  \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt = 0
+                </me>
+                at  <m>c\rightarrow \infty</m>  and making use of the fact 
+                <me>
+                  \int\limits_{-\infty}^{\infty} |f(x)|\,dx \quad \text{ is convergent. }
+                </me>
+               
+                <men xml:id="eqn-fint_trans4">
+                 f(x) = \frac{1}{2\pi}\int\limits_{p=-\infty}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)\cos p(t-x)\,dp \,dt
+                </men>
+              which is known as Fourier integral.
+              </p>
+        </proof>
+    </subsubsection>
+
+  <subsubsection xml:id="subsubsec-fint_forms">
+    <title>Different Forms of Fourier Integral.</title>
+    <p> Since, 
+      <me>
+        \int\limits_{-\infty}^{\infty}\cos p(t-x)\,dp = 2\int\limits_{0}^{\infty}\cos p(t-x)\,dp
+      </me>
+        therefore from equation <xref ref="eqn-fint_trans4"/>,  we have 
+        <men xml:id="eqn-fint_trans5">
+           f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)\cos p(t-x)\,dp\,dt
+        </men> 
+      </p>
+      <paragraphs>
+        <title>Cosine Form</title>
+        <p>
+          Taking
+          <me>
+             \mathcal{A}(p) = \int\limits_{-\infty}^{\infty}f(t)\cos pt\,dt
+          </me>
+          and
+          <me>
+             \mathcal{B}(p) = \int\limits_{-\infty}^{\infty}f(t)\sin pt\,dt
+          </me>
+          we obtain, 
+          <men xml:id="eqn-fint_trans6">
+            f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\left[\mathcal{A}(p)\cos px + \mathcal{B}(p)\sin px\right]\,dp
+          </men>
+          </p>
+          <p>
+            Let <m>f(t)</m> be an even function of <m>t</m> so that <m>f(t) =f(-t)</m>, 
+            then <m>f(t)\cos pt</m> is even and <m>f(t)\sin pt</m> is odd function of <m>t</m>. 
+            Consequently,
+            <me>
+              \mathcal{A}(p) = 2\int\limits_{0}^{\infty}f(t)\cos pt\,dt
+            </me>
+            and 
+            <me>
+              \mathcal{B}(p) = 0.
+            </me>
+  Putting these values in equation <xref ref="eqn-fint_trans6"/>, we get -
+  <me>
+    f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\left[\mathcal{A}(p)\cos px +0.\sin px\right]\,dp =  \frac{2}{\pi}\int\limits_{0}^{\infty}\int\limits_{0}^{\infty}f(t)\cos pt\cos px\,dp\,dt
+  </me>
+which is the required form of Fourier Cosine Integral.
+            </p>
+      </paragraphs>
+
+    <paragraphs>
+      <title>Sine Form</title>
+      <p>
+        Let <m>f(t)</m> be an odd function of <m>t</m> so that <m>f(t) = -f(t)</m>, then 
+        <m>f(t)\cos pt</m> is an odd and <m>f(t)\sin pt</m> is an even function of <m>t</m>. 
+        Consequently,
+        <me>
+          \mathcal{A}(p) = 0
+        </me> 
+        and 
+        <me>
+          \mathcal{B}(p) = 2\int\limits_{0}^{\infty}f(t)\sin pt\,dt.
+        </me>
+         putting these values in equation <xref ref="eqn-fint_trans6"/>, we get -
+ <me>
+  f(x) = \frac{2}{\pi}\int\limits_{0}^{\infty}\int\limits_{0}^{\infty}f(t)\sin pt\sin px\,dp\,dt
+ </me>
+which is the required form of Fourier Sine Integral.
+        </p>
+    </paragraphs>
+
+  <paragraphs>
+    <title>Exponential Form</title>
+    <p>
+      <me>
+        f(x) = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}e^{ipx}\,dp\,dt
+      </me>
+      </p>
+      <proof>
+        <p>
+          From Fourier integral formula 
+          <me>
+            f(x) = \frac{1}{\pi}\int\limits_{p=0}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)\cos p(t-x)\,dp\,dt
+          </me>
+          <me>
+            =\frac{1}{2\pi}\int\limits_{p=0}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)\left[e^{-ip(t-x)}+e^{ip(t-x)}\right]\,dp\,dt
+          </me>
+ <me>
+  =\frac{1}{2\pi}\int\limits_{p=0}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)	\left[e^{-ipt}.e^{ipx}+e^{ipt}e^{-ipx}\right]\,dp\,dt  
+ </me>
+ <me>
+  =\frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt+\frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}e^{ipt}e^{-ipx}\,(-dp)\,dt
+ </me>
+        </p>
+        <p>
+          Putting <m>p=-p'</m> in the second integral, we get -
+          <me>
+            f(x) = \frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt+\frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}e^{-ip' t}e^{ip' x}\,(-dp')\,dt
+          </me>
+          or,
+          <me>
+            f(x) = \frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt+\frac{1}{2\pi}\int\limits_{-\infty}^{0}\int\limits_{-\infty}^{\infty}e^{-ipt}e^{ipx}\,dp\,dt
+          </me>
+ (on dropping primes)
+ <men xml:id="eqn-fint_trans7">
+  f(x) = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt
+ </men>
+          </p>
+         
+          <p>
+             <term>Note:</term>  putting <m>p=-p'</m>, in the last integral, we get -
+             <men xml:id="eqn-fint_trans8">
+              f(x) = \frac{1}{2\pi}\int\limits_{\infty}^{-\infty}\int\limits_{-\infty}^{\infty}f(t)e^{ip' t}.e^{-ip' x}\,(-dp)\,dt
+             </men>
+from equations <xref ref="eqn-fint_trans7"/> and <xref ref="eqn-fint_trans8"/>, 
+it is clear that the negative sign in the exponent <m>(-ipt)</m> can be shifted to <m>(ipx)</m> 
+without effecting the value of integral. Thus equation <xref ref="eqn-fint_trans8"/> is 
+an alternate form to equation <xref ref="eqn-fint_trans7"/>. In the complex Fourier integral, 
+<me>
+  f(x) = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}e^{+ipx}\,dp \int\limits_{-\infty}^{\infty}f(t)e^{-ipt}\,dt;
+</me>
+if we put 
+<me>
+  \int\limits_{-\infty}^{\infty}e^{-ipt}\,dt = F(p)
+</me>
+ then, 
+ <me>
+  f(x) =  \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}e^{+ipx}F(p)\,dp
+ </me>      
+where <m>f(x)</m> is called Inverse Fourier Transform of <m>F(p)</m> and <m>F(p)</m> is 
+called Fourier Transform of <m>f(x)</m>. 
+            </p>
+      </proof>
+  </paragraphs>
+  </subsubsection>
+</subsection>
+
+<subsection xml:id="subsec-rayleigh_theorm">
+  <title>Parseval's Indentity for Fourier Transform.  (Rayleigh's Theorem)</title>
+  <p>
+   Parseval's identities are the relationship between Fourier coefficients and 
+   their respective functions. If <m>F(k)</m> and <m>G^{*}(k)</m> are complex Fourier transforms 
+   of <m>f(x)</m>  and <m>g^{*}(x)</m> respectively, then 
+    </p>
+    <ol marker="I.">
+      <li>
+        <p>
+          <me>
+            \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}F(k)G^{*}(k)\,dk = \int\limits_{-\infty}^{\infty}f(x)\left\{g^{*}(x)\right\}\,dx 
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <me>
+            \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}|F(k)|^{2}\,dk = \int\limits_{-\infty}^{\infty}|f(x)|^{2}\,dx
+          </me>
+          where * represents the complex conjugate.
+        </p>
+      </li>
+    </ol>
+    <proof>
+      <p>
+        We have from the Inverse Fourier Transform 
+        <men xml:id="eqn-rayleigh1">
+        g(x)=\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}G(k)e^{+ikx}\,dk   
+        </men>
+taking complex conjugate of both sides of equation <xref ref="eqn-rayleigh1"/>, we get -	
+<men xml:id="eqn-rayleigh2">
+  g^{*}(x)=\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}G^{*}(k)e^{-ikx}\,dk 
+</men>
+but,
+<me>
+  \int\limits_{-\infty}^{\infty}f(x)g^{*}(x)\,dx =\int\limits_{-\infty}^{\infty}f(x)\left\{\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}G^{*}(k)e^{-ikx}\,dk\right\}\,dx 
+</me>
+<me>
+  =\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}f(x)G^{*}(k)e^{-ikx}\,dx\,dk
+</me>
+  (on changing their order of integration)
+  <me>
+    =  \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}G^{*}(k)\,dk \left[\int\limits_{-\infty}^{\infty}f(x)e^{-ikx}\,dx\right] 
+  </me>
+  <me>
+    =  \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}\mathcal{G}^{*}(k)\,dk \{F(k)\} 
+  </me>
+  <me>
+    =   \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}F(k)G^{*}(k)\,dk.
+  </me>
+      </p>
+      <p>
+        Again, put <m>g(x) = f(x)</m> in the above expression, we get -
+        <me>
+          \int\limits_{-\infty}^{\infty}f(x)f^{*}(x)\,dx = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}F(k)F^{*}(k)\,dk
+        </me>
+        or,
+        <me>
+          \int\limits_{-\infty}^{\infty}|f(x)|^{2}\,dx = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}|F(k)|^{2}\,dk
+        </me>
+        </p>
+        <p>
+          <term>Note:</term>  Similarly, we can prove the following results: 
+          <ol marker ="i.">
+            <li>
+              <me>
+                \frac{2}{\pi}\int\limits_{0}^{\infty}F_{s}(k)\mathcal{G}_{s}(k)\,dk =  \int\limits_{0}^{\infty}f(x)g(x)\,dx
+              </me>
+            </li>
+            <li>
+              <me>
+                \frac{2}{\pi}\int\limits_{0}^{\infty}|F_{s}(k)|^{2}\,dk =  \int\limits_{0}^{\infty}|f(x)|^{2}\,dx
+              </me>
+              </li>
+              <li>
+                <me>
+                  \frac{2}{\pi}\int\limits_{0}^{\infty}F_{c}(k)\mathcal{G}_{c}(k)\,dk =  \int\limits_{0}^{\infty}f(x)g(x)\,dx
+                </me>
+                </li>
+                <li>
+                  <me>
+                   \frac{2}{\pi}\int\limits_{0}^{\infty}|F_{c}(k)|^{2}\,dk =  \int\limits_{0}^{\infty}|f(x)|^{2}\,dx 
+                  </me>
+                  </li>
+          </ol>
+          </p>
+    </proof>
+</subsection>
+
+<subsection xml:id="subsec-fsine_trans">
+  <title>The (Infinite) Fourier Sine Transform of <m>\mathcal{F}(k)</m></title>
+  <p>
+    If <me>
+       F_{s}(k) = \mathscr{F}_{s}\{f(x)\} = \int\limits_{0}^{\infty}f(x)\sin kx \, dx 
+    </me>
+    then <m>F_{s}(k)</m> is called the Fourier sine transform of <m>f(x)</m> and if 
+    <me>
+      f(x) = \mathscr{F}^{-1}_{s}\{F_{s}(k)\} =\frac{2}{\pi}\int\limits_{0}^{\infty}F_{s}(k)\sin kx \, dk
+    </me>
+    is called the inverse Fourier sine transform of <m>F_{s}(k)</m>. 
+    Also, Fourier Cosine Transform and Inverse Fourier Cosine Transform are given as  
+    <me>
+      F_{c}(k) = \mathscr{F}_{c}\{f(x)\} = \int\limits_{0}^{\infty}f(x)\cos kx \, dx
+    </me>
+      and 
+      <me>
+        f(x) = \mathscr{F}^{-1}_{c}\{F_{c}(k)\} =\frac{2}{\pi}\int\limits_{0}^{\infty}F_{c}(k)\cos kx \, dk.
+      </me>
+    </p>
+</subsection>
+
+<subsection xml:id="subsec-imprt_intgs">
+  <title>Some important Integrals:</title>
+  <p>
+    <idx>useful integrals</idx> 
+    <ol>
+      <li>
+        <me>
+          \int\limits_{0}^{\infty}\frac{\sin ax}{x}\,dx = \frac{\pi}{2},  \quad  a \gt 0
+        </me>
+      </li>
+      <li>
+        <me>
+         \int\limits_{0}^{\infty}e^{-ax} \sin bx \,dx = \frac{b}{a^{2}+b^{2}}
+        </me>
+        </li>
+        <li>
+          <me>
+            \int\limits_{0}^{\infty}e^{-ax} \cos bx \,dx = \frac{a}{a^{2}+b^{2}}
+          </me>
+          </li>
+          <li>
+            <me>
+		\int\limits_{0}^{\infty}e^{-x^{2}}\,dx = \frac{\sqrt{\pi}}{2}
+            </me>
+            </li>
+            <li>
+              <me>
+               \int\limits_{-\infty}^{\infty}e^{-x^{2}}\,dx = 1
+              </me>
+              </li>
+              <li>
+                <me>
+                 \Gamma_{n}=a^{n}\int\limits_{0}^{\infty}e^{-ax}x^{n-1}\,dx, \quad \text{the Gamma function.}
+                </me>
+                </li>
+    </ol>
+    </p>
+</subsection>
+
+<subsection xml:id="subsec-Ftrans_prop">
+  <title>Properties of Fourier Transforms</title>
+  <ol>
+    <li>
+      <p>
+        Linear Property: 
+        If <m>c_{1}</m> and <m>c_{2}</m> are arbitrary constants, then 
+        <me>
+          \mathscr{F}\{c_{1}f(x) \pm c_{2}g(x)\}= c_{1}\mathscr{F}\{f(x)\} \pm c_{2}\mathscr{F}\{g(x)\}
+        </me>
+      </p>
+     
+        <proof>
+           <p>
+          we have 
+          <me>
+            \mathscr{F}\{c_{1}f(x) \pm c_{2}g(x)\}= \int\limits_{-\infty}^{\infty}e^{-isx}\left[c_{1}f(x) \pm c_{2}g(x)\right]\,dx
+          </me>
+          <me>
+           =\int\limits_{-\infty}^{\infty}c_{1}e^{-isx}f(x)\,dx \pm \int\limits_{-\infty}^{\infty}c_{2}e^{-isx}g(x)\,dx =c_{1}\mathscr{F}\{f(x)\} \pm c_{2}\mathscr{F}\{g(x)\} 
+          </me>
+            </p>
+        </proof>
+    </li>
+    <li>
+      <p>
+        Change of  Scale Property:
+      </p>
+      <ol marker ="a.">
+        <li>
+          <p>
+            If <m>F(s)</m> is the Fourier transform of <m>f(x)</m>, then  
+            <m>\frac{1}{a}F\left(\frac{s}{a}\right)</m> is the Fourier transform of <m>f(ax)</m>.
+          </p>
+          <proof>
+            <p>
+             We have  
+             <me>
+              \mathscr{F}\{f(x)\} =F(s) =  \int\limits_{-\infty}^{\infty} e^{-isx}f(x) \,dx 
+             </me>
+             <me>
+              \therefore  \mathscr{F}\{f(ax)\}=	\int\limits_{-\infty}^{\infty} e^{-isx}f(ax) \,dx = \int\limits_{-\infty}^{\infty} e^{-ist/a}f(t) \,dt/a 
+             </me>
+             <me>
+              = \frac{1}{a}\int\limits_{-\infty}^{\infty} e^{(-is/a)t}f(t) \,dt = \frac{1}{a}F\left(\frac{s}{a}\right) 
+             </me>
+              [put <m>ax=t</m>]
+            </p>
+          </proof>
+        </li>
+        <li>
+          <p>
+            <m>F_{s}(s)</m> is the Fourier sine transform of <m>f(x)</m>, 
+            then Fourier sine transform of <m>f\left(\frac{x}{a}\right)</m> is <m>aF_{s}(as)</m>.
+          </p>
+          <proof>
+            <p>
+              <me>
+                F_{s}\{f\left(\frac{x}{a}\right)\}= \int\limits_{0}^{\infty}f\left(\frac{x}{a}\right)\sin sx \,dx = \int\limits_{0}^{\infty}f(t) \sin (sat)a\,dt
+              </me>
+              <me>
+                =\int\limits_{0}^{\infty}af(t) \sin (sat)\,dt = aF_{s}(as)
+              </me>
+              put <m>\frac{x}{a}=t</m>]
+            </p>
+          </proof>
+        </li>
+        <li>
+          <p>
+            <me>
+              F_{c}\{f\left(\frac{x}{a}\right)\}= aF_{c}(as)
+            </me>
+             [We can easily proved this as above].
+          </p>
+        </li>
+      </ol>
+    </li>
+    <li>
+      <p>
+        Shifting Property: If <m>F(s)</m> is the Fourier transform 
+        of <m>f(x)</m>, then <m>F(s)e^{-iax}</m> is the Fourier transform of <m>f(x-a)</m>.
+      </p>
+      <proof>
+        <p>
+          <me>
+            \mathscr{F}\{f(x-a)\} = \int\limits_{-\infty}^{\infty}f(x-a)e^{-isx} \,dx = \int\limits_{-\infty}^{\infty}f(t)e^{-is(a+t)} \,dt   
+          </me>
+            put, <m>[x-a=t]</m>
+            <me>
+              =	\int\limits_{-\infty}^{\infty} e^{-isa}.e^{-ist}f(t) \,dt 
+            </me>
+            <me>
+              = e^{-isa}.\int\limits_{-\infty}^{\infty} e^{-ist}f(t) \,dt = e^{-isa}F(s).
+            </me>
+        </p>
+      </proof>
+    </li>
+  </ol>
+</subsection>
+
+<subsection xml:id="subsec-ftrans_deriv">
+  <title>The Fourier Tansform of Derivative of <m>f(x)</m></title>
+  <p>
+    The Fourier transform of derivative of <m>f(x)</m> is <m>isF(s)</m>, where 
+    <m>F(s)</m> is the Fourier transform of <m>f(x)</m>.
+    </p>
+    <proof>
+      <p>
+        We have	
+        <me>
+          \mathscr{F}\{f(x)\} = \int\limits_{-\infty}^{\infty}e^{-isx}f(x) \,dx
+        </me>
+Now replace <m>f(x)</m> by <m>f'(x)</m> we get - 
+<me>
+  	\mathscr{F}\{f'(x)\} = \int\limits_{-\infty}^{\infty}e^{-isx}f'(x) \,dx 
+</me>
+<me>
+  = \left.e^{-isx}f(x)\right\vert_{-\infty}^{\infty} + is \int\limits_{-\infty}^{\infty}f(x)e^{-isx}\,dx 
+</me>
+<me>
+  = 0+is\mathscr{F}\{f(x)\}.
+</me>
+[<m>\because f(x) \rightarrow 0 </m> as <m>x\rightarrow \pm \infty</m>]
+   	    	
+Also, generalising these for <m>n^{th}</m> derivatives, we get -
+<me>
+  \mathscr{F}\{f^{n}(x)\}   =  \mathscr{F}\{\frac{d^{n}f(x)}{\,dx^{n}}\}
+</me>
+<me>
+  = \int\limits_{-\infty}^{\infty}\frac{d^{n}f(x)}{\,dx^{n}}e^{-isx}\,dx
+</me>
+<me>
+  =  \left[\frac{d^{n-1}f(x)}{\,dx^{n-1}}e^{-isx}\right]_{-\infty}^{\infty} - \int\limits_{-\infty}^{\infty}\frac{d^{n-1}f(x)}{\,dx^{n-1}}e^{-isx}(-is)\,dx
+</me>
+<me>
+  =0+is\int\limits_{-\infty}^{\infty}\frac{d^{n-1}f(x)}{\,dx^{n-1}}e^{-isx}(-is)\,dx = (is)^{1}\mathscr{F}\{\frac{d^{n-1}f(x)}{\,dx^{n-1}}\}
+</me>
+      </p> 
+      <p>
+        Similarly, we can show that 
+        <me>
+          \mathscr{F}\{\frac{d^{n}f(x)}{\,dx^{n}}\} = (is)^{n}\mathscr{F}\{f(x)\} = (is)^{n} F(s)
+        </me> 
+        </p>
+    </proof>
+</subsection>
+
+<subsection xml:id="subsec-Fconvl">
+  <title>Convolution Theorem</title>
+  <p>
+    Convolution theorem is a mathematical operation widely used in communication physics. 
+    If <m>F(s)</m> and <m>G(s)</m> are Fourier transform of two functions 
+    <m>f(x)</m> and <m>g(x)</m> respectively, then Fourier transform of the convolution 
+    (coiled) of <m>f(x)</m> and <m>g(x)</m> is the product of their Fourier transforms, 
+    i.e.  
+    <me>
+      \mathscr{F}	\{f(x) * g(x)\} = F(s).G(s) 
+    </me>
+   where the astric <m>($*$)</m> denotes convolution (not a complex conjugate).
+    </p>
+    <proof>
+      <p>
+        The convolution means 
+        <me>
+          f(x)*g(x) = \int\limits_{-\infty}^{\infty} f(\xi)g(x-\xi)\,d\xi = \int\limits_{-\infty}^{\infty} f(x-\xi)g(\xi)\,d\xi
+        </me>
+ derive from the Dirac Delta function  
+ <me>
+  f(\alpha) = \int\limits_{-\infty}^{\infty}\delta(\alpha-x)f(x)\,dx. 
+ </me>
+ <me>
+   \mathscr{F}	\{f(x) * g(x)\} = \int\limits_{-\infty}^{\infty}e^{-isx}\{f(x) * g(x)\}\,dx
+ </me>
+ <me>
+  =\int\limits_{x=-\infty}^{\infty}\frac{1}{2\pi}\left[ \int\limits_{\xi=-\infty}^{\infty}f(\xi)g(x-\xi)\,d\xi\right] e^{-isx}\,dx
+ </me>
+  (on changing the order of integration)  
+ <me>
+  =\int\limits_{\xi=-\infty}^{\infty}\left[f(\xi)\int\limits_{x=-\infty}^{\infty}g(x-\xi) e^{-isx}\,dx\right]\,d\xi
+ </me>
+ <me>
+  =\int\limits_{\xi=-\infty}^{\infty}f(\xi)\left[\int\limits_{x=-\infty}^{\infty}g(x-\xi) e^{-is(x-\xi)}\,d(x-\xi)\right]e^{-is\xi}\,d\xi;    \quad  x-\xi=\lambda	
+ </me>
+ <me>
+  =\int\limits_{\xi=-\infty}^{\infty} f(\xi)e^{-is\xi}\,d\xi\left[ \int\limits_{\lambda=-\infty}^{\infty}g(\lambda)e^{-is\lambda}\,d\lambda\right]
+ </me>
+ <me>
+  =\int\limits_{\xi=-\infty}^{\infty} f(\xi)e^{-is\xi}\,d\xi\cdot\mathscr{F}\{g(\lambda)\}
+ </me>
+ <me>
+  =\mathscr{F}\{f(\xi\}\cdot \mathscr{F}\{g(\lambda)\} = F(s).G(s).
+ </me>
+ If <m>x</m> is time and <m>s</m> is frequency then convolution of two signal in time domain 
+ corresponds to the multiplication of their Fourier transform in frequency domain.
+      </p>
+    </proof>
+</subsection>
+
+<subsection xml:id="subsec-infnt_FT">
+  <title>Choice of infinite Sine or Cosine Transforms to Boundary Value Problems</title>
+  <p>
+    The choice of sine or cosine transform is decided by the form of boundary conditions.
+    <me>
+      \mathscr{F}_{c}\{\frac{\partial^{2}u}{\partial x^{2}}\} = \int\limits_{0}^{\infty}\frac{\partial^{2}u}{\partial x^{2}}\cos sx\,dx = \left[\frac{\partial u}{\partial x}\cos sx\right]_{0}^{\infty} +s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\sin sx\,dx
+    </me>
+    <me>
+      =\left(-\frac{\partial u}{\partial x}\right)_{x=0}+s\left[u\sin sx\right]_{0}^{\infty} -s^{2}\int\limits_{0}^{\infty}u\cos sx\,dx \quad [\text{if}\quad \lim\limits_{x \to \infty}\frac{\partial u}{\partial x}=0.]
+    </me>
+    <men xml:id="eqn-infnt_FT1">
+       \therefore \quad  \mathscr{F}_{c}\{\frac{\partial^{2}u}{\partial x^{2}}\} 
+    = \left(-\frac{\partial u}{\partial x}\right)_{x=0} -s^{2}\bar{u_{c}} 
+    </men>
+    If 
+    <me>
+      \lim\limits_{x \to \infty}u=0 \quad \text{and}\quad \int\limits_{0}^{\infty}u\cos sx\,dx = \bar{u_{c}}=\mathscr{F}_{c}\{u\}
+    </me>
+    also,
+    <me>
+       \mathscr{F}_{s}\{\frac{\partial^{2}u}{\partial x^{2}}\} = \int\limits_{0}^{\infty}\frac{\partial^{2}u}{\partial x^{2}}\sin sx \,dx 
+    </me>
+    <me>
+      = \left[\frac{\partial^{2}u}{\partial x^{2}}\sin sx\right]_{0}^{\infty}-s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\cos sx\,dx 
+    </me>
+    <me>
+      =-s\left[\left.u\cos sx\right\vert_{0}^{\infty}+s\int\limits_{0}^{\infty}u\sin sx\,dx\right]
+    </me>
+    <men xml:id="eqn-infnt_FT2">
+      \therefore  \mathscr{F}_{s}\{\frac{\partial^{2}u}{\partial x^{2}}\}=s(u)_{x=0}-s^{2}\bar{u_{s}}
+    </men>
+if <me>
+  \lim\limits_{x \to \infty}u =0\quad \text{and}\quad \int\limits_{0}^{\infty}u\sin sx\,dx = \bar{u_{s}}.
+</me>
+From equations <xref ref="eqn-infnt_FT1"/> and <xref ref="eqn-infnt_FT2"/>, it 
+follows that if we want to remove the term <m>\frac{\partial^{2}u}{\partial x^{2}}</m> 
+from a given differential equation then we require 
+<ol marker ="i.">
+  <li>
+      <m>\left(\frac{\partial u}{\partial x}\right)_{x=0}</m> in cosine transform and
+  </li> 
+  <li>
+    <m>(u)_{x=0}</m> in sine transform.
+    </li>
+</ol>
+    </p>
+</subsection>
+
+
+  </section>
+

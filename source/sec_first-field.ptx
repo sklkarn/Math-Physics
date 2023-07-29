@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-field" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Field</title>
+  <introduction>
+       <p>
+        A physical quantity which has one or more definite values at each point of a region of 
+        space is said to be a point function in that region, and the region in which the physical 
+        quantity is defined is called a field. There are two types of point functions, the scalar 
+        point function and the vector point function. The physical quantities which are 
+        non - directional can be expressed at each point of a region of space by a scalar point 
+        function, <m>\phi</m>. For example, the density of a body and its temperature at any instant 
+        of time are scalar point functions, and the region is called a scalar field. If the physical 
+        quantities are directional then they can be expressed at each point of a region of space 
+        by a vector point function, <m>\vec{V}</m>, e.g., the velocity of a moving fluid at 
+        any instant, the distribution of electric or magnetic field intensity at a point of 
+        space are vector point functions, and the region of this space is called a vector field. 
+        If <m>\phi (x,y,z)</m> is a scalar function associated with every point <m>(x,y,z)</m> 
+        of any region in space, then <m>\phi</m>  is called a scalar point function and the 
+        region is defined as a scalar field. Again, if <m>\vec{V}(x,y,z)</m> is a vector 
+        associated with every point <m>(x,y,z)</m> of any region in space, then <m>\vec{V}</m> 
+        is called a vector point function and the region is defined as a vector field. 
+        Remember, the gravitational field is a vector field which expresses the value of force, 
+        and Higg's field is a scalar field which defines the mass or energy of a particle.
+    </p>
+    <p>
+      <term>Level Surfaces:</term> The portion of a scalar field upon which the scalar 
+      function has a fixed value is called a level surface. Isothermal surfaces and 
+      equipotential surfaces are examples of level surfaces for temperature and potential, 
+      respectively.
+    </p>
+    </introduction>
+
+   <subsection xml:id="subsec-gradscf">
+    <title>Gradient of a Scalar Function</title>
+    <introduction>
+      <p>
+      The gradient of a scalar point function <m>\phi</m>  is defined as 
+      <md>
+        <mrow>\text{grad}\phi \amp =\hat{i}\frac{\partial \phi}{\partial x} + \hat{j}\frac{\partial \phi}{\partial y} 
+        + \hat{k}\frac{\partial \phi}{\partial z} = \left(\hat{i}\frac{\partial}{\partial x} + 
+        \hat{j}\frac{\partial}{\partial y} + \hat{k}\frac{\partial}{\partial z}\right)\phi = \vec{\nabla\phi}  </mrow>
+      </md>
+      where an operator <m>\nabla = \hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} 
+      + \hat{k}\frac{\partial}{\partial z}</m> 
+      is known as <m>'Del'</m> operator and read as a gradient or a grad, which is a vector quantity. 
+    </p>
+    </introduction>
+   
+
+<subsubsection xml:id="subsubsec-delphi">
+  <title>Physical Significance of <m>\vec{ \nabla \phi}</m></title>
+
+  <figure xml:id="fig-delphi">
+    <caption></caption>
+    <image source="fig11.png" width ="35%"/>
+</figure>
+  <p>
+    Let <m>S_{1}</m> and <m>S_{2}</m> be two level surfaces having scalar point functions <m>\phi</m> 
+    and <m>\phi+\,d\phi</m> respectively. 
+    The <m>\hat{n}</m> be an unit normal vector at point A and <m>dn</m> be the distance between 
+    the surfaces <m>S_{1}</m>  and <m>S_{2}</m> along <m>\hat{n}</m>.  
+  <men xml:id="eqn-delphi1">
+    \therefore \,dn = \,dr \cos\theta = \hat{n}\cdot \vec{\,dr} 
+  </men>
+  where <m>\theta</m> is the angle between <m>\vec{AC}</m>  and <m>\vec{AB}</m>, 
+  as shown in <xref ref="fig-delphi"/>. Due to  a small vector <m>\vec{dr}</m>  point B and C are very 
+  close to each other. Hence the rate of change of <m>\phi</m> at point A in the direction of 
+  <m>\hat{n}</m>  is  greatest and is equal to <m>\frac{\partial\phi}{\partial n}</m>, 
+  and the total differential, 
+  <men xml:id="eqn-delphi2">
+    \,d\phi = \frac{\partial\phi}{\partial n} \,dn  = \frac{\partial\phi}{\partial n} \hat{n}\cdot \vec{\,dr}              
+  </men>
+  But, if <m>\phi (x,y,z)</m> be a function of three independent variables <m>(x,y,z)</m> 
+  then its total differential <m>\,d\phi</m> is given by 
+  <me>
+    \,d \phi = \frac{\partial\phi}{\partial x} dx + \frac{\partial\phi}{\partial y} dy 
+    + \frac{\partial\phi}{\partial z} dz
+  </me>
+  <men xml:id="eqn-delphi3">
+   \therefore \,d \phi = \left(\hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} 
+   + \hat{k}\frac{\partial}{\partial z}\right)\phi \cdot \left(\hat{i}dx+ \hat{j}dy +\hat{k}dz\right) 
+   = \vec{ \nabla \phi}\cdot \vec{d r} 
+  </men> 
+
+From equations <xref ref="eqn-delphi2"/> and <xref ref="eqn-delphi3"/>, we get -
+<me>
+  \vec{ \nabla \phi}\cdot \vec{d r} = \frac{\partial\phi}{\partial n} \hat{n}\cdot \vec{dr}
+</me>
+<men xml:id="eqn-delphi4">
+  \therefore \quad \vec{ \nabla \phi} = \frac{\partial\phi}{\partial n} \hat{n} 
+</men>
+Hence the gradient of a scalar function <m>\phi</m> is defined as the maximum rate of change 
+of <m>\phi</m> with respect to the space variables and has the direction of that change.
+If <m>\vec{dr}</m> and <m>\vec{ \nabla \phi}</m>  are in the same direction then <m>d\phi
+ = \mid\vec{ \nabla \phi}\mid\cdot \mid\vec{dr}\mid</m>
+is maximum. If <m>\vec{dr}</m> lies on the surface <m>S_{1}</m>, then 
+<m>\,d\phi = \vec{ \nabla \phi}\cdot\vec{dr} = 0</m>, which represents <m>\vec{dr}</m> 
+and <m>\vec{ \nabla \phi}</m>  are perpendicular to each other, i.e., <m>\vec{dr}</m> 
+lies along the direction of tangent on the given surface. Thus <m>\vec{\nabla \phi}</m>  
+is normal to the surface of equation <m>\phi (x,y,z) = constant</m>.
+  </p>
+</subsubsection>
+
+
+  <subsubsection xml:id="subsubsec-dirderv">
+    <title>Directional Derivative</title>
+    <p>
+      If <m>\phi (x,y,z)</m> be a scalar function at point <m>(x,y,z)</m> in space then 
+      <m>\frac{\partial\phi}{\partial x}</m> is the rate of change of <m>\phi</m> at <m>(x,yz)</m> 
+      in the direction of <m>x</m>-axis and is called as the directional derivative of <m>\phi</m> 
+      along <m>x- axis</m>. Similarly, <m>\frac{\partial\phi}{\partial y}</m>  and 
+      <m>\frac{\partial\phi}{\partial z}</m> 
+      are the directional derivative of <m>\phi</m> along <m>y</m>- and <m>z</m>-axes, respectively. 
+      The directional derivative of <m>\phi</m>  at A along AB is defined as 
+      <m>\frac{\partial\phi}{\partial r}</m> such that
+    <me>
+      \frac{\partial\phi}{\partial r} = \frac{\partial\phi}{\partial n} \frac{\partial n}{\partial r} 
+       = \frac{\partial\phi}{\partial n} cos\theta   =  \frac{\partial\phi}{\partial n} \hat{n} \cdot\hat{a} 
+        =  \vec{ \nabla \phi}\cdot \hat{a}
+    </me>
+    where <m>\hat{a}</m> is the unit vector along \textbf{AB}, as shown in <xref ref="fig-delphi"/>. 
+    Hence the directional derivative of function <m>\phi</m> along the given direction is the 
+    projection of a gradient of that function along this direction, i.e., 
+    <me>
+      \frac{\partial\phi}{\partial r}  = \text{projection of}\quad \vec{ \nabla \phi}\quad \text{along}\quad \hat{a}.
+    </me>
+    </p>
+  </subsubsection> 
+
+     </subsection>
+
+
+  <subsection xml:id="subsec-div_vecfunc">
+    <title>Divergence of  a  Vector  Function</title>
+    <introduction>
+       <p>
+      <idx><h>divergence of vector function</h></idx> If <m>\vec{F}=F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}</m> 
+      be the vector point function then divergence of a vector  is defined as 	
+      <me>
+        \,div \vec{F}  =  \vec{\nabla}\cdot\vec{F} = \left(\hat{i}\frac{\partial }{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\cdot \left(F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}\right)  
+      </me>
+     <me>
+      =\left(\frac{\partial F_{1} }{\partial x}+\frac{\partial F_{2}}{\partial y}+\frac{\partial F_{3}}{\partial z}\right).
+    </me>
+    which is a scalar quantity.
+      
+    </p>
+    </introduction>
+   
+    <subsubsection xml:id="subsubsec-signif_diver">
+    <title>Physical Significance of <m>\vec{\bigtriangledown}\cdot\vec{F}</m></title>
+    <figure xml:id="fig-div_vect">
+      <caption></caption>
+      <image source="fig13.png" width ="35%"/>
+  </figure>
+    <p>
+      Let <m>\vec{v}=v_{1}\hat{i}+v_{2}\hat{j}+v_{3}\hat{k}</m> be the velocity of fluid at  
+      point P <m>(x,y,z)</m>. If P be the centre of an  elementary parallelopiped considering 
+       in the moving fluid and <m>\,dx, \,dy, \,dz</m> are the  edges of such element, 
+       then  the  x- component of velocity at point P = <m>v_{x} (x,y,z)</m>, as shown in figure.  
+       The x- component of velocity at the middle of the face ABCD  = <m>v_{x} (x-\frac{dx}{2},y,z)</m>
+       <me>
+        = v_{x} (x,y,z)-\frac{1}{2}\frac{\partial v_{x}}{\partial x} dx 
+       </me>
+       [using Taylor's series, <m>f(x+dx) = f(x)+f'(x)dx+ f"(x)/2 (dx)^{2} +\cdots </m>] </p>
+       <p>
+       Similarly, x- component of velocity at the middle of face EFGH
+       <me>
+        =v_{x} (x+\frac{dx}{2},y,z)	
+         = v_{x}(x,y,z) + \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx.
+       </me>
+       
+       Since the parallelopiped is very small, the value at the middle of face is considered 
+       as the average  over that face. The volume of fluid entering per unit time through the face ABCD
+      =velocity <m>\times</m> area of the face
+      <me>
+        =\left( v_{x} - \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx\right) dy dz 
+      </me>
+      <me>
+        [\because  \frac{volume}{time} = \frac{area\cdot length}{time} = velocity\cdot area]
+      </me>
+      and volume of fluid leaving per unit time through face EFGH 
+      <me>
+        =\left( v_{x} + \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx\right) dy dz. 
+      </me>
+      Therefore, loss in volume of fluid per unit time along x- axis 
+      <me>
+        =\left( v_{x} + \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx\right) dy dz - \left( v_{x} - \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx\right) dy dz = \frac{\partial v_{x}}{\partial x} dx dy dz 
+      </me>
+Similarly, losses in volume per unit time along y- and z- axes, respectively are
+<me>
+  \frac{\partial v_{y}}{\partial y}dx dy dz \hspace{5pt}\text{and} \hspace{5pt} \frac{\partial v_{z}}{\partial z}dx dy dz. 
+</me>
+Hence, total loss in volume per unit time = <m>\frac{\,dV}{\,dt}</m>
+<me>
+  = \left(\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}\right)dx dy dz 
+</me>
+or,  total loss in volume per unit time per unit volume = <m>\frac{1}{\,dV}\frac{\,dV}{\,dt}</m>  
+<me>
+  =\left(\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}\right)  
+</me>
+<me>
+  =\left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\cdot \left(v_{x}\hat{i}+v_{y}\hat{j}+v_{z}\hat{k}\right) = \vec{\nabla}\cdot\vec{v} =  div \vec{v}
+</me>
+The divergence of a vector field at a point gives the rate at which the fluid is diverging 
+from that point per unit volume. If div <m>\vec{v}</m> is positive at a point, then either 
+the fluid is expanding and its density at that point is decreasing with time, 
+or the point is a source of the fluid. If div <m>\vec{v}</m> is negative, 
+then either the fluid is condensing and its density is increasing at that point, 
+or the point is a sink. If the fluid is incompressible, then there is no loss or 
+gain in volume. </p>
+<p>
+  Hence, div <m>\vec{v} =0</m>, and <m>\vec{v}</m> is called a solenoidal vector function.	
+  </p> 
+  </subsubsection>
+
+  </subsection>
+ 
+
+  <subsection xml:id="subsec-curl_vect">
+    <title>Curl of a Vector Function</title>
+    <introduction>
+      <p>
+      <idx><h>curl of vector function</h></idx> If <m>\vec{F}=F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}</m>  be 
+      the vector point function at a point in space then curl of <m>\vec{F}</m> is defined as  
+      <md>
+        <mrow> \,curl\vec{F} \amp = \vec{\nabla}\times \vec{F}</mrow> 
+        <mrow> \amp= \left(\hat{i}\frac{\partial}{\partial x}+ \hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\times \left(F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}\right)  </mrow>
+     <mrow> \amp = {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\F_{1} &amp; F_{2} &amp; F_{3} \end{vmatrix}}</mrow>
+     <mrow> \amp =\hat{i}\left(\frac{\partial F_{3}}{\partial y}-\frac{\partial F_{2}}{\partial z}\right)+\hat{j}\left(\frac{\partial F_{1}}{\partial z}-\frac{\partial F_{3}}{\partial x}\right)+\hat{k}\left(\frac{\partial F_{2}}{\partial x}-\frac{\partial F_{1}}{\partial y}\right) </mrow>
+    </md>
+    which is a vector quantity.
+      </p>
+    </introduction>
+   
+
+<subsubsection xml:id="subsubsec-signif_curl">
+  <title>Physical Significance of <m>\vec{\nabla}\times \vec{F}</m></title>
+  <p>
+    Consider a small rectangular plane area in a region of a non-lamellar vector field. 
+    A field is called a <term>non-lamellar</term> if its line integral around a cloased path is non-zero. 
+    When the rectangular area is placed in the position ABCD, i.e. perpendicular  to  the vector  
+    field <m>\vec{v}</m> as shown in <xref ref="fig-fig14a"/>, then the field is normal to  each  side of  the  
+    rectangle and  hence the line integral  along  all  sides is zero. In  the position of 
+    <m>A_{o}B_{o}C_{o}D_{o}</m>, rectangle is parallel to the field and the line integrals along 
+    <m>B_{o}C_{o}</m> and <m>D_{o}A_{o}</m>  are zero while that along <m>A_{o}B_{o}</m> and 
+    <m>C_{o}D_{o}</m> have finite  values. Thus the line integral around the boundary of the 
+    rectangle has a finite value. The value of a vector field along the upper and lower 
+    edges is assumed to be different in non-lamellar vector fields, the value of the line 
+    integral around a closed path depends upon the orientation of the small area considered 
+    in the region of the vector field. There is a certain orientation of the plane area for 
+    which the line integral of the vector field is maximum. This maximum line integral when 
+    computed for unit area is called the curl of the vector field. It is a vector quantity 
+    directed along the normal to the exploring area. The normal is determined by the right-hand 
+    screw rule. Actually, curl is a measurement of the circulation of vector field around a point. 
+    If a component of vector field is tangentail to the contour, then the curl will be positive; 
+    if the component is opposite to the tangential direction of the contour, then the curl will be 
+    negative; and curl is zero at the center point of contour.
+  </p>
+  <figure>
+    <caption></caption>
+      <sidebyside widths="30% 30%">
+          <figure xml:id="fig-fig14a">
+              <caption></caption>
+              <image source="fig14a.png"/>
+          </figure>
+          <figure xml:id="fig-fig14b">
+              <caption></caption>
+              <image source="fig14b.png"/>
+          </figure>
+        </sidebyside>
+  </figure>
+<p>
+  Let <m>\vec{v}=v_{1}\hat{i}+v_{2}\hat{j}+v_{3}\hat{k}</m> be the vector field at point P(x,y,z). 
+If P be the center of a test area as shown in <xref ref="fig-fig14b"/> and <m>\,dx</m> and <m>\,dy</m> 
+are its sides, then the value of field at the middle of side <m>ab</m>
+<me>
+  = v_{x}\left(x,y-\frac{\,dy}{2},z\right)
+ =v_{x}\left(x,y,z\right)-\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy
+</me>
+the value of field at middle of side <m>cd</m>
+<me>
+  = v_{x}\left(x,y+\frac{\,dy}{2},z\right)=v_{x}\left(x,y,z\right)+\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy 
+</me>
+the value of field at middle of side <m>bc</m>
+<me>
+  = v_{y}\left(x+\frac{\,dx}{2},y,z\right)=v_{y}\left(x,y,z\right)+\frac{1}{2}\frac{\partial v_{y}}{\partial x}\,dx 
+</me>
+the value of field at the middle of side <m>da</m>
+<me>
+  = v_{y}\left(x-\frac{\,dx}{2},y,z\right)=v_{y}\left(x,y,z\right)-\frac{1}{2}\frac{\partial v_{y}}{\partial x}\,dx 
+</me>
+Since the test area is so small that the value of field at the middle of side is taken as an average along that side.
+Therefore, the line integral of field along <m>ab</m> and <m>cd</m>
+<me>
+  =\vec{v}_{ab}\cdot \vec{dx}+\vec{v}_{cd}\cdot \vec{dx} 
+</me>
+<me>
+  =\left[\left(v_{x}-\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy\right)\right] - \left[\left(v_{x}+\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy\right)\right]\,dx  
+</me>
+<me>
+  = -\frac{\partial v_{x}}{\partial y}\,dx\,dy
+</me>
+
+  Similarly, the line integral along <m>bc</m> and  <m>da</m>.
+  <me>
+    =\frac{\partial v_{y}}{\partial x}\,dx\,dy.
+  </me>
+  Therefore, the line integral around the rectangle <m>abcd</m> 
+  <me>
+    = \left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\,dx\,dy = \left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)ds\hat{k}
+  </me>
+  where <m>\,ds</m> is area of a rectangle and <m>\hat{k}</m> gives its direction. 
+  Therefore, line integral per unit area 
+  <me>
+    =\left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\hat{k}.
+  </me>
+  When the rectangle is placed in zx plane and yz plane then the line integral per unit area obtained will be
+  <m>
+    \left(\frac{\partial v_{x}}{\partial z} - \frac{\partial v_{z}}{\partial x}\right)\hat{j},  \quad 
+    \text{and}\quad \left(\frac{\partial v_{z}}{\partial y} - \frac{\partial v_{y}}{\partial z}\right)\hat{i},  \quad \text{ respectively.}
+  </m>
+  Thus, the line integral per unit area through the closed surface 
+  <me>
+    \left(\frac{\partial v_{z}}{\partial y} - \frac{\partial v_{y}}{\partial z}\right)\hat{i} 
+    +\left(\frac{\partial v_{x}}{\partial z} - \frac{\partial v_{z}}{\partial x}\right)\hat{j} 
+    +\left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\hat{k}
+  </me>
+  <me>
+    =  {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+    \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\ 
+    v_{x} &amp; v_{y} &amp; v_{z} \end{vmatrix}}= \,curl\vec{v}. 
+  </me>
+  If <m>\vec{\nabla}\times \vec{v}=0</m>	then vector <m>\vec{v}</m> is called an irrotational vector.
+</p>
+</subsubsection>
+
+  </subsection>
+
+
+</section>
+

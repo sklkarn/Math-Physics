@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_fourth" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+  <exercise>
+    <p>
+       Solve the following differential equations.
+       <ol marker ="A.">
+        <li>
+          <me>
+            \frac{d^{2}y}{dx^{2}}+y= \mathrm{cosec}x
+          </me>
+          <answer>
+            <me>
+              C_{1}\cos x+C_{2}\sin x -x\cos x+\sin x\cdot \log\sin x.
+            </me>
+          </answer>
+        </li>
+        <li>
+          <me>
+            \frac{d^{2}y}{dx^{2}}+4y=4\tan 2x, y(0)=0,y(\frac{\pi}{6})=0.
+          </me>
+          <answer>
+            <me>
+              \frac{1}{\sqrt{3}}\log(2+\sqrt{3})\sin 2x-\cos 2x\log(sec 2x+\tan 2x).
+            </me>
+          </answer>
+        </li>
+        <li>
+          <me>
+            \frac{d^{2}y}{dx^{2}}-2\frac{dy}{dx}+2y=e^{x}\tan x.
+          </me>
+          <answer>
+           <me>
+            e^{x}(C_{1}\cos x+C_{2}\sin x)-e^{x}\cos x\sin x(\sec x+\tan x).
+           </me>
+          </answer>
+          </li>
+       </ol>
+      </p>
+  </exercise>
+
+ <exercise>
+ <p>
+ Solve 
+  <me>
+    x^{2}y''-2x(1+x)y' +2(1+x)y =x^{3}.
+  </me>
+  <answer>
+    <me>
+       y=(C_{1}x+C_{2}xe^{x})-(\frac{1}{2}x^{2}+\frac{1}{4}x).
+    </me>
+  </answer>
+  </p>
+ </exercise>
+
+<exercise>
+  <p>
+   Solve 
+   <me>
+    (1-x)y''+xy' -y =(1-x^{2}).
+   </me>
+   <answer>
+     <me>
+        y=(C_{1}x+C_{2}e^{x})+(1+x+x^{2}).
+      </me>
+   </answer>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Solve 
+    <me>
+      y''+(1-\cot x)y' -y\cot x =\sin^{2}x.
+    </me>
+   <answer>
+    <me>
+       y=\{C_{1}(\sin x-\cos x)+C_{2}e^{-x}\}-\frac{1}{10}(\sin 2x)-2\cos 2x).	
+    </me>
+   </answer>
+    </p>
+</exercise>
+
+<exercise>
+  <p>     Apply power series method to find the solution of the following linear equations.</p>
+     <ol marker ="a.">
+      <li>
+        <p>
+       <me>
+        y''-(x+1)y'+x^{2}y =x. 
+       </me>
+        With the initial conditions <m>y(0) =1, y'(0)=1</m>. </p>
+        <p>
+         <answer>
+        <me>
+          y=1+x+\frac{x^{2}}{2}+\frac{x^{3}}{2}+\frac{x^{4}}{8}+\cdots 
+        </me>
+      </answer>
+      </p>
+      </li>
+     <li>
+      <p>
+      <me>
+        y''+x^{2}y =0.
+      </me>
+      <answer>
+        <me>
+          y=a_{o}\left[1-\frac{x^{4}}{12}+\frac{x^{8}}{12\cdot 7\cdot 8}-\frac{x^{12}}{12\cdot 8\cdot 7 \cdot 11 \cdot 12} +\cdots\right]
+        </me>
+        <me>
+          +a_{1}\left[x-\frac{x^{2}}{20}+\frac{x^{9}}{20\cdot 8\cdot 9}-\cdots\right].
+        </me>
+      </answer>
+      </p>
+      </li>
+      <li>
+        <p>
+        <me>
+          xy''+2y'+xy =0.
+        </me>
+        <answer>
+          <me>
+            y=c_{1}\left[1-\frac{x^{2}}{3!}+\frac{x^{4}}{5!}-\cdots\right]+c_{2}x^{-1}\left[1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}+\cdots\right]
+          </me>
+        </answer>
+        </p>
+        </li>
+        <li>
+          <p>
+          <me>
+            xy''+(x-1)y'-y=0.
+          </me>
+          <answer>
+            <me>
+              y=A\left[1-\frac{x}{1!}+\frac{x^{2}}{2!}-\frac{x^{3}}{3!}+\cdots\right]
+            </me>
+            <me>
+              +Bx^{2}\left[1-\frac{2x}{3!}+\frac{2x^{2}}{4!}-\frac{2x^{3}}{5!}+\cdots\right].
+            </me>
+            
+          </answer>
+          </p>
+          </li>
+          <li>
+            <p>
+            <me>
+              2x(1-x)y''+(1-x)y'+3y=0.
+            </me>
+            <answer>
+              <me>
+                y=a_{o}\sqrt{x}(1-x)+a_{1}\left[1-3x+\frac{3x^{2}}{1\cdot 3}+\frac{3x^{3}}{3\cdot 5}+\cdots\right].
+              </me>
+            </answer>
+            </p>
+            </li>
+     </ol>
+</exercise>
+
+<exercise>
+  <p>
+    Express in terms of Legendre's Polynomials.
+    <ol marker ="a.">
+      <li>
+        <me>
+          x^{4}+x^{3}+x^{2}+x+1 
+        </me>
+        <answer>
+         <me>
+          \frac{8}{35}P_{4}(x)+ \frac{2}{5}P_{3}(x)+\frac{26}{21}P_{2}(x)+\frac{3}{5}P_{1}(x)+\frac{23}{15}P_{0}(x)  
+         </me>
+        </answer>
+      </li>
+      <li>
+        <me>
+          1+2x-3x^{2}+4x^{3}.
+        </me>
+        <answer>
+        <me>
+          \frac{8}{5}P_{3}(x)-2P_{2}(x)+\frac{22}{5}P_{1}(x)+\frac{3}{5}P_{1}(x). 
+        </me>
+        </answer>
+        </li>
+    </ol>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    From the values of Legendre's Polynomials, prove that 
+    <ol marker ="a.">
+      <li>
+       <me>
+        x^{2}=\frac{1}{3}[2 P_{2}(x)+P_{0}(x)]
+       </me>
+      </li>
+      <li>
+        <me>
+          x^{5}=\frac{1}{63}[8 P_{5}(x)+28 P_{3}(x)+27P_{1}(x)].
+        </me>
+        </li>
+    </ol>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that 
+    <me>
+     \int\limits_{-1}^{+1}P_{n}(x)\,dx =0,	\quad  n \neq 0. 
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that 
+    <me>
+      \int\limits_{-1}^{+1} x P_{n}(x)P_{n-1}(x)\,dx =\frac{2n}{4n^{2}-1}.
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that 
+    <me>
+      x^{2r}=\sum \limits_{n=0}^{r}\frac{2^{2n}(4n+1)2r!(n-r)!}{(2r+2n+1)!(r-n)!}P_{2n}(x).
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+     Prove that 
+     <me>
+      P_{n}(0) =0
+     </me>
+     for <m>n</m> odd.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Find the value of <m> J_{\pm\frac{5}{2}}(x)</m>.
+      </p>
+      <p>
+    <answer>
+      <me>
+        J_{+\frac{5}{2}}(x)=\sqrt{\frac{2}{\pi x}}\left[\frac{3-x^{2}}{x^{2}}\sin x-\frac{3}{x}\cos x\right]	
+      </me>
+      and 
+      <me>
+        J_{-\frac{5}{2}}(x)=\sqrt{\frac{2}{\pi x}}\left[\frac{3}{x}\sin x-\frac{3-x^{2}}{x^{2}}\cos x\right]
+      </me>
+    </answer>
+      </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that 
+    <me>
+      J_{4}(x)=\left(\frac{48}{x^{3}}-\frac{8}{x}\right)J_{1}(x)+\left(1-\frac{24}{x^{2}}\right)J_{o}(x)
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that  
+    <me>
+      J_{1}(x)=\frac{x}{2}-\frac{x^{3}}{2^{3}1!2!}+\frac{x^{5}}{2^{5}2!3!}-\frac{x^{7}}{2^{7}3!4!}+\cdots
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that  
+    <me>
+      J''_{o}(x)=\frac{1}{2}\left[J_{2}(x)-J_{o}(x)\right]
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    	Prove that  
+      <me>
+        \frac{\,d}{\,dx}\left[xJ_{1}(x)\right]=xJ_{o}(x)
+      </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    	Prove that 
+      <me>
+        4J''_{o}(x)+3J_{o}(x)+J_{3}(x)=0
+      </me>
+  </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that 
+    <me>
+      J^{2}_{o}+2J^{2}_{1}+2J^{2}_{2}+\cdots=1
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that	
+    <me>
+      \int\limits_{-\infty}^{\infty}x^{2}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =\sqrt{\pi}2^{n}n!(n+1)/2\cdot\delta_{m,n}.
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that 
+    <me>
+      \int\limits_{-\infty}^{\infty}xH_{n}(x)e^{-x^{2}}\,dx 
+      =\begin{cases} 
+      0, \\ 
+      2\pi. 
+      \end{cases}
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that 
+    <me>
+      x^{2r}=\frac{(2r)!}{2^{2r}}\sum\limits_{n=0}^{r}\frac{H_{2n}(x)}{(2r)!(r-n)!}.
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that 
+    <me>
+      H_{1}(x)=\begin{cases} 
+      2xH_{o}(x)\quad \text{for n even }\\ 
+      \frac{(n+1)!}{(n+1)/2!} \quad \text{for n odd }.
+      \end{cases}
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that 
+    <me>
+      L_{n}(x)= \sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!}\comb{n}{r}x^{r}.
+    </me>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    	Find the values of 
+      <ol>
+        <li>
+        <me>
+          \int\limits_{0}^{\infty}e^{-x}L_{2}(x)L_{5}(x)\,dx
+        </me>
+        <answer>
+          <me>
+            0.
+          </me>
+        </answer>
+        </li>
+        <li>
+          <me>
+            \int\limits_{0}^{\infty}e^{-x}L^{2}_{4}(x)\,dx
+          </me>
+          <answer>
+            <me>
+              1.
+            </me>
+          </answer>
+          </li>
+      </ol>
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Prove that 
+    <me>
+       L'_{n}(x)=xL'_{n-1}+nL_{n-1}(x) =0.
+    </me>
+    </p>
+</exercise>
+ </exercises>
+

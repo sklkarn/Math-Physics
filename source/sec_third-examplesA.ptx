@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_third-examplesA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>ExamplesA</title>
+ 
+<example>
+  <statement>
+    <p>
+      Show that a scalar is invariant under any coordinate transformation.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We have the transformation equations for contravariant and covariant tensor as
+      <me>
+        \bar{A}^{i}=\frac{\partial \bar{x}^{i}}{\partial x^{j}}A^{j}
+      </me>
+      and 
+      <me>
+       \bar{A}_{i}=\frac{\partial x^{j}}{\partial \bar{x}^{i}}A_{j}
+      </me>
+      now scalar is a tensor of rank zero, so set <m>i=j=0</m>, we get from above equations, 
+      <m>A = \bar{A}</m> i.e., scalar is invarient under any coordinate transformation.
+    </p>
+  </solution>
+</example>
+    
+    <example>
+      <statement>
+        <p>
+          show that in a cartensian coordinate system, the contravarient and covarient components of a vector are identical.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>A^{i}</m> and <m>A_{i}</m> are the contravarient and covarient components of a vector respectively 
+          in a cartesian coordinates, then they are related by <m>A_{i}=g_{ij}A^{j}=g_{ji}A^{j}</m>. Here,
+          <me>
+            \left\{g_{ij} = 	\frac{\partial \bar{x}^{j}}{\partial x^{i}}\cdot \frac{\partial \bar{x}^{i}}{\partial x^{j}}\right.
+          </me>
+          and in cartesian coordinate <m>h_{1}= h_{2} = h_{3} =1</m>. Therefore, <m>g_{11} =g_{22} =g_{33}=1 </m> 
+          in orthogonal system. For a cartesian system	<m>g_{ii}=1</m>	[if <m>i=j</m>] and  <m>g_{ij} =0</m>	
+          [if <m>i \neq j</m>]. Hence, <m>A_{i}=g_{ii}A^{i}</m> and <m>A_{i}=A^{i}</m>, i. e., covarient 
+          component is similar to contravarient components.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that velocity and acceleration are contravarient vectors and that of 
+          the gradient of a scalar field is a covarient vector.
+        </p>
+      </statement>
+      <solution>
+        <ol>
+          <li>
+             <p>
+          Let the transformation eqn. as 
+          <men xml:id="eqn-trans_eqn1">
+            \,d\bar{x}^{i}=\frac{\partial \bar{x}^{i}}{\partial x^{j}}\,dx^{j}  
+          </men>
+          Dividing by <m>\,dt</m>, we get -
+          <men xml:id="eqn-trans_eqn2">
+            \frac{\,d\bar{x}^{i}}{\,dt}=\frac{\partial \bar{x}^{i}}{\partial x^{j}}\frac{dx^{j}}{\,dt} 
+          </men>
+          But,
+          <me>
+            \frac{\,d\bar{x}^{i}}{\,dt} = \bar{v}^{i} 
+          </me>
+          and 
+          <me>
+          \frac{\,dx^{j}}{\,dt} = \bar{v}^{j}
+          </me>
+          <men xml:id="eqn-trans_eqn3">
+            \therefore  \bar{v}^{i} = \frac{\,d\bar{x}^{i}}{\partial x^{j}}v^{j}   
+          </men>
+          Velocity <m>v^{j}</m> is  a contravarient vector <idx><h>contravarient vector</h></idx> 
+          because <xref ref="eqn-trans_eqn3"/> is a transformation rule for contravarient tensor. 
+          Again, differentiating <xref ref="eqn-trans_eqn3"/>, w. r. t. <m>'t'</m>, we get -
+          <me>
+            \frac{\,d\bar{v}^{i}}{\,dt} = \frac{\,d\bar{x}^{i}}{\partial x^{j}}\frac{\,dv^{j}}{\,dt}
+          </me>
+          <men xml:id="eqn-trans_eqn4">
+            \therefore  \bar{a}^{i} = \frac{\,d\bar{x}^{i}}{\partial x^{j}}a^{j}  
+          </men>
+          hence acceleration is also a contravarient vector.
+        </p>
+        <p>
+          <alert>Note:</alert> The coordinates <m>x^{j}</m> in <m>\frac{\,dx^{j}}{\,dt}</m> are the 
+        coordinates of a particle in motion, while the coefficients <m>\frac{\,d\bar{x}^{i}}{\partial x^{j}}</m> 
+        only denotes a relation between two coordinate systems, which is independent of time.
+        </p>
+          </li>
+          <li>
+            <p>
+              Let <m>\phi = \phi(x^{j})</m> be a scalar field. The functional form of scalar field is 
+              same under coordinate transformations, hence 
+              <me>
+                \phi(x^{j}) =  \bar{\phi}(\bar{x}^{i}) = \phi(\bar{x}^{i})
+              </me>
+              now under frame rotation
+              <me>
+                \frac{\partial\phi}{\partial x^{j}} =  \frac{\partial\phi}{\partial \bar{x}^{i}}\frac{\partial\bar{x}^{i}}{\partial x^{j}}	
+              </me>
+              <me>
+                \frac{\partial\phi}{\partial x^{j}} =  \frac{\partial\phi}{\partial \bar{x}^{i}}\frac{\partial\bar{x}^{i}}{\partial x^{j}}
+              </me>
+              or,
+              <men xml:id="eqn-trans_eqn5">
+                \quad A_{j} =  \frac{\partial\bar{x}^{i}}{\partial x^{j}}\bar{A_{i}}  
+              </men>
+               i.e., the <xref ref="eqn-trans_eqn5"/> shows the transformation rule for covarient tensor. 
+               If we suppose, <m>A^{j} = \frac{\partial\phi}{\partial x^{j}}</m>	and 
+               <m>\bar{A^{i}} =  \frac{\partial\phi}{\partial \bar{x}^{i}}</m> then 
+               <m>A^{j}=\frac{\partial\bar{x^{i}}}{\partial x^{j}}\bar{A^{i}}</m> which is not the transformation rule. 
+               Hence the gradient of a scalar field is not a contravarient vector.
+              </p>
+            </li>
+        </ol>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that the contraction of the outer product of the tensors <m>A^{p}</m> and <m>B_{q}</m> is an invariant.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since <m>A^{p}</m> and <m>B_{q}</m> are tensors, we have,
+          <me>
+            \bar{A}^{j} =  \frac{\partial\bar{x}^{j}}{\partial x^{p}}A^{p}
+          </me>
+          and 
+          <me>
+            \bar{B}_{k} =  \frac{\partial x^{q}}{\partial \bar{x}^{k}}B_{q}
+          </me>
+          therefore, the outer product is
+          <me>
+            \bar{A}^{j}\bar{B}_{k} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}\frac{\partial x^{q}}{\partial \bar{x}^{k}}A^{p}B_{q}
+          </me>
+          by contraction, put <m>j=k</m>, we have 
+          <me>
+            \bar{A}^{j}\bar{B}_{j} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}\frac{\partial x^{q}}{\partial \bar{x}^{j}}A^{p}B_{q} 
+            = \frac{\partial x^{q}}{\partial x^{p}}A^{p}B_{q} = \delta^{q}_{p}A^{p}B_{q} = A^{p}B_{q} = \text{invarient}.
+          </me> 
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          If <m>A^{ij}</m> is symmetric tensor in a reference system then it is symmetric in all other 
+          reference system.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>A^{ij}</m> is a components of symmetric tensor then <m>A^{ij} = A^{ji}</m>. If 
+          <m>\bar{A}^{pq}</m> be the components in barred system, then  
+          <me>
+            \bar{A}^{pq}= \frac{\partial\bar{x}^{p}}{\partial x^{i}}\frac{\partial \bar{x}^{q}}{\partial \bar{x}^{j}}A^{ij}
+          </me>
+          on interchanging the indices <m>p</m>, <m>q</m>  and <m>i</m>, <m>j</m>, we have 
+          <me>
+            \bar{A}^{qp}= \frac{\partial\bar{x}^{q}}{\partial x^{i}}\frac{\partial \bar{x}^{p}}{\partial x^{j}}A^{ji}
+          </me>
+          <me>
+            \therefore   \bar{A}^{qp} = \bar{A}^{pq} \quad \text{proved}.
+          </me>   
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          The symmetric or antisymmetric property may not be true for the interchange of contravariant and 
+          covariant index in all system, 	i.e.,  <m>A^{p} _{q}	\neq  A^{q} _{p}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If <m>A^{i} _{j}=  A^{j} _{i}</m>, then it is not necessary that <m>\bar{A}^{q} _{p}	= \bar{A}^{p} _{q}</m>. 
+          Suppose <m>A^{i} _{j}</m> is a component of a mixed tensor in unbarred system such that 
+          <m>A^{i} _{j}=  A^{j} _{i}</m>. Then in barred system, we have -
+          <men xml:id="eqn-sym_eqn1">
+            \bar{A}^{p} _{q} = \frac{\partial\bar{x}^{p}}{\partial x^{i}} \frac{\partial x^{j}}{\partial \bar{x}^{q}}A^{i} _{j} 
+          </men>
+          Interchange <m>p{,}q</m>  and <m>i{,}j</m>, we get -
+          <men xml:id="eqn-sym_eqn2">
+            \bar{A}^{q} _{p} = \frac{\partial\bar{x}^{q}}{\partial x^{j}} \frac{\partial x^{i}}{\partial \bar{x}^{p}}A^{j} _{i} = \frac{\partial\bar{x}^{q}}{\partial x^{j}}\frac{\partial x^{i}}{\partial \bar{x}^{p}}A^{i} _{j} 
+          </men>
+          from eqns. <xref ref="eqn-sym_eqn1"/> and <xref ref="eqn-sym_eqn2"/>,
+          <me>
+            \because \quad \frac{\partial\bar{x}^{q}}{\partial x^{j}} \neq \frac{\partial x^{j}}{\partial \bar{x}^{q}}
+          </me>
+          <me>
+           \frac{\partial x^{i}}{\partial \bar{x}^{p}} \neq \frac{\partial\bar{x}^{p}}{\partial x^{i}}
+          </me>
+          Hence,
+          <me>
+           \bar{A}^{p} _{q}  \neq \bar{A}^{q} _{p}.
+          </me>
+          Thus the symmetric propeties are not preserved in contravariant and covariant of different systems.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that <m>\frac{\partial A_{p}}{\partial x^{q}}</m>  is not a tensor even though 
+          <m>A_{p}</m> is a covarient tensor of rank one.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        we have -
+        <me>
+          \bar{A_{j}} = \frac{\partial x^{p}}{\partial \bar{x}^{j}}A_{p}
+        </me>
+          Differentiating w. r. t. <m>\bar{x}^{k}</m> we get -
+          <me>
+            	\frac{\partial \bar{A_{j}}}{\bar{x}^{k}} = \frac{\partial x^{p}}{\partial \bar{x}^{j}}.\frac{\partial A_{p}}{\partial \bar{x}^{k}} + \frac{\partial^{2} x^{p}}{\partial \bar{x}^{k} \partial \bar{x}^{j}}A_{p} 
+          </me>
+          <me>
+            	= \frac{\partial x^{p}}{\partial \bar{x}^{j}}.\frac{\partial A_{p}}{\partial x^{q}} \frac{\partial x_{q}}{\partial \bar{x}^{k}}+\frac{\partial^{2} x^{p}}{\partial \bar{x}^{k} \partial \bar{x}^{j}}A_{p}
+          </me>
+          
+          <me>
+            = \frac{\partial x^{p}}{\partial \bar{x}^{j}}.\frac{\partial x_{q}}{\partial \bar{x}^{k}} \frac{\partial A_{p}}{\partial x^{q}}+\frac{\partial^{2} x^{p}}{\partial \bar{x}^{k} \partial \bar{x}^{j}}A_{p}
+          </me>
+          because of the presence of second term on the right <m>\frac{\partial A_{p}}{\partial x^{q}}</m> does not transform like a tensor.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Prove that the contraction of the tensor <m>A^{p} _{q}</m> is a scalar or invarient.
+        </p>
+      </statement>
+      <solution>
+        <p>
+        We have
+        <me>
+          \bar{A}^{j} _{k} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{q}}{\partial \bar{x}^{k}} A^{p} _{q}
+        </me>
+           put <m>j=k</m>, then
+           <me>
+            \bar{A}^{j} _{j} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{q}}{\partial \bar{x}^{j}} A^{p} _{q} = \delta_{p}^{q}A^{p} _{q} = A^{p} _{p}.
+           </me>
+           Thus <m>\bar{A}^{j} _{j} =  A^{p} _{p}</m> which means <m>A^{p} _{p}</m> must be an invarient.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that the inner product of any <m>2^{nd}</m> rank tensors is a tensor of rank two.
+        </p>
+      </statement>
+      <solution>
+        <p>
+           Let us consider <m>A^{p}_{r}</m> and <m>B^{qs}</m> are any tensors of rank two, then -
+           <me>
+            \bar{A}^{j} _{k} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}} A^{p} _{r} 
+           </me>
+           and 
+           <me>
+             \bar{B}^{lm}= \frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}} B^{qs}
+           </me>
+           multiplying them, we get -
+           <me>
+           \bar{A}^{j} _{k}\bar{B}^{lm} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{r}B^{qs}
+           </me>
+            set <m>k=l,</m>	we get - 
+            <me>
+              \bar{A}^{j} _{k}\bar{B}^{km} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{k}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{r}B^{qs}
+            </me>
+            <me>
+               = \frac{\partial\bar{x}^{j}}{\partial x^{p}} \delta_{q}^{r} \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{r}B^{qs} 
+            </me>
+            <me>
+               = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{q}B^{qs} 
+            </me>
+            <me>
+              = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial\bar{x}^{m}}{\partial x^{s}} C^{ps}
+            </me>
+             which is a second rank tensor.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Show that the inner product of a <m>2^{nd}</m> tensor and a <m>3^{rd}</m> rank tensor is a 
+           tensor of rank three.
+        </p>
+      </statement>
+      <solution>
+        <p>
+         Let us consider <m>A^{p}_{r}</m> and <m>B^{qs}_{t}</m> are any tensors of rank two and three, 
+         respectively  then - 
+         <me>
+          \bar{A}^{j} _{k} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}} A^{p} _{r}
+         </me>
+          and 
+          <me>
+            \bar{B}^{lm} _{n}= \frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}}. \frac{\partial x^{t}}{\partial \bar{x}^{n}}B^{qs} _{t}
+          </me>
+          multiplying, we get -
+          <me>
+            \bar{A}^{j} _{k}\bar{B}^{lm} _{n} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}}. \frac{\partial x^{t}}{\partial \bar{x}^{n}}A^{p} _{r}B^{qs} _{t}
+          </me>
+          put <m>j=n</m>,
+          <me>
+             \bar{A}^{j} _{k}\bar{B}^{lm} _{j} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}}. \frac{\partial x^{t}}{\partial \bar{x}^{j}}A^{p} _{r}B^{qs} _{t}
+          </me>
+          <me>
+            = \delta_{p}^{t} \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}} \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{r}B^{qs} _{t} 
+          </me>
+          <me>
+             =\frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}}A^{p} _{r}B^{qs} _{p}  = \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}} \frac{\partial\bar{x}^{m}}{\partial x^{s}}C^{qs} _{r}
+          </me>
+           i.e., <m>A^{p} _{r}B^{qs} _{t}</m> is a tensor of rank three.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          If a tensor <m>A^{pqr} _{st}</m> is a symmetric w.r.t. indices <m>p</m> and <m>q</m> in one coordinate 
+          system then show that it remains symmetric w.r.t. <m>p</m> and <m>q</m> in any other coordinate systems.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Since only indices <m>p</m> and <m>q</m> are involved, we shall prove that the results for <m>B^{pq}</m>. 
+          If <m>B^{pq}</m> is symmetric then <m>B^{pq}=  B^{qp}</m>
+          and 
+          <me>
+             \bar{B}^{jk} =\frac{\partial\bar{x}^{j}}{\partial x^{p}}\frac{\partial\bar{x}^{k}}{\partial x^{q}}B^{pq} = \frac{\partial\bar{x}^{k}}{\partial x^{q}}\frac{\partial\bar{x}^{j}}{\partial x^{p}}B^{qp} = \bar{B}^{kj}
+          </me>
+          hence <m>B_{qp}</m> remains symmetric in the <m>\bar{x}^{i}</m> coordinate system. 
+           If <m>B^{pq}</m> is skew - symmetric, then <m>B^{pq} = - B^{qp}</m>  
+           and 
+           <me>
+             \bar{B}^{jk} =\frac{\partial\bar{x}^{j}}{\partial x^{p}}\frac{\partial\bar{x}^{k}}{\partial x^{q}}B^{pq} =- \frac{\partial\bar{x}^{k}}{\partial x^{q}}\frac{\partial\bar{x}^{j}}{\partial x^{p}}B^{qp} = -\bar{B}^{kj}
+           </me>
+                hence <m>B_{pq}</m> remains skew - symmetric in <m>\bar{x}^{i}</m> system.    
+        </p>
+      </solution>
+    </example>
+
+   <example>
+    <statement>
+      <p>
+         Prove that <m>\delta^{p}_{q}</m> is a mixed tensor of rank two.
+      </p>
+    </statement>
+    <solution>
+      <p>
+         If <m>\delta^{p}_{q}</m> is a mixed tensor it must transform as
+         <me>
+           \bar{\delta}^{j}_{k} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}\frac{\partial x^{q}}{\partial \bar{x}^{k}}\delta^{p}_{q} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}\frac{\partial x^{p}}{\partial \bar{x}^{k}} = \frac{\partial\bar{x}^{j}}{\partial \bar{x}^{k}} = \delta^{j}_{k}.
+         </me>
+        
+         <me>
+          \because \quad \bar{\delta}^{j}_{k} = 
+          \delta^{j}_{k} = 
+          \begin{cases} 
+           1,&amp; \text{if } j = k \\  0, &amp; \text{if } j \neq k 
+           \end{cases}
+         </me>
+         Therefore, <m>\delta^{p}_{q}</m> is a mixed tensor of rank two.
+      </p>
+    </solution>
+   </example> 
+
+   <example>
+    <statement>
+      <p>
+        Prove <m>\delta_{ii} = 3</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <me>
+          \delta_{ii} = \delta_{11} +\delta_{22}+\delta_{33}= 3$.
+        </me>
+      </p>
+    </solution>
+   </example>
+
+   <example>
+    <statement>
+      <p>
+        Prove <m>\delta_{ik}\omega_{ik} = \omega_{ii}</m>.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        In <m>\delta_{ik}\omega_{ik}</m> both <m>i</m>  and <m>k</m> are dummy and they are to be 
+        summed over from 1 to 3. As <m>\delta_{ik} = 1</m> only if <m>i = k</m> and <m>\delta_{ik} = 0</m> 
+        for <m>i \neq k</m>. So only terms for <m>i=k = 1,2,3</m> will contribute and thus 
+      <me>
+        \delta_{ik}\omega_{ik} = \omega_{kk}= \omega_{11}+\omega_{22}+\omega_{33}=\omega_{ii}.
+      </me>
+      </p>
+    </solution>
+   </example>
+</section>

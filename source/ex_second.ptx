@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises xml:id="ex_second" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <!-- You can ommit the title and just get the default "Exercises" -->
+  <title>Exercise</title>
+  
+  <exercise>
+     <statement>
+        <p>
+           Find the eigen values and eigen vectors of the given matrix
+          <me>
+           \begin{bmatrix} 
+        		1 &amp; -1 &amp; 1\\
+            -1 &amp; 1 &amp; -1 \\ 
+            -1 &amp; -1 &amp; 1 
+            \end{bmatrix}.
+       </me>
+        </p>
+       </statement>    
+      <answer>
+        <p>
+         Here,  <m>\lambda = 0,1,2;</m>
+         for
+          <me>
+            \lambda_{1}=0, X_{1}=\begin{bmatrix} 
+            0\\1\\1 
+            \end{bmatrix}, 
+          </me>
+          for
+          <me>
+             \lambda_{2}=1, \hspace{0.2cm} X_{2}=\begin{bmatrix} 
+            1\\-1\\-1 
+            \end{bmatrix}, 
+          </me>
+          for
+          <me>
+            \lambda_{3}=2,\hspace{0.2cm} X_{3}=\begin{bmatrix} 
+            1\\-1\\0 
+            \end{bmatrix}.
+          </me>
+        </p>
+      </answer>
+  </exercise>
+ 
+ <exercise>
+  <statement>
+    <p>
+      Find <m>x{,}y{,}z</m> such that
+      <me>
+        \begin{bmatrix} 
+        2 &amp; -1 &amp; 3 \\ 1 &amp; 2 &amp; -4 \\-1 &amp; 3 &amp; - 2 
+        \end{bmatrix} \begin{bmatrix} 
+        x\\y\\z 
+        \end{bmatrix} = \begin{bmatrix} 
+        1 \\ -3 \\6 
+        \end{bmatrix}
+      </me>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <me>
+         X = \begin{bmatrix} 
+         -1\\3\\2 
+         \end{bmatrix}
+      </me>
+    </p>
+  </answer>
+ </exercise>
+
+<exercise>
+  <statement>
+    <p>
+       Find the matrix that diagonalize the matrix 
+       <me>
+        A=\begin{bmatrix} 
+        		1 &amp; i &amp; 1 \\ -i &amp; 0 &amp; 0 \\1 &amp; 0 &amp; 0 
+            	\end{bmatrix}.
+       </me>	
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <me>
+        	P=\begin{bmatrix} 
+          	0 &amp; 1 &amp; 2i \\ i &amp; -i &amp; 1 \\ 1 &amp; 1 &amp; i 
+            	\end{bmatrix}.\\
+      </me> 
+    </p>
+  </answer>
+</exercise>
+
+
+<exercise>
+  <statement>
+    <p>
+       Show that the matrix 
+       <me>
+        A = \begin{bmatrix} 
+        \cos\theta &amp; \sin\theta \\ -\sin\theta &amp; \cos\theta 
+        \end{bmatrix}
+       </me>
+      is orthogonal.
+    </p>
+  </statement>
+</exercise>
+
+<exercise>
+  <p>
+    Diagonalizing matrix of a real symmetric matrix is orthogonal.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Verify that the adjoint of a diagonal matrix of order three is a diagonal matrix.
+    </p>
+</exercise>
+
+<exercise>
+  <statement>
+    <p>
+      Find the inverse of  
+      <me>
+        A = \begin{bmatrix}
+				1 &amp; 2 &amp; 3 \\ 2 &amp; 4 &amp; 5 \\3 &amp; 5 &amp; 6
+				\end{bmatrix}.
+      </me>
+    </p>
+  </statement>
+  <answer>
+    <p>
+      <me>
+        A^{-1} = \begin{bmatrix}
+				1 &amp; -3 &amp; 2 \\ -3 &amp; 3 &amp; -1 \\ 2 &amp; -1 &amp; 0
+				\end{bmatrix}
+      </me>
+    </p>
+  </answer>
+</exercise>
+
+<exercise>
+  <p>
+    If <me>
+      A = \begin{bmatrix}
+				1 &amp; 1 &amp; 1 \\ 1 &amp; 2 &amp; 3 \\ 1 &amp; 4 &amp; 9
+				\end{bmatrix}
+    </me>
+    and 
+    <me>
+      B = \begin{bmatrix}
+				2 &amp; 5 &amp; 3 \\ 3 &amp; 1 &amp; 2 \\ 1 &amp; 2 &amp; 1
+				\end{bmatrix}
+    </me>
+     then show that <m>(AB)^{-1} = B^{-1}A^{-1}</m>.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that the eigen values of a unitary matrix have unit modulus.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+    Show that the eigen values of an orthogonal matrix have unit modulus.
+    </p>
+</exercise>
+
+<exercise>
+  <p>
+   Show that a product of unitary matrices is unitary.
+    </p>
+</exercise>
+
+ </exercises>
+

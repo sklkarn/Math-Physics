@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xml:id="ch_first" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- Change title when you have one: -->
+  <title>Vector Analysis</title>
+    <!-- If the chapter has sections, there may be an introduction -->
+  <!-- before those sections. Note the <p> tags around content.  -->
+  <introduction>
+    <p>In order to describe a physical world we need a variety of physical quantities. 
+      Any physical property which can be quantitized and measured in numbers is called a 
+      physical quantity. The property such as 'anger, happiness, feelings, emotion, etc. 
+      can not be quantitized and measured, hence they are not taken as physical quantities.  
+      There are two types of physical quantities usually consider to describe a physical world. 
+      They are a scalar quantity (or, simply  scalars) and a vector quantity (or, simply vectors)
+      A scalar quantity has only magnitude (size)  e.g., mass, length, time, volume, density, 
+      work, speed, temperature, potential, current, resistance, flux, power, intensity, etc. 
+      A vector quantity has both magnitude and direction e.g., velocity, acceleration, displacement, 
+      momentum, force, torque, impulse, moment, current density, etc. A quantity like surface 
+      area is a scalar in general, but when considered with its specific orientation it is taken 
+      as a vector. In physics, area is a vector quantity whose direction is always taken as 
+      an outward normal to the surface. Normally, when area comes with any vectors in a mathematical 
+      operation it is considered as a vector. For instance, flux is a dot product of two vectors, 
+      one of them is an area. Mathematically, division of a vector with another vector is 
+      undefined, hence pressure is considered as a scalar even if it is defined as a force per 
+      unit area. To define pressure in general as a scalar we divide a magnitude of the 
+      normal component of the force to the magnitude of the area. Actually, pressure has 
+      more than one direction, hence it is a complex quantity which comes under tensors. 
+      The concept of tensors are not made known in elementary courses.  A tensor is a vector 
+      generalization of physical quantities. (We will discuss tensors later in this book.)</p>
+
+      <p>
+        A <term>vector</term> is represented by an arrow. The arrow shows the direction of 
+        a vector and the length of the arrow represents the magnitude of that vector. 
+        Points <m>O</m> and <m>P</m> of an arrow <m>OP</m> in <xref ref="fig-vectora"/> are known as 
+        the initial point and the terminal point of the vector <m>\textbf{OP}</m>, respectively. 
+        A vector is denoted by a letter with an arrow over it such as <m>\vec{OP} = \vec{a}</m> 
+        and its magnitude is denoted by <m>\vec{|a|}</m> or simply by <m>a</m>. A vector of 
+        unit magnitude is called a unit vector and is denoted by <m>\hat{a}</m>, ('a cap'), 
+        Where <m>\hat{a}=\frac{\vec{a}}{\vec{|a|}}</m>, i.e., <m>\hat{a}</m> is a unit 
+        vector of <m>\vec{a}</m>. 
+        </p>
+        <figure>
+        <caption>Vectors</caption>
+          <sidebyside widths="15% 25%">
+              <figure xml:id="fig-vectora">
+                  <caption></caption>
+                  <image source="fig1a.png"/>
+              </figure>
+              <figure xml:id="fig-vectorb">
+                  <caption></caption>
+                  <image source="fig1b.png"/>
+              </figure>
+            </sidebyside>
+      </figure>
+      <p>
+        A vector which specifies the position of point P with respect to its origin O is called 
+        a position vector, as shown in  <xref ref="fig-vectora"/>. Let P and Q be two points and 
+        O be the point of origin then the position vector of point P is <m>\vec{OP}</m> and that 
+        of point Q is <m>\vec{OQ}</m>, as shown in  <xref ref="fig-vectorb"/>. A vector of zero 
+        magnitude is a null vector. It is denoted by <m>\vec{O}</m>.  The initial and terminal 
+        points coincide in case of a null vector. Thus it has no definite direction. 
+        The vectors with same magnitude but in opposite direction are termed as negative vectors. 
+        Vectors having the same direction are called like vectors, whereas those having opposite 
+        directions are called  unlike vectors. The vectors parallel to the same line regardless 
+        of their magnitudes and directions are  called collinear vectors. In  this case, there 
+        exists a scalar <m> \lambda </m> such that <m>\vec{b} =\lambda \vec{a}</m> in the collinear 
+        vectors <m>\vec{a}</m> and <m>\vec{b}</m>. The vectors whose directions are not parallel 
+        to each other are non-collinear vectors. A system of vectors lying in the parallel planes 
+        or in the same plane are called  coplanar vectors. The system of vectors which can not 
+        lie in the same plane or parallel planes are called  non-coplanar vectors. 
+      </p>
+      </introduction>
+
+  <!-- Sections can be written directly here, but it might help  -->
+  <!-- with organization to include them as separate files.      -->
+  <!-- That way it is easy to include the section in a different -->
+  <!-- chapter later if you change your mind about the order.    -->
+  <xi:include href="./sec_first-intro.ptx" />
+  <xi:include href="./sec_first-field.ptx" />
+  <xi:include href="./sec_first-examplesA.ptx" />
+  <xi:include href="./sec_first-vectinteg.ptx" />
+  <xi:include href="./sec_first-examplesB.ptx" />
+  <xi:include href="./sec_first-curvcord.ptx" />
+  <xi:include href="./sec_first-examplesC.ptx" />  
+
+  <!-- One or more of the sections of a chapter might be exercises-->
+  <xi:include href="./ex_first.ptx"/>
+</chapter>

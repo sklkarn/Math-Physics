@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_second-examplesB" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>ExamplesB</title>
+ 
+<example>
+  <statement>
+    <p>
+      If <m>A</m> and <m>B</m> are Hermitian, show that <m>AB+BA</m> is Hermitian 
+      and <m>AB-BA</m> is skew Hermitian.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <m>\because</m>  <m>A</m> and  <m>B</m> are Hermitian, we have 
+      <me>
+        A^{\dagger}=A \quad \text{and} \quad  B^{\dagger}=B.
+         </me>
+      Hence,
+      <me>
+        \left(AB+BA\right)^{\dagger} = (AB)^{\dagger} + (BA)^{\dagger} 
+      </me>
+      <me>
+        = B^{\dagger}A^{\dagger}+A^{\dagger}B^{\dagger} 
+        =BA+AB=AB+BA,
+      </me>
+      i.e., <m>AB+BA</m> is Hermitian.
+       </p>
+      <p>
+         Again,
+      <me>
+        \left(AB-BA\right)^{\dagger} = (AB)^{\dagger} - (BA)^{\dagger} 
+      </me>
+      <me>
+        = B^{\dagger}A^{\dagger}-A^{\dagger}B^{\dagger} =BA-AB =-(AB-BA),
+      </me>
+       i.e., <m>AB-BA</m> is skew-Hermitian.
+      </p>   
+  </solution>
+</example>
+    
+    <example>
+      <statement>
+        <p>
+          Show that the inverse of a matrix is unique.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>A</m>  be a square matrix and the matrices <m>B</m> and <m>C</m> are inverse of <m>A</m>, 
+          then <m>AB=BA=I</m> also,  <m>AC =CA=I</m>. Now,
+          <me>
+            CAB=C(AB) = CI =C   \quad   \text{also}, \quad CAB = (CA)B=IB = B, 
+          </me>
+          That is,
+          <me>
+           CAB=B=C.
+          </me>
+          Hence, <m>B</m> is not different from <m>C</m>, which implies that the inverse of a 
+          matrix is unique, i.e., there exists only one inverse matrix to a given matrix.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          If <m>A</m>  is a non - singular matrix, then the transpose (conjugate transpose) of 
+          inverse is the inverse of the transpose (conjugate transpose) of <m>A</m>. 
+        </p>
+        <p>
+          i.e., <m>(A^{-1})^{t} = (A^{t})^{-1}</m> and <m>(A^{-1})^{\dagger}=(A^{\dagger})^{-1}</m>.
+          </p>
+      </statement>
+      <solution>
+        <p>
+          we know that -
+          <me>
+            AA^{-1}=A^{-1}A=I 
+          </me>
+          <me>
+	          \text{or,}\quad (AA^{-1})^{t}=(A^{-1}A)^{t}=(I)^{t}=I
+          </me>
+          <me>
+            \text{or,}\quad	(A^{-1})^{t}A^{t} = A^{t}(A^{-1})^{t} = I 
+          </me>
+          which follows that <m>(A^{-1})^{t}</m> is the inverse of <m>A^{t}</m>. 
+        </p>
+        <p>
+           i.e. <m>(A^{t})^{-1}=(A^{-1})^{t}</m>. 	proved. Similarly other can be proved.
+          </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          If <m>A</m> and <m>B</m> are any two square matrices of the same order, then show that 
+          <me>
+            Tr(A+B)=TrA+TrB.
+          </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>A</m> and <m>B</m> are two matrices of the same order <m>n</m>. Then, 
+          <m>Tr(A+B)</m> = sum of the diagonal elements of the matrix <m>(A+B)</m>
+          <me>
+             = \sum\limits_{i=1}^{n}\left(a_{ij}+b_{ij}\right) =\sum\limits_{i=1}^{n}a_{ij}+\sum\limits_{i=1}^{n}b_{ij}=Tr(A)+Tr(B).
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that a real matrix is unitary if and only if it is orthogonal.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          If <m>A</m>is real matrix, then <m>A^{\dagger}=A^{t}</m> for <m>A</m> to be unitary, we have -
+          <me>
+            A^{\dagger}A=I
+          </me>
+          <me>
+            	\text{or,}\quad A^{t}A=I.
+          </me>
+         <m>\therefore</m>  <m>A</m>   is orthogonal. 
+         [or, <m>A^{'}=A^{-1}</m>, i.e., for a matrix to be orthogonal its transpose coincides with its inverse.]
+        </p>
+        <p>
+          Conversely, if <m>A</m> is orthogonal, then
+          <me>
+            A^{t}A=I
+          </me>
+          <me>
+            \text{or},\quad	A^{\dagger}A =I	 				
+          </me>
+          <m>\therefore</m>  <m>A</m> is unitary.
+          </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that under a unitary transformation, an orthonormal system of basis vectors is 
+          transformed into another orthonormal system.
+        </p>
+      </statement>
+      <solution>
+        <p>
+         We require, 
+         <me>
+          \delta_{ij}=\psi^{'}_{i} \psi^{'}_{j} 
+          = \sum\limits_{k} \gamma_{ki}\psi_{k}\cdot  \sum\limits_{l} \gamma_{lj}\psi_{l} 
+          = \sum\limits_{kl}\gamma_{ki}^{*}\gamma_{lj}\psi_{k}\psi_{l} 
+         </me>
+         <me>
+          = \sum\limits_{kl}\gamma_{ki}^{*}\gamma_{lj}\delta_{kl} 
+          = \sum\limits_{kl}\gamma_{ki}^{*}\gamma_{kj} 
+          = \sum\limits_{k}(\gamma^{\dagger})_{ik} \gamma_{kj}
+         </me>
+         here,
+         <me>
+          \delta_{ij}=\left(\gamma^{\dagger}\gamma\right)_{ij}.
+         </me>
+         Thus, <m>\gamma^{\dagger}\gamma = 1 </m> or, <m>\gamma</m> must be an unitary matrix.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that a Hermitian matrix remains Hermitian under unitary transformation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For unitary transformation, 
+          <men xml:id="eqn-unit_trans1">
+            AA^{\dagger}=A^{\dagger}A =I  
+          </men>
+          If <m>A</m> to be Hermitian, then <m>A^{\dagger}=A</m>. 
+          Taking conjugate transpose of eqn. <xref ref="eqn-unit_trans1"/>>, we get -
+          <me>
+            \left(AA^{\dagger}\right)^{\dagger} = \left(A^{\dagger}A\right)^{\dagger} = I^{\dagger}
+          </me>
+          <me>
+            \text{or,} \quad \left(A^{\dagger}\right)^{\dagger}A^{\dagger} = A^{\dagger}\left(A^{\dagger}\right)^{\dagger} =I 
+          </me>
+           [<m>\because  I^{\dagger}=I</m> is an identity matrix.]
+           <me>
+            \therefore    AA^{\dagger}=A^{\dagger}A =I.
+           </me>
+           This equality shows that Hermitian matrix remains Hermitian under unitary transformation.
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that the length of a real vector is preserved under orthogonal transformation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>x_{i}</m> and <m>y_{i}</m> are the real vectors of matrices <m>X</m> and <m>Y</m> 
+          which is related as 
+          <men xml:id="eqn-orth1">
+            Y=AX  
+          </men>
+          where <m>A</m> is a transformation matrix. For an orthogonal transformation, we have -
+          <men xml:id="eqn-orth2">
+            Y^{'}Y=(AX)^{'}(AX) = X^{'}A^{'}AX =X^{'}X 
+          </men>
+          Since <m>A</m> is considered to be an orthogonal. i.e., <m>A^{'}A =I</m>.
+        </p>
+        <p>
+          Therefore, from eqn. <xref ref="eqn-orth2"/>, we get - 
+          <me>
+            y^{2}_{i} = x^{2}_{i}
+          </me>
+          where,
+          <men xml:id="eqn-orth3">
+            \sum\limits_{i=1}^{n}y_{i}=\sum\limits_{j=1}^{n}a_{ij}x_{j}; 
+          </men>
+          <me>
+             Y' =\begin{bmatrix} 
+             \cdot &amp; \cdot &amp; \cdot 
+             \end{bmatrix}; 
+          </me>
+          <me>
+          \text{and}\quad Y=\begin{bmatrix} 
+          \cdot\\\cdot\\\cdot 
+          \end{bmatrix}.
+          </me>
+          <term>Note:</term> In case <m>X</m> and <m>X^{'}</m> are complex then the orthogonal conditions to be 
+          <me>
+            \left(AA^{\dagger}\right) = \left(A^{\dagger}A\right) = I,
+          </me>
+           i.e., A is an unitary matrix. A real unitary matrix is an orthogonal matrix. 
+           <xref ref="eqn-orth3"/> shows that the norm of a real vector remains invariant under orthogonal 
+           transformation. i.e., 
+           <me>
+            \Vert X \Vert  = \Vert AX \Vert
+           </me>
+           <me>
+            [\because  \quad 	\Vert X \Vert = \sqrt{x^{2}_{i}}   \quad 
+            \text{and}\quad \Vert Y \Vert = \sqrt{y^{2}_{i}}].
+           </me>
+          </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that the eigen values of a Hermitian operator is real and eigen vectors belonging 
+          to different eigen values are orthogonal. Or, The eigen values of a Hermitian matrix are all real.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>\lambda_{i}</m> and <m>\lambda_{j}</m>  be two eigen values and 
+          <m>X_{i}</m>  and <m>X_{j}</m> be two eigen vectors of Hermitian matrix (operator) <m>H</m>. Then
+          <mdn>
+            <mrow xml:id="eqn-herm_ort1"> HX_{i} \amp  = \lambda_{i}X_{i} </mrow>
+            <mrow xml:id="eqn-herm_ort2"> HX_{j} \amp  = \lambda_{j}X_{j}  </mrow>
+          </mdn>
+          premultiplying by <m>X^{\dagger}_{j}</m> to eqn. <xref ref="eqn-herm_ort1"/> 
+          and <m>X^{\dagger}_{i}</m> to eqn. <xref ref="eqn-herm_ort2"/>, respectively, we get -
+          <mdn>
+            <mrow xml:id="eqn-herm_ort3">X^{\dagger}_{j} HX_{i}  \amp = \lambda_{i}X^{\dagger}_{j}X_{i}   </mrow>
+            <mrow xml:id="eqn-herm_ort4"> \text{and}\quad X^{\dagger}_{i} HX_{j} \amp  = \lambda_{j}X^{\dagger}_{i}X_{j} </mrow>
+          </mdn>
+           taking conjugate transpose of eqn. <xref ref="eqn-herm_ort4"/>, we  get -
+           <me>
+            \left(X^{\dagger}_{i} HX_{j}\right)^{\dagger}=\left(\lambda_{j} X_{i}^{\dagger}X_{j}\right)^{\dagger} 
+           </me>
+           [for Hermitian matrix <m>H^{\dagger} =H</m>]
+           or,
+           <men xml:id="eqn-herm_ort5">
+            X^{\dagger}_{j} HX_{i} = \bar{\lambda}_{j}X^{\dagger}_{j}X_{i} 
+           </men>
+           equating eqns. <xref ref="eqn-herm_ort3"/> and <xref ref="eqn-herm_ort5"/>, we get - 
+           <mdn>
+            <mrow xml:id="eqn-herm_ort6"> \lambda_{i}X^{\dagger}_{j}X_{i}  \amp = \bar{\lambda}_{j}X^{\dagger}_{j}X_{i}  </mrow>
+            <mrow xml:id="eqn-herm_ort7"> \left(\lambda_{i} - \bar{\lambda}_{j}\right)X^{\dagger}_{j}X_{i} \amp = 0</mrow>
+           </mdn>
+        </p>
+        <p>
+          <term>Case I:</term> Let <m>i=j</m>, then <m>\left(\lambda_{i} - \bar{\lambda}_{i}\right)=0</m>		
+          [<m>\because X^{\dagger}_{i}X_{i} \neq 0</m>, as <m>X_{i}</m> is a non - zero vector. 
+          <me>
+            \therefore  \quad  \lambda_{i} = \bar{\lambda}_{i}		
+          </me>
+          i.e., <m>\lambda_{i}</m> is real for each <m>i</m>.
+          </p>
+          <p>
+            <term>Case II:</term> Let <m>i\neq j</m>. we have  <m>\lambda_{i} \neq \bar{\lambda}_{j}</m>.
+            <me>
+              \therefore  \quad  	X^{\dagger}_{j}X_{i} = 0.
+            </me>
+            which means eigen vectors for different eigen values of <m>H</m> are orthogonal.
+            </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Show that the trace and determinant of a matrix is invarinat under similarity transformation.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>X</m> and <m>Y</m> are two vectors relative to the basis of unprimed system and 
+          are represented by <m>X'</m> and <m>Y'</m> relative to the basis of a primed system, so that 
+          <men xml:id="eqn-trac1">
+            X=PX';	\quad  	Y=PY' 
+          </men>
+          where <m>P</m> is transformation matrix. Suppose <m>X</m> and <m>Y</m> are themselves 
+          related by the transformation matrix <m>A</m> in the unprimed system, so that 
+          <men xml:id="eqn-trac2">
+            X=AY
+          </men>
+          Now, from eqns. <xref ref="eqn-trac1"/> and <xref ref="eqn-trac2"/>, we have 
+          <mdn>
+            <mrow xml:id="eqn-trac3"> X' \amp  = P^{-1}X = P^{-1}AY = P^{-1}APY' \equiv BY' </mrow>
+            <mrow xml:id="eqn-trac4">  \text{where} \quad B \amp  = P^{-1}AP </mrow>  
+          </mdn>
+          This implies that 	
+          <men xml:id="eqn-trac5">
+            A = PBP^{-1}.
+          </men>
+          i.e., the matrix of transformation for the same two vectors in the coordinate system is 
+          related by <m>P^{-1}AP</m> and <m>PBP^{-1}</m>. Hence <m>A</m> and <m>B</m> are said to be 
+          related under similarity transformation. From eqn. <xref ref="eqn-trac4"/>, we have 
+          <me>
+            Tr(B)=\sum\limits_{i}B_{ii}=\sum\limits_{i}(P^{-1}AP)_{ii}	=\sum\limits_{i}\sum\limits_{jk}P^{-1}_{ij}A_{jk}P_{ki}
+          </me>
+          <me>
+             = \sum\limits_{j}\sum\limits_{k}\left[\sum\limits_{i}P_{ki}P^{-1}_{ii}\right]A_{jk}
+          </me>
+          <me>
+             \left[\because \quad \sum\limits_{i}(AB)_{ij}=\sum\limits_{i}\sum\limits_{j}a_{ij}b_{ji}\right]  
+          </me>
+          after changing the sign for the places.
+          <me>
+            =\sum\limits_{j}\sum\limits_{k}\left[\sum\limits_{i}PP^{-1}\right]_{kj}A_{jk} = \sum\limits_{j}\left[APP^{-1}\right]_{jj}= \sum\limits_{j}A_{jj} = Tr(A) 
+          </me>
+          i.e., trace is invarient under similarity transformation. Also,  
+          <me>
+            |B| = det B = [P^{-1}AP| = |P^{-1}||A||P|  = A 
+          </me>
+            [<m>\because |P^{-1}||P| = 1</m>]  proved.  
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Show that diagonalizing matrix of a Hermitian matrix is unitary.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let <m>H</m>  be a hermitian matrix and <m>R</m> be its diagonalizing matrix, then 
+          <men xml:id="eqn-herm_dia1">
+            R^{-1}HR=diag\left(\lambda_{1}, \lambda_{2}, \lambda_{3}, \cdots, \lambda_{n} \right)
+          </men>
+          where  <m>\lambda_{1}{,} \lambda_{2}{,} \lambda_{3}{,} \cdots{,} \lambda_{n}</m> 
+          are the eigen values of $H$ and are all real. 
+        </p>
+        <p>
+          Taking transposed conjugate on both sides of eqn. <xref ref="eqn-herm_dia1"/>, we have 
+          <md>
+            <mrow> \left(R^{-1}HR\right)^{\dagger} \amp =\left[diag\left(\lambda_{1}, \lambda_{2}, \lambda_{3}, \cdots, \lambda_{n} \right)\right]^{\dagger} = diag\left(\lambda_{1}, \lambda_{2}, \lambda_{3}, \cdots, \lambda_{n} \right)</mrow>
+          <mrow> \text{or,}\quad R^{\dagger}H(R^{-1})^{\dagger} \amp  = diag\left(\lambda_{1}, \lambda_{2}, \lambda_{3}, \cdots, \lambda_{n} \right) = R^{-1}HR</mrow>
+          </md>
+           which gives
+          <me>
+           R^{\dagger} = R^{-1}
+          </me>
+          <me>
+            \text{or,}\quad RR^{\dagger} = RR^{-1} = I
+          </me>
+          <m>\therefore</m>  R is a unitary matrix.
+          </p>
+      </solution>
+    </example>
+
+    <example xml:id="prob-circuit1">
+      <statement>
+        <p>
+          Use matrix method to find the voltage drop at resistor <m>R_{6} </m>. In the given figure 
+          <m>R_{1} = 1\Omega </m>, <m> R_{2} = 2\Omega</m> , <m>R_{3}=3\Omega</m>, <m>R_{4} = 4\Omega</m>, 
+          <m>R_{5}=5\Omega</m>, <m>R_{6}=6\Omega</m>,  <m>E_{1} =5 Volt</m>, and <m>E_{2} =10 Volt</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Consider <m>I_{1}{,}  I_{2}{,} I_{3}</m> are the currents flowing in the loops as 
+          shown in <xref ref="fig-figelectric"/> Now using Kirchhoff's voltage law <m>\sum IR = \sum V</m>, from loop 1, we have 
+        </p>
+        <figure xml:id="fig-figelectric">
+              <caption></caption>
+              <image source="figelectric.png" width ="35%"/>
+          </figure>
+          <p>
+            <md>
+              <mrow> 1.I_{1}+2.I_{1}+3.I_{1}-3.I_{2} \amp = 5 </mrow>
+              <mrow> \text{or,}\quad 6.I_{1}-3.I_{2} + 0.I_{3} \amp = 5 </mrow>
+             </md>
+            From loop 2, 
+            <md>
+              <mrow> 5. I_{2}+3.I_{2}+4.I_{2}-3.I_{1}+5.I_{3} \amp = 10 </mrow>
+              <mrow> \text{or,}\quad -3.I_{1}+12.I_{2} +5.I_{3} \amp  = 10 </mrow>
+            </md>
+            From loop 3,
+            <md>
+              <mrow> 6.I_{3}+5.I_{3}+5.I_{2} \amp = 5 </mrow>
+              <mrow> \text{or,}\quad 0.I_{1}+5.I_{2} +11.I_{3}  \amp = 5 </mrow>
+            </md>
+            Hence in the matrix form 
+            <me>
+              \begin{bmatrix} 
+              6 &amp; -3 &amp; 0 \\ 
+              -3 &amp; 12 &amp; 5\\ 
+              0 &amp; 5 &amp; 11  
+              \end{bmatrix} 
+              \begin{bmatrix} 
+              I_{1}\\ I_{2}\\I_{3} 
+              \end{bmatrix} 
+              = \begin{bmatrix} 
+              5\\ 10\\5 
+              \end{bmatrix} 
+            </me>
+            The determinant of the given matrix is 
+            <me>
+              D=\begin{vmatrix} 
+              6 &amp; -3 &amp; 0 \\ 
+              -3 &amp; 12 &amp; 5\\ 
+              0 &amp; 5 &amp; 11  
+              \end{vmatrix} 
+            </me>
+            <me>
+              = 6(12\times 11-5\times 5)+3(-3\times 11-0\times 5) +0(-3\times 5-0\times 12) = 543.
+            </me>
+            <me>
+              \therefore \quad I_{1} = \frac{\begin{vmatrix} 
+              5 &amp; -3 &amp; 0 \\ 
+              10 &amp; 12 &amp; 5\\ 
+              5 &amp; 5 &amp; 11 
+              \end{vmatrix}}{D} = 1.455 A
+            </me>
+            <me>
+              I_{2} = \frac{\begin{vmatrix} 
+              6 &amp; 5 &amp; 0 \\ 
+              -3 &amp; 10 &amp; 5\\ 
+              0 &amp; 5 &amp; 11  
+              \end{vmatrix}}{D} = 1.243 A
+            </me>
+            <me>
+              I_{3} = \frac{\begin{vmatrix} 
+              6 &amp; -3 &amp; 5 \\ 
+              -3 &amp; 12 &amp; 10\\ 
+              0 &amp; 5 &amp; 5 
+              \end{vmatrix}}{D} = -0.1105 A
+            </me>
+            <m>-ve</m> sign indicats that the current <m>I_{3}</m> should be taken in  opposite direction. 
+            Hence, the potential drop at <m>R_{6} = 6\times 0.1105 = 0.663</m> volt.
+            </p>
+      </solution>
+    </example>
+</section>

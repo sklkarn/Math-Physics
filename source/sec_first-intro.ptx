@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-intro" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Vector Algebra</title>
+  <introduction>
+   <p>
+    <idx>vector algebra</idx> The familiar operations of addition, subtraction,  and multiplication 
+    in the algebra of numbers are also capable of getting extension in an algebra of vectors.
+    </p>
+     </introduction>
+ 
+ 
+  <subsection xml:id="subsec_addvec-subsection">
+    <title>Addition of Vectors</title>
+   <p>
+    A vector whose effect is same as that of a set of two vectors is called the sum  or  
+    the resultant of the given  vectors. Let  <m>\vec{OP} = \vec{a}</m> and  
+    <m>\vec{PQ} = \vec{b}</m> as shown in <xref ref="fig-vector2a"/>, then the vector <m>\vec{OQ}</m> is 
+    called the sum of <m>\vec{a}</m> and <m>\vec{b}</m>. i.e., 
+    <md>
+      <mrow> \vec{OP} +\vec{PQ} \amp = \vec{OQ} </mrow>
+      <mrow> \vec{a} + \vec{b} \amp = \vec{r} </mrow>
+    </md>
+    </p>
+ 
+   <paragraphs>
+    <title>Properties</title>
+
+          <figure>
+      <caption>Vectors Addition</caption>
+        <sidebyside widths="30% 30% 30%">
+            <figure xml:id="fig-vector2a">
+                <caption></caption>
+                <image source="fig2a.png"/>
+            </figure>
+            <figure xml:id="fig-vector2b">
+                <caption></caption>
+                <image source="fig2b.png"/>
+            </figure>
+            <figure xml:id="fig-vector2c">
+              <caption></caption>
+              <image source="fig2c.png"/>
+          </figure>
+          </sidebyside>
+    </figure>
+
+    <p>
+      <ol marker ="a">
+        <li>
+          <term>Commutative law:</term> 
+          <me>
+            \vec{a} + \vec{b} = \vec{b} + \vec{a}
+          </me>
+          Let  <m>\vec{OA} = \vec{a}</m>  and <m>\vec{OB} = \vec{b}</m> be the adjacent sides of 
+          a parallelogram of diagonal vector <m>\vec{OC}</m> as shown in <xref ref="fig-vector2b"/>, then
+          <men xml:id="eqn-2a">
+            \vec{a} + \vec{b} = \vec{OA} + \vec{AC} = \vec{OC}
+          </men>
+          <men xml:id="eqn-2b">
+            \text{also,} \quad \vec{b} + \vec{a}  = \vec{OB} + \vec{BC} = \vec{OC} 
+          </men>
+          from <xref ref="eqn-2a"/> and <xref ref="eqn-2b"/>, we have -
+          <me>
+            \vec{a} + \vec{b} = \vec{b} + \vec{a}
+          </me>
+        </li>
+        <li>
+          <term>Associative law:</term> 
+          <me>
+            \vec{a} + (\vec{b} + \vec{c}) = (\vec{a} + \vec{b}) + \vec{c}
+          </me>
+          Let  <m>\vec{OA} = \vec{a}</m>, <m>\vec{AB} = \vec{b}</m>,  and <m>\vec{BC} = \vec{c}</m>  
+          as shown in <xref ref="fig-vector2c"/>, then 
+      <men xml:id="eqn-2c">
+        \vec{a} + (\vec{b}+\vec{c}) =  \vec{OA} + (\vec{AB} + \vec{BC}) =	\vec{OA} + \vec{AC} 	= \vec{OC}
+      </men>
+      <men xml:id="eqn-2d">
+         \text{also,}\quad	(\vec{a} + \vec{b})+\vec{c} =  (\vec{OA} + \vec{AB}) + \vec{BC} =	\vec{OB} + \vec{BC} = \vec{OC} 
+      </men>
+          from <xref ref="eqn-2c"/> and <xref ref="eqn-2d"/>, we have - 
+          <me>
+            \vec{a} + (\vec{b} + \vec{c}) = (\vec{a} + \vec{b}) + \vec{c}
+          </me>
+        </li>
+      </ol>
+    </p>
+  </paragraphs>
+
+ </subsection>
+
+   <subsection xml:id="subsubsec_subvec_subsection">
+    <title>Subtraction of Vectors</title>
+    <p>
+      The subtraction of a vector <m>\vec{b}</m>  from <m>\vec{a}</m> is the addition of a 
+      negative vector of <m>\vec{b}</m>  (i.e., <m>-\vec{b}</m> ) to <m>\vec{a}</m>, i.e.,  
+      <me>
+        \vec{a} - \vec{b} = \vec{a} + (-\vec{b})
+      </me>
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsubsec_mltvec_subsection">
+    <title>Scalar Multiplication of a Vector</title>
+    <p>
+      Let a vector  <m>\vec{a}</m> is multiplied by any real positive number <m>n</m>,  then the 
+      product <m>n \vec{a}</m> is a vector whose magnitude is <m>n</m> times as that of  
+      <m>\vec{a}</m> and its direction is the same as <m>\vec{a}</m>. If <m>n</m> is a negative 
+      number then the direction of <m>n \vec{a}</m> is opposite to <m>\vec{a}</m>. 
+      If <m>\hat{a}</m> is a unit vector in the direction of <m>\vec{a}</m> then, we have  
+      <ol marker="a">
+        <li><m>\vec{a} = |a| \hat{a}</m></li> where <m>|a|</m>  is a magnitude of <m>\vec{a}</m>.
+        <li><m>(k+l)\vec{a} = (k+l)a \hat{a}  = k a \hat{a} + l a \hat{a} = k \vec{a} + l \vec{a}</m></li>
+        where <m>k</m> and <m>l</m> are scalars. 
+        <li><m>k(\vec{a} + \vec{b}) = k \vec{a} + k\vec{b}</m></li>
+        <li><m>k(l\vec{a}) = (k l) \vec{a}</m></li>
+      </ol>
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsubsec_compntvec_subsection">
+    <title>Components of a Vector</title>
+    <p>
+      Any vector <m>\vec{r}</m> in a space can be resolved into three rectangular components. 
+      Let the position vector of a point <m>P (x,y,z)</m>  be <m>\vec{OP}= \vec{r}</m>, 
+     the diagonal vector of a parallelopiped and <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m> 
+     are the unit vectors along <m>OX, OY</m> and <m>OZ</m>  axes, respectively so that  
+     <m>\vec{OA} = x \hat{i}</m>, <m>\vec{OB} = y \hat{j}</m>, and <m>\vec{OC}= z \hat{k}</m>, 
+     the rectangular components of <m>\vec{r}</m>. 
+     <md>
+     <mrow>\text{Now,}\quad \vec{r} \amp = \vec{OP} = (\vec{OF} + \vec{FP})</mrow>  
+     <mrow> \amp  = (\vec{OA} + \vec{AF}) + \vec{FP}= \vec{OA} + \vec{OB} + \vec{OC}  </mrow>
+ <mrow> \amp = x \hat{i} + y \hat{j} + z \hat{k}.</mrow>
+     </md>
+    </p>
+    <figure>
+      <caption>Components of a vector</caption>
+        <sidebyside widths="30% 30% 30%">
+            <figure xml:id="fig-vector3a">
+                <caption></caption>
+                <image source="fig3a.png"/>
+            </figure>
+            <figure xml:id="fig-vector3b">
+                <caption></caption>
+                <image source="fig3b.png"/>
+            </figure>
+            <figure xml:id="fig-vector3c">
+              <caption></caption>
+              <image source="fig3c.png"/>
+          </figure>
+          </sidebyside>
+    </figure>
+
+    <p>
+      The magnitude of <m>\vec{r}</m> is given by
+      <me>
+       r^{2} = OP^{2} = OF^{2} + FP^{2} = (OA^{2} + AF^{2}) + FP^{2} = OA^{2} + OB^{2} + OC^{2}  
+      </me>
+      <me>
+        = x^{2}+y^{2}+z^{2}
+      </me>
+      <me>
+        \therefore \quad  \vert\vec{r}\vert =  OP = \sqrt{x^{2}+y^{2}+z^{2}}
+      </me>
+      Now, If <m>\vec{OP}</m> makes angles <m>\alpha</m>, <m>\beta</m>, and <m>\gamma</m> with 
+      <m>OX, OY</m>, and <m>OZ</m>  axes, respectively, as shown in <xref ref="fig-vector3a"/>, then
+      <md>
+        <mrow>x  \amp  = r cos\alpha</mrow>
+        <mrow>y  \amp  = r cos\beta</mrow>
+        <mrow>z  \amp  = r cos\gamma </mrow>
+        <mrow>Hence, \quad cos\alpha = \dfrac{x}{r} \amp  = \dfrac{x}{\sqrt{x^{2}+y^{2}+z^{2}}} =l </mrow>
+        <mrow>or, \quad \cos\beta = \dfrac{y}{r}  \amp = \dfrac{y}{\sqrt{x^{2}+y^{2}+z^{2}}} = m </mrow>
+        <mrow>or, \quad \cos\gamma = \dfrac{z}{r}  \amp = \dfrac{z}{\sqrt{x^{2}+y^{2}+z^{2}}} = n. </mrow>
+      </md>
+The quantities <m>\cos\alpha</m>, <m>\cos\beta</m>,  and <m>\cos\gamma</m> are called direction 
+cosines of <m>\vec{r}</m>. Obviously, 
+<me>
+  r^{2}  =  x^{2}+y^{2}+z^{2} =  r^{2}(cos^{2}\alpha+ cos^{2}\beta + cos^{2}\gamma) =r^{2} (l^{2}+m^{2}+n^{2})
+</me>
+<m>\therefore  \quad  l^{2}+m^{2}+n^{2} = 1</m>.
+    </p>
+  </subsection>
+
+  <subsection xml:id="subsec-dbetpnts">
+    <title>Distance between two points</title>
+    <p>
+      Let <m>\vec{a}</m> and <m>\vec{b}</m> are the position vectors of two points A and B, 
+      as shown in <xref ref="fig-vector3b"/>, whose coordinates are given as <m>(x_{1}, y_{1}, z_{1})</m> 
+      and <m>(x_{2}, y_{2}, z_{2}),</m> respectively then <m>\vec{a} = (x_{1}\hat{i}, y_{1}\hat{j}, z_{1}\hat{k})</m> 
+      and <m>\vec{b} = (x_{2}\hat{i}, y_{2}\hat{j}, z_{2}\hat{k})</m>.
+      From <xref ref="fig-vector3b"/>, <m>\vec{OA}+ \vec{AB} =  \vec{OB}</m>
+      <me>
+        \therefore \quad \vec{AB} = \vec{OB} - \vec{OA} = \vec{b} - \vec{a} = (x_{2}-x_{1})\hat{i} 
+        + (y_{2}-y_{1})\hat{j} + (z_{2}-z_{1})\hat{k}
+      </me>
+      <me>
+        \text{hence,}\quad AB = \vert\vec{AB}\vert = \sqrt{[(x_{2}-x_{1})^{2} +(y_{2}-y_{1})^{2}+(z_{2}-z_{1})^{2}]}
+      </me>
+    </p>
+  </subsection>
+
+   <subsection xml:id="subsec-lineseg">
+    <title>Dividing the line segments</title>
+    <p>
+      Let the point P divides the line AB in the ratio of <m>m:n</m>. If <m>\vec{a}</m> 
+      <m>\vec{b}</m> and be the position vectors of points A and B, respectively then  the 
+      position vector of point P is determined as <m>\vec{OA} = \vec{a}</m> and <m>\vec{OB}= \vec{b}</m>. 
+      Since point P divides the line AB in the ratio of <m>m:n</m>, as shown in <xref ref="fig-vector3c"/>, we have
+      <md>
+        <mrow> \dfrac{\vec{AP}}{\vec{PB}} \amp = \dfrac{m}{n}</mrow>
+        <mrow> \text{or,} \quad  n \vec{AP}  \amp = m \vec{PB}</mrow>
+        <mrow> \text{or,} \quad  n\big (\vec{OP}-\vec{OA}\big) \amp = m \big (\vec{OB}-\vec{OP}\big)</mrow>
+        <mrow> \text{or,} \quad  (m + n)\vec{OP}\amp = m\vec{OB}+n\vec{OA}</mrow>
+        <mrow>\text{or,} \quad \vec{OP}  \amp =  \frac{n\vec{a}+m\vec{b}}{m+n} </mrow>
+      </md>
+      <corollary xml:id="cor-midlineseg">
+        <statement>
+          <p>
+            If P be the mid - point of line AB, then <m>m = n</m>   and <m>\vec{OP}  
+            =\frac{1}{2} (\vec{a}+\vec{b})</m>.
+          </p>
+        </statement>
+      </corollary>
+    </p>
+   </subsection>
+   <subsection xml:id="subsec-lincombvects">
+    <title>Linear Combination of Vectors</title>
+    <p>
+      Let <m>\vec{v_{1}},\vec{v_{2}},\vec{v_{3}},\cdots,\vec{v_{n}}</m> be the vectors of the same 
+      order, then a new vector <m>\vec{v}</m> is said to be the linear combination of these vectors 
+      if there exists scalars <m>k_{1},k_{2}, k_{3}, \cdots,  k_{n}</m>, such that
+      <men xml:id="eqn-lincombvec1">
+        \vec{v} = k_{1}\vec{v_{1}} + k_{2}\vec{v_{2}} + k_{3}\vec{v_{3}} + \cdots + k_{n}\vec{v_{n}}
+      </men>
+      A set of n vectors  is said to be linearly dependent, if there exists <m>n</m> scalars
+      <m>k_{1},k_{2}, k_{3}, \cdots, k_{n}</m>, not all zero (i.e. at least one k's  is non - zero), 
+      such that 
+      <men xml:id="eqn-lincombvec2">
+        k_{1}\vec{v_{1}} + k_{2}\vec{v_{2}} + k_{3}\vec{v_{3}} +  \cdots,+ k_{n}\vec{v_{n}} = \vec{O} 
+      </men>
+     </p>
+<p>
+  where <m>\vec{O}</m> is a null vector. In equation <xref ref="eqn-lincombvec2"/>, 
+  if all the k's are zero, then the vectors <m>\vec{v_{1}},\vec{v_{2}},\vec{v_{3}},\cdots,\vec{v_{n}}</m> 
+  are linearly independent.  
+  For linearly dependent vectors, suppose <m>k_{n}</m> be one of the non - zero scalar, then
+  <me>
+   k_{n}\vec{v_{n}} = - k_{1}\vec{v_{1}} - k_{2}\vec{v_{2}} + k_{3}\vec{v_{3}} +  \cdots,+ k_{n-1}\vec{v}_{n-1}  
+  </me>
+  <me>
+    \text{or,} \quad \vec{v_{n}} = \lambda_{1}\vec{v_{1}}+\lambda_{2}\vec{v_{2}} + \lambda_{3}\vec{v_{3}} + \cdots\lambda_{n-1}\vec{v_{n-1}}
+  </me>
+   <m>\because</m>  <m>\lambda_{i} = -\frac{k_{i}}{k_{n}} </m> 
+  = linear combination of (n-1) vectors <m>\vec{v_{1}}{,}\vec{v_{2}}{,}\vec{v_{3}}{,}\cdots{,} \vec{v}_{n-1}</m> 
+</p>
+
+<figure xml:id="fig-bvec">
+  <caption>Basic Vectors</caption>
+  <image source="fig4.png" width ="40%"/>
+</figure>
+<p>
+  Thus <m>n</m> vectors are linearly dependent, if any one of them can be expressed as a linear 
+  combination of the remaining (n-1) vectors. The vectors <m>\vec{v_{1}},\vec{v_{2}},\vec{v_{3}}, 
+  \cdots,\vec{v_{n}}</m> of equation 
+  <xref ref="eqn-lincombvec1"/> form a base or basis for all the vectors in <m>n</m> - space. 
+  Hence these vectors are called the <term>Basis Vectors</term>, <idx>basis vectors</idx> 
+  i.e., any vectors lying in the given space can be expressed in terms of these basis vectors 
+  <em>basis vectors</em>. 
+  For example, suppose <m>\vec{A}</m>, <m>\vec{B}</m>, and <m>\vec{C}</m> are any three non-zero 
+  and non-parallel vectors, and there exists the scalars  <m>l</m>, <m>m</m>, and <m>n</m> 
+  such that <m>\vec{D} = l\vec{A}+m\vec{B}+n\vec{C}</m>, then <m>\vec{D}</m> is a linear combination 
+  of vectors<m>\vec{A}</m>, <m>\vec{B}</m>, and <m>\vec{C}</m> in three dimensional space. 
+  Where <m>l</m>, <m>m</m>, and <m>n</m> are components of a <m>\vec{D}</m> and <m>\vec{A}</m>, 
+  <m>\vec{B}</m>, and <m>\vec{C}</m> form the basis vectors. In space (or plane) it is 
+  advantageous to choose the basis for the vectors as perpendicular vector each of unit length. 
+  These vectors are denoted by <m>\vec{i}</m>, <m>\vec{j}</m>, and <m>\vec{k}</m> and their common 
+  foot by <m>O</m>. The lines determined by <m>\vec{i}</m>, <m>\vec{j}</m>, and <m>\vec{k}</m> 
+  are the <m>x</m>, <m>y</m> and <m>z</m> axes, respectively. Any  vector <m>\vec{r}</m> in a space 
+  with foot at O, as shown in <xref ref="fig-bvec"/>, can  be expressed as  a  linear combination 
+  of the basis vectors <m>\vec{i}</m>, <m>\vec{j}</m>, and <m>\vec{k}</m>, such that 
+  <m>\vec{r}= x\vec{i}+y\vec{j}+z\vec{k}</m>. <idx>linear combination of vectors</idx>.
+</p>
+<p>
+<alert> Basis Vectors</alert> are a set of linearly independent vectors that span a vector space. 
+  A vector space can have many different bases, but any two bases of the same vector space have 
+  the same number of vectors, 
+  which is known as the dimension of the vector space. For example, in two-dimensional space, 
+  the standard basis vectors are (1, 0) and (0, 1), which are perpendicular to each other 
+  and span the entire space. Any vector in the plane can be written as a linear combination 
+  of these two vectors. Similarly, in three-dimensional space, the standard basis vectors are 
+  (1, 0, 0), (0, 1, 0), and (0, 0, 1), which are mutually orthogonal and span the entire space. 
+  Any vector in three-dimensional space can be expressed as a linear combination of these three vectors.
+</p>
+
+   </subsection>
+
+<example>
+  <statement>
+    <p>
+      Examine whether the vectors <m>\hat{i}-3\hat{j}+2\hat{k}</m>, <m>2\hat{i}-4\hat{j}-\hat{k}</m>, and 
+      <m>3\hat{i}+2\hat{j}-\hat{k}</m> are linearly independent or dependent.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let <m>\vec{a} = \hat{i}-3\hat{j}+2\hat{k}</m>, <m>\vec{b} = 2\hat{i}-4\hat{j}-\hat{k}</m>,
+       and <m>\vec{c}=3\hat{i}+2\hat{j}-\hat{k}</m>. 
+    </p>
+    <p>
+      If these vectors are linearly dependent then <m>l\vec{a} + m\vec{b}+ n\vec{c} =0</m>. 
+      where <m>l, m, n</m>  are scalars, and at least one scalar being non-zero, i.e.,
+      <md>
+        <mrow> l( \hat{i}-3\hat{j}+2\hat{k}) + m(2\hat{i}-4\hat{j}-\hat{k}) + n(3\hat{i}+2\hat{j}-\hat{k}) \amp = 0</mrow>
+        <mrow>\text{or,} \quad (l+2m+3n)\hat{i} + (-3l-4m+2n)\hat{j} + (2l-m-n)\hat{k}\amp =0</mrow>
+      </md>
+    </p>
+    <p>
+      Equating the coefficients of <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m> on both sides, we get-
+      <mdn>
+        <mrow xml:id="eqn-1i"> l+2m+3n  \amp =0 </mrow>
+        <mrow xml:id="eqn-1ii"> -3l-4m+2n  \amp =0 </mrow>
+        <mrow xml:id="eqn-1iii"> \text{and} \quad 2l-m-n  \amp =0 </mrow>
+      </mdn>
+      From eqns. <xref ref="eqn-1i"/> and <xref ref="eqn-1ii"/> we get- 
+      <md>
+        <mrow> \frac{l}{4+12}\amp =\frac{m}{-9-2} =\frac{n}{-4+6} =\lambda \quad \text{(say)} </mrow>
+      <mrow> \text{or,} \quad \frac{l}{16} \amp =\frac{m}{-11}=\frac{n}{2} =\lambda</mrow>
+      <mrow>\text{or,}\quad l \amp =16\lambda, \quad m = -11	\lambda,\quad \text{and}\quad n =2\lambda </mrow>
+    </md>
+    substituting these values in eqn.<xref ref="eqn-1iii"/> we get -
+    <md>
+      <mrow>41\lambda \amp =0,\quad \Rightarrow \lambda  = 0, </mrow>
+    <mrow> \therefore   \quad  l\amp =m  =n =0. </mrow>
+    </md>
+    Hence the vectors  are linearly independent.
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Prove that the vectors <m>2\hat{i}+\hat{j}-3\hat{k}</m>, <m>\hat{i}-4\hat{k}</m>, 
+       and <m>4\hat{i}+3\hat{j}-\hat{k}</m> are linearly dependent.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let <m>\vec{a} =2\hat{i}+\hat{j}-3\hat{k}</m>, <m>\vec{b}= \hat{i}-4\hat{k}</m>, and <m>\vec{c} 
+      =4\hat{i}+3\hat{j}-\hat{k}</m>
+      If these vectors are linearly dependent, then <m>l\vec{a} + m\vec{b}+ n\vec{c} =0</m>  
+      where <m>l, m, \text{and} n</m> are scalars and at least one scalar being not zero, i.e.,
+      <md>
+        <mrow>l(2\hat{i}+\hat{j}-3\hat{k}) + m(\hat{i}-4\hat{k}) + n(4\hat{i}+3\hat{j}-\hat{k}) \amp=0</mrow>
+      <mrow>\text{or,} \quad (2l+m+4n)\hat{i}+(l+3n)\hat{j}+(-3l-4m-n)\hat{k} \amp =0</mrow>
+      </md>
+      Equating the coefficients of <m>\hat{i}</m>, <m>\hat{j}</m>,  and <m>\hat{k}</m> on both sides, we get-
+   <mdn>
+    <mrow xml:id="eqn-1iv"> 2l+m+4n \amp =0</mrow>
+    <mrow xml:id="eqn-1v"> l+0m+3n \amp =0 </mrow>
+    <mrow xml:id="eqn-1vi"> \text{and,} \quad -3l-4m-n \amp =0 </mrow>
+   </mdn>
+    </p>
+    <p>
+      From eqns. <xref ref="eqn-1iv"/> and <xref ref="eqn-1vi"/> we get - 
+      <md>
+      <mrow>\frac{l}{-1+16}=\frac{m}{-12+2} =\frac{n}{-8+3} \amp = \lambda \quad \text{(say)}</mrow>
+      <mrow>\text{or,} \quad \frac{l}{15} =\frac{m}{-10} =\frac{n}{-5} \amp=\lambda  </mrow>
+      <mrow> \text{or,} \quad l=15\lambda, \quad  m = -10	\lambda, \quad \text{and} \quad n \amp =-5\lambda </mrow>
+      </md>
+These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence for any set of scalars 
+(all of them being not zero) of the given vectors <m> \vec{a}</m>,  
+<m> \vec{b}</m>, and <m> \vec{c}</m> are linearly dependent.
+    </p>
+  </solution>
+</example>
+
+<subsection xml:id="subsec-prodvect">
+  <title>Product of Two Vectors</title>
+  <introduction>
+    <p>
+    There are two ways in which vectors are multiplied. 
+    The product of one of them is a scalar quantity, called a scalar product (or a dot product) 
+    and the other is a vector quantity, called a vector product (or a cross product).
+  </p>
+  </introduction>
+ 
+
+<subsubsection xml:id="subsubsec-dotprod">
+  <title>Scalar or Dot Product</title>
+  <figure>
+    <caption>Scalar product of two vectors</caption>
+      <sidebyside widths="35% 45%">
+          <figure xml:id="fig-prodvect2a">
+              <caption></caption>
+              <image source="fig5a.png"/>
+          </figure>
+          <figure xml:id="fig-prodvect2b">
+              <caption></caption>
+              <image source="fig5b.png"/>
+          </figure>
+        </sidebyside>
+  </figure>
+
+  <ol marker ="I">
+    <li>
+      <p>
+        <term>The scalar or dot product of two vectors</term> <m>\vec{a}</m>, and <m>\vec{b}</m> 
+        is denoted by <m>\vec{a}. \vec{b}</m> and is defined as 
+        <me>\vec{a}\cdot {\vec{b}} = |\vec{a}|. |\vec{b}| \cos\theta= ab\cos\theta</me>, 
+        where <m>\theta</m> is the angle between <m>\vec{a}</m> and <m>\vec{b}</m>.
+      </p>
+    </li>
+    <li>
+      <p>
+        <term>Geometrical Interpretation:</term>  Let <m>\vec{OA} =\vec{a}</m> and <m>\vec{OB} =\vec{b}</m>, 
+        as shown in <xref ref="fig-prodvect2a"/>, then 
+        <me>
+         \vec{a}\cdot {\vec{b}} =  \vec{OA}\cdot {\vec{OB}} = OA.OB \cos\theta = OA\cdot {ON}  
+        </me>
+        <m>[\because \cos\theta= \frac{ON}{OB}]</m>
+       = (length of <m>\vec{a}</m>) (projection of <m>\vec{b}</m>  along a <m>\vec{a}</m>).  
+        The dot product of two vectors is the product of length of one of these vectors and the 
+        projection of another in the direction of the first. 
+      </p>
+    </li>
+  </ol>
+ </subsubsection>
+
+ <paragraphs>
+  <title>Properties:</title>
+  <p>
+    <ol marker="a">
+      <li><term>Commutative Law:</term> 
+        <md>
+          <mrow> \vec{a}\cdot {\vec{b}} \amp = \vec{b}\cdot {\vec{a}}</mrow>
+          <mrow> \because [\vec{a}\cdot {\vec{b}}\amp = ab\cos\theta] \quad \text{and} 
+           [\vec{b}\cdot {\vec{a}} = ba\cos(-\theta) = ab\cos\theta ] </mrow>
+           <mrow> \amp [\because \cos(-\theta) = \cos\theta ]</mrow>
+           <mrow> \therefore \quad  \vec{a}\cdot {\vec{b}}\amp =\vec{b}\cdot {\vec{a}} </mrow>
+        </md>
+      </li>
+      <li>
+        <term>Distributive Law:</term>
+        <me>
+          \vec{a}\cdot{(\vec{b}+\vec{c})}= \vec{a}\cdot {\vec{b}} + \vec{a}\cdot {\vec{c}}
+        </me>
+        Let <m>\vec{OA} =\vec{a}</m>, <m>\vec{OB} =\vec{b}</m>, and <m>\vec{BC} =\vec{c}</m> as shown 
+        in <xref ref="fig-prodvect2b"/>, then
+        <me>
+          \vec{a}\cdot {\vec{b}} + \vec{a}\cdot {\vec{c}} = \vec{OA}\cdot {\vec{OB}} + \vec{OA}\cdot {\vec{BC}}
+        </me>
+        <me>
+        = OA\cdot{OM}+OA\cdot{MN} = OA(OM+MN) = OA.ON  
+        </me>
+        <me>
+          \vec{a}\cdot{(\vec{b}+\vec{c})}  =  \vec{OA}\cdot{(\vec{OB}+\vec{BC})} = \vec{OA}\cdot{\vec{OC}} = OA.ON
+        </me>
+        <me>
+          \therefore   \quad \vec{a}\cdot{(\vec{b}+\vec{c})} = \vec{a}\cdot {\vec{b}} + \vec{a}\cdot {\vec{c}}
+        </me>
+      </li>
+      <li>
+          <term>Useful Results:</term>  If <m>\hat{i}</m>, <m>\hat{j}</m>, <m>\hat{k}</m>, 
+          be the unit vector along <m>x</m>, <m>y</m>, <m>z</m> axes, respectively, then 
+      <md>
+        <mrow>\hat{i}\cdot{\hat{i}} \amp = \hat{j}\cdot{\hat{j}} = \hat{k}\cdot{\hat{k}} 
+        =1 \hspace{1cm}  \because \theta = 0^{o}</mrow>
+      <mrow>\hat{i}\cdot{\hat{j}} \amp  = \hat{j}\cdot{\hat{k}}  = \hat{k}\cdot{\hat{i}} 
+      = 0 \hspace{1cm} \because \theta = 90^{o}</mrow>
+      </md>
+        </li>
+   </ol>
+  </p>
+ </paragraphs>
+
+
+ <subsubsection xml:id="subsubsec-crosprod">
+  <title>Vector or Cross Product</title>
+  <figure>
+    <caption>Vector product of two vectors</caption>
+      <sidebyside widths="40% 40%">
+          <figure xml:id="fig-crosprod2a">
+              <caption></caption>
+              <image source="fig6a.png"/>
+          </figure>
+          <figure xml:id="fig-crosprod2b">
+              <caption></caption>
+              <image source="fig6b.png"/>
+          </figure>
+        </sidebyside>
+  </figure>
+  <p>
+    <ol marker ="I">
+      <li>
+        The vector or cross product of two vectors <m>\vec{a}</m> and <m>\vec{b}</m> is denoted by  
+        <m>\vec{a} \times\vec{b}</m> and is defined as
+        <md>
+          <mrow>  \vec{a} \times \vec{b} \amp = \mid{\vec{a}}\mid \mid{\vec{b}}\mid \sin\theta \cdot{\hat {n}} 
+          = ab\sin\theta {\hat{n}}</mrow>
+        </md>
+        where <m>\theta</m> is the anlge between <m>\vec{a}</m> and <m>\vec{b}</m>, and <m>{\hat{n}}</m> is an unit 
+        vector perpendicular to the plane made by vectors <m>\vec{a}</m> and <m>\vec{b}</m> and is 
+        representing the direction of <m>\vec{a}\times\vec{b}</m>. 
+        Here <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>{\hat{n}}</m> form a right handed system, 
+        as shown in <xref ref="fig-crosprod2a"/>.
+      </li>
+      <li><term>Geometrical Interpretation:</term> Let <m>\vec{a}</m> and <m>\vec{b}</m> 
+      be the adjacent sides of the parallelogram,  as shown in <xref ref="fig-crosprod2b"/>, then 
+      <me>
+        \vec{a}\times\vec{b} =\vec{OA}\times\vec{OB} = OA\cdot{OB \sin\theta}{\hat{n}} 
+      </me>
+
+      <me>
+      = OA\cdot{BM}{\hat{n}} = base \cdot height\hspace{3pt} \hat{n} = \text{vector area of parallelogram OACB}  
+      </me>
+      </li>
+       </ol>
+       Hence, a vector product of two vectors is the vector area of a parallelogram constructed by the given vectors. 
+  </p>
+ </subsubsection>
+
+ <paragraphs>
+  <title>Properties:</title>
+  <p>
+    <ol marker ="a">
+      <li>
+        Commutative law does not hold good in a vector product, i.e.,
+        <md>
+          <mrow>\vec{a}\times\vec{b} \amp \neq \vec{b}\times\vec{a}</mrow>
+          <mrow>\text{but,} \quad \vec{a}\times\vec{b}  \amp = - \vec{b}\times\vec{a}</mrow>
+       <mrow> \because \vec{b}\times\vec{a} \amp = \mid{\vec{b}}\mid \mid{\vec{a}}\mid \sin\theta \cdot \hat {n}
+       = -a b \sin\theta = - \vec{a}\times\vec{b} </mrow>
+      </md>
+      </li>
+      <li>
+          <term>Distributive law:</term>
+          <me>
+            \vec{a}\times{(\vec{b} + \vec{c})} = \vec{a}\times\vec{b} + \vec{a}\times\vec{c} 
+          </me>
+          Let <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>\vec{c}</m> are three vectors 
+          such that <m>\vec{OA}= \vec{a}</m>, <m>\vec{OB}= \vec{b}</m>, and <m>\vec{BC}= \vec{c}</m> 
+           that form a parallelogram OAEB, BCDE, and OADC, as shown in <xref ref="fig-crosprod2c"/>, then
+           <me>
+            \vec{a}\times\vec{b} + \vec{a}\times\vec{c} 
+           </me>
+           = vector area of <m>\Vert^{gm} OAEB</m>  + vector area of <m>\Vert^{gm} BCDE</m>
+            = vector area of OAEDCBO   = vector area of OADCO - vector area of <m>\nabla OBC</m> + vector area of <m>\nabla AED</m> 
+           <me>
+           [\because \nabla OBC = \nabla AED]
+           </me>
+           = vector area of <m>\Vert^{gm}OADCO = \vec{OA}\times\vec{OC} = \vec{a}\times (\vec{b} + \vec{c})</m>.
+           <me>
+               \therefore \quad \vec{a}\times (\vec{b} + \vec{c}) = \vec{a}\times\vec{b} + \vec{a}\times\vec{c}
+           </me>
+         </li>
+           <li>
+        <term>Useful Results:</term> If <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m>
+         are mutually perpendicular unit vectors, then from <xref ref="fig-crosprod2d"/>
+        <md>
+          <mrow> \hat{i}\times\hat{i}\amp  =  \hat{j}\times\hat{j} = \hat{k}\times\hat{k} = 0.
+          \quad [\because \theta = 0] </mrow>
+       <mrow> \text{also,} \quad \hat{i}\times\hat{j}\amp = \hat{k}; \quad \hat{j}\times\hat{i} 
+       = -\hat{k}; \quad \hat{j}\times\hat{k} = \hat{i}</mrow>
+       <mrow> \text{and} \quad \hat{k}\times\hat{j} \amp = -\hat{i}; \quad \hat{k}\times\hat{i} 
+       = \hat{j} = - \hat{i}\times\hat{k}</mrow>
+      </md> 
+    </li>
+    <li>Vector product can also be expressed as a determinant form.
+      If <m>\vec{a} = a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}</m> and 
+      <m> \vec{b} = b_{1}\hat{i}+b_{2}\hat{j}+ b_{3}\hat{k}</m>, then
+      <md>
+        <mrow> \vec{a}\times\vec{b} \amp = {a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}}\times{b_{1}\hat{i}+b_{2}\hat{j} 
+        + b_{3}\hat{k}}</mrow>
+      <mrow> \amp =(a_{2}b_{3}-(a_{3}b_{2})\hat{i}- (a_{1}b_{3}-(a_{3}b_{1})\hat{j} 
+      + (a_{1}b_{2}-(a_{2}b_{1})\hat{k} </mrow>
+     </md>
+     <m>
+      =\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\a_{1} &amp; a_{2} &amp; a_{3} \\ b_{1} &amp; b_{2} &amp; b_{3} \end{vmatrix}
+     </m>
+    </li>
+    </ol>
+  </p>
+  <figure>
+    <caption></caption>
+      <sidebyside widths="30% 30%">
+          <figure xml:id="fig-crosprod2c">
+              <caption>Distributive</caption>
+              <image source="fig7a.png"/>
+          </figure>
+          <figure xml:id="fig-crosprod2d">
+              <caption>Neumonic</caption>
+              <image source="fig7b.png"/>
+          </figure>
+        </sidebyside>
+  </figure>
+ </paragraphs>
+
+</subsection>
+
+
+ <subsection xml:id="subsec-sctrip">
+  <title>Scalar Triple Product</title>
+  <figure xml:id="fig-sctrip2">
+    <caption></caption>
+    <image source="fig8.png" width ="35%"/>
+</figure>
+  <p>
+    <ol marker ="I">
+      <li>
+       <term>Definition:</term>  Let <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>\vec{c}</m> 
+       be three vectors then their scalar triple product is determined by 
+       <m>\vec{a}\cdot{(\vec{b}\times\vec{c})}</m> and <m> [\vec{a}\vec{b}\vec{c}]</m>.
+       If <m> \vec{a} = a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}</m> 
+         <m>\vec{b} = b_{1}\hat{i}+b_{2}\hat{j}+ b_{3}\hat{k}, </m> 
+        and <m> \vec{c} = c_{1}\hat{i}+c_{2}\hat{j}+ c_{3}\hat{k}</m> then 
+        <md>
+          <mrow>\vec{a}\cdot{(\vec{b}\times\vec{c})}  \amp = (a_{1}\hat{i}+a_{2}\hat{j} 
+          + a_{3}\hat{k})  \cdot{\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ b_{1} &amp; 
+          b_{2} &amp; b_{3}\\c_{1} &amp; c_{2} &amp; c_{3} \end{vmatrix}}</mrow>
+          </md> 
+          <me>
+            =(a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) 
+          </me>
+          <me>
+            \cdot [(b_{2}c_{3}-b_{3}c_{2})\hat{i} - (b_{1}c_{3}-b_{3}c_{1})\hat{j} + (b_{1}c_{2}-b_{2}c_{1})\hat{k}]
+          </me>
+          <me>
+            =a_{1}(b_{2}c_{3}-b_{3}c_{2}) + a_{2}(b_{3}c_{1}-b_{1}c_{3}) + a_{3}(b_{1}c_{2}-b_{2}c_{1})
+          </me>
+          <me>
+            =\begin{vmatrix} a_{1} &amp; a_{2} &amp; a_{3} \\ b_{1} &amp; b_{2} &amp; b_{3}\\ c_{1} &amp; c_{2} &amp; c_{3} \end{vmatrix} = [\vec{a}\vec{b}\vec{c}]
+          </me>  
+      From the properties of a determinant, we can find that the value of the product depends 
+      upon the cyclic order of the vectors and is independent of the position of the dot and cross. 
+      Thus, dot and cross may be interchangeable in a scalar triple product, i.e., 
+      <md>
+        <mrow>[\vec{a}\vec{b}\vec{c}] \amp  = [\vec{c}\vec{a}\vec{b}] = [\vec{b}\vec{c}\vec{a}]</mrow>
+      <mrow> \text{or,}\quad \vec{a}\cdot{(\vec{b}\times\vec{c})} \amp = \vec{c}\cdot{(\vec{a}\times\vec{b})} 
+      = \vec{b}\cdot{(\vec{c}\times\vec{a})}</mrow>
+      </md>
+    The value of product changes in sign if the order is non-cyclic, i.e., 
+    <m>[\vec{a}\vec{b}\vec{c}] = -[\vec{b}\vec{a}\vec{c}] = -[\vec{a}\vec{c}\vec{b}]</m>
+   </li>
+   <li>
+    <term>Geometrical Interpretation:</term> Let <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>\vec{c}</m> 
+    be the co-terminous edges of the parallelopiped, as shown in figure <xref ref="fig-sctrip2"/>, then
+    <md>
+      <mrow>\vec{a}\cdot{(\vec{b}\times\vec{c})} \amp = \vec{a}\cdot \text{(area of} \parallel^{gm}OBDC)\hat{n} </mrow>
+    <mrow> \amp= (\text{area of} \parallel^{gm}OBDC) (\text{projection of} \vec{a} \quad \text{on}  \hat{n}) </mrow>
+   <mrow> \amp  = (\text{area of} \parallel^{gm}OBDC) (a \cos\theta) </mrow>
+  <mrow> \amp = (\text{area of} \parallel^{gm}OBDC) \text{(height of the parallelopiped)} </mrow>
+  <mrow> \amp = \text{Volume of the parallelopiped}.</mrow>
+  </md>
+  That is, the scalar triple product gives the volume of the parallelopiped having these vectors as co-terminous edges. 
+   </li>
+    </ol>
+    <alert>Note:</alert> If <m>\vec{a}\cdot{(\vec{b}\times\vec{c})} = 0</m>, then <m>\vec{a}</m>, 
+    <m>\vec{b}</m>, <m>\vec{c}</m> are coplanars, and
+ <me>
+ \text{ Volume of tetrahedron} = \frac{1}{6}[\vec{a}\vec{b}\vec{c}]. 
+ </me>
+  </p>
+ </subsection>
+ <subsection xml:id="subsec-vectripl">
+  <title>Vector Triple Product</title>
+  <p>
+    If <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>\vec{c}</m> be three vectors, then their vector triple 
+    product is denoted by <m>\vec{a}\times{(\vec{b}\times\vec{c})}</m>. Let 
+   <m>\vec{a} = a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}, </m> <m> \vec{b}= b_{1}\hat{i}+b_{2}\hat{j} 
+   + b_{3}\hat{k},</m> and <m> \vec{c}  = c_{1}\hat{i}+c_{2}\hat{j}+ c_{3}\hat{k},</m> then 
+   <me>
+    \vec{a}\times{(\vec{b}\times\vec{c})} =  (a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) 
+    \times{\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ b_{1} &amp; b_{2} &amp; b_{3}\\c_{1} &amp; 
+    c_{2} &amp; c_{3} \end{vmatrix}}
+   </me>
+   <me>
+    =(a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) \times[(b_{2}c_{3}-b_{3}c_{2})\hat{i} + (b_{1}c_{3}-b_{3}c_{1})\hat{j} + (b_{1}c_{2}-b_{2}c_{1})\hat{k}]
+   </me>
+   <me>
+     =[a_{2}(b_{1}c_{2}-b_{2}c_{1}) - a_{3}(b_{3}c_{1}-b_{1}c_{3})]\hat{i} + [a_{3}(b_{2}c_{3}-b_{3}c_{2})-a_{1}(b_{1}c_{2}  - b_{2}c_{1})]\hat{j}
+   </me>
+   <me>
+    + [a_{1}(b_{3}c_{1}-b_{1}c_{3}) - a_{2}(b_{2}c_{3}-b_{3}c_{2})]\hat{k}
+   </me>
+   <me>
+    =\left(a_{1}c_{1} + a_{2}c_{2} + a_{3}c_{3}\right) \left(b_{1}\hat{i} + b_{2}\hat{j} 
+  + b_{3}\hat{k}\right) 
+   </me>
+   <me>
+     - \left(a_{1}b_{1} + a_{2}b_{2} + a_{3}b_{3}\right)  \left(c_{1}\hat{i} + c_{2}\hat{j} + c_{3}\hat{k}\right)
+   </me>
+   <me>
+    =\left( \vec{a}\cdot\vec{c}\right)\vec{b} - \left( \vec{a}\cdot\vec{b}\right)\vec{c}
+   </me>
+  </p>
+ </subsection>
+
+ <paragraphs>
+  <title>Properties:</title> 
+  <p>
+    Vector triple product is not associative, i.e., 
+  <m>\vec{a}\times{(\vec{b}\times\vec{c})} \neq (\vec{a}\times{\vec{b})\times\vec{c}}</m>.
+  <mdn>
+    <mrow xml:id="eqn-vtp1"> \because \quad \vec{a}\times{(\vec{b}\times\vec{c})}\amp 
+    = \left( \vec{a}\cdot\vec{c}\right)\vec{b} - \left( \vec{a}\cdot\vec{b}\right)\vec{c}</mrow>
+  </mdn>
+  <md>
+   <mrow>\text{and}\quad \vec{a}\times{(\vec{b}\times\vec{c})} \amp  
+   = -\vec{c}\times{(\vec{a}\times\vec{b})} = -\left[\left( \vec{c}\cdot\vec{b}\right)\vec{a} 
+   - \left( \vec{c}\cdot\vec{a}\right)\vec{b}\right]</mrow>
+  </md>
+  <men xml:id="eqn-vtp2">
+   \therefore \quad \vec{a}\times{(\vec{b}\times\vec{c})} =  \left(\vec{a}\cdot\vec{c}\right)\vec{b} 
+   -\left(\vec{b}\cdot\vec{c}\right)\vec{a}
+  </men>
+  
+  hence, <m> \vec{a}\times{(\vec{b}\times\vec{c})} \neq (\vec{a}\times{\vec{b})\times\vec{c}}</m>.
+</p>
+  <p>
+    Equation <xref ref="eqn-vtp1"/> shows that a vector <m>\vec{a}\times{(\vec{b}\times\vec{c})}</m> 
+    is lying in the plane of <m>\vec{b}</m> and <m>\vec{c}</m>. 
+    While equation <xref ref="eqn-vtp2"/>  shows a vector <m>\vec{a}\times{(\vec{b}\times\vec{c})}</m> 
+    is lying in the plane of  <m>\vec{a}</m> and <m>\vec{b}</m>.
+  </p>
+   
+ </paragraphs>
+
+ <subsection xml:id="subsec-recvec">
+  <title>Reciprocal Vectors</title>
+  <p>
+    If the three vectors <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>\vec{c}</m> are non-coplanar, i.e., 
+    <m>[\vec{a}\vec{b}\vec{c}] \neq 0,</m> and 
+    the vectors <m>\vec{a'}</m>, <m>\vec{b'}</m>, and <m>\vec{c'}</m> are defind as 
+    <me>\vec{a'} = \frac{\vec{b}\times\vec{c}}{[\vec{a}\vec{b}\vec{c}]}; \quad \vec{b'} 
+    = \frac{\vec{c}\times\vec{a}}{[\vec{a}\vec{b}\vec{c}]}; \quad \text{and}\quad \vec{c'} 
+    = \frac{\vec{a}\times\vec{b}}{[\vec{a}\vec{b}\vec{c}]}</me>
+     then the vectors <m>\vec{a}</m>, <m>\vec{b}</m>, <m>\vec{c}</m> and  <m>\vec{a'}</m>,
+      <m>\vec{b'}</m>, <m>\vec{c'}</m> are called the reciprocal sets of vectors.
+  </p>
+ </subsection>
+
+ <paragraphs>
+  <title>Properties:</title>
+  <p>
+    <ol marker="i">
+      <li>
+       <m> \vec{a}\cdot \vec{a'} = \vec{b}\cdot \vec{b'} = \vec{c}\cdot \vec{c'} = 1.</m>
+      </li>
+      <proof>
+        <p>
+         <m> \vec{a}\cdot \vec{a'} = \vec{a}\cdot \frac{\vec{b}\times\vec{c}}{[\vec{a}\vec{b}\vec{c}]} 
+         = \frac{[\vec{a}\vec{b}\vec{c}]}{[\vec{a}\vec{b}\vec{c}]} = 1.</m>
+          Similarly, <m> \vec{b}\cdot \vec{b'} = \vec{c}\cdot \vec{c'} = 1.</m>
+        </p>
+      </proof>
+      <li>
+        <m>\vec{a}\cdot \vec{b'} = \vec{a}\cdot \vec{c'} = \vec{b}\cdot \vec{c'} = \vec{b}\cdot \vec{a'} 
+        = \vec{c}\cdot \vec{a'} = \vec{c}\cdot \vec{b'} = 0.</m>
+      </li>
+      <proof>
+        <p>
+         <m> \vec{a}\cdot \vec{b'} = \vec{a}\cdot \frac{\vec{c}\times\vec{a}}{[\vec{a}\vec{b}\vec{c}]} 
+         = \frac{[\vec{a}\vec{c}\vec{a}]}{[\vec{a}\vec{b}\vec{c}]} = 0.</m>
+        </p>
+      </proof>
+      </ol>
+        <m>\because \quad [\vec{a}\vec{c}\vec{a}] = 0</m>. Similarly other relations can be obtained.
+  </p>
+</paragraphs>
+
+  <subsection xml:id="subsec-diffvects">
+    <title>Differentiation of a Vector with respect to Scalars</title>
+    <figure xml:id="fig-diffvects">
+      <caption></caption>
+      <image source="fig9.png" width ="35%"/>
+  </figure>
+    <p>
+      Let the vector <m>\vec{r}</m> be a function of scalar variable <m>t</m>, 
+      then <m>\vec{r} = \vec{f\left(t\right)}</m>. If only one value of <m>\vec{r}</m> corresponds 
+      to each value of <m>t</m>, then <m>\vec{r}</m> is defined as a <em>single valued function</em> 
+      of the scalar variable <m>t</m>. If <m>t</m> varies continuously with <m>\vec{r}</m>, then the 
+      end point of <m>\vec{r}</m>  describes a continuous curve. For different values of <m>t</m>, 
+      the end point of the vector describes the curve, as shown in figure <xref ref="fig-diffvects"/> and can be 
+      expressed as the following vector equations. 
+      <md>
+       <mrow>\vec{r} \amp  = a \cos t\hat{i} + a \sin t\hat{j} \quad \text{(circle)};  </mrow> 
+       <mrow> \vec{r}\amp = a \cos t\hat{i} + b \sin t\hat{j} \quad \text{(ellipse)}; </mrow>
+        <mrow> \vec{r} \amp = a t^{2}\hat{i} + 2 a t\hat{j} \quad \text{(parabola)};\quad \text{and}</mrow>
+        <mrow> \vec{r} \amp = a \sec t\hat{i} + b \tan t\hat{j} \quad \text{(hyperbola)}.</mrow>
+       </md>
+       <alert>Note:</alert> Any vector <m>f(t)</m> can also be written in the form
+       <m>\vec{f}\left(t\right) = f_{1}\left(t\right)\hat{i} + f_{2}\left(t\right)\hat{j} 
+       + f_{3}\left(t\right)\hat{k}</m>
+       where <m>{f_{1}\left(t\right)}</m>, <m>{f_{2}\left(t\right)}</m>, <m>{f_{3}\left(t\right)}</m> 
+       are three scalar functions of <m>t</m>. Now, Let O be the origin and P be the position of a 
+       moving particle at time <m>t</m>, as shown in figure <xref ref="fig-diffvects"/>. 
+       After the interval <m>t+\delta t</m> the particle reaches at Q, so that
+       <me>
+        \vec{PQ} = \vec{OQ} - \vec{OP} = \vec{r}+\vec{\delta r} - \vec{r}   =  \vec{\delta r} 
+       </me>
+       [<m>\because \vec{OQ} = \vec{r}+\vec{\delta r}</m> and <m>\vec{OP} = \vec{r}</m>,  
+       the position vectors.] Since, <m>\vec{PQ}</m> subtands in time <m>\delta t</m>, hence in 
+       unit time the vector will be <m>\vec{PQ}/\delta t</m>, or, <m>\vec{\delta r}/\delta t</m>. 
+       As <m>\delta t \to 0</m>, point Q tends to point P and the chord becomes the tangent at P,  
+       we define
+       <me>
+        \frac{\vec{d r}}{d t} = \lim\limits_{\delta t \to 0} \frac{\vec{\delta r}}{\delta t}
+       </me>
+       </p>
+<p>
+  Then, <m>\frac{\vec{d r}}{d t}</m>  is a vector in the direction of tangent at P and defines 
+  the velocity of the particle at P, <m>\frac{\vec{d r}}{d t}</m>  is also called the differential 
+  coefficient of <m>\vec{r}</m> with respect to 't'. Similarly, <m>\frac{ {d^{2} \vec{r}}}{d t^{2}}</m> 
+  is the second order derivative of <m>\vec{r}</m> which gives the acceleration of the particle at P. 
+  <term>Note:</term> The derivative of a constant vector <m>\vec{C}</m> is zero, i.e. 
+  if <m>\vec{C}</m> is a constant vector, then <m>\frac{\vec{d C}}{d t} = 0</m>, because there is no 
+  change in <m>\vec{C}</m> in the interval <m>\delta t</m>.
+  </p>
+
+  </subsection>
+
+  </section>
+

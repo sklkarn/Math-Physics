@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_first-examplesC" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples C</title>
+<example>
+  <statement>
+    <p>
+      Prove that a cylindrical coordinate system is orthogonal.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The position vector of any point P in a cylindrical coordinate is 	
+      <me>
+        \vec{r}= x\hat{i}+y\hat{j}+z\hat{k}= \rho\cos\phi\hat{i}+\rho\sin\phi\hat{j}+z\hat{k}
+      </me>
+      Now,
+      <me>
+         \frac{\partial \vec{r}}{\partial \rho}, \frac{\partial \vec{r}}{\partial \phi}, \frac{\partial \vec{r}}{\partial z}
+      </me>
+      are the tangent vectors along the curves <m>\rho, \phi,z,</m>, respectively.
+      <me>
+        \therefore \quad  \frac{\partial \vec{r}}{\partial \rho} = \cos\phi\hat{i}+\sin\phi\hat{j},
+      </me>
+      <me>
+        \frac{\partial \vec{r}}{\partial \phi} = -\rho\sin\phi\hat{i}+\rho\cos\phi\hat{j},
+      </me>
+      <me>
+        \text{and} \quad \frac{\partial \vec{r}}{\partial z} = \hat{k}.
+      </me>
+      The unit vectors along the tangents are
+      <me>
+      \hat{e}_{1}=\hat{e}_{\rho}=\frac{\frac{\partial \vec{r}}{\partial \rho}}{\mid\frac{\partial \vec{r}}{\partial \rho}\mid}
+      </me>
+      <men xml:id="eqn-unit_vect1">
+        = \frac{\cos\phi\hat{i}+\sin\phi\hat{j}}{\sqrt{\cos^{2}\phi + \sin^{2}\phi}} = \cos\phi\hat{i}+\sin\phi\hat{j},
+      </men>
+      <me>
+        \hat{e}_{2}=\hat{e}_{\phi}=\frac{\frac{\partial \vec{r}}{\partial \phi}}{\mid\frac{\partial \vec{r}}{\partial \phi}\mid} 
+      </me>
+      <men xml:id="eqn-unit_vect2">
+        = \frac{-\rho\sin\phi\hat{i}+\rho\cos\phi\hat{j}}{\sqrt{\rho^{2}\sin^{2}\phi + \rho^{2}\cos^{2}\phi}} = -\sin\phi\hat{i}+\cos\phi\hat{j},
+      </men>
+      <men xml:id="eqn-unit_vect3">
+        \hat{e}_{3}=\hat{e}_{z}=\frac{\frac{\partial \vec{r}}{\partial z}}{\mid\frac{\partial \vec{r}}{\partial z}\mid} = \hat{k}
+      </men>
+      Then,
+      <me>
+        \hat{e}_{1}\cdot\hat{e}_{2} = (\cos\phi\hat{i}+\sin\phi\hat{j})\cdot(-\sin\phi\hat{i}+\cos\phi\hat{j}) = 0,
+      </me>
+      <me>
+        \hat{e}_{1}\cdot\hat{e}_{3} = (\cos\phi\hat{i}+\sin\phi\hat{j})\cdot (\hat{k})=0,
+      </me>
+      and 
+      <me>
+        \hat{e}_{2}\cdot\hat{e}_{3} = (-\sin\phi\hat{i}+\cos\phi\hat{j})\cdot (\hat{k}) = 0.
+      </me>
+      Hence <m>\hat{e_{1}}, \hat{e_{2}}</m>, and  <m>\hat{e_{3}}</m> are mutually perpendicular 
+      and the coordinate system is orthogonal.
+    </p>
+  </solution>
+</example>
+  
+  <example>
+    <statement>
+      <p>
+        Express the velocity <m>v</m> and acceleration <m>a</m> of a particle in cylindrical coordinates.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        The position vector of any point in a cylindrical coordinate is defined as 
+        <me>
+          \vec{r}= x\hat{i}+y\hat{j}+z\hat{k}= \rho\cos\phi\hat{i}+\rho\sin\phi\hat{j}+z\hat{k}
+        </me>
+        <me>
+          =\rho\cos\phi(\cos\phi\hat{e}_{\rho}-\sin\phi\hat{e}_{\phi})+\rho\sin\phi(\sin\phi\hat{e}_{\rho}+\cos\phi\hat{e}_{\phi})+z\hat{e}_{z}
+        </me>
+        <me>
+          =\rho\hat{e_{\rho}} +z \hat{e_{z}}
+        </me>
+        from solving the entities <xref first="eqn-unit_vect1" last="eqn-unit_vect3"/> 
+        <me>
+          \left[\hat{e}_{\rho}= \cos\phi\hat{i}+\sin\phi\hat{j}, \hat{e}_{\phi} = -\sin\phi\hat{i}+\cos\phi\hat{j}, \hat{e}_{z} = \hat{k}\right] 
+        </me>
+        We get -
+        <men xml:id="eqn-unit_vect4">
+          \hat{i}= \cos\phi\hat{e}_{\rho}-\sin\phi\hat{e}_{\phi},
+        </men>
+        <men xml:id="eqn-unit_vect5">
+          \hat{j}= \sin\phi\hat{e_{\rho}}+\cos\phi\hat{e_{\phi}}, 
+        </men>
+        <men xml:id="eqn-unit_vect6">
+          \hat{k}=\hat{e_{z}}
+        </men>
+        and,
+        <me>
+          \vec{v}= \frac{d \vec{r}}{d t} =  \frac{d\rho}{d t}\hat{e}_{\rho} +\rho\frac{d\hat{e}_{\rho}}{d t}+ 
+          \frac{d z}{d t}\hat{e}_{z} +z\frac{d\hat{e}_{z}}{d t}
+        </me>
+        <me>
+          = \dot{\rho} \hat{e_{\rho}}+\rho \hat{e_{\phi}}\dot{\phi} + \dot{z}\hat{e_{z}} +0
+        </me>
+        Again differentiating <m>v</m> w.r.to 't', we get -
+        <me>
+          \vec{a}=  \frac{d^{2} \vec{r}}{d t^{2}}	 = \frac{d}{dt}(\dot{\rho} \hat{e}_{\rho}+\rho \hat{e}_{\phi}\dot{\phi} + \dot{z}\hat{e}_{z})
+        </me>
+        <me>
+          =\dot{\rho} \frac{d \hat{e}_{\rho}}{dt}+\ddot{\rho}\hat{e}_{\rho} + \rho\dot{\phi}\frac{d \hat{e}_{\phi}}{dt} + \rho\ddot{\phi} \hat{e}_{\phi} + \dot{\rho} \dot{\phi}\hat{e}_{\phi} + \ddot{z}\hat{e}_{z}
+        </me>
+        <me>
+          =\dot{\rho}\dot{\phi}\hat{e}_{\phi} + \ddot{\rho}\hat{e}_{\rho}+\rho\dot{\phi}(-\dot{\phi}\hat{e}_{\rho})+\rho\ddot{\phi} \hat{e}_{\phi}+\dot{\rho} \dot{\phi}\hat{e}_{\phi} + \ddot{z}\hat{e}_{z}
+        </me>
+        <me>
+          =(\ddot{\rho}-\rho\dot{\phi}^{2})\hat{e}_{\rho} +(\rho\ddot{\phi}+2\dot{\rho}\dot{\phi})\hat{e}_{\phi} + \ddot{z}\hat{e}_{z}
+        </me>
+        <fn>
+        <me>
+           \frac{\,d\hat{e}_{\rho}}{\,dt}= \frac{\,d\hat{e}_{\rho}}{\,d\phi}\cdot\frac{\,d\phi}{\,dt} = \dot{\phi}\hat{e}_{\phi}
+        </me>
+        after differentiating  <m>\hat{e}_{\rho}</m> w.r.to <m>'\phi'</m>; also 
+        <me>
+          \frac{\,d\hat{e}_{\phi}}{\,dt}= \frac{\,d\hat{e}_{\phi}}{\,d\phi}\cdot\frac{\,d\phi}{\,dt} = -\dot{\phi}\hat{e}_{\rho} 
+        </me>
+        after differentiating <m> \hat{e_{\phi}}</m> w.r.to <m>'\phi'</m>.
+        </fn>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find an expression for <m>\,ds^{2}</m> in orthogonal curvilinear system.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We know that the position vector 
+        <me>
+          \vec{r} = \vec{r}(u,v,w)
+        </me>
+        and 
+        <me>
+          \,ds^{2} = \vec{\,dr}\cdot\vec{\,dr} =\left(\frac{\partial \vec{r}}{\partial u} \,du + \frac{\partial \vec{r}}{\partial v} \,dv +\frac{\partial \vec{r}}{\partial w} \,dw\right)^{2}
+        </me>
+        <me>
+          =\left(\frac{\partial \vec{r}}{\partial u}\right)^{2} \,du^{2}	
+           +\left(\frac{\partial \vec{r}}{\partial v}\right)^{2} \,dv^{2}	
+           + \left(\frac{\partial \vec{r}}{\partial w}\right)^{2} \,dw^{2}	
+        </me>
+        <me>
+          + 2 \left(\frac{\partial \vec{r}}{\partial u}\right)\cdot \left(\frac{\partial \vec{r}}{\partial v}\right)dudv 
+        </me>
+        <me>
+          + 2 \left(\frac{\partial \vec{r}}{\partial v}\right)\cdot \left(\frac{\partial \vec{r}}{\partial w}\right)\,dv\,dw + 
+          2 \left(\frac{\partial \vec{r}}{\partial w}\right)\cdot \left(\frac{\partial \vec{r}}{\partial u}\right)\,dw\,du
+        </me>
+        Since, <m>\frac{\partial \vec{r}}{\partial u}</m>, <m>\frac{\partial \vec{r}}{\partial v}</m>, and 
+        <m>\frac{\partial \vec{r}}{\partial w} </m> are the tangent vectors along the curves <m>u,v,w</m>, we have -
+        <me>
+          \left(\frac{\partial \vec{r}}{\partial u}\right)\cdot \left(\frac{\partial \vec{r}}{\partial v}\right)= \left(\frac{\partial \vec{r}}{\partial v}\right)\cdot \left(\frac{\partial \vec{r}}{\partial w}\right)= \left(\frac{\partial \vec{r}}{\partial w}\right)\cdot \left(\frac{\partial \vec{r}}{\partial u}\right)=0 
+        </me>
+       which are the conditions of orthogonality. 
+        <me>
+          \therefore \quad \,ds^{2}=\left(\frac{\partial \vec{r}}{\partial u}\right)^{2} \,du^{2}+ \left(\frac{\partial \vec{r}}{\partial v}\right)^{2} \,dv^{2}+\left(\frac{\partial \vec{r}}{\partial w}\right)^{2} \,dw^{2}.
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        A force is described by <m>\vec{F}=\frac{y}{x^{2}+y^{2}}\hat{i} +\frac{x}{x^{2}+y^{2}}\hat{j}</m>. 
+        Find <m>\vec{F}</m> in a cylindrical coordinates.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        Use eqns. <xref first="eqn-unit_vect4" last="eqn-unit_vect6"/> 
+        <me>
+          \hat{i}= \cos\phi\hat{e_{\rho}}-\sin\phi\hat{e_{\phi}},  \quad 
+          \hat{j}= \sin\phi\hat{e_{\rho}}+\cos\phi\hat{e_{\phi}},   \quad 
+          \hat{k}=\hat{e_{z}}
+        </me>
+        to find 
+        <me>
+          \vec{F} =\frac{\hat{e_{\phi}}}{\rho}.
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Show that <m>\vec{A}= -\phi\frac{\sin\theta}{r} \hat{e}_{\theta}</m> is a solution of 
+        <m>\nabla \times \vec{A}=-\frac{1}{r^{2}}\hat{e}_{r}</m> in spherical coordinates.
+      </p>
+    </statement>
+    <solution>
+      <p>
+        we have -
+        <me>
+          \nabla\times\vec{A}=\frac{1}{r^{2}\sin\theta}\begin{vmatrix} 
+          \hat{e}_{r} &amp; r\hat{e}_{\theta} &amp; r\sin\theta\hat{e}_{\phi}\\ 
+          \frac{\partial}{\partial r} &amp; \frac{\partial}{\partial \theta} &amp; \frac{\partial}{\partial \phi}\\ 
+          0 &amp; -\frac{r\phi\sin\theta}{r} &amp; 0 \end{vmatrix}
+        </me>
+        <me>
+          = \frac{1}{r^{2}\sin\theta}[\hat{e}_{r}(-\sin\theta)-0+0] = - \frac{1}{r^{2}}\hat{e}_{r}
+        </me>
+      </p>
+    </solution>
+  </example>
+
+  <example>
+    <statement>
+      <p>
+        Find the velocity and acceleration of a moving particle in a spherical coordinates.
+      </p>
+    </statement>
+    <solution>
+      <p>
+      We have -
+      <me>
+        \vec{r}=r\hat{e}^{r}+\theta\hat{e}_{\theta}+\phi\hat{e}_{\phi}
+      </me>
+        Where,
+        <me>
+          \hat{e}_{r} = \frac{\frac{\partial \vec{r}}{\partial r}}{\mid\frac{\partial \vec{r}}{\partial r}\mid} 
+          = \sin\theta\cos\phi\hat{i}+\sin\theta\sin\phi\hat{j}+\cos\theta\hat{k};
+        </me>
+        <me>
+           \hat{e}_{\theta}  = \cos\theta\cos\phi\hat{i}+\cos\theta\sin\phi\hat{j}-\sin\theta\hat{k};
+        </me>
+        <me>
+          \text{and}\quad \hat{e}_{\phi}=-\sin\phi\hat{i}+\cos\phi\hat{j}.
+        </me>
+        Now,
+        <me>
+          \frac{\partial \vec{r}}{\partial t}=\dot{r}\hat{e}_{r}+r\frac{\partial\hat{e}_{r}}{\partial t} 
+          +\dot{\theta}\hat{e}_{\theta}+\theta\frac{\partial\hat{e}_{\theta}}{\partial t}
+          +\dot{\phi}\hat{e}_{\phi}+\phi\frac{\partial\hat{e}_{\phi}}{\partial t} 
+        </me>
+        where,
+        <me>
+          \frac{\partial\hat{e}_{r}}{\partial t} = \dot{\theta}\phi\frac{\partial\hat{e}_{r}}{\partial\theta} 
+          + \theta\dot{\phi}\frac{\partial\hat{e}_{r}}{\partial\phi};
+        </me>
+        <me>
+          \frac{\partial\hat{e}_{r}}{\partial\theta} = \dot{\theta}\phi\hat{e}_{\theta};
+        </me>
+        <me>
+           \text{and} \quad \frac{\partial\hat{e}_{r}}{\partial\phi} = \theta\sin\theta\dot{\phi}\hat{e}_{\phi}
+        </me>
+        Similarly, other components can be found to obtain the velocity and acceleration. 
+      </p>
+    </solution>
+  </example>
+</section>
+

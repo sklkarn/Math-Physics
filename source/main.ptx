@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <macros>
+      \newcommand{\N}{\mathbb N}
+      \newcommand{\Z}{\mathbb Z}
+      \newcommand{\Q}{\mathbb Q}
+      \newcommand{\R}{\mathbb R}
+      \newcommand{\T}{\mathcal T}
+      \newcommand\comb[2]{^{#1}C{_{#2}}}
+    </macros>
+
+   
+    <latex-image-preamble>
+      \usepackage{tikz, pgfplots}
+      \usepackage{tensor}
+      \usetikzlibrary{positioning, matrix, arrows}
+      \usetikzlibrary{shapes, decorations, shadows, fadings, patterns}
+      \usetikzlibrary{decorations.markings} 
+    </latex-image-preamble>
+
+  </docinfo>
+
+  <book xml:id="my-great-book">
+    <title>Mathematical Methods of Physics</title>
+    <subtitle>For Undergraduate</subtitle>
+
+    <frontmatter xml:id="frontmatter">
+      <titlepage>
+        <author>
+          <personname>Sunil Karna</personname>
+          <department>Natural Science</department>
+          <institution>Union College Barbourville, KY</institution>
+          <email>skarna@unionky.edu</email>
+        </author>
+        <date>
+          <today />  
+        </date>
+      </titlepage>
+
+      <colophon>
+
+        <website>
+          <name>
+            <c>http://my.unionky.edu</c>
+          </name>
+          <address></address>
+        </website>
+
+        <copyright>
+          <year>2022<ndash />2023</year>
+          <holder>Sunil Karna</holder>
+          <shortlicense> 
+            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. 
+            To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+          </shortlicense>
+        </copyright>
+      </colophon>
+
+      <dedication>
+        <p>
+          To my spouse, who supported me through countless late nights and early mornings, 
+          and never once complained.
+        </p>
+      </dedication>
+    
+      <acknowledgement>
+        <p>
+          I would like to thank my colleagues and students for the contributions they have 
+          made to improve this book through questionnaires, classroom discussion, and their 
+          invaluable feedback and support throughout the writing process. I am especially 
+          very grateful to John Gould, Keith Stafford, and Daniel Covington for 
+          providing their critical suggestions to organize this book. Without their guidance, 
+          this book would not be what it is today. Their knowledge and expertise were instrumental 
+          in shaping my journey in writing this book. Finally, I want to express my gratitude to 
+          my family for their unwavering encouragement and patience during the many long hours 
+          I spent at my desk. Their love and support sustained me through the ups and downs 
+          of this project. Several people deserve credit for their generous help with this book.  
+          </p>
+      </acknowledgement>
+    
+      <preface xml:id="meta_frontmatter-preface">
+        <p>
+          Mathematical Physics is a branch of physics which provides the logical relationship 
+          between physical theories and mathematical equations. It is based on the concept that 
+          everything in nature follows mathematical rules and regulations. Many discoveries such 
+          as the existance of positrons, the Higgs Boson, the concept that the gravity is a result 
+          of warping of spacetime due to presence of mass, and spacetime obeyes fluid dynamics were 
+          possible because of mathematical equations. This book attempts to provide preliminary 
+          mathematical concepts to understand physical theories. This book has been written to 
+          introduce basic mathematical tools that are useful in undergraduate physics courses 
+          and is a concise form of my lecture notes which I have been delivering in bachelors 
+          level classes for many years. It attempts to bridge physical theories to mathematical 
+          equations. This book is organized into seven chapters that cover the syllabus of 
+          mathematical physics at undergraduate level in variuos universities. The book consists of the basics 
+          of vectors, vector space, matrix, tensors, Fourier series, integral transforms, 
+          and the ordinary &amp; partial differential equations. The main objective of this 
+          book is to guide students or readers to understand mathematical equations to learn physics. 
+          Many examples and practice problems throughout the text may be helpful to refine physical 
+          intution. 
+        </p>
+        <p>
+          Comments and suggestions for improvements to the text will be gratefully appreciated.       
+        </p>
+    
+        </preface>
+
+    </frontmatter>
+
+
+    <xi:include href="./ch_first.ptx" />
+    <xi:include href="./ch_second.ptx" />
+     <xi:include href="./ch_third.ptx" />  
+     <xi:include href="./ch_fourth.ptx" />
+     <xi:include href="./ch_fifth.ptx" />
+     <xi:include href="./ch_sixth.ptx" />
+     <xi:include href="./ch_seventh.ptx" />
+
+ <xi:include href="./meta_backmatter.ptx" />
+   
+
+  </book>
+</pretext>

@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_seventh-examplesA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples A</title>
+ 
+<example>
+  <statement>
+    <p>
+       Find the solution of the wave equation 
+       <me>
+        \frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}}
+       </me>
+
+such that <m>y=p_{o}\cos pt, (p_{o}</m> is a constant) when <m>x=1</m> and 
+<m>y=0</m> when <m>x=0</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+       The wave equation is 
+       <men xml:id="eqn-1Dwave1">
+         \frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}} 
+       </men>
+
+  Let us assume its solution as 
+   <men xml:id="eqn-1Dwave2">
+        y(x,t) = X(x) T(t) 
+       </men>
+       so that
+<me>
+  \frac{\partial y}{\partial t} =X\frac{\partial T}{\partial t}
+</me>
+and 
+<me>
+  \frac{\partial^{2} y}{\partial t^{2}}=X\frac{\partial^{2} T}{\partial t^{2}}
+</me>
+also 
+<me>
+  \frac{\partial y}{\partial x} =T\frac{\partial X}{\partial x}
+</me>
+and 
+<me>
+  \frac{\partial^{2} y}{\partial x^{2}}=T\frac{\partial^{2} X}{\partial x^{2}}
+</me>
+
+Substituting these values in eqn. <xref ref="eqn-1Dwave1"/>(i), we get -
+<me>
+  X\frac{\partial^{2} T}{\partial t^{2}} =  Tv^{2}\frac{\partial^{2} X}{\partial x^{2}}
+</me>
+or,
+<me>
+  \frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}} =\frac{1}{ v^{2}T} \frac{\partial^{2} T}{\partial t^{2}} =-k^{2} \text{(say)}
+</me>
+or,
+and 
+<men xml:id="eqn-1Dwave3">
+  \frac{\partial^{2} X}{\partial x^{2}}+k^{2}X = 0 \quad \text{and} \quad \frac{\partial^{2} T}{\partial t^{2}}+k^{2}v^{2}T = 0 
+</men>
+
+
+	Now, auxiliary equations are -   
+  <m>m^{2}+k^{2}=0</m>, 
+  or, 
+  <me>m=\pm ik</me> and <m>m^{2}+k^{2}v^{2}=0</m> 
+  or, <me>m=\pm ikv</me>.
+
+<men xml:id="eqn-1Dwave4">
+  X=c_{1}\cos kx+c_{2}\sin kx \quad  \text{and} \quad  T=c_{3}\cos kvt+c_{4}\sin kvt  
+</men>
+
+Thus 
+<men xml:id="eqn-1Dwave5">
+  y(x,t)=(c_{1}\cos kx+c_{2}\sin kx)(c_{3}\cos kvt+c_{4}\sin kvt)
+</men>
+[from eqn.<xref ref="eqn-1Dwave2"/>].
+Put <m>y=0</m> when <m>x=0</m>, we have 
+<me>
+  0=c_{1}(c_{3}\cos kvt+c_{4}\sin kvt) \Rightarrow c_{1} =0.
+</me>
+
+Hence, eqn. <xref ref="eqn-1Dwave3"/>(iii) reduces to   
+<me>
+  y=c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt)
+</me>
+or,
+<men xml:id="eqn-1Dwave6">
+  y=c_{2}c_{3}\cos kvt.\sin kx+c_{2}c_{4}\sin kvt.\sin kx
+</men>
+	
+put <m>y=p_{o}\cos pt</m>  when <m>x=1</m>,  
+<me>
+  \therefore \quad p_{o}\cos pt = c_{2}c_{3}\cos kvt.\sin kl+c_{2}c_{4}\sin kvt.\sin kl
+</me>
+
+equating the coefficients of <m>\sin</m> and <m>\cos</m> on both sides, we get - 
+<me>
+  p_{o} =c_{2}c_{3}\sin kl  \quad		\Rightarrow  c_{2}c_{3} = \frac{p_{o}}{\sin kl},
+</me>
+<me>
+  0=c_{2}c_{4}\sin kl \quad \Rightarrow c_{2}c_{2}c_{4} =0,
+</me>
+and 
+<me>
+ p=kv \quad \Rightarrow \frac{p}{v}=k  
+</me>
+	      	
+Hence, eqn. <xref ref="eqn-1Dwave6"/> becomes - 
+<me>
+  y=\frac{p_{o}}{\sin kl}\cos pt.\sin \frac{p}{v}x = \frac{p_{o}}{\sin (\frac{p}{v})l}\cos pt.\sin (\frac{p}{v})x
+</me>
+    </p>
+  </solution>
+</example>
+
+ <example>
+  <statement>
+    <p>
+       A string is stretched between two points (0,0) and (l,0) and then released at rest 
+       from the positions  <m>y=a\sin \frac{\pi x}{l}</m>. Show that the displacement of 
+       any point at a distance  <m>x</m> from one end at a time <m>t</m> is given by 	
+       <me>
+        y(x,t) = a\sin (\frac{\pi x}{l})\cos (\frac{\pi vt}{l}).
+       </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The vibration of string is given by 
+      <men xml:id="eqn-vibrt_string1">
+         \frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}}  
+      </men>
+      The boundary conditions are
+      <men xml:id="eqn-vibrt_string2">
+        y(0,t) = 0=y(l,t), 
+      </men>
+      the initial conditions are
+      <men xml:id="eqn-vibrt_string3">
+        y(x,0) = a\sin \frac{\pi x}{l}, 
+      </men>
+
+and the initial transverse velocity of any point of the string at <m>t=0</m>is 		
+<men xml:id="eqn-vibrt_string4">
+  \left(\frac{\partial y}{\partial t}\right)_{t=0} = 0
+</men>
+					
+Now, the solution of eqn. <xref ref="eqn-vibrt_string1"/> is in the form 
+<men xml:id="eqn-vibrt_string5">
+  y(x,t)=(c_{1}\cos kx+c_{2}\sin kx)(c_{3}\cos kvt+c_{4}\sin kkvt)
+</men>
+
+with the help of eqn. <xref ref="eqn-vibrt_string2"/>,	
+<me>
+  y(l,t)=0=c_{1}(c_{3}\cos kvt+c_{4}\sin kkvt)   \quad  \Rightarrow  c_{1} =0
+</me>
+Hence,
+<men xml:id="eqn-vibrt_string6">
+ y(x,t)=c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt)  
+</men>
+	
+ also from eqn. <xref ref="eqn-vibrt_string2"/>, we have 
+ <me>
+  y(l,t)=0=c_{2}\sin kl(c_{3}\cos kvt+c_{4}\sin kvt)\quad \Rightarrow  c_{2}\sin kl =0
+ </me>
+ or,
+ <me>
+  \sin kl=0=\sin n\pi
+ </me>
+ or,
+ <me>
+  kl=n\pi 
+ </me>
+ <me>
+   \therefore  k=\frac{n\pi}{l},   \quad  \text{where} \quad n=1,2,3,\cdots. 
+ </me>
+
+Hence, eqn. <xref ref="eqn-vibrt_string6"/> becomes 
+<men xml:id="eqn-vibrt_string7">
+  y(x,t)=c_{2}\sin \frac{n\pi x}{l}(c_{3}\cos \frac{n\pi vt}{l}+c_{4}\sin \frac{n\pi vt}{l}) 
+</men>
+
+Again, with the help of eqn. <xref ref="eqn-vibrt_string4"/>,
+<me>
+  \left(\frac{\partial y}{\partial t}\right)_{t=0}=0 
+</me>
+<me>
+  =c_{2}\sin \frac{n\pi x}{l}\left[c_{3}\times-\frac{n\pi v}{l}\sin \frac{n\pi vt}{l}+c_{4}\times\frac{n\pi v}{l}\cos \frac{n\pi vt}{l}\right]_{t=0}
+</me>
+
+or,
+<me>
+  0=c_{2}\sin \frac{n\pi x}{l}\left[c_{4}.\frac{n\pi v}{l}\right]
+</me>
+
+if <m>c_{2} =0</m>, eqn. <xref ref="eqn-vibrt_string6"/> will lead to the trivial solution <m>y(x,t)=0</m>. 
+Therefore, the only possibility is that the <m>c_{4} =0</m>. 
+Thus eqn. <xref ref="eqn-vibrt_string7"/> reduces to 
+<men xml:id="eqn-vibrt_string8">
+  y(x,t)=c_{2}c_{3}\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l}.
+</men>
+
+Finally, imposing the condition <xref ref="eqn-vibrt_string3"/>, we have 
+<me>
+  y(x,0) =a\sin \frac{\pi x}{l} = c_{2}c_{3}\sin \frac{n\pi x}{l} \Rightarrow c_{2}c_{3} = a\quad \text{and}\quad n=1.
+</me>
+	
+on putting the values of <m>c_{2}c_{3}</m> and <m>n</m> in eqn. <xref ref="eqn-vibrt_string8"/>, we get -
+<me>
+  y(x,t) =a\sin \frac{\pi x}{l}\cos \frac{\pi vt}{l} 
+</me>
+    </p>
+  </solution>
+ </example>   
+
+ <example>
+  <statement>
+    <p>
+      A tightly stretched string with fixed end points <m>x=0</m> and <m>x=1</m> 
+      is initially in a position given by <m>y=y_{o}\sin^{3}\left(\frac{\pi x}{l}\right)</m>. 
+      If it is released from rest from this position, find the displacement <m>y(x,t)</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let the equation of vibrating string is 	
+      <men xml:id="eqn-vibrt_str1">
+        \frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}} 
+      </men>
+ 
+here, the initial conditions are <m>y(0,t)=0=y(l,t)</m> and  <m>\left(\frac{\partial y}{\partial t}\right)_{t=0}=0</m> 
+and the boundary conditions are <m>y=y_{o}\sin^{2}\left(\frac{\pi x}{l}\right)</m>. 
+The solution of eqn. <xref ref="eqn-vibrt_str1"/> is of the form, 
+<men xml:id="eqn-vibrt_str2">
+  y(x,t)=(c_{1}\cos kx+c_{2}\sin kx)(c_{3}\cos kvt+c_{4}\sin kvt) 
+</men>
+Now,
+<me>
+   y(0,t)=0=c_{1}(c_{3}\cos kvt+c_{4}\sin kvt)      \quad  \Rightarrow c_{1} =0.
+</me>
+
+	
+Hence, eqn. <xref ref="eqn-vibrt_str2"/> becomes 
+<men xml:id="eqn-vibrt_str3">
+  y=c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt) 
+</men>
+also,
+<me>
+  y(l,t) = 0=c_{2}\sin kl(c_{3}\cos kvt+c_{4}\sin kvt)	
+</me>
+or,
+<me>
+  \sin kl =0=\sin n\pi 
+</me>
+or,
+<me>
+  kl=n\pi \quad \Rightarrow k=\frac{n\pi}{l};
+</me>
+where,
+<m>n=1,2,3, \cdots.</m>
+		
+putting <m>k</m> in eqn. <xref ref="eqn-vibrt_str3"/>, we get -
+<men xml:id="eqn-vibrt_str4">
+  y=c_{2}\sin \frac{n\pi x}{l}\left(c_{3}\cos \frac{n\pi vt}{l}+c_{4}\sin \frac{n\pi vt}{l}\right)
+</men>
+Now,
+<me>
+  \left(\frac{\partial y}{\partial t}\right)_{t=0}=0 
+</me>
+<me>
+  = c_{2}\sin \frac{n\pi x}{l}\left[c_{3}(-\frac{n\pi v}{l})\sin \frac{n\pi vt}{l}+c_{4}(\frac{n\pi v}{l})\cos\frac{n\pi vt}{l}\right]_{t=0}
+</me>
+or,
+<me>
+ 0=c_{2}\sin\frac{n\pi x}{l}\left[c_{4}\cdot\frac{n\pi v}{l}\right] \quad \Rightarrow c_{4}=0. 
+</me>
+
+Now, eqn. <xref ref="eqn-vibrt_str4"/> reduces to 
+<me>
+ y=c_{2}c_{3}\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l} =b_{n}\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l} 
+</me>
+<m>\quad   [\because b_{n}=c_{2}c_{3}].</m>
+<men xml:id="eqn-vibrt_str5">
+  \therefore y=\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l} 
+</men>
+But,
+<me>
+   y(x,0) = y_{o}\sin^{3}\left(\frac{n\pi x}{l}\right) = \frac{y_{o}}{4}\left[3\sin \frac{\pi x}{l}-sin \frac{3\pi x}{l}\right]
+</me>
+	 		
+
+on putting <m>t=0</m>  in eqn. <xref ref="eqn-vibrt_str5"/>, we have- 
+<me>
+  \sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{l}=\frac{y_{o}}{4}\left[3\sin \frac{\pi x}{l}-sin \frac{3\pi x}{l}\right]
+</me>
+or,
+<me>
+  \left[b_{1}\sin \frac{\pi x}{l}+b_{2}\sin \frac{2\pi x}{l}+\cdots\right]	= \frac{y_{o}}{4}\left[3\sin \frac{\pi x}{l}-sin \frac{3\pi x}{l}\right]
+</me>
+
+equating the coefficients of <m>\sin</m> on both sides, we get -
+<me>
+b_{1}=\frac{3y_{o}}{4},\quad b_{3}=-\frac{y_{o}}{4},\quad \text{and}\quad b_{2}=b_{4}=b_{5}=b_{6}=\cdots =0.  
+</me>
+Hence, eqn. <xref ref="eqn-vibrt_str5"/> becomes
+<me>
+  y=\frac{y_{o}}{4}\left[3\sin \frac{\pi x}{l}\cos \frac{\pi vt}{l}-\sin \frac{3\pi x}{l}\cos \frac{3\pi vt}{l}\right] 
+</me>
+    </p>
+  </solution>
+ </example>
+
+ <example>
+  <statement>
+    <p>
+      If a string of length <m>l</m> is plucked at a point aside from its end by 
+      a displacement <m>h</m> from the mean position, find the displacement of the string at any time <m>t</m>?
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let us consider a string which is clamped at points A and B is pulled aside at C 
+      and then released suddenly, as shown in figure  <image source="fig73.png" width ="45%"/>.
+ Then the equation of vibrating string is
+ <men xml:id="eqn-stret_str1">
+  \frac{\partial^{2} y}{\partial x^{2}} =  \frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}} 
+ </men>
+ 
+Also, let <m>CP = h, AC = d,</m> and <m>CB = (l - d)</m>, therefore the displacement of particle between 
+points A and P at time <m>t=0</m>.
+<me>
+   \frac{y}{x}=\frac{h}{d} 
+</me>
+
+<men xml:id="eqn-stret_str2">
+   \therefore y=\frac{hx}{d}  
+</men> 
+
+for the portion between points P and B at time <m>t=0</m>, we have,
+<men xml:id="eqn-stret_str3">
+  \frac{y}{l-x}=\frac{h}{l-d}\quad  \therefore y=\frac{h(l-x)}{(l-d)}  
+</men>
+
+Hence, the displacement of string at time <m>t=0</m> is given by
+<men xml:id="eqn-stret_str4">
+   f(x) =y(x,0) = \begin{cases}
+\frac{hx}{d}, &amp; \text{for} \quad 0 \leq x\leq d\\
+\frac{h(l-x)}{(l-d)}, &amp; \text{for} \quad d \leq x\leq l
+\end{cases} 
+</men>
+
+since the initial velocity of the string is zero, the solution of eqn. <xref ref="eqn-stret_str1"/> 
+is given by 
+<men xml:id="eqn-stret_str5">
+  y(x,t) = \sum\limits_{n=1}^{\infty}b_{n}\cos \frac{n\pi vt}{l}\sin \frac{n\pi x}{l} 
+</men>
+where,
+	<me>
+    b_{n}=\frac{2}{l}\int\limits_{0}^{l}f(x)\sin \frac{n\pi x}{l}\,dx
+  </me>
+  
+	<me>
+    = \frac{2}{l}\left[\int\limits_{0}^{d}\frac{hx}{d}\sin \frac{n\pi x}{l}\,dx +\int\limits_{d}^{l}\frac{h(l-x)}{(l-d)}\sin \frac{n\pi x}{l}\,dx\right]
+  </me>
+  <me>
+    = \frac{2h}{l}\left[\int\limits_{0}^{d}\frac{x}{d}\sin \frac{n\pi x}{l}\,dx +\int\limits_{d}^{l}\frac{(l-x)}{(l-d)}\sin \frac{n\pi x}{l}\,dx\right]
+  </me>
+  <me>
+    =\frac{2h}{l}\left[\frac{1}{d}\left\{x.\frac{\cos \frac{n\pi x}{l}}{-\frac{n\pi}{l}}-1.\frac{\sin \frac{n\pi x}{l}}{-\frac{n^{2}\pi^{2}}{l^{2}}}\right\}_{0}^{d} \right.
+  </me>
+  <me>
+   \left. + \frac{1}{l-d}\left\{(l-x).\frac{\cos \frac{n\pi x}{l}}{-\frac{n\pi}{l}}-(-1).\frac{\sin \frac{n\pi x}{l}}{-\frac{n^{2}\pi^{2}}{l^{2}}}\right\}_{d}^{l}\right]
+  </me>
+  
+  <me>
+     =\frac{2h}{l}\left[-\frac{l}{n\pi}\cos \frac{n\pi d}{l}+\frac{l^{2}}{n^{2}\pi^{2}d}\sin \frac{n\pi d}{l}\right.
+  </me>
+  <me>
+   \left. -\frac{l}{n\pi}\cos \frac{n\pi d}{l}+\frac{l^{2}}{n^{2}\pi^{2}(l-d)}\sin \frac{n\pi d}{l}\right]
+  </me>
+  
+  <me>
+     =\frac{2h}{l}\left[\frac{1}{d}+\frac{1}{(l-d)}\right]\frac{l^{2}}{n^{2}\pi^{2}}\sin \frac{n\pi d}{l} 
+  </me>
+  
+	<men xml:id="eqn-stret_str6">
+   = \frac{2hl^{2}}{n^{2}\pi^{2}d(l-d)}\sin \frac{n\pi d}{l} 
+  </men>
+ 		      	  		      
+Substituting <m>b_{n}</m>  in eqn. <xref ref="eqn-stret_str5"/>, we get -
+<me>
+  y= \sum\limits_{n=1}^{\infty}\frac{2hl^{2}}{n^{2}\pi^{2}d(l-d)}\sin \frac{n\pi d}{l}\cos \frac{n\pi vt}{l}\sin \frac{n\pi x}{l}
+</me>	   
+    </p>
+  </solution>
+ </example>
+
+ <paragraphs>
+  <title>2D wave equation</title>
+  <example>
+    <statement>
+      <p>
+        Find the deflection <m>u(x,y,t) </m> of the square membrane with <m>a=b=1</m>,
+         if the initial velocity is zero and the initial deflection is 
+         <me>
+          f(x,y) = A\sin \pi x\sin 2\pi y.
+         </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        <image source="fig77.png" width ="45%"/>.
+        The deflection of the square membrane is given by the two-dimensional wave equation
+        <men xml:id="eqn-waveeqn1">
+          \frac{\partial^{2} u}{\partial t^{2}}=v^{2}\left[\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}\right] 
+        </men>
+
+ The boundary conditions are given as 
+ <men xml:id="eqn-waveeqn2">
+  \left.\begin{aligned}	
+		u(0,y,t) = 0=u(1,y,t)\\
+		u(x,0,t) = 0=u(x,1,t)
+		\end{aligned}\right\} 
+ </men>
+ 
+	as <m>a=b=1</m>  is the sides of the membrane. The initial conditions are 
+  <men xml:id="eqn-waveeqn3">
+    u(x,y,0) =f(x,y) = A\sin \pi x\sin 2\pi y \quad   \text{and} \quad   \left.\frac{\partial u}{\partial t}\right\vert_{t=0}=0 
+  </men>
+      </p>
+      <p>
+      Therefore the solution of eqn. <xref ref="eqn-waveeqn1"/> is given by 
+      <men xml:id="eqn-waveeqn4">
+        u(x,y,t)=\sum\limits_{m=1}^{\infty}A_{mn}\cos\lambda_{mn}t\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}	
+      </men>
+      where 
+      <me>
+        	A_{mn}=\frac{4}{1\cdot 1}\int\limits_{x=0}^{1}\int\limits_{y=0}^{1}f(x,y)\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}\,dx\,dy 
+      </me>
+      
+      <men xml:id="eqn-waveeqn5">
+        =4\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin 2\pi y \sin m\pi x\sin n\pi y\,dx\,dy 
+      </men>
+      
+on integration, we find that 
+<me>
+  A_{m1}=A_{m3}=A_{m4}=\cdots=0
+</me>
+but, 
+<me>
+  A_{m2} =4A\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin m\pi x\sin^{2} 2\pi y\,dx\,dy 
+</me>
+<me>
+  = 2A\int\limits_{0}^{1}\int\limits_{0}^{1}\sin \pi x\sin m\pi x(1-\cos4\pi y)\,dx\,dy
+</me>
+<me>
+  =2A\int\limits_{0}^{1}\sin \pi x\sin m\pi x\left(y-\frac{1}{4\pi}\sin 4\pi y\right)_{0}^{1}\,dx 
+</me>   
+<me>
+  = 2A \int\limits_{0}^{1}\sin \pi x\sin m\pi x\,dx 
+</me>
+   on integration, we find that 
+   <me>
+    A_{22}= A_{32}=A_{42}=\cdots=0
+   </me>
+   Also, we find 
+   <me>
+     A_{12} =2A\int\limits_{0}^{1}\sin \pi x\sin \pi x\,dx = A\int\limits_{0}^{1}(1-\cos 2\pi x)\,dx 
+   </me>
+   <me>
+      = A\left(x-\frac{\sin 2\pi x}{2\pi}\right)_{0}^{1}=A.
+   </me>
+   <me>
+     \therefore \quad u(x,y,t)= A_{12}\cos\lambda_{12}t\sin\pi x\sin 2\pi y 
+   </me>
+   <me>
+    =A\cos\sqrt{5}\pi t\sin\pi x\sin 2\pi t
+   </me>
+   
+   <me>
+    [ \because \quad \lambda_{12}^{2}=1^{2}\cdot k_{12}^{2}=\pi^{2}(1^{2}+2^{2}); \quad \therefore \quad \lambda_{12}=\pi \sqrt{5}].
+   </me>
+ 
+        </p>
+    </solution>
+  </example>
+ </paragraphs>
+</section>

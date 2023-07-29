@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fifth-examplesA" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples A</title>
+ 
+<example>
+  <statement>
+    <p>
+      Find the Fourier series expansion of <m>f(x) =x</m>,  where 
+      <m>0\lt x \lt 2\pi</m>, 	and sketch its graph from <m>x=-4\pi</m> to <m>4\pi</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let 
+      <me>
+         f(x) = x = 	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+      </me>
+      where 
+      <me>
+        a_{o} = \frac{1}{\pi}\int\limits_{0}^{2\pi}f(x)\,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi}x\,dx =  \frac{1}{\pi}\left[\frac{x^{2}}{2}\right]^{2\pi}_{0} = 2\pi.
+      </me>
+      <me>
+        a_{n}= \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\cos nx \,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi} x\cos nx \,dx 
+      </me>
+      <me>
+        = \frac{1}{\pi}\left[x.\frac{\sin nx}{n}-1.\frac{\cos nx}{-n^{2}}\right]_{0}^{2\pi}
+      </me>
+      
+      <me>
+        =\frac{1}{\pi}\left[0+\frac{1}{n^{2}}(\cos 2n\pi-\cos 0)\right]= \frac{1}{\pi}\left[\frac{1}{n^{2}}(1-1)\right] = 0.
+      </me>
+      and 
+      <me>
+        b_{n}= \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\sin nx \,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi} x\sin nx \,dx 
+      </me>
+      <me>
+        = \frac{1}{\pi}\left[x.\frac{\cos nx}{-n}-1.\frac{\sin nx}{-n^{2}}\right]_{0}^{2\pi}
+      </me>
+      
+      <me>
+        =\frac{1}{\pi}\left[\frac{2\pi \cos 2n \pi}{-n}+\frac{1}{n^{2}}\left(\sin nx\right)_{0}^{2\pi}\right]= -\frac{2}{n}.
+      </me>
+      Substituting these values in expression <m>f(x)</m>, we get -
+      <me>
+        x=\pi - 2\left[\sin x+\frac{\sin 2x}{2}+\frac{\sin 3x}{3}+\cdots\right]
+      </me>
+			The graphical representation of the given function is shown in 
+      figure below. <image source="fig51.png" width ="45%"/>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Obtain the Fourier series for <m>f(x) = e^{-x}</m> in the interval <m>0 \lt x\lt 2\pi</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let
+      <me>
+        f(x) =e^{-x} = 	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+      </me>
+      where 
+      <me>
+        a_{o} = \frac{1}{\pi}\int\limits_{0}^{2\pi}f(x)\,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi}e^{-x}\,dx =  \frac{1}{\pi}\left[\frac{e^{-x}}{-1}\right]^{2\pi}_{0} 
+      </me>
+      <me>
+        = \frac{1}{\pi}\left[-e^{-2\pi}+1\right] = \frac{1-e^{-2\pi}}{\pi}.
+      </me>
+      
+      <me>
+         a_{n} = \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\cos nx \,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi} e^{-x}\cos nx \,dx 
+      </me>
+      <me>
+        = \frac{1}{\pi}\left[\frac{e^{-x}}{1+n^{2}}(-\cos nx +n \sin nx)\right]_{0}^{2\pi}
+      </me>
+      
+      <me>
+        =\frac{1}{\pi(1+n^{2})}\left[e^{-x}(-\cos 2n\pi+n\sin 2n\pi) - e^{0}(-\cos 0+n\sin 0)\right]
+      </me>
+      <me>
+        =\frac{1}{\pi(1+n^{2})}\left[1-e^{-2\pi}\right].
+      </me>
+      <me>
+        b_{n} = \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\sin nx \,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi} e^{-x}\sin nx \,dx 
+      </me>
+      <me>
+        = \frac{1}{\pi}\left[\frac{e^{-x}}{1+n^{2}}(-\sin nx +n \cos nx)\right]_{0}^{2\pi}
+      </me>
+      
+      <me>
+        =\frac{1}{\pi (1+n^{2})}\left[e^{-2\pi}(-\sin 2n\pi - n \cos 2n \pi) - e^{0}(-\sin 0 - n\cos 0)\right]
+      </me>
+      <me>
+        =\frac{n}{\pi (1+n^{2})}\left[e^{-2\pi}(-n) - e^{0}(-n)\right].
+      </me>
+      From expression <m>f(x)</m>, we get -
+      <me>
+        e^{-x} = \frac{1-e^{-2\pi}}{\pi} + \sum\limits_{n=1}^{\infty}\left[\frac{1-e^{-2\pi}}{\pi (1+n^{2})} \cos nx + \frac{1-e^{-2\pi}}{\pi (1+n^{2})}n \sin nx\right]
+      </me>
+      <me>
+        =\frac{1-e^{-2\pi}}{\pi}\left[\frac{1}{2}+\left\{\frac{\cos x}{2}+\frac{\cos 2x}{5}+\cdots + \right\} \right.
+      </me>
+      <me>
+       \left. + \left\{\frac{\sin x}{2}+\frac{2\sin 2x}{5}+\cdots + \right\}\right].
+      </me>
+        which is the required Fourier series.
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the Fourier series of the function
+      <me>
+         f(x) = \begin{cases} 
+             -1, &amp; \text{for } -\pi \lt x \lt -\frac{\pi}{2}\\ 
+                 0,       &amp; \text{for} -\frac{\pi}{2} \lt x \lt \frac{\pi}{2}\\ 
+                     +1,  &amp; \text{for}  +\frac{\pi}{2} \lt x \lt \pi. 
+                     \end{cases}
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let
+      <me>
+        f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+      </me>
+      where 
+      <me>
+        a_{o} = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx = \frac{1}{\pi}\left[\int\limits_{-\pi}^{-\pi/2}(-1)\,dx + \int\limits_{-\pi/2}^{\pi/2} 0. \,dx + \int\limits_{\pi/2}^{\pi}(+1)\,dx\right]
+      </me>
+      <me>
+        =\frac{1}{\pi}\left[-\left(x\right)_{-\pi}^{-\pi/2}+\left(x\right)_{\pi/2}^{\pi}\right]
+      </me>
+      <me>
+         = \frac{1}{\pi}\left[-\left\{-\frac{\pi}{2}+\pi \right\} + \left\{\pi -\frac{\pi}{2} \right\}\right] = \frac{1}{\pi}\left[-\left\{-\frac{\pi}{2} +\frac{\pi}{2} \right\}\right] = 0.
+      </me>
+      <me>
+        a_{n} = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} f(x)\cos nx \,dx 
+      </me>
+      <me>
+        = \frac{1}{\pi}\left[\int\limits_{-\pi}^{-\pi/2} (-1)\cos nx \,dx + \int\limits_{-\pi/2}^{\pi/2} 0.\cos nx \,dx + \int\limits_{\pi/2}^{\pi} (+1)\cos nx \,dx\right]
+      </me>
+      
+      <me>
+        =\frac{1}{\pi}\left[-\left(\frac{\sin nx}{n}\right)_{-\pi}^{-\pi/2}+\left(\frac{\sin nx}{n}\right)_{\pi/2}^{\pi}\right]
+      </me>
+        <me>
+          =\frac{1}{\pi}\left[-\left(-\frac{\sin n\pi/2}{n}+	\frac{\sin n\pi}{n}\right)+\left(\frac{\sin n\pi}{n} -	\frac{\sin n\pi/2}{n}\right)\right] = 0.
+        </me>
+        <me>
+          b_{n} = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} f(x)\sin nx \,dx 
+        </me>
+        <me>
+          = \frac{1}{\pi}\left[\int\limits_{-\pi}^{-\pi/2} (-1)\sin nx \,dx + \int\limits_{-\pi/2}^{\pi/2} 0.\sin nx \,dx + \int\limits_{\pi/2}^{\pi} (+1)\sin nx \,dx\right]
+        </me>
+        
+        <me>
+          =\frac{1}{\pi}\left[+\left(\frac{\cos nx}{n}\right)_{-\pi}^{-\pi/2}+\left(\frac{\cos nx}{-n}\right)_{\pi/2}^{\pi}\right]
+        </me>
+          now, from expression <m>f(x)</m>, we get -
+          <me>
+            f(x)=\sum\limits_{n=1}^{\infty} \left[+\frac{2}{n\pi}\left(\cos \frac{n\pi}{2}-\cos n\pi\right)\sin nx\right]
+          </me>
+          <me>
+            = +\frac{2}{\pi}\left[\frac{\sin x}{1}-\frac{2\sin 2x}{2}+\frac{\sin 3x}{3}-\cdots\right]
+          </me>
+          <me>
+            = +\frac{2}{\pi}\left[\sin x-\frac{2\sin 2x}{2}+\frac{\sin 3x}{3}-\cdots\right].
+          </me>
+            which is the required Fourier series expansion.
+    </p>
+  </solution>
+</example>
+</section>

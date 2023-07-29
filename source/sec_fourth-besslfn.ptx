@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-besslfn" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Bessel's Differential Equation</title>
+ 
+  <introduction>
+    
+  <p>
+    The differential equation 
+   <men xml:id="eqn-bessl1">
+    x^{2}+\frac{d^{2}y}{dx^{2}}+x\frac{\,dy}{\,dx}+(x^{2}-n^{2})y =0 
+   </men>
+   is called the Bessel's differential equation. Such type of equation yields on 
+   solving the Laplace's equation in cylindrical harmonics. This equation has a regular 
+   singularity at <m>x=0</m> and its solution can be obtained as a power series developed 
+   about this point.
+    </p>
+    <p>
+      Let the solution of this equation is in the form 
+      <men xml:id="eqn-bessl2">
+        y=\sum\limits_{k=0}^{\infty}a_{k}x^{m+k}
+      </men>
+      so that 
+      <me>
+        \frac{dy}{dx}=\sum a_{k}(m+k)x^{m+k-1}
+      </me>
+      and 
+      <me>
+        \frac{d^{2}y}{dx^{2}}=\sum a_{k}(m+k)(m+k-1)x^{m+k-2}
+      </me>
+      substitutuing these values in equation <xref ref="eqn-bessl1"/>, we get - 
+      <me>
+        \sum a_{k}(m+k)(m+k-1)x^{m+k}+\sum a_{k}(m+k)x^{m+k}
+      </me>
+      <me>
+        +\sum a_{k}x^{m+k+2}-n^{2}\sum a_{k}x^{m+k}=0
+      </me>
+      
+      or,
+      <me>
+        \sum a_{k}\left[(m+k)(m+k-1)+(m+k)-n^{2}\right]x^{m+k}+\sum a_{k}x^{m+k+2}=0
+      </me>
+      or,
+      <men xml:id="eqn-bessl3">
+        \sum a_{k}\left[(m+k)^{2}-n^{2}\right]x^{m+k}+\sum a_{k}x^{m+k+2}=0
+      </men>
+      Equating the coefficient of lowest of power of <m>x</m>. i.e., <m>x^{m}</m> to zero, 
+      by putting <m>k=0</m> in equation <xref ref="eqn-bessl3"/>, we get the indicial 
+      equation as <m>a_{o}(m^{2}-n^{2})=0 </m>. Since, <m> a_{o} \neq 0</m>, 
+      we have <m>m=\pm n </m>. 	
+      </p>
+      <p>
+        Equating the coefficient of  <m> x^{m+1}</m> to zero, we get - 
+        <me>
+        a_{1}[(m+1)^{2}-n^{2}]=0
+        </me> 
+        for <m>k=1</m>, i.e., <m>a_{1} =0</m>. 	
+        Since <m>(m+1)^{2}-n^{2} \neq 0</m>, for the given value of <m>m =\pm n </m>. 
+        </p>
+          
+        <p>
+        Equating the coefficient of general term <m>x^{m+k+2}</m> to zero, 
+        we get the recurrence relation for the coefficients as 
+        <me>
+           a_{k+2}[(m+k+2)^{2}-n^{2}]+a_{k}=0
+        </me>
+          or,
+          <men xml:id="eqn-bessl4">
+            a_{k+2}=-\frac{a_{k}}{(m+k+2)^{2}-n^{2}}
+          </men>
+          for
+          <me>
+            m=+n, \quad a_{k+2}=-\frac{a_{k}}{(n+k+2)^{2}-n^{2}} 
+          </me>
+          and 
+          <me>
+             a_{2}=-\frac{a_{o}}{(n+2)^{2}-n^{2}}=-\frac{a_{o}}{4(n+1)};
+          </me>
+          <me>
+             a_{3}=-\frac{a_{1}}{(n+3)^{2}-n^{2}}=0 \quad [\because a_{1}=0]
+          </me>
+          <me>
+             \therefore \quad a_{5} =a_{7} =\cdots=0,
+          </me>
+          <me>
+            a_{4}=-\frac{a_{2}}{(n+4)^{2}-n^{2}}  =+\frac{a_{o}}{4(n+1)8(n+2)}
+          </me>
+          <me>
+            =\frac{a_{o}}{4^{2}2!(n+1)(n+2)}
+          </me>
+          
+          <me>
+             a_{6}=-\frac{a_{4}}{(n+6)^{2}-n^{2}}=- \frac{a_{0}}{4^{2}2!(n+1)(n+2)(n+3)12} 
+          </me>
+          <me>
+              =-\frac{a_{0}}{4^{3}3!(n+1)(n+2)(n+3)} 
+          </me>
+          
+          and so on.
+        </p>
+        <p>
+          Substituting these values in equation <xref ref="eqn-bessl2"/>, we have 
+          <me>
+            y=a_{o}x^{n}\left[1-\frac{1}{4(n+1)}x^{2}+\frac{1}{4^{2}2!(n+1)(n+2)}x^{4}\right.
+          </me>
+          <me>
+            \left.-\frac{1}{4^{3}3!(n+1)(n+2)(n+3)}x^{6}+\cdots\right.
+          </me>
+          
+          <me>
+            	\left.+\cdots+\frac{(-1)^{r}x^{2r}}{4^{r}r!(n+1)(n+2)\cdots(n+r)}+\cdots\right]
+          </me>
+          <men xml:id="eqn-bessl5">
+            \therefore \quad y=a_{o}\sum\limits_{r=0}^{\infty}(-1)^{r}\frac{x^{n+2r}}{2^{2r}r!(n+1)(n+2)\cdots(n+r)}
+          </men>
+            where <m>a_{o}</m> is an arbitrary constant. If we choose <m> a_{o} = \frac{1}{2^{n}n!}</m>
+             then the solution <xref ref="eqn-bessl5"/> is called Bessel's function of 
+             the first kind and is denoted by <m>J_{n}(x)</m>. Thus 
+             <me>
+              J_{n}(x) = \frac{1}{2^{n}n!} \sum\limits_{r=0}^{\infty}(-1)^{r}\frac{x^{n+2r}}{2^{2r}r!(n+1)(n+2)\cdots(n+r)}
+             </me>
+             
+             <men xml:id="eqn-bessl6">
+              =  \sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}
+             </men>
+            for <m>m=-n</m>, we have  
+            <me>
+              a_{k+2}=-\frac{a_{k}}{(-n+k+2)^{2}-n^{2}}
+            </me>
+              hence the second solution is obtained by replacing <m>n</m> with <m>-n</m> 
+              in equation <xref ref="eqn-bessl6"/>, i.e.,
+              <men xml:id="eqn-bessl7">
+                J_{-n}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(-n+r)!}\left(\frac{x}{2}\right)^{-n+2r}
+              </men>
+  		          Therefore, the general solution of Bessel's differential equation 
+                <xref ref="eqn-bessl1"/> is 
+                <men xml:id="eqn-bessl8">
+                  y=AJ_{n}(x)+BJ_{-n}(x)
+                </men>
+                  Where <m>A</m> and <m>B</m> are two arbitrary constants.	
+          </p>
+          </introduction>
+
+          <subsection xml:id="subsec-bessl_fn">
+            <title>Bessel's Functions, <m>J_{n}(x)</m></title>
+            <introduction>
+              
+            <p>
+            The Bessel's function is 
+            <me>
+              J_{n}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n-2r}
+            </me>
+            If <m>n=0</m>
+            <me>
+              J_{o}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{(r!)^{2}}\left(\frac{x}{2}\right)^{2r}
+            </me>
+            or,
+            <me>
+              J_{o}(x) = 1-\frac{x^{2}}{2^{2}}+\frac{x^{4}}{2^{2}\cdot 4^{4}}-\frac{x^{6}}{2^{2}\cdot 4^{2}\cdot 6^{2}}+\cdots
+            </me>
+            If <m>n=1</m>,
+            <me>
+              J_{1}(x)=\frac{x}{2}-\frac{x^{3}}{2^{2}\cdot 4}+\frac{x^{5}}{2^{2}\cdot 4^{4}\cdot 6}-\cdots
+            </me>
+            The graph of these functions are damped oscillatory with a varying period, as shown in 
+            figure <xref ref="fig-fig44"/>.
+              </p>
+               <figure xml:id="fig-fig44">
+    <caption>Bessel's Function</caption>
+    <image source="fig44.png" width ="35%"/>
+</figure>
+            </introduction>
+
+            <subsubsection xml:id="subsubsec-bessl_genfn">
+              <title>Generating Function for <m>J_{n}(x)</m></title>
+              <p>
+                <m>J_{n}(x)</m>, the Bessel's function of first kind is the coefficient 
+                of <m>z^{n}</m> in the expansion of 
+                <men xml:id="eqn-bessl_gen1">
+                  	e^{\frac{x}{2}(z-\frac{1}{z})}=\sum\limits_{n=-\infty}^{\infty}J_{n}(x) z^{n}
+                </men>
+                </p>
+                <proof>
+                  <p>
+                    we know that <m>e^{t}=1+t+\frac{t^{2}}{2!}+\frac{t^{3}}{3!} +\cdots</m>
+                    <me>
+                      \therefore  e^{\frac{xz}{2}}=1+\frac{xz}{2}+\frac{1}{2!}\left(\frac{xz}{2}\right)^{2}+\frac{1}{3!}\left(\frac{xz}{2}\right)^{3}+\cdots 
+                    </me>
+                    
+                    <men xml:id="eqn-bessl_gen2">
+                      = \sum\limits_{r=0}^{\infty}\frac{x^{r}z^{r}}{2^{r}r!}
+                    </men>
+                    and 
+                    <me>
+                      e^{-\frac{x}{2z}}=1-\left(\frac{x}{2z}\right)+\frac{1}{2!}\left(\frac{x}{2z}\right)^{2}-\frac{1}{3!}\left(\frac{x}{2z}\right)^{3}+\cdots 
+                    </me>
+                    <men xml:id="eqn-bessl_gen3">
+                      =  \sum\limits_{s=0}^{\infty}(-1)^{s}\frac{x^{s}}{2^{s}z^{s}s!}
+                    </men>
+                    
+                      Multiplying equations <xref ref="eqn-bessl_gen2"/> and <xref ref="eqn-bessl_gen3"/>, 
+                      we get -
+                      <men xml:id="eqn-bessl_gen4">
+                        e^{\frac{x}{2}(z-\frac{1}{z})}=\sum\limits_{r=0}^{\infty}\frac{x^{r}z^{r}}{2^{r}r!}\sum\limits_{s=0}^{\infty}(-1)^{s}\frac{x^{s}}{2^{s}z^{s}s!}
+                      </men>
+                    Replacing <m>r</m> by  <m>n+s</m>, we get the coefficient of <m>z^{n}</m> as 
+                    <me>
+                      e^{\frac{x}{2}(z-\frac{1}{z})} 	= \sum\limits_{s=-n}^{-1}\{\}z^{n+s}+\sum\limits_{s=0}^{\infty}\frac{x^{n+s}}{2^{n+s}(n+s)!}z^{n+s}\frac{(-1)^{s}x^{s}}{2^{s}z^{s}s!}
+                    </me>
+                    <me>
+                      =\{\}z^{0}+\cdots\{\}z^{n-1}+\sum\limits_{s=0}^{\infty}\frac{x^{n+s}}{2^{n+s}(n+s)!}z^{n+s}\frac{(-1)^{s}x^{s}}{2^{s}z^{s}s!}
+                    </me>
+                    <me>
+                      =\sum\limits_{s=0}^{\infty}\frac{(-1)^{s}x^{n+2s}}{s!(n+s)!2^{n+2s}}z^{n}
+                    </me>
+                    
+                    <men xml:id="eqn-bessl_gen5">
+                      	=\sum\limits_{s=0}^{\infty}\frac{(-1)^{s}}{s!(n+s)!}\left(\frac{x}{2}\right)^{n+2s}z^{n}=J_{n}(x)z^{n}
+                    </men>
+                  </p>
+                  <p>
+                    The coefficient of <m> z^{-n}</m> is obtained by putting <m>s=n+r</m>, 
+                    so we have	 
+                    <me>
+                        \sum\limits_{r=0}^{\infty}\frac{x^{r}z^{r}}{2^{r}r!}\cdot\frac{(-1)^{n+r}x^{n+r}}{2^{n+r}(n+r)!z^{n+r}}
+                    </me>
+                    <me>
+                        =(-1)^{n}\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}z^{-n}
+                    </me>
+                    
+                    <men xml:id="eqn-bessl_gen6">
+                      =(-1)^{n}J_{n}(x)z^{-n}=J_{-n}(x)z^{-n}
+                    </men>
+                    From equations <xref ref="eqn-bessl_gen5"/> and  <xref ref="eqn-bessl_gen6"/>, 
+                    we have 
+                    <men xml:id="eqn-bessl_gen7">
+                      e^{\frac{x}{2}(z-\frac{1}{z})}=\sum\limits_{n=-\infty}^{\infty}J_{n}(x)z^{n}
+                    </men>
+                      This is the reason that <m>e^{\frac{x}{2}(z-\frac{1}{z})}</m> is said 
+                      to be generating function of Bessel's functions. The generating function 
+                      also express the trigonometric functions as expansions involving Bessel's 
+                      functions. <idx><h>Bessel generating function</h></idx> 
+                      For this purpose put <m>z=e^{i\theta}</m> in the generating function. That is,
+                      <me>
+                        e^{\frac{x}{2}(z-\frac{1}{z})}=\sum\limits_{n=-\infty}^{\infty}J_{n}(x)z^{n}
+                      </me>
+                      or,
+                      <me>
+                        e^{\frac{x}{2}(e^{i\theta}-e^{-i\theta})}=e^{ix\sin\theta}=\sum\limits_{n=-\infty}^{\infty}J_{n}(x)e^{ni\theta}
+                      </me>
+                      or,
+                      <me>
+                        \cos(x\sin\theta)+i\sin(x\sin\theta) 
+                      </me>
+                      <me>
+                        =J_{o}(x)+\{J_{1}(x)e^{i\theta}+J_{-1}(x)e^{-i\theta}\}+\{J_{2}(x)e^{2i\theta}+J_{-2}(x)e^{-2i\theta}\}+\cdots
+                      </me>
+                      
+                      <me>
+                        =J_{o}(x)+\{J_{1}(x)e^{i\theta}-e^{-i\theta}\}+\{J_{2}(x)e^{2i\theta}+e^{-2i\theta}\}+\cdots
+                      </me>
+                      <m>[\because J_{-n}(x)=(-1)^{n}J_{n}(x)]</m>
+                        <me>
+                          =J_{o}(x)+2i\sin\theta J_{1}(x)+2\cos2\theta J_{2}(x)+\cdots
+                        </me>
+                        Equating real and imaginary parts, we get - 
+                        <men xml:id="eqn-bessl_gen8">
+                          \cos(x\sin\theta)=J_{o}(x)+2 J_{2}(x)\cos2\theta +2 J_{4}(x)\cos4\theta+\cdots
+                        </men>
+                        and 
+                        <men xml:id="eqn-bessl_gen9">
+                          \sin(x\sin\theta)=2J_{1}(x)\sin\theta+2J_{3}(x)\sin3\theta+\cdots
+                        </men>
+                          The above two series <xref ref="eqn-bessl_gen8"/> 
+                          and <xref ref="eqn-bessl_gen9"/> are known as Jacobian series. 
+                          Replacing <m> \theta</m> by <m>(\frac{\pi}{2}-\theta)</m>, we have 
+                          <men xml:id="eqn-bessl_gen10">
+                            	\cos(x\cos\theta)=J_{o}(x)-2 J_{2}(x)\cos2\theta +2 J_{4}(x)\cos4\theta-\cdots
+                          </men>
+                          and 
+                          <men xml:id="eqn-bessl_gen11">
+                          \sin(x\cos\theta)=2J_{1}(x)\cos\theta-2J_{3}(x)\cos3\theta+\cdots	  
+                          </men>
+                    </p>
+                </proof>
+
+                <paragraphs>
+                  <title>Python Code:</title>
+                  <p>from scipy.special import j1  </p>
+                    <p>import numpy as np  </p>
+                    <p>import scipy as sp  </p>
+                     <p>import matplotlib.pyplot as plt  </p>
+                    <p> x = np.linspace(0, 20,100) </p>
+                     <p> for n in range(4):</p>
+                            <p>  y = sp.special.jn(n,x)</p>
+                            <p>   plt.plot(x, y, label=r'$J_{}(x)$'.format(n))</p>
+                             <p>  plt.title("Bessel's Function")</p>
+                            <p>    plt.xlabel("x")</p>
+                               <p>   plt.ylabel(r'$J_m(x)$')</p>
+                               <p>     plt.legend(loc='lower right')</p>
+                                      <p>      plt.show()</p>
+                     
+                </paragraphs>
+            </subsubsection>
+
+<subsubsection xml:id="subsubsec-bessl_intg">
+  <title>Integral Represntation of <m>J_{n}(x)</m></title>
+  <p>
+    <me>
+      J_{n}(x)=\frac{1}{\pi}\int\limits_{0}^{\pi}\cos(n\theta-x\sin\theta)\,d\theta.	
+    </me>
+    </p>
+    <proof>
+      <p>
+        We know that 
+        <me>
+           \cos(x\sin\theta)
+        </me>
+        
+        <men xml:id="eqn-bessl_intg1">
+         =J_{o}(x)+2 J_{2}(x)\cos2\theta +2 J_{4}(x)\cos4\theta+\cdots
+        </men>
+        and 
+        <men xml:id="eqn-bessl_intg2">
+          \sin(x\cos\theta)=2J_{1}(x)\cos\theta-2J_{3}(x)\cos3\theta+\cdots	
+        </men>
+          Multiplying equation <xref ref="eqn-bessl_intg1"/> by <m>\cos n\theta</m> 
+          and equation <xref ref="eqn-bessl_intg2"/> by <m>\sin n\theta</m> and 
+          integrating between limits 0 to <m>\pi</m>, we get -
+          <me>
+            \int\limits_{0}^{\pi}\cos(x\sin\theta)\cos n\theta\,d\theta=	\int\limits_{0}^{\pi}\left[J_{o}(x)\cos n\theta+2 J_{2}(x)\cos2\theta\cos n\theta +\cdots\right]\,d\theta
+          </me>
+          <me>
+             =J_{o} \int\limits_{0}^{\pi}\cos n\theta\,d\theta+2 J_{2}\int\limits_{0}^{\pi}\cos2\theta\cos n\theta\,d\theta+\cdots 
+          </me>
+                 
+          <men xml:id="eqn-bessl_intg3">
+                      \begin{cases} 
+               = 0, \text{if n is odd,}\\  
+              = \pi J_{n},  \text{if  n  is even,}
+                    \end{cases}
+          </men>
+            Again, 
+            <me>
+              \int\limits_{0}^{\pi}\sin(x\sin\theta)\sin n\theta\,d\theta 
+            </me>
+            <me>
+               =2J_{1} \int\limits_{0}^{\pi}\sin n\theta\,d\theta+2 J_{3}\int\limits_{0}^{\pi}\sin3\theta\sin n\theta\,d\theta+\cdots 
+            </me>
+            
+            <men xml:id="eqn-bessl_intg4">
+             \begin{cases} 
+               = 0, \text{if  n  is even,}\\   
+              = \pi J_{n},  \text{if  n  is odd,} 
+                    \end{cases}
+            </men>
+            Adding equations <xref ref="eqn-bessl_intg3"/> and <xref ref="eqn-bessl_intg4"/>, we get -
+            <me>
+              J_{n}(x) =\frac{1}{\pi}	\int\limits_{0}^{\pi}\{\cos(x\sin\theta)\cos n\theta +\sin(x\sin\theta)\sin n\theta\} \,d\theta 
+            </me>
+            
+            <men xml:id="eqn-">
+              =\frac{1}{\pi}	\int\limits_{0}^{\pi}\cos(n\theta-x\sin\theta)\,d\theta,
+            </men>
+            where <m>n</m> is any integer. 
+            <fn>
+            <p>
+              The Kronecker delta
+              <me>
+                \int\limits_{0}^{\pi}\cos m\theta\cos n\theta\,d\theta =\frac{\pi}{2}\delta_{m,n},\quad \delta_{m,n} =0 
+              </me>
+              for <m> m \neq n</m>;
+            </p>
+            </fn>
+            <corollary xml:id="cor-bessl_intg">
+              <statement>
+                <p>
+                   If  n= 0, we have  
+                  <me>
+                   J_{o}(x)= \frac{1}{\pi}	\int\limits_{0}^{\pi}\cos(x\sin\theta)\,d\theta.
+                  </me>
+                  <me>
+                    \int\limits_{0}^{\pi}\sin m\theta\sin n\theta\,d\theta =\frac{\pi}{2}\delta_{m,n},\quad \delta_{m,n} =1 
+                  </me>
+                  for <m>m = n</m>.
+                </p>
+              </statement>
+            </corollary>
+      </p>
+    </proof>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-bessl_recr">
+  <title>Recurrence Relations for <m> J_{n}(x)</m></title>
+    <ol>
+      <li>
+        <p>
+          <me>
+            xJ'_{n}=n J_{n} -xJ_{n+1}
+          </me>
+        </p>
+        <proof>
+          <p>
+            we know that  
+            <men xml:id="eqn-bessl_rec1">
+              J_{n}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}
+            </men>
+            Differentiating with respect to <m>x</m>, we get -
+            <me>
+              J'_{n}=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}(n+2r)}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r-1}\cdot\frac{1}{2}
+            </me>
+            or,
+            <men xml:id="eqn-bessl_rec2">
+              xJ'_{n}=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}(n+2r)}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}
+            </men>
+            or,
+            <me>
+              xJ'_{n}=n\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}+\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}2r}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r} 
+            </me>
+            <me>
+              =nJ_{n}+x\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}2r}{2\cdot r!(r-1)!(n+r)!}\left(\frac{x}{2}\right)^{n+2r-1} 
+            </me>
+            <me>
+              =nJ_{n}+x\sum\limits_{r=1}^{\infty}\frac{(-1)^{r}}{(r-1)!(n+r)!}\left(\frac{x}{2}\right)^{n+2r-1}
+            </me>
+                To change limits put <m>r-1=s</m>,  so that
+                <me>
+                   xJ'_{n}=nJ_{n}+x\sum\limits_{s=0}^{\infty}\frac{(-1)^{s+1}}{s!(n+s+1)!}\left(\frac{x}{2}\right)^{n+2s+1}
+                </me>
+               <me>
+                \therefore \quad xJ'_{n}=nJ_{n}-xJ_{n+1}
+               </me>		
+          </p>
+        </proof>
+      </li>
+      ,<li>
+        <p>
+          <me>
+            xJ'_{n}=-n J_{n}+xJ_{n-1}.
+          </me>
+        </p>
+        <proof>
+          <p>
+            From equation <xref ref="eqn-bessl_rec1"/> of relation 1, we have   
+            <me>
+              xJ'_{n}=	\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}(n+2r)}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}  
+            </me>
+              <me>
+                =\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}[(2n+2r)-n]}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}
+              </me>
+              <me>
+                =\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}(2n+2r)}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}-n\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}
+              </me>
+              <me>
+                =\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}\cdot 2}{r!(n+r-1)!}\left(\frac{x}{2}\right)^{n+2r}-nJ_{n}
+              </me>
+              <me>
+                 =x\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!\{(n-1)+r\}!}\left(\frac{x}{2}\right)^{(n-1)+2r}-nJ_{n}
+              </me>
+              <me>
+                =xJ_{n-1}-nJ_{n}. 
+              </me>   
+          </p>
+        </proof>
+      </li>
+      <li>
+        <p>
+          <me>
+            2J'_{n} =J_{n-1}-J_{n+1}
+          </me>
+        </p>
+        <proof>
+          <p>
+            We know that
+            <me>
+              xJ'_{n}=nJ_{n}-xJ_{n+1}
+            </me>
+            [from relation 1.]
+            <me>
+              xJ'_{n}=-nJ_{n}+xJ_{n-1}
+            </me>
+            [from relation 2.] Adding these, we get -
+            <me>
+              2xJ'_{n}= -xJ_{n+1}+xJ_{n-1}
+            </me>
+            or,
+            <me>
+              2J'_{n} =J_{n-1}-J_{n+1}
+            </me>	
+          </p>
+        </proof>
+      </li>
+      <li>
+        <p>
+          <me>
+             2nJ_{n}=x(J_{n-1} +J_{n+1})
+          </me>
+        </p>
+        <proof>
+          <p>
+            We know that - 
+            <me>
+              xJ'_{n}=nJ_{n}-xJ_{n+1}
+            </me>
+            [from relation 1.]
+              <me>
+                xJ'_{n}=-nJ_{n}+xJ_{n-1}
+              </me>
+              [from relation 2.] Subtracting these, we get -
+              <me>
+                0= 2nJ_{n}-xJ_{n+1}-xJ_{n-1}
+              </me>
+              or,
+              <me>
+                2nJ_{n} =x(J_{n-1}+J_{n+1})
+              </me>
+          </p>
+        </proof>
+      </li>
+      <li>
+        <p>
+          <me>
+            \frac{\,d}{\,dx}\left(x^{-n}J_{n}\right)=-x^{-n}J_{n+1}
+          </me>
+        </p>
+        <proof>
+          <p>
+            We know that 
+            <me>
+              xJ'_{n}=nJ_{n}-xJ_{n+1}
+            </me>
+           [from relation 1.] Multiplying by <m>x^{-n-1}</m>, we get -
+           <me>
+            x^{-n}J'_{n}= nx^{-n-1}J_{n}-x^{-n}J_{n+1}
+           </me>
+           or,
+           <me>
+            x^{-n}J'_{n}-nx^{-n-1}J_{n}=-x^{-n}J_{n+1}
+           </me>
+           or,
+           <me>
+            \frac{\,d}{\,dx}\left(x^{-n}J_{n}\right)-x^{-n}J_{n+1}
+           </me>
+          </p>
+        </proof>
+      </li>
+      <li>
+        <p>
+          <me>
+             \frac{\,d}{\,dx}\left(x^{n}J_{n}\right)=x^{n}J_{n+1}
+          </me>
+        </p>
+        <proof>
+          <p>
+            We know that
+            <me>
+              xJ'_{n}=-nJ_{n}+xJ_{n-1}
+            </me>
+            [from relation 2.] Multiplying by <m> x^{n-1}</m>, we get -
+            <me>
+              x^{n}J'_{n}= -nx^{n-1}J_{n}+x^{n}J_{n-1}
+            </me>
+            or,
+            <me>
+               x^{n}J'_{n}+nx^{-n-1}J_{n}=x^{n}J_{n-1}
+            </me>
+            or,
+            <me>
+              \frac{\,d}{\,dx}\left(x^{n}J_{n}\right)=x^{n}J_{n-1}
+            </me>
+          </p>
+        </proof>
+      </li>
+    </ol>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-bessl_orth">
+  <title>Orthogonality of Bessel's Functions</title>
+  <p>
+    <me>
+      \int\limits_{0}^{1}xJ_{n}(\alpha x)\cdot J_{n}(\beta x) \,dx =0
+    </me>
+    Where <m>\alpha</m> and <m>\beta</m> are the roots of <m>J_{n}(x)=0</m>. 
+    Provided <m>\alpha \neq \beta </m>.
+    </p>
+    <proof>
+      <p>
+        We know that the Bessel's equation 
+        <men xml:id="eqn-bessl_orth1">
+          	t^{2}\frac{d^{2}y}{dt^{2}}+t\frac{\,dy}{\,dt}+(t^{2}-n^{2})y=0 
+        </men>
+        is satisfied by <m>J_{n}(t)</m>. Now put <m>t=\alpha x </m> and 
+        <m>y=u= J_{n}(\alpha x)</m> in equation <xref ref="eqn-bessl_orth1"/>, we have 
+        <me>
+          \frac{\,dt}{\,dx}=\alpha, 
+        </me>
+        <me>
+          \frac{\,dy}{\,dt}=\frac{\,du}{\,dt} = \frac{\,du}{\,dx}\cdot\frac{\,dx}{\,dt}=\frac{1}{\alpha}\frac{\,du}{\,dx}
+        </me>
+        and 
+        <me>
+          \frac{d^{2}y}{dt^{2}}=\frac{\,d}{\,dt}\left(\frac{\,dy}{\,dt}\right)=\frac{1}{\alpha}\frac{d}{dx}\left(\frac{1}{\alpha}\frac{\,du}{\,dx}\right)
+        </me>
+        <me>
+          =\frac{1}{\alpha^{2}}\frac{d^{2}u}{dx^{2}}
+        </me>
+        and 
+        <me>
+          \left[\because \quad \frac{d}{dt}= \frac{1}{\alpha}\frac{d}{dx}\right]
+        </me>
+        Substituting these values in equation <xref ref="eqn-bessl_orth1"/>, we get -
+        <men xml:id="eqn-bessl_orth2">
+          x^{2}\frac{d^{2}u}{dx^{2}}+x\frac{du}{dx}+(\alpha^{2}x^{2}-n^{2})u=0 
+        </men>
+            Similarly by putting <m>t=\beta x</m> and <m> y=v=J_{n}(\beta x)</m> in 
+            equation <xref ref="eqn-bessl_orth1"/>, we have 
+            <men xml:id="eqn-bessl_orth3">
+              x^{2}\frac{d^{2}v}{dx^{2}}+x\frac{dv}{dx}+(\beta^{2}x^{2}-n^{2})v=0 	
+            </men>
+                Multiplying equation <xref ref="eqn-bessl_orth2"/> by <m>\frac{v}{x}</m> and 
+                equation <xref ref="eqn-bessl_orth3"/> by <m>\frac{u}{x}</m> and then 
+                subtracting, we get -
+                <me>
+                  x\left[v\frac{d^{2}u}{dx^{2}}-u\frac{d^{2}v}{dx^{2}}\right]+\left[v\frac{du}{dx}-u\frac{dv}{dx}\right]+(\alpha^{2}-\beta^{2})uvx=0
+                </me>
+                or,
+                <men xml:id="eqn-bessl_orth4">
+                  \frac{d}{dx}\left[x\left(v\frac{du}{dx}-u\frac{dv}{dx}\right)\right]+(\alpha^{2}-\beta^{2})uvx=0
+                </men>
+                  Integrating equation <xref ref="eqn-bessl_orth4"/> w. r. t. 'x' 
+                  between the limits 0 to 1, we get - 
+                  <me>
+                    \left[x\left(v\frac{du}{dx}-u\frac{dv}{dx}\right)\right]_{0}^{1}+(\alpha^{2}-\beta^{2})\int\limits_{0}^{1}uvx\,dx=0
+                  </me>
+                  
+                  <men xml:id="eqn-bessl_orth5">
+                    (\beta^{2}-\alpha^{2})\int\limits_{0}^{1}uvx\,dx =\left(v\frac{du}{dx}-u\frac{dv}{dx}\right)_{x=1}
+                  </men>
+                    putting the values of <m>u=J_{n}(\alpha x)</m>, <m>\frac{du}{dx}=\alpha J'_{n}(\alpha x)</m>	
+                    and	 <m>v= J_{n}(\beta x)</m>, <m>\frac{dv}{dx}=\beta J'_{n}(\beta x)</m> 
+                    in equation ,<xref ref="eqn-bessl_orth5"/>, we get - 
+                    <me>
+                      (\beta^{2}-\alpha^{2})\int\limits_{0}^{1}x J_{n}(\alpha x)J_{n}(\beta x)\,dx 
+                    </me>
+                    <me>
+                      =\left[J_{n}(\beta x)\alpha J'_{n}(\alpha x)-J_{n}(\alpha x)\beta J'_{n}(\beta x)\right]_{x=1}
+                    </me>
+                    
+                    <men xml:id="eqn-bessl_orth6">
+                      =\alpha	J'_{n}(\alpha) J_{n}(\beta)-\beta J'_{n}(\beta) J_{n}(\alpha)	
+                    </men>
+                      since <m>\alpha </m> and <m>\beta </m> are the roots of 
+                      <m> J_{n}(x)=0 </m>, we have - 
+                      <m>J_{n}(\alpha)=0</m> 	and <m>J_{n}(\beta)=0</m>, 
+                      putting these values in equation <xref ref="eqn-bessl_orth6"/>, we get - 
+                      <me>
+                        (\beta^{2}-\alpha^{2})\int\limits_{0}^{1}x J_{n}(\alpha x)J_{n}(\beta x)\,dx=0
+                      </me>
+                      Hence,
+                      <me>
+                        \int\limits_{0}^{1}x J_{n}(\alpha x)J_{n}(\beta x)\,dx=0.
+                      </me>
+      </p>
+    </proof>
+
+</subsubsection>
+
+          </subsection>
+
+  </section>
+

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xml:id="ch_third" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- Change title when you have one: -->
+  <title>Tensor Analysis</title>
+   
+  <introduction>
+    <p>
+     Tensor is a convenient tool to establish  relativistic invariance among the laws of nature. 
+     It was introduced by G. Ricci and it is used by Einstein to describe a general theory of relativity. 
+     Tensor is an entity which is invariant in coordinate transformation. It is a mathematical object 
+     that represents a physical quantity which is independent of the choice of coordinate system. 
+     Tensors are used to describe many physical phenomena, including the behavior of fluids and gases, 
+     the motion of objects under gravity, and the behavior of electromagnetic fields. </p>
+    <p> 
+     Tensors are a natural and logical generalization of vectors. A scalar is simply a number 
+     (positive, negative, and zero). The magnitude of a scalar is independent of the reference 
+     system if the system of unit is fixed, e.g., 
+     the temperature (scalars) at a point in space is fixed irrespective of the reference system 
+     but obviously, <m> 0^{o}C=32^{o}F.</m> The magnitude of a vector remains constant irrespective 
+     of the frames of reference if the system of unit is fixed. However, the components of a 
+     vector depend upon both the frame of reference and system of units. If the system of units is 
+     changed the magnitude of a vector also changes, e.g., the magnitude and the direction of acceleration 
+     due to gravity at a point in space is fixed irrespective of the reference system but 
+     <m>g = 9.8m/s^{2} = 32 ft/s^{2}</m> (no change in direction). In vector algebra, the sums and 
+     products of two vectors can be defined very clearly but the quotient of two vectors has no meaning. 
+     Tensors arise physically in this situations. For example, consider a stress system which is defined 
+     as a force per unit area, i.e., <m>stress = \frac{\vec{F}}{\vec{A}}</m>. However, the division by 
+     a vector is undefined; hence in a stress system, force can be defined as a product of a new entity 
+     T with a vector area <m>A</m>, i.e., a force <m>F =A\cdot T</m>, where <m>T</m> is a tensor 
+     associated with at least two directions. Similarly, <m>\vec{a} = \frac{\vec{F}}{m}</m> 
+     and <m>\vec{j} = \sigma \vec{E}</m> but these relations hold only on isotropic media. 
+     In an anisotropic medium, the acceleration, <m>\vec{a}</m> is not necessarily parallel to 
+     the applied force, and the current flows in a direction different from that of electric 
+     field. In such a sutuation the above equation can be generalized as -
+     <me>
+       j_{x} = \sigma_{xx} E_{x} + \sigma_{xy} E_{y} + \sigma_{xz} E_{z},
+     </me>
+     <me>
+       j_{y} = \sigma_{yx} E_{x} + \sigma_{yy} E_{y} + \sigma_{yz} E_{z},
+     </me>
+     <me>
+      j_{z} = \sigma_{zx} E_{x} + \sigma_{zy} E_{y} + \sigma_{zz} E_{z} 
+     </me>
+     where <m>\sigma_{ij} = (i,j = x,y,z)</m> are said to be the components of conductivity tensors 
+     of the medium. Similar expression can be obtained for mass (or reciprocal mass) tensors of the 
+     particle in the medium. The laws of physics which express the nature are independent upon the 
+     choice of reference frame. <em>A study of the transformation of a physical quantity from one 
+     frame to another leads to the tensor analysis</em>.
+      </p>
+      <p>
+        Tensors are characterized by their rank, which is the number of indices required to specify 
+        all of their components. A scalar quantity, such as temperature, is a tensor of rank zero. 
+        A vector, such as velocity or force, is a tensor of rank one. A tensor of rank two, such as 
+        the stress tensor or the electromagnetic field tensor, requires two indices to specify all of 
+        its components. Tensors are important in relativity theory, where the curvature of spacetime 
+        is described by a tensor called the Riemann tensor. In quantum field theory, the properties 
+        of particles and fields are described by tensors, such as the spin tensor and the polarization 
+        tensor. 
+        </p>
+        <p>
+          Let us consider a group of students who are measuring the maximum height attained by a projectile 
+          or an electric field at a point produced by a charge in a laboratory with their own sets of instrument. 
+          Each of them has their own frames of reference orientated in different directions independent of 
+          one another. Now if one measures the maximum height of the projectile as 2 meters would it be 
+          possible that the others may find it to be 5m, 1m, 10m etc? or if one finds the electric field 
+          at a certain point to be 40 N/C and directed eastward, is it likely that another would find it to 
+          be 30 N/C and directed southward, and the third would measure it to be 60  N/C and directed upward? 
+          Finally, would the height of the projectile or the value of electric field change for individuals 
+          just because each of them has distinct coordinate systems? The answer is no because we know that 
+          5 ft person is 5 ft long and it does not matter who and how someone measures it. Thus it is clear 
+          that the physical phenomena appear to be the same for all observers stationary relative to each other, 
+          independent of the position of each observer, and of the orientation of their frames of refernce.
+          </p>
+          <p>
+            The physical quantites which possess such invarience properties can only be taken into account 
+            in the formulation of physical laws. These quantities are scalars, vectors, and in general, 
+            tensors. The tensor is useful for describing the properties of substances which vary in directions. 
+            It must be noted that a tensor is an entity which is independent of the system of coordinates 
+            to which its components are referred. It is only its components which undergo transformation 
+            from one coordinate system to another. It is not possible to represent tensors as any geometrical 
+            pictures like scalars or vectors, hence tensors can be introduced only through their properties of 
+            transformation under coordinate transformations.
+            </p>
+            <p>
+              Let <m>(x^{1}{,} x^{2}{,} x^{3}{,} \cdots{,} x^{n})</m> and 
+              <m>(\bar{x}^{1}{,} \bar{x}^{2}{,} \bar{x}^{3}{,} \cdots{,} \bar{x}^{n})</m> be coordinates of a 
+              point in two different frames of  reference. Suppose there exists <m>n</m> independent relations 
+              between the coordinates of the two systems as 
+              <me>
+                \bar{x}^{1} = \bar{x}^{1}(x^{1}, x^{2}, x^{3}, \cdots, x^{n}),
+              </me>
+              <me>
+                \bar{x}^{2} = \bar{x}^{2}(x^{1}, x^{2}, x^{3}, \cdots, x^{n}),
+              </me>
+              <me>
+                \vdots \hspace{2cm}  \vdots 
+              </me>
+              <me>
+                \bar{x}^{n} = \bar{x}^{n}(x^{1}, x^{2}, x^{3}, \cdots, x^{n}) 
+              </me>
+              <mdn>
+                <mrow xml:id="eqn-tens1"> \therefore \quad 		\bar{x}^{i} \amp = \bar{x}^{i}(x^{1}, x^{2}, x^{3}, \cdots, x^{n}) </mrow>
+                <mrow xml:id="eqn-tens2"> \text{also,}\quad {x}^{i} \amp = {x}^{i}(\bar{x}^{1}, \bar{x}^{2}, \bar{x}^{3}, \cdots, \bar{x}^{n}), </mrow>
+              </mdn>
+              where <m>i = 1,2,3, \cdots n</m>.
+              </p>
+              <p>
+                The eqns. <xref ref="eqn-tens1"/>  and <xref ref="eqn-tens2"/> define a transformation of 
+                coordinates from one frame to another. Differentiating eqn. <xref ref="eqn-tens1"/>, we get -
+                <me>
+                  \,d\bar{x}^{i} = \frac{\partial \bar{x}^{i} }{\partial x^{1}}\,dx^{1} 
+                  + \frac{\partial \bar{x}^{i} }{\partial x^{2}}\,dx^{2} 
+                  +\cdots +\frac{\partial \bar{x}^{i} }{\partial x^{n}}\,dx^{n} 
+                  = \sum\limits_{j=1}^{n}\frac{\partial \bar{x}^{i} }{\partial x^{j}}\,dx^{j}
+                </me>
+                or, simply,
+                <men xml:id="eqn-tens3">
+                  \,d\bar{x}^{i} = \frac{\partial \bar{x}^{i} }{\partial x^{j}}\,dx^{j}
+                </men>
+               Eqn. <xref ref="eqn-tens3"/> is a coordinate transformation equation. 
+                </p>
+                <p>
+                   <alert>Notations:</alert> A collection of indices (subscripts and superscripts) 
+                   is used to make the mathematical development of tensor analysis. 
+                   The superscripts such as <m>T^{ij\cdots}</m> is a contravarient tensor, 
+                   the subscripts such as <m>T_{ij\cdots}</m> is a covarient tensor, and 
+                   <m>T_{l m n\cdots}^{ij\cdots}</m> is a mixed tensor.
+                  </p>
+               <p>
+                For pythone code visit <url href="https://docs.sympy.org/latest/tutorials/intro-tutorial/matrices.html"></url>
+                </p>
+      </introduction>
+
+ 
+
+   <xi:include href="./sec_third-intro.ptx" />
+  <xi:include href="./sec_third-cord_trans.ptx" />
+ <xi:include href="./sec_third-examplesA.ptx" /> 
+   <xi:include href="./sec_third-mit.ptx" />
+  
+
+   <xi:include href="./ex_third.ptx"/> 
+</chapter>

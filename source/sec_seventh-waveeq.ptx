@@ -1,0 +1,1097 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_seventh-waveeq" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>One Dimensional Wave Equation in Stretched String</title>
+  <introduction>
+   <p>
+    <idx>wave equation</idx> 
+    Let us consider an elastic string tightly stretched between points O 
+    and P by constant tension T. The string is caused to vibrate by plucking 
+    it with a very small displacement 'y' at time 't' so that the tension T 
+    remains constant throught the deflections of the string. Let <m>m</m> be 
+    the mass per unit length of an element AB of the vibrating string, 
+    as shown in figure <xref ref="fig-fig71"/>. The net force acting on the element AB in x and y 
+    directions is given by	
+    <men xml:id="eqn-pde_wave1">
+      F_{x}=T\cos \beta -T \cos \alpha
+    </men>
+    and 
+    <men xml:id="eqn-pde_wave2">
+      F_{y}=T\sin \beta -T \sin \alpha
+    </men>
+  where <m>\alpha</m> and <m>\beta</m> are the inclination of tension T 
+  with the horizontal x - axis. 
+    </p>
+    <figure xml:id="fig-fig71">
+    <caption>Wave in a string</caption>
+    <image source="fig71.png" width ="45%"/>
+</figure>
+   <p>
+    For small displacement 
+  <me>
+    \cos\beta = \cos \alpha \Rightarrow F_{x} =0,
+  </me>
+i.e., the motion of the particle of string along x - axis is zero. Also,
+<me>
+  \sin\beta = \tan\beta = \left(\frac{\partial y}{\partial x}\right)_{B} = \left(\frac{\partial y}{\partial x}\right)_{x+\,dx}
+</me>
+and 
+<me>
+  \sin\alpha = \tan\alpha = \left(\frac{\partial y}{\partial x}\right)_{A} = \left(\frac{\partial y}{\partial x}\right)_{x}
+</me>
+where <m>\frac{\partial y}{\partial x}</m> defines the slope of tangents at a perticular 
+point at any time 't'. From equation <xref ref="eqn-pde_wave2"/>, we have - 
+<me>
+  F_{y}=T\left(\frac{\partial y}{\partial x}\right)_{x+\,dx}-T\left(\frac{\partial y}{\partial x}\right)_{x} 
+</me>
+<me>
+  =T\left[\left(\frac{\partial y}{\partial x}\right)_{x+\,dx}-\left(\frac{\partial y}{\partial x}\right)_{x}\right]
+</me>
+<me>
+  =T\left[\left(\frac{\partial y}{\partial x}\right)_{x}+\frac{\partial}{\partial x}\left(\frac{\partial y}{\partial x}\right)_{x}\,dx+\cdots-\left(\frac{\partial y}{\partial x}\right)_{x}\right]
+</me>
+(using Taylor's expansions)
+<men xml:id="eqn-pde_wave3">
+  \therefore  F_{y}=T\frac{\partial^{2} y}{\partial x^{2}}\,dx
+</men>
+(neglicting higher order terms.)     								 
+i.e., <m>F_{y} \neq 0</m>  hence the motion of the particle of string is only along y - axis.
+    </p>
+    <p>
+      If the acceleration of the element along vertical be 
+      <m>\frac{\partial^{2} y}{\partial t^{2}}</m> and mass of an element AB is <m>m\,ds</m> 
+      then according to Newton's second law of motion, this force is given by 
+      <men xml:id="eqn-pde_wave4">
+        F_{y} = m\,ds\frac{\partial^{2} y}{\partial t^{2}}
+      </men>
+from equations <xref ref="eqn-pde_wave3"/> and <xref ref="eqn-pde_wave4"/>, we have-
+<me>
+  T\frac{\partial^{2} y}{\partial x^{2}}\,dx =  m\,dx\frac{\partial^{2} y}{\partial t^{2}}
+</me>
+[Since, slope of the curve is small, <m>\,ds</m> can be replaced by <m>\,dx</m>.]  
+<me>
+  T\frac{\partial^{2} y}{\partial x^{2}} =  m\frac{\partial^{2} y}{\partial t^{2}}
+</me>
+or,
+<men xml:id="eqn-pde_wave5">
+  \frac{\partial^{2} y}{\partial x^{2}} =  \frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}}
+</men>
+It is the wave equation for a vibrating string, where <m>v^{2}=\frac{T}{m}</m> 
+is the velocity of the wave propagating along the string.
+      </p>
+     </introduction>
+ 
+ <subsection xml:id="subsec-sol_vs">
+  <title>Solution of Wave Equation for Vibrating String</title>
+  <p>
+    <idx>vibrating string</idx> 
+    Let us consider an elastic string of length <m>l</m> tightly stretched 
+    between points O and P, as shown in figure <xref ref="fig-fig72"/>. 
+    If y be the displacement of string at point A(x,y) at any time t, 
+    then the wave equation for a vibrating  string is given by 
+    <men xml:id="eqn-sol_vs1">
+      \frac{\partial^{2} y}{\partial x^{2}} =  \frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}}
+    </men>
+ where  <m>v</m> is a constant. Equation <xref ref="eqn-sol_vs1"/> shows that
+the displacement y is a function of x and t, i.e., <m>y=f(x,t)</m>  hence 
+from the method of separation of variables, the solution for equation <xref ref="eqn-sol_vs1"/> is 
+
+<men xml:id="eqn-sol_vs2">
+  y(x,t) = X(x)T(t)
+</men>
+where <m>X</m> is a function of <m>x</m> only and <m>T</m> is a function of <m>t</m> only.  Now
+<me>
+  \frac{\partial y}{\partial t}=X\frac{\partial T}{\partial t}\hspace{1cm} \text{or,}\quad \frac{\partial^{2} y}{\partial t^{2}}=X\frac{\partial^{2} T}{\partial t^{2}}
+</me>
+and 
+<me>
+  \frac{\partial y}{\partial x}=T\frac{\partial X}{\partial x}
+</me>
+or,
+<me>
+\frac{\partial^{2} y}{\partial x^{2}}=T\frac{\partial^{2} X}{\partial x^{2}}
+</me>
+substituting these values in equation <xref ref="eqn-sol_vs1"/>, we get -
+<me>
+  T\frac{\partial^{2} X}{\partial x^{2}}=\frac{1}{v^{2}}X\frac{\partial^{2} T}{\partial t^{2}}
+</me>
+or,
+<men xml:id="eqn-sol_vs3">
+  \frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}}=\frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}}=\lambda \quad \text{(say)}.
+</men>
+      
+This is because each side of equation <xref ref="eqn-sol_vs3"/> contains only one 
+variable which is possible if each side must be seperately equal to some constant, 
+say, <m>\lambda</m>. Now, according to the value of <m>\lambda</m> there arises three cases.
+    </p>
+     <figure xml:id="fig-fig72">
+    <caption></caption>
+    <image source="fig72.png" width ="45%"/>
+</figure>
+
+    <p>
+      <term>Case I.</term> When <m>\lambda=0</m>, we have from equation <xref ref="eqn-sol_vs3"/>,		
+      <men xml:id="eqn-sol_vs4">
+        \begin{cases}
+        \frac{\partial^{2} X}{\partial x^{2}}  = 0 &amp; \Rightarrow X=c_{1}x+c_{2}\\
+ \frac{\partial^{2} T}{\partial t^{2}} = 0 &amp; \Rightarrow T=c_{3}t+c_{4}
+        \end{cases}
+      </men>
+      </p>
+      <p>
+       <term>Case II.</term> when <m>\lambda \gt 0</m>, for simplicity assume <m>\lambda=k^{2}</m>.
+       <men xml:id="eqn-sol_vs5">
+        \begin{cases}
+\frac{\partial^{2} X}{\partial x^{2}} -k^{2}X = 0 &amp; \Rightarrow X=c_{1}e^{kx}+c_{2}e^{-kx}\\
+ \frac{\partial^{2} T}{\partial t^{2}}-k^{2}v^{2}T = 0 &amp;  \Rightarrow T=c_{3}e^{kvt}+c_{4}e^{-kvt}
+        \end{cases}
+       </men>
+        </p>
+        <p>
+          <term>Case III.</term>
+when <m>\lambda \lt 0</m>, i.e., <m>\lambda=-k^{2}</m>(say),
+<men xml:id="eqn-sol_vs6">
+  \begin{cases}
+\frac{\partial^{2} X}{\partial x^{2}} +k^{2}X = 0 &amp; \Rightarrow X=c_{1}\cos kx+c_{2}\sin kx\\
+ \frac{\partial^{2} T}{\partial t^{2}}+k^{2}v^{2}T = 0 &amp;  \Rightarrow T=c_{3}\cos kvt+c_{4}\sin kvt
+\end{cases}
+</men>
+  </p>
+          <p>
+            The boundary conditions are 
+            <men xml:id="eqn-sol_vs7">
+              y(0,t) = 0 = y(l,t),
+            </men>
+            
+        the initial conditions are 
+<men xml:id="eqn-sol_vs8">
+ y(x,0) = f(x) \quad \text{and} \quad \left(\frac{\partial y}{\partial t}\right)_{t=0}=f'(x)
+</men>
+            </p>
+
+            <p>
+              Imposing the boundary conditions on case I and II, we obtain <m>X(x)=0</m> for 
+              <m>y(x,t) =0</m>. So equations <xref ref="eqn-sol_vs4"/> and <xref ref="eqn-sol_vs5"/> 
+              fail to give the solution of equation <xref ref="eqn-sol_vs1"/> and hence an 
+              equation <xref ref="eqn-sol_vs6"/> is only capable to provide the complete 
+              solution of equation <xref ref="eqn-sol_vs1"/> as it is periodic in <m>x</m>  
+              and <m>t</m>. Therefore with the case III the equation <xref ref="eqn-sol_vs2"/> becomes - 
+              <men xml:id="eqn-sol_vs9">
+                y(x,t) = (c_{1}\cos kx+c_{2}\sin kx)(c_{3}\cos kvt+c_{4}\sin kvt)
+              </men>
+              or,
+   <me>
+    0=(c_{1}(c_{3}\cos kvt+c_{4}\sin kvt) 
+   </me>
+   from equation <xref ref="eqn-sol_vs7"/>,
+		<m>y(x,t)=0 </m> at <m>x=0</m> <m>\Rightarrow 	(c_{1} =0)</m> for any arbitrary time.              
+              </p>
+              <p>
+                Hence equation <xref ref="eqn-sol_vs9"/> becomes 
+                <men xml:id="eqn-sol_vs10">
+                  y(x,t) = c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt)
+                </men>
+or,
+<me>
+  0= c_{2}\sin kl(c_{3}\cos kvt+c_{4}\sin kvt)
+</me>
+
+ from equation <xref ref="eqn-sol_vs7"/> 
+ <m>  y(x,t) = 0 </m> at <m>x=l</m> or, <m>\sin kl = 0 = \sin n\pi</m> <m>\because \quad c_{2}\neq 0.</m>.
+ 
+ or,
+ <men xml:id="eqn-sol_vs11">
+  kl=n\pi \qquad \therefore  \quad k=\frac{n\pi}{l}
+ </men>
+ where <m>n=1,2,3,\cdots</m>  (<m> n \neq 0,</m> otherwise <m>k=0</m>,the case I.)
+                </p>
+                <p>
+                  Therefore equation <xref ref="eqn-sol_vs10"/>  becomes -	
+                  <me>
+                     y(x,t) = c_{2}\sin \frac{n\pi x}{l}\left(c_{3}\cos  \frac{n\pi vt}{l}+c_{4}\sin \frac{n\pi vt}{l}\right)
+                  </me>
+                  
+                  <men xml:id="eqn-sol_vs12">
+                    = 	\left(b_{n}\cos  \frac{n\pi vt}{l}+d_{n}\sin \frac{n\pi vt}{l}\right)\sin \frac{n\pi x}{l}
+                  </men>
+  by replacing 
+  <m> c_{2}c_{3}=b_{n} </m> and <m>c_{2}c_{4}=d_{n}</m>.
+		
+Imposing the initial condition <m>y(x,0) =f(x)</m> from equation <xref ref="eqn-sol_vs8"/> 
+in equation <xref ref="eqn-sol_vs12"/>, we get - 
+<men xml:id="eqn-sol_vs13">
+  y(x,0) =f(x)=b_{n}\sin \frac{n\pi x}{l}	
+</men>
+	
+Now, differentiating equation <xref ref="eqn-sol_vs12"/> w. r. t. 't', we get -
+<me>
+  \frac{\partial y}{\partial t}=\left(-\frac{n\pi v}{l} b_{n}\sin \frac{n\pi vt}{l} + \frac{n\pi v}{l}d_{n}\cos \frac{n\pi vt}{l}\right) \sin \frac{n\pi x}{l} 
+</me>
+
+from equation <xref ref="eqn-sol_vs8"/>, we have 
+<me>
+  \left(\frac{\partial y}{\partial t}\right)_{t=0}= f'(x)
+</me>
+<men xml:id="eqn-sol_vs14">
+  \therefore  \quad  f'(x) = \left(\frac{\partial y}{\partial t}\right)_{t=0} = \frac{n\pi v}{l}d_{n}\sin \frac{n\pi x}{l}
+</men>  
+                  </p>
+                  <p>
+                    The motion of string is harmonic because the damping motion of the 
+                    string is neglected by assuming the small displacement of string hence 
+                    there are number of solutions obtained for equation <xref ref="eqn-sol_vs1"/>. 
+                    Therefore the desired solution is given by summing the equation <xref ref="eqn-sol_vs12"/> 
+                    for <m>n=0</m> to <m>\infty</m>, i.e., 
+                    <men xml:id="eqn-sol_vs15">
+                      y(x,t) = \sum\limits_{n=1}^{\infty} 	\left[b_{n}\cos  \frac{n\pi vt}{l}+d_{n}\sin \frac{n\pi vt}{l}\right]\sin \frac{n\pi x}{l}
+                    </men>
+                    
+  Now, the constants <m>b_{n}</m> and <m>d_{n}</m> are determined by multiplying equations 
+  <xref ref="eqn-sol_vs13"/> and <xref ref="eqn-sol_vs14"/> on both sides by <m>\sin \frac{n\pi x}{l}</m> 
+  and then integrating from <m>x=0</m> to <m>x=l</m>, from equation <xref ref="eqn-sol_vs13"/>, 
+  <me>
+    \int\limits_{0}^{l}f(x)\sin \frac{n\pi x}{l}\,dx = \int\limits_{0}^{l}b_{n}\sin^{2} \frac{n\pi x}{l}\,dx 
+  </me>
+  <me>
+    	= \frac{b_{n}}{2}\int\limits_{0}^{l}\left(1-\cos \frac{2n\pi x}{l}\right)\,dx = \frac{b_{n}}{2}.l  
+  </me>
+ <men xml:id="eqn-sol_vs16">
+  \therefore \quad  b_{n}=\frac{2}{l}\int\limits_{0}^{l}f(x)\sin \frac{n\pi x}{l}\,dx
+ </men>
+
+ from equation <xref ref="eqn-sol_vs14"/>, 
+ <men xml:id="eqn-sol_vs17">
+  \frac{n\pi v}{l} d_{n}=\frac{2}{l}\int\limits_{0}^{l}f'(x)\sin \frac{n\pi x}{l}\,dx
+ </men>
+				
+ By substituting the value of <m>b_{n}</m>  and <m>d_{n}</m> in equation <xref ref="eqn-sol_vs15"/>, 
+ we get the complete solution of equation <xref ref="eqn-sol_vs1"/>.
+ 
+                    </p> 
+
+                    <p>
+                     <term> Note:</term> If we assume the initial velocity of the string 
+                     <m>f'(x)=0</m>, then from equation <xref ref="eqn-sol_vs14"/> 
+                      we have <m>d_{n}=0</m>. Thus equation <xref ref="eqn-sol_vs15"/> reduces to 	
+                      <men xml:id="eqn-sol_vs18">
+                        	y(x,t) = \sum\limits_{n=1}^{\infty} b_{n}\cos  \frac{n\pi vt}{l}\sin \frac{n\pi x}{l}
+                      </men>
+   <me>
+    =\frac{1}{2}\sum\limits_{n=1}^{\infty} b_{n}\left[\sin \frac{n\pi}{l}(x-vt)+ \sin \frac{n\pi}{l}(x+vt)\right]
+   </me>
+   <me>
+    = \frac{1}{2}\sum\limits_{n=1}^{\infty} b_{n}\sin \frac{n\pi}{l}(x-vt)+ \frac{1}{2}\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi}{l}(x+vt)	
+   </me>
+   <men xml:id="eqn-sol_vs19">
+    \therefore y(x,t) = \frac{1}{2}[f(x-vt)+f(x+vt)]
+   </men>
+ 		
+which is the solution of equation <xref ref="eqn-sol_vs1"/>, where the function <m>f</m> is odd 
+and periodic in period <m>2l</m>.
+                      </p>
+ </subsection>
+
+<subsection xml:id="subsec-dalembert">
+  <title>D'Alembert's Solution of Vibrating String</title>
+  <p>
+    The equation of vibrating string is given by 
+    <men xml:id="eqn-dalemb1">
+     \frac{\partial^{2} y}{\partial x^{2}} =  \frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}} 
+    </men>
+
+The solution of equation <xref ref="eqn-dalemb1"/> may be obtained by changing the 
+variable <m>x</m> and <m>t</m> in the other parameters as <m>p=x+vt</m>,   and <m>q=x-vt</m>,
+so that 
+<me>
+  \frac{\partial p}{\partial x}=\frac{\partial q}{\partial x}=1\quad \text{and}\quad \frac{\partial p}{\partial t} =v, \frac{\partial q}{\partial t} =-v, \quad \text{now,}\quad y=f(p,q)
+</me>
+or,
+<me>
+  \frac{\partial y}{\partial x} = 	\frac{\partial y}{\partial p}	\frac{\partial p}{\partial x}+\frac{\partial y}{\partial q}	\frac{\partial q}{\partial x}
+</me>
+at constant <m>t</m>. Or,
+<men xml:id="eqn-dalemb2">
+  \frac{\partial y}{\partial x} = \frac{\partial y}{\partial p}+\frac{\partial y}{\partial q}
+</men>
+In operator form
+<men xml:id="eqn-dalemb3">
+  \frac{\partial}{\partial x} \equiv \frac{\partial}{\partial p}+\frac{\partial}{\partial q}
+</men>
+and 
+<me>
+  \frac{\partial^{2}y}{\partial x^{2}}=\frac{\partial}{\partial x} \left(\frac{\partial y}{\partial x}\right)= \left(\frac{\partial}{\partial p}+\frac{\partial}{\partial q}\right)\left(\frac{\partial y}{\partial p}+\frac{\partial y}{\partial q}\right) 
+</me>
+
+<men xml:id="eqn-dalemb4">
+  = \frac{\partial^{2}y}{\partial p^{2}}+2\frac{\partial^{2}y}{\partial p \partial q}+\frac{\partial^{2}y}{\partial q^{2}}
+</men>
+
+also 
+<me>
+  \frac{\partial y}{\partial t}=\frac{\partial y}{\partial p}\frac{\partial p}{\partial t}+\frac{\partial y}{\partial q}\frac{\partial q}{\partial t}
+</me>
+at constant <m>x</m>. Or,
+<me>
+  \frac{\partial y}{\partial t}=v\left[\frac{\partial y}{\partial p}-\frac{\partial y}{\partial q}\right] 
+</me>
+i.e.,
+<me>
+   \frac{\partial}{\partial t}=v\left[\frac{\partial}{\partial p}-\frac{\partial}{\partial q}\right]
+</me>
+and 
+<me>
+  \frac{\partial^{2}y}{\partial t^{2}}=\frac{\partial}{\partial t} \left(\frac{\partial y}{\partial t}\right)= v^{2}\left(\frac{\partial}{\partial p}-\frac{\partial}{\partial q}\right)\left(\frac{\partial y}{\partial p}-\frac{\partial y}{\partial q}\right) 
+</me>
+
+<men xml:id="eqn-dalemb5">
+  = v^{2}\frac{\partial^{2}y}{\partial p^{2}}+2\frac{\partial^{2}y}{\partial p \partial q}+\frac{\partial^{2}y}{\partial q^{2}}	
+</men>
+
+ Substituting the values of equation <xref ref="eqn-dalemb4"/> and <xref ref="eqn-dalemb5"/> 
+ in equation <xref ref="eqn-dalemb1"/>, we get - 
+ <me>
+  \frac{\partial^{2}y}{\partial p\partial q}=0.
+ </me>
+ 
+Integrating this expression with respect to <m>q</m>, we get -
+<me>
+  \int\frac{\partial}{\partial q}\left(\frac{\partial y}{\partial p}\right)\,dq=\int 0.\,dq
+</me>
+or,
+<me>
+  \frac{\partial y}{\partial p}  =  constant  =  f(p)\quad \text{(say)}.
+</me>
+    </p>
+    <p>
+      Integrating it again w. r. t. 'p', we get -
+      <me>
+        y=\int f(p) \,dp	 +  constant.	=\phi(p) + \psi(q)  \quad \text{(say)}.
+      </me>
+      <men xml:id="eqn-dalemb6">
+        \therefore  \quad  y(x,t) = \phi(x+vt) + \psi(x-vt)
+      </men>
+      			
+This is a D' Alembert's solution <idx>D'Alembert's solution </idx>  
+of one - dimensional wave equation <xref ref="eqn-dalemb1"/>. Physically equation <xref ref="eqn-dalemb6"/> 
+represents two plane waves travelling in opposite directions with the same velocity and same period. 
+
+Verification of equation <xref ref="eqn-dalemb6"/> with the help of boundary conditions 
+<men xml:id="eqn-dalemb7">
+ y(0,t) = 0 = y(l,t) 
+</men>
+
+and the initial conditions 
+<men xml:id="eqn-dalemb8">
+  y(x,0) =f(x)
+</men>
+and 
+<men xml:id="eqn-dalemb9">
+\left(\frac{\partial y}{\partial t}\right)_{t=0} =f'(x)
+</men>
+
+from equation <xref ref="eqn-dalemb6"/>, we have 
+<men xml:id="eqn-dalemb10">
+  \frac{\partial y}{\partial t} =v\phi'(x+vt)-v\psi'(x-vt)
+</men>
+
+using equation <xref ref="eqn-dalemb8"/>, equation <xref ref="eqn-dalemb6"/> becomes 
+<men xml:id="eqn-dalemb11">
+   y(x,0) =f(x)=\phi(x)+\psi(x)
+</men>
+
+and using equation <xref ref="eqn-dalemb9"/> in equation <xref ref="eqn-dalemb10"/>, we get -
+<men xml:id="eqn-dalemb12">
+  \frac{\partial y}{\partial t} =f'(x) = v[\phi'(x)-\psi'(x)]	 
+</men>
+
+assuming <m>f'(x)=0</m>, we have from equation <xref ref="eqn-dalemb12"/>,
+<me>
+  v[\phi'(x)-\psi'(x)]=0
+</me>
+or,
+<me>
+  \phi'(x) = \psi'x)
+</me>
+
+which on integrating gives 
+<men xml:id="eqn-dalemb13">
+  \phi(x) =\psi(x)+\lambda 
+</men>
+
+
+putting equation <xref ref="eqn-dalemb13"/>, in equation <xref ref="eqn-dalemb11"/>, we get -
+<men xml:id="eqn-dalemb14">
+  \phi(x)=\frac{1}{2}[f(x)+\lambda]
+</men>
+and 
+<men xml:id="eqn-dalemb15">
+  \psi(x)=\frac{1}{2}[f(x)-\lambda]
+</men>
+
+
+with the help of equations <xref ref="eqn-dalemb14"/>  and <xref ref="eqn-dalemb15"/>, 
+equation <xref ref="eqn-dalemb6"/> yields 
+<men xml:id="eqn-dalemb16">
+  y(x,t) = \frac{1}{2}[f(x+vt)+f(x-vt)]
+</men>
+
+which reduces to 
+<men xml:id="eqn-dalemb17">
+  y(0,t) = \frac{1}{2}[f(vt)+f(-vt)]
+</men>
+and 
+<men xml:id="eqn-dalemb18">
+  y(l,t) = \frac{1}{2}[f(l+vt)+f(l-vt)]
+</men>
+ 
+It follows from equations <xref ref="eqn-dalemb17"/> and <xref ref="eqn-dalemb18"/> that the function <m>f</m> is 
+odd and periodic with period <m>2l</m> and hence equation <xref ref="eqn-dalemb16"/> is 
+the solution of equation <xref ref="eqn-dalemb1"/>. 
+
+      </p>
+</subsection>
+
+<subsection xml:id="subsec-2Dwaveeqn">
+  <title>Two Dimensional Wave Equation for Vibrating Membrane</title>
+ <figure xml:id="fig-fig74">
+    <caption></caption>
+    <image source="fig74.png" width ="45%"/>
+</figure>
+  <p>
+    Let us consider a thin elastic membrane stretched in xy- plane by a uniform tension 
+    T per unit length and A' B' C' D' be the disturbed position of an element of 
+    this membrane from its initial position, as shown in figure <xref ref="fig-fig74"/>. 
+    Since the deflection <m>u(x,y,t)</m>  of the membrane and angles of inclination of 
+    the tensions are small, the sides of the element A' B' C' D' are approximately equall 
+    to <m>\delta x</m> and <m>\delta y</m>, the initial lengths of the element. 
+    As the membrane is assumed to be perfactly flexible the tensions acting on the 
+    membrane are all tangential. If <m>\alpha</m> and <m>\beta</m>, the inclenations 
+    of these tensions with the horizontal are small, the components of these forces 
+    at the pair of opposite edges B' C' and A' D' are <m>T\delta y\cos \alpha</m> 
+    and <m>T\delta y\cos \beta</m> are approximately equal and opposite in direction 
+    as <m>\cos \alpha =1 = \cos \beta</m>. Similarly, considering the other 
+    pair of edges A' B' and C' D', we observe that the horizontal components 
+    of the forces will be approximately equal and opposite. Thereby we conclude 
+    that the motion of the particles of the membrane in horizontal direction 
+    is negligibly small, i. e., each particle of the membrane moves vertically. 
+    The resultant vertical force on the parallel edges B' C' and A' D' are 
+    <me>
+      T\delta y \sin \alpha -T\delta y\sin \beta = T\delta y(\tan \alpha -\tan \beta)
+    </me>
+   <m>\because \quad \sin \alpha =\alpha = \tan \alpha </m> and <m>\sin\beta =\beta = \tan\alpha</m> 
+   as <m>\alpha</m> and  <m>\beta</m> are small].
+   <me>
+    =T\delta y\left[\frac{\partial u(x+\delta x,y_{1})}{\partial x}-\frac{\partial u(x,y_{2}}{\partial x}\right]
+   </me>
+where <m>y_{1}</m> and <m>y_{2}</m> are the values of y between <m>y</m> and <m>y+\delta y</m>. 
+Similarly the resultant vertical force acting on the other two edges 
+<me>
+  =T\delta x\left[\frac{\partial u(x_{1},y+\delta y_{1})}{\partial y}-\frac{\partial u(x_{2},y}{\partial y}\right]
+</me>
+
+    </p>
+    <p>
+     where <m>x_{1}</m> and <m>x_{2}</m> are the values of x between <m>x</m> and <m>x+\delta x</m>. 
+Hence the total force acting on the elemenrt in the vertical direction is 
+<me>
+  T\delta y\left[\frac{\partial u(x+\delta x,y_{1})}{\partial x}-\frac{\partial u(x,y_{2})}{\partial x}\right]+T\delta x\left[\frac{\partial u(x_{1},y+\delta y_{1})}{\partial y}-\frac{\partial u(x_{2},y)}{\partial y}\right].
+</me>
+
+ If <m>m</m> be the mass per unit area of the membrane then mass of this element 
+  = <m>m\delta x\delta y</m>. 
+        </p>
+        <p>
+          As area of the element A' B' C' D' = <m>\delta x\delta y</m> and 
+          acceleration of the element in a direction perpendicular to <m>xy</m> plane is 
+          <m>\frac{\partial^{2} u}{\partial t^{2}}</m>. Hence from Newton's second law 
+          of motion, we have - 
+          <me>
+            m\delta x\delta y\frac{\partial^{2} u}{\partial t^{2}}= T\delta y\left[\frac{\partial u}{\partial x}(x+\delta x,y_{1})-\frac{\partial u}{\partial x}(x,y_{2})\right]
+          </me>
+          <me>
+            +T\delta x\left[\frac{\partial u}{\partial y}(x_{1},y+\delta y_{1})-\frac{\partial u}{\partial y}(x_{2},y)\right]
+          </me>
+          or,
+          <me>
+            \frac{\partial^{2} u}{\partial t^{2}}=\frac{T}{m}\left[\frac{u_{x}(x+\delta x,y_{1})-u_{x}(x,y_{2})}{\delta x}\right]
+          </me>
+  <me>
+    +\frac{T}{m}\left[\frac{u_{y}(x_{1},y+\delta y)-u_{y}(x_{2},y)}{\delta y}\right]
+  </me>
+  [ <m>\because \quad \frac{\partial u}{\partial x}=u_{x};</m> and <m>\frac{\partial u}{\partial y}=u_{y}</m>]
+						
+Proceeding to the limits as <m>\delta x \to 0 </m>, <m> \delta y \to 0</m>, we get - 
+<me>
+  \frac{\partial^{2} u}{\partial t^{2}}=\frac{T}{m}[u_{xx}+u_{yy}]
+</me>
+where 
+<me>
+  u_{xx}= \frac{\partial^{2} u}{\partial x^{2}}=\lim\limits_{\delta x \to 0}\frac{u_{x}(x+\delta x, y_{1})-u_{x}(x,y_{2})}{\delta x}
+</me>
+<men xml:id="eqn-2Dwave">
+  \therefore \quad \frac{\partial^{2} u}{\partial t^{2}}=v^{2}(u_{xx}+u_{yy})=v^{2}\nabla^{2}u 
+</men>
+where  <m>v^{2}=\frac{T}{m};</m> and <m>\nabla^{2}= \frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}</m>.
+	
+ here <m>v</m> is the velocity of wave propagating in <m>x</m> and <m>y</m> direction. 
+ The equation <xref ref="eqn-2Dwave"/>is called two - dimensional wave equation.   
+          </p> 
+          <p> <term>Note.</term>
+          The three - dimensional wave equation is  
+          <men xml:id="eqn-3Dwave">
+            \frac{\partial^{2} u}{\partial t^{2}}=v^{2}(\frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}})u =v^{2}\nabla^{2}u 
+          </men>
+                     
+  where <m>\nabla^{2} =  \frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}</m>
+
+          </p>
+</subsection>
+
+<subsection xml:id="subsec-2Dwave_sol">
+  <title>Solution of Two Dimensional Wave Equation</title>
+  <introduction>
+    <p>
+      The two - dimensional wave equation is given as 	
+      <men xml:id="eqn-2D_wave1">
+         \frac{\partial^{2} u}{\partial t^{2}}=v^{2}\left[\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}\right]
+      </men>
+
+The equation can be solved by the method of separation of variables for two cases, one, 
+when the  membrane is a rectangle and second, when it is a circle.
+    </p>
+  </introduction>
+
+  <subsubsection xml:id="subsubsec-rect_memb">
+    <title>Rectangular Membrane</title>
+    <p> <idx>wave equation</idx>
+      To solve equation <xref ref="eqn-2D_wave1"/>, let 
+      <me>
+        \left(\frac{\partial u}{\partial t}\right)_{t=0} =g(x,y) 
+      </me>
+      be the initial velocity, <m>u(x,y,0) =f(x,y)</m> be the initial displacement, 
+      and the following are the boundary conditions
+      <men xml:id="eqn-2D_wave2">
+        u(0,y,t)=u(a,y,t) =u(x,0,t) =u(x,b,t)=0  
+      </men>
+
+  where <m>a</m> and <m>b</m> are sides of the membrane along X and Y axes, 
+  respectively, as shown in figure <xref ref="fig-fig75"/>.
+      </p>
+       <figure xml:id="fig-fig75">
+    <caption></caption>
+    <image source="fig75.png" width ="45%"/>
+</figure>
+      <p> 
+        Let
+        <men xml:id="eqn-2D_wave3">
+          u(x,y,t) =X(x) Y(y) T(t)
+        </men>
+        
+	 be the solution of equation <xref ref="eqn-2D_wave1"/>. 	  
+	 Hence from equation <xref ref="eqn-2D_wave3"/>, equation <xref ref="eqn-2D_wave1"/> becomes -
+   <me>
+     XY  \frac{\partial^{2} T}{\partial t^{2}}=v^{2}\left[YT \frac{\partial^{2} X}{\partial x^{2}}+XT \frac{\partial^{2} Y}{\partial y^{2}}\right]
+   </me>
+   or,
+   <men xml:id="eqn-2D_wave4">
+    \frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}}+\frac{1}{Y}\frac{\partial^{2} Y}{\partial y^{2}}=\frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}} = \lambda (say)
+   </men>
+        </p>
+
+        <p> <term>Case - I</term>  when constant <m>\lambda</m> is zero.	
+         <men xml:id="eqn-2D_wave5">
+           \left.\begin{aligned}
+\frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}}=0 &amp; \Rightarrow X=c_{1}x+c_{2}\\
+\frac{1}{Y}\frac{\partial^{2} Y}{\partial y^{2}} = 0 &amp;  \Rightarrow Y=c_{3}y+c_{4}\\
+\text{and} \quad \frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}} = 0 &amp;  \Rightarrow T=c_{5}t+c_{6}
+\end{aligned}\right\}
+         </men>
+          </p>
+
+          <p>
+            <term>Case - II</term>
+            when constant <m>\lambda </m> is positive.	
+            <men xml:id="eqn-2D_wave6">
+            \left.\begin{aligned}
+\frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}}=k^{2}_{1} &amp; \Rightarrow X=c_{1}e^{k_{1}x}+c_{2}e^{-k_{1}x}\\
+\frac{1}{Y}\frac{\partial^{2} Y}{\partial y^{2}} = k^{2}_{2} &amp;  \Rightarrow Y=c_{3}e^{k_{2}y}+c_{4}e^{-k_{2}y}\\
+\text{and} \quad \frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}} = k^{2} &amp;  \Rightarrow T=c_{5}e^{vkt}+c_{6}e^{-vkt}
+\end{aligned}\right\}
+            </men>
+where <m>k^{2}=k^{2}_{1}+k^{2}_{2}</m>   
+            </p>
+            <p>
+              <term>Case - III</term> when constant <m>\lambda </m> is negative.
+              <men xml:id="eqn-2D_wave7">
+                \left.\begin{aligned}
+\frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}}=-k^{2}_{1} &amp; \Rightarrow X=c_{1}\cos k_{1}x+c_{2}\sin k_{1}x\\
+\frac{1}{Y}\frac{\partial^{2} Y}{\partial y^{2}} = -k^{2}_{2} &amp;  \Rightarrow Y=c_{3}\cos k_{2}y+c_{4}\sin k_{2}y\\
+\text{and} \quad \frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}} =- k^{2} &amp;  \Rightarrow T=c_{5}\cos vkt+c_{6}\sin vkt
+\end{aligned}\right\}
+              </men>
+          where <m>k^{2}=k^{2}_{1}+k^{2}_{2}</m>.    
+              </p>
+              <p>
+                Considering the case I and II with the given boundary conditions give no solution, 
+                hence only case III will be able to give the solution. From case III, we have 
+                <me>
+                  u(0,y,t) =0 
+                </me>
+                <me>
+                  =(c_{1}+0)(c_{3}\cos k_{2}y+c_{4}\sin k_{2}y)( c_{5}\cos vkt+c_{6}\sin vkt) \quad \Rightarrow c_{1} =0.
+                </me>
+                
+                or,
+                <me>
+                  u(x,0,t) =0 
+                </me>
+                <me>
+                  =(c_{1}\cos k_{1}x+c_{2}\sin k_{1}x)(c_{3}+0)( c_{5}\cos vkt+c_{6}\sin vkt)\quad  \Rightarrow c_{3} =0.
+                </me>
+                
+                or,
+                <me>
+                  u(a,y,t) =0 
+                </me>
+                <me>
+                  =(c_{1}\cos k_{1}a+c_{2}\sin k_{1}a)(c_{3}\cos k_{2}y+c_{4}\sin k_{2}y)(c_{5}\cos vkt+c_{6}\sin vkt) 
+                </me>
+                
+                <me>
+                  =(c_{2}\sin k_{1}a)(c_{4}\sin k_{2}y)(c_{5}\cos vkt+c_{6}\sin vkt) \Rightarrow \sin k_{1}a =0 
+                </me>
+                <m>	[\because c_{2}\neq 0 ].</m>
+              i.e., <m> k_{1}a=m\pi </m> and <m>k_{1}=\frac{m\pi}{a},</m> <m>[m=1,2,3,\cdots]</m>.
+ 
+                </p>
+                <p>
+                   and 
+  <me>
+     u(x,b,t)=0=X(x)(c_{3}\cos k_{2}b+c_{4}\sin k_{2}b)T(t)\quad    \Rightarrow  \sin k_{2}b =0
+  </me>
+  <m>[ \because c_{4}\neq 0 ].</m>
+ or,
+ <me>
+  k_{2}b =n\pi, 	k_{2} =\frac{n\pi}{b}, \quad [n = 1,2,3,\cdots]
+ </me>           
+                  Hence the appropriate solution of two-dimensional wave equation can be taken as 
+                  <me>
+                     u(x,y,t) =\sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty} u_{mn}(x,y,t)
+                  </me>
+                  <me>
+                    = \sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty} \left(A_{mn}\cos vk_{mn}t+B_{mn}\sin vk_{mn}t\right)\sin \frac{m\pi x}{a}\sin \frac{n\pi y}{b}
+                  </me>
+                  where, 
+                  <me>
+                    k^{2}  = k_{mn}^{2}=\pi^{2}\left(\frac{m^{2}}{a^{2}}+ \frac{n^{2}}{b^{2}}\right).
+                  </me>
+                  and 
+                  <me>
+                   c_{2}c_{4}c_{5}  =A_{mn},  \quad c_{2}c_{4}c_{6}  = B_{mn}
+                  </me>
+                are another constants.
+	<men xml:id="eqn-2D_wave8">
+    =\sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty} \left(A_{mn}\cos \lambda_{mn}t+B_{mn}\sin \lambda_{mn}t\right)\sin \frac{m\pi x}{a}\sin \frac{n\pi y}{b},
+  </men>
+  where <m>\lambda_{mn}=vk_{mn}.	</m>
+       
+These functions are called eigen function or characteristics functions and the numbers 
+<m>\lambda_{mn}</m> are called the eigen values of rectangular vibrating membrane. 
+The frequency of <m>u_{mn}</m> is (<m>\lambda_{mn}/2\pi</m>).                 
+                  </p>
+                  <p>
+                    Now imploying the initial conditions in equation <xref ref="eqn-2D_wave8"/>, we get- 
+                    <men xml:id="eqn-2D_wave9">
+                      	u(x,y,0) = f(x,y)=\sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty} A_{mn}\sin  \frac{m\pi x}{a}\sin \frac{n\pi y}{b}
+                    </men>
+  This series is known as double Fourier series of <m>f(x,y)</m>
+  <me>
+   \therefore A_{mn} = \frac{2}{a}\cdot\frac{2}{b}\int\limits_{x=0}^{a} \int\limits_{y=0}^{b}f(x,y) \sin  \frac{m\pi x}{a}\sin \frac{n\pi y}{b}\,dx\,dy   
+  </me>
+  
+  <men xml:id="eqn-2D_wave10">
+   =\frac{4}{ab}\int\limits_{x=0}^{a} \int\limits_{y=0}^{b}f(x,y) \sin  \frac{m\pi x}{a}\sin \frac{n\pi y}{b}\,dx\,dy 
+  </men>
+				
+Now using equation <xref ref="eqn-2D_wave8"/> 
+and <m>\left(\frac{\partial u}{\partial t}\right)_{t=0}=g(x,y)</m>, we get -
+<men xml:id="eqn-2D_wave11">
+  g(x,y) = \sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty}\lambda_{mn} B_{mn}\sin  \frac{m\pi x}{a}\sin \frac{n\pi y}{b}
+</men>
+			
+This is again a double Fourier sine series.
+<me>
+   \therefore \lambda_{mn} B_{mn} =  \frac{4}{ab}\int\limits_{x=0}^{a} \int\limits_{y=0}^{b}g(x,y) \sin  \frac{m\pi x}{a}\sin \frac{n\pi y}{b}\,dx\,dy
+</me>
+or,
+<men xml:id="eqn-2D_wave12">
+  B_{mn}=\frac{4}{ab\lambda_{mn}}\int\limits_{x=0}^{a} \int\limits_{y=0}^{b}g(x,y) \sin  \frac{m\pi x}{a}\sin \frac{n\pi y}{b}\,dx\,dy
+</men> 
+ </p>
+ <p>
+  Hence the solution of the wave equation <xref ref="eqn-2D_wave1"/> is 
+  given by equation <xref ref="eqn-2D_wave8"/> with the coefficients <m>A_{mn}</m> 
+  and <m>B_{mn}</m> as given by equations <xref ref="eqn-2D_wave10"/> and <xref ref="eqn-2D_wave12"/>, respectively.
+  </p>
+  <p>
+    <term>Special Case.</term> when initial velocity vanishes, i.e., 
+    <me>
+      \left(\frac{\partial u}{\partial t}\right)_{t=0}=g(x,y) =0,
+    </me>
+    which implies <m>B_{mn} =0.</m>
+ 	
+Therefore, the solution of wave equation is given by
+<men xml:id="eqn-2D_wave13">
+  u(x,y,t) = 	\sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty}A_{mn}\cos\lambda_{mn}t\sin \frac{m\pi x}{a}\sin \frac{n\pi y}{b}
+</men>
+where
+<me>
+  A_{mn}= \frac{4}{ab}\int\limits_{x=0}^{a} \int\limits_{y=0}^{b}f(x,y) \sin\frac{m\pi x}{a}\sin \frac{n\pi y}{b}\,dx\,dy.
+</me>
+    </p>
+  </subsubsection>
+
+<subsubsection xml:id="subsubsec-cir_memb">
+  <title>Circular Membrane</title>
+   <figure xml:id="fig-fig76">
+    <caption></caption>
+    <image source="fig76.png" width ="45%"/>
+</figure>
+  <p> <idx>wave equation</idx>
+    Consider the vibration of the circular membrane of radius <m>a</m>. 
+    The vibrations of a circular membrane are governed by the two-dimensional wave equation 
+    <me>
+      \frac{\partial^{2} u}{\partial t^{2}}=v^{2}\left[\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}\right].
+    </me>
+    Using polar coordinates as <m>x=r\cos\theta, y=r\sin\theta,</m>  the wave equation is transformed into 	
+    <men xml:id="eqn-cir_memb1">
+      \frac{\partial^{2} u}{\partial t^{2}}=v^{2}\left[\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2} u}{\partial \theta^{2}}\right]
+    </men>
+    (see <xref ref="append_partdiff"/>)
+    </p>
+    <p>
+      The boundary conditions are 
+      <m>u(a,0,t)=0</m>, <m>-\pi \leq \theta \leq \pi </m>, <m>t \geq 0</m>;
+
+the initial conditions are
+<me>
+  \left(\frac{\partial u}{\partial t}\right)_{t=0} =g(r,\theta),
+</me>
+
+ the initial velocity;   <m>u(r,\theta,0)=f(r,\theta),</m> 
+the initial displacement;  where <m>0\leq r \leq a </m> and <m>-\pi \leq \theta \leq \pi.</m> 
+Let
+<men xml:id="eqn-cir_memb2">
+  u(r,0,t)=R(r)\Theta(\theta)T(t)	
+</men>
+be the solution of equation <xref ref="eqn-cir_memb1"/>. Hence with help of 
+equation <xref ref="eqn-cir_memb2"/>, equation <xref ref="eqn-cir_memb1"/> becomes -
+<me>
+  R\Theta\frac{\partial^{2} T}{\partial t^{2}}=v^{2}\left[\Theta T\frac{\partial^{2}R}{\partial r^{2}}+\frac{1}{r}\Theta T\frac{\partial R}{\partial r}+\frac{1}{r^{2}}RT\frac{\partial^{2} \Theta}{\partial \theta^{2}}\right]
+</me>
+or,
+<me>
+  \frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}}
+</me>
+
+<men xml:id="eqn-cir_memb3">
+  =\left(\frac{1}{R}\frac{\partial^{2} R}{\partial r^{2}}+\frac{1}{rR}\frac{\partial R}{\partial r}\right)+\frac{1}{r^{2}\Theta}\frac{\partial^{2} \Theta}{\partial \theta^{2}} =-k^{2} \quad (say)
+</men>
+
+now taking
+<me>
+  \frac{1}{\Theta}\frac{\partial^{2} \Theta}{\partial \theta^{2}} =-m^{2}
+</me>
+or,
+<men xml:id="eqn-cir_memb4">
+   \frac{\partial^{2} \Theta}{\partial \theta^{2}} +m^{2}\Theta =0
+</men>
+we get- 
+<me>
+  \frac{1}{R}\frac{\partial^{2} R}{\partial r^{2}}+\frac{1}{rR}\frac{\partial R}{\partial r}+\frac{1}{r^{2}}(-m^{2})=-k^{2}
+</me>
+or,
+<men xml:id="eqn-cir_memb5">
+  \frac{\partial^{2} R}{\partial r^{2}}+\frac{1}{r}\frac{\partial R}{\partial r}+\left(k^{2}-\frac{m^{2}}{r^{2}}\right)R=0
+</men>
+Also, we have -
+<me>
+   \frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}}=-k^{2} 
+</me>
+i.e.,
+<men xml:id="eqn-cir_memb6">
+ \frac{\partial^{2} T}{\partial t^{2}}+v^{2}	k^{2}T=0
+</men>
+      </p>
+<p>
+  Hence equations <xref ref="eqn-cir_memb4"/>, <xref ref="eqn-cir_memb5"/> 
+  and <xref ref="eqn-cir_memb6"/> are the ordinary differential equation for 
+  <m>\Theta, R</m>, and <m>T</m>, respectively. The solution of equation 
+  <xref ref="eqn-cir_memb4"/> is of the form  
+  <men xml:id="eqn-cir_memb7">
+  \Theta =De^{\pm im\theta} \text{and} \quad m=0,1,2\cdots  
+  </men>
+  
+Now taking <m>s=kr</m>, we get - 
+<me>
+  \frac{\partial R}{\partial r} = \frac{\partial R}{\partial s}\frac{\partial s}{\partial r} = k\frac{\partial R}{\partial s}
+</me>
+and 
+<me>
+\frac{\partial^{2} R}{\partial r^{2}} =k^{2}\frac{\partial^{2} R}{\partial s^{2}}.
+</me>
+therefore equation <xref ref="eqn-cir_memb5"/> gives 
+<me>
+  k^{2}\frac{\partial^{2} R}{\partial s^{2}}+\frac{1}{r}k\frac{\partial R}{\partial s}+\left(k^{2}-\frac{m^{2}}{r^{2}}\right)R =0
+</me>
+<men xml:id="eqn-cir_memb8">
+  \frac{\partial^{2} R}{\partial r^{2}}=\frac{\partial^{2} R}{\partial s^{2}}+\frac{1}{s}\frac{\partial R}{\partial s}+\left(1-\frac{m^{2}}{s^{2}}\right)R = 0
+</men>
+
+which is Bessel's equation and hence its general solution is 
+<men xml:id="eqn-cir_memb9">
+  R=c_{1}J_{m}(s)+c_{2}J_{-m}(s)=c_{1}J_{m}(kr)+c_{2}J_{-m}(kr)
+</men>
+
+But the deflection of the membrane is finite when <m>J_{-m}\to \infty</m> as 
+<m>r\to 0</m>, so we can not make use of <m>J_{-m} </m> and must take <m>c_{2}=0 </m>. 
+Thus equation <xref ref="eqn-cir_memb9"/> reduces to 	
+<men xml:id="eqn-cir_memb10">
+  R=c_{1}J_{m}(kr)
+</men>
+
+Now using the boundary condition, we have 
+<me>
+  u(a,\theta,t) =R(a)\Theta(\theta)T(t)=0.
+</me>
+
+which implies <m>R(a)=0</m>; otherwise if <m>\Theta(\theta)=0</m> or,	 <m>T(t)=0</m> 
+causes <m>u=0</m>. 
+<men xml:id="eqn-cir_memb11">
+  \therefore   R(a) =c_{1}J_{m}(ka)=0 \Rightarrow J_{m}(ka) =0
+</men>
+
+assuming <m>k_{1}{,} k_{2}{,} k_{3}{,}\cdots </m> be the positive roots of 
+equation <xref ref="eqn-cir_memb10"/>, the general solution of equation 
+<xref ref="eqn-cir_memb6"/> is 
+<men xml:id="eqn-cir_memb12">
+  	T=A\cos vkt+B\sin vkt
+</men>
+	
+with the help of equations <xref ref="eqn-cir_memb7"/>, 
+<xref ref="eqn-cir_memb10"/>, and <xref ref="eqn-cir_memb12"/> 
+the required oscillation has the form 
+<men xml:id="eqn-cir_memb13">
+  \left\{A\cos vkt+B\sin vkt\right\}e^{\pm im\theta}J_{m}(kr)
+</men>
+			
+Trying superposition and using distinct values of constants A and B for each 
+choice of <m>m</m> and <m>n</m>, the general solution of equation <xref ref="eqn-cir_memb1"/> may be taken as 
+<me>
+  u(r,\theta,t)=\sum\limits_{m=1}^{\infty}\sum\limits_{n=1}^{\infty}\left\{A_{mn}\cos (vk_{mn}t)\right.
+</me>
+
+<men xml:id="eqn-cir_memb14">
+  	 \left.+B_{mn}\sin (vk_{mn}t)\right\}e^{\pm im\theta}J_{m}(k_{mn}r)
+</men>
+
+which satisfies the boundary condition <m>u(a,\theta,t)=0</m>. In this case 
+equation <xref ref="eqn-cir_memb1"/> is radially symmetrical i.e., the solution is 
+independent of <m> \theta</m>, we have from equation <xref ref="eqn-cir_memb14"/> 
+by putting <m>m=0</m>.	
+
+<men xml:id="eqn-cir_memb15">
+  u(r,t)=\sum\limits_{n=1}^{\infty}\left\{A_{n}\cos (vk_{n}t)+ B_{n}\sin (vk_{n}t)\right\}J_{o}(k_{n}r)		
+</men>
+
+where <m>k_{1}, k_{2}, k_{3},\cdots </m> are the positive roots of <m>J_{o}(ka) =0</m>.
+  </p>
+<p>
+  Now from equation <xref ref="eqn-cir_memb15"/> and the boundary condition when <m>t=0</m>,
+ we have  
+ <me>
+   u(r,0)= \sum\limits_{n=1}^{\infty}A_{n}J_{o}(k_{n}r)=f(r)
+ </me>
+
+  <m>[\because   f(r,\theta)</m>   becomes <m>f(r)</m> when it is independent of <m>\theta</m>].
+  Therefore <m>A'_{n}s</m>  must be the coefficient of Fourier - Bessel series, 
+  which represents <m>f(r)</m> in terms of <m>J_{o}(k_{n}r) </m> i.e.,
+  <men xml:id="eqn-cir_memb16">
+    A_{n}=\frac{2}{a^{2}J_{1}(k_{n}a)}\int\limits_{0}^{a}rf(r)J_{o}(k_{n}r)\,dr
+  </men>
+ Also, from 
+ <me>
+   \left(\frac{\partial u}{\partial t}\right)_{t=0}=g(r,\theta),
+ </me>
+ or,
+ <me>
+  u(r,0)=\sum\limits_{n=1}^{\infty}vk_{n}B_{n}J_{o}(k_{n}r)=g(r), 
+ </me>
+ <m>g</m>  being independent of <m>\theta</m>. Hence,
+<men xml:id="eqn-cir_memb17">
+  B_{n}=\frac{2}{vk_{n}a^{2}J^{2}_{1}(k_{n}a)}\int\limits_{0}^{a}rg(r)J_{o}(k_{n}r)\,dr
+</men>
+
+Substituting these values of <m>A_{n}</m> and <m> B_{n}</m> from equations 
+<xref ref="eqn-cir_memb16"/> and <xref ref="eqn-cir_memb17"/> in equation 
+<xref ref="eqn-cir_memb15"/>, we get the solution for the vibrations 
+of circular membrane in the case when displacements are independent of <m>\theta </m>.
+  </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-3D_wave">
+  <title>Three Dimensional Wave Equation</title>
+  <p>
+    The three - dimensional wave equation is given by 
+    <men xml:id="eqn-3D_wave1">
+      \frac{\partial^{2} u}{\partial t^{2}}=v^{2}\left[\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^{2}}+\frac{\partial^{2} u}{\partial z^{2}}\right] =v^{2}\nabla^{2}u.
+    </men>
+    where 
+   <me>
+    \nabla^{2} = \frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}.
+   </me>
+   The solution of which can be obtained under the conditions
+    </p>
+    <ol marker="i.">
+      <li>
+        <p>
+          <me>
+             \frac{\partial u}{\partial x}=0;  \quad \text{when} \quad x=0,x=a.
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <me>
+            \frac{\partial u}{\partial y}=0; \quad   \text{when} \quad    y=0,y=a       
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <me>
+            \frac{\partial u}{\partial z}=0; \quad   \text{when} \quad    z=0,z=a
+          </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <me>
+            u\neq 0 \quad \text{at} \quad  t=0. 
+          </me>
+        </p>
+      </li>
+    </ol>
+    <p> Let
+      <men xml:id="eqn-3D_wave2">
+        u(x,y,t)=X(x)Y(y)T(t)
+      </men>
+    
+be the solution of equation <xref ref="eqn-3D_wave1"/>. Hence, making use of 
+equation <xref ref="eqn-3D_wave2"/>, equation <xref ref="eqn-3D_wave1"/> becomes - 
+<men xml:id="eqn-3D_wave3">
+  	\frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}}+\frac{1}{Y}\frac{\partial^{2} Y}{\partial y^{2}}+\frac{1}{Z}\frac{\partial^{2} Z}{\partial z^{2}}=\frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}}
+</men>
+
+
+here variables have been separated. Hence each of the four terms in this equation must 
+be constant say 
+<me>
+  \frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}}=-\lambda_{1}^{2}; \quad \frac{1}{Y}\frac{\partial^{2} Y}{\partial y^{2}}=-\lambda_{2}^{2};
+</me>
+<me>
+  \frac{1}{Z}\frac{\partial^{2} Z}{\partial z^{2}}=-\lambda_{3}^{2};
+</me>
+and 
+<me>
+  \frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}}= -\lambda^{2}
+</me>
+so that 
+<me>
+  \lambda^{2} = \lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2}
+</me>
+      </p>
+      <p>
+        Now, we get - 
+        <me>
+          X=A_{1}\cos (\lambda_{1}x+\alpha_{1}),\quad	Y=A_{2}\cos (\lambda_{2}y+\alpha_{2}),
+        </me>
+        <me>
+          Z=A_{3}\cos (\lambda_{3}z+\alpha_{3}),
+        </me>
+        and 
+        <me>
+          T=B\cos (\lambda vt+\alpha)
+        </me>
+	
+where  <m>A_{1},A_{2},A_{3},B,\alpha_{1}, \alpha_{2} , \alpha_{3}, \alpha</m> 
+all are arbitrary constants. Hence the solution of equation, <xref ref="eqn-3D_wave1"/> is 	
+<me>
+    u=A\cos (\lambda_{1}x+\alpha_{1})
+</me>
+
+<men xml:id="eqn-3D_wave4">
+\cos (\lambda_{2}y+\alpha_{2})\cos (\lambda_{3}z+\alpha_{3})\cos (\lambda vt+\alpha) 			
+</men>
+		  
+we can also write the solution ofequation <xref ref="eqn-3D_wave1"/> in the form 
+<men xml:id="eqn-3D_wave5">
+  u=Ce^{\pm i(\lambda_{1}x+\lambda_{2}y+\lambda_{3}z+\lambda vt)}
+</men>
+where 
+<me>
+  \lambda^{2}= \lambda^{2}_{1}+\lambda^{2}_{2}+\lambda^{2}_{3} 
+</me>
+
+we have 
+<me>
+  e^{\pm i \lambda_{1}x} =A_{1} \cos\lambda_{1}x \pm A_{2} \sin\lambda_{1}x
+</me>
+ or,
+ <me>
+  \frac{\partial u}{\partial x}=0,
+ </me>
+ when <m>x=0</m> that implies <m>A_{2}=0, </m>  etc.
+          </p>
+          <p>
+            Then 
+            <men xml:id="eqn-3D_wave6">
+              u=C \cos\lambda_{1}x\cos\lambda_{2}y\cos\lambda_{3}z\cos\lambda vt
+            </men>
+            
+The result <xref ref="eqn-3D_wave6"/> may be deduced from equation <xref ref="eqn-3D_wave3"/>, 
+since, when <m>x=0, \sin\alpha_{1}x =0</m>  etc. 
+According to boundary condition i., we have - 
+<me>
+  \sin\lambda_{1}a\cos\lambda_{2}y\cos\lambda_{3}z\cos\lambda vt=0,	
+</me>
+
+i.e., <m>\sin\lambda_{1}a=0 </m> or,	<m>\sin\lambda_{1}a =N_{1}\pi</m>	and 
+<m>\lambda_{1}=\frac{N_{1}\pi}{a}, N_{1}</m> being an integer. Similarly,
+<me>
+  \lambda_{2}=\frac{N_{2}\pi}{a}, \quad \lambda_{3}=\frac{N_{3}\pi}{a},
+</me>
+and 
+<me>
+  \lambda =\sqrt{\lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2}} 
+</me>
+<me>
+   =\frac{\pi}{a}\sqrt{N_{1}^{2}+N_{2}^{2}+N_{3}^{2}}
+</me>
+now, equation <xref ref="eqn-3D_wave6"/> reduces to 
+<me>
+  u=C\cos \frac{N_{1}\pi x}{a} \cos \frac{N_{2}\pi y}{a}\cos \frac{N_{3}\pi z}{a} \cos\{\sqrt{N_{1}^{2}+N_{2}^{2}+N_{3}^{2}}\frac{\pi vt}{a}\}
+</me>
+Hence the general solution of equation <xref ref="eqn-3D_wave1"/> is  
+<me>
+    u=\sum_{N_{1}=1}^{\infty}\sum_{N_{2}=1}^{\infty}\sum_{N_{3}=1}^{\infty}C_{N_{1}N_{2}N_{3}}\cos( \frac{N_{1}\pi x}{a})
+</me>
+
+<men xml:id="eqn-3D_wave7">
+ \cos (\frac{N_{2}\pi y}{a}) \cos (\frac{N_{3}\pi z}{a}) \cos\left\{\sqrt{N_{1}^{2}+N_{2}^{2}+N_{3}^{2}}\frac{\pi vt}{a}\right\}
+</men>
+            </p>
+</subsubsection>
+</subsection>
+  </section>
+

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_second-python" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Python Code for Matrix</title>
+  
+  <problem>
+   <statement>
+     <p>
+   To solve problem like <xref ref="prob-circuit1"/> excute the following code in python shell
+     </p>
+   </statement>
+   <solution>
+      <p>
+      import numpy as np</p>
+      <p>
+         A=np.array([[6,-3,0],[-3,12,5],[0,5,11]]) 
+         </p>
+         <p>B= np.array([5,10,5])</p>
+         <p>
+            I =np.linalg.solve(A,B)
+            </p>
+            <p>I</p>
+               <answer>
+                  <p>
+                     array([ 1.45488029,  1.24309392, -0.11049724])
+                  </p>
+               </answer>
+   </solution>
+  </problem>
+     
+<problem>
+   <statement>
+     <p>
+     To solve problem like <xref ref="prob-eigvect1"/> excute the following code in the python shell 
+      </p>
+   </statement>
+   <solution>
+       <p>import numpy as np</p>
+            <p>A=np.array([[3,1],[2,2]])</p>
+            <p>E,v=np.linalg.eig(A) </p>
+           <p> print('E-value:', E) </p>
+           <p> print('E-vector', v)</p>
+            <answer>
+               <p>
+                  E-value: [4. 1.] </p>
+                  <p>E-vector [[ 0.70710678 -0.4472136 ] 
+                   [ 0.70710678  0.89442719]]
+               </p>
+            </answer>
+   </solution>
+</problem>
+  
+    <problem>
+      <statement>
+         <p>
+            <xref ref="prob-eigvect2"/>
+         </p>
+      </statement>
+      <solution>
+         <p>
+            import numpy as np
+         </p>
+         <p> A=np.array([[2,-1,1],[-1,2,-1],[1,-1,2]]) </p>
+            <p>E,v=np.linalg.eig(A) </p>
+           <p> print('E-value:', E) </p>
+         <p>   print('E-vector', v) </p>
+      </solution>
+    </problem>
+ 
+
+  </section>
+

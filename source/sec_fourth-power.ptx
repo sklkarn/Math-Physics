@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-power" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Power Series Method</title>
+  <introduction>
+  <p>
+    It is a method to find the solution of homogeneous linear differential equation of second order 
+    in the form of series. We know that the solution of differential equations
+     </p>
+    <ol>
+      <li>
+        <p>
+          <me>
+            y''-y=0 
+          </me>
+          <me>
+            C_{1}e^{x}+C_{2}e^{-x}
+          </me>
+          where,
+          <me>
+           e^{x}=1+\frac{x}{1!}+ \frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\cdots 
+          </me>
+          and 
+          <me>
+             e^{-x}= 1-\frac{x}{1!}+ \frac{x^{2}}{2!}-\frac{x^{3}}{3!}+\cdots 
+          </me>
+          <me>
+            \therefore y = C_{1}\left\{1+\frac{x}{1!}+ \frac{x^{2}}{2!}+\frac{x^{3}}{3!}+\cdots \right\}
+          </me>
+          <me>
+            +C_{2}\left\{1-\frac{x}{1!}+ \frac{x^{2}}{2!}-\frac{x^{3}}{3!}+\cdots \right\}
+          </me>
+          
+          It is a power series solution of the given differential equation.
+        </p>
+      </li>
+      <li>
+        <p>
+          If <m>y''+y=0</m> then <m>y=A\cos x+B\sin x </m> is the solution of a given equation. 
+          where,  
+          <me>
+            \cos x= 1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}+\cdots
+          </me>
+          and 
+          <me>
+             \sin x=x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\frac{x^{7}}{7!}+\cdots
+          </me>
+          <me>
+            \therefore y = A\left\{1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}+\cdots  \right\}
+          </me> 
+          <me>
+            +B\left\{x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\frac{x^{7}}{7!}+\cdots \right\}
+          </me>
+          
+          is the power series solution of the given equation.
+        </p>
+        </li>
+    </ol>
+   <p>
+    Let us consider the second order homogeneous linear differential equation 
+    <me>
+      f_{o}(x)\frac{\,d^{2}y}{\,dx^{2}}+f_{1}(x)\frac{\,dy}{\,dx}+f_{2}(x)y=0
+    </me>
+    <men xml:id="eqn-powers1">
+      \frac{\,d^{2}y}{\,dx^{2}}+q_{1}(x)\frac{\,dy}{\,dx}+q_{2}(x)y=0
+    </men>
+    where,
+    <me>
+       q_{1}(x)=\frac{f_{1}(x)}{f_{o}(x)}, \quad \text{and} \quad q_{2}(x)=\frac{f_{2}(x)}{f_{o}(x)}.
+    </me>
+    and suppose it has no solution expressible as a finite linear combination of elementary function. 
+    <term>Algebric, trigonomertric, logerithmic, and exponential functions are elementary functions</term>. 
+    Then, we can find that it has a solution which can be expressable in the form of infinite series. 
+    Let us assume such a solution of equation <xref ref="eqn-powers1"/> is 
+    <men xml:id="eqn-powers2">
+      y=\sum\limits_{\lambda =0}^{\infty}a_{\lambda}x^{\lambda}
+    </men>
+    is called a power series in <m>x</m>. Where <m>a_{o}{,}a_{1}{,}a_{2}{,} \cdots</m> are constants. 
+    In the expression <xref ref="eqn-powers2"/> at least one <m>a's</m> is not zero. 
+    But in case when <m>a_{o}=a_{1}=a_{2}= \cdots =0</m> then there is no series satisfying the 
+    given differential equation. Hence the power series solution method is not valid 
+    for such an equation. Some important terms are defining here helps us in establishing 
+    the validity of series solution method.
+    </p>
+
+      <ol>
+        <li>
+          <p>
+             <term> Ordinary Point:</term> <m>x=0</m> (or origin) is called an ordinary point 
+          of the differential equation <xref ref="eqn-powers1"/> if <m>q_{1}(x)</m> and 
+          <m>q_{2}(x)</m> are finite or regular at <m> x=0</m> and these can be expressed 
+          as power series given by 
+          <me>
+            f(x) = \sum\limits_{k =0}^{\infty}a_{k}x^{k}.
+          </me>
+          e.g., in
+          <me>
+            y'' -\frac{2x}{1-x^{2}}y'+\frac{2}{1-x^{2}}y =0
+          </me>
+          where 
+          <me>
+            q_{1}(x)=-\frac{2x}{1-x^{2}}=-2x(1-x^{2})^{-1}=-2x(1+x^{2}+x^{4}+\cdots)
+          </me>
+          and 
+          <me>
+            q_{2}(x)=\frac{2}{1-x^{2}}=2(1-x^{2})^{-1} =2(1+x^{2}+x^{4}+\cdots)
+          </me>
+          and are finite at <m>x=0</m>.	
+          </p>
+         
+          <p>
+            Thus <m>x=0</m> is an ordinary point of the given diffn. eqn. 
+            We assume the solution of this equation as 
+            <me>
+              y = \sum\limits_{\lambda =0}^{\infty}a_{\lambda}x^{\lambda}.
+            </me>
+          </p>
+        </li>
+        <li>
+          <p>
+            <term>Singular Point:</term>
+            When <m>q_{1}(x)</m> and <m>q_{2}(x)</m> are not finite at <m>x=0 </m>, then <m>x=0</m> 
+            is called a singular point of the diffn. eqn. If <m>xq_{1}(x)</m> and <m>x^{2}q_{2}(x)</m> 
+            tend to finite values at <m>x=0</m> then the equation has a regular singularity at the origin. 
+            But if <m>xq_{1}(x)</m> and <m>x^{2}q_{2}(x)</m>  one or both not finite at <m>x=0</m> then 
+            <m>x=0</m> is called an irregular singular points. For example in an equation 
+            <me>
+              y''-\frac{x}{2x^{2}}y' +\frac{(x^{2}+1)}{2x^{2}}y =0
+            </me>
+             has rugular singularity at <m>x=0</m> and 
+             <me>
+              y''+\frac{4}{x}y' +\frac{5}{x^{3}}y=0
+             </me>
+                has a singularity at <m>x=0</m> but not regular, i.e., it has an irregular singularity 
+                at <m>x=0</m>. Hence such type of equation has no series solution because on solving 
+                such equation we find all the constants <m> a_{o}{,}a_{1}{,}a_{2}{,}\cdots</m> are zero.
+          </p>
+          <p>
+            The solution of a equation having <m>x=0</m> is a singular points is assumed in the form 
+            <me>
+              y = \sum\limits_{\lambda =0}^{\infty}a_{\lambda}x^{\lambda+k}.
+            </me>
+            where <m>k</m> may be positive or negative integer or fraction. 
+            Since many equations in physics fall to second category and equations under first category are 
+            just the special cases of second category, we concentrate here only on second category. 
+            This method of finding the solution of equation in power series is developed by 
+            Frobenius and Fuchs.
+          </p>
+          </li>
+      </ol>  
+     </introduction>
+ 
+ <subsection xml:id="subsec-reg_sing">
+  <title>When <m>x=0</m> is a Regular Singular Point of the Equation</title>
+  <p>
+    In this case, the solution is 
+    <me>
+      y = \sum\limits_{\lambda =0}^{\infty}a_{\lambda}x^{\lambda+k} 
+    </me>
+    and on substituting of <m>y{,}y'</m> and <m>y"</m> in the given differential equation 
+    we get the identity. The index <m>k</m> will be determined by the quadratic equation 
+    obtained by equating the coefficient of lowest power of <m>x</m> to zero. 
+    The quadratic equation in <m>k</m> is called the <term>Indicial equation</term>. 
+    Thus, we will get two values of <m>k</m>. The series solution of equation <xref ref="eqn-powers1"/>
+    will depend upon the nature of the roots of the indicial equation.
+    </p>
+    <p>
+     <alert>Case I.</alert> When roots (<m> k_{1}{,}k_{2}</m>) are distinct and not differing 
+     by an integer, then the complete solution is 
+     <me>
+      y=C_{1}(y)_{k_{1}}+C_{2}(y)_{k_{2}} 
+     </me>
+    <alert>Case II.</alert> When roots are equal (<m>k_{1}=k_{2}</m>), then 
+    <me>
+      y=C_{1}(y)_{k_{1}}+C_{2}(\frac{dy}{dk})_{k_{1}}.
+    </me>
+    <alert>Case III.</alert> When roots are distinct and differ by an integer, then 
+    there arise two possibilities 
+    <ol marker="i.">
+      <li>
+        If some of the coefficients of y series become infinite at <m>k=k_{2} </m>, 
+        then replace <m>a_{o}</m> by <m>b_{o}(k-k_{2})</m>. The complete solution is then 
+        <me>
+          y=C_{1}(y)_{k_{1}}+C_{2}(\frac{dy}{dk})_{k_{2}} 
+        </me>
+        [on taking <m>k=k_{1}</m>, we obtain a solution which is a constant multiple of 
+        that obtained for <m>k_{1}</m>.] 
+      </li>
+      <li>
+         When the coefficient of y series does not become infinite for any <m>k</m>, 
+         then the complete solution is 
+         <me>
+          y=C_{1}(y)_{k_{1}}+C_{2}(y)_{k_{2}} 
+         </me>
+        </li>
+    </ol>
+      </p>
+ </subsection>
+ 
+
+
+  </section>
+

@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!-- Chapters are enclosed with <chapter> tags. Use xml:id to -->
+<!-- uniquely identify the chapter.  The @xmlns:xi attribute  -->
+<!-- is needed if you use xi:include in this file             -->
+<chapter xml:id="ch_fifth" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+<!-- Change title when you have one: -->
+  <title>Fourier Series</title>
+   
+  <introduction>
+    <p>
+    The Fourier series is a mathematical tool useful in representing a periodic 
+    function as a sum of simple sine and cosine functions (harmonics). Any periodic 
+    function with a well-defined period T can be expressed as an infinite sum of 
+    sine and cosine functions with different frequencies. The frequencies are 
+    integer multiples of the fundamental frequency, which is the reciprocal of 
+    the period (1/T). A note from various musical instruments or other sources 
+    are the complicated periodic function with the period of pure tone. 
+    This complicated function may be expressed as a series of sines and cosines in the form of
+    <me>
+      f(x)= \frac{a_{o}}{2}+a_{1}\cos x + a_{2}\cos 2x + \cdots + a_{n}\cos nx + \cdots 
+    </me>
+    <me>
+      + b_{1}\sin x +b_{2}\sin 2x + \cdots  + b_{n}\sin nx + \cdots.
+    </me>
+    
+    <me>
+	\therefore \quad  f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right].	
+    </me>
+    This infinite series is called Fourier series where <m>a_{o} {,}a_{1} {,} a_{2}  
+    \cdots{,} a_{n} {,}\cdots {,} b_{1} {,} b_{2} {,} \cdots{,} b_{n}{,} \cdots, </m> etc. 
+    are called Fourier coefficients.
+      </p>
+      <p>
+        The Fourier series has numerous applications in various fields, including signal 
+        processing, image compression, physics, engineering, and many areas of 
+        applied mathematics. It provides a powerful tool for decomposing complex periodic 
+        functions into simpler components and understanding their behavior.
+        </p>
+
+        <p>
+          for python code visit <url href="https://docs.sympy.org/latest/modules/series/fourier.html"></url>
+          </p>
+      </introduction>
+
+
+   <xi:include href="./sec_fifth-intro.ptx" />
+ <xi:include href="./sec_fifth-examplesA.ptx" /> 
+  <xi:include href="./sec_fifth-trig.ptx" />
+   <xi:include href="./sec_fifth-examplesB.ptx" />
+<xi:include href="./sec_fifth-frinterval.ptx" />
+   <xi:include href="./sec_fifth-examplesC.ptx" />
+   <xi:include href="./ex_fifth.ptx"/>  
+</chapter>

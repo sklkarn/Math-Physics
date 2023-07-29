@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_fourth-examplesE" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Examples E</title>
+ 
+
+<paragraphs>
+  <title>Hermite's Function</title>
+  <example>
+    <statement>
+      <p>
+        Prove that 
+        <me>
+          H_{n}(-x)=(-1)^{n} H_{n}(x)
+        </me>
+      </p>
+    </statement>
+    <solution>
+      <p>
+        We know that 
+        <me>
+         \sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}=e^{2zx-z^{2}} =e^{2zx}\cdot e^{-z^{2}}
+        </me>
+        <me>
+          =\sum_{n=0}^{\infty}\frac{(2x)^{n}z^{n}}{n!}\cdot \sum_{n=0}^{\infty}\frac{(-1)^{n}z^{2n}}{n!}
+        </me>
+        <me>
+          =\sum_{n=0}^{\infty}\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}(2x)^{n-2s}}{s!(n-2s)!}z^{n}
+        </me>
+          Equating the coefficient of <m>\frac{z^{n}}{n!}</m> on both sides, we get -
+          <me>
+            H_{n}(x)=\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(2x)^{n-2s}}{s!(n-2s)!}
+          </me>
+          	Replacing <m>x</m> by <m>-x</m>, we get -
+            <me>
+              H_{n}(-x)=\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(-2x)^{n-2s}}{s!(n-2s)!} = 	\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}(-1)^{n-2s}n!(2x)^{n-2s}}{s!(n-2s)!}
+            </me>
+            <me>
+              =(-1)^{n}\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(2x)^{n-2s}}{s!(n-2s)!}=(-1)^{n}H_{n}(x)
+            </me>
+            <me>
+              \therefore  H_{n}(-x)=(-1)^{n} H_{n}(x) 
+            </me>
+      </p>
+    </solution>
+  </example>
+
+<example>
+  <statement>
+    <p>
+      Prove that 
+      <me>
+        \int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =\sqrt{\pi}\left[2^{n-1}n!\delta_{m,n-1}+2^{n}(n+1)!\delta_{m,n+1}\right]
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We have
+      <me>
+        \int\limits_{-\infty}^{\infty}xe^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =	\int\limits_{-\infty}^{\infty}\frac{1}{x}\frac{d}{dx}\left(-\frac{1}{2}e^{-x^{2}}\right)xH_{m}(x)H_{n}(x)\,dx 
+      </me>
+      <me>
+        =\left.H_{m}(x)H_{n}(x)\left(-\frac{1}{2}e^{-x^{2}}\right)\right\vert_{-\infty}^{\infty}-\int\limits_{-\infty}^{\infty}\frac{d}{dx}[H_{m}(x)H_{n}(x)]\left(-\frac{1}{2}e^{-x^{2}}\right)\,dx
+      </me>
+      <me>
+        =\left.-\frac{1}{2}e^{-x^{2}}H_{m}(x)H_{n}(x)\right\vert_{-\infty}^{\infty}+\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}\frac{d}{dx}[H_{m}(x)H_{n}(x)]\,dx 
+      </me>
+      [Integrating by parts]
+      <me>
+        =0+\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}\left[H'_{m}(x)H_{n}(x)+H_{m}(x)H'_{n}(x)\right]\,dx
+      </me>
+      <me>
+        =\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}\left[2mH_{m-1}(x)H_{n}(x)+2nH_{m}(x)H_{n-1}(x)\right]\,dx 
+      </me>
+      ( using recurrence relation 1.)
+      <me>
+        =m\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m-1}(x)H_{n}(x)\,dx+n\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n-1}(x)\,dx
+      </me>
+      <me>
+        =m\sqrt{\pi}2^{n}n!\delta_{n,m-1}+n\sqrt{\pi}2^{n-1}(n-1)!\delta_{m,n-1} 
+      </me>
+      <me>
+        =\sqrt{\pi}\left[2^{n-1}n!\delta_{m,n-1}+2^{n}(n+1)!\delta_{m,n+1}\right] 
+      </me>
+      [<m>\because \delta_{n,m-1}=\delta_{n+1,m}</m>]	
+    </p>
+    <p>
+      <term> Alternative.</term> 
+     From recurrence relation 2, we have	
+     <me>
+      xH_{n}=nH_{n-1}+\frac{1}{2}H_{n+1}
+     </me>
+     <me>
+      \therefore \int\limits_{-\infty}^{\infty}x e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx=\int\limits_{-\infty}^{\infty} e^{-x^{2}}[nH_{n-1}+\frac{1}{2}H_{n+1}]H_{m}(x)\,dx
+     </me>
+     <me>
+      =n\int\limits_{-\infty}^{\infty} e^{-x^{2}}H_{n-1}(x)H_{m}(x)\,dx+\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{n+1}(x)H_{m}(x)\,dx
+     </me>
+     <me>
+      =n\sqrt{\pi}2^{n-1}(n-1)!\delta_{m,n-1}+\frac{1}{2}\sqrt{\pi}2^{n+1}(n+1)!\delta_{m,n+1} 
+     </me>
+     <me>
+      =\sqrt{\pi}2^{n-1}n!\delta_{m,n-1}+\sqrt{\pi}2^{n}(n+1)!\delta_{m,n+1} 
+     </me>
+      </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Prove that	
+      <ol>
+        <li>
+            <me>
+        H_{2n}(0)=(-1)^{n}\frac{(2n)!}{n!}
+      </me>
+        </li>
+         <li>
+            <me>
+         H_{2n+1}(0)=0
+      </me>
+        </li>
+      </ol>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We have
+      <me>
+        H_{n}(x)=\sum\limits_{s=0}^{\frac{n}{2}}(-1)^{s}\frac{n!(2x)^{n-2s}}{s!(n-2s)!}
+      </me>
+    </p>
+    <ol>
+      <li>
+        <p>
+        <me>
+          H_{2n}(x)=\sum\limits_{s=0}^{n}(-1)^{s}\frac{(2n)!(2x)^{n-2s}}{s!(n-2s)!}
+        </me>
+        putting <m>x=0</m>, we get -
+        <me>
+          H_{2n}(0)=(-1)^{n}\frac{(2n)!}{n!} 
+        </me>
+        </p>
+      </li>
+      <li>
+        <p>
+          <me>
+            H_{2n+1}(x)=\sum\limits_{s=0}^{(2n+1)/2}(-1)^{s}\frac{(2n+1)!(2x)^{2n+1-2s}}{s!(2n+1-2s)!}
+          </me>
+          <me>
+            =\sum\limits_{s=0}^{(n+1)/2}(-1)^{s}\frac{(2n+1)!(2x)^{2n-2s+1}}{s!(2n-2s+1)!}
+          </me>
+          putting <m>x=0</m>, we get -
+          <me>
+            	H_{2n+1}(0)=(-1)^{n}\frac{(2n+1)!}{n!}\cdot 0 = 0 
+          </me>
+        </p>
+      </li>
+    </ol>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Prove that  
+      <me>
+        P_{n}(x)=\frac{2}{\sqrt{\pi}n!}\int\limits_{0}^{\infty}t^{n}e^{-t^{2}}H_{n}(xt)\,dt
+      </me>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      We have 
+      <me>
+        H_{n}(x)=\sum\limits_{r=0}^{n/2}(-1)^{r}\frac{n!}{r!(n-2r)!}(2x)^{n-2r}
+      </me>
+      or,
+      <me>
+       H_{n}(xt)=\sum\limits_{r=0}^{n/2}(-1)^{r}\frac{n!}{r!(n-2r)!}(2xt)^{n-2r} 
+      </me>
+        Therefore,  
+        <me>
+          \frac{2}{\sqrt{\pi}n!}\int\limits_{0}^{\infty}t^{n}e^{-t^{2}}H_{n}(xt)\,dt
+        </me>
+        <me>
+          =\frac{2}{\sqrt{\pi}n!}\int\limits_{0}^{\infty}t^{n}e^{-t^{2}}\sum\limits_{r=0}^{n/2}(-1)^{r}\frac{n!}{r!(n-2r)!}(2xt)^{n-2r}\,dt
+        </me>
+        <me>
+          =\sum\limits_{r=0}^{n/2}\frac{2^{n-2r+1}(-1)^{r}x^{n-2r}}{\sqrt{\pi}r!(n-2r)!}\int\limits_{0}^{\infty}e^{-t^{2}}t^{2n-2r}\,dt 
+        </me>
+        <me>
+          = \sum\limits_{r=0}^{n/2}\frac{2^{n-2r+1}(-1)^{r}x^{n-2r}}{\sqrt{\pi}r!(n-2r)!}\frac{1}{2}\Gamma\left(n-r+\frac{1}{2}\right)
+        </me>
+        
+        <me>
+          =\sum\limits_{r=0}^{n/2}\frac{2^{n-2r}(-1)^{r}x^{n-2r}\{2(n-r)\}}{\sqrt{\pi}r!(n-2r)!}\sqrt{\pi}
+        </me>
+        <me>
+          =\sum\limits_{r=0}^{n/2}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r}=P_{n}(x).
+        </me>
+        
+        Since, 
+        <me>
+        t^{2n-2r}=t^{2(n-r+\frac{1}{2})-1}; 
+        </me>
+        <me>
+          2 \int\limits_{0}^{\infty}e^{-t^{2}}t^{2n-1}\,dt =\Gamma {(n)} 
+        </me>
+        and 
+        <me>
+          \Gamma(x+\frac{1}{2})=\frac{(2x)!}{2^{2x}x!}\sqrt{\pi}.
+        </me>   
+    </p>
+  </solution>
+</example>
+</paragraphs>
+
+</section>

@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_seventh-examplesB" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>ExamplesB</title>
+ 
+<example>
+  <statement>
+    <p>
+      Find the temperature distribution in the bar if bar and its ends are perfactly insulated,
+i.e., 
+<me>
+  \left.\frac{\partial u}{\partial x}\right\vert_{(0,t)} =0= \left.\frac{\partial u}{\partial x}\right\vert_{(\lambda,t)}
+</me>
+ and initial temperature is <m>u(x,0)=f(x)</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      Let the heat eqn. is  
+      <men xml:id="eqn-1D_heat1">
+        \frac{\partial u}{\partial t} =h^{2}\frac{\partial^{2}u}{\partial x^{2}} 
+      </men>
+      and 
+      	<men xml:id="eqn-1D_heat2">
+          u(x,t)=X(x)T(t) 
+        </men>
+
+be the solution of eqn. <xref ref="eqn-1D_heat1"/>. Then by making substitution 
+of eqn. <xref ref="eqn-1D_heat2"/> into eqn. <xref ref="eqn-1D_heat1"/>, we get the solution as 
+<men xml:id="eqn-1D_heat3">
+  	u(x,t) = (A\cos\lambda x+B\sin\lambda x)Ce^{-\lambda^{2}h^{2}t}  
+</men>
+or,
+<men xml:id="eqn-1D_heat4">
+  \frac{\partial u}{\partial x}=-A\lambda \sin\lambda x+B\lambda\cos\lambda x)Ce^{-\lambda^{2}h^{2}t} 
+</men>
+
+putting <m>\frac{\partial u}{\partial x}=0 </m> at <m>x=0</m> in eqn. <xref ref="eqn-1D_heat4"/>, 
+we get -  
+<me>
+   0=B\lambda Ce^{-\lambda^{2}h^{2}t} \Rightarrow B=0.
+</me>
+  	                                    	     
+Therefore, eqn. <xref ref="eqn-1D_heat3"/> reduces to		
+<men xml:id="eqn-1D_heat5">
+  u(x,t) = (A\cos\lambda x)Ce^{-\lambda^{2}h^{2}t} 
+</men>
+and 
+<men xml:id="eqn-1D_heat6">
+  \frac{\partial u}{\partial x} =-A\lambda \sin\lambda x Ce^{-\lambda^{2}h^{2}t} 
+</men>
+putting 
+<me>
+  \frac{\partial u}{\partial x}= 0
+</me>
+at <m>x=\lambda </m> in eqn. <xref ref="eqn-1D_heat6"/>, we have -
+
+<me>
+  0=-AC\lambda\sin\lambda\lambda e^{-\lambda^{2}h^{2}t} \Rightarrow \sin\lambda\lambda =0=\sin n\pi
+</me>
+or,
+<me>
+  \lambda\lambda =n\pi
+</me>
+or,
+<men xml:id="eqn-1D_heat7">
+  \lambda=\frac{n\pi}{\lambda}   \quad  \text{where} \quad  n=1,2,3,\cdots  
+</men>
+
+
+on putting the value of <m>\lambda</m> in eqn. <xref ref="eqn-1D_heat5"/>, we have -
+<men xml:id="eqn-1D_heat8">
+  u(x,t) = (AC\cos\frac{n\pi x}{\lambda})e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} = \sum\limits_{n=1}^{\infty}b_{n}\cos\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} 
+</men>
+         	   
+which is the required solution of eqn. <xref ref="eqn-1D_heat1"/>. 
+Now, for initial condition, eqn. <xref ref="eqn-1D_heat8"/> becomes
+<men xml:id="eqn-1D_heat9">
+  u(x,0) =f(x) = \sum\limits_{n=1}^{\infty}b_{n}\cos\frac{n\pi x}{\lambda} 
+</men>
+and 
+<men xml:id="eqn-1D_heat10">
+  b_{n}=\frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x) \cos\frac{n\pi x}{\lambda}\,dx 
+</men>
+    </p>
+  </solution>
+</example>
+    
+    <example>
+      <statement>
+        <p>
+          A rod of length <m>\lambda</m> with insulated sides is initially at a 
+          uniform temperature <m>u</m>. Its ends are suddenly cooled to  <m>0^{o} C</m> and 
+          maintained at this temperature. Prove that the temperature function <m>u</m> is 
+          given by 
+          <me>
+            u(x,t) =  \sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}}.
+          </me>
+         where <m>b_{n} </m> is determined from the equation 
+         <me>
+          u_{o}= \sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{\lambda}.
+         </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let the heat equation be  
+          <men xml:id="eqn-1Dheat-rod1">
+            	\frac{\partial u}{\partial t} =h^{2}\frac{\partial^{2}u}{\partial x^{2}}
+          </men>
+				
+and solution of which is given by
+<men xml:id="eqn-1Dheat-rod2">
+  u(x,t)=X(x)T(t) =(A\cos\lambda x+B\sin\lambda x)Ce^{-\lambda^{2}h^{2}t} 
+</men>
+
+The boundary conditions <m>u=0</m> at <m>x=0</m>, we get -
+<me>
+   0= ACe^{-\lambda^{2}h^{2}t} \Rightarrow A=0 \quad \text{since}\quad C\neq 0.
+</me>
+
+again, <m>u=0</m> at <m>x=\lambda</m>, we have -
+<me>
+  0=Ce^{-\lambda^{2}h^{2}t}\cdot B\sin\lambda\lambda, 
+</me>
+since <m>B</m> can not be zero.
+  or,
+  <me>
+    \sin\lambda\lambda = 0=\sin n\pi  \Rightarrow \lambda = \frac{n\pi}{\lambda},  
+  </me>
+  where <m>n=1,2,3,\cdots </m>. 
+
+Now eqn. <xref ref="eqn-1Dheat-rod2"/> becomes -  
+<me>
+   u=BC\sin\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}}
+</me>
+
+<men xml:id="eqn-1Dheat-rod3">
+  =\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} 
+</men>
+ 		
+which is the required solution of eqn. <xref ref="eqn-1Dheat-rod1"/>.
+By initial condition <m>u=u_{o} </m> at <m>t=0</m>, we have-
+<me>
+  u_{o}=\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{\lambda}  
+</me>				
+        </p>
+      </solution>
+    </example>
+
+    <paragraphs>
+      <title>Laplace Equation</title>
+      <example>
+        <statement>
+          <p>
+            A rectangular plate bounded by the lines <m>x=0,y=0,x=a,y=b</m> has an initial 
+            distribution of  temperature given by 
+            <me>
+              f(x,y)=B\sin\frac{\pi x}{a}\sin\frac{\pi y}{b}.
+            </me>
+          </p>
+        </statement>
+        <solution>
+          <p>
+            The general solution is given as 
+            <me>
+              u(x,y,t)=\sum\limits_{r,s=1}^{\infty}a_{rs}e^{-m_{rs}t}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}
+            </me>
+            where 
+            <me>
+              a_{rs} =\frac{4}{ab}\int\limits_{0}^{a}\int\limits_{0}^{b}f(x,y)\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}\,dx\,dy 
+            </me>
+            
+<me>
+  = \frac{4B}{ab}\int\limits_{0}^{a}\int\limits_{0}^{b}\sin\frac{\pi x}{a}\sin\frac{\pi y}{b}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}\,dx\,dy
+</me>
+<me>
+  \therefore  \quad a_{r1}= \frac{4B}{ab}\int\limits_{0}^{a}\frac{b}{2}\sin\frac{\pi x}{a}\sin\frac{r\pi x}{a}\,dx
+</me>
+
+<me>
+  \because \quad \int\limits_{0}^{b}\sin\frac{\pi y}{b}\sin\frac{s\pi y}{b}\,dy 
+  = \begin{cases} 0, &amp; n=2,3,4,\cdots\\
+		b/2, &amp; n=1  \end{cases} 
+</me>
+so that <m>a_{11}=B</m>  and 
+<me>
+  m_{11}=h^{2}\pi^{2}\left(\frac{1}{a^{2}}+\frac{1}{b^{2}}\right) 
+</me>
+
+Hence the solution is 
+<me>
+  u(x,y,t) =a_{11}e^{-m_{11}t}\cdot \sin\frac{\pi x}{a}\sin\frac{\pi y}{b}.
+</me>
+          </p>
+        </solution>
+      </example>
+
+<example>
+  <statement>
+    <p>
+      Determine the steady state temperature in a rectangular plate of length <m>a</m> 
+      and width <m>b</m> with sides maintained at a temperature zero while the lower 
+      end is kept at temperature <m>f(x) </m> and the upper one is insulated.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The equation of steady state heat flow is given by 
+      <me>
+        \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} =0   
+      </me>
+					  
+The boundary conditions are given as 
+</p>
+<ol marker ="i.">
+  <li>
+    <p>
+      <me>
+        u(0,y) =0=u(a,y),
+      </me>
+    </p>
+  </li>
+  <li>
+    <p>
+      <me>
+        u(x,y) =f(x),
+      </me>
+    </p>
+  </li>
+  <li>
+    <p>
+      <me>
+        u_{y}(x,b)=0.
+      </me>
+    </p>
+  </li>
+</ol>
+<p>
+  The solution of this problem is obtained as 
+  <me>
+  u(x,y) = \sum\limits_{n=1}^{\infty}\left[C_{n}\cosh\frac{n\pi y}{a}+D_{n}\sinh\frac{n\pi y}{a}\right] \sin \frac{n\pi x}{a}    
+  </me>
+from condition (iii), we have - 
+<me>
+   f(x)= \sum\limits_{n=1}^{\infty}C_{n}\sin\frac{n\pi x}{a}\quad \text{so that }\quad  C_{n} =\frac{2}{a}\int\limits_{0}^{a}f(x) \sin \frac{n\pi x}{a}\,dx 
+</me>
+		
+and from condition (iv) - 
+<me>
+  0=u_{y}(x,b) = \sum\limits_{n=1}^{\infty}\frac{n\pi}{a}\left(C_{n}\sinh\frac{n\pi b}{a} + D_{n}\cosh\frac{n\pi b}{a}\right)\sin\frac{n\pi x}{a} 
+</me>
+<me>
+  \Rightarrow  D_{n} = -C_{n}\tanh\frac{n\pi b}{a}.
+</me>
+Hence, 
+<me>
+  u(x,y) = \frac{2}{a}\sum\limits_{n=1}^{\infty}\left(\cosh\frac{n\pi y}{a}-\tanh\frac{n\pi y}{a}\sin\frac{n\pi y}{a}\right)\sin\frac{n\pi x}{a}\int\limits_{0}^{a}f(x) \sin \frac{n\pi x}{a}\,dx. 
+</me>
+  </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      To find the steady state temperature distribution in a thin plate bounded by the 
+      lines <m> x=0,x=\lambda,y=0,y=\infty</m>, the sides <m>x=0,x=\lambda</m>  are kept 
+      at temperature zero, the side <m>y=0</m> is kept at temperature <m>f(x)</m> and the 
+      edge <m>y=\infty</m> at temperature zero. <image source="fig712.png" width="45%"/>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The boundary conditions are 
+      <me>
+        u(0,y)=0=u(\lambda,y)=u(x,\infty)
+      </me>
+      and 
+      <me>
+        u(x,0)=f(x).
+      </me>
+      
+ 
+The steady state heat equation is given by 
+<men xml:id="eqn-std_heat1">
+  \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} =0 
+</men>
+Let 
+<men xml:id="eqn-std_heat2">
+  u(x,y)=X(x)Y(y)  
+</men>
+
+be the solution of eqn. <xref ref="eqn-std_heat1"/>. 
+Substituting of eqn. <xref ref="eqn-std_heat2"/> into eqn. <xref ref="eqn-std_heat1"/>, we get -
+<me>
+  Y\frac{\partial^{2}X}{\partial x^{2}} +X\frac{\partial^{2}Y}{\partial y^{2}} =0 
+</me>
+<men xml:id="eqn-std_heat3">
+  \frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =-\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}} = -p^{2} \quad \text{(say)} 
+</men>
+
+<me>
+  \therefore,  X=A\cos px +B\sin px 	
+</me>
+and <me>
+  Y=Ce^{py}+De^{-py} 
+</me>
+ <men xml:id="eqn-std_heat4">
+  \therefore \quad u(x,y) = \left(A\cos px+B\sin px\right)\left(Ce^{py}+De^{-py}\right) 
+ </men>
+    </p>
+    <p>
+      from boundary condition <m>u(x,\infty)=0 \quad \Rightarrow C=0 </m>		
+      <m>[ \because \quad e^{-\infty}=0.]</m>
+      <men xml:id="eqn-std_heat5">
+      \therefore \quad u(x,y)=\left(A' \cos px+B' \sin px\right)e^{-py}    
+      </men>
+      	
+from boundary condition <m>u(0,y) =0=A' e^{-py} \quad  \Rightarrow A' =0 </m>.	
+<men xml:id="eqn-std_heat6">
+  \therefore \quad u(x,y) = B' \sin px e^{-py} 
+</men>
+	also, 
+  <me>
+    u(\lambda,y) = 0 = B' \sin p\lambda e^{-py} \quad \because  B' \neq 0
+  </me>
+  
+or,
+<me>
+  \sin p\lambda = 0 =\sin n\pi, \quad  \therefore  \quad p=\frac{n\pi}{\lambda}, \quad n=1,2,3,\cdots 
+</me>
+Hence, 
+<men xml:id="eqn-std_heat7">
+  u(x,y) = B_{n}\sin\frac{n\pi x}{\lambda}e^{-\frac{n\pi y}{\lambda}}
+</men>
+
+again from 
+<me>
+  u(x,0) = B_{n}\sin\frac{n\pi x}{\lambda} =f(x)
+</me>
+<me>
+  \therefore  \quad B_{n} = \frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\sin\frac{n\pi x}{\lambda}\,dx 
+</me>
+      </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      To find the steady temperature distribution in a thin rectangular plate bounded 
+      by the lines <m>x=0,x=\lambda, y=0, y=h</m> the edges <m>x=0, x=\lambda, y=0 </m> are 
+      kept at temperature zero while the edge <m> y=h</m> is kept at temp. 
+      <m>f(x)</m>. <image source="fig713.png" width="45%"/>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The boundary conditions are 
+      <me>
+        u(0,y)=0=u(\lambda,y)=u(x,0)\quad u(x,h) =f(x).
+      </me>
+      
+The steady state heat eqn. is 
+<men xml:id="eqn-steady_heat1">
+  \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} =0 
+</men>
+	
+The solution of eqn. <xref ref="eqn-steady_heat1"/> is given by 
+<men xml:id="eqn-steady_heat2">
+   u(x,y)=\left(A\cos px+B\sin px\right)\left(Ce^{py}+De^{-py}\right) 
+</men>
+Now 
+<me>
+  u(0,y)=0=A\left(Ce^{py}+De^{-py}\right)\quad  \Rightarrow   A=0
+</me>
+also 
+<me>
+  u(\lambda,y) =0=B\sin p\lambda\left(Ce^{py}+De^{-py}\right) 
+</me>
+<m> \Rightarrow  \sin py =0=\sin n\pi   \quad	[\because B \neq 0]</m>
+<men xml:id="eqn-steady_heat3">
+   \therefore  \quad p=\frac{n\pi}{\lambda},    \quad  n=1,2,3,\cdots  
+</men>
+or,
+<men xml:id="eqn-steady_heat4">
+  u(x,y)= \left(C_{n}e^{\frac{n\pi y}{\lambda}} +D_{n}e^{-\frac{n\pi y}{\lambda}}\right)\sin\frac{n\pi x}{\lambda}  
+</men>
+again,
+<me>
+  u(x,0) = 0 = C_{n}+D_{n} \quad   \Rightarrow  C_{n}=-D_{n}
+</me>
+Hence, 
+<me>
+  u(x,y) = C_{n}\left(e^{\frac{n\pi y}{\lambda}} -e^{-\frac{n\pi y}{\lambda}}\right)\sin\frac{n\pi x}{\lambda}
+</me>
+<men xml:id="eqn-steady_heat5">
+  =2	C_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}
+</men>
+			
+using the last boundary condition - 
+<me>
+  u(x,h)= 2	C_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}	 =f(x)
+</me>
+or,
+<me>
+  C_{n}\sin\frac{n\pi h}{\lambda} =\frac{2}{\lambda}\int\limits_{0}^{\lambda}\frac{1}{2}f(x) \sin\frac{n\pi x}{\lambda}\,dx.
+</me>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      The diameter of a semi - circular plate of radius <m>r</m> is kept at <m> 0^{o} C</m> 
+      and temperature at the semi - circular boundary is at <m>T^{o} C</m>. Find the steady 
+      state temperature in the plate. <image source="fig714.png" width="45%"/>
+    </p>
+  </statement>
+  <solution>
+    <p>
+      The boundary conditions are 
+        </p>
+<ol marker ="i.">
+  <li>
+    <p>
+      <m>u=0</m>,  when <m>\theta=0 </m>  for <m>0 \leq r \lt a</m>, 
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>u</m> is finite, when <m> r \to 0</m>,
+    </p>
+  </li>
+  <li>
+    <p>
+      <m>u=T</m>, when <m>r=a</m> for <m>0 \lt \theta \lt \pi</m>.
+    </p>
+  </li>
+</ol>
+<p>
+  The solution of this problem is 
+  <me>
+    u=a_{o}\log r
+  </me>
+  
+  <men xml:id="eqn-semi_cir1">
+    +\sum\limits_{n=1}^{\infty}\left(a_{n}\cos n\theta + b_{n}\sin n\theta\right)\left(p_{n}r^{n}+q_{n}r^{-n}\right) +C_{o}  
+  </men>
+  But <m>u</m> is finite when <m>r \to 0</m>. Eqn. <xref ref="eqn-semi_cir1"/> 
+  must not contain terms of <m>\log r</m> and <m>r^{-n}</m> and this will be so 
+  when <m>a_{o}=0 =q_{n}</m>. Thus eqn. <xref ref="eqn-semi_cir1"/>  reduces to 
+  <men xml:id="eqn-semi_cir2">
+    u=\sum\limits_{n=1}^{\infty}\left(L_{n}\cos n\theta + M_{n}\sin n\theta\right)r^{n} +C_{o} 
+  </men>
+  from condition (i), <m>C_{o}=0  </m>. Hence,
+  <me>
+     u=\sum\limits_{n=1}^{\infty}\left(L_{n}\cos n\theta + M_{n}\sin n\theta\right)r^{n}
+  </me>
+  
+	from condition (iii),
+
+<me>
+  T= \sum\limits_{n=1}^{\infty}\left(L_{n}\cos n\theta + M_{n}\sin n\theta\right)a^{n}
+</me>
+from which we can find 
+<me>
+ L_{n} = \frac{2}{\pi}\int\limits_{0}^{\pi}\frac{T}{a^{n}} \cos n\theta \,d\theta  \quad = \frac{2T}{\pi a^{n}}\int\limits_{0}^{\pi} \cos n\theta \,d\theta =0 
+</me>
+
+and 
+<me>
+  M_{n} = \frac{2}{\pi}\int\limits_{0}^{\pi}\frac{T}{a^{n}} \sin n\theta \,d\theta  
+</me>
+<me>
+   = \frac{2T}{\pi a^{n}}\int\limits_{0}^{\pi} \sin n\theta \,d\theta = \frac{2T}{n\pi a^{n}}(1-\cos n\pi) 
+</me>
+
+Hence, the required solution is  
+<me>
+  u= \frac{2T}{n\pi a^{n}}\sum\limits_{n=1}^{\infty}(1-\cos n\pi)r^{n} \sin n\theta.
+</me>
+
+</p>
+  </solution>
+</example>
+    </paragraphs>
+
+  
+</section>

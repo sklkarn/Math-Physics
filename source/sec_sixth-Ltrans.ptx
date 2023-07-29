@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_sixth-Ltrans" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Laplace Transforms</title>
+  <introduction>
+   <p> <idx>Laplace transform</idx>
+    The Laplace transform is used to solve differential equations and analyze systems 
+    in the field of mathematics and engineering. It transforms a function of time, 
+    typically denoted as <m>f(t)</m>, into a function of a complex variable, 
+    usually denoted as m<m> F(s)</m>, where 's' is the complex variable. 
+    The Laplace transform provides a way to analyze functions in the frequency 
+    domain rather than the time domain. Laplace transform helps us in solving the 
+    differential equations with boundary values without finding the general 
+    solution and the values of the arbitrary constants. It converts differential 
+    equation (partial differential equation, PDE or ordinary differential equation, ODE) 
+    into algebric equation and hence easy to solve. It transforms a function with 
+    continuous time domain to Laplace domain (called s-parameter). 
+    Let <m>f(t)</m> be the function defined for all <m>+ ve</m> values of <m>t</m>, 
+    then Laplace Transform of <m>f(t)</m>  is denoted as  
+<me>
+  \mathscr{L}\{f(t)\} = F(s) = \int\limits_{0}^{\infty}e^{-st}f(t)\,dt.
+</me>
+    </p>
+   
+      <paragraphs>
+    <title>Some useful formulae:</title>
+  <p>
+    <idx><h>formulae for Laplace's trasnform</h></idx> 
+      
+      <ol>
+        <li>
+          <me>
+             \mathscr{L}\{1\} = \frac{1}{s}
+          </me>
+          <proof>
+              Since 
+              <me>
+                \mathscr{L}\{f(t)\} = \int\limits_{0}^{\infty}e^{-st}f(t)\,dt. 
+              </me>
+              <me>
+                \therefore  \mathscr{L}(1) = \int\limits_{0}^{\infty}e^{-st}.1\,dt = \left.\frac{e^{-st}}{-s}\right\vert_{0}^{\infty}  
+              </me>
+              <me>
+                =0+\frac{1}{s}=\frac{1}{s}.
+              </me>
+          </proof>
+        </li>
+        <li>
+          <me>
+            \mathscr{L}\{t^{n}\}=\frac{n!}{s^{n+1}} \quad \text{where}\quad  n=0,1,2,\cdots
+          </me>
+          <proof>
+            <me>
+              \mathscr{L}(t^{n})= \int\limits_{0}^{\infty}e^{-st} t^{n}\,dt 
+            </me>
+            put <m>st=x</m> so that <m>\,dt = \frac{\,dx}{s}</m>. 
+            <me>
+               \therefore \mathscr{L}(t^{n})= \int\limits_{0}^{\infty}e^{-x} \left(\frac{x}{s}\right)^{n}\frac{\,dx}{s} 
+            </me>
+            <me>
+              = \frac{1}{s^{n+1}}\int\limits_{0}^{\infty}e^{-x} x^{n}\,dx=\frac{n!}{s^{n+1}}
+            </me>
+          </proof>
+          </li>
+          <li>
+            <me>
+              \mathscr{L}\{e^{at}\}=\frac{1}{s-a};  \quad  (s \gt a)
+            </me>
+            <proof>
+              <me>
+                \mathscr{L}(e^{at})=\int\limits_{0}^{\infty}e^{-st}e^{at}\,dt= \int\limits_{0}^{\infty}e^{-(s-a)t}\,dt
+              </me>
+              <me>
+                = \left.\frac{e^{-(s-a)t}}{-(s-a)}\right\vert_{0}^{\infty}=\frac{1}{s-a}.
+              </me>
+            </proof>
+            </li>
+<li>
+  <me>
+    \mathscr{L}\{\cosh at\} = \frac{s}{s^{2}-a^{2}};  \quad  (s^{2} \gt a^{2})
+  </me>
+  <proof>
+   <me>
+    \mathscr{L}(\cosh at) =L\left[\frac{e^{at}+e^{-at}}{2}\right]= \frac{1}{2}\left[L(e^{at}) +L(e^{-at})\right] 
+   </me>
+   <me>
+    =\frac{1}{2}\left[\frac{1}{s-a}+\frac{1}{s+a}\right] = \frac{s}{s^{2}-a^{2}}.
+   </me>
+  </proof>
+  </li>
+  <li><me>
+    \mathscr{L}\{\sinh at\} = \frac{a}{s^{2}-a^{2}};  \quad  (s^{2} \gt a^{2})
+  </me>
+  <proof>
+   <me>
+    \mathscr{L}(\sinh at)=L\left[\frac{e^{at}-e^{-at}}{2}\right] =\frac{1}{2}\left[L(e^{at}) - L(e^{-at})\right]
+   </me>
+   <me>
+    = \frac{1}{2}\left[\frac{1}{s-a}-\frac{1}{s+a}\right]= \frac{a}{s^{2}-a^{2}}.
+   </me>
+  </proof>
+  </li>
+  <li><me>
+    \mathscr{L}\{\sin at\} = \frac{a}{s^{2}+a^{2}};  \quad  (s \gt 0)
+  </me>
+  <proof>
+    <me>
+      \mathscr{L}(\sin at) =L\left[\frac{e^{iat}-e^{-iat}}{2i}\right] =\frac{1}{2i}\left[L(e^{iat}) - L(e^{-iat})\right] 
+    </me>
+    <me>
+      = \frac{1}{2i}\left[\frac{1}{s-ia}-\frac{1}{s+ia}\right] = \frac{a}{s^{2}+a^{2}}.
+    </me>
+  </proof>
+  </li>
+  <li><me>
+    \mathscr{L}\{\cos at\} = \frac{s}{s^{2}+a^{2}};  \quad  (s \gt 0)
+  </me>
+  <proof>
+    <me>
+      \mathscr{L}(\cos at) =L\left[\frac{e^{iat}+e^{-iat}}{2}\right]=\frac{1}{2}\left[\frac{1}{s-ia}+\frac{1}{s+ia}\right]
+    </me>
+    <me>
+       = \frac{s}{s^{2}+a^{2}}.
+    </me>
+  </proof>
+  </li>
+  
+  <li>
+    <em>(Refer to  <xref ref="subsubsec-Ishift"/> First-shifting property)</em> 
+   <me>
+    \mathscr{L}\{e^{at}t^{n}\}= \frac{n!}{(s-a)^{n+1}}   \quad  \left[\because L(t^{n}) = \frac{n!}{s^{n+1}}\right]
+   </me>
+  </li>
+  <li><me>
+    \mathscr{L}\left\{e^{at}\cosh bt\right\} = \frac{s-a}{(s-a)^{2}-b^{2}}
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}\left\{e^{at}\sinh bt\right\} = \frac{b}{(s-a)^{2}-b^{2}}
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}\left\{e^{at}\sin bt\right\} = \frac{b}{(s-a)^{2}+b^{2}}
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}\left\{e^{at}\cos bt\right\} = \frac{s-a}{(s-a)^{2}+b^{2}}
+  </me>
+  </li>
+  <li> <em>(Refer to <xref ref="subsubsec-Inv_LapTrans"/> Inverse Laplace Transforms)</em>
+    <me>
+    \mathscr{L}^{-1}\left\{\frac{1}{s}\right\}=1
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{1}{s^{n}}\right\}=\frac{t^{n-1}}{!(n-1)};\quad\text{here}\quad n=0,1,2,3,\cdots
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{1}{s-a}\right\} =e^{at}
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{s}{s^{2}-a^{2}}\right\} =\cosh at 
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{1}{s^{2}-a^{2}}\right\} =\frac{1}{a}\sinh at
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{1}{s^{2}+a^{2}}\right\} =\frac{1}{a}\sin at
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{s}{s^{2}+a^{2}}\right\} =\cos at
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{1}{(s-a)^{2}+b^{2}}\right\} =\frac{1}{b}e^{at}\sin bt
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{s-a}{(s-a)^{2}+b^{2}}\right\} =e^{at}\cos bt
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{1}{(s-a)^{2}-b^{2}}\right\} =\frac{1}{b}e^{at}\sinh bt
+  </me>
+  </li>
+  <li><me>
+     \mathscr{L}^{-1}\left\{\frac{s-a}{(s-a)^{2}-b^{2}}\right\} =e^{at}\cosh bt 
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{1}{(s^{2}+a^{2})^{2}}\right\} =\frac{1}{2a^{3}}(\sin at-at\cos at)
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{s}{(s^{2}+a^{2})^{2}}\right\} =\frac{1}{2a} t\sin at
+  </me>
+  </li>
+  <li><me>
+    \mathscr{L}^{-1}\left\{\frac{s^{2}-a^{2}}{(s^{2}+a^{2})^{2}}\right\} = t\cos at
+  </me>
+  </li>
+      </ol>
+    </p>
+   </paragraphs>
+     </introduction>
+ 
+ <subsection xml:id="subsec-Prop_LapTrans">
+  <title>Properties of Laplace Transforms</title>
+  <introduction>
+    <p>
+      The Laplace transform has several properties that make it a powerful tool 
+      for solving differential equations and studying linear time-invariant systems. 
+      Some of the key properties include: 
+      <ol marker="i.">
+        <li>
+          Linearity: <m>\mathscr{L}\{af(t) + bg(t)\} = aF(s) + bG(s)</m>, where 'a' and 'b' are constants.
+        </li>
+        <li>Shifting: <m>\mathscr{L}\{f(t - a)\} = e^(-as) * F(s)</m>, which represents a time shift of 'a' units.</li>
+          <li>Differentiation: <m>\mathscr{L}\{f'(t)\} = sF(s) - f(0)</m>, where f'(t) represents the derivative of f(t).</li>
+            <li>Integration: <m>\mathscr{L}\{ \int^{t}_{0} f(\tau) \,d\tau \} = 1/s * F(s)</m>, where the integral represents the 
+            indefinite integral of f(t) with respect to t.</li>
+            <li>Convolution: <m>\mathscr{L}{f(t) * g(t)} = F(s) * G(s)</m>, where * denotes convolution.</li>
+      </ol>
+    </p>
+  </introduction>
+
+  <subsubsection xml:id="subsubsec-Lap_linear">
+    <title>Linear Property</title>
+    <p>
+      <me>
+         \mathscr{L}\{af_{1}(t)+bf_{2}(t)\} =a \mathscr{L}\{f_{1}(t)\} + b \mathscr{L}\{f_{2}(t)\}
+      </me>
+      <proof>
+        <me>
+           \mathscr{L}\{af_{1}(t)+bf_{2}(t)\} = \int\limits_{0}^{\infty}e^{-st}\left[af_{1}(t)+bf_{2}(t)\right]
+        </me>
+        <me>
+           =a\int\limits_{0}^{\infty}e^{-st}f_{1}(t)\,dt+b\int\limits_{0}^{\infty}e^{-st}f_{2}(t)\,dt
+        </me>
+        <me>
+           =a \mathscr{L}\{f_{1}(t)\} + b \mathscr{L}\{f_{2}(t)\}
+        </me>
+      </proof>
+      </p>
+  </subsubsection>
+
+<subsubsection xml:id="subsubsec-Ishift">
+  <title>First-Shifting Property</title>
+  <p>
+     If <m>\mathscr{L}\{af(t)\}=F(s),</m> then <m>\mathscr{L}\{e^{at}f(t)\} = F(s-a)</m>.
+     <proof>
+     <me>
+      \mathscr{L}\{e^{at}f(t)\} = \int\limits_{0}^{\infty}e^{-st}e^{at}f(t)\,dt 
+     </me>
+     <me>
+      = \int\limits_{0}^{\infty}e^{-(s-a)t}f(t)\,dt =\int\limits_{0}^{\infty}e^{-rt}f(t)\,dt  =F(r) = F(s-a) 
+     </me>
+     [<m>\because s-a =r </m>]
+     </proof>
+    </p>
+</subsubsection>
+
+<subsubsection xml:id="subsubsec-Inv_LapTrans">
+  <title>Inverse Laplace Transforms</title>
+  <p>
+    If <m>\mathscr{L}[f(t)] =F(s)</m>  then <m>f(t)</m> is called the inverse 
+    Laplace Transform of <m>F(s)</m> and we write <m>f(t) = \mathscr{L}^{-1}F(s)</m>. 
+    Here <m>\mathscr{L}^{-1}</m> is called the inverse Laplace Transform operator.
+    </p>
+</subsubsection>
+ </subsection>
+
+<subsection xml:id="subsec-derv_LT">
+  <title>Laplace Transform of the Derivative of <m>f(t)</m></title>
+  <introduction>
+    <p>
+    If <m>\mathscr{L}[f(t)] =F(s)</m>  then <me>
+      \mathscr{L}[f'(t)] = sL[f(t)]-f(0)
+    </me>
+     </p>
+   <proof>
+    <p>
+      we have 
+      <me>
+        \mathscr{L}[f'(t)]=\int\limits_{0}^{\infty}e^{-st}f'(t)\,dt 
+      </me>
+      <me>
+        = \left.e^{-st}f(t)\right\vert_{0}^{\infty}-\int\limits_{0}^{\infty}-se^{-st}f(t)\,dt 
+      </me>
+      <me>
+        =0-f(0)+s\int\limits_{0}^{\infty}e^{-st}f(t)\,dt = sL[f(t)]-f(0) 
+      </me>
+    </p>
+   </proof>
+  </introduction>
+
+  <subsubsection xml:id="subsubsec-nderv_LT">
+    <title>Laplace Transform of Derivative of order <m>n</m></title>
+    <p>
+      <me>
+        \mathscr{L}[f^{n}(t)] =s^{n}\mathscr{L}[f(t)]-s^{n-1}f(0)-s^{n-2}f' (0)-s^{n-3}f''(0) -\cdots-f^{n-1}(0).
+      </me>
+      </p>
+      <proof>
+        <p>
+          we have, 
+          <men xml:id="eqn-nderv_LT1">
+            L[f'(t)]=sL[f(t)]-f(0)
+          </men>
+          replacing <m>f(t)</m> by <m>f'(t)</m> and <m>f'(t)</m> by <m>f''(t)</m> in 
+          equation <xref ref="eqn-nderv_LT1"/>, we get -
+          <me>
+            L[f''(t)]=sL[f'(t)]-f'(0) = s\{sL[f(t)]-f(0)\}-f'(0) 
+          </me>
+          <me>
+            =s^{2}L[f(t)]-sf(0)-f'(0)
+          </me>
+  Similarly, <me>
+    L[f'''(t)]=s^{3}L[f(t)]-s^{2}f(0)-sf'(0)-f''(0)
+  </me>
+  <me>
+    \therefore  L[f^{n}(t)] =s^{n}L[f(t)]-s^{n-1}f(0)-s^{n-2}f' (0)-s^{n-3}f''(0) -\cdots-f^{n-1}(0).
+  </me>
+        </p>
+      </proof>
+  </subsubsection>
+
+<subsubsection xml:id="subsubsec-Int_LT">
+  <title>Laplace Transform of Integral of <m>f(t)</m></title>
+  <p>
+      If <m>\mathscr{L}[f(t)] =F(s)</m>, then 
+      <me>
+        \mathscr{L}\left[\int\limits_{0}^{t}f(t)\,dt\right]=\frac{1}{s}F(s).
+      </me>
+    </p>
+    <proof>
+      <p> Let 
+      <me>
+        \phi (t) = \int\limits_{0}^{t}f(t)\,dt 
+      </me>
+      then <me>
+        \phi' (t) = \frac{\,d}{\,dt}\left[\int\limits_{0}^{t}f(t)\,dt\right] =f(t) 
+      </me>
+      and 
+       <me>
+        \phi (0) =  \int\limits_{0}^{0}f(t)\,dt=0
+       </me>
+       Now 
+       <me>
+        \mathscr{L}[\phi' (t)]=s\mathscr{L}[\phi (t)]-\phi (0)=s\mathscr{L}[\phi (t)]
+       </me>
+ or,
+ <me>
+  \mathscr{L}[\phi (t)]=\frac{1}{s}\mathscr{L}[\phi' (t)]
+ </me>
+ or,
+ <me>
+  \mathscr{L}\left[\int\limits_{0}^{t}f(t)\,dt\right] = \frac{1}{s}\mathscr{L}[f(t)]=\frac{1}{s}F(s)
+ </me>
+      </p>
+    </proof>
+</subsubsection>
+</subsection>
+
+<subsection xml:id="subsec-Prod_LT">
+  <title>Laplace Transform of <m>t^{n}f(t)</m></title>
+  <p>
+    If <m>\mathscr{L}[f(t)] =F(s)</m>, then <me>
+      \mathscr{L}\left[t^{n}f(t)\right]=(-1)^{n}\frac{d^{n}}{\,ds^{n}}[F(s)]=(-1)F^{n}(s)
+    </me>
+    </p>
+    <proof>
+      <p>
+        <men xml:id="eqn-Prod_LT1">
+          \mathscr{L}[f(t)] =F(s)=\int\limits_{0}^{\infty}e^{-st}f(t)\,dt
+        </men>
+        Differentiating equation <xref ref="eqn-Prod_LT1"/>, w. r. t. 's', we get -
+        <me>
+          \frac{d}{\,ds}[F(s)] = \frac{d}{\,ds}\left[\int\limits_{0}^{\infty}e^{-st}f(t)\,dt\right]  	= \int\limits_{0}^{\infty}\frac{d}{\,ds}(e^{-st})f(t)\,dt 
+        </me>
+        <me>
+          = \int\limits_{0}^{\infty}(-t e^{-st})f(t)\,dt  =\int\limits_{0}^{\infty}e^{-st}[-tf(t)]\,dt = L[-t f(t)]
+        </me>
+        or,
+        <me>
+          L[tf(t)] = (-1)^{1}\frac{d}{\,ds}F(s)
+        </me>
+        Similarly,
+        <me>
+          L[t^{2} f(t)] = (-1)^{2}\frac{d^{2}}{\,ds^{2}}F(s)
+        </me>
+        or,
+        <me>
+          L[t^{3} f(t)] = (-1)^{3}\frac{d^{3}}{\,ds^{3}}[F(s)]
+        </me>
+        <me>
+          \vdots
+        </me>
+        <me>
+          \mathscr{L}[t^{n} f(t)] = (-1)^{n}\frac{d^{n}}{\,ds^{n}}[F(s)]
+        </me>
+      </p>
+    </proof>
+</subsection>
+
+<subsection xml:id="subsec-scale_LT">
+  <title>The Change of Scale Property</title>
+  <p>
+    If <m>\mathscr{L}[f(t)] =F(s),</m>  then <me>
+      \mathscr{L}[f(at)] =\frac{1}{a}F\left(\frac{s}{a}\right)
+    </me>
+    </p>
+    <proof>
+      <p>
+        We have,
+        <me>
+          \mathscr{L}[f(t)] =\int\limits_{0}^{\infty}e^{-st}f(t)\,dt 
+        </me>
+        or,
+        <me>
+          \mathscr{L}[f(at)] = \int\limits_{0}^{\infty}e^{-st}f(at)\,dt 
+        </me>
+        put <m>at=u</m>  so that <m>\,dt=\frac{1}{a}\,du</m>.
+        <me>
+          \therefore \quad \mathscr{L}[f(at)]=\int\limits_{0}^{\infty}e^{-su/a}f(u)\,du 
+        </me>
+        where <me>p=s/a =  \frac{1}{a}F(p) =  \frac{1}{a}F(s/a)</me>.
+  </p>
+    </proof>
+</subsection>
+
+<subsection xml:id="subsec-frac_LT">
+  <title>Laplace Transform of <m>\frac{1}{t}f(t)</m></title>
+  <p>
+    If  <m>\mathscr{L}[f(t)] =F(s)</m>, then <me>
+      \mathscr{L}\left[\frac{1}{t}f(t)\right] =\int\limits_{s}^{\infty}F(s)\,ds.
+    </me>
+     </p>
+     <proof>
+      <p>
+       <men xml:id="eqn-frac_LT1">
+          \mathscr{L}[f(t)] =F(s) = \int\limits_{0}^{\infty}e^{-st}f(t)\,dt
+       </men>
+Integrating equation <xref ref="eqn-frac_LT1"/> w.r.t. 's', we get -
+<me>
+  \int\limits_{s}^{\infty}F(s)\,ds  = \int\limits_{s}^{\infty}\left[\int\limits_{0}^{\infty}  e^{-st}f(t)\,dt\right]\,ds 
+</me>
+<me>
+  = \int\limits_{0}^{\infty} \left[\int\limits_{s}^{\infty} e^{-st}f(t)\,dt\right]\,ds   = \int\limits_{0}^{\infty}\left[\frac{ e^{-st}f(t)}{-t}\right]_{s}^{\infty} \,dt 
+</me>
+
+<me>
+  =\int\limits_{0}^{\infty}\frac{f(t)}{-t}\left[e^{-st}\right]_{s}^{\infty}\,dt  = \int\limits_{0}^{\infty}\frac{f(t)}{-t}\left[0-e^{-st}\right]\,dt 
+</me>
+<me>
+ = \int\limits_{0}^{\infty}e^{-st}\{\frac{1}{t}f(t)\}\,dt   = L\left[\frac{1}{t}f(t)\right]
+</me>
+i.e.,
+<me>
+  \mathscr{L}\left[\frac{1}{t}f(t)\right] = 	\int\limits_{s}^{\infty}F(s)\,ds
+</me>
+      </p>
+     </proof>
+</subsection>
+  </section>
+

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec_sixth-examplesB" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>ExamplesB</title>
+ 
+<example xml:id="Lap_Q1">
+  <statement>
+    <p>
+       Find the Laplace transform of <m>(1+\cos2t)</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        \mathscr{L}(1+\cos2t)=\int\limits_{0}^{\infty}e^{-st}(1+\cos2t)\,dt 
+      </me>
+      <me>
+        = \int\limits_{0}^{\infty}e^{-st}.1\,dt + \int\limits_{0}^{\infty}e^{-st}\cos at\,dt
+      </me>
+      
+      <me>
+         =\frac{1}{s}+ \frac{s}{s^{2}+2^{2}} = \frac{1}{s}+ \frac{s}{s^{2}+4}
+      </me>
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the Laplace transform of <m>\cos^{2}t</m>.	
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        \because \quad \cos2t = 2\cos^{2}t-1; \quad  \therefore \cos^{2}t= \frac{1}{2}[\cos 2t+1]
+      </me>
+      Now,
+      <me>
+        \mathscr{L}[\cos^{2}t]= \int\limits_{0}^{\infty}e^{-st}\cos^{2}t\,dt 
+      </me>
+      <me>
+        = \frac{1}{2}\int\limits_{0}^{\infty}e^{-st}[\cos 2t+1] =\frac{1}{2}[ \frac{1}{s}+ \frac{s}{s^{2}+4}].
+      </me>
+      (see problem <xref ref="Lap_Q1"/>)
+    </p>
+  </solution>
+</example>
+
+<example>
+  <statement>
+    <p>
+      Find the Laplace transform of <m>t\sin at</m>.
+    </p>
+  </statement>
+  <solution>
+    <p>
+      <me>
+        \mathscr{L}[t\sin at] = \mathscr{L}\left[t\{\frac{e^{iat}-e^{-iat}}{2i}\}\right] =\frac{1}{2i}[\mathscr{L}(te^{iat})-\mathscr{L}(te^{-iat})]
+      </me>
+      <me>
+        =\frac{1}{2i}\left[\frac{1}{(s-ia)^{2}}-\frac{1}{(s+ia)^{2}}\right]. 
+      </me>
+     (see formula 8 in <xref ref="sec_sixth-Ltrans"/>) 
+      <me>
+         =\frac{1}{2i}\left[\frac{s^{2}+2ias-a^{2}-s^{2}+2ias+a^{2}}{(s^{2}+a^{2})^{2}}\right]
+      </me>
+      <me>
+         = \frac{1}{2i}\left[\frac{4ias}{(s^{2}+a^{2})^{2}}\right]= \frac{2as}{(s^{2}+a^{2})^{2}} 
+      </me>  
+    </p>
+  </solution>
+</example>
+    
+    <example>
+      <statement>
+        <p>
+           Find the Laplace Transform of <m>\cos at \sinh at</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+<me>
+  \mathscr{L}[\cos at \sinh at] = \mathscr{L}\left[\cos at\{\frac{e^{at}-e^{-at}}{2}\}\right]
+</me>
+<me>
+  =\frac{1}{2}[\mathscr{L}(\cos at e^{at})-\mathscr{L}(\cos at e^{-at})]
+</me>
+<me>
+  = \frac{1}{2}\left[\frac{s-a}{(s-a)^{2}+a^{2}}-\frac{s+a}{(s+a)^{2}+a^{2}}\right]
+</me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find <m>\mathscr{L}[\sin (\omega t + \theta)]</m>.   
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \mathscr{L}[\sin (\omega t + \theta)] = \mathscr{L}[\sin \omega t \cos \theta +\cos \omega t \sin \theta]
+          </me>
+          <me>
+             = \cos \theta \mathscr{L}[\sin \omega t] +\sin \theta \mathscr{L}[\cos \omega t] 
+          </me>
+          <me>    
+ = \cos \theta \left[\frac{\omega}{s^{2}+\omega ^{2}}\right] +  \sin \theta \left[\frac{s}{s^{2}+\omega ^{2}}\right].
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find the inverse transform of <m>\frac{1}{s^{2}-5s+6}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+      Let us convert the given function into partial fractions. 
+      <me>
+        \mathscr{L}^{-1}\left(\frac{1}{s^{2}-5s+6}\right) = \mathscr{L}^{-1}\left(\frac{1}{s-3}\right)-L^{-1}\left(\frac{1}{s-2}\right) 
+      </me>
+      <me>
+        = e^{3t}-e^{2t}
+      </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find <me>
+            \mathscr{L}^{-1}\left(\frac{s-1}{s^{2}-6s+25}\right).
+           </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+        </p>
+         <hint>
+            <p>
+            <me>
+               \frac{s-1}{s^{2}-6s+25} = \frac{s-1}{(s-3)^{2}+4^{2}} 
+            </me>
+            
+             <me>
+              =\frac{s-3+2}{(s-3)^{2}+4^{2}} =\frac{s-3}{(s-3)^{2}+4^{2}}+\frac{1}{2} \frac{4}{(s-3)^{2}+4^{2}} 
+             </me>
+            </p>
+          </hint>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find <me>
+            \mathscr{L}^{-1}\left(\frac{s+4}{s(s-1)(s^{2}+4)}\right).
+          </me>
+        </p>
+      </statement>
+       <hint>
+          <p>
+            <me>
+              \frac{s+4}{s(s-1)(s^{2}+4)} =\frac{A}{s}+\frac{B}{s-1}+\frac{Cs+D}{s^{2}+4}
+            </me>
+            or,
+            <me>
+               s+4 
+            </me>
+            
+            <men xml:id="eqn-Inv_LT1">
+             = A(s-1)(s^{2}+4) +Bs(s^{2}+4) +(Cs +D) -s(s-1)
+            </men> 
+          </p>
+        </hint>
+      <solution>
+        <p>
+          putting, <m>s=1</m>, we get - <m>4=-4A; \quad \therefore A = -1</m>, 
+          again, put <m>s=1</m>, we get -  <m>5=B.5;  \quad    \therefore B = 1</m>,   
+          equating the coefficient of <m>s^{3}</m> on both sides of equation <xref ref="eqn-Inv_LT1"/>, we have, 
+          <m>0=A+B+C</m>      or, 
+          <me>
+            0=-1+1+C; \quad    \therefore C = 0
+          </me>
+          equating the coefficient of <m>s</m> on both sides of equation <xref ref="eqn-Inv_LT1"/>, we get- 
+          <m>1=4A+4B-D =-4+4-D</m>	 	or, <m>D=-1</m>. 
+          On putting  <m>A,B,C,D</m> in equation <xref ref="eqn-Inv_LT1"/>, we get - 
+          <me>
+            \frac{s+4}{s(s-1)(s^{2}+4)} =-\frac{1}{s}+\frac{1}{s-1}-\frac{1}{s^{2}+4}
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find 
+           <me>
+             \mathscr{L}^{-1}\left(\frac{s^{2}}{(s^{2}+a^{2})(s^{2}+b^{2})}\right).
+           </me>
+        </p>
+      </statement>
+      <solution>
+        <p> Here,
+          <me>
+            \left(\frac{s^{2}}{(s^{2}+a^{2})(s^{2}+b^{2})}\right) =\frac{A}{(s^{2}+a^{2})}+ \frac{B}{(s^{2}+b^{2})}
+          </me>
+          or,
+          <me>
+             s^{2}=A(s^{2}+b^{2})+B(s^{2}+a^{2}) =s^{2}(A+B)+Ab^{2}+Ba^{2}
+          </me>
+          now,
+          <m> A+B=1  </m> and <m>Ab^{2}+Ba^{2}=0 \quad \Rightarrow Ab^{2}=-Ba^{2}</m>
+
+ <me>
+  \therefore \quad -\frac{Ba^{2}}{b^{2}}+B=1
+ </me>
+ or,
+ <me>
+  B\left(1-\frac{a^{2}}{b^{2}}\right)=1 
+ </me>
+ or,
+ <me>
+  B\left(\frac{b^{2}-a^{2}}{b2}\right)=1
+ </me>
+ <me>
+   \therefore \quad B= \frac{b2}{b^{2}-a^{2}}
+ </me>
+
+   again,
+   <me>
+     Ab^{2}=-	\left(\frac{b2}{b^{2}-a^{2}}\right)a^{2}
+   </me>
+   or,
+   <me>
+     A=\frac{a2}{a^{2}-b^{2}}
+   </me>
+   <me>
+     \therefore  \quad \frac{s^{2}}{(s^{2}+a^{2})(s^{2}+b^{2})} = \frac{a2}{a^{2}-b^{2}}\frac{1}{s^{2}+a^{2}}-\frac{b2}{a^{2}-b^{2}}\frac{1}{s^{2}+b^{2}}
+   </me>
+   <me>
+    = \frac{1}{a^{2}-b^{2}}\left[\frac{a^{2}}{s^{2}+a^{2}}-\frac{b^{2}}{s^{2}+b^{2}}\right]
+   </me>
+   Hence,
+   <me>
+    \mathscr{L}^{-1}\left(\frac{s^{2}}{(s^{2}+a^{2})(s^{2}+b^{2})}\right)
+   </me>
+   <me>
+    = \frac{1}{a^{2}-b^{2}}\left[a^{2}\left(\frac{1}{a}\sin at\right)-b^{2}\left(\frac{1}{b}\sin bt\right)\right]
+   </me>
+   
+   <me>
+     =\frac{1}{a^{2}-b^{2}}[a\sin at-b\sin bt]
+   </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find the inverse Laplace Transform of <m>\frac{1}{s(s^{2}+1)}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We have 	
+          <me>
+            \mathscr{L}^{-1}\left[\frac{1}{(s^{2}+1)}\right] = \sin t
+          </me>
+          or,
+          <me>
+           \mathscr{L}^{-1}\left[\frac{1}{s(s^{2}+1)}\right] = \int\limits_{0}^{t}1.\sin t\,dt 
+          </me>
+          or,
+          <me>
+            [-\cos t]_{0}^{t} = (-\cos t +1)
+          </me>
+          i.e., 
+          <me>
+            \mathscr{L}^{-1}\left[\frac{1}{s(s^{2}+1)}\right] = 1-\cos t
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find the inverse Laplace transform of <m>\frac{1}{s^{2}(s^{2}+a^{2})}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          We have <me>
+            \mathscr{L}^{-1}\left[\frac{1}{(s^{2}+a^{2})}\right] = \frac{1}{a}\sin at 
+          </me>
+          or,
+          <me>
+            \mathscr{L}^{-1}\left[\frac{1}{s(s^{2}+a^{2})}\right]  =\frac{1}{a}\int\limits_{0}^{t}\sin at\,dt 
+          </me>
+          <me>
+            = \frac{1}{a}\left[\frac{-\cos at}{a}\right]_{0}^{t}
+          </me>
+          <me>
+            =\frac{1}{a^{2}}[1-\cos at +1] = \frac{1}{a^{2}}[1-\cos at]
+          </me>
+          or,
+          <me>
+            \mathscr{L}^{-1}\left[\frac{1}{s^{2}(s^{2}+a^{2})}\right] =  \frac{1}{a^{2}}\int\limits_{0}^{t}(1-\cos at)\,dt
+          </me>
+          <me>
+             = \frac{1}{a^{2}}\left[\left.t\right\vert_{0}^{t}-\left(\frac{\sin at}{a}\right)_{0}^{t}\right] 
+          </me>
+          <me>
+            =  \frac{1}{a^{2}}\left[t-\frac{1}{a}\sin at\right]
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find <me>
+            \mathscr{L}^{-1}\left[\frac{1}{s^{2}+4s}\right]
+          </me>
+        </p>
+      </statement>
+      <hint>
+          <p>
+            Find 
+            <me>
+              \mathscr{L}^{-1}\left[\frac{1}{s(s^{2}+2^{2})}\right]
+            </me>
+          </p>
+         </hint>
+      <solution>
+        <p>
+          <me>
+            \frac{1}{4}(1-\cos 2t)
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find the Laplace Transform of <m>t\sinh at</m>.  
+          </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \mathscr{L}[\sinh at] = \frac{a}{s^{2}-a^{2}} 
+          </me>
+          or,
+          <me>
+            \mathscr{L}[t\sinh at] =-\frac{d}{\,ds}\left[\frac{a}{s^{2}-a^{2}}\right]   =  \frac{2as}{(s^{2}-a^{2})^{2}}
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find <m>\mathscr{L}[t^{2}e^{t}\sin 4t]</m>. 
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \mathscr{L}[\sin 4t] = \frac{4}{s^{2}+16}
+          </me>
+          or,
+          <me>
+            \mathscr{L}[e^{t}\sin 4t] = \frac{4}{(s-1)^{2}+16}
+          </me>
+          or,
+          <me>
+            \mathscr{L}[t^{2}e^{t}\sin 4t] =(-1)^{2}\frac{\,d^{2}}{\,ds^{2}}\left[ \frac{4}{(s-1)^{2}+16}\right]
+          </me>
+          <me>
+            = \frac{\,d^{2}}{\,ds^{2}}\left[\frac{4}{s^{2}-2s+17}\right] 
+          </me>
+          <me>
+            =\frac{\,d}{\,ds}\left[\frac{-4(2s-2)}{(s^{2}-2s +17)^{2}}\right]
+          </me>
+          <me>
+            =-4\left[\frac{(s^{2}-2s +17)^{2}\{2s^{2}-4s+34-8s^{2}+16s-8\}}{(s^{2}-2s +17)^{4}}\right]  
+          </me>
+          <me>
+             = \frac{-4\{-6s^{2}+12s+26\}}{(s^{2}-2s +17)^{3}}
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+           Find the inverse Laplace Transfoem of the function, 
+           <me>
+            \log \left(1+\frac{\omega^{2}}{s^{2}}\right).
+           </me>
+        </p>
+      </statement>
+      <solution>
+        <p>
+          Let 
+          <me>
+            F(s)= \log (1+\frac{\omega^{2}}{s^{2}})  
+          </me>
+          we know that, 
+          <me>
+            -\frac{\,d}{\,ds}\log \left(\frac{s^{2}+\omega^{2}}{s^{2}}\right) =-\frac{\,d}{\,ds}[\log (s^{2}+\omega^{2}) -\log s^{2}]
+          </me>
+          <me>
+            =-\left[\frac{1\cdot2s}{s^{2}+\omega^{2}}-\frac{2s}{s^{2}}\right] = \left[\frac{2}{s}-\frac{2s}{s^{2}+\omega^{2}}\right]
+          </me>
+          or,
+          <me>
+            tf(t)   =\mathscr{L}^{-1}\left[\frac{2}{s}-\frac{2s}{s^{2}+\omega^{2}}\right] = 2-2\cos \omega t
+          </me>
+          or,
+          <me>
+            f(t)=\frac{2}{t}[1-\cos \omega t] 
+          </me>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+           Find <m>\mathscr{L}^{-1}[\cot^{-1}(1+s)]</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+         Let <m>F(s) = \cot^{-1}(1+s)</m>
+         we know that 
+         <me>
+          \mathscr{L}[tf(t)] =-\frac{\,d}{\,ds}F(s)=-\frac{\,d}{\,ds}\left[\cot^{-1}(1+s)\right] 
+         </me>
+         <me>
+          = -\left[\frac{-1}{1+(1+s)^{2}}\right] = \frac{1}{(s+1)^{2}+1}
+         </me>
+         or,
+         <me>
+          tf(t) = \mathscr{L}^{-1}\left[\frac{1}{(s+1)^{2}+1}\right] =e^{-t}\sin t
+         </me>
+         <me>
+          \therefore f(t) = \frac{1}{t}\left[e^{-t}\sin t\right].
+         </me>
+        </p>
+      </solution>
+    </example>
+    <example>
+      <statement>
+        <p>
+          Find the Laplace Transform of <m>\frac{\sin 2t}{t}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+            \mathscr{L}[\sin 2t] = \frac{2}{s^{2}+4} 
+          </me>
+          Now,
+          <me>
+            \mathscr{L}\left[\frac{\sin2t}{t}\right] = 	\int\limits_{s}^{\infty}\frac{2}{s^{2}+4}\,ds
+          </me>
+          <me>
+            =2.\frac{1}{2}\left[\tan^{-1}\frac{s}{2}\right]_{s}^{\infty} = \left[\tan^{-1}\infty -\tan^{-1}\frac{s}{2}\right]
+          </me>
+          <me>
+             = \frac{\pi}{2}-\tan^{-1}\frac{s}{2} = \cot^{-1}\frac{s}{2}.
+          </me>
+        </p>
+      </solution>
+    </example>
+
+    <example>
+      <statement>
+        <p>
+          Find the Laplace Transform of <m>\frac{1-\cos t}{t^{2}}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          <me>
+             \mathscr{L}[1-\cos t] = L[1]-L[\cos t] = \frac{1}{s}-\frac{s}{s^{2}+1}
+          </me>
+          or,
+          <me>
+           \mathscr{L}\left[\frac{1-\cos t}{t}\right] = \int\limits_{s}^{\infty}\left(\frac{1}{s}-\frac{s}{s^{2}+1}\right)\,ds 
+          </me>
+          <me>
+            = \left[\log s-\frac{1}{2}\log (s^{2}+1)\right]_{s}^{\infty}  =\frac{1}{2}\left[\log s^{2}-\log (s^{2}+1)\right]_{s}^{\infty}  
+          </me>
+          <me>
+           =\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}\right]_{s}^{\infty} =\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}(1+1/s^{2})}\right]_{s}^{\infty} 
+          </me>
+          <me>
+            = \frac{1}{2}\left[0-\log \frac{s^{2}}{s^{2}+1}\right] = -\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}\right]
+          </me>
+          
+          again
+          <me>
+            \mathscr{L}\left[\frac{1-\cos t}{t^{2}}\right]  =- \frac{1}{2} \int\limits_{s}^{\infty}\log  \frac{s^{2}}{s^{2}+1} \,ds 
+          </me>
+          <me>
+            	= - \frac{1}{2} \int\limits_{s}^{\infty}\log - \frac{1}{2} \int\limits_{s}^{\infty}\log \left(\frac{s^{2}}{s^{2}+1}.1\right)\,ds
+          </me>
+        </p>
+        <p>
+          Integrating by parts, we have 
+          <me>
+            =-	\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}.s-\int\limits_{s}^{\infty}\frac{s^{2}+1}{s^{2}}.\frac{(s^{2}+1).2s -s^{2}(2s)s}{(s^{2}+1)^{2}}	\,ds\right]_{s}^{\infty}
+          </me>
+        <me>
+          =-\frac{1}{2}\left[s \log \frac{s^{2}}{s^{2}+1}-2\int\limits_{s}^{\infty}\frac{1}{s^{2}+1}\,ds\right]_{s}^{\infty} 
+        </me>
+        <me>
+          = -\frac{1}{2}\left[s \log \frac{s^{2}}{s^{2}+1}-2\tan ^{-1}s\right]_{s}^{\infty}
+        </me>
+        
+          <me>
+            =-\frac{1}{2}\left[0-2(\pi/2) -s \log \frac{s^{2}}{s^{2}+1}+2\tan ^{-1}s\right]
+          </me>
+          <me>
+             = -\frac{1}{2}\left[-\pi-s \log \frac{s^{2}}{s^{2}+1}+2\tan ^{-1}s\right]	
+          </me>
+          <me>
+            = \frac{\pi}{2}+\frac{s}{2} \log \frac{s^{2}}{s^{2}+1}-\tan^{-1}s
+          </me>
+          <me>
+             = \left(\frac{\pi}{2}-\tan^{-1}s \right) +\frac{s}{2} \log \frac{s^{2}}{s^{2}+1}
+          </me>
+          <me>
+            =\cot^{-1}s + \frac{s}{2} \log \frac{s^{2}}{s^{2}+1}.
+          </me>
+          </p>
+      </solution>
+    </example>
+</section>
