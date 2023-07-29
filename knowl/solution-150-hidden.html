@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para logical">
+<div class="para">As <span class="process-math">\((u)_{x=0}\)</span> is given we can apply sine transform to the given equation so that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{F}_{s}\{\frac{\partial u}{\partial t}\} =k\mathscr{F_{s}}\{\frac{\partial^{2}u}{\partial x^{2}}\}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{\infty}\frac{\partial u}{\partial t}\sin sx\,dx = k \int\limits_{0}^{\infty}\frac{\partial^{2}u}{\partial x^{2}}\sin sx\,dx
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial}{\partial t}\int\limits_{0}^{\infty}u\sin sx\,dx = k\{\left.\frac{\partial u}{\partial x}\sin sx\right\vert_{0}^{\infty}-s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\cos sx\,dx\}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial}{\partial t}\bar{u_{s}}=k\{0-s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\cos sx\,dx\}
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\([\because  {\frac{\partial u}{\partial x}\to 0}\)</span> as  <span class="process-math">\({x\to \infty}\)</span>]</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=	ks\{\left.u\cos sx\right\vert_{0}^{\infty}+s \int\limits_{0}^{\infty}u\sin sx\,dx\}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=ks\{u(0,t)\cos (0.s) - s\bar{u}_{s}\}
+\end{equation*}
+</div>
+<div class="para">as <span class="process-math">\({u\to 0}\text{,}\)</span>  for <span class="process-math">\({x \to \infty}\text{.}\)</span> Or,</div>
+<div class="displaymath process-math">
+\begin{equation}
+\frac{\partial}{\partial t}\bar{u}_{s} = ks^{2}\bar{u}_{s}\tag{6.2.8}
+\end{equation}
+</div>
+</div> <div class="para logical">
+<div class="para">The solution of this equation is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation}
+\bar{u}_{s} = A e^{-ks^{2}t}\tag{6.2.9}
+\end{equation}
+</div>
+<div class="para">To find <span class="process-math">\(A\text{,}\)</span> set  <span class="process-math">\(t=0\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-FT_appl4.html" title="Equation 6.2.9">(6.2.9)</a>, then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation*}
+A=\bar{u}_{s}(s,0) = \int\limits_{0}^{\infty}u(x,0)\sin sx\,dx
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation*}
+A = \int\limits_{0}^{1}1.\sin sx\,dx + \int\limits_{1}^{\infty}0.\sin sx\,dx
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation*}
+A = -\left.\frac{\cos sx}{s}\right\vert_{0}^{1} = \frac{1-\cos s}{s}
+\end{equation*}
+</div>
+<div class="para">substituting this value of <span class="process-math">\(A\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-FT_appl4.html" title="Equation 6.2.9">(6.2.9)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation}
+\bar{u}_{s}=\frac{1-\cos s}{s}e^{-ks^{2}t}\tag{6.2.10}
+\end{equation}
+</div>
+<div class="para">applying inverse Fourier sine transform, we have	-</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation}
+u(x,t) = \frac{2}{\pi}\int\limits_{0}^{\infty}\frac{1-\cos s}{s}e^{-ks^{2}t}\sin sx\,ds\tag{6.2.11}
+\end{equation}
+</div>
+</div>
+</div></body>
+</html>

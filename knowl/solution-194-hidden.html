@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para logical">
+<div class="para">
+<div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/fig77.png" class="contained"></div>. The deflection of the square membrane is given by the two-dimensional wave equation</div>
+<div class="displaymath process-math">
+\begin{equation}
+\frac{\partial^{2} u}{\partial t^{2}}=v^{2}\left[\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}\right] \tag{7.2.26}
+\end{equation}
+</div>
+<div class="para">The boundary conditions are given as</div>
+<div class="displaymath process-math">
+\begin{equation}
+\left.\begin{aligned}	
+u(0,y,t) = 0=u(1,y,t)\\
+u(x,0,t) = 0=u(x,1,t)
+\end{aligned}\right\} \tag{7.2.27}
+\end{equation}
+</div>
+<div class="para">as <span class="process-math">\(a=b=1\)</span>  is the sides of the membrane. The initial conditions are</div>
+<div class="displaymath process-math">
+\begin{equation}
+u(x,y,0) =f(x,y) = A\sin \pi x\sin 2\pi y \quad   \text{and} \quad   \left.\frac{\partial u}{\partial t}\right\vert_{t=0}=0 \tag{7.2.28}
+\end{equation}
+</div>
+</div> <div class="para logical">
+<div class="para">Therefore the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-waveeqn1.html" title="Equation 7.2.26">(7.2.26)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation}
+u(x,y,t)=\sum\limits_{m=1}^{\infty}A_{mn}\cos\lambda_{mn}t\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}	\tag{7.2.29}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{mn}=\frac{4}{1\cdot 1}\int\limits_{x=0}^{1}\int\limits_{y=0}^{1}f(x,y)\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}\,dx\,dy 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation}
+=4\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin 2\pi y \sin m\pi x\sin n\pi y\,dx\,dy \tag{7.2.30}
+\end{equation}
+</div>
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{m1}=A_{m3}=A_{m4}=\cdots=0
+\end{equation*}
+</div>
+<div class="para">but,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{m2} =4A\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin m\pi x\sin^{2} 2\pi y\,dx\,dy 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= 2A\int\limits_{0}^{1}\int\limits_{0}^{1}\sin \pi x\sin m\pi x(1-\cos4\pi y)\,dx\,dy
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=2A\int\limits_{0}^{1}\sin \pi x\sin m\pi x\left(y-\frac{1}{4\pi}\sin 4\pi y\right)_{0}^{1}\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= 2A \int\limits_{0}^{1}\sin \pi x\sin m\pi x\,dx 
+\end{equation*}
+</div>
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{22}= A_{32}=A_{42}=\cdots=0
+\end{equation*}
+</div>
+<div class="para">Also, we find</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{12} =2A\int\limits_{0}^{1}\sin \pi x\sin \pi x\,dx = A\int\limits_{0}^{1}(1-\cos 2\pi x)\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= A\left(x-\frac{\sin 2\pi x}{2\pi}\right)_{0}^{1}=A.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+\therefore \quad u(x,y,t)= A_{12}\cos\lambda_{12}t\sin\pi x\sin 2\pi y 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=A\cos\sqrt{5}\pi t\sin\pi x\sin 2\pi t
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+[ \because \quad \lambda_{12}^{2}=1^{2}\cdot k_{12}^{2}=\pi^{2}(1^{2}+2^{2}); \quad \therefore \quad \lambda_{12}=\pi \sqrt{5}].
+\end{equation*}
+</div>
+</div>
+</div></body>
+</html>

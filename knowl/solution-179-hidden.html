@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para logical">
+<div class="para">From the given circuit, <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/fig62.png" class="contained"></div> we can have the equation as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+RI+L\frac{\,dI}{\,dt}+\frac{Q}{C}=E_{o}
+\end{equation*}
+</div>
+<div class="para">using Kirchhoff's voltage law.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\because \frac{\,dQ}{\,dt} = I
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\,dQ = I\,dt
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q(t) = \int\limits_{0}^{t}I(t)\,dt+c
+\end{equation*}
+</div>
+<div class="para">where  <span class="process-math">\(c\)</span> is an integration constant. At <span class="process-math">\(t=0\text{,}\)</span> <span class="process-math">\(Q=Q_{o}\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">
+<span class="process-math">\(\therefore c=Q_{o}\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q(t) = \int\limits_{0}^{t}I(t)\,dt+Q_{o}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+RI+L\frac{\,dI}{\,dt}+\frac{1}{C}\{Q_{o}+\int\limits_{0}^{t}I(t)\,dt\}=E_{o}
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">Taking Laplace transform on bothe sides, we get-</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Ri(s)+L[si(s)-i(0)]+\frac{1}{C}\{Q_{o}\frac{1}{s}+\frac{i(s)}{s}\}=E_{o}\frac{1}{s}
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\(\because \quad \mathscr{L}[I(t)] =i(s)]\)</span> or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left(R+Ls+\frac{1}{Cs}\right)i(s) = \frac{E_{o}-Q_{o}/C}{s}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+i(s)=\frac{E_{o}-Q_{o}/C}{\left(Rs+Ls^{2}+\frac{1}{C}\right)}= \frac{E_{o}-Q_{o}/C}{L\left(\frac{Rs}{L}+s^{2}+\frac{1}{LC}\right)}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{E_{o}-Q_{o}/C}{L\left[ \{s^{2}+2s\frac{R}{2L}+\left(\frac{R}{2L}\right)^{2}\} +\{\frac{1}{LC}-\left(\frac{R}{2L}\right)^{2}\}\right] }
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{E_{o}-Q_{o}/C}{L\left[ \left(s+\frac{R}{2L}\right)^{2}+\{\frac{1}{LC}-\left(\frac{R^{2}}{4L^{2}}\right)\}\right]} = \frac{E_{o}-Q_{o}/C}{L[(s+a)^{2}+b^{2}]}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(a=\frac{R}{2L} \)</span> and <span class="process-math">\(b= \sqrt{\frac{1}{LC}-\frac{R^{2}}{4L^{2}}}.\)</span> but</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[e^{-at}\sin bt] = \frac{b}{(s+a)^{2}+b^{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore i(t)= \mathscr{L}^{-1}\left[ \frac{E_{o}-Q_{o}/C}{L\{(s+a)^{2}+b^{2}\}}\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{E_{o}-Q_{o}/C}{L} \left(\frac{1}{b}e^{-at}\sin bt\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left(\frac{E_{o}-Q_{o}/C}{L\sqrt{\frac{1}{LC}-\frac{R^{2}}{4L^{2}}}}\right)\left\{e^{-\frac{R}{2l}t}\sin \left( \sqrt{\frac{1}{LC}-\frac{R^{2}}{4L^{2}}}\right)t \right\}
+\end{equation*}
+</div>
+<div class="para">which is the required result for the current at any time <span class="process-math">\(t\text{.}\)</span>
+</div>
+</div>
+</div></body>
+</html>

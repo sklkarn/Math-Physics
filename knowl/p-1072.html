@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">we have the equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation}
+y''(t) +ty'(t)-y(t) =0\tag{6.6.5}
+\end{equation}
+</div>
+<div class="para">Taking Laplace transform of equation <a href="" class="xref" data-knowl="./knowl/eqn-varCoef_LT1.html" title="Equation 6.6.5">(6.6.5)</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+\mathscr{L}\{y''(t) +ty'(t)-y(t)\} =\mathscr{L}\{0\} 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+\mathscr{L}\{y''(t)\} +\mathscr{L}\{ty'(t)\}-\mathscr{L}\{y(t)\} =\mathscr{L}\{0\}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+s^{2}Y(s) -sy(0) -y'(0) +(-1)^{1}\frac{\,d}{\,ds} [sY(s)-y(0)] -Y(s) =0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+[\because \mathscr{L}[y'(t)] = sY(s) -y(0)]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+s^{2}Y(s)-1-\frac{\,d}{\,ds}\{sY(s)\}-Y(s) =0 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+s^{2}Y(s)-[sY'(s)+Y(s)]-Y(s) =1
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+s^{2}Y(s)-sY'(s)-Y(s)]-Y(s) =1
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+(s^{2}-2)Y(s)-sY'(s) =1 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+Y'(s)-(s-2/s)Y(s) =-1/s
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+Y'(s)+(\frac{2}{s}-s)Y(s) =-\frac{1}{s}
+\end{equation*}
+</div>
+<div class="para">which is a linear equation of the first order, like <span class="process-math">\([y' +P(x)y =Q(x)]\text{.}\)</span> The integrating factor of which is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+I  = \int P(x)\,dx =\int(\frac{2}{s}-s)\,ds =2\log s-\frac{s^{2}}{2}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+e^{I}=e^{2\log s-\frac{s^{2}}{2}} =e^{\log s^{2}-\frac{s^{2}}{2}} =s^{2}e^{-s^{2}/2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+\therefore  \frac{\,d}{\,ds}[ye^{I}]=Qe^{I}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+\frac{\,d}{\,ds}	\left[Y(s)s^{2}e^{-s^{2}/2}\right] =-\frac{1}{s} s^{2}e^{-s^{2}/2}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+Y(s)s^{2}e^{-s^{2}/2}=\int-se^{-s^{2}/2}\,ds =+\frac{1}{2}\frac{e^{-s^{2}/2}}{1/2}+C
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+\therefore  Y(s) = \frac{1}{s^{2}}+\frac{C}{s^{2}}e^{s^{2}/2}
+\end{equation*}
+</div>
+<div class="para">Since <span class="process-math">\(Y(s)\)</span> vanishes as <span class="process-math">\(x \to \infty\text{,}\)</span> hence C must vanish.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+\therefore \quad Y(s) = \frac{1}{s^{2}}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-varCoef_LT1.html">
+\begin{equation*}
+y(t) = \mathscr{L}^{-1}\{\frac{1}{s^{2}}\} =\frac{t}{1!}=t
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_sixth-examplesC.html#p-1072" class="internal">in-context</a></span>
+</body>
+</html>

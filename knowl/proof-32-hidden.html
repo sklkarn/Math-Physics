@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">Fourier series of a function <span class="process-math">\(f(x)\)</span> in interval <span class="process-math">\((-c,c)\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation}
+f(x) = \frac{a_{o}}{2}+\sum\limits_{n=1}^{\infty}a_{n}\cos \left(\frac{n\pi x}{c}\right)+b_{n}\sin \left(\frac{n\pi x}{c}\right)\tag{6.1.2}
+\end{equation}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt + \sum\limits_{n=1}^{\infty}\frac{1}{c}\int\limits_{-c}^{c}f(t)\cos \left(\frac{n\pi t}{c}\right)\cos \left(\frac{n\pi x}{c}\right)\,dt
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++ \sum\limits_{n=1}^{\infty}\frac{1}{c}\int\limits_{-c}^{c}f(t)\sin \left(\frac{n\pi t}{c}\right)\sin \left(\frac{n\pi x}{c}\right)\,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=  \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt+ \frac{1}{c}\int\limits_{-c}^{c}f(t)\left[\sum\limits_{n=1}^{\infty}\cos \frac{n\pi (t-x)}{c}\right]\,dt 	  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
+=\frac{1}{2c}\int\limits_{-c}^{c}f(t)\left[1+2\sum\limits_{n=1}^{\infty}\cos \frac{n\pi (t-x)}{c}\right]\,dt\tag{6.1.3}
+\end{equation}
+</div>
+</div> <div class="para logical">
+<div class="para">since cosine functions are even function, we have <span class="process-math">\(\cos (-\theta) = \cos \theta\text{.}\)</span> Hence the expression</div>
+<div class="displaymath process-math">
+\begin{equation*}
+1+2\sum\limits_{n=1}^{\infty}\cos \frac{n\pi (t-x)}{c} = 1+\sum\limits_{n=1}^{\infty}\left\{\cos \frac{n\pi (t-x)}{c}+\cos \frac{-n\pi (t-x)}{c}\right\}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 1+ \sum\limits_{n=-\infty}^{\infty}\left\{\cos \frac{n\pi (t-x)}{c}\right\}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore f(x) = \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt + \frac{1}{2\pi}\int\limits_{-c}^{c}f(t)\left[\sum\limits_{n=-\infty}^{\infty}\left\{\frac{\pi}{c}\cos \frac{n\pi (t-x)}{c}\right\}\right]\,dt 
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">Now assume that <span class="process-math">\(c\)</span> increases indefinitely and making use of definition of integral as a limit of sum, we can write -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{n\pi}{c}=p \quad  \text{and}\quad \frac{\pi}{c}=\frac{p}{n}= \,dp
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore  \quad \lim\limits_{c\to \infty}\left[\frac{\pi}{c} \sum\limits_{n=-\infty}^{\infty}\cos \frac{n\pi (t-x)}{c}\right] = \int\limits_{-\infty}^{\infty}\cos p(t-x)\,dp
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation}
+f(x) = 0+ \frac{1}{2\pi} \int\limits_{-\infty}^{\infty} f(t)\,dt\int\limits_{-\infty}^{\infty}\cos p(t-x)\,dp\tag{6.1.4}
+\end{equation}
+</div>
+<div class="para">here</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt = 0
+\end{equation*}
+</div>
+<div class="para">at  <span class="process-math">\(c\rightarrow \infty\)</span>  and making use of the fact</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{-\infty}^{\infty} |f(x)|\,dx \quad \text{ is convergent. }
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
+f(x) = \frac{1}{2\pi}\int\limits_{p=-\infty}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)\cos p(t-x)\,dp \,dt\tag{6.1.5}
+\end{equation}
+</div>
+<div class="para">which is known as Fourier integral.</div>
+</div></article></body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">The position vector of any point in a cylindrical coordinate is defined as</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\vec{r}= x\hat{i}+y\hat{j}+z\hat{k}= \rho\cos\phi\hat{i}+\rho\sin\phi\hat{j}+z\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+=\rho\cos\phi(\cos\phi\hat{e}_{\rho}-\sin\phi\hat{e}_{\phi})+\rho\sin\phi(\sin\phi\hat{e}_{\rho}+\cos\phi\hat{e}_{\phi})+z\hat{e}_{z}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+=\rho\hat{e_{\rho}} +z \hat{e_{z}}
+\end{equation*}
+</div>
+<div class="para">from solving the entities <a href="" class="xref" data-knowl="./knowl/eqn-unit_vect1.html" title="Equation 1.7.1">(1.7.1)–(1.7.3)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\left[\hat{e}_{\rho}= \cos\phi\hat{i}+\sin\phi\hat{j}, \hat{e}_{\phi} = -\sin\phi\hat{i}+\cos\phi\hat{j}, \hat{e}_{z} = \hat{k}\right] 
+\end{equation*}
+</div>
+<div class="para">We get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+\hat{i}= \cos\phi\hat{e}_{\rho}-\sin\phi\hat{e}_{\phi},\tag{1.7.4}
+\end{equation}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+\hat{j}= \sin\phi\hat{e_{\rho}}+\cos\phi\hat{e_{\phi}}, \tag{1.7.5}
+\end{equation}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation}
+\hat{k}=\hat{e_{z}}\tag{1.7.6}
+\end{equation}
+</div>
+<div class="para">and,</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\vec{v}= \frac{d \vec{r}}{d t} =  \frac{d\rho}{d t}\hat{e}_{\rho} +\rho\frac{d\hat{e}_{\rho}}{d t}+ 
+\frac{d z}{d t}\hat{e}_{z} +z\frac{d\hat{e}_{z}}{d t}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+= \dot{\rho} \hat{e_{\rho}}+\rho \hat{e_{\phi}}\dot{\phi} + \dot{z}\hat{e_{z}} +0
+\end{equation*}
+</div>
+<div class="para">Again differentiating <span class="process-math">\(v\)</span> w.r.to 't', we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+\vec{a}=  \frac{d^{2} \vec{r}}{d t^{2}}	 = \frac{d}{dt}(\dot{\rho} \hat{e}_{\rho}+\rho \hat{e}_{\phi}\dot{\phi} + \dot{z}\hat{e}_{z})
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+=\dot{\rho} \frac{d \hat{e}_{\rho}}{dt}+\ddot{\rho}\hat{e}_{\rho} + \rho\dot{\phi}\frac{d \hat{e}_{\phi}}{dt} + \rho\ddot{\phi} \hat{e}_{\phi} + \dot{\rho} \dot{\phi}\hat{e}_{\phi} + \ddot{z}\hat{e}_{z}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+=\dot{\rho}\dot{\phi}\hat{e}_{\phi} + \ddot{\rho}\hat{e}_{\rho}+\rho\dot{\phi}(-\dot{\phi}\hat{e}_{\rho})+\rho\ddot{\phi} \hat{e}_{\phi}+\dot{\rho} \dot{\phi}\hat{e}_{\phi} + \ddot{z}\hat{e}_{z}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+=(\ddot{\rho}-\rho\dot{\phi}^{2})\hat{e}_{\rho} +(\rho\ddot{\phi}+2\dot{\rho}\dot{\phi})\hat{e}_{\phi} + \ddot{z}\hat{e}_{z}
+\end{equation*}
+</div>
+<div class="para"><a href="" class="fn-knowl original" data-knowl="./knowl/fn-2-hidden.html" title="Footnote 1.7.1"><sup> 1 </sup></a></div>
+</div>
+<span class="incontext"><a href="sec_first-examplesC.html#p-170" class="internal">in-context</a></span>
+</body>
+</html>

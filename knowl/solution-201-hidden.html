@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para">The boundary conditions are</div> <ol class="lower-roman">
+<li><div class="para">
+<span class="process-math">\(u=0\text{,}\)</span>  when <span class="process-math">\(\theta=0 \)</span>  for <span class="process-math">\(0 \leq r \lt a\text{,}\)</span>
+</div></li>
+<li><div class="para">
+<span class="process-math">\(u\)</span> is finite, when <span class="process-math">\(r \to 0\text{,}\)</span>
+</div></li>
+<li><div class="para">
+<span class="process-math">\(u=T\text{,}\)</span> when <span class="process-math">\(r=a\)</span> for <span class="process-math">\(0 \lt \theta \lt \pi\text{.}\)</span>
+</div></li>
+</ol> <div class="para logical">
+<div class="para">The solution of this problem is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-semi_cir1.html ./knowl/eqn-semi_cir1.html">
+\begin{equation*}
+u=a_{o}\log r
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-semi_cir1.html ./knowl/eqn-semi_cir1.html">
+\begin{equation}
++\sum\limits_{n=1}^{\infty}\left(a_{n}\cos n\theta + b_{n}\sin n\theta\right)\left(p_{n}r^{n}+q_{n}r^{-n}\right) +C_{o}  \tag{7.4.26}
+\end{equation}
+</div>
+<div class="para">But <span class="process-math">\(u\)</span> is finite when <span class="process-math">\(r \to 0\text{.}\)</span> Eqn. <a href="" class="xref" data-knowl="./knowl/eqn-semi_cir1.html" title="Equation 7.4.26">(7.4.26)</a> must not contain terms of <span class="process-math">\(\log r\)</span> and <span class="process-math">\(r^{-n}\)</span> and this will be so when <span class="process-math">\(a_{o}=0 =q_{n}\text{.}\)</span> Thus eqn. <a href="" class="xref" data-knowl="./knowl/eqn-semi_cir1.html" title="Equation 7.4.26">(7.4.26)</a>  reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-semi_cir1.html ./knowl/eqn-semi_cir1.html">
+\begin{equation}
+u=\sum\limits_{n=1}^{\infty}\left(L_{n}\cos n\theta + M_{n}\sin n\theta\right)r^{n} +C_{o} \tag{7.4.27}
+\end{equation}
+</div>
+<div class="para">from condition (i), <span class="process-math">\(C_{o}=0  \text{.}\)</span> Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-semi_cir1.html ./knowl/eqn-semi_cir1.html">
+\begin{equation*}
+u=\sum\limits_{n=1}^{\infty}\left(L_{n}\cos n\theta + M_{n}\sin n\theta\right)r^{n}
+\end{equation*}
+</div>
+<div class="para">from condition (iii),</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-semi_cir1.html ./knowl/eqn-semi_cir1.html">
+\begin{equation*}
+T= \sum\limits_{n=1}^{\infty}\left(L_{n}\cos n\theta + M_{n}\sin n\theta\right)a^{n}
+\end{equation*}
+</div>
+<div class="para">from which we can find</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-semi_cir1.html ./knowl/eqn-semi_cir1.html">
+\begin{equation*}
+L_{n} = \frac{2}{\pi}\int\limits_{0}^{\pi}\frac{T}{a^{n}} \cos n\theta \,d\theta  \quad = \frac{2T}{\pi a^{n}}\int\limits_{0}^{\pi} \cos n\theta \,d\theta =0 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-semi_cir1.html ./knowl/eqn-semi_cir1.html">
+\begin{equation*}
+M_{n} = \frac{2}{\pi}\int\limits_{0}^{\pi}\frac{T}{a^{n}} \sin n\theta \,d\theta  
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-semi_cir1.html ./knowl/eqn-semi_cir1.html">
+\begin{equation*}
+= \frac{2T}{\pi a^{n}}\int\limits_{0}^{\pi} \sin n\theta \,d\theta = \frac{2T}{n\pi a^{n}}(1-\cos n\pi) 
+\end{equation*}
+</div>
+<div class="para">Hence, the required solution is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-semi_cir1.html ./knowl/eqn-semi_cir1.html">
+\begin{equation*}
+u= \frac{2T}{n\pi a^{n}}\sum\limits_{n=1}^{\infty}(1-\cos n\pi)r^{n} \sin n\theta.
+\end{equation*}
+</div>
+</div>
+</div></body>
+</html>

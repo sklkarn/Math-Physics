@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<div class="solution solution-like">
+<h2 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.4.18.1</span><span class="period">.</span>
+</h2>
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[1-\cos t] = L[1]-L[\cos t] = \frac{1}{s}-\frac{s}{s^{2}+1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}\left[\frac{1-\cos t}{t}\right] = \int\limits_{s}^{\infty}\left(\frac{1}{s}-\frac{s}{s^{2}+1}\right)\,ds 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left[\log s-\frac{1}{2}\log (s^{2}+1)\right]_{s}^{\infty}  =\frac{1}{2}\left[\log s^{2}-\log (s^{2}+1)\right]_{s}^{\infty}  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}\right]_{s}^{\infty} =\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}(1+1/s^{2})}\right]_{s}^{\infty} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{2}\left[0-\log \frac{s^{2}}{s^{2}+1}\right] = -\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}\right]
+\end{equation*}
+</div>
+<div class="para">again</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}\left[\frac{1-\cos t}{t^{2}}\right]  =- \frac{1}{2} \int\limits_{s}^{\infty}\log  \frac{s^{2}}{s^{2}+1} \,ds 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= - \frac{1}{2} \int\limits_{s}^{\infty}\log - \frac{1}{2} \int\limits_{s}^{\infty}\log \left(\frac{s^{2}}{s^{2}+1}.1\right)\,ds
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">Integrating by parts, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-	\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}.s-\int\limits_{s}^{\infty}\frac{s^{2}+1}{s^{2}}.\frac{(s^{2}+1).2s -s^{2}(2s)s}{(s^{2}+1)^{2}}	\,ds\right]_{s}^{\infty}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-\frac{1}{2}\left[s \log \frac{s^{2}}{s^{2}+1}-2\int\limits_{s}^{\infty}\frac{1}{s^{2}+1}\,ds\right]_{s}^{\infty} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= -\frac{1}{2}\left[s \log \frac{s^{2}}{s^{2}+1}-2\tan ^{-1}s\right]_{s}^{\infty}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-\frac{1}{2}\left[0-2(\pi/2) -s \log \frac{s^{2}}{s^{2}+1}+2\tan ^{-1}s\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= -\frac{1}{2}\left[-\pi-s \log \frac{s^{2}}{s^{2}+1}+2\tan ^{-1}s\right]	
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{\pi}{2}+\frac{s}{2} \log \frac{s^{2}}{s^{2}+1}-\tan^{-1}s
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left(\frac{\pi}{2}-\tan^{-1}s \right) +\frac{s}{2} \log \frac{s^{2}}{s^{2}+1}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\cot^{-1}s + \frac{s}{2} \log \frac{s^{2}}{s^{2}+1}.
+\end{equation*}
+</div>
+</div>
+</div>
+<span class="incontext"><a href="sec_sixth-examplesB.html#solution-170" class="internal">in-context</a></span>
+</body>
+</html>

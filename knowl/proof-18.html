@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h4 class="heading"><span class="type">Proof</span></h4>
+<div class="para logical">
+<div class="para">We know that the Bessel's equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation}
+t^{2}\frac{d^{2}y}{dt^{2}}+t\frac{\,dy}{\,dt}+(t^{2}-n^{2})y=0 \tag{4.7.27}
+\end{equation}
+</div>
+<div class="para">is satisfied by <span class="process-math">\(J_{n}(t)\text{.}\)</span> Now put <span class="process-math">\(t=\alpha x \)</span> and <span class="process-math">\(y=u= J_{n}(\alpha x)\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_orth1.html" title="Equation 4.7.27">(4.7.27)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+\frac{\,dt}{\,dx}=\alpha, 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+\frac{\,dy}{\,dt}=\frac{\,du}{\,dt} = \frac{\,du}{\,dx}\cdot\frac{\,dx}{\,dt}=\frac{1}{\alpha}\frac{\,du}{\,dx}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+\frac{d^{2}y}{dt^{2}}=\frac{\,d}{\,dt}\left(\frac{\,dy}{\,dt}\right)=\frac{1}{\alpha}\frac{d}{dx}\left(\frac{1}{\alpha}\frac{\,du}{\,dx}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+=\frac{1}{\alpha^{2}}\frac{d^{2}u}{dx^{2}}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+\left[\because \quad \frac{d}{dt}= \frac{1}{\alpha}\frac{d}{dx}\right]
+\end{equation*}
+</div>
+<div class="para">Substituting these values in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_orth1.html" title="Equation 4.7.27">(4.7.27)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation}
+x^{2}\frac{d^{2}u}{dx^{2}}+x\frac{du}{dx}+(\alpha^{2}x^{2}-n^{2})u=0 \tag{4.7.28}
+\end{equation}
+</div>
+<div class="para">Similarly by putting <span class="process-math">\(t=\beta x\)</span> and <span class="process-math">\(y=v=J_{n}(\beta x)\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_orth1.html" title="Equation 4.7.27">(4.7.27)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation}
+x^{2}\frac{d^{2}v}{dx^{2}}+x\frac{dv}{dx}+(\beta^{2}x^{2}-n^{2})v=0 	\tag{4.7.29}
+\end{equation}
+</div>
+<div class="para">Multiplying equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_orth2.html" title="Equation 4.7.28">(4.7.28)</a> by <span class="process-math">\(\frac{v}{x}\)</span> and equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_orth3.html" title="Equation 4.7.29">(4.7.29)</a> by <span class="process-math">\(\frac{u}{x}\)</span> and then subtracting, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+x\left[v\frac{d^{2}u}{dx^{2}}-u\frac{d^{2}v}{dx^{2}}\right]+\left[v\frac{du}{dx}-u\frac{dv}{dx}\right]+(\alpha^{2}-\beta^{2})uvx=0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation}
+\frac{d}{dx}\left[x\left(v\frac{du}{dx}-u\frac{dv}{dx}\right)\right]+(\alpha^{2}-\beta^{2})uvx=0\tag{4.7.30}
+\end{equation}
+</div>
+<div class="para">Integrating equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_orth4.html" title="Equation 4.7.30">(4.7.30)</a> w. r. t. 'x' between the limits 0 to 1, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+\left[x\left(v\frac{du}{dx}-u\frac{dv}{dx}\right)\right]_{0}^{1}+(\alpha^{2}-\beta^{2})\int\limits_{0}^{1}uvx\,dx=0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation}
+(\beta^{2}-\alpha^{2})\int\limits_{0}^{1}uvx\,dx =\left(v\frac{du}{dx}-u\frac{dv}{dx}\right)_{x=1}\tag{4.7.31}
+\end{equation}
+</div>
+<div class="para">putting the values of <span class="process-math">\(u=J_{n}(\alpha x)\text{,}\)</span> <span class="process-math">\(\frac{du}{dx}=\alpha J'_{n}(\alpha x)\)</span> and	 <span class="process-math">\(v= J_{n}(\beta x)\text{,}\)</span> <span class="process-math">\(\frac{dv}{dx}=\beta J'_{n}(\beta x)\)</span> in equation ,<a href="" class="xref" data-knowl="./knowl/eqn-bessl_orth5.html" title="Equation 4.7.31">(4.7.31)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+(\beta^{2}-\alpha^{2})\int\limits_{0}^{1}x J_{n}(\alpha x)J_{n}(\beta x)\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+=\left[J_{n}(\beta x)\alpha J'_{n}(\alpha x)-J_{n}(\alpha x)\beta J'_{n}(\beta x)\right]_{x=1}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation}
+=\alpha	J'_{n}(\alpha) J_{n}(\beta)-\beta J'_{n}(\beta) J_{n}(\alpha)	\tag{4.7.32}
+\end{equation}
+</div>
+<div class="para">since <span class="process-math">\(\alpha \)</span> and <span class="process-math">\(\beta \)</span> are the roots of <span class="process-math">\(J_{n}(x)=0 \text{,}\)</span> we have - <span class="process-math">\(J_{n}(\alpha)=0\)</span> 	and <span class="process-math">\(J_{n}(\beta)=0\text{,}\)</span> putting these values in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_orth6.html" title="Equation 4.7.32">(4.7.32)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+(\beta^{2}-\alpha^{2})\int\limits_{0}^{1}x J_{n}(\alpha x)J_{n}(\beta x)\,dx=0
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html">
+\begin{equation*}
+\int\limits_{0}^{1}x J_{n}(\alpha x)J_{n}(\beta x)\,dx=0.
+\end{equation*}
+</div>
+</div></article><span class="incontext"><a href="subsec-bessl_fn.html#proof-18" class="internal">in-context</a></span>
+</body>
+</html>

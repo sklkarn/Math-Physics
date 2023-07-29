@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">From Fourier integral formula</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \frac{1}{\pi}\int\limits_{p=0}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)\cos p(t-x)\,dp\,dt
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2\pi}\int\limits_{p=0}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)\left[e^{-ip(t-x)}+e^{ip(t-x)}\right]\,dp\,dt
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2\pi}\int\limits_{p=0}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)	\left[e^{-ipt}.e^{ipx}+e^{ipt}e^{-ipx}\right]\,dp\,dt  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt+\frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}e^{ipt}e^{-ipx}\,(-dp)\,dt
+\end{equation*}
+</div>
+</div> <div class="para logical">
+<div class="para">Putting <span class="process-math">\(p=-p'\)</span> in the second integral, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt+\frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}e^{-ip' t}e^{ip' x}\,(-dp')\,dt
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt+\frac{1}{2\pi}\int\limits_{-\infty}^{0}\int\limits_{-\infty}^{\infty}e^{-ipt}e^{ipx}\,dp\,dt
+\end{equation*}
+</div>
+<div class="para">(on dropping primes)</div>
+<div class="displaymath process-math">
+\begin{equation}
+f(x) = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt\tag{6.1.8}
+\end{equation}
+</div>
+</div> <div class="para logical">
+<div class="para">
+<dfn class="terminology">Note:</dfn>  putting <span class="process-math">\(p=-p'\text{,}\)</span> in the last integral, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fint_trans7.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans7.html">
+\begin{equation}
+f(x) = \frac{1}{2\pi}\int\limits_{\infty}^{-\infty}\int\limits_{-\infty}^{\infty}f(t)e^{ip' t}.e^{-ip' x}\,(-dp)\,dt\tag{6.1.9}
+\end{equation}
+</div>
+<div class="para">from equations <a href="" class="xref" data-knowl="./knowl/eqn-fint_trans7.html" title="Equation 6.1.8">(6.1.8)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-fint_trans8.html" title="Equation 6.1.9">(6.1.9)</a>, it is clear that the negative sign in the exponent <span class="process-math">\((-ipt)\)</span> can be shifted to <span class="process-math">\((ipx)\)</span> without effecting the value of integral. Thus equation <a href="" class="xref" data-knowl="./knowl/eqn-fint_trans8.html" title="Equation 6.1.9">(6.1.9)</a> is an alternate form to equation <a href="" class="xref" data-knowl="./knowl/eqn-fint_trans7.html" title="Equation 6.1.8">(6.1.8)</a>. In the complex Fourier integral,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fint_trans7.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans7.html">
+\begin{equation*}
+f(x) = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}e^{+ipx}\,dp \int\limits_{-\infty}^{\infty}f(t)e^{-ipt}\,dt;
+\end{equation*}
+</div>
+<div class="para">if we put</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fint_trans7.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans7.html">
+\begin{equation*}
+\int\limits_{-\infty}^{\infty}e^{-ipt}\,dt = F(p)
+\end{equation*}
+</div>
+<div class="para">then,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fint_trans7.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans7.html">
+\begin{equation*}
+f(x) =  \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}e^{+ipx}F(p)\,dp
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(f(x)\)</span> is called Inverse Fourier Transform of <span class="process-math">\(F(p)\)</span> and <span class="process-math">\(F(p)\)</span> is called Fourier Transform of <span class="process-math">\(f(x)\text{.}\)</span>
+</div>
+</div></article></body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">The general solution is given as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u(x,y,t)=\sum\limits_{r,s=1}^{\infty}a_{rs}e^{-m_{rs}t}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{rs} =\frac{4}{ab}\int\limits_{0}^{a}\int\limits_{0}^{b}f(x,y)\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}\,dx\,dy 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{4B}{ab}\int\limits_{0}^{a}\int\limits_{0}^{b}\sin\frac{\pi x}{a}\sin\frac{\pi y}{b}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}\,dx\,dy
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore  \quad a_{r1}= \frac{4B}{ab}\int\limits_{0}^{a}\frac{b}{2}\sin\frac{\pi x}{a}\sin\frac{r\pi x}{a}\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\because \quad \int\limits_{0}^{b}\sin\frac{\pi y}{b}\sin\frac{s\pi y}{b}\,dy 
+= \begin{cases} 0, &amp; n=2,3,4,\cdots\\
+b/2, &amp; n=1  \end{cases} 
+\end{equation*}
+</div>
+<div class="para">so that <span class="process-math">\(a_{11}=B\)</span>  and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+m_{11}=h^{2}\pi^{2}\left(\frac{1}{a^{2}}+\frac{1}{b^{2}}\right) 
+\end{equation*}
+</div>
+<div class="para">Hence the solution is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u(x,y,t) =a_{11}e^{-m_{11}t}\cdot \sin\frac{\pi x}{a}\sin\frac{\pi y}{b}.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_seventh-examplesB.html#p-1203" class="internal">in-context</a></span>
+</body>
+</html>

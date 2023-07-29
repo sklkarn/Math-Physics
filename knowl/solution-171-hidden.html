@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation}
+y''-4y'+4y =64\sin 2t\tag{6.6.1}
+\end{equation}
+</div>
+<div class="para">Taking Laplace Transform on both sides of equation <a href="" class="xref" data-knowl="./knowl/eqn-diffLT_sol1.html" title="Equation 6.6.1">(6.6.1)</a>, we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+\mathscr{L}[y''-4y'+4y] = \mathscr{L}[64\sin 2t]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+\mathscr{L}[y'']-4\mathscr{L}[y']+4\mathscr{L}[y] = 64\mathscr{L}[\sin 2t]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+s^{2}\mathscr{L}[y(t)]-sy(0)-y'(0)-4[s\mathscr{L}y(t)-y(0)]+4\mathscr{L}[y(t)]=64\frac{2}{s^{2}+4}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+s^{2}Y(s)-sy(0)-y'(0)-4sY(s)+4y(0)+4y(s)=\frac{128}{s^{2}+4} 
+\end{equation*}
+</div>
+<div class="para">putting <span class="process-math">\(y(0) =0\)</span>	and  <span class="process-math">\(y'(0) = 1\text{,}\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+s^{2}Y(s)-s.0-1-4sY(s)+40+4Y(s)=\frac{128}{s^{2}+4}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+Y(s)[s^{2}-4s+4]=1+ \frac{128}{s^{2}+4}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+(s-2)^{2}Y(s) = 1+ \frac{128}{s^{2}+4}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+Y(s) = \frac{1}{(s-2)^{2}}+ \frac{128}{(s^{2}+4)(s-2)^{2}} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+= \frac{1}{(s-2)^{2}}-\frac{8}{(s-2)}+\frac{16}{(s-2)^{2}}+\frac{8s}{s^{2}+4}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+\because \quad Y(s) = \mathscr{L}[y(t)]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffLT_sol1.html">
+\begin{equation*}
+\therefore \quad y(t) = -8e^{2t}+17te^{2t}+8\cos 2t
+\end{equation*}
+</div>
+</div></div></body>
+</html>

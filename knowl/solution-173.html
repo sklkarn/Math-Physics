@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<div class="solution solution-like">
+<h2 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">6.6.3.1</span><span class="period">.</span>
+</h2>
+<div class="para logical">
+<div class="para">we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[y''-2y'+2y] =\mathscr{L}[e^{-x}]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s^{2}Y(s)-sy(0)-y'(0)-2s\mathscr{L}[y(x)] +2y(0)+2\mathscr{L}y(x) = \frac{1}{s+1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s^{2}Y(s)-s.1-2sY(s) +2.1+2Y(s) = \frac{1}{s+1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(s^{2}-2s+2)Y(s) = \frac{1}{s+1}+(s-2)
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Y(s)  =\frac{1+(s-2)(s+1)}{(s+1)(s^{2}-2s+2)}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{s^{2}-s-1}{(s+1)(s^{2}-2s+2)}  = \frac{A}{s+1}+\frac{Bs+C}{s^{2}-2s+2}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1/5}{s+1}+\frac{(4/5)s-(7/5)}{s^{2}-2s+2} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{5(s+1)}+\frac{1}{5}\frac{4s}{(s-1)^{2}+1}-\frac{7}{5}\frac{1}{(s-1)^{2}+1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y(x) =\mathscr{L}^{-1}\left[\frac{1}{5(s+1)}+\frac{4}{5}\frac{(s-1)}{(s-1)^{2}+1}-\frac{3}{5}\frac{1}{(s-1)^{2}+1}\right]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{5}e^{-x}+\frac{4}{5}e^{x}\cos x -\frac{3}{5}e^{x}\sin x 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{5}e^{-x}+\frac{e^{x}}{5}(4\cos x -3\sin x)
+\end{equation*}
+</div>
+</div>
+</div>
+<span class="incontext"><a href="sec_sixth-examplesC.html#solution-173" class="internal">in-context</a></span>
+</body>
+</html>

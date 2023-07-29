@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">We know that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}=e^{2zx-z^{2}} =e^{2zx}\cdot e^{-z^{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\sum_{n=0}^{\infty}\frac{(2x)^{n}z^{n}}{n!}\cdot \sum_{n=0}^{\infty}\frac{(-1)^{n}z^{2n}}{n!}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\sum_{n=0}^{\infty}\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}(2x)^{n-2s}}{s!(n-2s)!}z^{n}
+\end{equation*}
+</div>
+<div class="para">Equating the coefficient of <span class="process-math">\(\frac{z^{n}}{n!}\)</span> on both sides, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H_{n}(x)=\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(2x)^{n-2s}}{s!(n-2s)!}
+\end{equation*}
+</div>
+<div class="para">Replacing <span class="process-math">\(x\)</span> by <span class="process-math">\(-x\text{,}\)</span> we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+H_{n}(-x)=\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(-2x)^{n-2s}}{s!(n-2s)!} = 	\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}(-1)^{n-2s}n!(2x)^{n-2s}}{s!(n-2s)!}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=(-1)^{n}\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(2x)^{n-2s}}{s!(n-2s)!}=(-1)^{n}H_{n}(x)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore  H_{n}(-x)=(-1)^{n} H_{n}(x) 
+\end{equation*}
+</div>
+</div></div></body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h3 class="heading"><span class="type">Proof</span></h3>
+<div class="para logical">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-frac_LT1.html">
+\begin{equation}
+\mathscr{L}[f(t)] =F(s) = \int\limits_{0}^{\infty}e^{-st}f(t)\,dt\tag{6.3.3}
+\end{equation}
+</div>
+<div class="para">Integrating equation <a href="" class="xref" data-knowl="./knowl/eqn-frac_LT1.html" title="Equation 6.3.3">(6.3.3)</a> w.r.t. 's', we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-frac_LT1.html">
+\begin{equation*}
+\int\limits_{s}^{\infty}F(s)\,ds  = \int\limits_{s}^{\infty}\left[\int\limits_{0}^{\infty}  e^{-st}f(t)\,dt\right]\,ds 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-frac_LT1.html">
+\begin{equation*}
+= \int\limits_{0}^{\infty} \left[\int\limits_{s}^{\infty} e^{-st}f(t)\,dt\right]\,ds   = \int\limits_{0}^{\infty}\left[\frac{ e^{-st}f(t)}{-t}\right]_{s}^{\infty} \,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-frac_LT1.html">
+\begin{equation*}
+=\int\limits_{0}^{\infty}\frac{f(t)}{-t}\left[e^{-st}\right]_{s}^{\infty}\,dt  = \int\limits_{0}^{\infty}\frac{f(t)}{-t}\left[0-e^{-st}\right]\,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-frac_LT1.html">
+\begin{equation*}
+= \int\limits_{0}^{\infty}e^{-st}\{\frac{1}{t}f(t)\}\,dt   = L\left[\frac{1}{t}f(t)\right]
+\end{equation*}
+</div>
+<div class="para">i.e.,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-frac_LT1.html">
+\begin{equation*}
+\mathscr{L}\left[\frac{1}{t}f(t)\right] = 	\int\limits_{s}^{\infty}F(s)\,ds
+\end{equation*}
+</div>
+</div></article><span class="incontext"><a href="subsec-frac_LT.html#proof-55" class="internal">in-context</a></span>
+</body>
+</html>

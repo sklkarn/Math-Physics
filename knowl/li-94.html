@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="li"><h3 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">2</span><span class="period">.</span>
+</h3>
+<div class="para">
+<span class="process-math">\(y"+a^2*y=0\)</span> <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/odeQ2.png" class="contained"></div>
+</div>
+<div class="para">from sympy.interactive import printing</div>
+<div class="para">printing.init_printing(use_latex=True)</div>
+<div class="para">from sympy import *</div>
+<div class="para">import sympy as sp</div>
+<div class="para">t,y =sp.symbols('t,y')</div>
+<div class="para">a=sp.Symbol('a',positive=True)</div>
+<div class="para">y=sp.Function('y')(t)</div>
+<div class="para">diffeq=Eq(y.diff(t,2)+a**2*y,0)</div>
+<div class="para">display(diffeq)</div>
+<div class="para">dsolve(diffeq,y)</div>
+<div class="para">import numpy as np</div>
+<div class="para">from scipy.integrate import odeint</div>
+<div class="para">import matplotlib.pyplot as plt</div>
+<div class="para">def f(u,t): return (u[1], -5*u[0])</div>
+<div class="para">yo=[0,4]</div>
+<div class="para">xs=np.arange(0,5,0.1)</div>
+<div class="para">us=odeint(f,yo,xs)</div>
+<div class="para">ys=us[:,0]</div>
+<div class="para">plt.plot(xs,ys, '-')</div>
+<div class="para">plt.plot(xs,ys, 'ro')</div>
+<div class="para">plt.title('(D**2+5)y=0')</div>
+<div class="para">plt.xlabel('t values')</div>
+<div class="para">plt.ylabel('y values')</div>
+<div class="para">plt.show()</div></article><span class="incontext"><a href="sec_fourth-examplesA.html#li-94" class="internal">in-context</a></span>
+</body>
+</html>

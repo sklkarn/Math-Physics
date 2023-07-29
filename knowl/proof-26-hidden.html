@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><article class="hiddenproof"><div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+e^{-xt/(1-t)}=1-\frac{xt}{1-t}+\frac{1}{2!}\left(\frac{xt}{1-t}\right)^{2}+\cdots
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{r}t^{r}}{(1-t)^{r}r!}\tag{4.11.9}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+\frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{r=0}^{\infty}(-1)^{r}\frac{t^{r}x^{r}}{r!(1-t)^{r+1}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+=\sum\limits_{r=0}^{\infty}(-1)^{r}\frac{x^{r}t^{r}}{r!}(1-t)^{-(r+1)}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!}x^{r}t^{r}\left[1+(r+1)t+\frac{(r+1)(r+2)}{2!}t^{2}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+\left.+\cdots+\frac{(r+1)(r+2)\cdots(r+s)}{s!}t^{s}+\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{r}t^{r}}{r!}\sum\limits_{s=0}^{\infty}\frac{(r+1)(r+2)\cdots(r+s)}{s!}t^{s}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{r}t^{r}}{r!}\sum\limits_{s=0}^{\infty}\frac{(r+s)!}{r!s!}t^{s}\tag{4.11.10}
+\end{equation}
+</div>
+<div class="para">on putting <span class="process-math">\(r+s=n\text{,}\)</span> the coefficient of <span class="process-math">\(t^{n}\)</span> for fixed value of <span class="process-math">\(r\)</span>  is <span class="process-math">\(\frac{(-1)^{r}n!}{(r!)^{2}(n-r)!}x^{r}\text{,}\)</span>  as <span class="process-math">\(n-r=s\)</span>  and <span class="process-math">\(s \geq 0\text{.}\)</span> 	Thus <span class="process-math">\(n-r \geq 0\)</span>	or, <span class="process-math">\(r \leq n\text{.}\)</span> Hence the coefficient of <span class="process-math">\(t^{n}\)</span> on RHS of equation <a href="" class="xref" data-knowl="./knowl/eqn-laguer_gen2.html" title="Equation 4.11.10">(4.11.10)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+\sum\limits_{r=0}^{n}\frac{(-1)^{r}n!}{(r!)^{2}(n-r)!}x^{r} =\frac{L_{n}(x)}{n!}
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+\frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{r=0}^{n}\frac{L_{n}(x)}{n!}t^{n}
+\end{equation*}
+</div>
+<div class="para">is the generating function of <span class="process-math">\(L_{n}(x)\text{.}\)</span>
+</div>
+</div></article></body>
+</html>

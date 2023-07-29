@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">We have the generating function</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation}
+\frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n} \qquad |t| \lt 1.\tag{4.11.12}
+\end{equation}
+</div>
+<div class="para">Differentiating equation <a href="" class="xref" data-knowl="./knowl/eqn-laguer_recr1.html" title="Equation 4.11.12">(4.11.12)</a> w. r. to 't', we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+\frac{1-x-t}{(1-t)^{3}}e^{-xt/(1-t)}=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n-1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+(1-x-t)\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n)!}t^{n}=(1-t)^{2}\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n-1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+(1-x)\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n)!}t^{n}-\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n)!}t^{n+1}	
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n-1}-2\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n}+\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{(n-1)!}t^{n+1}
+\end{equation*}
+</div>
+<div class="para">Equating the coefficient of <span class="process-math">\(t^{n}\)</span> on both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+(1-x)\frac{L_{n}}{(n)!}-\frac{L_{n-1}}{(n-1)!}=\frac{L_{n+1}}{(n)!}-2\frac{L_{n}}{(n-1)!}+\frac{L_{n-1}}{(n-2)!}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+(1-x) L_{n}-nL_{n-1}=L_{n+1}-2nL_{n}+n(n-1)L_{n-1} 
+\end{equation*}
+</div>
+<div class="para">[on multiplying by <span class="process-math">\(n!\)</span>] Or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+\therefore (1+2n-x)L_{n}=n^{2}L_{n-1}+L_{n+1}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="subsec-laguer_pol.html#p-744" class="internal">in-context</a></span>
+</body>
+</html>

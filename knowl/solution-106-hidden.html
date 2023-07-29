@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like">
+<div class="para logical">
+<div class="para">We know that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J_{-n}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}	
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=	\frac{x^{n}}{2^{n}}	\left[\frac{1}{n!}-\frac{x^{2}}{2^{2}(n+1)!}+\frac{x^{4}}{2!(n+2)!2^{4}}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
+= \frac{x^{n}}{2^{n}n!}\left[1-\frac{x^{2}}{2\cdot 2(n+1)}+\frac{x^{4}}{2\cdot 4\cdot 2^{2}(n+1)(n+2)}-\cdots\right]\tag{4.8.1}
+\end{equation}
+</div>
+</div> <ol class="lower-alpha">
+<li><div class="para logical">
+<div class="para">putting <span class="process-math">\(n=\frac{1}{2}\)</span>  in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq1.html" title="Equation 4.8.1">(4.8.1)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+J_{\frac{1}{2}}(x)=\frac{x^{\frac{1}{2}}}{2^{\frac{1}{2}}\frac{1}{2}!}\left[1-\frac{x^{2}}{2\cdot 2(\frac{1}{2}+1)}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+\left. +\frac{x^{4}}{2\cdot 4\cdot 2^{2}(\frac{1}{2}+1)(\frac{1}{2}+2)}-\cdots\right]	
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+=\frac{\sqrt{x}}{\sqrt{2}\Gamma{(\frac{1}{2}+1})}\left[1-\frac{x^{2}}{3!}+\frac{x^{4}}{5!}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+=\frac{\sqrt{x}}{\sqrt{2}\cdot\frac{1}{2}\Gamma{(\frac{1}{2})}}\cdot\frac{1}{x}\left[x-\frac{x^{3}}{3!}+\frac{x^{5}}{5!}-\cdots\right]
+\end{equation*}
+</div>
+<div class="para">since, <span class="process-math">\(\left[n!=\Gamma(n+1)=n\Gamma n\right]\text{,}\)</span>  the Gamma function</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+\therefore J_{\frac{1}{2}}(x)=\frac{1}{\sqrt{2x}\cdot \frac{\sqrt{\pi}}{2}}\sin x=\sqrt{\left(\frac{2}{\pi x}\right)}\sin x 
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\([\because \Gamma(\frac{1}{2})=\sqrt{\pi}\)</span> and <span class="process-math">\((\frac{1}{2})!=\frac{\sqrt{\pi}}{2}]	\text{.}\)</span>
+</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">Againg putting <span class="process-math">\(n=-\frac{1}{2}\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq1.html" title="Equation 4.8.1">(4.8.1)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+J_{-\frac{1}{2}}(x)=\frac{x^{-\frac{1}{2}}}{2^{-\frac{1}{2}}\frac{1}{2}!}\left[1-\frac{x^{2}}{2\cdot 2(-\frac{1}{2}+1)}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+\left.+\frac{x^{4}}{2\cdot 4\cdot 2^{2}(-\frac{1}{2}+1)(-\frac{1}{2}+2)}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+=\frac{\sqrt{2}}{\sqrt{x}\Gamma{(-\frac{1}{2}+1})}\left[1-\frac{x^{2}}{2!}+\frac{x^{4}}{2\cdot3\cdot4}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+=\frac{\sqrt{2}}{\sqrt{x}\Gamma{(\frac{1}{2})}}\left[1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+=\sqrt{\left(\frac{2}{\pi x}\right)}\cos x 
+\end{equation*}
+</div>
+<div class="para">[since <span class="process-math">\(\Gamma(\frac{1}{2})=\sqrt{\pi}\)</span>].</div>
+</div></li>
+</ol>
+</div></body>
+</html>

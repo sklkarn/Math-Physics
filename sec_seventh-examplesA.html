@@ -1,0 +1,1216 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Examples A</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Mathematical Methods of Physics">
+<meta property="book:author" content="Sunil Karna">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js"></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_blue_green.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="my-great-book.html"><span class="title">Mathematical Methods of Physics:</span> <span class="subtitle">For Undergraduate</span></a></h1>
+<p class="byline">Sunil Karna</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><a class="index-button button" href="index-1.html" title="Index"><span class="name">Index</span></a><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="subsec-2Dwave_sol.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch_seventh.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec_seventh-heateq.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\T}{\mathcal T}
+\newcommand\comb[2]{^{#1}C{_{#2}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth3"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="dedication-1.html" class="internal"><span class="title">Dedication</span></a></div></li>
+<li><div class="toc-item"><a href="acknowledgement-1.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li><div class="toc-item"><a href="meta_frontmatter-preface.html" class="internal"><span class="title">Preface</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch_first.html" class="internal"><span class="codenumber">1</span> <span class="title">Vector Analysis</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec_first-intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Vector Algebra</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec_addvec-subsection.html" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Addition of Vectors</span></a></div></li>
+<li><div class="toc-item"><a href="subsubsec_subvec_subsection.html" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Subtraction of Vectors</span></a></div></li>
+<li><div class="toc-item"><a href="subsubsec_mltvec_subsection.html" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Scalar Multiplication of a Vector</span></a></div></li>
+<li><div class="toc-item"><a href="subsubsec_compntvec_subsection.html" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Components of a Vector</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-dbetpnts.html" class="internal"><span class="codenumber">1.1.5</span> <span class="title">Distance between two points</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-lineseg.html" class="internal"><span class="codenumber">1.1.6</span> <span class="title">Dividing the line segments</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-lincombvects.html" class="internal"><span class="codenumber">1.1.7</span> <span class="title">Linear Combination of Vectors</span></a></div></li>
+<li>
+<div class="toc-item"><a href="subsec-prodvect.html" class="internal"><span class="codenumber">1.1.8</span> <span class="title">Product of Two Vectors</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-prodvect.html#subsubsec-dotprod" class="internal"><span class="codenumber">1.1.8.1</span> <span class="title">Scalar or Dot Product</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-prodvect.html#subsubsec-crosprod" class="internal"><span class="codenumber">1.1.8.2</span> <span class="title">Vector or Cross Product</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="subsec-sctrip.html" class="internal"><span class="codenumber">1.1.9</span> <span class="title">Scalar Triple Product</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-vectripl.html" class="internal"><span class="codenumber">1.1.10</span> <span class="title">Vector Triple Product</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-recvec.html" class="internal"><span class="codenumber">1.1.11</span> <span class="title">Reciprocal Vectors</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-diffvects.html" class="internal"><span class="codenumber">1.1.12</span> <span class="title">Differentiation of a Vector with respect to Scalars</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec_first-field.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Field</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="subsec-gradscf.html" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Gradient of a Scalar Function</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-gradscf.html#subsubsec-delphi" class="internal"><span class="codenumber">1.2.1.1</span> <span class="title">Physical Significance of <span class="process-math">\(\vec{ \nabla \phi}\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-gradscf.html#subsubsec-dirderv" class="internal"><span class="codenumber">1.2.1.2</span> <span class="title">Directional Derivative</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="subsec-div_vecfunc.html" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Divergence of  a  Vector  Function</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-div_vecfunc.html#subsubsec-signif_diver" class="internal"><span class="codenumber">1.2.2.1</span> <span class="title">Physical Significance of <span class="process-math">\(\vec{\bigtriangledown}\cdot\vec{F}\)</span></span></a></div></li></ul>
+</li>
+<li>
+<div class="toc-item"><a href="subsec-curl_vect.html" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Curl of a Vector Function</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-curl_vect.html#subsubsec-signif_curl" class="internal"><span class="codenumber">1.2.3.1</span> <span class="title">Physical Significance of <span class="process-math">\(\vec{\nabla}\times \vec{F}\)</span></span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_first-examplesA.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Examples A</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_first-vectinteg.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Vector Integration</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-lineint.html" class="internal"><span class="codenumber">1.4.1</span> <span class="title">the Line Integral</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-surf_int.html" class="internal"><span class="codenumber">1.4.2</span> <span class="title">The Surface Integral</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-volint.html" class="internal"><span class="codenumber">1.4.3</span> <span class="title">The Volume Integral</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-divergence_thrm.html" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Gauss's Divergence Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-stoke_thrm.html" class="internal"><span class="codenumber">1.4.5</span> <span class="title">Stoke's Theorem</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_first-examplesB.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Examples B</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_first-curvcord.html" class="internal"><span class="codenumber">1.6</span> <span class="title">Curvilinear Coordinates</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-grad_curvcord.html" class="internal"><span class="codenumber">1.6.1</span> <span class="title">The Gradient in Curvilinear Coordinates</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-div_curvcord.html" class="internal"><span class="codenumber">1.6.2</span> <span class="title">The Divergence in Curvilinear Coordinates</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-curl_curvcord.html" class="internal"><span class="codenumber">1.6.3</span> <span class="title">The Curl in Curvilinear Coordinates</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-lapl_curvcord.html" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Laplacian in Curvilinear Coordinate Systems</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-cylind_cord.html" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Cylindrical  Orthogonal Curvilinear Coordinates</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-spher_cord.html" class="internal"><span class="codenumber">1.6.6</span> <span class="title">Spherical  Orthogonal Curvilinear  Coordinates</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_first-examplesC.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Examples C</span></a></div></li>
+<li><div class="toc-item"><a href="ex_first.html" class="internal"><span class="codenumber">1.8</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch_second.html" class="internal"><span class="codenumber">2</span> <span class="title">Linear Vector Space</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec_second-intro.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Vector Space</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-2add_vects.html" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Addition of Vectors</span></a></div></li>
+<li><div class="toc-item"><a href="subsubsec-2mult_vects.html" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Multiplication of Vectors by Scalars</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-2lin_depnd.html" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Linear Dependence and Independence</span></a></div></li>
+<li>
+<div class="toc-item"><a href="subsec-2dimen_vect.html" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Dimensionality of a Vector Space</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-2dimen_vect.html#subsubsec-inner_prod" class="internal"><span class="codenumber">2.1.3.1</span> <span class="title">Inner Product</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-2dimen_vect.html#subsubsec-2gram_orth" class="internal"><span class="codenumber">2.1.3.2</span> <span class="title">Gram Schmidt's Orthogonalization</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="subsec-2lin_trans.html" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Linear Transformations</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-2lin_op.html" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Linear Operators</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_second-examplesA.html" class="internal"><span class="codenumber">2.2</span> <span class="title">ExamplesA</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_second-matrix.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Matrix</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="subsec-matrx_algb.html" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Matrix Algebra</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-matrx_algb.html#subsubsec-add_subt" class="internal"><span class="codenumber">2.3.1.1</span> <span class="title">Addition</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-matrx_algb.html#subsubsec-multp" class="internal"><span class="codenumber">2.3.1.2</span> <span class="title">Multiplication</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="subsec-transpose.html" class="internal"><span class="codenumber">2.3.2</span> <span class="title">The Transpose of a Matrix, <span class="process-math">\(A^{t}\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-comp_conj.html" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Complex - Conjugate of a Matrix, <span class="process-math">\(A^{*}\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-herm_conj.html" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Hermitian Conjugate of a Matrix, <span class="process-math">\(A^{\dagger}\)</span></span></a></div></li>
+<li>
+<div class="toc-item"><a href="subsec-sq_mat.html" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Special Square Matrices</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-unit_mat" class="internal"><span class="codenumber">2.3.5.1</span> <span class="title">Unit or Identity Matrix:</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-dia_mat" class="internal"><span class="codenumber">2.3.5.2</span> <span class="title">Diagonal Matrix</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-inv_mat" class="internal"><span class="codenumber">2.3.5.3</span> <span class="title">The Inverse, Singular, and Non - Singular Matrices</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-cof_mat" class="internal"><span class="codenumber">2.3.5.4</span> <span class="title">Cofactor Matrix, <span class="process-math">\(A^{c}\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-adj_mat" class="internal"><span class="codenumber">2.3.5.5</span> <span class="title">Adjoint of a Matrix, <span class="process-math">\(\hat{A}\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-self_adj" class="internal"><span class="codenumber">2.3.5.6</span> <span class="title">Self - Adjoint Matrix</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-sym_mat" class="internal"><span class="codenumber">2.3.5.7</span> <span class="title">Symmetric Matrix</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-skew_mat" class="internal"><span class="codenumber">2.3.5.8</span> <span class="title">Antisymmetric (Skew) Matrix</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-herm_mat" class="internal"><span class="codenumber">2.3.5.9</span> <span class="title">Hermitian Matrix</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-unitary_mat" class="internal"><span class="codenumber">2.3.5.10</span> <span class="title">Unitary Matrix</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-sq_mat.html#subsubsec-orth_mat" class="internal"><span class="codenumber">2.3.5.11</span> <span class="title">Orthogonal Matrix</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="subsec-trace_mat.html" class="internal"><span class="codenumber">2.3.6</span> <span class="title">The Trace of a Matrix</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_second-examplesB.html" class="internal"><span class="codenumber">2.4</span> <span class="title">ExamplesB</span></a></div></li>
+<li><div class="toc-item"><a href="sec_second-eigen.html" class="internal"><span class="codenumber">2.5</span> <span class="title">Eigen Value Problem</span></a></div></li>
+<li><div class="toc-item"><a href="sec_second-examplesC.html" class="internal"><span class="codenumber">2.6</span> <span class="title">ExamplesC</span></a></div></li>
+<li><div class="toc-item"><a href="sec_second-python.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Python Code for Matrix</span></a></div></li>
+<li><div class="toc-item"><a href="ex_second.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch_third.html" class="internal"><span class="codenumber">3</span> <span class="title">Tensor Analysis</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec_third-intro.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Rank of a Tensor</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="subsec-cont_cov.html" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Contravarient and Covarient Tensors</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-cont_cov.html#subsubsec-discus_trans" class="internal"><span class="codenumber">3.1.1.1</span> <span class="title">Discussion</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="subsec-skew_tens.html" class="internal"><span class="codenumber">3.1.2</span> <span class="title">Symmetric and Antisymmetric Tensors</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-coord_trans.html" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Transformation of Coordinates</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec_third-tens_alg.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Tensor Algebra</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-dummy.html" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Dummy Suffix</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-metric.html" class="internal"><span class="codenumber">3.2.2</span> <span class="title">The line element and a metric tensor</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_third-examplesA.html" class="internal"><span class="codenumber">3.3</span> <span class="title">ExamplesA</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_third-mit.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Moment of Inertia Tensor</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-stress_tensor.html" class="internal"><span class="codenumber">3.4.1</span> <span class="title">The Stress Tensor</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="ex_third.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch_fourth.html" class="internal"><span class="codenumber">4</span> <span class="title">Differential Equations</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec_fourth-diff.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Solution of a Differential Equation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-first_order-diff.html" class="internal"><span class="codenumber">4.1.1</span> <span class="title">First Order Linear Differential Equation</span></a></div></li>
+<li>
+<div class="toc-item"><a href="subsec-second_order-diff.html" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Second Order Linear Differential Equations</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-second_order-diff.html#subsubsec-leqconst_coeff" class="internal"><span class="codenumber">4.1.2.1</span> <span class="title">Linear Equations with Constant Coefficients</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-second_order-diff.html#subsubsec-PI-funct" class="internal"><span class="codenumber">4.1.2.2</span> <span class="title">General Method of Finding the Particular Integral of Any Function <span class="process-math">\(\phi(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-second_order-diff.html#subsubsec-var_coef" class="internal"><span class="codenumber">4.1.2.3</span> <span class="title">Linear Equations with Variable Coefficients</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_fourth-examplesA.html" class="internal"><span class="codenumber">4.2</span> <span class="title">ExamplesA</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_fourth-power.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Power Series Method</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-reg_sing.html" class="internal"><span class="codenumber">4.3.1</span> <span class="title">When <span class="process-math">\(x=0\)</span> is a Regular Singular Point of the Equation</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="sec_fourth-examplesB.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Examples B</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_fourth-spfunc.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Special Functions</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="subsec-Legnd_eq.html" class="internal"><span class="codenumber">4.5.1</span> <span class="title">Legendre's Differential Equation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-Legnd_eq.html#subsubsec-legn_rodrg" class="internal"><span class="codenumber">4.5.1.1</span> <span class="title">Rodrigue's Formula</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Legnd_eq.html#subsubsec-legnd" class="internal"><span class="codenumber">4.5.1.2</span> <span class="title">Legendre Polynomials</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Legnd_eq.html#subsubsec-genrt_legn" class="internal"><span class="codenumber">4.5.1.3</span> <span class="title">Generating Function for <span class="process-math">\(P_{n}(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Legnd_eq.html#subsubsec-Legn_import" class="internal"><span class="codenumber">4.5.1.4</span> <span class="title">Some Important Results</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Legnd_eq.html#subsubsec-legn_recurrnc" class="internal"><span class="codenumber">4.5.1.5</span> <span class="title">Recurrence Relations for <span class="process-math">\(P_{n}(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Legnd_eq.html#subsubsec-legn_orth" class="internal"><span class="codenumber">4.5.1.6</span> <span class="title">Orthogonality of Legendre's Polynomials</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Legnd_eq.html#subsubsec-legn_assoc" class="internal"><span class="codenumber">4.5.1.7</span> <span class="title">The Associated Legendre's Polynomials</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li><div class="toc-item"><a href="sec_fourth-examplesC.html" class="internal"><span class="codenumber">4.6</span> <span class="title">Examples C</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_fourth-besslfn.html" class="internal"><span class="codenumber">4.7</span> <span class="title">Bessel's Differential Equation</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="subsec-bessl_fn.html" class="internal"><span class="codenumber">4.7.1</span> <span class="title">Bessel's Functions, <span class="process-math">\(J_{n}(x)\)</span></span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-bessl_fn.html#subsubsec-bessl_genfn" class="internal"><span class="codenumber">4.7.1.1</span> <span class="title">Generating Function for <span class="process-math">\(J_{n}(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-bessl_fn.html#subsubsec-bessl_intg" class="internal"><span class="codenumber">4.7.1.2</span> <span class="title">Integral Represntation of <span class="process-math">\(J_{n}(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-bessl_fn.html#subsubsec-bessl_recr" class="internal"><span class="codenumber">4.7.1.3</span> <span class="title">Recurrence Relations for <span class="process-math">\(J_{n}(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-bessl_fn.html#subsubsec-bessl_orth" class="internal"><span class="codenumber">4.7.1.4</span> <span class="title">Orthogonality of Bessel's Functions</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li><div class="toc-item"><a href="sec_fourth-examplesD.html" class="internal"><span class="codenumber">4.8</span> <span class="title">Examples D</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_fourth-hermtfn.html" class="internal"><span class="codenumber">4.9</span> <span class="title">Hermite Differential Equation</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="subsec-hermit-pol.html" class="internal"><span class="codenumber">4.9.1</span> <span class="title">Hermite Polynomials <span class="process-math">\(H_{n}(x)\)</span></span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-hermit-pol.html#subsubsec-hermt_genfn" class="internal"><span class="codenumber">4.9.1.1</span> <span class="title">Generating Function for <span class="process-math">\(H_{n}(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-hermit-pol.html#subsubsec-hermt_rodrg" class="internal"><span class="codenumber">4.9.1.2</span> <span class="title">Rodrigue's Formula for Hermite Polynomials</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-hermit-pol.html#subsubsec-hermt_recr" class="internal"><span class="codenumber">4.9.1.3</span> <span class="title">Recurrence Relation for Hermite Polynomials</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-hermit-pol.html#subsubsec-hermt_orth" class="internal"><span class="codenumber">4.9.1.4</span> <span class="title">Orthogonality of Hermite Polynomials</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li><div class="toc-item"><a href="sec_fourth-examplesE.html" class="internal"><span class="codenumber">4.10</span> <span class="title">Examples E</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_fourth-lagurfn.html" class="internal"><span class="codenumber">4.11</span> <span class="title">Laguerre Differential Equation</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="subsec-laguer_pol.html" class="internal"><span class="codenumber">4.11.1</span> <span class="title">Laguerre's Polynomial</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-laguer_pol.html#subsubsec-laguer_genfn" class="internal"><span class="codenumber">4.11.1.1</span> <span class="title">Generating Function for <span class="process-math">\(L_{n}(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-laguer_pol.html#subsubsec-laguer_rodr" class="internal"><span class="codenumber">4.11.1.2</span> <span class="title">Rodrigue's Differential Formula for <span class="process-math">\(L_{n}(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-laguer_pol.html#subsubsec-laguer_recr" class="internal"><span class="codenumber">4.11.1.3</span> <span class="title">Recurrence Relation for <span class="process-math">\(L_{n}(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-laguer_pol.html#subsubsec-laguer-orth" class="internal"><span class="codenumber">4.11.1.4</span> <span class="title">Orthogonal Property of Laguerre Polynomials</span></a></div></li>
+</ul>
+</li></ul>
+</li>
+<li><div class="toc-item"><a href="sec_fourth-examplesF.html" class="internal"><span class="codenumber">4.12</span> <span class="title">Examples F</span></a></div></li>
+<li><div class="toc-item"><a href="ex_fourth.html" class="internal"><span class="codenumber">4.13</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch_fifth.html" class="internal"><span class="codenumber">5</span> <span class="title">Fourier Series</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec_fifth-intro.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Direchlet's Conditions</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-fourier_coef.html" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Determination of Fourier Coefficients</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="sec_fifth-examplesA.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Examples A</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_fifth-trig.html" class="internal"><span class="codenumber">5.3</span> <span class="title">The Fourier Cosine and Sine Series</span></a></div>
+<ul class="structural"><li>
+<div class="toc-item"><a href="subsec-fourier_sum.html" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Summing of Fourier Series</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-fourier_sum.html#subsubsec-half_range" class="internal"><span class="codenumber">5.3.1.1</span> <span class="title">Half - Range Series</span></a></div></li></ul>
+</li></ul>
+</li>
+<li><div class="toc-item"><a href="sec_fifth-examplesB.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Examples B</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_fifth-frinterval.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Change of Interval</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-fourier_complex.html" class="internal"><span class="codenumber">5.5.1</span> <span class="title">Complex Form of Fourier Series</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-fourier_intg.html" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Fourier Integral</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-gibbs_phen.html" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Gibb's Phenomenon</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_fifth-examplesC.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Examples C</span></a></div></li>
+<li><div class="toc-item"><a href="ex_fifth.html" class="internal"><span class="codenumber">5.7</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch_sixth.html" class="internal"><span class="codenumber">6</span> <span class="title">Integral Transform</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec_sixth-ftrans.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Dirac Delta Function</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-dirac_prop.html" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Properties of Delta functions</span></a></div></li>
+<li>
+<div class="toc-item"><a href="subsec-fourier_trans.html" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Fourier Transforms</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-fourier_trans.html#subsubsec-fourier_inttrans" class="internal"><span class="codenumber">6.1.2.1</span> <span class="title">Fourier Integral Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-fourier_trans.html#subsubsec-fint_forms" class="internal"><span class="codenumber">6.1.2.2</span> <span class="title">Different Forms of Fourier Integral.</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="subsec-rayleigh_theorm.html" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Parseval's Indentity for Fourier Transform.  (Rayleigh's Theorem)</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-fsine_trans.html" class="internal"><span class="codenumber">6.1.4</span> <span class="title">The (Infinite) Fourier Sine Transform of <span class="process-math">\(\mathcal{F}(k)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-imprt_intgs.html" class="internal"><span class="codenumber">6.1.5</span> <span class="title">Some important Integrals:</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Ftrans_prop.html" class="internal"><span class="codenumber">6.1.6</span> <span class="title">Properties of Fourier Transforms</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-ftrans_deriv.html" class="internal"><span class="codenumber">6.1.7</span> <span class="title">The Fourier Tansform of Derivative of <span class="process-math">\(f(x)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Fconvl.html" class="internal"><span class="codenumber">6.1.8</span> <span class="title">Convolution Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-infnt_FT.html" class="internal"><span class="codenumber">6.1.9</span> <span class="title">Choice of infinite Sine or Cosine Transforms to Boundary Value Problems</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_sixth-examplesA.html" class="internal"><span class="codenumber">6.2</span> <span class="title">ExamplesA</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_sixth-Ltrans.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Laplace Transforms</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="subsec-Prop_LapTrans.html" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Properties of Laplace Transforms</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-Prop_LapTrans.html#subsubsec-Lap_linear" class="internal"><span class="codenumber">6.3.1.1</span> <span class="title">Linear Property</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Prop_LapTrans.html#subsubsec-Ishift" class="internal"><span class="codenumber">6.3.1.2</span> <span class="title">First-Shifting Property</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Prop_LapTrans.html#subsubsec-Inv_LapTrans" class="internal"><span class="codenumber">6.3.1.3</span> <span class="title">Inverse Laplace Transforms</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="subsec-derv_LT.html" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Laplace Transform of the Derivative of <span class="process-math">\(f(t)\)</span></span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-derv_LT.html#subsubsec-nderv_LT" class="internal"><span class="codenumber">6.3.2.1</span> <span class="title">Laplace Transform of Derivative of order <span class="process-math">\(n\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-derv_LT.html#subsubsec-Int_LT" class="internal"><span class="codenumber">6.3.2.2</span> <span class="title">Laplace Transform of Integral of <span class="process-math">\(f(t)\)</span></span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="subsec-Prod_LT.html" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Laplace Transform of <span class="process-math">\(t^{n}f(t)\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="subsec-scale_LT.html" class="internal"><span class="codenumber">6.3.4</span> <span class="title">The Change of Scale Property</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-frac_LT.html" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Laplace Transform of <span class="process-math">\(\frac{1}{t}f(t)\)</span></span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_sixth-examplesB.html" class="internal"><span class="codenumber">6.4</span> <span class="title">ExamplesB</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_sixth-diffLT.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Solution of Differential Equations by Laplace Transforms</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="subsec-usf_LT1.html" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Unit Step Function</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-usf_LT1.html#subsubsec-usf_LT2" class="internal"><span class="codenumber">6.5.1.1</span> <span class="title">Laplace Transform of Unit Step Function</span></a></div></li></ul>
+</li>
+<li><div class="toc-item"><a href="subsec-ssp_LT.html" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Second-Shifting Property</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-pf_LT.html" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Priodic Functions</span></a></div></li>
+<li>
+<div class="toc-item"><a href="subsec-conv_LT.html" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Convolution Theorem</span></a></div>
+<ul class="structural"><li><div class="toc-item"><a href="subsec-conv_LT.html#subsubsec-varCoef_LT" class="internal"><span class="codenumber">6.5.4.1</span> <span class="title">Differential Equation with Variable Coefficients</span></a></div></li></ul>
+</li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_sixth-examplesC.html" class="internal"><span class="codenumber">6.6</span> <span class="title">Examples C</span></a></div></li>
+<li><div class="toc-item"><a href="ex_sixth.html" class="internal"><span class="codenumber">6.7</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch_seventh.html" class="internal"><span class="codenumber">7</span> <span class="title">Partial Differential Equation (PDE)</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec_seventh-waveeq.html" class="internal"><span class="codenumber">7.1</span> <span class="title">One Dimensional Wave Equation in Stretched String</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-sol_vs.html" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Solution of Wave Equation for Vibrating String</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-dalembert.html" class="internal"><span class="codenumber">7.1.2</span> <span class="title">D'Alembert's Solution of Vibrating String</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-2Dwaveeqn.html" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Two Dimensional Wave Equation for Vibrating Membrane</span></a></div></li>
+<li>
+<div class="toc-item"><a href="subsec-2Dwave_sol.html" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Solution of Two Dimensional Wave Equation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-2Dwave_sol.html#subsubsec-rect_memb" class="internal"><span class="codenumber">7.1.4.1</span> <span class="title">Rectangular Membrane</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-2Dwave_sol.html#subsubsec-cir_memb" class="internal"><span class="codenumber">7.1.4.2</span> <span class="title">Circular Membrane</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-2Dwave_sol.html#subsubsec-3D_wave" class="internal"><span class="codenumber">7.1.4.3</span> <span class="title">Three Dimensional Wave Equation</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="active"><div class="toc-item"><a href="sec_seventh-examplesA.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Examples A</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec_seventh-heateq.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Heat Equation</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="subsec-1D_heat.html" class="internal"><span class="codenumber">7.3.1</span> <span class="title">One Dimensional Equation of Heat Flow</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-1D_heat.html#subsubsec-1Dheat_0ed" class="internal"><span class="codenumber">7.3.1.1</span> <span class="title">If ends of a bar are at temperature zero</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-1D_heat.html#subsubsec-1Dheat_inslbar" class="internal"><span class="codenumber">7.3.1.2</span> <span class="title">If ends of the bar are insulated</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-1D_heat.html#subsubsec-1Dheat_u0" class="internal"><span class="codenumber">7.3.1.3</span> <span class="title">If one end of a bar at temperature <span class="process-math">\(u_{o}\)</span> and the other at temperature zero</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-1D_heat.html#subsubsec-1Dheat_infbar" class="internal"><span class="codenumber">7.3.1.4</span> <span class="title">Temperature in an infinite bar</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="subsec-2D_heat.html" class="internal"><span class="codenumber">7.3.2</span> <span class="title">Two Dimensional Equation of Heat Flow</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-Lapleqn.html" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Laplace's Equation</span></a></div></li>
+<li>
+<div class="toc-item"><a href="subsec-2D_lapleqn.html" class="internal"><span class="codenumber">7.3.4</span> <span class="title">Two Dimensional Laplace's Equation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-2D_lapleqn.html#subsubsec-2DLapl_cartsn" class="internal"><span class="codenumber">7.3.4.1</span> <span class="title">In Cartesian Coordinates</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-2D_lapleqn.html#subsubsec-2DLapl_ccylnd" class="internal"><span class="codenumber">7.3.4.2</span> <span class="title">In Cylindrical Coordinates</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="subsec-3D_heat.html" class="internal"><span class="codenumber">7.3.5</span> <span class="title">Three Dimensional Equation of Heat Flow</span></a></div></li>
+<li>
+<div class="toc-item"><a href="subsec-3D_lapleq.html" class="internal"><span class="codenumber">7.3.6</span> <span class="title">Three Dimensional Laplace's Equation</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="subsec-3D_lapleq.html#subsubsec-3D_laplRect" class="internal"><span class="codenumber">7.3.6.1</span> <span class="title">In Rectangular Coordinates</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-3D_lapleq.html#subsubsec-3D_laplcyl" class="internal"><span class="codenumber">7.3.6.2</span> <span class="title">In Cylindrical Coordinates</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-3D_lapleq.html#subsubsec-3D_lalpsph" class="internal"><span class="codenumber">7.3.6.3</span> <span class="title">In Spherical Coordinates</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec_seventh-examplesB.html" class="internal"><span class="codenumber">7.4</span> <span class="title">ExamplesB</span></a></div></li>
+<li><div class="toc-item"><a href="ex_seventh.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Exercise</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="meta_backmatter.html" class="internal"><span class="title">Backmatter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="appendix-1.html" class="internal"><span class="codenumber">A</span> <span class="title">List of Symbols</span></a></div></li>
+<li><div class="toc-item"><a href="append_partdiff.html" class="internal"><span class="codenumber">B</span> <span class="title">The partial differential equation</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-3.html" class="internal"><span class="codenumber">C</span> <span class="title">Laplace's equation in cylindrical coordinates</span></a></div></li>
+<li><div class="toc-item"><a href="appendix-4.html" class="internal"><span class="codenumber">D</span> <span class="title">Laplace's equation in spherical coordinates</span></a></div></li>
+<li><div class="toc-item"><a href="index-1.html" class="internal"><span class="title">Index</span></a></div></li>
+<li><div class="toc-item"><a href="refs-list.html" class="internal"><span class="title">References</span></a></div></li>
+<li><div class="toc-item"><a href="colophon-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec_seventh-examplesA"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">Examples A</span>
+</h2>
+<article class="example example-like" id="example-187"><h2 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.1</span><span class="period">.</span>
+</h2>
+<div class="para logical" id="p-1147">
+<div class="para">Find the solution of the wave equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}}
+\end{equation*}
+</div>
+<div class="para">such that <span class="process-math">\(y=p_{o}\cos pt, (p_{o}\)</span> is a constant) when <span class="process-math">\(x=1\)</span> and <span class="process-math">\(y=0\)</span> when <span class="process-math">\(x=0\text{.}\)</span>
+</div>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-190" id="solution-190"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-190"><div class="solution solution-like"><div class="para logical" id="p-1148">
+<div class="para">The wave equation is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html" id="eqn-1Dwave1">
+\begin{equation}
+\frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}} \tag{7.2.1}
+\end{equation}
+</div>
+<div class="para">Let us assume its solution as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html" id="eqn-1Dwave2">
+\begin{equation}
+y(x,t) = X(x) T(t) \tag{7.2.2}
+\end{equation}
+</div>
+<div class="para">so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\frac{\partial y}{\partial t} =X\frac{\partial T}{\partial t}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\frac{\partial^{2} y}{\partial t^{2}}=X\frac{\partial^{2} T}{\partial t^{2}}
+\end{equation*}
+</div>
+<div class="para">also</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\frac{\partial y}{\partial x} =T\frac{\partial X}{\partial x}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\frac{\partial^{2} y}{\partial x^{2}}=T\frac{\partial^{2} X}{\partial x^{2}}
+\end{equation*}
+</div>
+<div class="para">Substituting these values in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dwave1.html" title="Equation 7.2.1">(7.2.1)</a>(i), we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+X\frac{\partial^{2} T}{\partial t^{2}} =  Tv^{2}\frac{\partial^{2} X}{\partial x^{2}}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}} =\frac{1}{ v^{2}T} \frac{\partial^{2} T}{\partial t^{2}} =-k^{2} \text{(say)}
+\end{equation*}
+</div>
+<div class="para">or, and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html" id="eqn-1Dwave3">
+\begin{equation}
+\frac{\partial^{2} X}{\partial x^{2}}+k^{2}X = 0 \quad \text{and} \quad \frac{\partial^{2} T}{\partial t^{2}}+k^{2}v^{2}T = 0 \tag{7.2.3}
+\end{equation}
+</div>
+<div class="para">Now, auxiliary equations are - <span class="process-math">\(m^{2}+k^{2}=0\text{,}\)</span> or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+m=\pm ik
+\end{equation*}
+</div>
+<div class="para">and <span class="process-math">\(m^{2}+k^{2}v^{2}=0\)</span> or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+m=\pm ikv\text{.}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html" id="eqn-1Dwave4">
+\begin{equation}
+X=c_{1}\cos kx+c_{2}\sin kx \quad  \text{and} \quad  T=c_{3}\cos kvt+c_{4}\sin kvt  \tag{7.2.4}
+\end{equation}
+</div>
+<div class="para">Thus</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html" id="eqn-1Dwave5">
+\begin{equation}
+y(x,t)=(c_{1}\cos kx+c_{2}\sin kx)(c_{3}\cos kvt+c_{4}\sin kvt)\tag{7.2.5}
+\end{equation}
+</div>
+<div class="para">[from eqn.<a href="" class="xref" data-knowl="./knowl/eqn-1Dwave2.html" title="Equation 7.2.2">(7.2.2)</a>]. Put <span class="process-math">\(y=0\)</span> when <span class="process-math">\(x=0\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+0=c_{1}(c_{3}\cos kvt+c_{4}\sin kvt) \Rightarrow c_{1} =0.
+\end{equation*}
+</div>
+<div class="para">Hence, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dwave3.html" title="Equation 7.2.3">(7.2.3)</a>(iii) reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+y=c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt)
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html" id="eqn-1Dwave6">
+\begin{equation}
+y=c_{2}c_{3}\cos kvt.\sin kx+c_{2}c_{4}\sin kvt.\sin kx\tag{7.2.6}
+\end{equation}
+</div>
+<div class="para">put <span class="process-math">\(y=p_{o}\cos pt\)</span>  when <span class="process-math">\(x=1\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\therefore \quad p_{o}\cos pt = c_{2}c_{3}\cos kvt.\sin kl+c_{2}c_{4}\sin kvt.\sin kl
+\end{equation*}
+</div>
+<div class="para">equating the coefficients of <span class="process-math">\(\sin\)</span> and <span class="process-math">\(\cos\)</span> on both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+p_{o} =c_{2}c_{3}\sin kl  \quad		\Rightarrow  c_{2}c_{3} = \frac{p_{o}}{\sin kl},
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+0=c_{2}c_{4}\sin kl \quad \Rightarrow c_{2}c_{2}c_{4} =0,
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+p=kv \quad \Rightarrow \frac{p}{v}=k  
+\end{equation*}
+</div>
+<div class="para">Hence, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dwave6.html" title="Equation 7.2.6">(7.2.6)</a> becomes -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+y=\frac{p_{o}}{\sin kl}\cos pt.\sin \frac{p}{v}x = \frac{p_{o}}{\sin (\frac{p}{v})l}\cos pt.\sin (\frac{p}{v})x
+\end{equation*}
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-188"><h2 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span>
+</h2>
+<div class="para logical" id="p-1149">
+<div class="para">A string is stretched between two points (0,0) and (l,0) and then released at rest from the positions  <span class="process-math">\(y=a\sin \frac{\pi x}{l}\text{.}\)</span> Show that the displacement of any point at a distance  <span class="process-math">\(x\)</span> from one end at a time <span class="process-math">\(t\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y(x,t) = a\sin (\frac{\pi x}{l})\cos (\frac{\pi vt}{l}).
+\end{equation*}
+</div>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-191" id="solution-191"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-191"><div class="solution solution-like"><div class="para logical" id="p-1150">
+<div class="para">The vibration of string is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html" id="eqn-vibrt_string1">
+\begin{equation}
+\frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}}  \tag{7.2.7}
+\end{equation}
+</div>
+<div class="para">The boundary conditions are</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html" id="eqn-vibrt_string2">
+\begin{equation}
+y(0,t) = 0=y(l,t), \tag{7.2.8}
+\end{equation}
+</div>
+<div class="para">the initial conditions are</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html" id="eqn-vibrt_string3">
+\begin{equation}
+y(x,0) = a\sin \frac{\pi x}{l}, \tag{7.2.9}
+\end{equation}
+</div>
+<div class="para">and the initial transverse velocity of any point of the string at <span class="process-math">\(t=0\)</span>is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html" id="eqn-vibrt_string4">
+\begin{equation}
+\left(\frac{\partial y}{\partial t}\right)_{t=0} = 0\tag{7.2.10}
+\end{equation}
+</div>
+<div class="para">Now, the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_string1.html" title="Equation 7.2.7">(7.2.7)</a> is in the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html" id="eqn-vibrt_string5">
+\begin{equation}
+y(x,t)=(c_{1}\cos kx+c_{2}\sin kx)(c_{3}\cos kvt+c_{4}\sin kkvt)\tag{7.2.11}
+\end{equation}
+</div>
+<div class="para">with the help of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_string2.html" title="Equation 7.2.8">(7.2.8)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+y(l,t)=0=c_{1}(c_{3}\cos kvt+c_{4}\sin kkvt)   \quad  \Rightarrow  c_{1} =0
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html" id="eqn-vibrt_string6">
+\begin{equation}
+y(x,t)=c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt)  \tag{7.2.12}
+\end{equation}
+</div>
+<div class="para">also from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_string2.html" title="Equation 7.2.8">(7.2.8)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+y(l,t)=0=c_{2}\sin kl(c_{3}\cos kvt+c_{4}\sin kvt)\quad \Rightarrow  c_{2}\sin kl =0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+\sin kl=0=\sin n\pi
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+kl=n\pi 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+\therefore  k=\frac{n\pi}{l},   \quad  \text{where} \quad n=1,2,3,\cdots. 
+\end{equation*}
+</div>
+<div class="para">Hence, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_string6.html" title="Equation 7.2.12">(7.2.12)</a> becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html" id="eqn-vibrt_string7">
+\begin{equation}
+y(x,t)=c_{2}\sin \frac{n\pi x}{l}(c_{3}\cos \frac{n\pi vt}{l}+c_{4}\sin \frac{n\pi vt}{l}) \tag{7.2.13}
+\end{equation}
+</div>
+<div class="para">Again, with the help of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_string4.html" title="Equation 7.2.10">(7.2.10)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+\left(\frac{\partial y}{\partial t}\right)_{t=0}=0 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+=c_{2}\sin \frac{n\pi x}{l}\left[c_{3}\times-\frac{n\pi v}{l}\sin \frac{n\pi vt}{l}+c_{4}\times\frac{n\pi v}{l}\cos \frac{n\pi vt}{l}\right]_{t=0}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+0=c_{2}\sin \frac{n\pi x}{l}\left[c_{4}.\frac{n\pi v}{l}\right]
+\end{equation*}
+</div>
+<div class="para">if <span class="process-math">\(c_{2} =0\text{,}\)</span> eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_string6.html" title="Equation 7.2.12">(7.2.12)</a> will lead to the trivial solution <span class="process-math">\(y(x,t)=0\text{.}\)</span> Therefore, the only possibility is that the <span class="process-math">\(c_{4} =0\text{.}\)</span> Thus eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_string7.html" title="Equation 7.2.13">(7.2.13)</a> reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html" id="eqn-vibrt_string8">
+\begin{equation}
+y(x,t)=c_{2}c_{3}\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l}.\tag{7.2.14}
+\end{equation}
+</div>
+<div class="para">Finally, imposing the condition <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_string3.html" title="Equation 7.2.9">(7.2.9)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+y(x,0) =a\sin \frac{\pi x}{l} = c_{2}c_{3}\sin \frac{n\pi x}{l} \Rightarrow c_{2}c_{3} = a\quad \text{and}\quad n=1.
+\end{equation*}
+</div>
+<div class="para">on putting the values of <span class="process-math">\(c_{2}c_{3}\)</span> and <span class="process-math">\(n\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_string8.html" title="Equation 7.2.14">(7.2.14)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_string1.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string2.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string4.html ./knowl/eqn-vibrt_string6.html ./knowl/eqn-vibrt_string7.html ./knowl/eqn-vibrt_string3.html ./knowl/eqn-vibrt_string8.html">
+\begin{equation*}
+y(x,t) =a\sin \frac{\pi x}{l}\cos \frac{\pi vt}{l} 
+\end{equation*}
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-189"><h2 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.3</span><span class="period">.</span>
+</h2>
+<div class="para" id="p-1151">A tightly stretched string with fixed end points <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=1\)</span> is initially in a position given by <span class="process-math">\(y=y_{o}\sin^{3}\left(\frac{\pi x}{l}\right)\text{.}\)</span> If it is released from rest from this position, find the displacement <span class="process-math">\(y(x,t)\text{.}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-192" id="solution-192"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-192"><div class="solution solution-like"><div class="para logical" id="p-1152">
+<div class="para">Let the equation of vibrating string is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html" id="eqn-vibrt_str1">
+\begin{equation}
+\frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}} \tag{7.2.15}
+\end{equation}
+</div>
+<div class="para">here, the initial conditions are <span class="process-math">\(y(0,t)=0=y(l,t)\)</span> and  <span class="process-math">\(\left(\frac{\partial y}{\partial t}\right)_{t=0}=0\)</span> and the boundary conditions are <span class="process-math">\(y=y_{o}\sin^{2}\left(\frac{\pi x}{l}\right)\text{.}\)</span> The solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_str1.html" title="Equation 7.2.15">(7.2.15)</a> is of the form,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html" id="eqn-vibrt_str2">
+\begin{equation}
+y(x,t)=(c_{1}\cos kx+c_{2}\sin kx)(c_{3}\cos kvt+c_{4}\sin kvt) \tag{7.2.16}
+\end{equation}
+</div>
+<div class="para">Now,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+y(0,t)=0=c_{1}(c_{3}\cos kvt+c_{4}\sin kvt)      \quad  \Rightarrow c_{1} =0.
+\end{equation*}
+</div>
+<div class="para">Hence, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_str2.html" title="Equation 7.2.16">(7.2.16)</a> becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html" id="eqn-vibrt_str3">
+\begin{equation}
+y=c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt) \tag{7.2.17}
+\end{equation}
+</div>
+<div class="para">also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+y(l,t) = 0=c_{2}\sin kl(c_{3}\cos kvt+c_{4}\sin kvt)	
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+\sin kl =0=\sin n\pi 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+kl=n\pi \quad \Rightarrow k=\frac{n\pi}{l};
+\end{equation*}
+</div>
+<div class="para">where, <span class="process-math">\(n=1,2,3, \cdots.\)</span> putting <span class="process-math">\(k\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_str3.html" title="Equation 7.2.17">(7.2.17)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html" id="eqn-vibrt_str4">
+\begin{equation}
+y=c_{2}\sin \frac{n\pi x}{l}\left(c_{3}\cos \frac{n\pi vt}{l}+c_{4}\sin \frac{n\pi vt}{l}\right)\tag{7.2.18}
+\end{equation}
+</div>
+<div class="para">Now,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+\left(\frac{\partial y}{\partial t}\right)_{t=0}=0 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+= c_{2}\sin \frac{n\pi x}{l}\left[c_{3}(-\frac{n\pi v}{l})\sin \frac{n\pi vt}{l}+c_{4}(\frac{n\pi v}{l})\cos\frac{n\pi vt}{l}\right]_{t=0}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+0=c_{2}\sin\frac{n\pi x}{l}\left[c_{4}\cdot\frac{n\pi v}{l}\right] \quad \Rightarrow c_{4}=0. 
+\end{equation*}
+</div>
+<div class="para">Now, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_str4.html" title="Equation 7.2.18">(7.2.18)</a> reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+y=c_{2}c_{3}\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l} =b_{n}\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l} 
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\(\quad   [\because b_{n}=c_{2}c_{3}].\)</span></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html" id="eqn-vibrt_str5">
+\begin{equation}
+\therefore y=\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{l}\cos \frac{n\pi vt}{l} \tag{7.2.19}
+\end{equation}
+</div>
+<div class="para">But,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+y(x,0) = y_{o}\sin^{3}\left(\frac{n\pi x}{l}\right) = \frac{y_{o}}{4}\left[3\sin \frac{\pi x}{l}-sin \frac{3\pi x}{l}\right]
+\end{equation*}
+</div>
+<div class="para">on putting <span class="process-math">\(t=0\)</span>  in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_str5.html" title="Equation 7.2.19">(7.2.19)</a>, we have-</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{l}=\frac{y_{o}}{4}\left[3\sin \frac{\pi x}{l}-sin \frac{3\pi x}{l}\right]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+\left[b_{1}\sin \frac{\pi x}{l}+b_{2}\sin \frac{2\pi x}{l}+\cdots\right]	= \frac{y_{o}}{4}\left[3\sin \frac{\pi x}{l}-sin \frac{3\pi x}{l}\right]
+\end{equation*}
+</div>
+<div class="para">equating the coefficients of <span class="process-math">\(\sin\)</span> on both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+b_{1}=\frac{3y_{o}}{4},\quad b_{3}=-\frac{y_{o}}{4},\quad \text{and}\quad b_{2}=b_{4}=b_{5}=b_{6}=\cdots =0.  
+\end{equation*}
+</div>
+<div class="para">Hence, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vibrt_str5.html" title="Equation 7.2.19">(7.2.19)</a> becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vibrt_str1.html ./knowl/eqn-vibrt_str2.html ./knowl/eqn-vibrt_str3.html ./knowl/eqn-vibrt_str4.html ./knowl/eqn-vibrt_str5.html ./knowl/eqn-vibrt_str5.html">
+\begin{equation*}
+y=\frac{y_{o}}{4}\left[3\sin \frac{\pi x}{l}\cos \frac{\pi vt}{l}-\sin \frac{3\pi x}{l}\cos \frac{3\pi vt}{l}\right] 
+\end{equation*}
+</div>
+</div></div></div>
+</div></article><article class="example example-like" id="example-190"><h2 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.4</span><span class="period">.</span>
+</h2>
+<div class="para" id="p-1153">If a string of length <span class="process-math">\(l\)</span> is plucked at a point aside from its end by a displacement <span class="process-math">\(h\)</span> from the mean position, find the displacement of the string at any time <span class="process-math">\(t\text{?}\)</span>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-193" id="solution-193"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-193"><div class="solution solution-like"><div class="para logical" id="p-1154">
+<div class="para">Let us consider a string which is clamped at points A and B is pulled aside at C and then released suddenly, as shown in figure  <div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/fig73.png" class="contained"></div>. Then the equation of vibrating string is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html" id="eqn-stret_str1">
+\begin{equation}
+\frac{\partial^{2} y}{\partial x^{2}} =  \frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}} \tag{7.2.20}
+\end{equation}
+</div>
+<div class="para">Also, let <span class="process-math">\(CP = h, AC = d,\)</span> and <span class="process-math">\(CB = (l - d)\text{,}\)</span> therefore the displacement of particle between points A and P at time <span class="process-math">\(t=0\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+\frac{y}{x}=\frac{h}{d} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html" id="eqn-stret_str2">
+\begin{equation}
+\therefore y=\frac{hx}{d}  \tag{7.2.21}
+\end{equation}
+</div>
+<div class="para">for the portion between points P and B at time <span class="process-math">\(t=0\text{,}\)</span> we have,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html" id="eqn-stret_str3">
+\begin{equation}
+\frac{y}{l-x}=\frac{h}{l-d}\quad  \therefore y=\frac{h(l-x)}{(l-d)}  \tag{7.2.22}
+\end{equation}
+</div>
+<div class="para">Hence, the displacement of string at time <span class="process-math">\(t=0\)</span> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html" id="eqn-stret_str4">
+\begin{equation}
+f(x) =y(x,0) = \begin{cases}
+\frac{hx}{d}, &amp; \text{for} \quad 0 \leq x\leq d\\
+\frac{h(l-x)}{(l-d)}, &amp; \text{for} \quad d \leq x\leq l
+\end{cases} \tag{7.2.23}
+\end{equation}
+</div>
+<div class="para">since the initial velocity of the string is zero, the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-stret_str1.html" title="Equation 7.2.20">(7.2.20)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html" id="eqn-stret_str5">
+\begin{equation}
+y(x,t) = \sum\limits_{n=1}^{\infty}b_{n}\cos \frac{n\pi vt}{l}\sin \frac{n\pi x}{l} \tag{7.2.24}
+\end{equation}
+</div>
+<div class="para">where,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+b_{n}=\frac{2}{l}\int\limits_{0}^{l}f(x)\sin \frac{n\pi x}{l}\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+= \frac{2}{l}\left[\int\limits_{0}^{d}\frac{hx}{d}\sin \frac{n\pi x}{l}\,dx +\int\limits_{d}^{l}\frac{h(l-x)}{(l-d)}\sin \frac{n\pi x}{l}\,dx\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+= \frac{2h}{l}\left[\int\limits_{0}^{d}\frac{x}{d}\sin \frac{n\pi x}{l}\,dx +\int\limits_{d}^{l}\frac{(l-x)}{(l-d)}\sin \frac{n\pi x}{l}\,dx\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+=\frac{2h}{l}\left[\frac{1}{d}\left\{x.\frac{\cos \frac{n\pi x}{l}}{-\frac{n\pi}{l}}-1.\frac{\sin \frac{n\pi x}{l}}{-\frac{n^{2}\pi^{2}}{l^{2}}}\right\}_{0}^{d} \right.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+\left. + \frac{1}{l-d}\left\{(l-x).\frac{\cos \frac{n\pi x}{l}}{-\frac{n\pi}{l}}-(-1).\frac{\sin \frac{n\pi x}{l}}{-\frac{n^{2}\pi^{2}}{l^{2}}}\right\}_{d}^{l}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+=\frac{2h}{l}\left[-\frac{l}{n\pi}\cos \frac{n\pi d}{l}+\frac{l^{2}}{n^{2}\pi^{2}d}\sin \frac{n\pi d}{l}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+\left. -\frac{l}{n\pi}\cos \frac{n\pi d}{l}+\frac{l^{2}}{n^{2}\pi^{2}(l-d)}\sin \frac{n\pi d}{l}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+=\frac{2h}{l}\left[\frac{1}{d}+\frac{1}{(l-d)}\right]\frac{l^{2}}{n^{2}\pi^{2}}\sin \frac{n\pi d}{l} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html" id="eqn-stret_str6">
+\begin{equation}
+= \frac{2hl^{2}}{n^{2}\pi^{2}d(l-d)}\sin \frac{n\pi d}{l} \tag{7.2.25}
+\end{equation}
+</div>
+<div class="para">Substituting <span class="process-math">\(b_{n}\)</span>  in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-stret_str5.html" title="Equation 7.2.24">(7.2.24)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+\begin{equation*}
+y= \sum\limits_{n=1}^{\infty}\frac{2hl^{2}}{n^{2}\pi^{2}d(l-d)}\sin \frac{n\pi d}{l}\cos \frac{n\pi vt}{l}\sin \frac{n\pi x}{l}
+\end{equation*}
+</div>
+</div></div></div>
+</div></article><section class="paragraphs" id="paragraphs-38"><h2 class="heading"><span class="title">2D wave equation.</span></h2> <article class="example example-like" id="example-191"><h3 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.5</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="p-1155">
+<div class="para">Find the deflection <span class="process-math">\(u(x,y,t) \)</span> of the square membrane with <span class="process-math">\(a=b=1\text{,}\)</span> if the initial velocity is zero and the initial deflection is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x,y) = A\sin \pi x\sin 2\pi y.
+\end{equation*}
+</div>
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original has-image" data-refid="hk-solution-194" id="solution-194"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-194"><div class="solution solution-like">
+<div class="para logical" id="p-1156">
+<div class="para">
+<div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/fig77.png" class="contained"></div>. The deflection of the square membrane is given by the two-dimensional wave equation</div>
+<div class="displaymath process-math" id="eqn-waveeqn1">
+\begin{equation}
+\frac{\partial^{2} u}{\partial t^{2}}=v^{2}\left[\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}\right] \tag{7.2.26}
+\end{equation}
+</div>
+<div class="para">The boundary conditions are given as</div>
+<div class="displaymath process-math" id="eqn-waveeqn2">
+\begin{equation}
+\left.\begin{aligned}	
+u(0,y,t) = 0=u(1,y,t)\\
+u(x,0,t) = 0=u(x,1,t)
+\end{aligned}\right\} \tag{7.2.27}
+\end{equation}
+</div>
+<div class="para">as <span class="process-math">\(a=b=1\)</span>  is the sides of the membrane. The initial conditions are</div>
+<div class="displaymath process-math" id="eqn-waveeqn3">
+\begin{equation}
+u(x,y,0) =f(x,y) = A\sin \pi x\sin 2\pi y \quad   \text{and} \quad   \left.\frac{\partial u}{\partial t}\right\vert_{t=0}=0 \tag{7.2.28}
+\end{equation}
+</div>
+</div> <div class="para logical" id="p-1157">
+<div class="para">Therefore the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-waveeqn1.html" title="Equation 7.2.26">(7.2.26)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html" id="eqn-waveeqn4">
+\begin{equation}
+u(x,y,t)=\sum\limits_{m=1}^{\infty}A_{mn}\cos\lambda_{mn}t\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}	\tag{7.2.29}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{mn}=\frac{4}{1\cdot 1}\int\limits_{x=0}^{1}\int\limits_{y=0}^{1}f(x,y)\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}\,dx\,dy 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html" id="eqn-waveeqn5">
+\begin{equation}
+=4\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin 2\pi y \sin m\pi x\sin n\pi y\,dx\,dy \tag{7.2.30}
+\end{equation}
+</div>
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{m1}=A_{m3}=A_{m4}=\cdots=0
+\end{equation*}
+</div>
+<div class="para">but,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{m2} =4A\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin m\pi x\sin^{2} 2\pi y\,dx\,dy 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= 2A\int\limits_{0}^{1}\int\limits_{0}^{1}\sin \pi x\sin m\pi x(1-\cos4\pi y)\,dx\,dy
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=2A\int\limits_{0}^{1}\sin \pi x\sin m\pi x\left(y-\frac{1}{4\pi}\sin 4\pi y\right)_{0}^{1}\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= 2A \int\limits_{0}^{1}\sin \pi x\sin m\pi x\,dx 
+\end{equation*}
+</div>
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{22}= A_{32}=A_{42}=\cdots=0
+\end{equation*}
+</div>
+<div class="para">Also, we find</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{12} =2A\int\limits_{0}^{1}\sin \pi x\sin \pi x\,dx = A\int\limits_{0}^{1}(1-\cos 2\pi x)\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= A\left(x-\frac{\sin 2\pi x}{2\pi}\right)_{0}^{1}=A.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+\therefore \quad u(x,y,t)= A_{12}\cos\lambda_{12}t\sin\pi x\sin 2\pi y 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=A\cos\sqrt{5}\pi t\sin\pi x\sin 2\pi t
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+[ \because \quad \lambda_{12}^{2}=1^{2}\cdot k_{12}^{2}=\pi^{2}(1^{2}+2^{2}); \quad \therefore \quad \lambda_{12}=\pi \sqrt{5}].
+\end{equation*}
+</div>
+</div>
+</div></div>
+</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="subsec-2Dwave_sol.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec_seventh-heateq.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div class="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org"><div class="name">Authored in PreTeXt</div>
+<div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259 "></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0  472  9732 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496 A 4241 4241  0  0  1  4724  3590 "></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259 A 4507 4507  0  0  1  4724  9448 "></path><polyline points="5385,4299 4062,8125 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8598,3496 8598,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="850,3496 850,9259 " style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="4960,9685 4488,9685 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="3070,4582 1889,6141 3070,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="6418,4582 7600,6141 6418,7700 " style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round; "></polyline><polyline points="8976,3590 8976,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732 "></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy"><div class="name">Powered by Runestone</div>
+<img class="logo" title="Powered by Runestone" src="https://runestone.academy/runestone/static/rectangle_badge.png" alt="Powered by Runestone"></a><a class="mathjax-logo" href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a>
+</div>
+</body>
+</html>

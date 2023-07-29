@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">Therefore the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-waveeqn1.html" title="Equation 7.2.26">(7.2.26)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation}
+u(x,y,t)=\sum\limits_{m=1}^{\infty}A_{mn}\cos\lambda_{mn}t\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}	\tag{7.2.29}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{mn}=\frac{4}{1\cdot 1}\int\limits_{x=0}^{1}\int\limits_{y=0}^{1}f(x,y)\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}\,dx\,dy 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation}
+=4\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin 2\pi y \sin m\pi x\sin n\pi y\,dx\,dy \tag{7.2.30}
+\end{equation}
+</div>
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{m1}=A_{m3}=A_{m4}=\cdots=0
+\end{equation*}
+</div>
+<div class="para">but,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{m2} =4A\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin m\pi x\sin^{2} 2\pi y\,dx\,dy 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= 2A\int\limits_{0}^{1}\int\limits_{0}^{1}\sin \pi x\sin m\pi x(1-\cos4\pi y)\,dx\,dy
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=2A\int\limits_{0}^{1}\sin \pi x\sin m\pi x\left(y-\frac{1}{4\pi}\sin 4\pi y\right)_{0}^{1}\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= 2A \int\limits_{0}^{1}\sin \pi x\sin m\pi x\,dx 
+\end{equation*}
+</div>
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{22}= A_{32}=A_{42}=\cdots=0
+\end{equation*}
+</div>
+<div class="para">Also, we find</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{12} =2A\int\limits_{0}^{1}\sin \pi x\sin \pi x\,dx = A\int\limits_{0}^{1}(1-\cos 2\pi x)\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= A\left(x-\frac{\sin 2\pi x}{2\pi}\right)_{0}^{1}=A.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+\therefore \quad u(x,y,t)= A_{12}\cos\lambda_{12}t\sin\pi x\sin 2\pi y 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=A\cos\sqrt{5}\pi t\sin\pi x\sin 2\pi t
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+[ \because \quad \lambda_{12}^{2}=1^{2}\cdot k_{12}^{2}=\pi^{2}(1^{2}+2^{2}); \quad \therefore \quad \lambda_{12}=\pi \sqrt{5}].
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_seventh-examplesA.html#p-1157" class="internal">in-context</a></span>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="li"><h3 class="heading">
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+</h3>
+<div class="para logical">
+<div class="para">For equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\,di}{\,dt}+\frac{Ri}{L}=\frac{E}{L}
+\end{equation*}
+</div>
+<div class="para">
+<dfn class="terminology">the Python code is</dfn>  <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/odeQ1.png" class="contained"></div>
+</div>
+</div>
+<div class="para">from sympy.interactive import printing</div>
+<div class="para">printing.init_printing(use_latex=True)</div>
+<div class="para">from sympy import *</div>
+<div class="para">import sympy as sp</div>
+<div class="para">t=sp.Symbol('t', real=True)</div>
+<div class="para">I=sp.Function('I')(t)</div>
+<div class="para">R, L, E=sp.symbols('R, L, E', real=True)</div>
+<div class="para">diffeq=Eq(I.diff(t)+R/L*I,E/L)</div>
+<div class="para">display(diffeq)</div>
+<div class="para">dsolve(diffeq,I)</div>
+<div class="para">import numpy as np</div>
+<div class="para">from scipy.integrate import odeint</div>
+<div class="para">import matplotlib.pyplot as plt</div>
+<div class="para">E=5</div>
+<div class="para">R=5</div>
+<div class="para">L=0.02</div>
+<div class="para">Io=0</div>
+<div class="para">t=np.arange(0,0.025,0.001)</div>
+<div class="para">def f(I,t,E,L,R):</div>
+<div class="para">dIdt =-(R/L)*I+(E/L)</div>
+<div class="para">return dIdt</div>
+<div class="para">Is=odeint(f,Io,t,args=(E,L,R))</div>
+<div class="para">plt.plot(t,Is, '-')</div>
+<div class="para">plt.plot(t,Is, 'ro')</div>
+<div class="para">plt.title('DI(t)+RI(t)/L=E/L')</div>
+<div class="para">plt.xlabel('t(s)')</div>
+<div class="para">plt.ylabel('I(A)')</div>
+<div class="para">plt.show()</div>
+<div class="para">Since <span class="process-math">\(e^{RC_{1}}\)</span> is a constant, the general solution of this equation is <span class="process-math">\(I(t) = \left[\frac{E}{R}+Ce^{-Rt/L}\right]\text{.}\)</span>
+</div></article><span class="incontext"><a href="sec_fourth-examplesA.html#li-93" class="internal">in-context</a></span>
+</body>
+</html>

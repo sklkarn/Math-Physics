@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">The solution of this equation is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation}
+\bar{u}_{s} = A e^{-ks^{2}t}\tag{6.2.9}
+\end{equation}
+</div>
+<div class="para">To find <span class="process-math">\(A\text{,}\)</span> set  <span class="process-math">\(t=0\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-FT_appl4.html" title="Equation 6.2.9">(6.2.9)</a>, then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation*}
+A=\bar{u}_{s}(s,0) = \int\limits_{0}^{\infty}u(x,0)\sin sx\,dx
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation*}
+A = \int\limits_{0}^{1}1.\sin sx\,dx + \int\limits_{1}^{\infty}0.\sin sx\,dx
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation*}
+A = -\left.\frac{\cos sx}{s}\right\vert_{0}^{1} = \frac{1-\cos s}{s}
+\end{equation*}
+</div>
+<div class="para">substituting this value of <span class="process-math">\(A\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-FT_appl4.html" title="Equation 6.2.9">(6.2.9)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation}
+\bar{u}_{s}=\frac{1-\cos s}{s}e^{-ks^{2}t}\tag{6.2.10}
+\end{equation}
+</div>
+<div class="para">applying inverse Fourier sine transform, we have	-</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_appl4.html ./knowl/eqn-FT_appl4.html">
+\begin{equation}
+u(x,t) = \frac{2}{\pi}\int\limits_{0}^{\infty}\frac{1-\cos s}{s}e^{-ks^{2}t}\sin sx\,ds\tag{6.2.11}
+\end{equation}
+</div>
+</div>
+<span class="incontext"><a href="sec_sixth-examplesA.html#p-956" class="internal">in-context</a></span>
+</body>
+</html>

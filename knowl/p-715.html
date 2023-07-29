@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{-\infty}^{\infty}xe^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =	\int\limits_{-\infty}^{\infty}\frac{1}{x}\frac{d}{dx}\left(-\frac{1}{2}e^{-x^{2}}\right)xH_{m}(x)H_{n}(x)\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left.H_{m}(x)H_{n}(x)\left(-\frac{1}{2}e^{-x^{2}}\right)\right\vert_{-\infty}^{\infty}-\int\limits_{-\infty}^{\infty}\frac{d}{dx}[H_{m}(x)H_{n}(x)]\left(-\frac{1}{2}e^{-x^{2}}\right)\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left.-\frac{1}{2}e^{-x^{2}}H_{m}(x)H_{n}(x)\right\vert_{-\infty}^{\infty}+\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}\frac{d}{dx}[H_{m}(x)H_{n}(x)]\,dx 
+\end{equation*}
+</div>
+<div class="para">[Integrating by parts]</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=0+\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}\left[H'_{m}(x)H_{n}(x)+H_{m}(x)H'_{n}(x)\right]\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}\left[2mH_{m-1}(x)H_{n}(x)+2nH_{m}(x)H_{n-1}(x)\right]\,dx 
+\end{equation*}
+</div>
+<div class="para">( using recurrence relation 1.)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=m\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m-1}(x)H_{n}(x)\,dx+n\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n-1}(x)\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=m\sqrt{\pi}2^{n}n!\delta_{n,m-1}+n\sqrt{\pi}2^{n-1}(n-1)!\delta_{m,n-1} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\sqrt{\pi}\left[2^{n-1}n!\delta_{m,n-1}+2^{n}(n+1)!\delta_{m,n+1}\right] 
+\end{equation*}
+</div>
+<div class="para">[<span class="process-math">\(\because \delta_{n,m-1}=\delta_{n+1,m}\)</span>]</div>
+</div>
+<span class="incontext"><a href="sec_fourth-examplesE.html#p-715" class="internal">in-context</a></span>
+</body>
+</html>

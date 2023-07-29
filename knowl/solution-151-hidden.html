@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">The given equation is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+\frac{\partial^{2}y(x,t)}{\partial x^{2}}=\frac{1}{v^{2}}\frac{\partial^{2}y(x,t)}{\partial t^{2}}\tag{6.2.12}
+\end{equation}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+\mathscr{F}\{y(x,t)\} = Y(s,t) = \int\limits_{-\infty}^{\infty}y(x,t) e^{-isx}\,dx\tag{6.2.13}
+\end{equation}
+</div>
+<div class="para">Now, equation <a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv1.html" title="Equation 6.2.12">(6.2.12)</a> becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+\mathscr{F}\{\frac{\partial^{2}y}{\partial x^{2}}\} = \frac{1}{v^{2}}\mathscr{F}\{\frac{\partial^{2}y}{\partial t^{2}}\}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+(is)^{2}\mathscr{F}\{y(x,t)\} = \frac{1}{v^{2}}\frac{\partial^{2}}{\partial t^{2}}Y(s,t)
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+-s^{2}Y(s,t) = \frac{1}{v^{2}}\frac{\partial^{2}}{\partial t^{2}}Y(s,t)
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+\frac{\partial^{2}Y}{\partial t^{2}}+v^{2}s^{2}Y =0\tag{6.2.14}
+\end{equation}
+</div>
+<div class="para">This is a second order differential equation. whose solution is given as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+Y(s,t) = C_{1}e^{+ivst}+C_{2}e^{-ivst}\tag{6.2.15}
+\end{equation}
+</div>
+<div class="para">Imposing the initial condition in equation <a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv2.html" title="Equation 6.2.13">(6.2.13)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+Y(s,0) = \int\limits_{-\infty}^{\infty}y(x,0) e^{-isx}\,dx = \int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx=F(s)\tag{6.2.16}
+\end{equation}
+</div>
+<div class="para">Also, from equation ,<a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv5.html" title="Equation 6.2.16">(6.2.16)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+Y(s,0) = C_{1}+C_{2}\tag{6.2.17}
+\end{equation}
+</div>
+<div class="para">Therefore, from equations <a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv5.html" title="Equation 6.2.16">(6.2.16)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv6.html" title="Equation 6.2.17">(6.2.17)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+F(s) = C_{1}+C_{2}\tag{6.2.18}
+\end{equation}
+</div>
+<div class="para">now, differentiating equation <a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv2.html" title="Equation 6.2.13">(6.2.13)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv6.html" title="Equation 6.2.17">(6.2.17)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+Y'(s,t) = \int\limits_{-\infty}^{\infty}\left(\frac{\partial y}{\partial t}\right)e^{-isx}\,dx = ivsC_{1}e^{ivst} -ivsC_{2}e^{-ivst}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+Y'(s,0) = \int\limits_{-\infty}^{\infty}\left(\frac{\partial y}{\partial t}\right)_{t=0}e^{-isx}\,dx = 0= ivs C_{1} -ivs C_{2}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+\therefore  \quad C_{1} = C_{2} \tag{6.2.19}
+\end{equation}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+Y(s,t) = \frac{F(s)}{2}\left[e^{+ivst}+e^{-ivst}\right]\tag{6.2.20}
+\end{equation}
+</div>
+<div class="para">[from equations <a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv8.html" title="Equation 6.2.19">(6.2.19)</a>, <a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv7.html" title="Equation 6.2.18">(6.2.18)</a>, and <a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv4.html" title="Equation 6.2.15">(6.2.15)</a>] Now, the inverse Fourier transform is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+\mathscr{F}^{-1}\{Y(s,t)\}=y(x,t)	 = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}Y(s,t)e^{isx\,ds}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+= \frac{1}{4\pi}\int\limits_{-\infty}^{\infty}F(s)\left[e^{ivst}+e^{-ivst}\right]\,ds
+\end{equation*}
+</div>
+<div class="para">[from eqn.<a href="" class="xref" data-knowl="./knowl/eqn-FT_applinv9.html" title="Equation 6.2.20">(6.2.20)</a>]</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+=\frac{1}{4\pi}\int\limits_{-\infty}^{\infty}\{f(x')e^{-isx}\,dx'\}\{\left[e^{+ivst}+ e^{-ivst}\right]e^{isx}\}\,ds
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+=\frac{1}{4\pi}\int\limits_{-\infty}^{\infty}\{f(x')\,dx'\}\{\int\limits_{-\infty}^{\infty}\left[e^{is(x-x' +vt)}+ e^{is(x-x'-vt)}\right]\,ds\}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+=\frac{1}{2}\int\limits_{-\infty}^{\infty}\{f(x')\,dx'\}\{\delta(x+vt-x') + \delta(x-vt-x')\}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation}
+\mathscr{F}^{-1}\{Y(s,t)\}=y(x,t) = \frac{1}{2}\left[f(x+vt) +f(x-vt)\right] \tag{6.2.21}
+\end{equation}
+</div>
+<div class="para">This is the general solution of wave equation. [from Dirac Delta function]</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+\delta (x)	=\frac{1}{2\pi} \int\limits_{-\infty}^{\infty}e^{isx}\,ds
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FT_applinv1.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv5.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv2.html ./knowl/eqn-FT_applinv6.html ./knowl/eqn-FT_applinv8.html ./knowl/eqn-FT_applinv7.html ./knowl/eqn-FT_applinv4.html ./knowl/eqn-FT_applinv9.html">
+\begin{equation*}
+\int\limits_{-\infty}^{\infty}f(x) \delta (a-x)\,dx =f(a)]. 
+\end{equation*}
+</div>
+</div></div></body>
+</html>

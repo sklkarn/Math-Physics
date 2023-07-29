@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">Let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(t) = \int\limits_{0}^{\infty}e^{-tx^{2}}\,dx 
+\end{equation*}
+</div>
+<div class="para">But,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}\{f(t)\} = \int\limits_{0}^{\infty}e^{-st}f(t)\,dt  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=  \int\limits_{0}^{\infty}	e^{-st}\left[\int\limits_{0}^{\infty}	e^{-tx^{2}}\,dx\right]\,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=  \int\limits_{0}^{\infty}\left[ \int\limits_{0}^{\infty} e^{-st}	e^{-tx^{2}}\,dt\right]\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \int\limits_{0}^{\infty}\mathscr{L}\{e^{-tx^{2}}\}\,dx = \int\limits_{0}^{\infty}\frac{1}{s+x^{2}}\,dx  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[\frac{1}{\sqrt{s}}\tan^{-1}\frac{x}{\sqrt{s}}\right]_{0}^{\infty}  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{\pi}{2\sqrt{s}} \left[\because \quad \mathscr{L}\{e^{at}\} =\frac{1}{s-a}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad f(t)=\frac{\pi}{2} \mathscr{L}^{-1}\{\frac{1}{\sqrt{s}}\}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{\pi}{2}\frac{1}{\sqrt{\pi}t}=\frac{1}{2}\sqrt{\frac{\pi}{t}}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{\infty}e^{-tx^{2}}\,dx = \frac{1}{2}\sqrt{\frac{\pi}{t}}
+\end{equation*}
+</div>
+<div class="para">putting <span class="process-math">\(t=1\text{,}\)</span> we get the result.</div>
+</div>
+<span class="incontext"><a href="sec_sixth-examplesC.html#p-1074" class="internal">in-context</a></span>
+</body>
+</html>

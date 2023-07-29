@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
+<li><div class="para">
+<div class="displaymath process-math">
+\begin{equation*}
+\nabla^{2}\left(\frac{1}{r}\right) = \left(\frac{\partial^{2}}{\partial x^{2}} 
++\frac{\partial^{2}}{\partial y^{2}} 
++\frac{\partial^{2}}{\partial z^{2}}\right)\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right], 
+\end{equation*}
+</div>here,<div class="displaymath process-math">
+\begin{equation*}
+\nabla^{2} = \frac{\partial^{2}}{\partial x^{2}} 
++\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
+\end{equation*}
+</div>is a Laplacian operator. But,<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial}{\partial x}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+= -\frac{1}{2}\left[\frac{1(2x)}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
+\end{equation*}
+</div>and<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2}}{\partial x^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+= \frac{\partial}{\partial x}\left[\frac{-x}{(x^{2}+y^{2}+z^{2})^{3/2}}\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left[\frac{+\frac{3}{2}(x)2x}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
+- \left[\frac{-1}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
+\end{equation*}
+</div>Similarly,<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2}}{\partial y^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left[\frac{+3y^{2}}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
+- \left[\frac{-1}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
+\end{equation*}
+</div>also,<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2}}{\partial z^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left[\frac{3(x^{2}+y^{2}+z^{2})}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
+- \left[\frac{3}{(x^{2}+y^{2}+z^{2})^{3/2}}\right] = 0. 
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para">Let<div class="displaymath process-math">
+\begin{equation*}
+\vec{r}=x\hat{i}+y\hat{J}+z\hat{k}\text{,}
+\end{equation*}
+</div>so that<div class="displaymath process-math">
+\begin{equation*}
+r^{2}=x^{2}+y^{2}+z^{2}
+\end{equation*}
+</div>also, suppose <span class="process-math">\(r^{2}=\phi\)</span> and <span class="process-math">\(\vec{r}=\vec{F}\text{.}\)</span>  Then as<div class="displaymath process-math">
+\begin{equation*}
+\vec{\nabla}\times\left(\phi\vec{F}\right) 
+= \left(\vec{\nabla \phi}\right)\times \vec{F} 
++\phi \left(\vec{\nabla} \times \vec{F}\right)
+\end{equation*}
+</div>we have<div class="displaymath process-math">
+\begin{equation*}
+\vec{\nabla}\times \left(\frac{\vec{r}}{r^{2}}\right)
+= \vec{\nabla}\left(\frac{1}{r^{2}}\right)\times \vec{r}  
++ \frac{1}{r^{2}}\left(\vec{\nabla}\times \vec{r}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[\vec{\nabla}\left(\frac{1}{x^{2}+y^{2} +z^{2}}\right)\right]
+\times (x\hat{i}+y\hat{J}+z\hat{k})
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++\frac{1}{x^{2}+y^{2}+z^{2}}\left[\vec{\nabla} 
+\times (x^{2}+y^{2}+z^{2})\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[\left(\hat{i}\frac{\partial}{\partial x} 
++\hat{j}\frac{\partial}{\partial y} 
++\hat{k}\frac{\partial}{\partial z}\right) 
+\left(\frac{1}{x^{2}+y^{2}+z^{2}}\right)\right] 
+\times  (x\hat{i}+y\hat{J}+z\hat{k}) +0
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{-2}{(x^{2}+y^{2}+z^{2})^{2}}(x\hat{i}+y\hat{J}+z\hat{k}) 
+\times (x\hat{i}+y\hat{J}+z\hat{k})=0.
+\end{equation*}
+</div>
+</div></li>
+</ol></div></div></body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{-1}^{+1}x^{m}P_{n}(x)\,dx =\int\limits_{-1}^{+1}x^{m}\frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{2^{n}n!}\int\limits_{-1}^{+1}x^{m}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}\,dx
+\end{equation*}
+</div>
+<div class="para">On integrating by parts we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2^{n}n!}\left[\left\{x^{m}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\right\}_{-1}^{+1}-\int\limits_{-1}^{+1}mx^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\,dx\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=0-\frac{m}{2^{n}n!}\int\limits_{-1}^{+1}x^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\,dx
+\end{equation*}
+</div>
+<div class="para">Integrating we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=(-1)^{2}\frac{m(m-1)}{2^{n}n!}\int\limits_{-1}^{+1}x^{m-2}\frac{d^{n-2}}{dx^{n-2}}(x^{2}-1)^{n}\,dx
+\end{equation*}
+</div>
+<div class="para">Integrating <span class="process-math">\(m-2 \)</span> times, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=(-1)^{m}\frac{m(m-1)\cdots 2\cdot 1}{2^{n}n!}\int\limits_{-1}^{+1}\frac{d^{n-m}}{dx^{n-m}}(x^{2}-1)^{n}\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{(-1)^{m}m!}{2^{n}n!}\left[\frac{d^{n-m-1}}{dx^{n-m-1}}(x^{2}-1)^{n}\right]_{-1}^{+1}=0.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_fourth-examplesC.html#p-616" class="internal">in-context</a></span>
+</body>
+</html>

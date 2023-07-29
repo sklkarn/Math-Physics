@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="para">Taking Laplace transform, we have -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[\ddot{x}+(k/m)x]=0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s^{2}x(s) -sx(0) -x'(0)+(k/m)x(s) =0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\{s^{2}+(k/m)\}x(s) =1
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore x(s) = \frac{1}{\{s^{2}+(k/m)\}}=\frac{1}{s^{2}+a^{2}}
+\end{equation*}
+</div>
+<div class="para">we know that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[\sin at] =\frac{a}{s^{2}+a^{2}}
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}^{-1}[x(s)] =x(t)=\mathscr{L}^{-1}[\frac{1}{s^{2}+a^{2}}] = \frac{1}{a}\sin at 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore   x(t) = \frac{1}{\sqrt{k/m}}\sin (k/m)t.
+\end{equation*}
+</div>
+</div></div></body>
+</html>

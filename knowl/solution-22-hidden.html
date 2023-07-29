@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical"><ol class="lower-alpha">
+<li><div class="para">
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{\nabla}\times \left(\vec{\nabla}\phi\right) = \vec{\nabla}\times 
+\left(\frac{\partial \phi}{\partial x}\hat{i} 
++\frac{\partial \phi}{\partial y}\hat{j}+\frac{\partial \phi}{\partial z}\hat{k}\right) 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+\frac{\partial \phi}{\partial x} &amp; \frac{\partial\phi}{\partial y} &amp; \frac{\partial \phi}{\partial z} 
+\end{vmatrix}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[\frac{\partial}{\partial y}\left(\frac{\partial \phi}{\partial z}\right) 
+-\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial y}\right)\right]\hat{i} 
++\left[\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial x}\right) 
+-\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial x}\right)\right]\hat{j}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++\left[\frac{\partial}{\partial x}\left(\frac{\partial \phi}{\partial y}\right) 
+-\frac{\partial}{\partial y}\left(\frac{\partial \phi}{\partial x}\right)\right]\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left(\frac{\partial^{2} \phi}{\partial y \partial z} 
+-\frac{\partial^{2} \phi}{\partial z \partial y}\right)\hat{i} 
++\left(\frac{\partial^{2} \phi}{\partial z \partial x} 
+-\frac{\partial^{2} \phi}{\partial x \partial z}\right)\hat{j} 
++\left(\frac{\partial^{2} \phi}{\partial x \partial y} 
+-\frac{\partial^{2} \phi}{\partial y \partial x}\right)\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=0
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para">
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{\nabla}\cdot \left(\vec{\nabla}\times\vec{A}\right) 
+= \vec{\nabla}\cdot {det\begin{bmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+A_{1} &amp; A_{2} &amp; A_{3} \end{bmatrix}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \vec{\nabla}\cdot \left\{\left[\frac{\partial A_{3}}{\partial y} 
+-\frac{\partial A_{2}}{\partial z}\right]\hat{i}+\left[\frac{\partial A_{1}}{\partial z} 
+-\frac{\partial A_{3}}{\partial x}\right]\hat{j}+\left[\frac{\partial A_{2}}{\partial x} 
+-\frac{\partial A_{1}}{\partial y}\right]\hat{k}\right\}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{\partial}{\partial x}\left[\frac{\partial A_{3}}{\partial y} 
+-\frac{\partial A_{2}}{\partial z}\right] 
++\frac{\partial}{\partial y}\left[\frac{\partial A_{1}}{\partial z} 
+-\frac{\partial A_{3}}{\partial x}\right] 
++\frac{\partial}{\partial z}\left[\frac{\partial A_{2}}{\partial x} 
+-\frac{\partial A_{1}}{\partial y}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{\partial^{2}A_{3}}{\partial x\partial y} 
+-\frac{\partial^{2}A_{2}}{\partial x\partial z} 
++\frac{\partial^{2}A_{1}}{\partial y\partial z} 
+-\frac{\partial^{2}A_{3}}{\partial y\partial x} 
++\frac{\partial^{2}A_{2}}{\partial z\partial x} 
+-\frac{\partial^{2}A_{1}}{\partial z\partial y}=0.
+\end{equation*}
+</div>
+</div></li>
+</ol></div></div></body>
+</html>

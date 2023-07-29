@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math"><div class="solution solution-like"><div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+x^{n}J_{n}(x)=x^{n}\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{2n+2r}}{r!(n+r)!\cdot 2^{n+2r}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \frac{d}{dx}\left[x^{n}J_{n}(x)\right]=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}(2n+2r)x^{2n+2r-1}}{r!(n+r)!\cdot 2^{n+2r}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=x^{n}\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}(n+r)x^{n+2r-1}}{r!(n+r)!(n+r-1)\cdot 2^{n+2r-1}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=x^{n}\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n-1+r)!}\left(\frac{x}{2}\right)^{\overline{n-1}+2r} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= x^{n}J_{n-1}(x)
+\end{equation*}
+</div>
+</div></div></body>
+</html>

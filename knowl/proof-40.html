@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="hiddenproof"><h3 class="heading"><span class="type">Proof</span></h3>
+<div class="para logical">
+<div class="para">The convolution means</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x)*g(x) = \int\limits_{-\infty}^{\infty} f(\xi)g(x-\xi)\,d\xi = \int\limits_{-\infty}^{\infty} f(x-\xi)g(\xi)\,d\xi
+\end{equation*}
+</div>
+<div class="para">derive from the Dirac Delta function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(\alpha) = \int\limits_{-\infty}^{\infty}\delta(\alpha-x)f(x)\,dx. 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{F}	\{f(x) * g(x)\} = \int\limits_{-\infty}^{\infty}e^{-isx}\{f(x) * g(x)\}\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{x=-\infty}^{\infty}\frac{1}{2\pi}\left[ \int\limits_{\xi=-\infty}^{\infty}f(\xi)g(x-\xi)\,d\xi\right] e^{-isx}\,dx
+\end{equation*}
+</div>
+<div class="para">(on changing the order of integration)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{\xi=-\infty}^{\infty}\left[f(\xi)\int\limits_{x=-\infty}^{\infty}g(x-\xi) e^{-isx}\,dx\right]\,d\xi
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{\xi=-\infty}^{\infty}f(\xi)\left[\int\limits_{x=-\infty}^{\infty}g(x-\xi) e^{-is(x-\xi)}\,d(x-\xi)\right]e^{-is\xi}\,d\xi;    \quad  x-\xi=\lambda	
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{\xi=-\infty}^{\infty} f(\xi)e^{-is\xi}\,d\xi\left[ \int\limits_{\lambda=-\infty}^{\infty}g(\lambda)e^{-is\lambda}\,d\lambda\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{\xi=-\infty}^{\infty} f(\xi)e^{-is\xi}\,d\xi\cdot\mathscr{F}\{g(\lambda)\}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\mathscr{F}\{f(\xi\}\cdot \mathscr{F}\{g(\lambda)\} = F(s).G(s).
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(x\)</span> is time and <span class="process-math">\(s\)</span> is frequency then convolution of two signal in time domain corresponds to the multiplication of their Fourier transform in frequency domain.</div>
+</div></article><span class="incontext"><a href="subsec-Fconvl.html#proof-40" class="internal">in-context</a></span>
+</body>
+</html>

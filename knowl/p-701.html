@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">We know that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation}
+e^{2zx-z^{2}}= e^{x^{2}-(z-x)^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n}\tag{4.9.17}
+\end{equation}
+</div>
+<div class="para">Differentiating <span class="process-math">\(n\)</span> times w. r. t. <span class="process-math">\(z\text{,}\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation}
+e^{x^{2}}\frac{d^{n}}{dx^{n}}[e^{-(z-x)^{2}}]=	H_{n}(x)+H_{n+1}(x)z+\cdots\tag{4.9.18}
+\end{equation}
+</div>
+<div class="para">But, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation*}
+\frac{\,d}{\,dz}[e^{-(z-x)^{2}}]=-2(z-x)e^{-(z-x)^{2}}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation*}
+\frac{\,d}{\,dx}[e^{-(z-x)^{2}}]=+2(z-x)e^{-(z-x)^{2}}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation*}
+\lim\limits_{z\to 0}\frac{\,d}{\,dz}[e^{-(z-x)^{2}}]=2xe^{-x^{2}}=(-1)^{1}\lim\limits_{z\to 0}\frac{d}{dx}[e^{-(z-x)^{2}}]
+\end{equation*}
+</div>
+<div class="para">similarly,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation*}
+\lim\limits_{z\to 0}\frac{d^{2}}{dz^{2}}[e^{-(z-x)^{2}}]=(-1)^{2}\lim\limits_{z\to 0}\frac{d^{2}}{dx^{2}}[e^{-(z-x)^{2}}]
+\end{equation*}
+</div>
+<div class="para">and so on. In general,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation*}
+\lim\limits_{z\to 0}\frac{d^{n}}{dz^{n}}[e^{-(z-x)^{2}}]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation}
+=(-1)^{n}\lim\limits_{z\to 0}\frac{d^{n}}{dx^{n}}[e^{-(z-x)^{2}}]=(-1)^{n}\frac{d^{n}}{dx^{n}}[e^{-x^{2}}]\tag{4.9.19}
+\end{equation}
+</div>
+<div class="para">Hence from equation <a href="" class="xref" data-knowl="./knowl/eqn-hermt_rodrg2.html" title="Equation 4.9.18">(4.9.18)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation*}
+\lim\limits_{z\to 0}e^{x^{2}}\frac{d^{n}}{dz^{n}}[e^{-(z-x)^{2}}]=H_{n}(x) 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation*}
+=	 e^{x^{2}}\lim\limits_{z\to 0}\frac{d^{n}}{dz^{n}} [e^{-(z-x)^{2}}]=  e^{x^{2}}(-1)^{n}\frac{d^{n}}{dx^{n}}e^{-x^{2}} 
+\end{equation*}
+</div>
+<div class="para">[from equation <a href="" class="xref" data-knowl="./knowl/eqn-hermt_rodrg3.html" title="Equation 4.9.19">(4.9.19)</a>]</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation}
+\therefore H_{n}(x)=(-1)^{n} e^{x^{2}}\frac{d^{n}}{dx^{n}}[e^{-x^{2}}]  \tag{4.9.20}
+\end{equation}
+</div>
+<div class="para">This is differential form of Hermite polynomial, which gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+\begin{equation*}
+H_{o}(x)=1,  H_{1}(x)=2x,  H_{2}(x)=4x^{2}-2,
+\end{equation*}
+</div>
+<div class="para">and so on.</div>
+</div>
+<span class="incontext"><a href="subsec-hermit-pol.html#p-701" class="internal">in-context</a></span>
+</body>
+</html>

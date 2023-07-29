@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<section class="paragraphs"><h3 class="heading"><span class="title">Note:.</span></h3> <ol class="decimal">
+<li><div class="para">If the infinite series solution of a given differential equation is reduced into a finite series, then the solution is called the polynomial. "Polynomial is a finite series that consists of a finite number of terms. Each term in a polynomial is a product of a coefficient, a variable raised to a power, and there is a finite number of such terms in the polynomial expression. The degree of the polynomial determines the highest power of the variable present in the expression, and the number of terms is directly related to the degree". For a positive integer <span class="process-math">\(n\text{,}\)</span>  equation <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq8.html" title="Equation 4.5.8">(4.5.8)</a> is a finite series (polynomial) and  equation <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq10.html" title="Equation 4.5.10">(4.5.10)</a> is an infinite series. For a nigative integer <span class="process-math">\(n\text{,}\)</span>  equation <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq8.html" title="Equation 4.5.8">(4.5.8)</a> is an infinite series and  equation <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq11.html" title="Equation 4.5.11">(4.5.11)</a> is a polynomial. The general solution is a linear combination of a finite series and an infinite series.</div></li>
+<li><div class="para">If we want to solve the Legender's  equation in a series of ascending powers of <span class="process-math">\(x\text{,}\)</span> we may proceed by taking  <span class="process-math">\(y=\sum\limits_{k=0}^{\infty} a_{k}x^{m+k}\text{.}\)</span>
+</div></li>
+<li><div class="para logical">
+<div class="para">The expansion of <span class="process-math">\(P_{n}(x)\)</span> can also be written as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{n}(x) = \sum\limits_{r=0}^{N} (-1)^{r}\frac{1\cdot 3\cdot 5\cdots (2n-1)}{n!} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\times\frac{n(n-1)\cdots(n-2r+1)}{2\cdot 4\cdots 2r\cdot(2n-1)(2n-3)\cdots (2n-2r+1)}x^{n-2r}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\sum\limits_{r=0}^{N} (-1)^{r}\frac{1\cdot 3\cdot 5\cdots (2n-2r-1)}{2^{r}\cdot r! (n-2r)!}x^{n-2r}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\sum\limits_{r=0}^{N} (-1)^{r}\frac{1\cdot 2\cdot 3\cdot 5\cdots (2n-2r)}{2^{r}\cdot r! (n-2r)!\cdot 2\cdot 4\cdots (2n-2r)}x^{n-2r}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
+=\sum\limits_{r=0}^{N} (-1)^{r}\frac{1(2n-2r)!}{2^{r}\cdot r! (n-r)!(n-2r)!}x^{n-2r}\tag{4.5.13}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(N=\frac{n}{2}\)</span> for <span class="process-math">\(n\)</span> even and <span class="process-math">\(N=n-\frac{1}{2}\)</span> for <span class="process-math">\(n\)</span> odd. In particular,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{n}(x) = \frac{1\cdot 3\cdot 5\cdots (2n-1)}{n!}\left[x^{n}-\frac{n(n-1)}{2(2n-1)}x^{n-2}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left.+\frac{n(n-1)(n-2)(n-3)}{2\cdot 4\cdots (2n-1)(2n-3)}x^{n-4}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{2n)!}{(2\cdot 4\cdot 6 \cdots 2n)n!}\left[x^{n}-\frac{n(n-1)}{2(2n-1)}x^{n-2} \right.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left.+\frac{n(n-1)(n-2)(n-3)}{2\cdot 4\cdots (2n-1)(2n-3)}x^{n-4}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{2n)!}{(2^{n}n!n!}\left[x^{n}-\frac{n(n-1)}{2(2n-1)}x^{n-2}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left.+\frac{n(n-1)(n-2)(n-3)}{2\cdot 4\cdots (2n-1)(2n-3)}x^{n-4}-\cdots\right]
+\end{equation*}
+</div>
+<div class="para">putting,	<span class="process-math">\(n=0,1,2,3,\cdots\)</span>  etc., we get - <span class="process-math">\(P_{n}(x)=1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{1}(x)=\frac{2!}{2\cdot 1!\cdot1!}[x] =x,
+\end{equation*}
+</div>
+<div class="para">other terms are vanished.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{2}(x)=\frac{4!}{2^{2}\cdot 2!\cdot 2!}[x^{2}-\frac{1}{3}] = \frac{3}{2}(x^{2}-\frac{1}{3}) = \frac{3x^{2}-1}{2},
+\end{equation*}
+</div>
+<div class="para">other terms are vanished.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{3}(x)=\frac{6!}{2^{3}\cdot 3!\cdot 3!}[x^{3}-\frac{3}{2}\frac{2}{5}x] = \frac{5x^{3}-3x}{2},
+\end{equation*}
+</div>
+<div class="para">etc.</div>
+</div></li>
+<li><div class="para logical">
+<div class="para">From expression <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq13.html" title="Equation 4.5.13">(4.5.13)</a>, we deduce that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+\begin{equation*}
+P_{n}(x) =\sum\limits_{r=0}^{N}\frac{ (-1)^{r} }{2^{n}r!(n-r)!}\frac{d^{n}}{dx^{n}}(x^{2n-2r}) 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+\begin{equation*}
+=\frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}\sum\limits_{r=0}^{N}(-1)^{r}\frac{n!}{r!(n-r)!}x^{2n-2r} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+\begin{equation*}
+\left[ \because   \frac{d^{n}}{dx^{n}}x^{2n-2r} = \frac{(2n-2r)!}{(n-2r)!}x^{2n-2r}\right]
+\end{equation*}
+</div>
+<div class="para">Now extended the upper limit from <span class="process-math">\(N\)</span> to <span class="process-math">\(n\)</span> since the extra terms from <span class="process-math">\(N+1\)</span> to <span class="process-math">\(n\)</span> do not contribute anything because each term in the series</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+\begin{equation*}
+\sum\limits_{r=N+1}^{n} \frac{d^{n}}{dx^{n}}\frac{(-1)^{r}n!}{r!(n-r)!}x^{2n-2r}
+\end{equation*}
+</div>
+<div class="para">vanishes for <span class="process-math">\(r\)</span> and <span class="process-math">\(n\)</span> integrals. Also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+\begin{equation*}
+(x^{2}-1)^{n}=  \sum\limits_{r=0}^{n} \frac{(-1)^{r}n!}{r!(n-r)!}x^{2(n-r)} 
+\end{equation*}
+</div>
+<div class="para">from Binomial expansion of <span class="process-math">\((x^{2}-1)^{n}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+\begin{equation*}
+\therefore \quad P_{n}(x) = \frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}
+\end{equation*}
+</div>
+<div class="para">This is the Rodrigue's Formula for Legender's Polynomial. The plot for Legender's polynomial is shown in <a href="" class="xref" data-knowl="./knowl/fig-fig43.html" title="Figure 4.5.1">Figure 4.5.1</a>.</div>
+</div></li>
+</ol></section><span class="incontext"><a href="subsec-Legnd_eq.html#paragraphs-22" class="internal">in-context</a></span>
+</body>
+</html>

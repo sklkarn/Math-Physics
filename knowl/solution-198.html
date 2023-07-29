@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<div class="solution solution-like">
+<h3 class="heading">
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">7.4.4.1</span><span class="period">.</span>
+</h3>
+<div class="para logical">
+<div class="para">The equation of steady state heat flow is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} =0   
+\end{equation*}
+</div>
+<div class="para">The boundary conditions are given as</div>
+</div> <ol class="lower-roman">
+<li><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+u(0,y) =0=u(a,y),
+\end{equation*}
+</div></div></li>
+<li><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+u(x,y) =f(x),
+\end{equation*}
+</div></div></li>
+<li><div class="para logical"><div class="displaymath process-math">
+\begin{equation*}
+u_{y}(x,b)=0.
+\end{equation*}
+</div></div></li>
+</ol> <div class="para logical">
+<div class="para">The solution of this problem is obtained as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u(x,y) = \sum\limits_{n=1}^{\infty}\left[C_{n}\cosh\frac{n\pi y}{a}+D_{n}\sinh\frac{n\pi y}{a}\right] \sin \frac{n\pi x}{a}    
+\end{equation*}
+</div>
+<div class="para">from condition (iii), we have -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x)= \sum\limits_{n=1}^{\infty}C_{n}\sin\frac{n\pi x}{a}\quad \text{so that }\quad  C_{n} =\frac{2}{a}\int\limits_{0}^{a}f(x) \sin \frac{n\pi x}{a}\,dx 
+\end{equation*}
+</div>
+<div class="para">and from condition (iv) -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0=u_{y}(x,b) = \sum\limits_{n=1}^{\infty}\frac{n\pi}{a}\left(C_{n}\sinh\frac{n\pi b}{a} + D_{n}\cosh\frac{n\pi b}{a}\right)\sin\frac{n\pi x}{a} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow  D_{n} = -C_{n}\tanh\frac{n\pi b}{a}.
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u(x,y) = \frac{2}{a}\sum\limits_{n=1}^{\infty}\left(\cosh\frac{n\pi y}{a}-\tanh\frac{n\pi y}{a}\sin\frac{n\pi y}{a}\right)\sin\frac{n\pi x}{a}\int\limits_{0}^{a}f(x) \sin \frac{n\pi x}{a}\,dx. 
+\end{equation*}
+</div>
+</div>
+</div>
+<span class="incontext"><a href="sec_seventh-examplesB.html#solution-198" class="internal">in-context</a></span>
+</body>
+</html>
