@@ -11,89 +11,16 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">The coefficient of <span class="process-math">\(z^{-n}\)</span> is obtained by putting <span class="process-math">\(s=n+r\text{,}\)</span> so we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation*}
-\sum\limits_{r=0}^{\infty}\frac{x^{r}z^{r}}{2^{r}r!}\cdot\frac{(-1)^{n+r}x^{n+r}}{2^{n+r}(n+r)!z^{n+r}}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation*}
-=(-1)^{n}\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}z^{-n}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
+<div class="para">The differential equation</div>
+<div class="displaymath process-math">
 \begin{equation}
-=(-1)^{n}J_{n}(x)z^{-n}=J_{-n}(x)z^{-n}\tag{4.7.14}
+x^{2}+\frac{d^{2}y}{dx^{2}}+x\frac{\,dy}{\,dx}+(x^{2}-n^{2})y =0 \tag{4.7.1}
 \end{equation}
 </div>
-<div class="para">From equations <a href="" class="xref" data-knowl="./knowl/eqn-bessl_gen5.html" title="Equation 4.7.13">(4.7.13)</a> and  <a href="" class="xref" data-knowl="./knowl/eqn-bessl_gen6.html" title="Equation 4.7.14">(4.7.14)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation}
-e^{\frac{x}{2}(z-\frac{1}{z})}=\sum\limits_{n=-\infty}^{\infty}J_{n}(x)z^{n}\tag{4.7.15}
-\end{equation}
+<div class="para">is called the Bessel’s differential equation. Such type of equation yields on solving the Laplace’s equation in cylindrical harmonics. This equation has a regular singularity at <span class="process-math">\(x=0\)</span> and its solution can be obtained as a power series developed about this point.</div>
 </div>
-<div class="para">This is the reason that <span class="process-math">\(e^{\frac{x}{2}(z-\frac{1}{z})}\)</span> is said to be generating function of Bessel's functions. The generating function also express the trigonometric functions as expansions involving Bessel's functions.  For this purpose put <span class="process-math">\(z=e^{i\theta}\)</span> in the generating function. That is,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation*}
-e^{\frac{x}{2}(z-\frac{1}{z})}=\sum\limits_{n=-\infty}^{\infty}J_{n}(x)z^{n}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation*}
-e^{\frac{x}{2}(e^{i\theta}-e^{-i\theta})}=e^{ix\sin\theta}=\sum\limits_{n=-\infty}^{\infty}J_{n}(x)e^{ni\theta}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation*}
-\cos(x\sin\theta)+i\sin(x\sin\theta) 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation*}
-=J_{o}(x)+\{J_{1}(x)e^{i\theta}+J_{-1}(x)e^{-i\theta}\}+\{J_{2}(x)e^{2i\theta}+J_{-2}(x)e^{-2i\theta}\}+\cdots
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation*}
-=J_{o}(x)+\{J_{1}(x)e^{i\theta}-e^{-i\theta}\}+\{J_{2}(x)e^{2i\theta}+e^{-2i\theta}\}+\cdots
-\end{equation*}
-</div>
-<div class="para"><span class="process-math">\([\because J_{-n}(x)=(-1)^{n}J_{n}(x)]\)</span></div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation*}
-=J_{o}(x)+2i\sin\theta J_{1}(x)+2\cos2\theta J_{2}(x)+\cdots
-\end{equation*}
-</div>
-<div class="para">Equating real and imaginary parts, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation}
-\cos(x\sin\theta)=J_{o}(x)+2 J_{2}(x)\cos2\theta +2 J_{4}(x)\cos4\theta+\cdots\tag{4.7.16}
-\end{equation}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation}
-\sin(x\sin\theta)=2J_{1}(x)\sin\theta+2J_{3}(x)\sin3\theta+\cdots\tag{4.7.17}
-\end{equation}
-</div>
-<div class="para">The above two series <a href="" class="xref" data-knowl="./knowl/eqn-bessl_gen8.html" title="Equation 4.7.16">(4.7.16)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-bessl_gen9.html" title="Equation 4.7.17">(4.7.17)</a> are known as Jacobian series. Replacing <span class="process-math">\(\theta\)</span> by <span class="process-math">\((\frac{\pi}{2}-\theta)\text{,}\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation}
-\cos(x\cos\theta)=J_{o}(x)-2 J_{2}(x)\cos2\theta +2 J_{4}(x)\cos4\theta-\cdots\tag{4.7.18}
-\end{equation}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
-\begin{equation}
-\sin(x\cos\theta)=2J_{1}(x)\cos\theta-2J_{3}(x)\cos3\theta+\cdots	  \tag{4.7.19}
-\end{equation}
-</div>
-</div>
-<span class="incontext"><a href="subsec-bessl_fn.html#p-625" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_fourth-besslfn.html#p-625" class="internal">in-context</a></span>
 </body>
 </html>

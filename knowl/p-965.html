@@ -12,8 +12,50 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">If <span class="process-math">\(\mathscr{L}\{af(t)\}=F(s),\)</span> then <span class="process-math">\(\mathscr{L}\{e^{at}f(t)\} = F(s-a)\text{.}\)</span> <article class="hiddenproof"><a href="" class="proof-knowl original" data-knowl="./knowl/proof-49-hidden.html" title="Proof 1"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article>
+<div class="para logical">
+<div class="para">As <span class="process-math">\((u)_{x=0}\)</span> is given we can apply sine transform to the given equation so that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{F}_{s}\{\frac{\partial u}{\partial t}\} =k\mathscr{F_{s}}\{\frac{\partial^{2}u}{\partial x^{2}}\}
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-Prop_LapTrans.html#p-965" class="internal">in-context</a></span>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{\infty}\frac{\partial u}{\partial t}\sin sx\,dx = k \int\limits_{0}^{\infty}\frac{\partial^{2}u}{\partial x^{2}}\sin sx\,dx
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial}{\partial t}\int\limits_{0}^{\infty}u\sin sx\,dx = k\{\left.\frac{\partial u}{\partial x}\sin sx\right\vert_{0}^{\infty}-s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\cos sx\,dx\}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial}{\partial t}\bar{u_{s}}=k\{0-s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\cos sx\,dx\}
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\([\because  {\frac{\partial u}{\partial x}\to 0}\)</span> as  <span class="process-math">\({x\to \infty}\)</span>]</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=	ks\{\left.u\cos sx\right\vert_{0}^{\infty}+s \int\limits_{0}^{\infty}u\sin sx\,dx\}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=ks\{u(0,t)\cos (0.s) - s\bar{u}_{s}\}
+\end{equation*}
+</div>
+<div class="para">as <span class="process-math">\({u\to 0}\text{,}\)</span>  for <span class="process-math">\({x \to \infty}\text{.}\)</span> Or,</div>
+<div class="displaymath process-math">
+\begin{equation}
+\frac{\partial}{\partial t}\bar{u}_{s} = ks^{2}\bar{u}_{s}\tag{6.2.8}
+\end{equation}
+</div>
+</div>
+<span class="incontext"><a href="sec_sixth-examplesA.html#p-965" class="internal">in-context</a></span>
 </body>
 </html>

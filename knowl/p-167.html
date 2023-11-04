@@ -12,7 +12,147 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Prove that a cylindrical coordinate system is orthogonal.</div>
-<span class="incontext"><a href="sec_first-examplesC.html#p-167" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation}
+x=\rho \cos\phi, \quad y= \rho\sin\phi, \quad z=z\tag{1.6.11}
+\end{equation}
+</div>
+<div class="para">Let <span class="process-math">\(\vec{r}= x\hat{i}+y\hat{j}+z\hat{k}\)</span> be the position vector of point P in a cartesian system, then we can write</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation}
+\vec{r}= \rho \cos\phi\hat{i}+\rho \sin\phi\hat{j}+z\hat{k} \tag{1.6.12}
+\end{equation}
+</div>
+<div class="para">[from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-cylind_cord1.html" title="Equation 1.6.11">(1.6.11)</a>], in a cylindrical system. Now the tangent vectors of <span class="process-math">\(\vec{r}\)</span>  in a cylindrical system are</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\frac{\partial\vec{r}}{\partial \rho} = \cos\phi\hat{i}+\sin\phi\hat{j}+0.\hat{k}, 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\frac{\partial\vec{r}}{\partial \phi} = -\rho\sin\phi\hat{i}+\rho\cos\phi\hat{j}+0.\hat{k},
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\text{and} \quad   \frac{\partial\vec{r}}{\partial z} = \hat{k}.
+\end{equation*}
+</div>
+<div class="para">But, scale factors are the magnitude of tangent vectors, then we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+h_{1}=\mid\frac{\partial\vec{r}}{\partial \rho}\mid = \sqrt{\cos^{2}\phi + \sin^{2}\phi}=1;
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+h_{2}=\mid\frac{\partial\vec{r}}{\partial \phi}\mid = \rho ;
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\text{and} \quad h_{3}=\mid\frac{\partial\vec{r}}{\partial z}\mid = 1.
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(\hat{e}_{\rho}, \hat{e}_{\phi}, \hat{e}_{z}\)</span>  are the unit tangent vectors along the curves <span class="process-math">\(u,v,w\text{,}\)</span> respectively then in cylindrical coordinates, we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\,grad\psi = \vec{\nabla\psi}= \frac{\hat{e}_{\rho}}{1}\frac{\partial\psi}{\partial \rho} 
++\frac{\hat{e}_{\phi}}{\rho}\frac{\partial\psi}{\partial \phi}+\frac{\hat{e}_{z}}{1}\frac{\partial\psi}{\partial z},
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\left[\because   \vec{\nabla} = \frac{\hat{e_{1}}}{h_{1}}\frac{\partial}{\partial u} 
++\frac{\hat{e_{2}}}{h_{2}}\frac{\partial}{\partial v} 
++\frac{\hat{e_{3}}}{h_{3}}\frac{\partial}{\partial w}\right]
+\end{equation*}
+</div>
+<div class="para">in curvilinear coordinates.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\,div\vec{F} = \vec{\nabla}\cdot\vec{F} 
+= \frac{1}{\rho}\left[\frac{\partial}{\partial \rho}(F_{1}\rho) 
++\frac{\partial}{\partial \phi}(F_{2}) 
++\frac{\partial}{\partial z}(F_{3}\rho)\right],
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+curl\vec{F} = \vec{\nabla}\times\vec{F}= {\begin{vmatrix}
+\hat{e}_{\rho} &amp; \rho\hat{e}_{\phi} &amp; \hat{e}_{z} \\ 
+\frac{\partial}{\partial \rho} &amp; \frac{\partial}{\partial \phi} &amp; \frac{\partial}{\partial z} \\
+F_{1} &amp; \rho F_{2} &amp; F_{3}
+\end{vmatrix}}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\nabla^{2}\psi 
+= \frac{1}{\rho}\left[\frac{\partial}{\partial \rho}\left(\rho\frac{\partial \psi}{\partial \rho}\right) 
++\frac{\partial}{\partial \phi}\left(\frac{1}{\rho}\frac{\partial \psi}{\partial \phi}\right)) 
++\frac{\partial}{\partial z}\left(\rho\frac{\partial \psi}{\partial z}\right)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+=\frac{1}{\rho}\frac{\partial\psi}{\partial \rho} 
++ \frac{\partial^{2}\psi}{\partial \rho^{2}} 
++ \frac{1}{\rho^{2}}\frac{\partial^{2}\psi}{\partial \phi^{2}} 
++\frac{1}{\rho}\frac{\partial^{2}\psi}{\partial z^{2}}.
+\end{equation*}
+</div>
+<div class="para">we can also find the values of <span class="process-math">\(h_{1},h_{2},h_{3}\)</span> as -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+x=\rho \cos\phi, \quad y= \rho\sin\phi, \quad z=z,  
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\rho^{2} = x^{2} + y^{2}, \quad   \phi= \tan^{-1}\frac{y}{x}, \quad  z=z. 
+\end{equation*}
+</div>
+<div class="para">Now, if <span class="process-math">\(x\)</span> is a function of <span class="process-math">\(\rho, \phi, z\text{,}\)</span>  i.e. <span class="process-math">\(x=x(\rho, \phi,z)\text{,}\)</span> then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\,dx=	 \frac{\partial x}{\partial \rho}\,d\rho + \frac{\partial x}{\partial \phi}\,d\phi 
++ \frac{\partial x}{\partial z}\,dz=\cos\phi \,d\rho-\rho \sin\phi d\phi+0.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\text{similarly,} \,dy= \sin\phi \,d\rho+\rho \cos\phi \,d\phi+0, 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\,dz=\,dz.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation*}
+\therefore  \,ds^{2}= \vec{dr}\cdot\vec{dr} = \,dx^{2}+\,dy^{2}+\,dz^{2} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation}
+= \,d\rho^{2}+\rho^{2}\,d\phi^{2}+\,dz^{2}\tag{1.6.13}
+\end{equation}
+</div>
+<div class="para">But in curvilinear coordinates,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord1.html ./knowl/eqn-cylind_cord3.html ./knowl/eqn-cylind_cord4.html">
+\begin{equation}
+\,ds^{2}= h_{1}^{2} \,du^{2}+h_{2}^{2} \,dv^{2}+h_{3}^{2} \,dw^{2}\tag{1.6.14}
+\end{equation}
+</div>
+<div class="para">equating eqns. <a href="" class="xref" data-knowl="./knowl/eqn-cylind_cord3.html" title="Equation 1.6.13">(1.6.13)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-cylind_cord4.html" title="Equation 1.6.14">(1.6.14)</a>, we get -</div>
+</div>
+<span class="incontext"><a href="subsec-cylind_cord.html#p-167" class="internal">in-context</a></span>
 </body>
 </html>

@@ -11,21 +11,40 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h1 class="heading"><span class="type">Paragraph</span></h1>
 <div class="para logical">
-<div class="para">The boundary conditions are</div>
+<div class="para"> The equations which contain partial differential coefficients, the independent variables and dependent variable are known as partial differential equations. In other words, a partial differential equation (PDE) relates a function of multiple variables to its partial derivatives. It involves the derivatives of the unknown function with respect to two or more independent variables. The order of partial differential equaion is the same as the order of highest derivative occuring in the equation. If z is taken as dependent variable and x, y, and t as independent variables then the equation</div>
 <div class="displaymath process-math">
-\begin{equation}
-y(0,t) = 0 = y(l,t),\tag{7.1.12}
-\end{equation}
+\begin{equation*}
+y\frac{\partial z}{\partial x}+x\frac{\partial z}{\partial y}+\frac{\partial z}{\partial t} =0
+\end{equation*}
 </div>
-<div class="para">the initial conditions are</div>
+<div class="para">is the first order PDE in three variables, the equation</div>
 <div class="displaymath process-math">
-\begin{equation}
-y(x,0) = f(x) \quad \text{and} \quad \left(\frac{\partial y}{\partial t}\right)_{t=0}=f'(x)\tag{7.1.13}
-\end{equation}
+\begin{equation*}
+\left(\frac{\partial z}{\partial x}\right)^{3}+\frac{\partial z}{\partial t} =0 
+\end{equation*}
 </div>
+<div class="para">is a first - order equation in two variables, while</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2} z}{\partial x^{2}}=\frac{\partial z}{\partial t} 
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-sol_vs.html#p-1112" class="internal">in-context</a></span>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2} z}{\partial x^{2}}+2\frac{\partial^{2} z}{\partial x \partial y}+\frac{\partial^{2} z}{\partial y^{2}}=0  
+\end{equation*}
+</div>
+<div class="para">are a second order eqution in two variables. The coefficients of derivaritives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial z}{\partial x}, \frac{\partial^{2} z}{\partial x^{2}}, \frac{\partial^{2} z}{\partial y^{2}}, \frac{\partial^{2} z}{\partial x \partial y}, \frac{\partial z}{\partial t}
+\end{equation*}
+</div>
+<div class="para">etc. are called the partial differential coefficients.</div>
+</div>
+<span class="incontext"><a href="ch_seventh.html#p-1112" class="internal">in-context</a></span>
 </body>
 </html>

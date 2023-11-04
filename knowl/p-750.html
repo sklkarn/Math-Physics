@@ -13,74 +13,66 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We have</div>
-<div class="displaymath process-math">
+<div class="para">We have the generating function for <span class="process-math">\(L_{n}(x)\)</span> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
-\sum\limits_{m=0}^{\infty}\frac{L_{m}(x)}{m!}s^{m}=\frac{1}{1-s}e^{-xs/(1-s)}
+\frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n}
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math">
+<div class="para">Differentiating <span class="process-math">\(n\)</span> times w. r. to ’t’, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
-\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n}=\frac{1}{1-t}e^{-xt/(1-t)}
+\frac{d^{n}}{dt^{n}}\left(\frac{e^{-xt/(1-t)}}{1-t}\right)=	L_{n}(x)+L_{n+1}(x)t+\cdots
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
-\therefore \sum\limits_{m,n=0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}s^{m}\frac{L_{n}(x)}{n!}t^{m}s^{m}t^{n}
+e^{x}\frac{d^{n}}{dt^{n}}\left[(1-t)^{-1}e^{-x/(1-t)}\right] 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
+\begin{equation}
+=L_{n}(x)+L_{n+1}(x)t+\cdots	\tag{4.11.11}
+\end{equation}
+</div>
+<div class="para">But,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
-=e^{-x}\frac{1}{(1-s)(1-t)}e^{\frac{-xs}{1-s}}e^{\frac{-xt}{1-t}}
+\frac{d}{dt}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=\frac{1-x-t}{(1-t)^{3}}e^{-x/(1-t)}
 \end{equation*}
 </div>
-<div class="para">thus,</div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
-\int\limits_{0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}\frac{L_{n}(x)}{n!}\,dx =  \text{coefficient of}\quad  s^{m}t^{n}\quad \text{in}
+\lim\limits_{t \to 0}\frac{d}{dt}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=(1-x)e^{-x}=\frac{d}{dx}(xe^{-x})
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">similarly,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
-\int\limits_{0}^{\infty}e^{-x}\frac{1}{(1-s)(1-t)}e^{\frac{-xs}{1-s}}e^{\frac{-xt}{1-t}}\,dx.
+\lim\limits_{t \to 0}\frac{d^{2}}{dt^{2}}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=\frac{d^{2}}{dx^{2}}(x^{2}e^{-x})
 \end{equation*}
 </div>
-<div class="para">Now,</div>
-<div class="displaymath process-math">
+<div class="para">In general,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
-\int\limits_{0}^{\infty}e^{-x}\frac{1}{(1-s)(1-t)}e^{\frac{-xs}{1-s}}e^{\frac{-xt}{1-t}}\,dx  
+\lim\limits_{t \to 0}\frac{d^{n}}{dt^{n}}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">Hence from equation <a href="" class="xref" data-knowl="./knowl/eqn-laguer_rodr1.html" title="Equation 4.11.11">(4.11.11)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
-=\frac{1}{(1-s)(1-t)}\int\limits_{0}^{\infty}e^{-x\left[1+\frac{t}{1-t}+\frac{s}{1-s}\right]}\,dx
+e^{x}\lim\limits_{t \to 0}\frac{d^{n}}{dt^{n}}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})=L_{n}(x).
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">Thus,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
-=\frac{1}{(1-s)(1-t)}\frac{1}{[1+\frac{s}{1-s}+\frac{t}{1-t}}\left[e^{-x}\{[1+\frac{s}{1-s}+\frac{t}{1-t}\}\right]_{0}^{\infty}
+L_{n}(x)= e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{(1-s)(1-t)}\frac{(1-s)(1-t)}{(1-s)(1-t)+s(1-t)+t(1-s)}[0-1]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{1-st}=(1-st)^{-1}=1+st+(st)^{2}+\cdots+(st)^{n}+\cdots
-\end{equation*}
-</div>
-<div class="para">in which coefficient of <span class="process-math">\(s^{m}t^{n}\)</span> is <span class="process-math">\(0\)</span> if <span class="process-math">\(m \neq n\)</span>  and <span class="process-math">\(1\)</span> if <span class="process-math">\(m=n\text{.}\)</span> Hence,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int\limits_{0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}\frac{L_{n}(x)}{n!}\,dx = \delta_{m,n} 
-=\begin{cases} 
-0, &amp; \text{if}\quad m \neq n\\ 
-1, &amp; \text{if}\quad m = n 
-\end{cases}
-\end{equation*}
+<div class="para">This is the Rodrigue’s formula for <span class="process-math">\(L_{n}(x)\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="subsec-laguer_pol.html#p-750" class="internal">in-context</a></span>

@@ -15,43 +15,46 @@
 <div class="para logical">
 <div class="para">We know that</div>
 <div class="displaymath process-math">
+\begin{equation}
+e^{2zx-z^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n}\tag{4.9.23}
+\end{equation}
+</div>
+<div class="para">Differentiating w. r. to <span class="process-math">\(z\text{,}\)</span> we get -</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}=e^{2zx-z^{2}} =e^{2zx}\cdot e^{-z^{2}}
+(2x-2z) e^{2zx-z^{2}}=\sum_{n=0}^{\infty}n\frac{H_{n}(x)}{n!}z^{n-1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2x\frac{H_{n}(x)}{n!}z^{n}-2\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n+1}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
-\begin{equation*}
-=\sum_{n=0}^{\infty}\frac{(2x)^{n}z^{n}}{n!}\cdot \sum_{n=0}^{\infty}\frac{(-1)^{n}z^{2n}}{n!}
-\end{equation*}
+\begin{equation}
+=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{(n-1)!}z^{n-1}\tag{4.9.24}
+\end{equation}
 </div>
+<div class="para">Equating the coefficient of <span class="process-math">\(z^{n}\)</span> on both sides, we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\sum_{n=0}^{\infty}\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}(2x)^{n-2s}}{s!(n-2s)!}z^{n}
+2x\frac{H_{n}}{(n)!}-2\frac{H_{n-1}}{(n-1)!}=\frac{H_{n+1}}{(n)!}
 \end{equation*}
 </div>
-<div class="para">Equating the coefficient of <span class="process-math">\(\frac{z^{n}}{n!}\)</span> on both sides, we get -</div>
+<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-H_{n}(x)=\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(2x)^{n-2s}}{s!(n-2s)!}
+2x\frac{H_{n}}{n}-2H_{n-1}=\frac{H_{n+1}}{n}
 \end{equation*}
 </div>
-<div class="para">Replacing <span class="process-math">\(x\)</span> by <span class="process-math">\(-x\text{,}\)</span> we get -</div>
+<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-H_{n}(-x)=\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(-2x)^{n-2s}}{s!(n-2s)!} = 	\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}(-1)^{n-2s}n!(2x)^{n-2s}}{s!(n-2s)!}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=(-1)^{n}\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(2x)^{n-2s}}{s!(n-2s)!}=(-1)^{n}H_{n}(x)
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore  H_{n}(-x)=(-1)^{n} H_{n}(x) 
+2xH_{n}=2nH_{n-1}+H_{n+1}
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="sec_fourth-examplesE.html#p-713" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-hermit-pol.html#p-713" class="internal">in-context</a></span>
 </body>
 </html>

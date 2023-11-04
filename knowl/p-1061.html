@@ -13,13 +13,31 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Find the Laplace transform of the waveform</div>
+<div class="para">From the given circuit, <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/fig62.png" class="contained"></div> we can have the equation as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(t) = \left(\frac{2t}{3}\right)
+RI+L\frac{\,dI}{\,dt}+\frac{Q}{C}=E_{o}
 \end{equation*}
 </div>
-<div class="para">if <span class="process-math">\(0 \leq t \leq 3\text{.}\)</span>
+<div class="para">using Kirchhoff’s voltage law.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\because \frac{\,dQ}{\,dt} = I
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\,dQ = I\,dt
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+Q(t) = \int\limits_{0}^{t}I(t)\,dt+c
+\end{equation*}
+</div>
+<div class="para">where  <span class="process-math">\(c\)</span> is an integration constant. At <span class="process-math">\(t=0\text{,}\)</span> <span class="process-math">\(Q=Q_{o}\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesC.html#p-1061" class="internal">in-context</a></span>

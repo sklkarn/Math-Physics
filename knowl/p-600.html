@@ -13,27 +13,33 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_genfn5.html ./knowl/eqn-legn_genfn4.html">
+<div class="displaymath process-math">
 \begin{equation*}
-(x^{2}-1)P'_{n}=n\left[xP_{n}-P_{n-1}\right]
+P_{n}(-1) =(-1)^{n}P_{n}
 \end{equation*}
 </div>
-<div class="para">Solution: From relation III, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_genfn5.html ./knowl/eqn-legn_genfn4.html">
-\begin{equation}
-P'_{n}-xP'_{n-1}=nP_{n-1}\tag{4.5.24}
-\end{equation}
-</div>
-<div class="para">From relation II, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_genfn5.html ./knowl/eqn-legn_genfn4.html">
-\begin{equation}
-xP'_{n}-P'_{n-1}=nP_{n}\tag{4.5.25}
-\end{equation}
-</div>
-<div class="para">multiplying equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_genfn5.html" title="Equation 4.5.25">(4.5.25)</a> by <span class="process-math">\(x\)</span> and subtracting from equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_genfn4.html" title="Equation 4.5.24">(4.5.24)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_genfn5.html ./knowl/eqn-legn_genfn4.html">
+<div class="para">putting <span class="process-math">\(x=-1\)</span> in the generating function of <span class="process-math">\(P_{n}(x)\text{,}\)</span> we get -</div>
+<div class="displaymath process-math">
 \begin{equation*}
-(1-x^{2})P'_{n}=n(P_{n-1}-xP_{n}) 
+(1+2z+z^{2})^{-\frac{1}{2}} =\sum\limits_{n=0}^{\infty}z^{n}P_{n}(-1)z^{n}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum\limits_{n=0}^{\infty}z^{n}P_{n}(-1)z^{n}=(1+z)^{-1}=\sum\limits_{n=0}^{\infty}(-1)^{n}z^{n}
+\end{equation*}
+</div>
+<div class="para">equating the coefficient of <span class="process-math">\(z^{n}\text{,}\)</span> we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{n}(-1)=(-1)^{n},
+\end{equation*}
+</div>
+<div class="para">i.e.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{n}(-1)=(-1)^{n}P_{n}(1)
 \end{equation*}
 </div>
 </div>

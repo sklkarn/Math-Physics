@@ -11,100 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<div class="para">Let us consider a string which is clamped at points A and B is pulled aside at C and then released suddenly, as shown in figure  <div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/fig73.png" class="contained"></div>. Then the equation of vibrating string is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation}
-\frac{\partial^{2} y}{\partial x^{2}} =  \frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}} \tag{7.2.20}
-\end{equation}
-</div>
-<div class="para">Also, let <span class="process-math">\(CP = h, AC = d,\)</span> and <span class="process-math">\(CB = (l - d)\text{,}\)</span> therefore the displacement of particle between points A and P at time <span class="process-math">\(t=0\text{.}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical"><div class="displaymath process-math">
 \begin{equation*}
-\frac{y}{x}=\frac{h}{d} 
+u\neq 0 \quad \text{at} \quad  t=0. 
 \end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation}
-\therefore y=\frac{hx}{d}  \tag{7.2.21}
-\end{equation}
-</div>
-<div class="para">for the portion between points P and B at time <span class="process-math">\(t=0\text{,}\)</span> we have,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation}
-\frac{y}{l-x}=\frac{h}{l-d}\quad  \therefore y=\frac{h(l-x)}{(l-d)}  \tag{7.2.22}
-\end{equation}
-</div>
-<div class="para">Hence, the displacement of string at time <span class="process-math">\(t=0\)</span> is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation}
-f(x) =y(x,0) = \begin{cases}
-\frac{hx}{d}, &amp; \text{for} \quad 0 \leq x\leq d\\
-\frac{h(l-x)}{(l-d)}, &amp; \text{for} \quad d \leq x\leq l
-\end{cases} \tag{7.2.23}
-\end{equation}
-</div>
-<div class="para">since the initial velocity of the string is zero, the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-stret_str1.html" title="Equation 7.2.20">(7.2.20)</a> is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation}
-y(x,t) = \sum\limits_{n=1}^{\infty}b_{n}\cos \frac{n\pi vt}{l}\sin \frac{n\pi x}{l} \tag{7.2.24}
-\end{equation}
-</div>
-<div class="para">where,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation*}
-b_{n}=\frac{2}{l}\int\limits_{0}^{l}f(x)\sin \frac{n\pi x}{l}\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation*}
-= \frac{2}{l}\left[\int\limits_{0}^{d}\frac{hx}{d}\sin \frac{n\pi x}{l}\,dx +\int\limits_{d}^{l}\frac{h(l-x)}{(l-d)}\sin \frac{n\pi x}{l}\,dx\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation*}
-= \frac{2h}{l}\left[\int\limits_{0}^{d}\frac{x}{d}\sin \frac{n\pi x}{l}\,dx +\int\limits_{d}^{l}\frac{(l-x)}{(l-d)}\sin \frac{n\pi x}{l}\,dx\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation*}
-=\frac{2h}{l}\left[\frac{1}{d}\left\{x.\frac{\cos \frac{n\pi x}{l}}{-\frac{n\pi}{l}}-1.\frac{\sin \frac{n\pi x}{l}}{-\frac{n^{2}\pi^{2}}{l^{2}}}\right\}_{0}^{d} \right.
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation*}
-\left. + \frac{1}{l-d}\left\{(l-x).\frac{\cos \frac{n\pi x}{l}}{-\frac{n\pi}{l}}-(-1).\frac{\sin \frac{n\pi x}{l}}{-\frac{n^{2}\pi^{2}}{l^{2}}}\right\}_{d}^{l}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation*}
-=\frac{2h}{l}\left[-\frac{l}{n\pi}\cos \frac{n\pi d}{l}+\frac{l^{2}}{n^{2}\pi^{2}d}\sin \frac{n\pi d}{l}\right.
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation*}
-\left. -\frac{l}{n\pi}\cos \frac{n\pi d}{l}+\frac{l^{2}}{n^{2}\pi^{2}(l-d)}\sin \frac{n\pi d}{l}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation*}
-=\frac{2h}{l}\left[\frac{1}{d}+\frac{1}{(l-d)}\right]\frac{l^{2}}{n^{2}\pi^{2}}\sin \frac{n\pi d}{l} 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation}
-= \frac{2hl^{2}}{n^{2}\pi^{2}d(l-d)}\sin \frac{n\pi d}{l} \tag{7.2.25}
-\end{equation}
-</div>
-<div class="para">Substituting <span class="process-math">\(b_{n}\)</span>  in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-stret_str5.html" title="Equation 7.2.24">(7.2.24)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stret_str1.html ./knowl/eqn-stret_str5.html">
-\begin{equation*}
-y= \sum\limits_{n=1}^{\infty}\frac{2hl^{2}}{n^{2}\pi^{2}d(l-d)}\sin \frac{n\pi d}{l}\cos \frac{n\pi vt}{l}\sin \frac{n\pi x}{l}
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="sec_seventh-examplesA.html#p-1154" class="internal">in-context</a></span>
+</div></div>
+<span class="incontext"><a href="subsec-2Dwave_sol.html#p-1154" class="internal">in-context</a></span>
 </body>
 </html>

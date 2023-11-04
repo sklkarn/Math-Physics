@@ -11,23 +11,36 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}_{s}\{f(x)\} = F(s) = \int\limits_{0}^{\infty}f(x)\sin sx\,dx = \int\limits_{0}^{\infty}\frac{e^{-ax}}{x}\sin sx\,dx
+\mathscr{F}_{s}\{f(x)\}=\int\limits_{0}^{\infty}f(x) \sin sx\,dx 
 \end{equation*}
 </div>
-<div class="para">Differentiating w.r.t. 's', we get-</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{\,d}{\,ds}\left[F(s)\right] = \int\limits_{0}^{\infty}\frac{e^{-ax}}{x}(x\cos sx)\,dx = \int\limits_{0}^{\infty}e^{-ax}\cos sx\,dx = \frac{a}{a^{2}+s^{2}}
+= \int\limits_{0}^{a}f(x) \sin sx\,dx + \int\limits_{a}^{\infty}f(x) \sin sx\,dx
 \end{equation*}
 </div>
-<div class="para">Integrating w.r.t. 's', we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-F_{s}(s)= \int\limits_{0}^{\infty}\frac{a}{a^{2}+s^{2}}\,ds = \tan^{-1}\frac{s}{a}+c.
+=\int\limits_{0}^{a}f(x) \sin x\sin sx\,dx + 0 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{2}\int\limits_{0}^{a}\left[\cos (1-s)x-\cos(1+s)x\right]\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2}\left[\frac{\sin (1-s)x}{1-s}-\frac{\sin (1+s)x}{1+s}\right]_{0}^{a} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{2}\left[\frac{\sin (1-s)a}{1-s}-\frac{\sin (1+s)a}{1+s}\right].
 \end{equation*}
 </div>
 </div>

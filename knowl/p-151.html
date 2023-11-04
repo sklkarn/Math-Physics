@@ -13,25 +13,50 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Over the surface  <span class="process-math">\(OCA\text{,}\)</span> <span class="process-math">\(\hat{n}=\hat{j}, \,ds=\frac{1}{2}\,dx\,dz\text{,}\)</span> The surface integral over the surface <span class="process-math">\(OCA\text{,}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl3.html ./knowl/eqn-stcurl4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl1.html">
 \begin{equation*}
-\iint\limits_{S}\left(\vec{\nabla}\times\vec{F}\right)\cdot\hat{n}\,ds=\iint\limits_{S}(2\hat{i}+2\hat{j}-\hat{k})\cdot\hat{j}(\frac{1}{2})\,dx\,dz
+\int\limits_{C}\left[(2x-y)\,dx-yz^{2}\,dy-y^{2}z\,dz\right] 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl3.html ./knowl/eqn-stcurl4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl1.html">
 \begin{equation*}
-=\int\limits_{0}^{1}\int\limits_{0}^{1}(2.\frac{1}{2})\,dx\,dz= 1.
+=\int\limits_{C}\left[(2x-y)\hat{i}-yz^{2}\hat{j}-y^{2}z\hat{k}\right]\cdot(\hat{i}dx+\hat{j}dy+\hat{k}\,dz) =\int\limits_{C}\vec{F}\cdot\vec{\,dr} 
 \end{equation*}
 </div>
-<div class="para">Therefore, total surface integral =</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl3.html ./knowl/eqn-stcurl4.html">
+<div class="para">From Stoke’s theorem,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl1.html">
 \begin{equation}
-\iint\limits_{S}\left(\vec{\nabla}\times\vec{F}\right)\cdot\hat{n}\,ds =-\frac{1}{2}+1+1=\frac{3}{2}. \tag{1.5.8}
+\int\limits_{C}\vec{F}\cdot\vec{dr}=\iint\limits_{S}curl\vec{F}\cdot\hat{n}ds \tag{1.5.5}
 \end{equation}
 </div>
-<div class="para">Hence from eqns. <a href="" class="xref" data-knowl="./knowl/eqn-stcurl3.html" title="Equation 1.5.7">(1.5.7)</a>  and <a href="" class="xref" data-knowl="./knowl/eqn-stcurl4.html" title="Equation 1.5.8">(1.5.8)</a>, Stoke's theorem is verified.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl1.html">
+\begin{equation*}
+\therefore \quad curl\vec{F}=\vec{\nabla}\times\vec{F}=
+{\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\2x-y &amp; -yz^{2} &amp; -y^{2}z \end{vmatrix}}
+\end{equation*}
+</div>
+<div class="para">Putting the value of <span class="process-math">\(curl\vec{F}\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-stcurl1.html" title="Equation 1.5.5">(1.5.5)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl1.html">
+\begin{equation*}
+\int\limits_{C}\vec{F}\cdot\vec{\,dr}=\iint\limits_{S}\hat{k}\cdot\hat{n}\,ds=\iint\limits_{S}\,dx\,dy 
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\([\because \,dx\,dy=\hat{n}\cdot\hat{k}\,ds]\)</span></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl1.html">
+\begin{equation*}
+=\int\limits_{-1}^{+1}\,dx\int\limits_{-\sqrt{1-x^{2}}}^{+\sqrt{1-x^{2}}}\,dy=\int\limits_{-1}^{+1}[\sqrt{1-x^{2}}+\sqrt{1-x^{2}}] \,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl1.html">
+\begin{equation*}
+=2\int\limits_{-1}^{+1}[\sqrt{1-x^{2}}]dx =2\left[\frac{x}{2} \sqrt{1-x^{2}}+\frac{1}{2} sin^{-1}x\right]^{+1}_{-1} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-stcurl1.html">
+\begin{equation*}
+=2\left[0+\frac{1}{2} (\frac{\pi}{2})-\frac{1}{2} (\frac{-\pi}{2})\right] = \pi. 
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_first-examplesB.html#p-151" class="internal">in-context</a></span>
 </body>

@@ -11,12 +11,44 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical"><div class="displaymath process-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">Now assume that <span class="process-math">\(c\)</span> increases indefinitely and making use of definition of integral as a limit of sum, we can write -</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}F(k)G^{*}(k)\,dk = \int\limits_{-\infty}^{\infty}f(x)\left\{g^{*}(x)\right\}\,dx 
+\frac{n\pi}{c}=p \quad  \text{and}\quad \frac{\pi}{c}=\frac{p}{n}= \,dp
 \end{equation*}
-</div></div>
-<span class="incontext"><a href="subsec-rayleigh_theorm.html#p-904" class="internal">in-context</a></span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore  \quad \lim\limits_{c\to \infty}\left[\frac{\pi}{c} \sum\limits_{n=-\infty}^{\infty}\cos \frac{n\pi (t-x)}{c}\right] = \int\limits_{-\infty}^{\infty}\cos p(t-x)\,dp
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation}
+f(x) = 0+ \frac{1}{2\pi} \int\limits_{-\infty}^{\infty} f(t)\,dt\int\limits_{-\infty}^{\infty}\cos p(t-x)\,dp\tag{6.1.4}
+\end{equation}
+</div>
+<div class="para">here</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt = 0
+\end{equation*}
+</div>
+<div class="para">at  <span class="process-math">\(c\rightarrow \infty\)</span>  and making use of the fact</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{-\infty}^{\infty} |f(x)|\,dx \quad \text{ is convergent. }
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
+f(x) = \frac{1}{2\pi}\int\limits_{p=-\infty}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)\cos p(t-x)\,dp \,dt\tag{6.1.5}
+\end{equation}
+</div>
+<div class="para">which is known as Fourier integral.</div>
+</div>
+<span class="incontext"><a href="subsec-fourier_trans.html#p-904" class="internal">in-context</a></span>
 </body>
 </html>

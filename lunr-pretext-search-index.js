@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "1.1.1",
   "title": "Addition of Vectors",
-  "body": " Addition of Vectors  A vector whose effect is same as that of a set of two vectors is called the sum or the resultant of the given vectors. Let and as shown in , then the vector is called the sum of and . i.e.,    Properties   Vectors Addition                    Commutative law:  Let and be the adjacent sides of a parallelogram of diagonal vector as shown in , then  from and , we have -    Associative law:  Let , , and as shown in , then  from and , we have -      "
+  "body": " Addition of Vectors   A vector whose effect is same as that of a set of two vectors is called the sum or the resultant of the given vectors. Let and as shown in , then the vector is called the sum of and . i.e.,    Properties   Vectors Addition                    Commutative law:  Let and be the adjacent sides of a parallelogram of diagonal vector as shown in , then  from and , we have -    Associative law:  Let , , and as shown in , then  from and , we have -        Subtraction of Vectors  The subtraction of a vector from is the addition of a negative vector of (i.e., ) to , i.e.,     Scalar Multiplication of a Vector  Let a vector is multiplied by any real positive number , then the product is a vector whose magnitude is times as that of and its direction is the same as . If is a negative number then the direction of is opposite to .  If is a unit vector in the direction of then, we have  where is a magnitude of . where and are scalars.       Components of a Vector  Any vector in a space can be resolved into three rectangular components. Let the position vector of a point be , the diagonal vector of a parallelopiped and , , and are the unit vectors along and axes, respectively so that , , and , the rectangular components of .      Components of a vector                 The magnitude of is given by   Now, If makes angles , , and with , and axes, respectively, as shown in , then The quantities , , and are called direction cosines of . Obviously,  .   "
 },
 {
   "id": "figure-4",
@@ -64,36 +64,9 @@ var ptx_lunr_docs = [
   "body": "Commutative law: Associative law: "
 },
 {
-  "id": "subsubsec_subvec_subsection",
-  "level": "1",
-  "url": "subsubsec_subvec_subsection.html",
-  "type": "Subsection",
-  "number": "1.1.2",
-  "title": "Subtraction of Vectors",
-  "body": " Subtraction of Vectors  The subtraction of a vector from is the addition of a negative vector of (i.e., ) to , i.e.,   "
-},
-{
-  "id": "subsubsec_mltvec_subsection",
-  "level": "1",
-  "url": "subsubsec_mltvec_subsection.html",
-  "type": "Subsection",
-  "number": "1.1.3",
-  "title": "Scalar Multiplication of a Vector",
-  "body": " Scalar Multiplication of a Vector  Let a vector is multiplied by any real positive number , then the product is a vector whose magnitude is times as that of and its direction is the same as . If is a negative number then the direction of is opposite to . If is a unit vector in the direction of then, we have  where is a magnitude of . where and are scalars.     "
-},
-{
-  "id": "subsubsec_compntvec_subsection",
-  "level": "1",
-  "url": "subsubsec_compntvec_subsection.html",
-  "type": "Subsection",
-  "number": "1.1.4",
-  "title": "Components of a Vector",
-  "body": " Components of a Vector  Any vector in a space can be resolved into three rectangular components. Let the position vector of a point be , the diagonal vector of a parallelopiped and , , and are the unit vectors along and axes, respectively so that , , and , the rectangular components of .    Components of a vector                 The magnitude of is given by   Now, If makes angles , , and with , and axes, respectively, as shown in , then The quantities , , and are called direction cosines of . Obviously,  .  "
-},
-{
   "id": "figure-8",
   "level": "2",
-  "url": "subsubsec_compntvec_subsection.html#figure-8",
+  "url": "subsec_addvec-subsection.html#figure-8",
   "type": "Figure",
   "number": "1.1.2",
   "title": "",
@@ -104,7 +77,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "subsec-dbetpnts.html",
   "type": "Subsection",
-  "number": "1.1.5",
+  "number": "1.1.2",
   "title": "Distance between two points",
   "body": " Distance between two points  Let and are the position vectors of two points A and B, as shown in , whose coordinates are given as and respectively then and . From ,     "
 },
@@ -113,7 +86,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "subsec-lineseg.html",
   "type": "Subsection",
-  "number": "1.1.6",
+  "number": "1.1.3",
   "title": "Dividing the line segments",
   "body": " Dividing the line segments  Let the point P divides the line AB in the ratio of . If  and be the position vectors of points A and B, respectively then the position vector of point P is determined as and . Since point P divides the line AB in the ratio of , as shown in , we have    If P be the mid - point of line AB, then and .     "
 },
@@ -131,7 +104,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "subsec-lincombvects.html",
   "type": "Subsection",
-  "number": "1.1.7",
+  "number": "1.1.4",
   "title": "Linear Combination of Vectors",
   "body": " Linear Combination of Vectors  Let be the vectors of the same order, then a new vector is said to be the linear combination of these vectors if there exists scalars , such that A set of n vectors is said to be linearly dependent, if there exists scalars , not all zero (i.e. at least one k's is non - zero), such that   where is a null vector. In equation , if all the k's are zero, then the vectors are linearly independent. For linearly dependent vectors, suppose be one of the non - zero scalar, then    = linear combination of (n-1) vectors    Basic Vectors    Thus vectors are linearly dependent, if any one of them can be expressed as a linear combination of the remaining (n-1) vectors. The vectors of equation form a base or basis for all the vectors in - space. Hence these vectors are called the Basis Vectors , basis vectors i.e., any vectors lying in the given space can be expressed in terms of these basis vectors basis vectors . For example, suppose , , and are any three non-zero and non-parallel vectors, and there exists the scalars , , and such that , then is a linear combination of vectors , , and in three dimensional space. Where , , and are components of a and , , and form the basis vectors. In space (or plane) it is advantageous to choose the basis for the vectors as perpendicular vector each of unit length. These vectors are denoted by , , and and their common foot by . The lines determined by , , and are the , and axes, respectively. Any vector in a space with foot at O, as shown in , can be expressed as a linear combination of the basis vectors , , and , such that . linear combination of vectors .   Basis Vectors are a set of linearly independent vectors that span a vector space. A vector space can have many different bases, but any two bases of the same vector space have the same number of vectors, which is known as the dimension of the vector space. For example, in two-dimensional space, the standard basis vectors are (1, 0) and (0, 1), which are perpendicular to each other and span the entire space. Any vector in the plane can be written as a linear combination of these two vectors. Similarly, in three-dimensional space, the standard basis vectors are (1, 0, 0), (0, 1, 0), and (0, 0, 1), which are mutually orthogonal and span the entire space. Any vector in three-dimensional space can be expressed as a linear combination of these three vectors.  "
 },
@@ -145,9 +118,9 @@ var ptx_lunr_docs = [
   "body": " Basic Vectors   "
 },
 {
-  "id": "p-20",
+  "id": "p-22",
   "level": "2",
-  "url": "subsec-lincombvects.html#p-20",
+  "url": "subsec-lincombvects.html#p-22",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -158,9 +131,9 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "subsec-prodvect.html",
   "type": "Subsection",
-  "number": "1.1.8",
+  "number": "1.1.5",
   "title": "Product of Two Vectors",
-  "body": " Product of Two Vectors   There are two ways in which vectors are multiplied. The product of one of them is a scalar quantity, called a scalar product (or a dot product) and the other is a vector quantity, called a vector product (or a cross product).    Scalar or Dot Product   Scalar product of two vectors                The scalar or dot product of two vectors  , and is denoted by and is defined as , where is the angle between and .     Geometrical Interpretation: Let and , as shown in , then  = (length of ) (projection of along a ). The dot product of two vectors is the product of length of one of these vectors and the projection of another in the direction of the first.      Properties:    Commutative Law:     Distributive Law:  Let , , and as shown in , then       Useful Results: If , , , be the unit vector along , , axes, respectively, then       Vector or Cross Product   Vector product of two vectors               The vector or cross product of two vectors and is denoted by and is defined as where is the anlge between and , and is an unit vector perpendicular to the plane made by vectors and and is representing the direction of . Here , , and form a right handed system, as shown in .  Geometrical Interpretation: Let and be the adjacent sides of the parallelogram, as shown in , then    Hence, a vector product of two vectors is the vector area of a parallelogram constructed by the given vectors.    Properties:    Commutative law does not hold good in a vector product, i.e.,    Distributive law:  Let , , and are three vectors such that , , and that form a parallelogram OAEB, BCDE, and OADC, as shown in , then = vector area of + vector area of = vector area of OAEDCBO = vector area of OADCO - vector area of + vector area of  = vector area of .    Useful Results: If , , and are mutually perpendicular unit vectors, then from    Vector product can also be expressed as a determinant form. If and , then          Distributive     Neumonic       "
+  "body": " Product of Two Vectors   There are two ways in which vectors are multiplied. The product of one of them is a scalar quantity, called a scalar product (or a dot product) and the other is a vector quantity, called a vector product (or a cross product).    Scalar or Dot Product   Scalar product of two vectors                 The scalar or dot product of two vectors  , and is denoted by and is defined as , where is the angle between and .     Geometrical Interpretation: Let and , as shown in , then  = (length of ) (projection of along a ). The dot product of two vectors is the product of length of one of these vectors and the projection of another in the direction of the first.       Properties:    Commutative Law:     Distributive Law:  Let , , and as shown in , then       Useful Results: If , , , be the unit vector along , , axes, respectively, then       Vector or Cross Product   Vector product of two vectors               The vector or cross product of two vectors and is denoted by and is defined as where is the anlge between and , and is an unit vector perpendicular to the plane made by vectors and and is representing the direction of . Here , , and form a right handed system, as shown in .  Geometrical Interpretation: Let and be the adjacent sides of the parallelogram, as shown in , then    Hence, a vector product of two vectors is the vector area of a parallelogram constructed by the given vectors.    Properties:    Commutative law does not hold good in a vector product, i.e.,    Distributive law:  Let , , and are three vectors such that , , and that form a parallelogram OAEB, BCDE, and OADC, as shown in , then = vector area of + vector area of = vector area of OAEDCBO = vector area of OADCO - vector area of + vector area of  = vector area of .    Useful Results: If , , and are mutually perpendicular unit vectors, then from    Vector product can also be expressed as a determinant form. If and , then          Distributive     Neumonic       "
 },
 {
   "id": "figure-13",
@@ -172,27 +145,18 @@ var ptx_lunr_docs = [
   "body": " Scalar product of two vectors            "
 },
 {
-  "id": "p-30",
-  "level": "2",
-  "url": "subsec-prodvect.html#p-30",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "The scalar or dot product of two vectors "
-},
-{
-  "id": "p-31",
-  "level": "2",
-  "url": "subsec-prodvect.html#p-31",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Geometrical Interpretation: "
-},
-{
   "id": "p-32",
   "level": "2",
   "url": "subsec-prodvect.html#p-32",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "The scalar or dot product of two vectors Geometrical Interpretation: "
+},
+{
+  "id": "p-35",
+  "level": "2",
+  "url": "subsec-prodvect.html#p-35",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -208,18 +172,18 @@ var ptx_lunr_docs = [
   "body": " Vector product of two vectors            "
 },
 {
-  "id": "p-33",
+  "id": "p-36",
   "level": "2",
-  "url": "subsec-prodvect.html#p-33",
+  "url": "subsec-prodvect.html#p-36",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Geometrical Interpretation: "
 },
 {
-  "id": "p-34",
+  "id": "p-37",
   "level": "2",
-  "url": "subsec-prodvect.html#p-34",
+  "url": "subsec-prodvect.html#p-37",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -239,9 +203,9 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "subsec-sctrip.html",
   "type": "Subsection",
-  "number": "1.1.9",
+  "number": "1.1.6",
   "title": "Scalar Triple Product",
-  "body": " Scalar Triple Product         Definition: Let , , and be three vectors then their scalar triple product is determined by and . If  and then     From the properties of a determinant, we can find that the value of the product depends upon the cyclic order of the vectors and is independent of the position of the dot and cross. Thus, dot and cross may be interchangeable in a scalar triple product, i.e., The value of product changes in sign if the order is non-cyclic, i.e.,    Geometrical Interpretation: Let , , and be the co-terminous edges of the parallelopiped, as shown in figure , then That is, the scalar triple product gives the volume of the parallelopiped having these vectors as co-terminous edges.   Note: If , then , , are coplanars, and   "
+  "body": " Scalar Triple Product          Definition: Let , , and be three vectors then their scalar triple product is determined by and . If  and then     From the properties of a determinant, we can find that the value of the product depends upon the cyclic order of the vectors and is independent of the position of the dot and cross. Thus, dot and cross may be interchangeable in a scalar triple product, i.e., The value of product changes in sign if the order is non-cyclic, i.e.,      Geometrical Interpretation: Let , , and be the co-terminous edges of the parallelopiped, as shown in figure , then That is, the scalar triple product gives the volume of the parallelopiped having these vectors as co-terminous edges.    Note: If , then , , are coplanars, and   "
 },
 {
   "id": "fig-sctrip2",
@@ -253,9 +217,9 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-35",
+  "id": "p-38",
   "level": "2",
-  "url": "subsec-sctrip.html#p-35",
+  "url": "subsec-sctrip.html#p-38",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -266,7 +230,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "subsec-vectripl.html",
   "type": "Subsection",
-  "number": "1.1.10",
+  "number": "1.1.7",
   "title": "Vector Triple Product",
   "body": " Vector Triple Product  If , , and be three vectors, then their vector triple product is denoted by . Let  and then         "
 },
@@ -275,7 +239,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "subsec-recvec.html",
   "type": "Subsection",
-  "number": "1.1.11",
+  "number": "1.1.8",
   "title": "Reciprocal Vectors",
   "body": " Reciprocal Vectors  If the three vectors , , and are non-coplanar, i.e., and the vectors , , and are defind as then the vectors , , and , , are called the reciprocal sets of vectors.  "
 },
@@ -284,7 +248,7 @@ var ptx_lunr_docs = [
   "level": "1",
   "url": "subsec-diffvects.html",
   "type": "Subsection",
-  "number": "1.1.12",
+  "number": "1.1.9",
   "title": "Differentiation of a Vector with respect to Scalars",
   "body": " Differentiation of a Vector with respect to Scalars      Let the vector be a function of scalar variable , then . If only one value of corresponds to each value of , then is defined as a single valued function of the scalar variable . If varies continuously with , then the end point of describes a continuous curve. For different values of , the end point of the vector describes the curve, as shown in figure and can be expressed as the following vector equations.  Note: Any vector can also be written in the form where , , are three scalar functions of . Now, Let O be the origin and P be the position of a moving particle at time , as shown in figure . After the interval the particle reaches at Q, so that [ and , the position vectors.] Since, subtands in time , hence in unit time the vector will be , or, . As , point Q tends to point P and the chord becomes the tangent at P, we define   Then, is a vector in the direction of tangent at P and defines the velocity of the particle at P, is also called the differential coefficient of with respect to 't'. Similarly, is the second order derivative of which gives the acceleration of the particle at P. Note: The derivative of a constant vector is zero, i.e. if is a constant vector, then , because there is no change in in the interval .  "
 },
@@ -298,9 +262,9 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-44",
+  "id": "p-49",
   "level": "2",
-  "url": "subsec-diffvects.html#p-44",
+  "url": "subsec-diffvects.html#p-49",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -331,7 +295,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "1.2.2",
   "title": "Divergence of  a  Vector  Function",
-  "body": " Divergence of a Vector Function    divergence of vector function If be the vector point function then divergence of a vector is defined as  which is a scalar quantity.    Physical Significance of      Let be the velocity of fluid at point P . If P be the centre of an elementary parallelopiped considering in the moving fluid and are the edges of such element, then the x- component of velocity at point P = , as shown in figure. The x- component of velocity at the middle of the face ABCD =  [using Taylor's series, ]  Similarly, x- component of velocity at the middle of face EFGH Since the parallelopiped is very small, the value at the middle of face is considered as the average over that face. The volume of fluid entering per unit time through the face ABCD =velocity area of the face  and volume of fluid leaving per unit time through face EFGH Therefore, loss in volume of fluid per unit time along x- axis Similarly, losses in volume per unit time along y- and z- axes, respectively are Hence, total loss in volume per unit time =  or, total loss in volume per unit time per unit volume =   The divergence of a vector field at a point gives the rate at which the fluid is diverging from that point per unit volume. If div is positive at a point, then either the fluid is expanding and its density at that point is decreasing with time, or the point is a source of the fluid. If div is negative, then either the fluid is condensing and its density is increasing at that point, or the point is a sink. If the fluid is incompressible, then there is no loss or gain in volume.  Hence, div , and is called a solenoidal vector function.   "
+  "body": " Divergence of a Vector Function    divergence of vector function If be the vector point function then divergence of a vector is defined as   which is a scalar quantity.    Physical Significance of      Let be the velocity of fluid at point P . If P be the centre of an elementary parallelopiped considering in the moving fluid and are the edges of such element, then the x- component of velocity at point P = , as shown in figure. The x- component of velocity at the middle of the face ABCD =  [using Taylor's series, ]  Similarly, x- component of velocity at the middle of face EFGH Since the parallelopiped is very small, the value at the middle of face is considered as the average over that face. The volume of fluid entering per unit time through the face ABCD =velocity area of the face  and volume of fluid leaving per unit time through face EFGH Therefore, loss in volume of fluid per unit time along x- axis  Similarly, losses in volume per unit time along y- and z- axes, respectively are Hence, total loss in volume per unit time =  or, total loss in volume per unit time per unit volume =    The divergence of a vector field at a point gives the rate at which the fluid is diverging from that point per unit volume. If div is positive at a point, then either the fluid is expanding and its density at that point is decreasing with time, or the point is a source of the fluid. If div is negative, then either the fluid is condensing and its density is increasing at that point, or the point is a sink. If the fluid is incompressible, then there is no loss or gain in volume.  Hence, div , and is called a solenoidal vector function.   "
 },
 {
   "id": "fig-div_vect",
@@ -349,12 +313,12 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "1.2.3",
   "title": "Curl of a Vector Function",
-  "body": " Curl of a Vector Function    curl of vector function If be the vector point function at a point in space then curl of is defined as which is a vector quantity.    Physical Significance of  Consider a small rectangular plane area in a region of a non-lamellar vector field. A field is called a non-lamellar if its line integral around a cloased path is non-zero. When the rectangular area is placed in the position ABCD, i.e. perpendicular to the vector field as shown in , then the field is normal to each side of the rectangle and hence the line integral along all sides is zero. In the position of , rectangle is parallel to the field and the line integrals along and are zero while that along and have finite values. Thus the line integral around the boundary of the rectangle has a finite value. The value of a vector field along the upper and lower edges is assumed to be different in non-lamellar vector fields, the value of the line integral around a closed path depends upon the orientation of the small area considered in the region of the vector field. There is a certain orientation of the plane area for which the line integral of the vector field is maximum. This maximum line integral when computed for unit area is called the curl of the vector field. It is a vector quantity directed along the normal to the exploring area. The normal is determined by the right-hand screw rule. Actually, curl is a measurement of the circulation of vector field around a point. If a component of vector field is tangentail to the contour, then the curl will be positive; if the component is opposite to the tangential direction of the contour, then the curl will be negative; and curl is zero at the center point of contour.               Let be the vector field at point P(x,y,z). If P be the center of a test area as shown in and and are its sides, then the value of field at the middle of side  the value of field at middle of side  the value of field at middle of side  the value of field at the middle of side  Since the test area is so small that the value of field at the middle of side is taken as an average along that side. Therefore, the line integral of field along and    Similarly, the line integral along and . Therefore, the line integral around the rectangle  where is area of a rectangle and gives its direction. Therefore, line integral per unit area When the rectangle is placed in zx plane and yz plane then the line integral per unit area obtained will be Thus, the line integral per unit area through the closed surface  If then vector is called an irrotational vector.   "
+  "body": " Curl of a Vector Function    curl of vector function If be the vector point function at a point in space then curl of is defined as which is a vector quantity.    Physical Significance of  Consider a small rectangular plane area in a region of a non-lamellar vector field. A field is called a non-lamellar if its line integral around a cloased path is non-zero. When the rectangular area is placed in the position ABCD, i.e. perpendicular to the vector field as shown in , then the field is normal to each side of the rectangle and hence the line integral along all sides is zero. In the position of , rectangle is parallel to the field and the line integrals along and are zero while that along and have finite values. Thus the line integral around the boundary of the rectangle has a finite value. The value of a vector field along the upper and lower edges is assumed to be different in non-lamellar vector fields, the value of the line integral around a closed path depends upon the orientation of the small area considered in the region of the vector field. There is a certain orientation of the plane area for which the line integral of the vector field is maximum. This maximum line integral when computed for unit area is called the curl of the vector field. It is a vector quantity directed along the normal to the exploring area. The normal is determined by the right-hand screw rule. Actually, curl is a measurement of the circulation of vector field around a point. If a component of vector field is tangentail to the contour, then the curl will be positive; if the component is opposite to the tangential direction of the contour, then the curl will be negative; and curl is zero at the center point of contour.               Let be the vector field at point P(x,y,z). If P be the center of a test area as shown in and and are its sides, then the value of field at the middle of side  the value of field at middle of side  the value of field at middle of side  the value of field at the middle of side  Since the test area is so small that the value of field at the middle of side is taken as an average along that side. Therefore, the line integral of field along and    Similarly, the line integral along and . Therefore, the line integral around the rectangle  where is area of a rectangle and gives its direction.  Therefore, line integral per unit area When the rectangle is placed in zx plane and yz plane then the line integral per unit area obtained will be Thus, the line integral per unit area through the closed surface  If then vector is called an irrotational vector .   "
 },
 {
-  "id": "p-55",
+  "id": "p-60",
   "level": "2",
-  "url": "subsec-curl_vect.html#p-55",
+  "url": "subsec-curl_vect.html#p-60",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -376,7 +340,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.3",
   "title": "Examples A",
-  "body": " Examples A   Vectors    Prove that the linear velocity of a point in figure below of a rigid body rotating about an axis passing through a point is given by , where and are an angular velocity of a body and a position vector of point , respectively.     Let , , and is perpendicular to , as shown in figure. Suppose the velocity of the body at point P be and be a unit vector perpendicular to and . Then = velocity of P perpendicular to and .  Hence, . proved.      Show that the vectors , , and are coplanar. Where , , and are non-coplanar.    Let then,    Hence, , , and are coplanar.      If , find the angles that makes with and .     or, equating the coefficients of and , we get- and  makes angle with , and is on .      If , , and are a reciprocal system to , , then prove that .      Now,  From equation , we have -  Note: The system of unit vectors , , and has its own reciprocal.      Prove that     Let, then, similarly, we can find the value of , , and etc. Now, [using properties of determinant where rows, (or, column) can be exchanged without changing the value of determinant.]        Field    Find the velocity and acceleration of a particle which is moving along the curve , , and at time and .    Let . Therefore,   At , velocity = and acceleration = .  At , velocity = and acceleration = .      The position of a particle at time is . Find an acceleration of the particle at time when it becomes normal to the position vector.     At , and If and are normal, then . or,        If and are two scalar functions. Prove                          Show that .           If , find grad at point .                 Find the unit vector normal to the surface at point P (2,0,1).    Let Then,  grad at point (2,0,1) = but, grad , where is the unit normal vector.       For the function , find the magnitude of the directional derivative along a line making an angle with x- axis at position (0,2).    Let,  grad at (0,2) =   The line = .   Therefore, the unit vector along a line CA Hence the directional derivative at (0,2) in figure, in the direction of CA        Find the angle between the surfaces and at the point (2,-1,2).    Let a normal to the surface at (2,-1,2) be and a normal to the surface at (2,-1,2) is The angle between the surfaces at any point is the angle between the normals to the surfaces at that point. where is the required angle. Now, or,        Divergence of a vector field    Prove that              Let and . Then,                  Prove that     Let and , then  or,       Prove that .     Where, is called Laplacian Operator .      Determine the constant if a vector is solenoidal.    If then is solenoidal. Hence, Ans.      Prove that .    We have since, , we have Hence,       Curl of Vector    Prove that     We have              Prove that   \\quad and                               Prove that     We have Put, , then       If a vector is irrotational, find the values of the constants , , and .    We have , or, , or,  now, equating the coefficients of , , , we get-       If and is a solution of Laplace's equation, then show that   , and  evaluate          here, is a Laplacian operator. But, and  Similarly,  also,    Let , so that also, suppose and . Then as we have             Find the curl of a vector field .    We have        "
+  "body": " Examples A   Vectors    Prove that the linear velocity of a point in figure below of a rigid body rotating about an axis passing through a point is given by , where and are an angular velocity of a body and a position vector of point , respectively.     Let , , and is perpendicular to , as shown in figure. Suppose the velocity of the body at point P be and be a unit vector perpendicular to and . Then = velocity of P perpendicular to and .  Hence, . proved.      Show that the vectors , , and are coplanar. Where , , and are non-coplanar.    Let then,    Hence, , , and are coplanar.      If , find the angles that makes with and .     or, equating the coefficients of and , we get- and  makes angle with , and is on .      If , , and are a reciprocal system to , , then prove that .      Now,  From equation , we have -  Note: The system of unit vectors , , and has its own reciprocal.      Prove that     Let, then, similarly, we can find the value of , , and etc. Now, [using properties of determinant where rows, (or, column) can be exchanged without changing the value of determinant.]        Field    Find the velocity and acceleration of a particle which is moving along the curve , , and at time and .    Let . Therefore,   At , velocity = and acceleration = .  At , velocity = and acceleration = .      The position of a particle at time is . Find an acceleration of the particle at time when it becomes normal to the position vector.     At , and If and are normal, then . or,        If and are two scalar functions. Prove                          Show that .           If , find grad at point .                 Find the unit vector normal to the surface at point P (2,0,1).    Let Then,  grad at point (2,0,1) = but, grad , where is the unit normal vector.       For the function , find the magnitude of the directional derivative along a line making an angle with x- axis at position (0,2).    Let,  grad at (0,2) =   The line = .   Therefore, the unit vector along a line CA Hence the directional derivative at (0,2) in figure, in the direction of CA        Find the angle between the surfaces and at the point (2,-1,2).    Let a normal to the surface at (2,-1,2) be and a normal to the surface at (2,-1,2) is The angle between the surfaces at any point is the angle between the normals to the surfaces at that point. where is the required angle. Now, or,        Divergence of a vector field    Prove that              Let and . Then,                  Prove that     Let and , then  or,       Prove that .     Where, is called Laplacian Operator .      Determine the constant if a vector is solenoidal.    If then is solenoidal. Hence, Ans.      Prove that .    We have since, , we have Hence,       Curl of Vector    Prove that     We have              Prove that     and                             Prove that     We have Put, , then       If a vector is irrotational, find the values of the constants , , and .    We have , or, , or,  now, equating the coefficients of , , , we get-       If and is a solution of Laplace's equation, then show that   , and  evaluate          here, is a Laplacian operator. But, and  Similarly,  also,    Let , so that also, suppose and . Then as we have             Find the curl of a vector field .    We have        "
 },
 {
   "id": "example-3",
@@ -556,7 +520,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.3.20",
   "title": "",
-  "body": "  Prove that   \\quad and                            "
+  "body": "  Prove that     and                          "
 },
 {
   "id": "example-23",
@@ -631,9 +595,9 @@ var ptx_lunr_docs = [
   "body": "    "
 },
 {
-  "id": "p-114",
+  "id": "p-120",
   "level": "2",
-  "url": "subsec-surf_int.html#p-114",
+  "url": "subsec-surf_int.html#p-120",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -663,7 +627,7 @@ var ptx_lunr_docs = [
   "url": "subsec-divergence_thrm.html",
   "type": "Subsection",
   "number": "1.4.4",
-  "title": "Gauss's Divergence Theorem",
+  "title": "Gauss’s Divergence Theorem",
   "body": " Gauss's Divergence Theorem   Gauss' divergence theorem The surface integral of the normal component of function over the boundary of a closed surface of any shape is equal to the volume integral of the divergence of taken throughout the enclosed volume V, i.e.,    From right - hand side of the above equation, we have - Since the theorem is valid for any shape. We chose parallelopiped of volume V enclosed by the surface S, as showh in the figure .       From eqn. let us first evaluate - That is, [value of along z axis is ]  But, (bottom surface ) and (top). Hence from eqn. , we get-   where surface integrals of the other sides are zero because is perpendicular to the surfaces . Similarly, we can show that and Adding eqns. , we get-    "
 },
 {
@@ -681,7 +645,7 @@ var ptx_lunr_docs = [
   "url": "subsec-stoke_thrm.html",
   "type": "Subsection",
   "number": "1.4.5",
-  "title": "Stoke's Theorem",
+  "title": "Stoke’s Theorem",
   "body": " Stoke's Theorem   Stoke's theorem The line integral of the tangential component of a vector taken around a simple closed curve C is equal to the surface integral of normal component of the curl of taken over any surface S having C as its boundary, i.e. where is a unit normal vector over the surface ds, as shown in .         Let us first prove,  Let be the equation of surface S and its projection on x-y plane is but on the surface S, we have . and ; where is tangent to the surface ds at point A and is perpendicular to . or,  putting the values of eqns. in eqn. , we get-  At point , is +ve (front part) and at , is -ve (back part).  Similarly, we can find, and Combining these we get,    "
 },
 {
@@ -1207,9 +1171,9 @@ var ptx_lunr_docs = [
   "body": " Addition of Vectors    If then  (commutative law)   If then  (associative law)   There exists a unique vector 0 (zero or null vector) in such that . For any in . (Existance of a zero vector)   For each vector in , there exists a unique vector in such that . (Existance of additive inverse)     "
 },
 {
-  "id": "p-222",
+  "id": "p-228",
   "level": "2",
-  "url": "subsec-2add_vects.html#p-222",
+  "url": "subsec-2add_vects.html#p-228",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1243,9 +1207,9 @@ var ptx_lunr_docs = [
   "body": " Dimensionality of a Vector Space   A vector space is said to be an - dimensional if it contains linearly independent vectors. A vector space is called an infinite - dimensional if there exists an arbitrary large number of linearly independent vectors in the space. If an arbitrary vector in can be represented as a linear combination of vectors in and scalars , \\i.e. then is said to be a span of the vector space . A linearly independent set of vectors that spans a vector space is called a basis for . For example, the unit vectors and of a position vector are the basis for the three - dimensional vector space. The three mutually perpendicular vectors forms an orthogonal basis for a three - dimensional vector space. In other words, if the scalar product of two vectors is zero, the vectors are said to be an orthogonal to each other. The orthogonal bases orthogonal bases of unit magnitude such as and forms a normal orthogonal basis, called an orthonormal basis. A scalar has one component (magnitude only) and hence zero basis vector per component, A vector has 3 components (magnitude and one direction) in 3D and hence has 1 basis vector per component. A tensor of rank 2 (dyad) has components (magnitude and two directions) in 3D hence has 2 basis vectors per component. A tensor of rank 3 (triad) has components (magnitude and three directions) in 3D hence has 3 basis vectors per component.    Inner Product  The inner or scalar product of two vectors u and v is denoted by in vector space , which hold the following properties -  and (unless ). The length (or Norm), , of a vector is defined as . The inner product of two vectors equals zero, for and , then the vectors are said to form an orthogonal set. If the norm within an orthogonal set is unity, i.e. , then the set is called an orthonormal set.    Gram Schmidt's Orthogonalization  An orthogonal basis is the best basis for a vector space because the coefficients of which can easily be expressed a vector as a linear combination of basis vectors. However, we are not always given an orthogonal basis. Gram-Schmidt orthogonalization is a process used to transform a set of linearly independent vectors into a set of orthonormal vectors, which may not be orthogonal to each other. This process is named after Jørgen Pedersen Gram and Erhard Schmidt, who independently developed it in the late century. Let be a set of linearly independent vectors which are not necessarily orthogonal to each other. Now, It is required to obtain a set of orthogonal vectors from the original set of vectors by following the steps below.  In step (1) take , in step (2) let where is a constant to be determined from the condition that to be orthogonal to . That is, or, , and in step (3) let where and are constants to be determined from the conditions that is orthogonal to and . This gives - , since Therefore, we have -   Now, we have three mutually orthogonal vectors and . The same procedure can be continued to obtain other othogonal vectors. Finally, all the vectors can be normalized to obtain an orthonormal set , where .   "
 },
 {
-  "id": "p-229",
+  "id": "p-235",
   "level": "2",
-  "url": "subsec-2dimen_vect.html#p-229",
+  "url": "subsec-2dimen_vect.html#p-235",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1765,9 +1729,9 @@ var ptx_lunr_docs = [
   "body": " Contravarient and Covarient Tensors   Covariance and contravariance describe how the quantitative description of physical entities change with a change of basis. A covariant tensor is one that transforms in the same way as the coordinate system itself. This means that the components of the tensor change in a particular way when the coordinates of the system are changed. A contravariant tensor, on the other hand, transforms in the opposite way to the coordinate system. This means that the components of the tensor change in a particular way when the coordinates of the system are changed. For a contravariant vector to be basis independent, the components of the vector must contra-vary (opposite manner) with a change of basis to compensate. That is, the components must vary with the inverse transformation to that of the change of basis. These componets of vectors are said to be contravariant. Examples of vectors with contravariant componets include the position of an object (displacement) relative to an observer, or any derivative of position with respect to time including velocity, acceleration, and jerk. For a covariant vector to be basis-independent, the components of the vector must co-vary (same manner) with change of basis to remain representing the same vector. That is, the componets must vary by the same transformation as the change of basis. The componets of these vectors are said to be covariant. Examples of covariant vectors apear when taking a gradiant of a function.  If a set of components of a physical quantity in a coordinate system are related to the set of components of the same quantity in another coordinate system by the transformation equation. then they are called components of a contravarient vector or contravarient tensor of rank one. Multiply eqn. by , we get - or, we can also say, by replacing with .  Thus eqn. is an alternative to eqn. . where Kronecker delta, A set of quantities is called the components of a covarient vector or covarient tensor of rank one if = invarient (a scalar) = . Or, by changing with and with . Or,  or, also, are covarient tensor of rank one.  If quantities in a coordinate system are related to other quantities in another coordinates by the transformation eqn.  , The are the components of a second rank contravarient tensor. Similarly, and the are the components of a second rank covarient tensor. Also, and the are the components of a second rank mixed tensor. Again, and are a components of fifth - rank mixed tensor.   Note: The contravarient tensor is represented by components in the directions of coordinate increase whereas a covarient tensor is represented by components in the directions orthogonal to constant coordinate surfaces. In case of a cartesian coordinate system, the coordinate direction concides with the direction orthogonal to the constant surface so that the direction between the covarient and contravarient tensors vanishes. Hence we can not distinguish between them in cartesian systems. The covariance or contravariance of the tensor components is not intrinsic property of the entity but this distinction is due to the way in which the entity is related to coordinate system to which it is referred. It is to be noted that in a cartesian system That is, both these partial derivatives are equal to the direction cosines between - and - axes. Hence there is no difference between contravariant and covariant transformations in cartesian coordinates. In other coordinate system this is not true in general, thus the difference in covariant and contravariant is observed.  The tensor whose components transform like coordinate differential are called contravariant tensors. In this expression where are the coordinate differentials. For example:  In cartesian coordinates , suppose the velocity components are , ;  In oblique coordinats the velocity components are , ; and  In polar coordinates , the velocity components are , .  Since all these relations express the velocity of same particle, they are related to each other in the following way: or, also, Now, and, or, The components transforming like this equation are known as the contravariant tensor components of a vector and are characterised by coordinates differential transformation or transforms like the coordinate differentials.  The tensor whose components transform like the partial derivatives of the coordinate are called covariant tensors. In the expression where, are partial derivatives of the coordinates. If expresses a velocity function, then the components of velocity in system are and . The transformations of these resolved parts are given as   and or, The components which transform like this equation are called the covariant tensor components of a vector because the transformation is characterised by the partial derivatives of the coordinates or transforms like the derivatives of a scalar.    Discussion   Axis Transormation             In coordinate transformation component of a tensor changes either by a contravariant manner or a covariant manner. In      also also,  In coordinate transformation, vectors remains the same but its components change. Suppose we have two types of cartesian coordinates where the basis vectors are related as and , then and . For example, consider a vector in unprimed system then in the primed system, meaning if basis vectors increase the components decrease. Such type of transformation is called the contravariant transformation. Displacement, velocity, acceleration, etc. obey such type of transformation. Now consider a gradiant of scalar function Gradiant of a scalar function is a vector which represents the magnitude of maximum rate of change of the function. In previous case for a vector if then it's component and hence the component of the gradiant Here as basis vector increses component also has to increase by the same fasion otherwise the maximum rate of sclar changes differently in different coordinate systems. Such system where component increases as basis vector increases is called a covariant vector.  The has shown and are parallel projection of a vector and and are perpendicular projection of the same vector . Hence where and are a contravariant vectors, and where and are covariant vectors.   "
 },
 {
-  "id": "p-376",
+  "id": "p-383",
   "level": "2",
-  "url": "subsec-cont_cov.html#p-376",
+  "url": "subsec-cont_cov.html#p-383",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2125,18 +2089,18 @@ var ptx_lunr_docs = [
   "body": " First Order Linear Differential Equation  The first order linear differential equation is obtained by putting in the standard form of linear equation , i.e., or, where and are functions of or constants. To find its solution, first consider the homogeneous equation by setting .  integrating, we get - where is an arbitrary constant of integration. or, where . Let,  Differentiate eqn. w.r.t. 'x', we get - or, or, or, Now multiplying eqn. by , we get - which by using eqn. , becomes Integrating, we get - where is an arbitrary constant. This is the required solution and the factor is known as integration factor (I.F.) . Therefore the solution of first order linear differential equation can be easily found by the formula Equation may be written as i.e. the general solution of differential equation consists of two parts. where and also .  Now differentiating with respect to 'x', we have or, or, which shows that is the solution of , again, differentiating w.r.t. 'x', we have - or,  which shows that is the solution of . Hence, the first part of the solution of differential equation is the solution of its homogeneous equation and is known as Complementry Function . Second part is free from any arbitrary constant and is known as Particular Integral .  Complete Solution = Complementry Function + Particular Integral . That is,   "
 },
 {
-  "id": "p-442",
+  "id": "p-450",
   "level": "2",
-  "url": "subsec-first_order-diff.html#p-442",
+  "url": "subsec-first_order-diff.html#p-450",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "integration factor (I.F.) "
 },
 {
-  "id": "p-443",
+  "id": "p-451",
   "level": "2",
-  "url": "subsec-first_order-diff.html#p-443",
+  "url": "subsec-first_order-diff.html#p-451",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2152,36 +2116,36 @@ var ptx_lunr_docs = [
   "body": " Second Order Linear Differential Equations   Putting in the standard form of linear differential equation gives the second order linear differential equation. or, where , and are functions of or constants.  The method for finding the solution of linear differential equations is depends on the nature of and . If and are constants then the differential equation is said to be second order linear differential equation with constant coefficients. But if and are functions of then the differential equation is said to be differential equation with variable coefficients.    Linear Equations with Constant Coefficients  The general form of linear differential equation of second order is where and are constants and is a function of or constant. In the operator form, where,     Let be the trial solution of of eqn. with m being root of the equation, then it satisfies the equation. or, from eqn. , or,  or, or, It is called an Auxiliary Equation (A.E.) . Which is quadratic in m (or D), roots of which can be appeared by three ways. Viz. real and unequal, real and equal, or a complex pair. Also it should be noted that if and are two linearly independent solution of the corresponding homogenous equation then . The condition for and to be linearly independent is This determinant is called Wornskian of and .   Case I. Roots are real and unequal: If and are the roots of an A.E. then a C.F. is given by The wronskian for and is since . The wronskian . Hence and are linearly independent.   Case II. Roots are real and equal: If (say), then C.F. is . why?  If then from case I, . Where C is only one constant in this solution. But the order of given equation is two the solution must contain two constants in order to satisfy the given equation. Hence we have to seek its solution by another way. Let's write equation in the form put then, or, or, Thus, or, which is an inhomogenous first order linear differential equation. whose integrating factor is given by Hence, the solution of this differential equation is given by equation      Case III. Roots are imaginary pair. If the roots are then the solution will be     where C and are arbitrary constants.    There are various methods to find the particular integral of a differential equation, here we discuss some of the easy methods.      General Method of Finding the Particular Integral of Any Function   or, or, or, which is a first order linear differential equation. Its solution is  Particular Integral can also be obtained by inspection method which will be discussed in examples given below. However, there may be developed a general method for solving the differential equation directly, called the successive integration method. Let the equation in the form If and are the roots of A.E., then eqn. can be written as put, so that or, Its solution is  from eqn. , we have or, or, where,     Linear Equations with Variable Coefficients  The linear equation of the form or, is called a linear differential equation with variable coefficient if and are function of only.  In fact, there is no general method to solve such differential equations. However, we discuss one artificial but elegent method to solve such type of equations. This method is known as Method of Variation of Parameters . Lagrange developed it. It provides the complete solution of a linear equation whose complementary function is known.  Let the equation is The C.F. of which is given as where and are two linearly independent solution of the correspnding homogenous eqn. i.e.,  clearly equation will not satisfy the given equation . As , so we should consider the constants and as unknown parameters which are the functions of , then be a complete solution of the given equation . Hence equation must satisfy the equation . Now, If we set, by assuming and to be the arbitrary constants for complementary part of the equation. Then, and Therefore, from given eqn. , we have - or, from eqns. and , we have the first two terms equal to zero. Solving eqns. and , we get - multiplying top equation by and bottom equation by we get-  and  where is known as the Wronskian for solutions and . Which does not equal to zero if and are two linearly independent solution of eqn. .  Integrating eqn. , we get - Substituting and in equation , we get -  Note: There are no specific method to solve the differential equation with variable coefficients but it can be solved by many method according to the type of eqution. If the equation containing decreasing power of x then put so that equation can be converted into variable coefficient to constant coefficient. Here are some rules which help us to find the complementary function of the given differential equation. When C.F. is not easily obtained we should use Power Series method to solve such equation.  Assume   be a known integral of C.F. if .   be a known integral of C.F. if .   be a known integral of C.F. if .   be a known integral of C.F. if .   be a known integral of C.F. if .  and put be the solution of corresponding homogeneous differential equation. Where is any parameter depends on .     "
 },
 {
-  "id": "p-447",
-  "level": "2",
-  "url": "subsec-second_order-diff.html#p-447",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Auxiliary Equation (A.E.) Wornskian "
-},
-{
-  "id": "p-451",
-  "level": "2",
-  "url": "subsec-second_order-diff.html#p-451",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Case III. Roots are imaginary pair. "
-},
-{
   "id": "p-455",
   "level": "2",
   "url": "subsec-second_order-diff.html#p-455",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
+  "body": "Auxiliary Equation (A.E.) Wornskian "
+},
+{
+  "id": "p-459",
+  "level": "2",
+  "url": "subsec-second_order-diff.html#p-459",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Case III. Roots are imaginary pair. "
+},
+{
+  "id": "p-463",
+  "level": "2",
+  "url": "subsec-second_order-diff.html#p-463",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
   "body": "Method of Variation of Parameters "
 },
 {
-  "id": "p-457",
+  "id": "p-465",
   "level": "2",
-  "url": "subsec-second_order-diff.html#p-457",
+  "url": "subsec-second_order-diff.html#p-465",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2233,9 +2197,9 @@ var ptx_lunr_docs = [
   "body": "  Solve       or,   Let,  , and, . Therefore, is a P.I. of eqn. , becouse it satisfies the equation. It is a general solution of eqn. .   The solution of eqn. by successive integration method. The roots of A.E. are real and equal, i.e., . Hence, from eqn.  where, using . Hence,  and or,         "
 },
 {
-  "id": "p-469",
+  "id": "p-477",
   "level": "2",
-  "url": "sec_fourth-examplesA.html#p-469",
+  "url": "sec_fourth-examplesA.html#p-477",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2287,9 +2251,9 @@ var ptx_lunr_docs = [
   "body": " When is a Regular Singular Point of the Equation  In this case, the solution is and on substituting of and in the given differential equation we get the identity. The index will be determined by the quadratic equation obtained by equating the coefficient of lowest power of to zero. The quadratic equation in is called the Indicial equation . Thus, we will get two values of . The series solution of equation will depend upon the nature of the roots of the indicial equation.   Case I. When roots ( ) are distinct and not differing by an integer, then the complete solution is  Case II. When roots are equal ( ), then  Case III. When roots are distinct and differ by an integer, then there arise two possibilities  If some of the coefficients of y series become infinite at , then replace by . The complete solution is then [on taking , we obtain a solution which is a constant multiple of that obtained for .]  When the coefficient of y series does not become infinite for any , then the complete solution is     "
 },
 {
-  "id": "p-542",
+  "id": "p-550",
   "level": "2",
-  "url": "subsec-reg_sing.html#p-542",
+  "url": "subsec-reg_sing.html#p-550",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2346,7 +2310,7 @@ var ptx_lunr_docs = [
   "url": "subsec-Legnd_eq.html",
   "type": "Subsection",
   "number": "4.5.1",
-  "title": "Legendre's Differential Equation",
+  "title": "Legendre’s Differential Equation",
   "body": " Legendre's Differential Equation   The differential equation is known as Legendre's differential equation. Such type of equation appears on solving Laplace's equation ( ) associated with spherical harmonics. In equation , is any number (integer or fraction). This equation can be solved in series of ascending or descending power of . It has no singularity at so its solution can be obtained as a power series developed about this point.  Let the series solution in descending powers of be so that and Substituting these in equation , we get-  or,  or,  It is an identity and therefore, the coefficients of various poweers of must vanish. Now equating to zero, the coefficient of , the highest powers of , we have for . Since the coefficient of first term of the series can not be zero. Therefore . Hence the indicial equation is or, or, or, or, Next equating the coefficient of to zero, we get - or, or, or, but, for . Hence, Again, equating the coefficient of general term to zero, we get the recurrence relation. now,      or, or,    Case I  For, ,  so that  and so on. Also Hence the series becomes      which is a solution of equation .  If we choose the arbitrary constant where is a positive integer, then this solution of Legender's equation is known as Legender's Polynomials or Legender's Function of First Kind, , i.e.,    This is a terminating series. When is even, and the last term is when is odd, and the last term is  is that solution of Legender's equation which is equal to unity when .    Case II  For, we have from equation  so that  and so on. Also , Hence,     This gives an another solution of equation . If we choose, where is a positive integer, then this solution of equation is known as Legender's Function of Second Kind, , i.e.,  This is a non - terminating series. The most general solution of Legender's Equation is where and are arbitrary constants.    Note:    If the infinite series solution of a given differential equation is reduced into a finite series, then the solution is called the polynomial. \"Polynomial is a finite series that consists of a finite number of terms. Each term in a polynomial is a product of a coefficient, a variable raised to a power, and there is a finite number of such terms in the polynomial expression. The degree of the polynomial determines the highest power of the variable present in the expression, and the number of terms is directly related to the degree\". For a positive integer , equation is a finite series (polynomial) and equation is an infinite series. For a nigative integer , equation is an infinite series and equation is a polynomial. The general solution is a linear combination of a finite series and an infinite series.    If we want to solve the Legender's equation in a series of ascending powers of , we may proceed by taking .    The expansion of can also be written as     where for even and for odd. In particular,      putting, etc., we get - . other terms are vanished. other terms are vanished. etc.    From expression , we deduce that   Now extended the upper limit from to since the extra terms from to do not contribute anything because each term in the series vanishes for and integrals. Also, from Binomial expansion of  This is the Rodrigue's Formula for Legender's Polynomial. The plot for Legender's polynomial is shown in .       Rodrigue's Formula      Let then, or, or, Now, differentiating equation , times using Leibnitz theorem, we get -  or,  or, If we put then equation becomes or, which is Legendre's equation and is one of its solution. where C is a constant. But, so that  when , All the other terms disappear as is a factor in every term except first.     Therefore, when , equation gives Hence, from equation . from equation . This is the Rodrigue's Formula for Legendre Polynomial.     Legendre Polynomials   Legendre's Polynomial    The Rodrigue's formula for Legendre's Polynomials is If , If , If ,   similarly,     where,    Note: we can evaluate by expanding from Binomial theorem.  However,  The last term contains either or . or, or, or,    Python Code:  import numpy as np  from scipy.special import eval_legendre  import matplotlib.pyplot as plt  from scipy.linalg import det  N = range(0, 6)  eval_legendre(N, 0)  X = np.linspace(-1, 1)  for n in range(0, 6):  y = eval_legendre(n, X)  plt.plot(X, y, label=r'$P_{}(x)$'.format(n))  plt.title(\"Legendre Polynomials\")  plt.xlabel(\"x\")  plt.ylabel(r'$P_n(x)$')  plt.legend(loc='lower right')  plt.show()     Generating Function for  generating function  Legendre Polynomial is the coefficient of in , i.e.,    We have           But,   and   Hence, replacing by these values to collect the coefficient of , we get -         Thus the function is defined as generating function of .     Some Important Results     We know that  substituting for in the above equation, we get -  or, or,  Equating the coefficients of on both sides, we get -      putting in the generating function of , we get - or, equating the coefficient of , we get - i.e.,      we have  now replacing by and by . equating the coefficients of , we get -     Alternative: We know that  Thus         Recurrence Relations for  Recurrence relations are the relationship among the polynomials of different orders and their derivatives of differential orders.     Solution: We know that Differentiating it with respect to , we get - or, or, Equating the coefficient of on both sides, we get- or,  Note: If , then this result reduces to      Solution: We know that Differentiating equation with respect to , we get - or, Differentiating equation with respect to , we get - or, Dividing equation by equation , we get - or, equating the coefficients of from both sides, we get -      solution: From relation I, we have - Differentiating this with respect to , we get - or, or, from relation II. or,        Solution: From relation I., we have replacing by (n+1), we get- Differentiating this with respect to , we get -  from relation II. Or, or,      Solution: From relation III, we have From relation II, we have multiplying equation by and subtracting from equation , we get -      Solution: From relation I, we have Replacing by , we get - or, or, or,        Orthogonality of Legendre's Polynomials  Legendre's polynomiala are a set of orthogonal functions in the interval . where here is a Kronecker delta symbol and and are positive integer.    is a solution of  is a solution of Multiplying equation by 'z' and equation by 'y' and then subtracte, we get -  or, Integrating with respect to from -1 to +1, we get - or, or, since satisfies equation and satisfies equation . If , then equation has zero on both its sides and hence we can not get the value of integral for from this equation. To calculate the integral in such a case we may proceed from generating function as . Squaring both sides, we get - Integrating with respect to from -1 to +1, we get - or,       Equating the coefficient of on both sides, we get - Now, from equation and equation , we have where      The Associated Legendre's Polynomials   Associated Legendre's Polynomials Laplace's equation in spherical polar coordinates is given by . Or, [see Laplacian in spherical curvilinear coordinates ] or, or, On solving the potential problems some solution yields to relate the Legendre's Polynomials called associated Legendre's polynomials. Let be the solution of equation . Then or, Dividing by on both sides, we get - In equation Left Hand Side (LHS) is a function of only and Right Hand Side (RHS) is a function of only hence such an equation must be equal to some constant, say . Assume be the solution of equation , then or, or, or, or,   LHS is a function of only and RHS is a function of only which is possible only if they are equal to some constant. From equation , we have or, [Azimuthal equation] From equation  or, or, [Theta equation]  To solve equation , introduce a new variable so that and . Therefore, from equation , we have or, or, or,  Equation is known as associated Legendre's differential equation. If , equation becomes Legendre's differential equation. If and then equation is Legendre's differential equation in the cartesian system. From equation , we get - or, or, [Radial Equation].   "
 },
 {
@@ -2377,18 +2341,18 @@ var ptx_lunr_docs = [
   "body": " We have           But,   and   Hence, replacing by these values to collect the coefficient of , we get -         Thus the function is defined as generating function of .  "
 },
 {
-  "id": "p-594",
+  "id": "p-602",
   "level": "2",
-  "url": "subsec-Legnd_eq.html#p-594",
+  "url": "subsec-Legnd_eq.html#p-602",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Alternative: "
 },
 {
-  "id": "p-596",
+  "id": "p-604",
   "level": "2",
-  "url": "subsec-Legnd_eq.html#p-596",
+  "url": "subsec-Legnd_eq.html#p-604",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2463,7 +2427,7 @@ var ptx_lunr_docs = [
   "url": "subsec-bessl_fn.html",
   "type": "Subsection",
   "number": "4.7.1",
-  "title": "Bessel's Functions, <span class=\"process-math\">\\(J_{n}(x)\\)<\/span>",
+  "title": "Bessel’s Functions, <span class=\"process-math\">\\(J_{n}(x)\\)<\/span>",
   "body": " Bessel's Functions,   The Bessel's function is If  or, If , The graph of these functions are damped oscillatory with a varying period, as shown in figure .   Bessel's Function      Generating Function for   , the Bessel's function of first kind is the coefficient of in the expansion of    we know that   and  Multiplying equations and , we get - Replacing by , we get the coefficient of as      The coefficient of is obtained by putting , so we have   From equations and , we have This is the reason that is said to be generating function of Bessel's functions. The generating function also express the trigonometric functions as expansions involving Bessel's functions. Bessel generating function For this purpose put in the generating function. That is, or, or,     Equating real and imaginary parts, we get - and The above two series and are known as Jacobian series. Replacing by , we have and     Python Code:  from scipy.special import j1  import numpy as np  import scipy as sp  import matplotlib.pyplot as plt  x = np.linspace(0, 20,100)  for n in range(4):  y = sp.special.jn(n,x)  plt.plot(x, y, label=r'$J_{}(x)$'.format(n))  plt.title(\"Bessel's Function\")  plt.xlabel(\"x\")  plt.ylabel(r'$J_m(x)$')  plt.legend(loc='lower right')  plt.show()     Integral Represntation of      We know that  and Multiplying equation by and equation by and integrating between limits 0 to , we get -   Again,   Adding equations and , we get -  where is any integer.  The Kronecker delta for ;     If n= 0, we have  for .        Recurrence Relations for        we know that Differentiating with respect to , we get - or, or,   To change limits put , so that     ,      From equation of relation 1, we have               We know that [from relation 1.] [from relation 2.] Adding these, we get - or,          We know that - [from relation 1.] [from relation 2.] Subtracting these, we get - or,          We know that [from relation 1.] Multiplying by , we get - or, or,          We know that [from relation 2.] Multiplying by , we get - or, or,        Orthogonality of Bessel's Functions   Where and are the roots of . Provided .   We know that the Bessel's equation is satisfied by . Now put and in equation , we have  and  and Substituting these values in equation , we get - Similarly by putting and in equation , we have Multiplying equation by and equation by and then subtracting, we get - or, Integrating equation w. r. t. 'x' between the limits 0 to 1, we get -  putting the values of , and , in equation , , we get -   since and are the roots of , we have - and , putting these values in equation , we get - Hence,     "
 },
 {
@@ -2769,7 +2733,7 @@ var ptx_lunr_docs = [
   "url": "subsec-laguer_pol.html",
   "type": "Subsection",
   "number": "4.11.1",
-  "title": "Laguerre's Polynomial",
+  "title": "Laguerre’s Polynomial",
   "body": " Laguerre's Polynomial    Python Code:  import numpy as np  from scipy.special import genlaguerre  from scipy.special import laguerre  import matplotlib.pyplot as plt  x = np.arange(-1.0, 5.0, 0.01)  fig, ax = plt.subplots()  ax.set_ylim(-5.0, 5.0)  ax.set_title(r'Laguerre polynomials $L_n$')  for n in np.arange(0, 5):  ax.plot(x, laguerre(n)(x), label=rf'$L_{n}(x)$')  plt.legend(loc='best')  plt.xlabel(\"x\")  plt.ylabel(r'$L_n(x)$')  plt.legend(loc='lower right')  plt.show()     Generating Function for   generating function for Laguerre's polynomial The generating function for Laguerre's polynomial is defined as    We have  or,      on putting , the coefficient of for fixed value of is , as and . Thus or, . Hence the coefficient of on RHS of equation is Therefore, is the generating function of .     Rodrigue's Differential Formula for      We have the generating function for is Differentiating times w. r. to 't', we get - or,  But, or, similarly, In general, Hence from equation , we have Thus, This is the Rodrigue's formula for .     Recurrence Relation for        We have the generating function Differentiating equation w. r. to 't', we get - or, or,  Equating the coefficient of on both sides, we get - or, [on multiplying by ] Or,          Differentiating above equation w. r. to 'x', we get - or, or, Equating the coefficient of on both sides, we get -  or,          Differentiating the recurrence relation (1) w. r. to 'x', we get - Replacing by in relation (2), we get - or, Also, from relation (2), we have Substituting equations and in equation , we get -  or, or, or, or,        Orthogonal Property of Laguerre Polynomials      We have and   thus,  Now,     in which coefficient of is if and if . Hence,     "
 },
 {
@@ -3246,7 +3210,7 @@ var ptx_lunr_docs = [
   "url": "subsec-gibbs_phen.html",
   "type": "Subsection",
   "number": "5.5.3",
-  "title": "Gibb's Phenomenon",
+  "title": "Gibb’s Phenomenon",
   "body": " Gibb's Phenomenon   Gibb's Phenomenon Gibb's phenomenon describes a special case where a funciton has a jump discontinuity. An anomaly occurs near the discontinuity in an approximation of an original function using its Fourier series. The values of the partial sums near the discontinuity overshoot or undershoot the fuction value. As more and more terms incorporate in the partial sums the graph of the function resembles the original function more closely away from the point of discontinuity. However, the blips near the discontinuity persists. Although the size of blips decreases in width they appear to remain at the same height. In other words, the series converges correctly at any point due to increase of terms in the partial sums, but the blips do not converges to zero as shown in figure . This lack of improvement in the approximation near the discontinuity menifested in the continual presence of the overshoot or undershoot is the Gibb's phenomenon.   Gibbs Phenomena    In the immediate vicinity of a jump discontinuity i.e. at or , the function is not same and hence the convergence of the Fourier series is not uniform since . Here partial sums move progressively closer to the function as the number of terms is increased, but the partial sums (approximating curves) overshoot or undershoot the function at the jump discontinuity. To verify the validity of Gibbs phenomenon, i.e. Fourier expansion for functions which are discontinuous but piecewise smooth, Bocher considered the following specific function defined by here and . i.e., the function jumps by at the points where . The Fourier coefficients of this function are .  Thus, if the Fourier expansion for such functions is valid, we have The partial sum is given by    The remainder,  or, where On differentiating equation with respect to 'x', we find that has maxima or minima at The value of at is As for fixed   Hence the remainder, the deviation of the approximation from at which approaches the point of the discontinuity at (end point), tends to the limit For , we find that  Hence the negative sign in equation indicates that the approximate curve for is overshooted by about m at a jump discontinuity (i.e., at ), in the Fourier series.  "
 },
 {
@@ -3444,7 +3408,7 @@ var ptx_lunr_docs = [
   "url": "subsec-rayleigh_theorm.html",
   "type": "Subsection",
   "number": "6.1.3",
-  "title": "Parseval's Indentity for Fourier Transform.  (Rayleigh's Theorem)",
+  "title": "Parseval’s Indentity for Fourier Transform.  (Rayleigh’s Theorem)",
   "body": " Parseval's Indentity for Fourier Transform. (Rayleigh's Theorem)  Parseval's identities are the relationship between Fourier coefficients and their respective functions. If and are complex Fourier transforms of and respectively, then          where * represents the complex conjugate.     We have from the Inverse Fourier Transform taking complex conjugate of both sides of equation , we get - but,  (on changing their order of integration)     Again, put in the above expression, we get - or,    Note: Similarly, we can prove the following results:                 "
 },
 {
@@ -4402,36 +4366,36 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-1109",
+  "id": "p-1120",
   "level": "2",
-  "url": "subsec-sol_vs.html#p-1109",
+  "url": "subsec-sol_vs.html#p-1120",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Case I. "
 },
 {
-  "id": "p-1110",
+  "id": "p-1121",
   "level": "2",
-  "url": "subsec-sol_vs.html#p-1110",
+  "url": "subsec-sol_vs.html#p-1121",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Case II. "
 },
 {
-  "id": "p-1111",
+  "id": "p-1122",
   "level": "2",
-  "url": "subsec-sol_vs.html#p-1111",
+  "url": "subsec-sol_vs.html#p-1122",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Case III. "
 },
 {
-  "id": "p-1117",
+  "id": "p-1128",
   "level": "2",
-  "url": "subsec-sol_vs.html#p-1117",
+  "url": "subsec-sol_vs.html#p-1128",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4443,7 +4407,7 @@ var ptx_lunr_docs = [
   "url": "subsec-dalembert.html",
   "type": "Subsection",
   "number": "7.1.2",
-  "title": "D'Alembert's Solution of Vibrating String",
+  "title": "D’Alembert’s Solution of Vibrating String",
   "body": " D'Alembert's Solution of Vibrating String  The equation of vibrating string is given by The solution of equation may be obtained by changing the variable and in the other parameters as , and , so that or, at constant . Or, In operator form and  also at constant . Or, i.e., and  Substituting the values of equation and in equation , we get - Integrating this expression with respect to , we get - or,   Integrating it again w. r. t. 'p', we get -  This is a D' Alembert's solution D'Alembert's solution of one - dimensional wave equation . Physically equation represents two plane waves travelling in opposite directions with the same velocity and same period. Verification of equation with the help of boundary conditions and the initial conditions and from equation , we have using equation , equation becomes and using equation in equation , we get - assuming , we have from equation , or, which on integrating gives putting equation , in equation , we get - and with the help of equations and , equation yields which reduces to and It follows from equations and that the function is odd and periodic with period and hence equation is the solution of equation .  "
 },
 {
@@ -4465,9 +4429,9 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-1123",
+  "id": "p-1134",
   "level": "2",
-  "url": "subsec-2Dwaveeqn.html#p-1123",
+  "url": "subsec-2Dwaveeqn.html#p-1134",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4492,36 +4456,36 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-1127",
+  "id": "p-1138",
   "level": "2",
-  "url": "subsec-2Dwave_sol.html#p-1127",
+  "url": "subsec-2Dwave_sol.html#p-1138",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Case - I "
 },
 {
-  "id": "p-1128",
+  "id": "p-1139",
   "level": "2",
-  "url": "subsec-2Dwave_sol.html#p-1128",
+  "url": "subsec-2Dwave_sol.html#p-1139",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Case - II "
 },
 {
-  "id": "p-1129",
+  "id": "p-1140",
   "level": "2",
-  "url": "subsec-2Dwave_sol.html#p-1129",
+  "url": "subsec-2Dwave_sol.html#p-1140",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Case - III "
 },
 {
-  "id": "p-1134",
+  "id": "p-1145",
   "level": "2",
-  "url": "subsec-2Dwave_sol.html#p-1134",
+  "url": "subsec-2Dwave_sol.html#p-1145",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4632,7 +4596,7 @@ var ptx_lunr_docs = [
   "url": "subsec-Lapleqn.html",
   "type": "Subsection",
   "number": "7.3.3",
-  "title": "Laplace's Equation",
+  "title": "Laplace’s Equation",
   "body": " Laplace's Equation   The equation of heat flow in steady state is known as Laplace's equation. i.e., does not change with time. and which is a cartesian form of Laplace's equation in three dimensions.  In cylindrical coordinates, In spherical polar coordinates,    "
 },
 {
@@ -4641,7 +4605,7 @@ var ptx_lunr_docs = [
   "url": "subsec-2D_lapleqn.html",
   "type": "Subsection",
   "number": "7.3.4",
-  "title": "Two Dimensional Laplace's Equation",
+  "title": "Two Dimensional Laplace’s Equation",
   "body": " Two Dimensional Laplace's Equation   The two-dimensional Laplace equation is a partial differential equation that describes the behavior of a scalar function in two dimensions. The general form of the two-dimensional Laplace equation is: where u is the scalar function and is the Laplacian operator. In two dimensions, the Laplacian operator can be expressed as the sum of the second partial derivatives with respect to the spatial coordinates x and y: This equation states that the sum of the second partial derivatives of the function with respect to both x and y is equal to zero. The Laplace equation is a special case of the more general Poisson equation, where a non-zero source term is present on the right-hand side:     In Cartesian Coordinates      Consider a thin plate with insulated surfaces bounded by the lines , , and . Let at steady state, the temp. at any point satisfies the equation assuming the edges and is kept at temperature zero and also the lower edge is kept at tempemperature and the edge at zero temperature.  Then solution of equation is given by Now three possible solutions of equation are   Of these, we have to choose that solution which is consistant with the physical nature of the problem. The solution and can not satisfy the boundary conditions. Therefore, possible solution is only . From the boundary condition, , we have from solution , therefore, solution reduces to using , we have - and also to satisfy the condition . Hence equation takes the form . Or, But the initial condition , we have where If the given plate is of finite length and the temp. at this end is , then the boundary conditions are and .  Let the solution of this problem is putting and in eqn. , we have hence eqn. reduces to on putting and , we have - or, or, Now equation becomes - on putting and in equation , we get - or, therefore, equation becomes or, or,  . on putting and in equation , we get - where     In Cylindrical Coordinates  The Laplace equation in two dimensional case is Let be the solution of equation , so that or,    This is a homogenous linear differential equation. Its solution can be found by putting or, or, or, Also, or, assume again,  or, from eqn. , or, or, or, or,   and Hence,   If , we have from equation , from equation , we get - Hence, But the general single - valued solution of equation for all possible value of may be written as     "
 },
 {
@@ -4668,22 +4632,22 @@ var ptx_lunr_docs = [
   "url": "subsec-3D_lapleq.html",
   "type": "Subsection",
   "number": "7.3.6",
-  "title": "Three Dimensional Laplace's Equation",
+  "title": "Three Dimensional Laplace’s Equation",
   "body": " Three Dimensional Laplace's Equation   The Laplace equation arises in various physical problems, including electrostatics, heat conduction, fluid flow, and potential theory. Solving the 3D Laplace equation involves finding a function that satisfies the equation . This typically involves specifying appropriate boundary conditions or constraints on the function at the boundaries of the domain. The solutions to the Laplace equation are harmonic functions, which have many interesting mathematical properties.    In Rectangular Coordinates   rectangular coordinates The equation is Let be the solution of equation Then In equation all are independent to each other hence each may be seperately equal to some constant, i.e., or, and Thus, the general solution of equation is  where .  Alternative solution of equation is      In Cylindrical Coordinates   cylindrical coordinates We have, Let be the solution of eqn. . Hence, As variables are separated, we may take - or, and also, and Now put so that and therefore equation reduces to or, which is Bessel's equation and it's general solution is given as or, since be finite at , we have or, Hence,     In Spherical Coordinates    or,  Suppose, be its solution. Then,  considering eqn. , and  or, and As equation being the homogenous, put , hence equation reduces to where, . or, or, or,  again, if we put in equation , then since or, we have, Now, which is Legendre's associated differential equational and hence has the solution, Now as is the function of , then solution of equation is in the form The summing over all , the general solution of equation may be written as    Note 1. If , then equation reduces to Legendre's equation, also, Thus, so that  In case under specific boundary conditions, then     Note 2. If there is axial symmetry about z - axis, then depens only upon and so that in equation , If ,    "
 },
 {
-  "id": "p-1196",
+  "id": "p-1207",
   "level": "2",
-  "url": "subsec-3D_lapleq.html#p-1196",
+  "url": "subsec-3D_lapleq.html#p-1207",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Note 1. "
 },
 {
-  "id": "p-1197",
+  "id": "p-1208",
   "level": "2",
-  "url": "subsec-3D_lapleq.html#p-1197",
+  "url": "subsec-3D_lapleq.html#p-1208",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4920,7 +4884,7 @@ var ptx_lunr_docs = [
   "url": "appendix-3.html",
   "type": "Appendix",
   "number": "C",
-  "title": "Laplace's equation in cylindrical coordinates",
+  "title": "Laplace’s equation in cylindrical coordinates",
   "body": " Laplace's equation in cylindrical coordinates  Let us consider the point P having cartesian coordinates and cylindrical coordinates cylindrical coordinates  , then so that and      Cylindrical Coordinate    Now,     so the operator and    or, and    and adding eqns. , , and , we get - Hence, Laplace's differential equation in cylindrical coordinates is Laplace's Equation  and   "
 },
 {
@@ -4938,7 +4902,7 @@ var ptx_lunr_docs = [
   "url": "appendix-4.html",
   "type": "Appendix",
   "number": "D",
-  "title": "Laplace's equation in spherical coordinates",
+  "title": "Laplace’s equation in spherical coordinates",
   "body": " Laplace's equation in spherical coordinates  Let us consider a point p having cartesian coordinates and spherical coordinates spherical coordinates  , then  and , so that,  and also,        Spherical Coordinate       Now,   Thus the operator,          also,  Thus,           again  Hence, and   with the help of eqns. , , and , we get -  Thus the Laplace's differential equation in spherical coordinates is given by Laplace's equation  or,   "
 },
 {

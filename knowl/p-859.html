@@ -13,13 +13,33 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Hence the required Fourier series is</div>
+<div class="para">The Fourier series expansion of a function <span class="process-math">\(f(x)\)</span> is written as:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \frac{2}{\pi}-\frac{4}{\pi}\sum\limits_{n_{even}=2}^{\infty}\frac{\cos nx}{(n^{2}-1)}+\sin x
+f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right],
 \end{equation*}
 </div>
-<div class="para">The graphical representation of the functions <span class="process-math">\(f(x)\)</span> is shown in figure below. <div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/fig58.png" class="contained"></div>
+<div class="para">where,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} x\,dx = 0.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}x \cos nx \,dx = 0
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}x\sin nx\,dx = -\frac{2}{n}\cos n\pi = (-1)^{n+1}\frac{2}{n}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore f(x) = x = 2\sum\limits_{n=1}^{\infty}\left[(-1)^{n+1}\frac{\sin nx}{n}\right]
+\end{equation*}
 </div>
 </div>
 <span class="incontext"><a href="sec_fifth-examplesC.html#p-859" class="internal">in-context</a></span>

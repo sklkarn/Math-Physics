@@ -13,24 +13,20 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Hence,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}^{-1}\left[\frac{E}{s(sL+R)}\right] = \frac{E}{L}L^{-1}\left[\frac{1}{s(s+R/L)}\right]
+f(t)= E \begin{cases}
+1,  &amp;  a \lt t \lt b\\
+0,  &amp; t \gt b
+\end{cases} = E[u(t-a)-u(t-b)]
 \end{equation*}
 </div>
+<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{E}{R}\left[1-e^{-(R/L)t}\right]
+\mathscr{L}[f(t)] = E[\frac{e^{-as}}{s}-\frac{e^{-bs}}{s}]
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mathscr{L}^{-1}\left[\frac{Ee^{-sa}}{s(sL+R)}\right]  = \frac{E}{R}\left[1-e^{-(R/L)(t-a)}\right]u(t-a)
-\end{equation*}
-</div>
-<div class="para">(by second shifting theorem.)</div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesC.html#p-1057" class="internal">in-context</a></span>
 </body>

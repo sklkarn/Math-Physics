@@ -11,25 +11,25 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">since cosine functions are even function, we have <span class="process-math">\(\cos (-\theta) = \cos \theta\text{.}\)</span> Hence the expression</div>
+<div class="para">The Dirac delta function is denoted by</div>
+<div class="displaymath process-math">
+\begin{equation}
+\delta(x) = \begin{cases}
+0, \quad \text{if} \quad   x \neq 0\\
+\infty, \quad \text{if} \quad   x = 0
+\end{cases}\\\tag{6.1.1}
+\end{equation}
+</div>
+<div class="para">together with the condition that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-1+2\sum\limits_{n=1}^{\infty}\cos \frac{n\pi (t-x)}{c} = 1+\sum\limits_{n=1}^{\infty}\left\{\cos \frac{n\pi (t-x)}{c}+\cos \frac{-n\pi (t-x)}{c}\right\}
+\int\limits_{-\infty}^{\infty}\delta(x)\,dx = 1
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-= 1+ \sum\limits_{n=-\infty}^{\infty}\left\{\cos \frac{n\pi (t-x)}{c}\right\}
-\end{equation*}
+<div class="para">It is clear that <span class="process-math">\(\delta(x)\)</span> is a function which is very large in the neighbourhood of the point <span class="process-math">\(x=0\)</span> but is zero outside a very small interval surrounding the origin. <span class="process-math">\(\delta(x)\)</span> may vary in this interval in an arbitrary manner without making its oscillations indefinitely large.</div>
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore f(x) = \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt + \frac{1}{2\pi}\int\limits_{-c}^{c}f(t)\left[\sum\limits_{n=-\infty}^{\infty}\left\{\frac{\pi}{c}\cos \frac{n\pi (t-x)}{c}\right\}\right]\,dt 
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="subsec-fourier_trans.html#p-893" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_sixth-ftrans.html#p-893" class="internal">in-context</a></span>
 </body>
 </html>

@@ -11,63 +11,80 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(\phi\)</span> be the scalar function of orthogonal curvilinear coordinates <span class="process-math">\(u,v,w\text{,}\)</span> then, </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gradcurv2.html ./knowl/eqn-gradcurv3.html">
+<div class="para">Consider the surface <span class="process-math">\(S\)</span> of boundary <span class="process-math">\(ABC\)</span> as shown by the arrows in the figure below. <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig27.png" class="contained"></div>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{C}\vec{F}\cdot\vec{\,dr}=\int\limits_{C}[(2y+z)\hat{i}+(x-z)\hat{j}+(y-x)\hat{k}]\cdot (\,dx\hat{i}+\,dy\hat{j}+\,dz\hat{k}) 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{C}[(2y+z)\,dx+(x-z)\,dy+(y-x)\,dz].
+\end{equation*}
+</div>
+<div class="para">But,</div>
+<div class="displaymath process-math">
 \begin{equation}
-\,grad \phi=\vec{\nabla}\phi = f_{1}\hat{e}_{1}+f_{2}\hat{e}_{2}+f_{3}\hat{e}_{3}\tag{1.6.7}
+\int\limits_{C}\vec{F}\cdot\vec{\,dr}=\int\limits_{AB}\vec{F}\cdot\vec{\,dr}+\int\limits_{BC}\vec{F}\cdot\vec{\,dr}+\int\limits_{CA}\vec{F}\cdot\vec{\,dr}. \tag{1.5.6}
 \end{equation}
 </div>
-<div class="para">where <span class="process-math">\(f_{1},f_{2},f_{3}\)</span> are to be determined. We know that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gradcurv2.html ./knowl/eqn-gradcurv3.html">
+<div class="para">Along AB, <span class="process-math">\(z=0\text{,}\)</span> <span class="process-math">\(\,dz=0\text{,}\)</span> and <span class="process-math">\(x+y=1.\)</span>
+</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\vec{\,dr}= h_{1}\hat{e}_{1}\,du+h_{2}\hat{e}_{2}\,dv+h_{3}\hat{e}_{3}\,dw
+\int\limits_{AB}\vec{F}\cdot\vec{\,dr}= \int\limits_{A}^{B}(2y\,dx+x\,dy) = \int\limits_{1}^{0}2(1-x)\,dx+\int\limits_{0}^{1}(1-y)\,dy 
 \end{equation*}
 </div>
-<div class="para">Now,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gradcurv2.html ./knowl/eqn-gradcurv3.html">
+<div class="displaymath process-math">
+\begin{equation*}
+=2\left(x-\frac{x^{2}}{2}\right)^{0}_{1}+\left(y-\frac{y^{2}}{2}\right)^{1}_{0}=-\frac{1}{2}.
+\end{equation*}
+</div>
+<div class="para">Along BC, <span class="process-math">\(x=0\text{,}\)</span> <span class="process-math">\(\,dx=0\text{,}\)</span> and <span class="process-math">\(y+z=1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{BC}\vec{F}\cdot\vec{\,dr}= \int\limits_{B}^{C}(-z\,dy+y\,dz) = \int\limits_{1}^{0}(1-y)\,dy+\int\limits_{0}^{1}(1-z)\,dz
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-\left(y-\frac{y^{2}}{2}\right)^{0}_{1}+\left(z-\frac{z^{2}}{2}\right)^{1}_{0}=1.
+\end{equation*}
+</div>
+<div class="para">Along CA, <span class="process-math">\(y=0\text{,}\)</span> <span class="process-math">\(\,dy=0\text{,}\)</span> and <span class="process-math">\(x+z=1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{CA}\vec{F}\cdot\vec{\,dr}= \int\limits_{C}^{A}(z\,dx-x\,dz)= \int\limits_{0}^{1}(1-x)\,dx-\int\limits_{1}^{0}(1-z)\,dz
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left(x-\frac{x^{2}}{2}\right)^{1}_{0}-\left(z-\frac{z^{2}}{2}\right)^{0}_{1}=1. 
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
 \begin{equation}
-\,d\phi=\vec{\nabla}\phi\cdot\vec{\,dr}=h_{1}f_{1}\,du+h_{2}f_{2}\,dv+h_{3}f_{3}\,dw\tag{1.6.8}
+\int\limits_{C}\vec{F}\cdot\vec{\,dr}=-\frac{1}{2}+1+1=\frac{3}{2}. \tag{1.5.7}
 \end{equation}
 </div>
-<div class="para">As, <span class="process-math">\(\phi=\phi(u,v,w)\text{.}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gradcurv2.html ./knowl/eqn-gradcurv3.html">
-\begin{equation}
-\,d\phi= \frac{\partial\phi}{\partial u}\,du+\frac{\partial\phi}{\partial v}\,dv+\frac{\partial\phi}{\partial w}\,dw\tag{1.6.9}
-\end{equation}
-</div>
-<div class="para">from eqns. <a href="" class="xref" data-knowl="./knowl/eqn-gradcurv2.html" title="Equation 1.6.8">(1.6.8)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-gradcurv3.html" title="Equation 1.6.9">(1.6.9)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gradcurv2.html ./knowl/eqn-gradcurv3.html">
+<div class="para">Also,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-h_{1}f_{1}=\frac{\partial\phi}{\partial u}\Rightarrow f_{1} = \frac{1}{h_{1}}\frac{\partial\phi}{\partial u}
+{\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\2y+z &amp; x-z &amp; y-x \end{vmatrix}} 
 \end{equation*}
 </div>
-<div class="para">Similarly,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gradcurv2.html ./knowl/eqn-gradcurv3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-f_{2} = \frac{1}{h_{2}}\frac{\partial\phi}{\partial v}, 
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gradcurv2.html ./knowl/eqn-gradcurv3.html">
-\begin{equation*}
-f_{3} = \frac{1}{h_{3}}\frac{\partial\phi}{\partial w}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gradcurv2.html ./knowl/eqn-gradcurv3.html">
-\begin{equation*}
-\therefore \quad \vec{\nabla}\phi =\frac{1}{h_{2}}\frac{\partial\phi}{\partial u}\hat{e_{1}}+ \frac{1}{h_{2}}\frac{\partial\phi}{\partial v}\hat{e_{2}} +  \frac{1}{h_{3}}\frac{\partial\phi}{\partial w}\hat{e_{3}}
-\end{equation*}
-</div>
-<div class="para">This indicates the del operator as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gradcurv2.html ./knowl/eqn-gradcurv3.html">
-\begin{equation*}
-\left[\vec{\nabla} = \frac{\hat{e_{1}}}{h_{1}}\frac{\partial}{\partial u}+ \frac{\hat{e_{2}}}{h_{2}}\frac{\partial}{\partial v}+\frac{\hat{e_{3}}}{h_{3}}\frac{\partial}{\partial w}\right] 
+= \hat{i}(1+1)-\hat{j}(-1-1)+\hat{k}(1-2) = 2\hat{i}+2\hat{j}-\hat{k}.
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-grad_curvcord.html#p-155" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_first-examplesB.html#p-155" class="internal">in-context</a></span>
 </body>
 </html>

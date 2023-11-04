@@ -11,50 +11,32 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(S_{1}\)</span> and <span class="process-math">\(S_{2}\)</span> be two level surfaces having scalar point functions <span class="process-math">\(\phi\)</span> and <span class="process-math">\(\phi+\,d\phi\)</span> respectively. The <span class="process-math">\(\hat{n}\)</span> be an unit normal vector at point A and <span class="process-math">\(dn\)</span> be the distance between the surfaces <span class="process-math">\(S_{1}\)</span>  and <span class="process-math">\(S_{2}\)</span> along <span class="process-math">\(\hat{n}\text{.}\)</span>
+<div class="para">Let the vector <span class="process-math">\(\vec{r}\)</span> be a function of scalar variable <span class="process-math">\(t\text{,}\)</span> then <span class="process-math">\(\vec{r} = \vec{f\left(t\right)}\text{.}\)</span> If only one value of <span class="process-math">\(\vec{r}\)</span> corresponds to each value of <span class="process-math">\(t\text{,}\)</span> then <span class="process-math">\(\vec{r}\)</span> is defined as a <em class="emphasis">single valued function</em> of the scalar variable <span class="process-math">\(t\text{.}\)</span> If <span class="process-math">\(t\)</span> varies continuously with <span class="process-math">\(\vec{r}\text{,}\)</span> then the end point of <span class="process-math">\(\vec{r}\)</span>  describes a continuous curve. For different values of <span class="process-math">\(t\text{,}\)</span> the end point of the vector describes the curve, as shown in figure <a href="" class="xref" data-knowl="./knowl/fig-diffvects.html" title="Figure 1.1.11">Figure 1.1.11</a> and can be expressed as the following vector equations.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-diffvects.html ./knowl/fig-diffvects.html">
+\begin{align*}
+\vec{r} \amp  = a \cos t\hat{i} + a \sin t\hat{j} \quad \text{(circle)};  \\
+\vec{r}\amp = a \cos t\hat{i} + b \sin t\hat{j} \quad \text{(ellipse)}; \\
+\vec{r} \amp = a t^{2}\hat{i} + 2 a t\hat{j} \quad \text{(parabola)};\quad \text{and}\\
+\vec{r} \amp = a \sec t\hat{i} + b \tan t\hat{j} \quad \text{(hyperbola)}.
+\end{align*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-delphi.html ./knowl/eqn-delphi2.html ./knowl/eqn-delphi3.html">
-\begin{equation}
-\therefore \,dn = \,dr \cos\theta = \hat{n}\cdot \vec{\,dr} \tag{1.2.1}
-\end{equation}
-</div>
-<div class="para">where <span class="process-math">\(\theta\)</span> is the angle between <span class="process-math">\(\vec{AC}\)</span>  and <span class="process-math">\(\vec{AB}\text{,}\)</span> as shown in <a href="" class="xref" data-knowl="./knowl/fig-delphi.html" title="Figure 1.2.1">Figure 1.2.1</a>. Due to  a small vector <span class="process-math">\(\vec{dr}\)</span>  point B and C are very close to each other. Hence the rate of change of <span class="process-math">\(\phi\)</span> at point A in the direction of <span class="process-math">\(\hat{n}\)</span>  is  greatest and is equal to <span class="process-math">\(\frac{\partial\phi}{\partial n}\text{,}\)</span> and the total differential,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-delphi.html ./knowl/eqn-delphi2.html ./knowl/eqn-delphi3.html">
-\begin{equation}
-\,d\phi = \frac{\partial\phi}{\partial n} \,dn  = \frac{\partial\phi}{\partial n} \hat{n}\cdot \vec{\,dr}              \tag{1.2.2}
-\end{equation}
-</div>
-<div class="para">But, if <span class="process-math">\(\phi (x,y,z)\)</span> be a function of three independent variables <span class="process-math">\((x,y,z)\)</span> then its total differential <span class="process-math">\(\,d\phi\)</span> is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-delphi.html ./knowl/eqn-delphi2.html ./knowl/eqn-delphi3.html">
+<div class="para">
+<em class="alert">Note:</em> Any vector <span class="process-math">\(f(t)\)</span> can also be written in the form <span class="process-math">\(\vec{f}\left(t\right) = f_{1}\left(t\right)\hat{i} + f_{2}\left(t\right)\hat{j} 
++ f_{3}\left(t\right)\hat{k}\)</span> where <span class="process-math">\({f_{1}\left(t\right)}\text{,}\)</span> <span class="process-math">\({f_{2}\left(t\right)}\text{,}\)</span> <span class="process-math">\({f_{3}\left(t\right)}\)</span> are three scalar functions of <span class="process-math">\(t\text{.}\)</span> Now, Let O be the origin and P be the position of a moving particle at time <span class="process-math">\(t\text{,}\)</span> as shown in figure <a href="" class="xref" data-knowl="./knowl/fig-diffvects.html" title="Figure 1.1.11">Figure 1.1.11</a>. After the interval <span class="process-math">\(t+\delta t\)</span> the particle reaches at Q, so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-diffvects.html ./knowl/fig-diffvects.html">
 \begin{equation*}
-\,d \phi = \frac{\partial\phi}{\partial x} dx + \frac{\partial\phi}{\partial y} dy 
-+ \frac{\partial\phi}{\partial z} dz
+\vec{PQ} = \vec{OQ} - \vec{OP} = \vec{r}+\vec{\delta r} - \vec{r}   =  \vec{\delta r} 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-delphi.html ./knowl/eqn-delphi2.html ./knowl/eqn-delphi3.html">
-\begin{equation}
-\therefore \,d \phi = \left(\hat{i}\frac{\partial}{\partial x} + \hat{j}\frac{\partial}{\partial y} 
-+ \hat{k}\frac{\partial}{\partial z}\right)\phi \cdot \left(\hat{i}dx+ \hat{j}dy +\hat{k}dz\right) 
-= \vec{ \nabla \phi}\cdot \vec{d r} \tag{1.2.3}
-\end{equation}
-</div>
-<div class="para">From equations <a href="" class="xref" data-knowl="./knowl/eqn-delphi2.html" title="Equation 1.2.2">(1.2.2)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-delphi3.html" title="Equation 1.2.3">(1.2.3)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-delphi.html ./knowl/eqn-delphi2.html ./knowl/eqn-delphi3.html">
+<div class="para">[<span class="process-math">\(\because \vec{OQ} = \vec{r}+\vec{\delta r}\)</span> and <span class="process-math">\(\vec{OP} = \vec{r}\text{,}\)</span> the position vectors.] Since, <span class="process-math">\(\vec{PQ}\)</span> subtands in time <span class="process-math">\(\delta t\text{,}\)</span> hence in unit time the vector will be <span class="process-math">\(\vec{PQ}/\delta t\text{,}\)</span> or, <span class="process-math">\(\vec{\delta r}/\delta t\text{.}\)</span> As <span class="process-math">\(\delta t \to 0\text{,}\)</span> point Q tends to point P and the chord becomes the tangent at P, we define</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-diffvects.html ./knowl/fig-diffvects.html">
 \begin{equation*}
-\vec{ \nabla \phi}\cdot \vec{d r} = \frac{\partial\phi}{\partial n} \hat{n}\cdot \vec{dr}
+\frac{\vec{\,dr}}{\,dt} = \lim\limits_{\,\delta t \to 0} \frac{\vec{\,\delta r}}{\,\delta t}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-delphi.html ./knowl/eqn-delphi2.html ./knowl/eqn-delphi3.html">
-\begin{equation}
-\therefore \quad \vec{ \nabla \phi} = \frac{\partial\phi}{\partial n} \hat{n} \tag{1.2.4}
-\end{equation}
 </div>
-<div class="para">Hence the gradient of a scalar function <span class="process-math">\(\phi\)</span> is defined as the maximum rate of change of <span class="process-math">\(\phi\)</span> with respect to the space variables and has the direction of that change. If <span class="process-math">\(\vec{dr}\)</span> and <span class="process-math">\(\vec{ \nabla \phi}\)</span>  are in the same direction then <span class="process-math">\(d\phi
-= \mid\vec{ \nabla \phi}\mid\cdot \mid\vec{dr}\mid\)</span> is maximum. If <span class="process-math">\(\vec{dr}\)</span> lies on the surface <span class="process-math">\(S_{1}\text{,}\)</span> then <span class="process-math">\(\,d\phi = \vec{ \nabla \phi}\cdot\vec{dr} = 0\text{,}\)</span> which represents <span class="process-math">\(\vec{dr}\)</span> and <span class="process-math">\(\vec{ \nabla \phi}\)</span>  are perpendicular to each other, i.e., <span class="process-math">\(\vec{dr}\)</span> lies along the direction of tangent on the given surface. Thus <span class="process-math">\(\vec{\nabla \phi}\)</span> is normal to the surface of equation <span class="process-math">\(\phi (x,y,z) = constant\text{.}\)</span>
-</div>
-</div>
-<span class="incontext"><a href="subsec-gradscf.html#p-48" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-diffvects.html#p-48" class="internal">in-context</a></span>
 </body>
 </html>

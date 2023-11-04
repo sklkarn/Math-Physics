@@ -15,42 +15,36 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-(x^{2}-1)P'_{n}=(n+1)\left[P_{n+1}-xP_{n}\right] 
+P_{n}(-x) =(-1)^{n} P_{n}(x)
 \end{equation*}
 </div>
-<div class="para">Solution: From relation I, we have</div>
+<div class="para">we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-nP_{n}=(2n-1)xP_{n-1}-(n-1)P_{n-2}
-\end{equation*}
-</div>
-<div class="para">Replacing <span class="process-math">\(n\)</span> by <span class="process-math">\(n+1\text{,}\)</span> we get -</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(n+1)P_{n+1}=(2n+1)xP_{n}-nP_{n-1}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(n+1)\left[P_{n+1}-xP_{n}\right] =n\left[xP_{n}-P_{n-1}\right]
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(n+1)\left[P_{n+1}-xP_{n}\right] +n\left[P_{n-1}-xP_{n}\right]=0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(n+1)\left[P_{n+1}-xP_{n}\right] +(1-x^{2})P'_{n}=0
+(1-2xz+z^{2})^{-\frac{1}{2}} 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\therefore \quad (x^{2}-1)P'_{n}=(n+1)\left[P_{n+1}-xP_{n}\right] 
+=[1-2(-x)(-z)+(-z)^{2}]^{-\frac{1}{2}}=\sum\limits_{n=0}^{\infty}P_{n}(-x)(-z)^{n}
+\end{equation*}
+</div>
+<div class="para">now replacing <span class="process-math">\(x\)</span> by <span class="process-math">\(-x\)</span> and <span class="process-math">\(z\)</span> by <span class="process-math">\(-z\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum\limits_{n=0}^{\infty}P_{n}(x)(z)^{n}=\sum\limits_{n=0}^{\infty}(-1)^{n}P_{n}(-x)(z)^{n}
+\end{equation*}
+</div>
+<div class="para">equating the coefficients of <span class="process-math">\(z^{n}\text{,}\)</span> we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{n}(x)=(-1)^{n}P_{n}(-x) 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{n}(-x)=(-1)^{n}P_{n}(x)
 \end{equation*}
 </div>
 </div>

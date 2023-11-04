@@ -13,94 +13,21 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
+<div class="para">
+<span class="process-math">\(\therefore\)</span> Surface integral of <span class="process-math">\(\vec{F}\)</span> over S</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\oint\limits_{C}\vec{F}\cdot\vec{\,dr}=\iint\limits_{S} \left(\vec{\nabla} \times \hat{i}F_{x}+\vec{\nabla} \times \hat{j}F_{y}+\vec{\nabla} \times \hat{k}F_{z}\right)\cdot\hat{n}\,dS
+=\sum  \vec{F}\cdot \hat{n}=\iint\limits_{s}\left(\vec{F}\cdot \hat{n}\right) ds.
 \end{equation*}
 </div>
-<div class="para">Let us first prove,</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation}
-\iint_{S} \left[\vec{\nabla} \times \hat{i}F_{x}\right]\cdot\hat{n}\,dS = \iint\limits_{S} \left[\frac{\partial F_{x}}{\partial z}\hat{n}\cdot\hat{j}-\frac{\partial F_{x}}{\partial y}\hat{n}\cdot\hat{k}\right]\,dS\tag{1.4.6}
-\end{equation}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
+<div class="para"><dfn class="terminology">Note:</dfn></div>
+<div class="displaymath process-math">
 \begin{equation*}
-\left[\because \vec{\nabla} \times \hat{i}F_{x} = \left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\times \hat{i} F_{x}=-\hat{k}\frac{\partial F_{x}}{\partial y}+\hat{j}\frac{\partial F_{x}}{\partial z}\right] 
+Flux  = \iint\limits_{s}\left(\vec{F}\cdot \hat{n}\right) \,ds
 \end{equation*}
 </div>
-<div class="para">Let <span class="process-math">\(f(x,y,z)\)</span> be the equation of surface S and its projection on x-y plane is</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation}
-\hat{n}\cdot\hat{k}\,dS = \,dx\,dy\tag{1.4.7}
-\end{equation}
+<div class="para">where <span class="process-math">\(\vec{F}\)</span> is the velocity of fluid and <span class="process-math">\((\vec{F}\cdot \hat{n})\,ds\)</span> denotes the amount of fluid passing normally through the surface element  <span class="process-math">\(\,ds\)</span> per unit time. [If <span class="process-math">\(\iint\limits_{s}\left(\vec{F}\cdot \hat{n}\right)\,ds = 0\text{,}\)</span> then <span class="process-math">\(\vec{F}\)</span> is said to be a solenoidal vector].</div>
 </div>
-<div class="para">but on the surface S, we have <span class="process-math">\(F_{x}(x,y,z)=F_{x}[f(x,y),y,z]\text{.}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation}
-\therefore \,dF_{x}= \frac{\partial F_{x}}{\partial y}\,dy+\frac{\partial F_{x}}{\partial z}\,dz\tag{1.4.8}
-\end{equation}
-</div>
-<div class="para">and <span class="process-math">\(\vec{\,dr}= \,dy\hat{j}+\,dz\hat{k}\text{;}\)</span> where  <span class="process-math">\(\vec{\,dr}\)</span> is tangent to the surface ds at point A and is perpendicular to <span class="process-math">\(\hat{n}\text{.}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation*}
-\therefore    \vec{\,dr}\cdot\hat{n} = 0 =\,dy\hat{n}\cdot\hat{j}	+\,dz\hat{n}\cdot\hat{k}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation*}
-\hat{n}\cdot\hat{j}= \frac{\,dz}{\,dy}\hat{n}\cdot\hat{k} = -\frac{\,dz}{\,dy}\left(\frac{\,dx\,dy}{\,dS}\right)
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation}
-\therefore \hat{n}\cdot\hat{j}\,dS=-\,dx\,dz  \tag{1.4.9}
-\end{equation}
-</div>
-<div class="para">putting the values of eqns. <a href="" class="xref" data-knowl="./knowl/eqn-stoke2.html" title="Equation 1.4.7">(1.4.7)–(1.4.9)</a>  in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-stoke1.html" title="Equation 1.4.6">(1.4.6)</a>, we get-</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation*}
-\iint\limits_{S} \left[\vec{\nabla} \times \hat{i}F_{x}\right]\cdot\hat{n}\,dS = -\iint\limits_{S} \left[\frac{\partial F_{x}}{\partial z}\,dz +\frac{\partial F_{x}}{\partial y}\,dy\right]\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation*}
-=\int \,dx\int\limits_{y_{1},z_{1}}^{y_{2},z_{2}}\,dF_{x} =-\int\left[F_{x}(x,y_{2},z_{2})-F_{x}(x,y_{1},z_{1}) \right]\,dx
-\end{equation*}
-</div>
-<div class="para">At point <span class="process-math">\(P_{1}\text{,}\)</span> <span class="process-math">\(\,dx\)</span> is +ve (front part) and at <span class="process-math">\(P_{2}\text{,}\)</span> <span class="process-math">\(\,dx\)</span> is -ve (back part).</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation*}
-\therefore \iint\limits_{S} \left[\vec{\nabla} \times \hat{i}F_{x}\right]\cdot\hat{n}\,dS = \int F_{x}(x,y_{2},z_{2})\,dx+F_{x}(x,y_{1},z_{1})\,dx  
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation*}
-= \int\limits_{C} F_{x}\,dx
-\end{equation*}
-</div>
-<div class="para">Similarly, we can find,</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation*}
-\iint\limits_{S} \left[\vec{\nabla} \times \hat{j}F_{y}\right]\cdot\hat{n}\,dS = \int\limits_{C} F_{y}\,dy
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation*}
-\iint\limits_{S} \left[\vec{\nabla} \times \hat{k}F_{z}\right]\cdot\hat{n}\,dS = \int\limits_{C} F_{z}\,dz 
-\end{equation*}
-</div>
-<div class="para">Combining these we get,</div>
-<div class="displaymath process-math" data-contains-math-knowls=" ./knowl/eqn-stoke1.html">
-\begin{equation*}
-\iint\limits_{S} \left[\vec{\nabla} \times \vec{F}\right]\cdot\hat{n}\,dS = \oint_{C} \vec{F}\cdot \vec{\,dr} 
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="subsec-stoke_thrm.html#p-120" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-surf_int.html#p-120" class="internal">in-context</a></span>
 </body>
 </html>

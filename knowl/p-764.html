@@ -11,16 +11,31 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Solve</div>
+<div class="para">We may have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(1-x)y''+xy' -y =(1-x^{2}).
+\int\limits_{0}^{\infty}e^{-x}\sum\limits_{m,n =0}^{\infty}L_{m}(x)L_{n}(x)\frac{s^{m}t^{n}}{m!n!}\,dx
 \end{equation*}
 </div>
-<div class="para"><a href="" class="answer-knowl original" data-knowl="./knowl/answer-27-hidden.html" title="Answer 1"><span class="type">Answer</span><span class="period">.</span></a></div>
+<div class="displaymath process-math">
+\begin{equation*}
+=(1-s)^{-1}(1-t)^{-1}\int\limits_{0}^{\infty}exp\left[-x\frac{(1-st)}{(1-s)(1-t)}\right]\,dx
+\end{equation*}
 </div>
-<span class="incontext"><a href="ex_fourth.html#p-764" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+=(1-st)^{-1}=\sum\limits_{n}(st)^{n}  \hspace{1cm} \left[\because \int\limits_{0}^{\infty}e^{-\alpha x}\,dx=\frac{1}{\alpha}\right]
+\end{equation*}
+</div>
+<div class="para">put <span class="process-math">\(m=n\)</span> and equate the coefficients of <span class="process-math">\((st)^{n}\)</span> on both sides, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{\infty}e^{-x}[L_{n}(x)]^{2}\,dx =(n!)^{2}.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_fourth-examplesF.html#p-764" class="internal">in-context</a></span>
 </body>
 </html>

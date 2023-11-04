@@ -13,75 +13,37 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math">
+<div class="para">The transformation in which the components of a vector in one coordinate system are linear functions of another coordinate system is called a linear transformation. In sych transformation origin of two coordinate systems do not displace. If <span class="process-math">\(x_{i}\)</span> are the components of a vector in one coordinate system and <span class="process-math">\(y_{i}\)</span> are those in another coordinate system then after a linear transformation, we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
 \begin{equation*}
-\text{Let} \quad u_{1}= {\begin{bmatrix} 1\\2\\3 \end{bmatrix}}, 
-\quad	u_{2}={\begin{bmatrix} 3\\-1\\1 \end{bmatrix}}, 
-\quad \text{and}\quad u_{3}= {\begin{bmatrix} 1\\1\\2 \end{bmatrix}}
+y_{i}=b_{i1}x_{1}+b_{i2}x_{2}+\cdots+b_{in}x_{n} 
 \end{equation*}
 </div>
-<div class="para">then, <span class="process-math">\(k_{1}u_{1}+k_{2}u_{2}+k_{3}u_{3}=0\)</span> implies</div>
-<div class="displaymath process-math">
-\begin{align}
-k_{1}+3k_{2}+k_{3} \amp =0 \tag{2.2.1}\\
-2k_{1}-k_{2}+k_{3} \amp = 0\tag{2.2.2}\\
-\text{and} \hspace{3pt} 3k_{1}+k_{2}+2k_{3} \amp =0\tag{2.2.3}
-\end{align}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
+\begin{equation}
+= \sum\limits_{k=1}^{n}b_{ik}x_{k},  \quad 1 \leq i\leq n.\tag{2.1.6}
+\end{equation}
 </div>
-<div class="para">These equations are satisfied only when <span class="process-math">\(k_{1} = k_{2} =k_{3} =0\text{,}\)</span> i.e. <span class="process-math">\(u_{1}{,} u_{2}\text{,}\)</span> and <span class="process-math">\(u_{3}\)</span>  are linearly independent. Again, Let <span class="process-math">\(\left\{x_{1},x_{2},x_{3}\right\}\)</span> be an orthonormal basis. Then by Gram-Schmidt's method:</div>
-<div class="displaymath process-math">
+<div class="para">Again, the same vector has components <span class="process-math">\(z_{i}\text{,}\)</span> which are linearly related to the components <span class="process-math">\(y_{i}\)</span> then after a linear transformation, we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
+\begin{equation}
+z_{i}= \sum\limits_{k=1}^{n}a_{ik}y_{k},  \quad 1 \leq i\leq n.\tag{2.1.7}
+\end{equation}
+</div>
+<div class="para">Now it is possible to obtain a transformation directly from the components <span class="process-math">\(x_{i}\text{,}\)</span> from eqns. <a href="" class="xref" data-knowl="./knowl/eqn-2linetr1.html" title="Equation 2.1.6">(2.1.6)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-2linetr2.html" title="Equation 2.1.7">(2.1.7)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
 \begin{equation*}
-v_{1}=u_{1},  \qquad \therefore	 x_{1}= \frac{v_{1}}{\parallel v_{1} \parallel} = {\begin{bmatrix}
-\frac{1}{\sqrt{14}}\\ \frac{2}{\sqrt{14}}\\ \frac{3}{\sqrt{14}} \end{bmatrix}};
+z_{i}= \sum\limits_{k=1}^{n}a_{ik} \sum\limits_{j=1}^{n}b_{kj}x_{j} 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-\text{Now,}\quad \lambda=-\frac{(v_{1},u_{2})}{(v_{1},v_{1})}  = - \frac{4}{14} = -\frac{2}{7}
-\end{equation*}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
+\begin{equation}
+= \sum\limits_{j=1}^{n} \sum\limits_{k=1}^{n} a_{ik} b_{kj}x_{j} = \sum\limits_{j=1}^{n}c_{ij}x_{j}, \quad 1 \leq i\leq n.\tag{2.1.8}
+\end{equation}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left[\because  (v_{1},v_{1})= v_{1}'\cdot v_{1} = [1 2 3]{\begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}} 
-=1+4+9 =14;\right.
-\end{equation*}
+<div class="para">where,  <span class="process-math">\(c_{ij} = \sum\limits_{k=1}^{n}a_{ik}b_{kj}, \quad 1 \leq i, j\leq n.\)</span>
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left.(v_{1},u_{2})= v_{1}'\cdot u_{2} = [1 2 3]{\begin{bmatrix} 3 \\ -1 \\ 1 \end{bmatrix}}=3-2+3=4\right].
-\end{equation*}
 </div>
-<div class="para">We have -</div>
-<div class="displaymath process-math">
-\begin{equation*}
-v_{2} = u_{2}+\lambda v_{1} = {\begin{bmatrix} 3 \\ -1 \\ 1 \end{bmatrix}} - \frac{2}{7}{\begin{bmatrix} 
-1 \\ 2 \\ 3 \end{bmatrix}} = {\begin{bmatrix} 19/7 \\ -11/7 \\ 1/7 \end{bmatrix}}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore   x_{2}= \frac{v_{2}}{\parallel v_{2} \parallel} =\frac{1}{\sqrt{483}} {\begin{bmatrix} 
-19\\ -11\\ 1 \end{bmatrix}};
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-v_{3} = u_{3}+\lambda_{1} v_{1}+\lambda_{2} v_{2}
-\end{equation*}
-</div>
-<div class="para">where,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\lambda_{1} = -\frac{(v_{1},u_{3})}{(v_{1},v_{1})}\quad \text{and} \quad \lambda_{2} =-\frac{(v_{2},u_{3})}{(v_{2},v_{2})} 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore   \quad x_{3}= \frac{v_{3}}{\parallel v_{3} \parallel}
-\end{equation*}
-</div>
-<div class="para">can be obtained.</div>
-</div>
-<span class="incontext"><a href="sec_second-examplesA.html#p-236" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-2lin_trans.html#p-236" class="internal">in-context</a></span>
 </body>
 </html>

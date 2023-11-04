@@ -13,23 +13,30 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">We know that</div>
+<div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}^{-1}[\frac{1}{s^{2}}] = \frac{t^{2}}{2!}= \frac{1}{2}t^{2}
+\int\limits_{0}^{t}f_{1}(x)f_{2}(t-x)\,dx = H(t).
 \end{equation*}
 </div>
-<div class="para">By the second shifting theorem, we get -</div>
+<div class="para">Then</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}^{-1}[\frac{e^{-3s}}{s^{2}}] = \frac{1}{2}(t-3)^{2}.u(t-3)  
-= \begin{cases}
-0,\quad  0 \lt t \lt 3\\
-\frac{1}{2}(t-3)^{2},  \quad t \lt 3
-\end{cases}
+\mathscr{L}\{H(t)\}=\int\limits_{0}^{\infty}e^{-st}H(t)\,dt 
 \end{equation*}
 </div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \int\limits_{t=0}^{\infty}e^{-st}\left[\int\limits_{x=0}^{t}f_{1}(x)f_{2}(t-x)\,dx\right]\,dt 
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_sixth-examplesC.html#p-1041" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{t=0}^{\infty}\left[\int\limits_{x=0}^{t}e^{-st}f_{2}(t-x)\,dx\right]\,dt 
+\end{equation*}
+</div>
+<div class="para">the integration is being done w.r.t. ’x’ first and then w.r.t ’t’.</div>
+</div>
+<span class="incontext"><a href="subsec-conv_LT.html#p-1041" class="internal">in-context</a></span>
 </body>
 </html>

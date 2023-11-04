@@ -13,18 +13,24 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">A periodic square wave function <span class="process-math">\(f(t)\)</span> in terms of unit step function is given as</div>
+<div class="para">Hence,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(t) =k[u_{o}(t)-2u_{a}(t)+2u_{2a}(t)-2u_{3a}(t)+\cdots].
+\mathscr{L}^{-1}\left[\frac{E}{s(sL+R)}\right] = \frac{E}{L}L^{-1}\left[\frac{1}{s(s+R/L)}\right]
 \end{equation*}
 </div>
-<div class="para">Show that the Laplce Transform of <span class="process-math">\(f(t)\)</span> is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}\{f(t)\}=\frac{k}{s}\tanh (\frac{as}{2}).
+= \frac{E}{R}\left[1-e^{-(R/L)t}\right]
 \end{equation*}
 </div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}^{-1}\left[\frac{Ee^{-sa}}{s(sL+R)}\right]  = \frac{E}{R}\left[1-e^{-(R/L)(t-a)}\right]u(t-a)
+\end{equation*}
+</div>
+<div class="para">(by second shifting theorem.)</div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesC.html#p-1067" class="internal">in-context</a></span>
 </body>

@@ -11,70 +11,58 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">For, <span class="process-math">\(m=n\text{,}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
+<div class="para">Hence, put <span class="process-math">\(a_{o}=b_{o}(k+1)\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq19.html" title="Equation 4.4.18">(4.4.18)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
 \begin{equation*}
-a_{k+2} = \frac{(n-k)(n-k-1)}{(n-k+n-1)(n-k-n-2)}a_{k}
+y=b_{o}x^{k}\left[(k+1)-\frac{(k+1)x^{2}}{(k+1)(k+3)}+\frac{(k+1)x^{4}}{(k+1)(k+3)^{2}(k+5)}-\cdots\right]
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
-\begin{equation*}
-= - \frac{(n-k)(n-k-1)}{(2n-k-1)(k+2)}a_{k}
-\end{equation*}
-</div>
-<div class="para">so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
-\begin{equation*}
-a_{2}=-\frac{n(n-1)}{(2n-1)\cdot 2}a_{o};
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
-\begin{equation*}
-a_{4}=\frac{(n-2)(n-3)}{(2n-3)\cdot 4}a_{2}=\frac{n(n-1)(n-2)(n-3)}{(2n-1)(2n-3)\cdot 4\cdot 2}a_{o}
-\end{equation*}
-</div>
-<div class="para">and so on. Also</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
-\begin{equation*}
-a_{1}=a_{3}=a_{5}=\cdots =0.
-\end{equation*}
-</div>
-<div class="para">Hence the series <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq2.html" title="Equation 4.5.2">(4.5.2)</a> becomes</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
-\begin{equation*}
-y=a_{o}\left[x^{n}-\frac{n(n-1)}{(2n-1)\cdot 2}x^{n-2}+\frac{n(n-1)(n-2)(n-3)}{(2n-1)(2n-3)\cdot 4\cdot 2}x^{n-4}-\cdots\right.
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
-\begin{equation*}
-+\left.(-1)^{r}\frac{n(n-1)(n-2)\cdots(n-2r+1)}{2\cdot 4\cdots 2r(2n-1)(2n-3)\cdots (2n-2r+1)}x^{n-2r}\right.
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
 \begin{equation}
-\left.\cdots+\cdots\right]\tag{4.5.7}
+=b_{o}x^{k}\left[(k+1)-\frac{x^{2}}{(k+3)}+\frac{x^{4}}{(k+3)^{2}(k+5)}-\cdots\right] \tag{4.4.20}
 \end{equation}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
+<div class="para">On differentiating eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq21.html" title="Equation 4.4.20">(4.4.20)</a> w.r.t. ’k’, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
 \begin{equation*}
-\therefore y=a_{o}x^{n}\left[1-\frac{n(n-1)}{(2n-1)\cdot 2}x^{-2}+\frac{n(n-1)(n-2)(n-3)}{(2n-1)(2n-3)\cdot 4\cdot 2}x^{-4}-\cdots\right.
+\frac{\partial y}{\partial k}=b_{o}x^{k}\log x\left[(k+1)-\frac{x^{2}}{(k+3)}+\frac{x^{4}}{(k+3)^{2}(k+5)}-\cdots\right]
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
 \begin{equation*}
-+\left.(-1)^{r}\frac{n(n-1)(n-2)\cdots(n-2r+1)}{2\cdot 4\cdots 2r(2n-1)(2n-3)\cdots (2n-2r+1)}x^{-2r}\right.
++ b_{o}x^{k}\left[1+\frac{x^{2}}{(k+3)^{2}}-\frac{2x^{4}}{(k+3)^{2}(k+5)}-\frac{x^{4}}{(k+3)^{2}(k+5)^{2}}+\cdots\right]
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq2.html ./knowl/eqn-leg_eq1.html">
-\begin{equation}
-\left.\cdots +\cdots\right]\tag{4.5.8}
-\end{equation}
+<div class="para">on replacing <span class="process-math">\(k\)</span> by -1, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+\begin{equation*}
+\left(\frac{\partial y}{\partial k}\right)_{k=-1}=b_{o}x^{-1}\log x\left[0-\frac{x^{2}}{2}+\frac{x^{4}}{2^{2}\cdot 4}-\cdots\right] 
+\end{equation*}
 </div>
-<div class="para">which is a solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq1.html" title="Equation 4.5.1">(4.5.1)</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+\begin{equation*}
++ b_{o}x^{-1}\left[1+\frac{x^{2}}{2^{2}}-\frac{2x^{4}}{2^{2}\cdot 4}-\frac{x^{4}}{2^{2}\cdot 4^{2}}+\cdots\right]
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-Legnd_eq.html#p-562" class="internal">in-context</a></span>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+\begin{equation*}
+y=b_{o}x\log x\left[-\frac{1}{2}+\frac{x^{2}}{2^{2}\cdot 4}-\cdots\right]+ b_{o}x^{-1}\left[1+\frac{x^{2}}{2^{2}}-\frac{x^{4}}{2^{2}\cdot 4}(1+\frac{1}{4})+\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+\begin{equation*}
+\therefore y=C_{1}x\left[1-\frac{x^{2}}{2\cdot 4}+\frac{x^{4}}{2\cdot 4^{2}\cdot 6}-\cdots\right]+ C_{2}x\log x\left[-\frac{1}{2}+\frac{x^{2}}{2^{2}\cdot 4}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+\begin{equation*}
++C_{2}x^{-1}\left[1+\frac{x^{2}}{2^{2}}-\frac{x^{4}}{2^{2}\cdot 4}(1+\frac{1}{4})+\cdots\right] 
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_fourth-examplesB.html#p-562" class="internal">in-context</a></span>
 </body>
 </html>

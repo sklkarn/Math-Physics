@@ -11,39 +11,52 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">The boundary conditions of the problem are <span class="process-math">\(\frac{\partial u}{\partial x}=0	\)</span> at <span class="process-math">\(x=0\)</span>  and <span class="process-math">\(\lambda\)</span>	[for <span class="process-math">\(t\geq 0 \)</span>]. and <span class="process-math">\(u=f(x)\)</span>	at <span class="process-math">\(t=0\)</span>	[for <span class="process-math">\(0 \lt x \lt \lambda\)</span>]. Then solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_0ed1.html" title="Equation 7.3.10">(7.3.10)</a> becomes</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_inslbar3.html ./knowl/eqn-1Dheat_inslbar2.html">
+<div class="para">Now if <span class="process-math">\(\rho\)</span> be the density of the body, <span class="process-math">\(c\)</span> be the specific heat capacity, then the total heat <span class="process-math">\(Q\)</span> contained in the body is given by</div>
+<div class="displaymath process-math">
 \begin{equation}
-u=(A\cos\lambda x+B\sin\lambda x)Ce^{-\lambda^{2}h^{2}t}\tag{7.3.17}
+Q=\iiint\limits_{V}c\rho u\,dV  \tag{7.3.3}
 \end{equation}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_inslbar3.html ./knowl/eqn-1Dheat_inslbar2.html">
+<div class="para">
+<span class="process-math">\([\because\quad Q = mc\theta =V\rho c \theta ] \)</span> here <span class="process-math">\(\theta\)</span> = temperature, <span class="process-math">\(u\)</span>] so the rate of decrease of <span class="process-math">\(Q\)</span> is given by</div>
+<div class="displaymath process-math">
 \begin{equation}
-\frac{\partial u}{\partial x}=\left(-A\lambda\sin\lambda x+ B\lambda\cos\lambda x\right)Ce^{-\lambda^{2}h^{2}t}	\tag{7.3.18}
+-\frac{\partial Q}{\partial t}=-\iiint\limits_{V}c\rho \frac{\partial u}{\partial t}\,dV\tag{7.3.4}
 \end{equation}
 </div>
-<div class="para">Putting <span class="process-math">\(\frac{\partial u}{\partial x}=0\)</span> at <span class="process-math">\(x=0\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_inslbar3.html" title="Equation 7.3.18">(7.3.18)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_inslbar3.html ./knowl/eqn-1Dheat_inslbar2.html">
+<div class="para">This must be equal to the amount of heat leaving the body in unit time, i.e.,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-0=B\lambda Ce^{-\lambda^{2}h^{2}t}
+-\iiint\limits_{V}c\rho \frac{\partial u}{\partial t}\,dV = -k \iiint\limits_{V}\nabla^{2}u\,dV
 \end{equation*}
 </div>
-<div class="para">or, <span class="process-math">\(B=0 \text{,}\)</span> since, <span class="process-math">\(C\neq 0{,} \lambda \neq 0\text{.}\)</span> Therefore, equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_inslbar2.html" title="Equation 7.3.17">(7.3.17)</a> becomes</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_inslbar3.html ./knowl/eqn-1Dheat_inslbar2.html">
+<div class="para">or,</div>
+<div class="displaymath process-math">
 \begin{equation}
-u=A\cos\lambda x\cdot Ce^{-\lambda^{2}h^{2}t}\tag{7.3.19}
+\iiint\limits_{V}\left[c\rho \frac{\partial u}{\partial t}-k\nabla^{2}u\right]\,dV=0\tag{7.3.5}
 \end{equation}
+</div>
+<div class="para">Since the surface <span class="process-math">\(S\)</span> is arbitrary, the volume enclosed by surface <span class="process-math">\(\,dS\)</span> is <span class="process-math">\(\,dV\neq 0\text{.}\)</span>Thus the integrands must be zero. i.e.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+c\rho \frac{\partial u}{\partial t}= k\nabla^{2}u
+\end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_inslbar3.html ./knowl/eqn-1Dheat_inslbar2.html">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial u}{\partial t}=\frac{k}{c\rho} \nabla^{2}u
+\end{equation*}
+</div>
+<div class="displaymath process-math">
 \begin{equation}
-\frac{\partial u}{\partial x}=-A\lambda\sin\lambda x\cdot Ce^{-\lambda^{2}h^{2}t} \tag{7.3.20}
+\therefore \quad \frac{\partial u}{\partial t} =h^{2}\nabla^{2}u\tag{7.3.6}
 \end{equation}
 </div>
+<div class="para">This equation is known as heat equation. The quantity <span class="process-math">\(h^{2}\)</span> is known as diffusivity of the solid, and is defined as the ratio of thermal conductivity and heat capacity of solid per unit volume.</div>
 </div>
-<span class="incontext"><a href="subsec-1D_heat.html#p-1170" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_seventh-heateq.html#p-1170" class="internal">in-context</a></span>
 </body>
 </html>

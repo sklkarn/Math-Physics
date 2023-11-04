@@ -13,33 +13,83 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">But,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed4.html">
+<div class="para">Therefore the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-waveeqn1.html" title="Equation 7.2.26">(7.2.26)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation}
+u(x,y,t)=\sum\limits_{m=1}^{\infty}A_{mn}\cos\lambda_{mn}t\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}	\tag{7.2.29}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
 \begin{equation*}
-u(0,t)=0=A\cdot Ce^{-\lambda^{2}h^{2}t} \Rightarrow A=0 \quad \because C \neq 0 
+A_{mn}=\frac{4}{1\cdot 1}\int\limits_{x=0}^{1}\int\limits_{y=0}^{1}f(x,y)\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}\,dx\,dy 
 \end{equation*}
 </div>
-<div class="para">again,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation}
+=4\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin 2\pi y \sin m\pi x\sin n\pi y\,dx\,dy \tag{7.2.30}
+\end{equation}
+</div>
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
 \begin{equation*}
-u(\lambda,t) =0= B\sin\lambda \lambda)Ce^{-\lambda^{2}h^{2}t}
+A_{m1}=A_{m3}=A_{m4}=\cdots=0
 \end{equation*}
 </div>
-<div class="para">As <span class="process-math">\(B\)</span> should not be zero, <span class="process-math">\(\sin\lambda \lambda =0 =\sin n\pi\text{.}\)</span> Or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed4.html">
+<div class="para">but,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
 \begin{equation*}
-\lambda = \frac{n\pi}{\lambda}, \quad  n=1,2,3,\cdots 
+A_{m2} =4A\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin m\pi x\sin^{2} 2\pi y\,dx\,dy 
 \end{equation*}
 </div>
-<div class="para">putting <span class="process-math">\(A\)</span> and <span class="process-math">\(\lambda \)</span> in equation,<a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_0ed4.html" title="Equation 7.3.13">(7.3.13)</a>, we get-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
 \begin{equation*}
-u(x,t)=B\sin\frac{n\pi x}{\lambda} Ce^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} = A_{n}\sin\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}}
+= 2A\int\limits_{0}^{1}\int\limits_{0}^{1}\sin \pi x\sin m\pi x(1-\cos4\pi y)\,dx\,dy
 \end{equation*}
 </div>
-<div class="para">put <span class="process-math">\([BC=A_{n}].\)</span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=2A\int\limits_{0}^{1}\sin \pi x\sin m\pi x\left(y-\frac{1}{4\pi}\sin 4\pi y\right)_{0}^{1}\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= 2A \int\limits_{0}^{1}\sin \pi x\sin m\pi x\,dx 
+\end{equation*}
+</div>
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{22}= A_{32}=A_{42}=\cdots=0
+\end{equation*}
+</div>
+<div class="para">Also, we find</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{12} =2A\int\limits_{0}^{1}\sin \pi x\sin \pi x\,dx = A\int\limits_{0}^{1}(1-\cos 2\pi x)\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= A\left(x-\frac{\sin 2\pi x}{2\pi}\right)_{0}^{1}=A.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+\therefore \quad u(x,y,t)= A_{12}\cos\lambda_{12}t\sin\pi x\sin 2\pi y 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=A\cos\sqrt{5}\pi t\sin\pi x\sin 2\pi t
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+[ \because \quad \lambda_{12}^{2}=1^{2}\cdot k_{12}^{2}=\pi^{2}(1^{2}+2^{2}); \quad \therefore \quad \lambda_{12}=\pi \sqrt{5}].
+\end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-1D_heat.html#p-1168" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_seventh-examplesA.html#p-1168" class="internal">in-context</a></span>
 </body>
 </html>

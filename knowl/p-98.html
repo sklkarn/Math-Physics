@@ -13,37 +13,28 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We have</div>
+<div class="para">Let <span class="process-math">\(\phi=r^{-3}\)</span>   and <span class="process-math">\(\vec{F}=\vec{r}\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{align*}
-\hat{r} \amp =\frac{\vec{r}}{|\vec{r}|} 
-=\frac{x\hat{i}+y\hat{j}+z\hat{k}}{r} 
-= \frac{x}{r}\hat{i}+\frac{y}{r}\hat{j}+\frac{z}{r}\hat{k}\\
-\therefore    \vec{\nabla}\cdot\hat{r}\amp 
-= \frac{\partial}{\partial x}\left(\frac{x}{r}\right) 
-+\frac{\partial}{\partial y}\left(\frac{y}{r}\right) 
-+\frac{\partial}{\partial z}\left(\frac{z}{r}\right) \\
-\amp = \frac{1}{r^{2}}\left[3r-\left(x\frac{\partial r}{\partial x} 
-+y\frac{\partial r}{\partial y}+z\frac{\partial r}{\partial z}\right)\right] 
+\vec{\nabla}\cdot\left(\phi\vec{F}\right) \amp 
+= \left(\vec{\nabla \phi}\right) 
+\cdot \vec{F}+\phi \left(\vec{\nabla} \cdot \vec{F}\right) \\
+\amp  =\left(\vec{\nabla}r^{-3}\right) 
+\cdot \vec{r}+r^{-3} \left(\vec{\nabla} \cdot \vec{r}\right) \\
+\amp = -3r^{-3-2}\vec{r}\cdot\vec{r}+3r^{-3}=-3r^{-3}+3r^{-3} = 0 
 \end{align*}
 </div>
-<div class="para">since, <span class="process-math">\(r^{2}=x^{2}+y^{2}+z^{2}\text{,}\)</span> we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{\partial r}{\partial x}=\frac{x}{r},\quad 
-\frac{\partial r}{\partial y}=\frac{y}{r}\quad
-\text{and}\quad \frac{\partial r}{\partial z}=\frac{z}{r}.
+\left[ \because \vec{\nabla}r^{n}= n r^{n-2}\vec{r} \right] 
 \end{equation*}
 </div>
-<div class="para">Hence,</div>
+<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{align*}
-\vec{\nabla}\cdot\hat{r} \amp = \frac{1}{r^{2}}\left[3r-\left(x\frac{x}{r} 
-+y\frac{y}{r}+z\frac{z}{r}\right)\right] \\
-\amp  = \frac{1}{r^{2}}\left[3r-\left(\frac{x^{2}}{r}+\frac{y^{2}}{r} 
-+\frac{z^{2}}{r}\right)\right]  \\
-\amp = \frac{1}{r^{2}}\left[3r-\left(\frac{r^{2}}{r}\right)\right] 
-=\frac{1}{r^{2}}(2r)=\frac{2}{r}. \quad Proved.
+\vec{\nabla}\cdot \vec{r} \amp =\left(\hat{i}\frac{\partial}{\partial x} 
++\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right) 
+\cdot \left(x\hat{i}+y\hat{j}+z\hat{k}\right) =3.
 \end{align*}
 </div>
 </div>

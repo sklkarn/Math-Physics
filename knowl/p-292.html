@@ -13,60 +13,51 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are two vectors relative to the basis of unprimed system and are represented by <span class="process-math">\(X'\)</span> and <span class="process-math">\(Y'\)</span> relative to the basis of a primed system, so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+<div class="para">Therefore, from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-orth2.html" title="Equation 2.4.3">(2.4.3)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-orth2.html ./knowl/eqn-orth3.html">
+\begin{equation*}
+y^{2}_{i} = x^{2}_{i}
+\end{equation*}
+</div>
+<div class="para">where,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-orth2.html ./knowl/eqn-orth3.html">
 \begin{equation}
-X=PX';	\quad  	Y=PY' \tag{2.4.12}
+\sum\limits_{i=1}^{n}y_{i}=\sum\limits_{j=1}^{n}a_{ij}x_{j}; \tag{2.4.4}
 \end{equation}
 </div>
-<div class="para">where <span class="process-math">\(P\)</span> is transformation matrix. Suppose <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are themselves related by the transformation matrix <span class="process-math">\(A\)</span> in the unprimed system, so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
-\begin{equation}
-X=AY\tag{2.4.13}
-\end{equation}
-</div>
-<div class="para">Now, from eqns. <a href="" class="xref" data-knowl="./knowl/eqn-trac1.html" title="Equation 2.4.12">(2.4.12)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-trac2.html" title="Equation 2.4.13">(2.4.13)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
-\begin{align}
-X' \amp  = P^{-1}X = P^{-1}AY = P^{-1}APY' \equiv BY' \tag{2.4.14}\\
-\text{where} \quad B \amp  = P^{-1}AP \tag{2.4.15}
-\end{align}
-</div>
-<div class="para">This implies that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
-\begin{equation}
-A = PBP^{-1}.\tag{2.4.16}
-\end{equation}
-</div>
-<div class="para">i.e., the matrix of transformation for the same two vectors in the coordinate system is related by <span class="process-math">\(P^{-1}AP\)</span> and <span class="process-math">\(PBP^{-1}\text{.}\)</span> Hence <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are said to be related under similarity transformation. From eqn. <a href="" class="xref" data-knowl="./knowl/eqn-trac4.html" title="Equation 2.4.15">(2.4.15)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-orth2.html ./knowl/eqn-orth3.html">
 \begin{equation*}
-Tr(B)=\sum\limits_{i}B_{ii}=\sum\limits_{i}(P^{-1}AP)_{ii}	=\sum\limits_{i}\sum\limits_{jk}P^{-1}_{ij}A_{jk}P_{ki}
+Y' =\begin{bmatrix} 
+\cdot &amp; \cdot &amp; \cdot 
+\end{bmatrix}; 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-orth2.html ./knowl/eqn-orth3.html">
 \begin{equation*}
-= \sum\limits_{j}\sum\limits_{k}\left[\sum\limits_{i}P_{ki}P^{-1}_{ii}\right]A_{jk}
+\text{and}\quad Y=\begin{bmatrix} 
+\cdot\\\cdot\\\cdot 
+\end{bmatrix}.
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+<div class="para">
+<dfn class="terminology">Note:</dfn> In case <span class="process-math">\(X\)</span> and <span class="process-math">\(X^{'}\)</span> are complex then the orthogonal conditions to be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-orth2.html ./knowl/eqn-orth3.html">
 \begin{equation*}
-\left[\because \quad \sum\limits_{i}(AB)_{ij}=\sum\limits_{i}\sum\limits_{j}a_{ij}b_{ji}\right]  
+\left(AA^{\dagger}\right) = \left(A^{\dagger}A\right) = I,
 \end{equation*}
 </div>
-<div class="para">after changing the sign for the places.</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+<div class="para">i.e., A is an unitary matrix. A real unitary matrix is an orthogonal matrix. <a href="" class="xref" data-knowl="./knowl/eqn-orth3.html" title="Equation 2.4.4">(2.4.4)</a> shows that the norm of a real vector remains invariant under orthogonal transformation. i.e.,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-orth2.html ./knowl/eqn-orth3.html">
 \begin{equation*}
-=\sum\limits_{j}\sum\limits_{k}\left[\sum\limits_{i}PP^{-1}\right]_{kj}A_{jk} = \sum\limits_{j}\left[APP^{-1}\right]_{jj}= \sum\limits_{j}A_{jj} = Tr(A) 
+\Vert X \Vert  = \Vert AX \Vert
 \end{equation*}
 </div>
-<div class="para">i.e., trace is invarient under similarity transformation. Also,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-orth2.html ./knowl/eqn-orth3.html">
 \begin{equation*}
-|B| = det B = [P^{-1}AP| = |P^{-1}||A||P|  = A 
+[\because  \quad 	\Vert X \Vert = \sqrt{x^{2}_{i}}   \quad 
+\text{and}\quad \Vert Y \Vert = \sqrt{y^{2}_{i}}].
 \end{equation*}
 </div>
-<div class="para">[<span class="process-math">\(\because |P^{-1}||P| = 1\)</span>]  proved.</div>
 </div>
 <span class="incontext"><a href="sec_second-examplesB.html#p-292" class="internal">in-context</a></span>
 </body>

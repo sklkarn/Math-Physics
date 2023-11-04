@@ -11,85 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<div class="para">The motion executed by a spring is simple harmonic motion, therefore, <span class="process-math">\(F=-ky\)</span> (where <span class="process-math">\(y\)</span> is the displacement of mass <span class="process-math">\(m\)</span> at any time, <span class="process-math">\(t\text{.}\)</span>)</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-m\frac{\,d^{2}y}{\,dt^{2}}=-ky
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-\frac{\,d^{2}y}{\,dt^{2}}+\frac{k}{m}y=0 
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation}
-\frac{\,d^{2}y}{\,dt^{2}}+\omega^{2}y=0\tag{4.2.2}
-\end{equation}
-</div>
-<div class="para">where <span class="process-math">\(\omega^{2} = \frac{k}{m}\text{.}\)</span> The eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffex2.html" title="Equation 4.2.2">(4.2.2)</a> is the equation of motion.</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-A.E. = m^{2}+\omega^{2}=0 \hspace{0.5cm}  \text{or,} \quad m=\pm i\omega
-\end{equation*}
-</div>
-<div class="para">The general solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffex2.html" title="Equation 4.2.2">(4.2.2)</a> is then</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation}
-y(t) =C_{1}e^{i\omega}t+C_{2}e^{-i\omega}t = A\cos\omega t+B\sin\omega t\tag{4.2.3}
-\end{equation}
-</div>
-<div class="para">If <span class="process-math">\(T\)</span> be the period of motion, then <span class="process-math">\(y(t)=y(t+T)\text{.}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-\therefore A \cos\omega t +B\sin\omega t =A\cos(\omega t+\omega T)+B\sin(\omega t+\omega t)
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-= A\left[\cos\omega t\cdot\cos\omega T-\sin\omega t\cdot\sin\omega T\right] 
-+ B\left[\sin\omega t\cdot\cos\omega T+\cos\omega t\cdot\sin\omega T\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-=\left(A\cos\omega T+B\sin\omega T\right)\cos\omega t+\left(B\cos\omega T-A\sin\omega T\right)\sin\omega t
-\end{equation*}
-</div>
-<div class="para">equating on both sides, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-A\cos\omega T+B\sin\omega T = A 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-\Rightarrow \cos\omega T =1 \hspace{1cm} \text{and} \quad  \sin\omega T =0.
-\end{equation*}
-</div>
-<div class="para">i.e.,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-\cos\omega T =1=\cos 2n\pi  
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-\omega T = 2n\pi
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
-\begin{equation*}
-\therefore  T = \frac{2n\pi}{\omega} = 2n\pi\sqrt{\frac{m}{k}} 
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="sec_fourth-examplesA.html#p-463" class="internal">in-context</a></span>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para">In fact, there is no general method to solve such differential equations. However, we discuss one artificial but elegent method to solve such type of equations. This method is known as <dfn class="terminology">Method of Variation of Parameters</dfn>. Lagrange developed it. It provides the complete solution of a linear equation whose complementary function is known.</div>
+<span class="incontext"><a href="subsec-second_order-diff.html#p-463" class="internal">in-context</a></span>
 </body>
 </html>

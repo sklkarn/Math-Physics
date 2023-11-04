@@ -13,28 +13,26 @@
 <body class="ignore-math">
 <div class="displaymath process-math">
 \begin{align*}
-\vec{\nabla} (f g) \amp = \left(\frac{\partial}{\partial x}\hat{i} 
-+\frac{\partial}{\partial y}\hat{j} + \frac{\partial}{\partial z}\hat{k}\right)(f g)\\
-\amp = \left(\hat{i}\frac{\partial }{\partial x}(f g) 
-+ \hat{j}\frac{\partial}{\partial y}(f g) 
-+ \hat{k}\frac{\partial}{\partial z}(f g)\right) \\
-\amp =\left(f \frac{\partial g}{\partial x} 
-+g \frac{\partial f}{\partial x}\right)\hat{i} 
-+\left(f \frac{\partial g}{\partial y} 
-+g \frac{\partial f}{\partial y}\right)\hat{j} 
-+ \left(f \frac{\partial g}{\partial z} 
-+g \frac{\partial f}{\partial z}\right)\hat{k}\\
-\amp =f\left(\frac{\partial g}{\partial x}\hat{i} 
-+ \frac{\partial g}{\partial y}\hat{j} 
-+ \frac{\partial g}{\partial z}\hat{k}\right)+ g \left(\frac{\partial f}{\partial x}\hat{i} 
-+ \frac{\partial f}{\partial y}\hat{j}+ \frac{\partial f}{\partial z}\hat{k}\right)\\
-\amp =f\left(\hat{i}\frac{\partial}{\partial x} 
-+\hat{j}\frac{\partial}{\partial y} 
-+\hat{k}\frac{\partial}{\partial z}\right) g + g\left(\hat{i}\frac{\partial}{\partial x} 
-+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right) f \quad  \\
-\amp  =f \vec{\nabla g}  + g \vec{\nabla f} 
+\text{Let}\quad \phi \amp = r^{n} 
+= \left(x^{2}+y^{2}+z^{2}\right)^{\frac{n}{2}}\\
+\text{Hence, }\quad \frac{\partial \phi}{\partial x} \amp =\frac{n}{2}\left(x^{2}+y^{2} 
++z^{2}\right)^{\frac{n}{2}-1}\cdot 2 x \\
+\amp = n\cdot\left(r^{2}\right)^{\frac{n-2}{2}}\cdot x 
+= n\cdot r^{n-2}\cdot x\\
+\text{Similarly,}\quad  \frac{\partial \phi}{\partial y} \amp 
+= n\cdot r^{n-2}\cdot y,\\
+\text{and} \quad \frac{\partial \phi}{\partial z} \amp 
+= n\cdot r^{n-2}\cdot z \\
+\therefore    \quad  \vec{\nabla \phi}  \amp 
+= \left(\hat{i}\frac{\partial \phi}{\partial x} 
++\hat{j}\frac{\partial \phi}{\partial y} 
++\hat{k}\frac{\partial \phi}{\partial z}\right) \\
+\amp  = \hat{i} n \cdot r^{n-2}\cdot x 
++ \hat{j} n \cdot r^{n-2}\cdot y + \hat{k} n \cdot r^{n-2}\cdot z\\
+\amp =n \cdot r^{n-2}\left(\hat{i} x+\hat{j} y+\hat{k} z\right) 
+=  n r^{n-2}\vec{r}  
 \end{align*}
 </div>
-<span class="incontext"><a href="sec_first-examplesA.html#md-30" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_first-examplesA.html#md-31" class="internal">in-context</a></span>
 </body>
 </html>

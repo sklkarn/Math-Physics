@@ -13,23 +13,35 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Find the Fourier series expansion a given square - wave</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \begin{cases} 
-0, &amp; \text{for} \quad  -\pi \leq x \leq 0 \\ 
-h, &amp; \text{for} \quad  0 \leq x \leq \pi 
-\end{cases}
+f(x) = e^{x}= \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{c}\right)\right] 
 \end{equation*}
 </div>
-<div class="para">or,</div>
+<div class="para">where,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(t) = \begin{cases} 
--1, &amp; \text{for} \quad  0 \leq x \lt T/2 \\ 
-0, &amp; \text{for} \quad  t =T/2\\ 
-+1,  &amp; \text{for} \quad  T/2 \lt t \lt T 
-\end{cases}
+a_{0}= \frac{2}{c}\int\limits_{0}^{c}f(x) \,dx = \frac{2}{1}\int\limits_{0}^{1} e^{x}\,dx = 2\left(e^{x}\right)_{0}^{1}=2(e^{1}-1).
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{n}=	\frac{2}{c}\int\limits_{0}^{c}f(x)\cos \left(\frac{n\pi x}{c}\right) \,dx = 	\frac{2}{1}\int\limits_{0}^{1}e^{x}\cos n\pi x \,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=2\left[\frac{e^{x}}{1+n^{2}\pi^{2}}(\cos n\pi x + n \pi \sin n\pi x)\right]_{0}^{1}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=2\left[\frac{e^{1}}{1+n^{2}\pi^{2}}(\cos n\pi  + n \pi \sin n\pi -1-0)\right]_{0}^{1} = \frac{2e^{1}}{1+n^{2}\pi^{2}}\left[(-1)^{n}-1)\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad e^{x} = (e^{1}-1)+\sum\limits_{n=1}^{\infty}\frac{2e^{1}}{1+n^{2}\pi^{2}}\left[(-1)^{n}-1)\right]\cos n \pi x. 
 \end{equation*}
 </div>
 </div>

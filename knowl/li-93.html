@@ -29,9 +29,9 @@
 <div class="para">printing.init_printing(use_latex=True)</div>
 <div class="para">from sympy import *</div>
 <div class="para">import sympy as sp</div>
-<div class="para">t=sp.Symbol('t', real=True)</div>
-<div class="para">I=sp.Function('I')(t)</div>
-<div class="para">R, L, E=sp.symbols('R, L, E', real=True)</div>
+<div class="para">t=sp.Symbol(’t’, real=True)</div>
+<div class="para">I=sp.Function(’I’)(t)</div>
+<div class="para">R, L, E=sp.symbols(’R, L, E’, real=True)</div>
 <div class="para">diffeq=Eq(I.diff(t)+R/L*I,E/L)</div>
 <div class="para">display(diffeq)</div>
 <div class="para">dsolve(diffeq,I)</div>
@@ -47,11 +47,11 @@
 <div class="para">dIdt =-(R/L)*I+(E/L)</div>
 <div class="para">return dIdt</div>
 <div class="para">Is=odeint(f,Io,t,args=(E,L,R))</div>
-<div class="para">plt.plot(t,Is, '-')</div>
-<div class="para">plt.plot(t,Is, 'ro')</div>
-<div class="para">plt.title('DI(t)+RI(t)/L=E/L')</div>
-<div class="para">plt.xlabel('t(s)')</div>
-<div class="para">plt.ylabel('I(A)')</div>
+<div class="para">plt.plot(t,Is, ’-’)</div>
+<div class="para">plt.plot(t,Is, ’ro’)</div>
+<div class="para">plt.title(’DI(t)+RI(t)/L=E/L’)</div>
+<div class="para">plt.xlabel(’t(s)’)</div>
+<div class="para">plt.ylabel(’I(A)’)</div>
 <div class="para">plt.show()</div>
 <div class="para">Since <span class="process-math">\(e^{RC_{1}}\)</span> is a constant, the general solution of this equation is <span class="process-math">\(I(t) = \left[\frac{E}{R}+Ce^{-Rt/L}\right]\text{.}\)</span>
 </div></article><span class="incontext"><a href="sec_fourth-examplesA.html#li-93" class="internal">in-context</a></span>

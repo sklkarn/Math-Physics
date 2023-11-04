@@ -11,93 +11,108 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let the heat eqn. is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
-\begin{equation}
-\frac{\partial u}{\partial t} =h^{2}\frac{\partial^{2}u}{\partial x^{2}} \tag{7.4.1}
-\end{equation}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
-\begin{equation}
-u(x,t)=X(x)T(t) \tag{7.4.2}
-\end{equation}
-</div>
-<div class="para">be the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1D_heat1.html" title="Equation 7.4.1">(7.4.1)</a>. Then by making substitution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1D_heat2.html" title="Equation 7.4.2">(7.4.2)</a> into eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1D_heat1.html" title="Equation 7.4.1">(7.4.1)</a>, we get the solution as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
-\begin{equation}
-u(x,t) = (A\cos\lambda x+B\sin\lambda x)Ce^{-\lambda^{2}h^{2}t}  \tag{7.4.3}
-\end{equation}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
-\begin{equation}
-\frac{\partial u}{\partial x}=-A\lambda \sin\lambda x+B\lambda\cos\lambda x)Ce^{-\lambda^{2}h^{2}t} \tag{7.4.4}
-\end{equation}
-</div>
-<div class="para">putting <span class="process-math">\(\frac{\partial u}{\partial x}=0 \)</span> at <span class="process-math">\(x=0\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1D_heat4.html" title="Equation 7.4.4">(7.4.4)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
+<div class="para">This is a homogenous linear differential equation. Its solution can be found by putting <span class="process-math">\(r=e^{z}\)</span> or, <span class="process-math">\(\log r=z\)</span> or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
 \begin{equation*}
-0=B\lambda Ce^{-\lambda^{2}h^{2}t} \Rightarrow B=0.
-\end{equation*}
-</div>
-<div class="para">Therefore, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1D_heat3.html" title="Equation 7.4.3">(7.4.3)</a> reduces to</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
-\begin{equation}
-u(x,t) = (A\cos\lambda x)Ce^{-\lambda^{2}h^{2}t} \tag{7.4.5}
-\end{equation}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
-\begin{equation}
-\frac{\partial u}{\partial x} =-A\lambda \sin\lambda x Ce^{-\lambda^{2}h^{2}t} \tag{7.4.6}
-\end{equation}
-</div>
-<div class="para">putting</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
-\begin{equation*}
-\frac{\partial u}{\partial x}= 0
-\end{equation*}
-</div>
-<div class="para">at <span class="process-math">\(x=\lambda \)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1D_heat6.html" title="Equation 7.4.6">(7.4.6)</a>, we have -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
-\begin{equation*}
-0=-AC\lambda\sin\lambda\lambda e^{-\lambda^{2}h^{2}t} \Rightarrow \sin\lambda\lambda =0=\sin n\pi
+\frac{1}{r}\frac{\partial r}{\partial z} =1.
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation}
+\frac{\partial r}{\partial z} =r\tag{7.3.77}
+\end{equation}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
 \begin{equation*}
-\lambda\lambda =n\pi
+\frac{\partial R}{\partial r} =\frac{\partial R}{\partial z}\cdot\frac{\partial z}{\partial r} = \frac{1}{r}\frac{\partial R}{\partial z}
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
 \begin{equation}
-\lambda=\frac{n\pi}{\lambda}   \quad  \text{where} \quad  n=1,2,3,\cdots  \tag{7.4.7}
+r\frac{\partial R}{\partial r}=\frac{\partial R}{\partial z}= DR   \tag{7.3.78}
 \end{equation}
 </div>
-<div class="para">on putting the value of <span class="process-math">\(\lambda\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1D_heat5.html" title="Equation 7.4.5">(7.4.5)</a>, we have -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
+<div class="para">assume</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+D\equiv \frac{\partial }{\partial z}.
+\end{equation*}
+</div>
+<div class="para">again,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+\frac{\partial^{2}R}{\partial r^{2}} = \frac{\partial }{\partial r}\left(\frac{\partial R}{\partial r}\right)  = \frac{\partial }{\partial z}\left(\frac{1}{r}\frac{\partial R}{\partial z}\right)\frac{\partial z}{\partial z}	
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+= \frac{1}{r}\left[\frac{1}{r}\frac{\partial^{2}R}{\partial z^{2}}- \frac{1}{r^{2}}\frac{\partial r}{\partial z}\frac{\partial R}{\partial z}\right]  = \frac{1}{r}\left[\frac{1}{r}D^{2}R- \frac{1}{r^{2}}\cdot r\cdot DR\right]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+r^{2}\frac{\partial^{2}R}{\partial r^{2}}=D^{2}R-DR=D(D-1)R 
+\end{equation*}
+</div>
+<div class="para">from eqn.<a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_ccylnd5.html" title="Equation 7.3.76">(7.3.76)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+D(D-1)R+DR-n^{2}R =0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+D^{2}R -DR+DR-n^{2}R =0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
 \begin{equation}
-u(x,t) = (AC\cos\frac{n\pi x}{\lambda})e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} = \sum\limits_{n=1}^{\infty}b_{n}\cos\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} \tag{7.4.8}
+(D^{2}-n^{2})R=0\tag{7.3.79}
 \end{equation}
 </div>
-<div class="para">which is the required solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1D_heat1.html" title="Equation 7.4.1">(7.4.1)</a>. Now, for initial condition, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1D_heat8.html" title="Equation 7.4.8">(7.4.8)</a> becomes</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+D=\pm n
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+R=C_{1}e^{nz} +C_{2}e^{-nz}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
 \begin{equation}
-u(x,0) =f(x) = \sum\limits_{n=1}^{\infty}b_{n}\cos\frac{n\pi x}{\lambda} \tag{7.4.9}
+\therefore  R=C_{1}r^{n}+C_{2}r^{-n} \tag{7.3.80}
 \end{equation}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+[e^{nz}=e^{n\log r}=e^{\log r^{n}} = r^{n}].
+\end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat2.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat4.html ./knowl/eqn-1D_heat3.html ./knowl/eqn-1D_heat6.html ./knowl/eqn-1D_heat5.html ./knowl/eqn-1D_heat1.html ./knowl/eqn-1D_heat8.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
 \begin{equation}
-b_{n}=\frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x) \cos\frac{n\pi x}{\lambda}\,dx \tag{7.4.10}
+\frac{\partial^{2}\Theta}{\partial \theta^{2}}+n^{2}\Theta =0 \quad  \Rightarrow  \Theta =C_{3}\cos n\theta + C_{4}\sin n\theta \tag{7.3.81}
+\end{equation}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation}
+u_{n}=\left(C_{1}r^{n}+C_{2}r^{-n}\right)\left(C_{3}\cos n\theta+C_{4}\sin n\theta\right)\tag{7.3.82}
 \end{equation}
 </div>
 </div>
-<span class="incontext"><a href="sec_seventh-examplesB.html#p-1199" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-2D_lapleqn.html#p-1199" class="internal">in-context</a></span>
 </body>
 </html>

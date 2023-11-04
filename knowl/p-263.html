@@ -11,32 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">A square matrix A is said to be an orthogonal matrix if <span class="process-math">\(AA^{t}=I\text{,}\)</span> e.g.</div>
+<div class="para">The matrices <span class="process-math">\(A\)</span> and <span class="process-math">\(\hat{A}\)</span> are commutative and their product is a scalar matrix. The diagonal element of which is <span class="process-math">\(\vert A \vert \text{,}\)</span> i.e., <span class="process-math">\(A\cdot (adj A)\equiv (adj A)\cdot A	= |A|I\text{,}\)</span> where <span class="process-math">\(I\)</span> is an unit matrix. Also,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-A=\begin{pmatrix} 
-0 &amp; 1\\1 &amp; 0 
-\end{pmatrix}, \quad 
-A^{t}=\begin{pmatrix} 
-0 &amp; 1\\1 &amp; 0 
-\end{pmatrix},
+A^{-1}=\frac{I}{A}=\frac{A\cdot (adj A)}{|A|\cdot A} = \frac{adj A}{|A|} = \frac{A^{c t}}{|A|},
 \end{equation*}
 </div>
-<div class="para">and,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-AA^{t} = \begin{pmatrix} 
-0 &amp; 1\\1 &amp; 0 
-\end{pmatrix}\begin{pmatrix} 
-0 &amp; 1\\1 &amp; 0 
-\end{pmatrix} = \begin{pmatrix} 
-0+1 &amp; 0+0\\0+0 &amp; 1+0 
-\end{pmatrix} = \begin{pmatrix} 
-1 &amp; 0\\0 &amp; 1 
-\end{pmatrix}=I.
-\end{equation*}
+<div class="para">where A is a non-singular matrix, i.e., <span class="process-math">\(\vert A \vert \neq 0\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="subsec-sq_mat.html#p-263" class="internal">in-context</a></span>

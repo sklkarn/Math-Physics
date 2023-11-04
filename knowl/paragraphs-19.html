@@ -28,9 +28,9 @@
 <div class="para">printing.init_printing(use_latex=True)</div>
 <div class="para">from sympy import *</div>
 <div class="para">import sympy as sp</div>
-<div class="para">t=sp.Symbol('t', real=True)</div>
-<div class="para">I=sp.Function('I')(t)</div>
-<div class="para">R, L, E=sp.symbols('R, L, E', real=True)</div>
+<div class="para">t=sp.Symbol(’t’, real=True)</div>
+<div class="para">I=sp.Function(’I’)(t)</div>
+<div class="para">R, L, E=sp.symbols(’R, L, E’, real=True)</div>
 <div class="para">diffeq=Eq(I.diff(t)+R/L*I,E/L)</div>
 <div class="para">display(diffeq)</div>
 <div class="para">dsolve(diffeq,I)</div>
@@ -46,11 +46,11 @@
 <div class="para">dIdt =-(R/L)*I+(E/L)</div>
 <div class="para">return dIdt</div>
 <div class="para">Is=odeint(f,Io,t,args=(E,L,R))</div>
-<div class="para">plt.plot(t,Is, '-')</div>
-<div class="para">plt.plot(t,Is, 'ro')</div>
-<div class="para">plt.title('DI(t)+RI(t)/L=E/L')</div>
-<div class="para">plt.xlabel('t(s)')</div>
-<div class="para">plt.ylabel('I(A)')</div>
+<div class="para">plt.plot(t,Is, ’-’)</div>
+<div class="para">plt.plot(t,Is, ’ro’)</div>
+<div class="para">plt.title(’DI(t)+RI(t)/L=E/L’)</div>
+<div class="para">plt.xlabel(’t(s)’)</div>
+<div class="para">plt.ylabel(’I(A)’)</div>
 <div class="para">plt.show()</div>
 <div class="para">Since <span class="process-math">\(e^{RC_{1}}\)</span> is a constant, the general solution of this equation is <span class="process-math">\(I(t) = \left[\frac{E}{R}+Ce^{-Rt/L}\right]\text{.}\)</span>
 </div>
@@ -63,9 +63,9 @@
 <div class="para">printing.init_printing(use_latex=True)</div>
 <div class="para">from sympy import *</div>
 <div class="para">import sympy as sp</div>
-<div class="para">t,y =sp.symbols('t,y')</div>
-<div class="para">a=sp.Symbol('a',positive=True)</div>
-<div class="para">y=sp.Function('y')(t)</div>
+<div class="para">t,y =sp.symbols(’t,y’)</div>
+<div class="para">a=sp.Symbol(’a’,positive=True)</div>
+<div class="para">y=sp.Function(’y’)(t)</div>
 <div class="para">diffeq=Eq(y.diff(t,2)+a**2*y,0)</div>
 <div class="para">display(diffeq)</div>
 <div class="para">dsolve(diffeq,y)</div>
@@ -77,11 +77,11 @@
 <div class="para">xs=np.arange(0,5,0.1)</div>
 <div class="para">us=odeint(f,yo,xs)</div>
 <div class="para">ys=us[:,0]</div>
-<div class="para">plt.plot(xs,ys, '-')</div>
-<div class="para">plt.plot(xs,ys, 'ro')</div>
-<div class="para">plt.title('(D**2+5)y=0')</div>
-<div class="para">plt.xlabel('t values')</div>
-<div class="para">plt.ylabel('y values')</div>
+<div class="para">plt.plot(xs,ys, ’-’)</div>
+<div class="para">plt.plot(xs,ys, ’ro’)</div>
+<div class="para">plt.title(’(D**2+5)y=0’)</div>
+<div class="para">plt.xlabel(’t values’)</div>
+<div class="para">plt.ylabel(’y values’)</div>
 <div class="para">plt.show()</div>
 </li>
 <li><div class="para">

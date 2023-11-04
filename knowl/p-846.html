@@ -12,39 +12,7 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<div class="displaymath process-math">
-\begin{equation*}
-f(x) = e^{x}= \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{c}\right)\right] 
-\end{equation*}
-</div>
-<div class="para">where,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-a_{0}= \frac{2}{c}\int\limits_{0}^{c}f(x) \,dx = \frac{2}{1}\int\limits_{0}^{1} e^{x}\,dx = 2\left(e^{x}\right)_{0}^{1}=2(e^{1}-1).
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-a_{n}=	\frac{2}{c}\int\limits_{0}^{c}f(x)\cos \left(\frac{n\pi x}{c}\right) \,dx = 	\frac{2}{1}\int\limits_{0}^{1}e^{x}\cos n\pi x \,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=2\left[\frac{e^{x}}{1+n^{2}\pi^{2}}(\cos n\pi x + n \pi \sin n\pi x)\right]_{0}^{1}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=2\left[\frac{e^{1}}{1+n^{2}\pi^{2}}(\cos n\pi  + n \pi \sin n\pi -1-0)\right]_{0}^{1} = \frac{2e^{1}}{1+n^{2}\pi^{2}}\left[(-1)^{n}-1)\right] 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore \quad e^{x} = (e^{1}-1)+\sum\limits_{n=1}^{\infty}\frac{2e^{1}}{1+n^{2}\pi^{2}}\left[(-1)^{n}-1)\right]\cos n \pi x. 
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="sec_fifth-examplesC.html#p-846" class="internal">in-context</a></span>
+<div class="para"> Gibb’s phenomenon describes a special case where a funciton has a jump discontinuity. An anomaly occurs near the discontinuity in an approximation of an original function using its Fourier series. The values of the partial sums near the discontinuity overshoot or undershoot the fuction value. As more and more terms incorporate in the partial sums the graph of the function resembles the original function more closely away from the point of discontinuity. However, the blips near the discontinuity persists. Although the size of blips decreases in width they appear to remain at the same height. In other words, the series converges correctly at any point due to increase of terms in the partial sums, but the blips do not converges to zero as shown in figure <a href="" class="xref" data-knowl="./knowl/fig-Gibbs.html" title="Figure 5.5.1">Figure 5.5.1</a>. This lack of improvement in the approximation near the discontinuity menifested in the continual presence of the overshoot or undershoot is the Gibb’s phenomenon.</div>
+<span class="incontext"><a href="subsec-gibbs_phen.html#p-846" class="internal">in-context</a></span>
 </body>
 </html>

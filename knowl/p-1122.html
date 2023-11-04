@@ -13,47 +13,17 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">As area of the element A' B' C' D' = <span class="process-math">\(\delta x\delta y\)</span> and acceleration of the element in a direction perpendicular to <span class="process-math">\(xy\)</span> plane is <span class="process-math">\(\frac{\partial^{2} u}{\partial t^{2}}\text{.}\)</span> Hence from Newton's second law of motion, we have -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dwave.html">
-\begin{equation*}
-m\delta x\delta y\frac{\partial^{2} u}{\partial t^{2}}= T\delta y\left[\frac{\partial u}{\partial x}(x+\delta x,y_{1})-\frac{\partial u}{\partial x}(x,y_{2})\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dwave.html">
-\begin{equation*}
-+T\delta x\left[\frac{\partial u}{\partial y}(x_{1},y+\delta y_{1})-\frac{\partial u}{\partial y}(x_{2},y)\right]
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dwave.html">
-\begin{equation*}
-\frac{\partial^{2} u}{\partial t^{2}}=\frac{T}{m}\left[\frac{u_{x}(x+\delta x,y_{1})-u_{x}(x,y_{2})}{\delta x}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dwave.html">
-\begin{equation*}
-+\frac{T}{m}\left[\frac{u_{y}(x_{1},y+\delta y)-u_{y}(x_{2},y)}{\delta y}\right]
-\end{equation*}
-</div>
-<div class="para">[ <span class="process-math">\(\because \quad \frac{\partial u}{\partial x}=u_{x};\)</span> and <span class="process-math">\(\frac{\partial u}{\partial y}=u_{y}\)</span>] Proceeding to the limits as <span class="process-math">\(\delta x \to 0 \text{,}\)</span> <span class="process-math">\(\delta y \to 0\text{,}\)</span> we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dwave.html">
-\begin{equation*}
-\frac{\partial^{2} u}{\partial t^{2}}=\frac{T}{m}[u_{xx}+u_{yy}]
-\end{equation*}
-</div>
-<div class="para">where</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dwave.html">
-\begin{equation*}
-u_{xx}= \frac{\partial^{2} u}{\partial x^{2}}=\lim\limits_{\delta x \to 0}\frac{u_{x}(x+\delta x, y_{1})-u_{x}(x,y_{2})}{\delta x}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dwave.html">
+<div class="para">
+<dfn class="terminology">Case III.</dfn> when <span class="process-math">\(\lambda \lt 0\text{,}\)</span> i.e., <span class="process-math">\(\lambda=-k^{2}\)</span>(say),</div>
+<div class="displaymath process-math">
 \begin{equation}
-\therefore \quad \frac{\partial^{2} u}{\partial t^{2}}=v^{2}(u_{xx}+u_{yy})=v^{2}\nabla^{2}u \tag{7.1.43}
+\begin{cases}
+\frac{\partial^{2} X}{\partial x^{2}} +k^{2}X = 0 &amp; \Rightarrow X=c_{1}\cos kx+c_{2}\sin kx\\
+\frac{\partial^{2} T}{\partial t^{2}}+k^{2}v^{2}T = 0 &amp;  \Rightarrow T=c_{3}\cos kvt+c_{4}\sin kvt
+\end{cases}\tag{7.1.11}
 \end{equation}
 </div>
-<div class="para">where  <span class="process-math">\(v^{2}=\frac{T}{m};\)</span> and <span class="process-math">\(\nabla^{2}= \frac{\partial^{2}}{\partial x^{2}}+\frac{\partial^{2}}{\partial y^{2}}\text{.}\)</span> here <span class="process-math">\(v\)</span> is the velocity of wave propagating in <span class="process-math">\(x\)</span> and <span class="process-math">\(y\)</span> direction. The equation <a href="" class="xref" data-knowl="./knowl/eqn-2Dwave.html" title="Equation 7.1.43">(7.1.43)</a>is called two - dimensional wave equation.</div>
 </div>
-<span class="incontext"><a href="subsec-2Dwaveeqn.html#p-1122" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-sol_vs.html#p-1122" class="internal">in-context</a></span>
 </body>
 </html>

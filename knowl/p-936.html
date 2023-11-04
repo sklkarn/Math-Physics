@@ -13,28 +13,64 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math">
+<div class="para">The choice of sine or cosine transform is decided by the form of boundary conditions.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-\mathscr{F}\{f(x)\} = F(s) = \int\limits_{0}^{t}f(x) \frac{\sin n\pi x}{l}\,dx
+\mathscr{F}_{c}\{\frac{\partial^{2}u}{\partial x^{2}}\} = \int\limits_{0}^{\infty}\frac{\partial^{2}u}{\partial x^{2}}\cos sx\,dx = \left[\frac{\partial u}{\partial x}\cos sx\right]_{0}^{\infty} +s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\sin sx\,dx
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-=	\int\limits_{0}^{4}x^{2} \frac{\sin n\pi x}{4}\,dx
+=\left(-\frac{\partial u}{\partial x}\right)_{x=0}+s\left[u\sin sx\right]_{0}^{\infty} -s^{2}\int\limits_{0}^{\infty}u\cos sx\,dx \quad [\text{if}\quad \lim\limits_{x \to \infty}\frac{\partial u}{\partial x}=0.]
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
+\begin{equation}
+\therefore \quad  \mathscr{F}_{c}\{\frac{\partial^{2}u}{\partial x^{2}}\} 
+= \left(-\frac{\partial u}{\partial x}\right)_{x=0} -s^{2}\bar{u_{c}} \tag{6.1.12}
+\end{equation}
+</div>
+<div class="para">If</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-=\left[-\frac{4}{n\pi}x^{2}\cos \frac{n\pi x}{4}\right]_{0}^{4}+ \int\limits_{0}^{4}2x\frac{4}{n\pi}\cos \frac{n\pi x}{4}\,dx
+\lim\limits_{x \to \infty}u=0 \quad \text{and}\quad \int\limits_{0}^{\infty}u\cos sx\,dx = \bar{u_{c}}=\mathscr{F}_{c}\{u\}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-=-\frac{4^{3}}{n\pi}\cos n\pi+ \frac{8}{n\pi}\left[\frac{4x}{n\pi} \sin \frac{n\pi x}{4}+ \frac{4^{2}}{n^{2}\pi^{2}}\cos \frac{n\pi x}{4}\right]_{0}^{4}
+\mathscr{F}_{s}\{\frac{\partial^{2}u}{\partial x^{2}}\} = \int\limits_{0}^{\infty}\frac{\partial^{2}u}{\partial x^{2}}\sin sx \,dx 
 \end{equation*}
 </div>
-<div class="para">similarly Fourier cosine transform can be obtained.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
+\begin{equation*}
+= \left[\frac{\partial^{2}u}{\partial x^{2}}\sin sx\right]_{0}^{\infty}-s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\cos sx\,dx 
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_sixth-examplesA.html#p-936" class="internal">in-context</a></span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
+\begin{equation*}
+=-s\left[\left.u\cos sx\right\vert_{0}^{\infty}+s\int\limits_{0}^{\infty}u\sin sx\,dx\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
+\begin{equation}
+\therefore  \mathscr{F}_{s}\{\frac{\partial^{2}u}{\partial x^{2}}\}=s(u)_{x=0}-s^{2}\bar{u_{s}}\tag{6.1.13}
+\end{equation}
+</div>
+<div class="para">if</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
+\begin{equation*}
+\lim\limits_{x \to \infty}u =0\quad \text{and}\quad \int\limits_{0}^{\infty}u\sin sx\,dx = \bar{u_{s}}.
+\end{equation*}
+</div>
+<div class="para">From equations <a href="" class="xref" data-knowl="./knowl/eqn-infnt_FT1.html" title="Equation 6.1.12">(6.1.12)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-infnt_FT2.html" title="Equation 6.1.13">(6.1.13)</a>, it follows that if we want to remove the term <span class="process-math">\(\frac{\partial^{2}u}{\partial x^{2}}\)</span> from a given differential equation then we require</div>
+<ol class="lower-roman">
+<li><div class="para">
+<span class="process-math">\(\left(\frac{\partial u}{\partial x}\right)_{x=0}\)</span> in cosine transform and</div></li>
+<li><div class="para">
+<span class="process-math">\((u)_{x=0}\)</span> in sine transform.</div></li>
+</ol>
+</div>
+<span class="incontext"><a href="subsec-infnt_FT.html#p-936" class="internal">in-context</a></span>
 </body>
 </html>

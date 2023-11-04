@@ -13,13 +13,44 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(f(t)\)</span>  be a periodic function with period <span class="process-math">\(T\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}\{f(t)\} = \frac{\int\limits_{0}^{T}e^{-st} f(t)\,dt}{1-e^{-sT}}
+\mathscr{L}[1-\cos t] = L[1]-L[\cos t] = \frac{1}{s}-\frac{s}{s^{2}+1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}\left[\frac{1-\cos t}{t}\right] = \int\limits_{s}^{\infty}\left(\frac{1}{s}-\frac{s}{s^{2}+1}\right)\,ds 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left[\log s-\frac{1}{2}\log (s^{2}+1)\right]_{s}^{\infty}  =\frac{1}{2}\left[\log s^{2}-\log (s^{2}+1)\right]_{s}^{\infty}  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}\right]_{s}^{\infty} =\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}(1+1/s^{2})}\right]_{s}^{\infty} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{2}\left[0-\log \frac{s^{2}}{s^{2}+1}\right] = -\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}\right]
+\end{equation*}
+</div>
+<div class="para">again</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}\left[\frac{1-\cos t}{t^{2}}\right]  =- \frac{1}{2} \int\limits_{s}^{\infty}\log  \frac{s^{2}}{s^{2}+1} \,ds 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= - \frac{1}{2} \int\limits_{s}^{\infty}\log - \frac{1}{2} \int\limits_{s}^{\infty}\log \left(\frac{s^{2}}{s^{2}+1}.1\right)\,ds
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-pf_LT.html#p-1027" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_sixth-examplesB.html#p-1027" class="internal">in-context</a></span>
 </body>
 </html>

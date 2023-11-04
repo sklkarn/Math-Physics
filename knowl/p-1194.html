@@ -11,111 +11,27 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para"> We have,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation}
-\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =0\tag{7.3.95}
-\end{equation}
-</div>
-<div class="para">Let</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation}
-u(r,\theta,z) =R(r)\Theta(\theta)Z(z) \tag{7.3.96}
-\end{equation}
-</div>
-<div class="para">be the solution of eqn.<a href="" class="xref" data-knowl="./knowl/eqn-3D_laplcyl1.html" title="Equation 7.3.95">(7.3.95)</a>. Hence,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation}
-\frac{1}{R}\frac{\partial^{2}R}{\partial r^{2}}+\frac{1}{rR}\frac{\partial R}{\partial r}+\frac{1}{r^{2}\Theta}\frac{\partial^{2}\Theta}{\partial \theta^{2}}+\frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}} =0\tag{7.3.97}
-\end{equation}
-</div>
-<div class="para">As variables are separated, we may take -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
+<div class="para">The two-dimensional Laplace equation is a partial differential equation that describes the behavior of a scalar function in two dimensions. The general form of the two-dimensional Laplace equation is:</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}}=\lambda^{2}
+\nabla^{2}u =0
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation}
-\frac{\partial^{2}Z}{\partial z^{2}}-\lambda^{2}Z =0 \quad \Rightarrow Z=Ae^{\lambda z}+Be^{-\lambda z}\tag{7.3.98}
-\end{equation}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation}
-\frac{r^{2}}{R}\frac{\partial^{2}R}{\partial r^{2}}+\frac{r}{R}\frac{\partial R}{\partial r}+\lambda^{2}r^{2}=-\frac{1}{\Theta}\frac{\partial^{2}\Theta}{\partial \theta^{2}}=\mu^{2}\tag{7.3.99}
-\end{equation}
-</div>
-<div class="para">also,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation}
-\frac{1}{\Theta}\frac{\partial^{2}\Theta}{\partial \theta^{2}}+\mu^{2}\Theta =0 \quad \Rightarrow \Theta = C\cos \mu \theta +D\sin \mu\theta\tag{7.3.100}
-\end{equation}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation}
-r^{2}\frac{\partial^{2}R}{\partial r^{2}}+r\frac{\partial R}{\partial r}+(\lambda^{2}r^{2}-\mu^{2})R=0\tag{7.3.101}
-\end{equation}
-</div>
-<div class="para">Now put <span class="process-math">\(\lambda  r=s \)</span> so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
+<div class="para">where u is the scalar function and <span class="process-math">\(\nabla^{2}\)</span>  is the Laplacian operator. In two dimensions, the Laplacian operator can be expressed as the sum of the second partial derivatives with respect to the spatial coordinates x and y:</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{\partial }{\partial r} = \frac{\partial }{\partial s}\cdot \frac{\partial s}{\partial r}=+\lambda \frac{\partial }{\partial s}
+\nabla^{2}u = \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2} u}{\partial y^2}
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
+<div class="para">This equation states that the sum of the second partial derivatives of the function with respect to both x and y is equal to zero. The Laplace equation is a special case of the more general Poisson equation, where a non-zero source term is present on the right-hand side:</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{\partial^{2} }{\partial r^{2}} =\lambda^{2} \frac{\partial^{2} }{\partial s^{2}}
-\end{equation*}
-</div>
-<div class="para">therefore equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_laplcyl7.html" title="Equation 7.3.101">(7.3.101)</a> reduces to</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation*}
-\frac{s^{2}}{\lambda^{2}}\lambda^{2}\frac{\partial^{2} R}{\partial s^{2}}+\frac{s}{\lambda}\lambda \frac{\partial R}{\partial s}+(s^{2}-\mu^{2})R =0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation*}
-s^{2}\frac{\partial^{2} R}{\partial s^{2}}+s\frac{\partial R}{\partial s}+(s^{2}-\mu^{2})R =0 
-\end{equation*}
-</div>
-<div class="para">which is Bessel's equation and it's general solution is given as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation*}
-R=EJ_{\mu}(s)+FJ_{-\mu}(s)
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation}
-R=EJ_{\mu}(\lambda r)+FJ_{-\mu}(\lambda r)\tag{7.3.102}
-\end{equation}
-</div>
-<div class="para">since <span class="process-math">\(u(r,\theta,z)\)</span> be finite at <span class="process-math">\(r \to 0 \text{,}\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation*}
-s=\lambda r =0 \Rightarrow  J_{-\mu} \to \infty
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation}
-\therefore  R= EJ_{\mu}(\lambda r)\tag{7.3.103}
-\end{equation}
-</div>
-<div class="para">Hence,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplcyl1.html ./knowl/eqn-3D_laplcyl7.html">
-\begin{equation*}
-u(r,\theta,z)  = (Ae^{\lambda z}+Be^{-\lambda z})(C\cos \mu \theta +D\sin \mu\theta)[EJ_{\mu}(\lambda r)]
+\nabla^{2}u =f(x, y)
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-3D_lapleq.html#p-1194" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-2D_lapleqn.html#p-1194" class="internal">in-context</a></span>
 </body>
 </html>

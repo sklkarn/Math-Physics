@@ -11,28 +11,42 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Paragraph</span></h2>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Suppose the function <span class="process-math">\(F(z)\)</span> is expanded in the interval of <span class="process-math">\(2\pi\)</span> as</div>
-<div class="displaymath process-math">
-\begin{equation}
-F(z) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nz + b_{n}\sin nz\right] \tag{5.5.1}
-\end{equation}
-</div>
-<div class="para">If <span class="process-math">\(f(x)\)</span> has an interval of <span class="process-math">\(2c\text{,}\)</span> then we can write the <span class="process-math">\(2c \)</span> is a period of variable <span class="process-math">\(x\text{.}\)</span> or, <span class="process-math">\(1\)</span> is the period of variable <span class="process-math">\(x/2c,\)</span>
-</div>
+<div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\therefore   2\pi \quad 	\text{is the period of variable} 
+f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+\end{equation*}
+</div>
+<div class="para">here, the given function is an odd function. Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+b_{n}= \frac{2}{\pi}\int\limits_{0}^{\pi} f(x) \sin nx \,dx = \frac{2}{\pi}\int\limits_{0}^{\pi} x^{3} \sin nx \,dx
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{x}{2c}.2\pi = \frac{\pi x}{c}
+=\frac{2}{\pi}\left[x^{3}\frac{\cos nx}{-n} -3x^{2}\left(\frac{\sin nx}{-n^{2}}\right) +6 x \left(\frac{\cos nx}{-n^{3}}\right) -6\left(\frac{\sin nx}{n^{4}}\right)\right]_{0}^{\pi}
 \end{equation*}
 </div>
-<div class="para">i.e., <span class="process-math">\(z=\frac{\pi x}{c}\text{,}\)</span> (because both the variables have same period of <span class="process-math">\(2\pi\text{.}\)</span>)</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{2}{\pi}\left[\pi^{3}\frac{\cos n\pi}{-n}+6\pi\left(\frac{\cos n\pi}{n^{3}}\right)\right]
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_fifth-frinterval.html#p-833" class="internal">in-context</a></span>
+<div class="para"><span class="process-math">\([\because \left(\sin nx\right)_{0}^{\pi}=0] \)</span></div>
+<div class="displaymath process-math">
+\begin{equation*}
+=2(\cos n\pi)\left[-\frac{\pi^{2}}{n}+\frac{6}{n^{3}}\right] = 2(-1)^{n}\left[-\frac{\pi^{2}}{n}+\frac{6}{n^{3}}\right].	
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore  \quad  x^{3}=2\sum\limits_{n=1}^{\infty}(-1)^{n}\left[-\frac{\pi^{2}}{n}+\frac{6}{n^{3}}\right]\sin nx.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_fifth-examplesB.html#p-833" class="internal">in-context</a></span>
 </body>
 </html>

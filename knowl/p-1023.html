@@ -13,23 +13,29 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">If</div>
+<div class="para">Let <span class="process-math">\(F(s) = \cot^{-1}(1+s)\)</span> we know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[f(t)] F(s)\text{and}\quad g(t) 
-= \begin{cases}
-f(t-a),  &amp; \text{where} \quad t\geq a\\
-0,  &amp; \text{where} \quad t \lt a
-\end{cases}
+\mathscr{L}[tf(t)] =-\frac{\,d}{\,ds}F(s)=-\frac{\,d}{\,ds}\left[\cot^{-1}(1+s)\right] 
 \end{equation*}
 </div>
-<div class="para">then</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[g(t)] = e^{-as}F(s).
+= -\left[\frac{-1}{1+(1+s)^{2}}\right] = \frac{1}{(s+1)^{2}+1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+tf(t) = \mathscr{L}^{-1}\left[\frac{1}{(s+1)^{2}+1}\right] =e^{-t}\sin t
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore f(t) = \frac{1}{t}\left[e^{-t}\sin t\right].
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-ssp_LT.html#p-1023" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_sixth-examplesB.html#p-1023" class="internal">in-context</a></span>
 </body>
 </html>

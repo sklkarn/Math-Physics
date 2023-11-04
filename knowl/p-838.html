@@ -13,15 +13,30 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">In the immediate vicinity of a jump discontinuity i.e. at <span class="process-math">\(x{+}\)</span> or <span class="process-math">\(x{-}\text{,}\)</span> the function <span class="process-math">\(f(x)\)</span> is not same and hence the convergence of the Fourier series is not uniform since <span class="process-math">\(f(x) \rightarrow \frac{1}{2}[f(x+0)+f(x-0)]\text{.}\)</span> Here partial sums move progressively closer to the function as the number of terms is increased, but the partial sums (approximating curves) overshoot or undershoot the function at the jump discontinuity. To verify the validity of Gibbs phenomenon, i.e. Fourier expansion for functions which are discontinuous but piecewise smooth, Bocher considered the following specific function defined by</div>
-<div class="displaymath process-math">
-\begin{equation}
-f(x) = \frac{1}{2}(\pi-x)   \quad  (0\leq x \leq 2\pi)\tag{5.5.7}
-\end{equation}
+<div class="para">There are three points of discontinuities at <span class="process-math">\(x=0\)</span> <span class="process-math">\(\pi\text{,}\)</span> and <span class="process-math">\(-\pi\)</span> at <span class="process-math">\(x=0\text{,}\)</span> the series converges to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum3.html">
+\begin{equation*}
+f(x)=\frac{1}{2}\left[f(x+0)+f(x-0)\right] 
+\end{equation*}
 </div>
-<div class="para">here <span class="process-math">\(f(0) = 0\)</span> and <span class="process-math">\(f(x+2\pi) =f(x)\text{.}\)</span> i.e., the function jumps by <span class="process-math">\(\pi\)</span> at the points <span class="process-math">\(x = \pm 2m\pi\)</span> where <span class="process-math">\(m=0,1,2,\cdots\text{.}\)</span> The Fourier coefficients of this function are <span class="process-math">\(a_{0}=a_{n}=0, \quad b_{n}=\frac{1}{n}\text{.}\)</span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum3.html">
+\begin{equation*}
+= \frac{1}{2}\left[f(0+0)+f(0-0)\right] = \frac{1}{2}\left[0+(-\pi)\right]=-\frac{\pi}{2}
+\end{equation*}
+</div>
+<div class="para">Therefore from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-fourier_sum3.html" title="Equation 5.4.3">(5.4.3)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum3.html">
+\begin{equation*}
+-\frac{\pi}{2} = -\frac{\pi}{4}-\frac{2}{\pi}\left[\frac{1}{1^{2}}+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\cdots\right] +0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum3.html">
+\begin{equation*}
+\frac{\pi}{8}	 = \frac{1}{1^{2}}+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\cdots. 
+\end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-gibbs_phen.html#p-838" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_fifth-examplesB.html#p-838" class="internal">in-context</a></span>
 </body>
 </html>

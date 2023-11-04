@@ -12,25 +12,38 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<div class="displaymath process-math">
+<div class="para logical"><ol class="decimal">
+<li><div class="para"><div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}\{f(x-a)\} = \int\limits_{-\infty}^{\infty}f(x-a)e^{-isx} \,dx = \int\limits_{-\infty}^{\infty}f(t)e^{-is(a+t)} \,dt   
+\int\limits_{0}^{\infty}\frac{\sin ax}{x}\,dx = \frac{\pi}{2},  \quad  a \gt 0
 \end{equation*}
-</div>
-<div class="para">put, <span class="process-math">\([x-a=t]\)</span>
-</div>
-<div class="displaymath process-math">
+</div></div></li>
+<li><div class="para"><div class="displaymath process-math">
 \begin{equation*}
-=	\int\limits_{-\infty}^{\infty} e^{-isa}.e^{-ist}f(t) \,dt 
+\int\limits_{0}^{\infty}e^{-ax} \sin bx \,dx = \frac{b}{a^{2}+b^{2}}
 \end{equation*}
-</div>
-<div class="displaymath process-math">
+</div></div></li>
+<li><div class="para"><div class="displaymath process-math">
 \begin{equation*}
-= e^{-isa}.\int\limits_{-\infty}^{\infty} e^{-ist}f(t) \,dt = e^{-isa}F(s).
+\int\limits_{0}^{\infty}e^{-ax} \cos bx \,dx = \frac{a}{a^{2}+b^{2}}
 \end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="subsec-Ftrans_prop.html#p-920" class="internal">in-context</a></span>
+</div></div></li>
+<li><div class="para"><div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{\infty}e^{-x^{2}}\,dx = \frac{\sqrt{\pi}}{2}
+\end{equation*}
+</div></div></li>
+<li><div class="para"><div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{-\infty}^{\infty}e^{-x^{2}}\,dx = 1
+\end{equation*}
+</div></div></li>
+<li><div class="para"><div class="displaymath process-math">
+\begin{equation*}
+\Gamma_{n}=a^{n}\int\limits_{0}^{\infty}e^{-ax}x^{n-1}\,dx, \quad \text{the Gamma function.}
+\end{equation*}
+</div></div></li>
+</ol></div>
+<span class="incontext"><a href="subsec-imprt_intgs.html#p-920" class="internal">in-context</a></span>
 </body>
 </html>

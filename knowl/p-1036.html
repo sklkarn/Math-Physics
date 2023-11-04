@@ -12,8 +12,29 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Solve <span class="process-math">\(y''-3y'+2y =2e^{-t}\)</span>	and  <span class="process-math">\(y(0)=2, y'(0)=1\text{.}\)</span>
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[f(t).u(t-a)]=\int\limits_{0}^{\infty}e^{-st}[f(t).u(t-a)]\,dt
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_sixth-examplesC.html#p-1036" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{0}^{a}e^{-st}[f(t).u(t-a)]\,dt+\int\limits_{a}^{\infty}e^{-st}[f(t).u(t-a)]\,dt
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 0+ \int\limits_{a}^{\infty}e^{-st}f(t).1\,dt
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \int\limits_{0}^{\infty}e^{-s(y+a)}f(y+a)\,dy= e^{-as}\int\limits_{0}^{\infty}e^{-sy}f(y+a)\,dy = e^{-as}F(s+a)
+\end{equation*}
+</div>
+<div class="para">[put <span class="process-math">\(y+a = t\text{.}\)</span>]</div>
+</div>
+<span class="incontext"><a href="sec_sixth-diffLT.html#p-1036" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,13 +13,76 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Show that</div>
+<div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-L_{2n}(x) = n!\sum\limits_{m=0}^{n}\frac{2^{n-m}(-1)^{m}}{m!(n-m)!}L_{n-m}(x), \hspace{1cm} n \gt m.
+\sum\limits_{m=0}^{\infty}\frac{L_{m}(x)}{m!}s^{m}=\frac{1}{1-s}e^{-xs/(1-s)}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n}=\frac{1}{1-t}e^{-xt/(1-t)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \sum\limits_{m,n=0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}s^{m}\frac{L_{n}(x)}{n!}t^{m}s^{m}t^{n}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=e^{-x}\frac{1}{(1-s)(1-t)}e^{\frac{-xs}{1-s}}e^{\frac{-xt}{1-t}}
+\end{equation*}
+</div>
+<div class="para">thus,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}\frac{L_{n}(x)}{n!}\,dx =  \text{coefficient of}\quad  s^{m}t^{n}\quad \text{in}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{\infty}e^{-x}\frac{1}{(1-s)(1-t)}e^{\frac{-xs}{1-s}}e^{\frac{-xt}{1-t}}\,dx.
+\end{equation*}
+</div>
+<div class="para">Now,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{\infty}e^{-x}\frac{1}{(1-s)(1-t)}e^{\frac{-xs}{1-s}}e^{\frac{-xt}{1-t}}\,dx  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{(1-s)(1-t)}\int\limits_{0}^{\infty}e^{-x\left[1+\frac{t}{1-t}+\frac{s}{1-s}\right]}\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{(1-s)(1-t)}\frac{1}{[1+\frac{s}{1-s}+\frac{t}{1-t}}\left[e^{-x}\{[1+\frac{s}{1-s}+\frac{t}{1-t}\}\right]_{0}^{\infty}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{(1-s)(1-t)}\frac{(1-s)(1-t)}{(1-s)(1-t)+s(1-t)+t(1-s)}[0-1]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{1-st}=(1-st)^{-1}=1+st+(st)^{2}+\cdots+(st)^{n}+\cdots
+\end{equation*}
+</div>
+<div class="para">in which coefficient of <span class="process-math">\(s^{m}t^{n}\)</span> is <span class="process-math">\(0\)</span> if <span class="process-math">\(m \neq n\)</span>  and <span class="process-math">\(1\)</span> if <span class="process-math">\(m=n\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}\frac{L_{n}(x)}{n!}\,dx = \delta_{m,n} 
+=\begin{cases} 
+0, &amp; \text{if}\quad m \neq n\\ 
+1, &amp; \text{if}\quad m = n 
+\end{cases}
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="sec_fourth-examplesF.html#p-758" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-laguer_pol.html#p-758" class="internal">in-context</a></span>
 </body>
 </html>

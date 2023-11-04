@@ -11,30 +11,33 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para"> Let <span class="process-math">\(\vec{F}=F_{1}\hat{e}_{1}+F_{2}\hat{e}_{2}+F_{3}\hat{e}_{3}\)</span> be the vector function of orthoganal curvilinear coordinates <span class="process-math">\(u,v,w\text{,}\)</span> then</div>
+<div class="para">Now integrate this vector over the three surfaces <span class="process-math">\(OAB\text{,}\)</span> <span class="process-math">\(OBC\text{,}\)</span> and <span class="process-math">\(OCA\)</span> lying on the plane <span class="process-math">\(x+y+z=1\text{.}\)</span> Over the surface  <span class="process-math">\(OAB\text{,}\)</span> <span class="process-math">\(\hat{n}=\hat{k}, \,ds=\frac{1}{2}\,dx\,dy\text{,}\)</span> The surface integral over the surface <span class="process-math">\(OAB\text{,}\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-div\vec{F} =\vec{\nabla}\cdot\vec{F} 
+\iint\limits_{S}\left(\vec{\nabla}\times\vec{F}\right)\cdot\hat{n}ds=\iint\limits_{S}(2\hat{i}+2\hat{j}-\hat{k})\cdot\hat{k}\frac{1}{2}\,dx\,dy
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \left(\frac{\hat{e_{1}}}{h_{1}}\frac{\partial}{\partial u}+ \frac{\hat{e_{2}}}{h_{2}}\frac{\partial}{\partial v}+\frac{\hat{e_{3}}}{h_{3}}\frac{\partial}{\partial w}\right)\cdot(F_{1}\hat{e_{1}}+F_{2}\hat{e_{2}}+F_{3}\hat{e_{3}})
+=\int\limits_{0}^{1}\int\limits_{0}^{1}(-\frac{1}{2})\,dx\,dy= -\frac{1}{2}[x]^{1}_{0}[y]^{1}_{0}=-\frac{1}{2}
+\end{equation*}
+</div>
+<div class="para">Over the surface  <span class="process-math">\(OBC\text{,}\)</span> <span class="process-math">\(\hat{n}=\hat{i}, \,ds=\frac{1}{2}\,dy\,dz\text{,}\)</span> The surface integral over the surface <span class="process-math">\(OBC\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\iint\limits_{S}\left(\vec{\nabla}\times\vec{F}\right)\cdot\hat{n}\,ds=\iint\limits_{S}(2\hat{i}+2\hat{j}-\hat{k})\cdot\hat{i}(\frac{1}{2})\,dy\,dz
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\left(\frac{1}{h_{1}}\frac{\partial F_{1}}{\partial u}+ \frac{1}{h_{2}}\frac{\partial F_{2}}{\partial v}+\frac{1}{h_{3}}\frac{\partial F_{3}}{\partial w}\right) 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial u}(F_{1}h_{2}h_{3})+\frac{\partial}{\partial v}(F_{2}h_{3}h_{1})+\frac{\partial}{\partial w}(F_{3}h_{1}h_{2})\right]
+=\int\limits_{0}^{1}\int\limits_{0}^{1}(2.\frac{1}{2})\,dy\,dz= 1.
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-div_curvcord.html#p-156" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_first-examplesB.html#p-156" class="internal">in-context</a></span>
 </body>
 </html>

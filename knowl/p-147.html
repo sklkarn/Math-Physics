@@ -13,28 +13,25 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
+<div class="para">The divergence theorem is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\iint\limits_{S}curl\vec{V}\cdot\hat{n}ds = \int\limits_{c}\vec{V}\cdot\vec{\,dr} 
-=\int\limits_{c}(\hat{i}y+\hat{j}z+\hat{k}x)\cdot(\,dx\hat{i}+\,dy\hat{j}+\,dz\hat{k})
+\iint\limits_{S} \vec{A}\cdot\vec{dS}=\iiint\limits_{V} div\vec{A} \,dV
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{C}(y\,dx+z\,dy)= \int\limits_{C}y\,dx \quad  [\because z=0]
-\end{equation*}
-</div>
-<div class="para">Now for circle, we have - <span class="process-math">\(x=1.\cos\theta, \quad y= 1.\sin\theta \)</span>
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore \iint\limits_{S}curl\vec{V}\cdot\hat{n}\,ds= \int\limits_{0}^{2\pi}\sin\theta.(-\sin\theta)\,d\theta = \int\limits_{0}^{2\pi}\sin^{2}\theta \,d\theta 
+= \iiint\limits_{V} \left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\cdot (x^{3}\hat{i}+ y^{3}\hat{j}+z^{3}\hat{k})\,dV
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{2}\int\limits_{0}^{2\pi}(\cos 2\theta -1) \,d\theta
-=\frac{1}{2}\left(\frac{\sin2\theta}{2}-\theta\right)^{2\pi}_{0} = -\pi. 
+=\iiint\limits_{V} \left(3x^{2}+ 3y^{2}+3z^{2}\right)dV= 3\iiint\limits_{V} \left(x^{2}+ y^{2}+z^{2}\right)\,dV
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=3\iiint\limits_{V}a^{2}dV= 3a^{2}\iiint\limits_{V}\,dV = 3a^{2}\left(\frac{4}{3}\pi a^{3}\right) = 4\pi a^{5}.
 \end{equation*}
 </div>
 </div>

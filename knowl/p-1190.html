@@ -12,85 +12,9 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<div class="para">Three dimensional heat equation is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation}
-\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =\frac{1}{h^{2}}\frac{\partial u}{\partial t}\tag{7.3.87}
-\end{equation}
+<div class="para">
+<span class="process-math">\(u(x,y,t) = 0\)</span>  at <span class="process-math">\(y=b\)</span> i.e., <span class="process-math">\(0=Ae^{-mt}[C\sin kb][E\sin px]\)</span> <span class="process-math">\(\Rightarrow \sin kb =0=\sin s\pi \text{.}\)</span> <span class="process-math">\(\therefore   k=\frac{s\pi}{b}\text{,}\)</span> <span class="process-math">\(s=1,2,3,\cdots\text{.}\)</span>
 </div>
-<div class="para">the solution of which is assumed as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation}
-u=u(x,y,z,t)=X(x)Y(y)Z(z)T(t)\tag{7.3.88}
-\end{equation}
-</div>
-<div class="para">By substitution of this in equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_heat1.html" title="Equation 7.3.87">(7.3.87)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation}
-\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}}+\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}}+\frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}} =\frac{1}{h^{2}T}\frac{\partial T}{\partial t} =-\lambda^{2}   \text{(say)}\tag{7.3.89}
-\end{equation}
-</div>
-<div class="para">Now</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =-\lambda_{1}^{2}; 
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}} = -\lambda_{2}^{2}; 
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-\frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}} =-\lambda_{3}^{2}, 
-\end{equation*}
-</div>
-<div class="para">so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-\lambda^{2} = \lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2}
-\end{equation*}
-</div>
-<div class="para">Yielding</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-X=A\cos\lambda_{1}x+B\sin\lambda_{1}x = a\cos(\lambda_{1}x+\alpha\lambda_{1});
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-Y=b\cos(\lambda_{2}y+\alpha\lambda_{2}),
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-Z =c\cos(\lambda_{3}z+\alpha\lambda_{3}),
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-T=de^{-\lambda^{2}h^{2}t}=de^{-(\lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2})h^{2}t}
-\end{equation*}
-</div>
-<div class="para">Hence for all values of <span class="process-math">\(t\text{,}\)</span>  the general solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_heat1.html" title="Equation 7.3.87">(7.3.87)</a> is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-u=\sum\limits_{\lambda_{1}=0}^{\infty}\sum\limits_{\lambda_{2}=0}^{\infty}\sum\limits_{\lambda_{3}=0}^{\infty}A_{\lambda_{1}\lambda_{2}\lambda_{3}}\cos(\lambda_{1}x+\alpha\lambda_{1})\cos(\lambda_{2}y+\alpha\lambda_{2}) 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_heat1.html ./knowl/eqn-3D_heat1.html">
-\begin{equation*}
-\cos(\lambda_{3}z+\alpha\lambda_{3})e^{-h^{2}(\lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2})t} 
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="subsec-3D_heat.html#p-1190" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-2D_heat.html#p-1190" class="internal">in-context</a></span>
 </body>
 </html>

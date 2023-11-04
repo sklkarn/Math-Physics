@@ -12,10 +12,48 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">
-<span class="process-math">\(\vec{a}\cdot \vec{a'} = \vec{a}\cdot \frac{\vec{b}\times\vec{c}}{[\vec{a}\vec{b}\vec{c}]} 
-= \frac{[\vec{a}\vec{b}\vec{c}]}{[\vec{a}\vec{b}\vec{c}]} = 1.\)</span> Similarly, <span class="process-math">\(\vec{b}\cdot \vec{b'} = \vec{c}\cdot \vec{c'} = 1.\)</span>
+<div class="para logical">
+<div class="para">If <span class="process-math">\(\vec{a}\text{,}\)</span> <span class="process-math">\(\vec{b}\text{,}\)</span> and <span class="process-math">\(\vec{c}\)</span> be three vectors, then their vector triple product is denoted by <span class="process-math">\(\vec{a}\times{(\vec{b}\times\vec{c})}\text{.}\)</span> Let <span class="process-math">\(\vec{a} = a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}, \)</span> <span class="process-math">\(\vec{b}= b_{1}\hat{i}+b_{2}\hat{j} 
++ b_{3}\hat{k},\)</span> and <span class="process-math">\(\vec{c}  = c_{1}\hat{i}+c_{2}\hat{j}+ c_{3}\hat{k},\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{a}\times{(\vec{b}\times\vec{c})} =  (a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) 
+\times{\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ b_{1} &amp; b_{2} &amp; b_{3}\\c_{1} &amp; 
+c_{2} &amp; c_{3} \end{Vmatrix}}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_first-intro.html#p-41" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+=(a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) \times[(b_{2}c_{3}-b_{3}c_{2})\hat{i} + (b_{1}c_{3}-b_{3}c_{1})\hat{j} + (b_{1}c_{2}-b_{2}c_{1})\hat{k}]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=[a_{2}(b_{1}c_{2}-b_{2}c_{1}) - a_{3}(b_{3}c_{1}-b_{1}c_{3})]\hat{i} + [a_{3}(b_{2}c_{3}-b_{3}c_{2})-a_{1}(b_{1}c_{2}  - b_{2}c_{1})]\hat{j}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++ [a_{1}(b_{3}c_{1}-b_{1}c_{3}) - a_{2}(b_{2}c_{3}-b_{3}c_{2})]\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left(a_{1}c_{1} + a_{2}c_{2} + a_{3}c_{3}\right) \left(b_{1}\hat{i} + b_{2}\hat{j} 
++ b_{3}\hat{k}\right) 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+- \left(a_{1}b_{1} + a_{2}b_{2} + a_{3}b_{3}\right)  \left(c_{1}\hat{i} + c_{2}\hat{j} + c_{3}\hat{k}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left( \vec{a}\cdot\vec{c}\right)\vec{b} - \left( \vec{a}\cdot\vec{b}\right)\vec{c}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="subsec-vectripl.html#p-41" class="internal">in-context</a></span>
 </body>
 </html>

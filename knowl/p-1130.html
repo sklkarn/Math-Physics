@@ -11,50 +11,105 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Considering the case I and II with the given boundary conditions give no solution, hence only case III will be able to give the solution. From case III, we have</div>
-<div class="displaymath process-math">
+<div class="para">Integrating it again w. r. t. ’p’, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
 \begin{equation*}
-u(0,y,t) =0 
+y=\int f(p) \,dp	 +  constant.	=\phi(p) + \psi(q)  \quad \text{(say)}.
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+\therefore  \quad  y(x,t) = \phi(x+vt) + \psi(x-vt)\tag{7.1.30}
+\end{equation}
+</div>
+<div class="para">This is a D’ Alembert’s solution  of one - dimensional wave equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb1.html" title="Equation 7.1.25">(7.1.25)</a>. Physically equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb6.html" title="Equation 7.1.30">(7.1.30)</a> represents two plane waves travelling in opposite directions with the same velocity and same period. Verification of equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb6.html" title="Equation 7.1.30">(7.1.30)</a> with the help of boundary conditions</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+y(0,t) = 0 = y(l,t) \tag{7.1.31}
+\end{equation}
+</div>
+<div class="para">and the initial conditions</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+y(x,0) =f(x)\tag{7.1.32}
+\end{equation}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+\left(\frac{\partial y}{\partial t}\right)_{t=0} =f'(x)\tag{7.1.33}
+\end{equation}
+</div>
+<div class="para">from equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb6.html" title="Equation 7.1.30">(7.1.30)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+\frac{\partial y}{\partial t} =v\phi'(x+vt)-v\psi'(x-vt)\tag{7.1.34}
+\end{equation}
+</div>
+<div class="para">using equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb8.html" title="Equation 7.1.32">(7.1.32)</a>, equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb6.html" title="Equation 7.1.30">(7.1.30)</a> becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+y(x,0) =f(x)=\phi(x)+\psi(x)\tag{7.1.35}
+\end{equation}
+</div>
+<div class="para">and using equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb9.html" title="Equation 7.1.33">(7.1.33)</a> in equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb10.html" title="Equation 7.1.34">(7.1.34)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+\frac{\partial y}{\partial t} =f'(x) = v[\phi'(x)-\psi'(x)]	 \tag{7.1.36}
+\end{equation}
+</div>
+<div class="para">assuming <span class="process-math">\(f'(x)=0\text{,}\)</span> we have from equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb12.html" title="Equation 7.1.36">(7.1.36)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
 \begin{equation*}
-=(c_{1}+0)(c_{3}\cos k_{2}y+c_{4}\sin k_{2}y)( c_{5}\cos vkt+c_{6}\sin vkt) \quad \Rightarrow c_{1} =0.
+v[\phi'(x)-\psi'(x)]=0
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
 \begin{equation*}
-u(x,0,t) =0 
+\phi'(x) = \psi'x)
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=(c_{1}\cos k_{1}x+c_{2}\sin k_{1}x)(c_{3}+0)( c_{5}\cos vkt+c_{6}\sin vkt)\quad  \Rightarrow c_{3} =0.
-\end{equation*}
+<div class="para">which on integrating gives</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+\phi(x) =\psi(x)+\lambda \tag{7.1.37}
+\end{equation}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-u(a,y,t) =0 
-\end{equation*}
+<div class="para">putting equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb13.html" title="Equation 7.1.37">(7.1.37)</a>, in equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb11.html" title="Equation 7.1.35">(7.1.35)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+\phi(x)=\frac{1}{2}[f(x)+\lambda]\tag{7.1.38}
+\end{equation}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=(c_{1}\cos k_{1}a+c_{2}\sin k_{1}a)(c_{3}\cos k_{2}y+c_{4}\sin k_{2}y)(c_{5}\cos vkt+c_{6}\sin vkt) 
-\end{equation*}
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+\psi(x)=\frac{1}{2}[f(x)-\lambda]\tag{7.1.39}
+\end{equation}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=(c_{2}\sin k_{1}a)(c_{4}\sin k_{2}y)(c_{5}\cos vkt+c_{6}\sin vkt) \Rightarrow \sin k_{1}a =0 
-\end{equation*}
+<div class="para">with the help of equations <a href="" class="xref" data-knowl="./knowl/eqn-dalemb14.html" title="Equation 7.1.38">(7.1.38)</a>  and <a href="" class="xref" data-knowl="./knowl/eqn-dalemb15.html" title="Equation 7.1.39">(7.1.39)</a>, equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb6.html" title="Equation 7.1.30">(7.1.30)</a> yields</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+y(x,t) = \frac{1}{2}[f(x+vt)+f(x-vt)]\tag{7.1.40}
+\end{equation}
 </div>
-<div class="para">
-<span class="process-math">\([\because c_{2}\neq 0 ].\)</span> i.e., <span class="process-math">\(k_{1}a=m\pi \)</span> and <span class="process-math">\(k_{1}=\frac{m\pi}{a},\)</span> <span class="process-math">\([m=1,2,3,\cdots]\text{.}\)</span>
+<div class="para">which reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+y(0,t) = \frac{1}{2}[f(vt)+f(-vt)]\tag{7.1.41}
+\end{equation}
 </div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb8.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb9.html ./knowl/eqn-dalemb10.html ./knowl/eqn-dalemb12.html ./knowl/eqn-dalemb13.html ./knowl/eqn-dalemb11.html ./knowl/eqn-dalemb14.html ./knowl/eqn-dalemb15.html ./knowl/eqn-dalemb6.html ./knowl/eqn-dalemb17.html ./knowl/eqn-dalemb18.html ./knowl/eqn-dalemb16.html ./knowl/eqn-dalemb1.html">
+\begin{equation}
+y(l,t) = \frac{1}{2}[f(l+vt)+f(l-vt)]\tag{7.1.42}
+\end{equation}
 </div>
-<span class="incontext"><a href="subsec-2Dwave_sol.html#p-1130" class="internal">in-context</a></span>
+<div class="para">It follows from equations <a href="" class="xref" data-knowl="./knowl/eqn-dalemb17.html" title="Equation 7.1.41">(7.1.41)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-dalemb18.html" title="Equation 7.1.42">(7.1.42)</a> that the function <span class="process-math">\(f\)</span> is odd and periodic with period <span class="process-math">\(2l\)</span> and hence equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb16.html" title="Equation 7.1.40">(7.1.40)</a> is the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb1.html" title="Equation 7.1.25">(7.1.25)</a>.</div>
+</div>
+<span class="incontext"><a href="subsec-dalembert.html#p-1130" class="internal">in-context</a></span>
 </body>
 </html>

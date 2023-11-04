@@ -12,7 +12,40 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Prove that <span class="process-math">\(J'_{2}(x)=(1-\frac{4}{x^{2}})J_{1}(x)+\frac{2}{x}J_{o}(x)\text{.}\)</span>
+<div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J_{-n}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(-n+r)!}\left(\frac{x}{2}\right)^{-n+2r}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\sum\limits_{r=0}^{n-1}\frac{(-1)^{r}}{r!(-n+r)!}\left(\frac{x}{2}\right)^{-n+2r}+\sum\limits_{r=n}^{\infty}\frac{(-1)^{r}}{r!(-n+r)!}\left(\frac{x}{2}\right)^{-n+2r}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=0+\sum\limits_{r=n}^{\infty}\frac{(-1)^{r}}{r!(-n+r)!}\left(\frac{x}{2}\right)^{-n+2r}
+\end{equation*}
+</div>
+<div class="para">Since, <span class="process-math">\(!(-ve \quad integer) = \infty\text{.}\)</span> Hence, for <span class="process-math">\(r=0,1,2,\cdots\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{(-n+r)!}=0
+\end{equation*}
+</div>
+<div class="para">putting <span class="process-math">\(r=n+s\text{,}\)</span> where <span class="process-math">\(s\)</span> is a positive integer, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+J_{-n}(x)=\sum\limits_{s=0}^{\infty}\frac{(-1)^{n+s}}{s!(n+s)!}\left(\frac{x}{2}\right)^{n+2s}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=(-1)^{n}\sum\limits_{s=0}^{\infty}\frac{(-1)^{s}}{s!(n+s)!}\left(\frac{x}{2}\right)^{n+2s} =(-1)^{n}J_{n}(x) 
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_fourth-examplesD.html#p-666" class="internal">in-context</a></span>
 </body>

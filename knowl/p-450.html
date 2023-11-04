@@ -11,69 +11,137 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">If <span class="process-math">\(m_{1} = m_{2} =m \)</span> then from case I, <span class="process-math">\(y=(C_{1}+C_{2})e^{mx} =Ce^{mx}\text{.}\)</span> Where C is only one constant in this solution. But the order of given equation is two the solution must contain two constants in order to satisfy the given equation. Hence we have to seek its solution by another way. Let's write equation <a href="" class="xref" data-knowl="./knowl/eqn-diffsol14.html" title="Equation 4.1.14">(4.1.14)</a> in the form</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="para">The first order linear differential equation is obtained by putting <span class="process-math">\(n = 1\)</span> in the standard form of linear equation <a href="" class="xref" data-knowl="./knowl/eqn-diffeq1.html" title="Equation 4.0.1">(4.0.1)</a>, i.e.,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
 \begin{equation*}
-(D-m)(D-m)y=0
-\end{equation*}
-</div>
-<div class="para">put</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-(D-m)y=z 
-\end{equation*}
-</div>
-<div class="para">then,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-(D-m)z=0
+f_{o}(x)\frac{\,dy}{\,dx}+ f_{o}(x)y =F(x)
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation}
+\frac{\,dy}{\,dx}+P(x)y = Q(x)\tag{4.1.6}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(P(x)\)</span> and <span class="process-math">\(Q(x)\)</span> are functions of <span class="process-math">\(x\)</span> or constants. To find its solution, first consider the homogeneous equation by setting <span class="process-math">\(Q(x) = 0\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
 \begin{equation*}
-Dz-mz=0
+\frac{\,dy}{\,dx}+P(x)y = 0 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation*}
+\frac{1}{y}\frac{\,dy}{\,dx} =-P(x)y
+\end{equation*}
+</div>
+<div class="para">integrating, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation*}
+\log y =-\int P(x)\,dx +C
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(C\)</span> is an arbitrary constant of integration.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation*}
+y=exp\left[-\int P(x)\,dx +C\right] = exp\left[-\int P(x)\,dx\right]e^{C}
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
 \begin{equation*}
-\frac{\,dz}{\,dx}-mz=0 \quad\Rightarrow z=Ae^{mx}
+y=A exp\left[-\int P\,dx\right]
 \end{equation*}
 </div>
-<div class="para">Thus,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="para">where <span class="process-math">\(A=e^{C}\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
 \begin{equation*}
-(D-m)y=Ae^{mx}
+\text{or,} \quad ye^{\int P\,dx}=A
+\end{equation*}
+</div>
+<div class="para">Let,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation*}
+I = \int P(x)\,dx \quad \text{so that}\quad \frac{\,dI}{\,dx} =P(x)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation}
+\therefore \quad ye^{I}=A\tag{4.1.7}
+\end{equation}
+</div>
+<div class="para">Differentiate eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol7.html" title="Equation 4.1.7">(4.1.7)</a>w.r.t. ’x’, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation*}
+\frac{\,d}{\,dx}\left(ye^{I}\right)=0 
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
 \begin{equation*}
-\frac{\,dy}{\,dx}-my=Ae^{mx}.
+\frac{\,dy}{\,dx}e^{I}+ye^{I}\frac{\,dI}{\,dx}=0
 \end{equation*}
 </div>
-<div class="para">which is an inhomogenous first order linear differential equation. whose integrating factor is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
 \begin{equation*}
-I.F. = e^{\int P\,dx}=e^{-mx}
+\frac{dy}{dx}e^{I}+ye^{I}P=0
 \end{equation*}
 </div>
-<div class="para">Hence, the solution of this differential equation is given by equation <a href="" class="xref" data-knowl="./knowl/eqn-diffsol11.html" title="Equation 4.1.11">(4.1.11)</a>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation}
+e^{I}\left(\frac{dy}{dx}+yP\right)=0\tag{4.1.8}
+\end{equation}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="para">Now multiplying eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol6.html" title="Equation 4.1.6">(4.1.6)</a> by <span class="process-math">\(e^{I} \text{,}\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation}
+\left(\frac{\,dy}{\,dx}+Py\right)e^{I}=Qe^{I} \tag{4.1.9}
+\end{equation}
+</div>
+<div class="para">which by using eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol9.html" title="Equation 4.1.9">(4.1.9)</a>, becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation}
+\frac{\,d}{\,dx}\left(ye^{I}\right)=Qe^{I}\tag{4.1.10}
+\end{equation}
+</div>
+<div class="para">Integrating, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
 \begin{equation*}
-ye^{-mx} = \int Ae^{mx}\cdot e^{-mx}\,dx+B = \int A\,dx+B=Ax+B 
+ye^{I}=\int Qe^{I}\,dx+C_{1}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="para">where <span class="process-math">\(C_{1}\)</span> is an arbitrary constant.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation}
+\text{or,} \quad ye^{\int P\,dx}=\int\left(Qe^{\int P\,dx}\right)\,dx+C_{1}\tag{4.1.11}
+\end{equation}
+</div>
+<div class="para">This is  the required solution and the factor <span class="process-math">\(e^{\int P\,dx}\)</span> is known as <dfn class="terminology">integration factor (I.F.)</dfn>. Therefore the solution of first order linear differential equation can be easily found by the formula</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
 \begin{equation*}
-\therefore  \quad y=(Ax+B)e^{mx}.
+y[I.F.] = \int Q[I.F.]\,dx + \quad\text{constant}.
 \end{equation*}
 </div>
+<div class="para">Equation <a href="" class="xref" data-knowl="./knowl/eqn-diffsol11.html" title="Equation 4.1.11">(4.1.11)</a> may be written as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation}
+y=C_{1}e^{-\int P\,dx}+e^{-\int P\,dx}\int\left(Qe^{\int P\,dx}\right)\,dx\tag{4.1.12}
+\end{equation}
 </div>
-<span class="incontext"><a href="subsec-second_order-diff.html#p-450" class="internal">in-context</a></span>
+<div class="para">i.e. the general solution of differential equation <a href="" class="xref" data-knowl="./knowl/eqn-diffsol6.html" title="Equation 4.1.6">(4.1.6)</a> consists of two parts.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html ./knowl/eqn-diffsol7.html ./knowl/eqn-diffsol6.html ./knowl/eqn-diffsol9.html ./knowl/eqn-diffsol11.html ./knowl/eqn-diffsol6.html">
+\begin{equation}
+y=cu+v  \quad  \text{(say)}\tag{4.1.13}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(u= e^{-\int P\,dx }\)</span>  and  <span class="process-math">\(v=e^{-\int P\,dx}\int\left(Qe^{\int P\,dx}\right)\,dx\)</span> also <span class="process-math">\(C_{1}=c \text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="subsec-first_order-diff.html#p-450" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,23 +13,50 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">But in curvilinear coordinates</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord4.html ./knowl/eqn-cylind_cord4.html ./knowl/eqn-spher_cord1.html">
+<div class="para"> we know that <span class="process-math">\(\nabla^{2}\psi=\vec{\nabla}\cdot\vec{\nabla \psi}\text{,}\)</span> put  <span class="process-math">\(\vec{\nabla \psi}=\vec{F}\text{,}\)</span> then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-lapcurv1.html">
 \begin{equation*}
-\,ds^{2}= h_{1}^{2} \,du^{2}+h_{2}^{2} \,dv^{2}+h_{3}^{2} \,dw^{2}  
+\vec{\nabla}\cdot\vec{F} 
 \end{equation*}
 </div>
-<div class="para">from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-cylind_cord4.html" title="Equation 1.6.14">(1.6.14)</a>. Equating eqns. <a href="" class="xref" data-knowl="./knowl/eqn-cylind_cord4.html" title="Equation 1.6.14">(1.6.14)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-spher_cord1.html" title="Equation 1.6.15">(1.6.15)</a>, we get-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cylind_cord4.html ./knowl/eqn-cylind_cord4.html ./knowl/eqn-spher_cord1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-lapcurv1.html">
+\begin{equation}
+= \frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial u}(F_{1}h_{2}h_{3}) 
++\frac{\partial}{\partial v}(F_{2}h_{3}h_{1}) 
++\frac{\partial}{\partial w}(F_{3}h_{1}h_{2})\right]\tag{1.6.10}
+\end{equation}
+</div>
+<div class="para">also</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-lapcurv1.html">
 \begin{equation*}
-h_{1} = 1,\quad h_{2}=r, \quad h_{3}=r\sin\theta,
+\vec{F} = \vec{\nabla \psi} = \left(\frac{\hat{e_{1}}}{h_{1}}\frac{\partial \psi}{\partial u} 
++ \frac{\hat{e_{2}}}{h_{2}}\frac{\partial \psi}{\partial v} 
++\frac{\hat{e_{3}}}{h_{3}}\frac{\partial \psi}{\partial w}\right) 
 \end{equation*}
 </div>
-<div class="para">and (u,v,w) is replaced by <span class="process-math">\((r, \theta, \phi)\text{,}\)</span> and <span class="process-math">\(\hat{e}_{1} = \hat{e}_{r}{,} 
-\hat{e}_{2}=\hat{e}_{\theta}{,} 
-\hat{e}_{3} =\hat{e}_{\phi}\text{.}\)</span>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-lapcurv1.html">
+\begin{equation*}
+F_{1}= \frac{1}{h_{1}}\frac{\partial \psi}{\partial u}, \quad F_{2} 
+= \frac{1}{h_{2}}\frac{\partial \psi}{\partial v},\quad F_{3} 
+= \frac{1}{h_{3}}\frac{\partial \psi}{\partial w} 
+\end{equation*}
 </div>
+<div class="para">and from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-lapcurv1.html" title="Equation 1.6.10">(1.6.10)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-lapcurv1.html">
+\begin{equation*}
+\vec{\nabla}\cdot\vec{F} = \vec{\nabla}\cdot\vec{\nabla \psi} =  \nabla^{2}\psi 
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-spher_cord.html#p-164" class="internal">in-context</a></span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-lapcurv1.html">
+\begin{equation*}
+=  \frac{1}{h_{1}h_{2}h_{3}}\left[\frac{\partial}{\partial u}\left(\frac{h_{2}h_{3}}{h_{1}}\frac{\partial \psi}{\partial u}\right) 
++\frac{\partial}{\partial v}\left(\frac{h_{3}h_{1}}{h_{2}}\frac{\partial \psi}{\partial v}\right) 
++\frac{\partial}{\partial w}\left(\frac{h_{1}h_{2}}{h_{3}}\frac{\partial \psi}{\partial w}\right)\right]
+\end{equation*}
+</div>
+<div class="para">which is the required expression.</div>
+</div>
+<span class="incontext"><a href="subsec-lapl_curvcord.html#p-164" class="internal">in-context</a></span>
 </body>
 </html>

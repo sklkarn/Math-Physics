@@ -13,61 +13,24 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We know that</div>
-<div class="displaymath process-math">
-\begin{equation*}
-P_{n}(x)=\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r};
-\end{equation*}
-</div>
-<div class="para">where,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-N= \begin{cases} 
-\frac{n}{2},\quad \text{for n even}\\ 
-=\frac{n-1}{2},\quad \text{for n odd.} 
-\end{cases}
-\end{equation*}
-</div>
-<div class="para">Thus</div>
-<div class="displaymath process-math">
-\begin{equation*}
-P_{n}(-x)=\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}(-1)^{n-2r}x^{n-2r}	
-\end{equation*}
+<div class="para">Legendre’s polynomiala are a set of orthogonal functions in the interval <span class="process-math">\((-1,1)\text{.}\)</span>
 </div>
 <div class="displaymath process-math">
-\begin{equation*}
-=(-1)^{n}\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r} =(-1)^{n}  P_{n}(x)
-\end{equation*}
+\begin{equation}
+\int\limits_{-1}^{+1}P_{m}(x)P_{n}(x)\,dx=\frac{2}{2n+1}\,\delta_{m,n};\tag{4.5.26}
+\end{equation}
 </div>
+<div class="para">where</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\therefore \quad P_{n}(-x)=(-1)^{n}P_{n}(x)
+\delta_{m,n}=\begin{cases} 
+0 \quad \text{if}\quad  m \neq n \\ 
+1 \quad \text{if}\quad  m=n 
+\end{cases} 
 \end{equation*}
 </div>
-<div class="para">Now,</div>
-<ol class="decimal">
-<li><div class="para">if <span class="process-math">\(n=2m\text{,}\)</span> we have<div class="displaymath process-math">
-\begin{equation*}
-P_{2m}(-x)=(-1)^{2m}P_{2m}(x)
-\end{equation*}
-</div>or,<div class="displaymath process-math">
-\begin{equation*}
-P_{2m}(-x)= P_{2m}(x) 
-\end{equation*}
+<div class="para">here <span class="process-math">\(\delta_{m,n} \)</span> is a Kronecker delta symbol and <span class="process-math">\(m\)</span> and <span class="process-math">\(n\)</span> are positive integer.</div>
 </div>
-</div></li>
-<li><div class="para">if <span class="process-math">\(n=2m+1\text{,}\)</span> we have<div class="displaymath process-math">
-\begin{equation*}
-P_{2m+1}(-x)=(-1)^{2m+1}P_{2m+1}(x)
-\end{equation*}
-</div>or,<div class="displaymath process-math">
-\begin{equation*}
-P_{2m+1}(-x)= - P_{2m+1}(x) 
-\end{equation*}
-</div>
-</div></li>
-</ol>
-</div>
-<span class="incontext"><a href="sec_fourth-examplesC.html#p-610" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-Legnd_eq.html#p-610" class="internal">in-context</a></span>
 </body>
 </html>

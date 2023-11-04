@@ -11,44 +11,15 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">From expression <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq13.html" title="Equation 4.5.13">(4.5.13)</a>, we deduce that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
-\begin{equation*}
-P_{n}(x) =\sum\limits_{r=0}^{N}\frac{ (-1)^{r} }{2^{n}r!(n-r)!}\frac{d^{n}}{dx^{n}}(x^{2n-2r}) 
-\end{equation*}
+<div class="para">The differential equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq1.html">
+\begin{equation}
+(1-x^{2})\frac{\,d^{2}y}{\,dx^{2}}-2x\frac{\,dy}{\,dx}+n(n+1)y=0\tag{4.5.1}
+\end{equation}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
-\begin{equation*}
-=\frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}\sum\limits_{r=0}^{N}(-1)^{r}\frac{n!}{r!(n-r)!}x^{2n-2r} 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
-\begin{equation*}
-\left[ \because   \frac{d^{n}}{dx^{n}}x^{2n-2r} = \frac{(2n-2r)!}{(n-2r)!}x^{2n-2r}\right]
-\end{equation*}
-</div>
-<div class="para">Now extended the upper limit from <span class="process-math">\(N\)</span> to <span class="process-math">\(n\)</span> since the extra terms from <span class="process-math">\(N+1\)</span> to <span class="process-math">\(n\)</span> do not contribute anything because each term in the series</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
-\begin{equation*}
-\sum\limits_{r=N+1}^{n} \frac{d^{n}}{dx^{n}}\frac{(-1)^{r}n!}{r!(n-r)!}x^{2n-2r}
-\end{equation*}
-</div>
-<div class="para">vanishes for <span class="process-math">\(r\)</span> and <span class="process-math">\(n\)</span> integrals. Also,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
-\begin{equation*}
-(x^{2}-1)^{n}=  \sum\limits_{r=0}^{n} \frac{(-1)^{r}n!}{r!(n-r)!}x^{2(n-r)} 
-\end{equation*}
-</div>
-<div class="para">from Binomial expansion of <span class="process-math">\((x^{2}-1)^{n}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
-\begin{equation*}
-\therefore \quad P_{n}(x) = \frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}
-\end{equation*}
-</div>
-<div class="para">This is the Rodrigue's Formula for Legender's Polynomial. The plot for Legender's polynomial is shown in <a href="" class="xref" data-knowl="./knowl/fig-fig43.html" title="Figure 4.5.1">Figure 4.5.1</a>.</div>
+<div class="para">is known as Legendre’s differential equation. Such type of equation appears on solving Laplace’s equation (<span class="process-math">\(\nabla^{2}y=0\)</span>) associated with spherical harmonics. In equation <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq1.html" title="Equation 4.5.1">(4.5.1)</a>, <span class="process-math">\(n\)</span> is any number (integer or fraction). This equation can be solved in series of ascending or descending power of <span class="process-math">\(x\text{.}\)</span> It has no singularity at <span class="process-math">\(x=0\)</span> so its solution can be obtained as a power series developed about this point.</div>
 </div>
 <span class="incontext"><a href="subsec-Legnd_eq.html#p-568" class="internal">in-context</a></span>
 </body>

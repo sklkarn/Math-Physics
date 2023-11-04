@@ -13,42 +13,30 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">With reference to circuit, <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="external/fig63.png" class="contained"></div> the conditions under which current i flows are <span class="process-math">\(i=0\)</span> at <span class="process-math">\(t=0\text{,}\)</span> i.e.,</div>
+<div class="para">we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-E(t)=  \begin{cases}
-E,  &amp;  0 \lt t \lt a\\
-0,  &amp; t \gt a
+f(t)= \begin{cases}
+8+0,  &amp;  t \lt 2\\
+8-2,  &amp;  t \gt 2
+\end{cases}   = 8+ \begin{cases}
+0,   &amp;  t \lt 2\\
+-2,  &amp; t \gt 2
 \end{cases}
 \end{equation*}
 </div>
-<div class="para">Take the Laplace on both sides of the given equation, we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}\{Li' +Ri\} = \mathscr{L}\{E(t)\}
+= 8+ (-2) \begin{cases}
+0, &amp;  t \lt 2\\
+1,  &amp; t \gt 2
+\end{cases}  =8-2u(t-2)
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-Lsi(s) -i(0)+Ri(s) = \int\limits_{0}^{\infty}e^{-st}E(t)\,dt
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(sL+R)i(s)  = \int\limits_{0}^{a}e^{-st}E(t)\,dt+\int\limits_{a}^{\infty}e^{-st}.0\,dt 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= E\left(\frac{e^{-st}}{-s}\right)_{0}^{a} = \frac{E}{s}(-e^{-sa}+1) 
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-i(s) =\frac{E(1-e^{-sa})}{s(sL+R)} = \frac{E}{s(sL+R)} -\frac{Ee^{-sa}}{s(sL+R)}
+\mathscr{L}[f(t)] =8\mathscr{L}(1) -2\mathscr{L}[u(t-2)] =\frac{8}{s}-2\frac{e^{-2s}}{s}.
 \end{equation*}
 </div>
 </div>

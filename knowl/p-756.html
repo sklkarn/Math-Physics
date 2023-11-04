@@ -13,29 +13,66 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We may have</div>
-<div class="displaymath process-math">
+<div class="para">Differentiating the recurrence relation (1) w. r. to ’x’, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
+\begin{equation}
+(1+2n-x)L'_{n}-L_{n}=n^{2}L'_{n-1}+L'_{n+1}\tag{4.11.13}
+\end{equation}
+</div>
+<div class="para">Replacing <span class="process-math">\(n\)</span> by <span class="process-math">\(n+1\)</span> in relation (2), we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
 \begin{equation*}
-\int\limits_{0}^{\infty}e^{-x}\sum\limits_{m,n =0}^{\infty}L_{m}(x)L_{n}(x)\frac{s^{m}t^{n}}{m!n!}\,dx
+L'_{n+1}=(n+1)[L'_{n}-L_{n}]
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
+\begin{equation}
+L'_{n+1}=(n+1)L'_{n}-(n+1)L_{n}]\tag{4.11.14}
+\end{equation}
+</div>
+<div class="para">Also, from relation (2), we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
+\begin{equation}
+L'_{n-1}=L_{n-1}+\frac{1}{n}L'_{n}\tag{4.11.15}
+\end{equation}
+</div>
+<div class="para">Substituting equations <a href="" class="xref" data-knowl="./knowl/eqn-laguer_recr3.html" title="Equation 4.11.14">(4.11.14)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-laguer_recr4.html" title="Equation 4.11.15">(4.11.15)</a> in equation <a href="" class="xref" data-knowl="./knowl/eqn-laguer_recr2.html" title="Equation 4.11.13">(4.11.13)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
 \begin{equation*}
-=(1-s)^{-1}(1-t)^{-1}\int\limits_{0}^{\infty}exp\left[-x\frac{(1-st)}{(1-s)(1-t)}\right]\,dx
+(1+2n-x)L'_{n}-L_{n}=n^{2}[L_{n-1}+\frac{1}{n}L'_{n}]
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
 \begin{equation*}
-=(1-st)^{-1}=\sum\limits_{n}(st)^{n}  \hspace{1cm} \left[\because \int\limits_{0}^{\infty}e^{-\alpha x}\,dx=\frac{1}{\alpha}\right]
+\qquad +(n+1)L'_{n}-(n+1)L_{n}
 \end{equation*}
 </div>
-<div class="para">put <span class="process-math">\(m=n\)</span> and equate the coefficients of <span class="process-math">\((st)^{n}\)</span> on both sides, we get -</div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
 \begin{equation*}
-\int\limits_{0}^{\infty}e^{-x}[L_{n}(x)]^{2}\,dx =(n!)^{2}.
+(1+2n-x)L'_{n}-L_{n}=n^{2}L_{n-1}+nL'_{n}+nL'_{n}+L'_{n}-nL_{n}-L_{n}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
+\begin{equation*}
+(1+2n)L'_{n}-xL'_{n}=n^{2}L_{n-1}+(1+2n)L'_{n}-nL_{n}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
+\begin{equation*}
+-xL'_{n}=n^{2}L_{n-1}-nL_{n}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html">
+\begin{equation*}
+\therefore xL'_{n}=nL_{n}-n^{2}L_{n-1} 
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="sec_fourth-examplesF.html#p-756" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-laguer_pol.html#p-756" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,98 +13,13 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">The characteristic equation is <span class="process-math">\(|A-\lambda I| = 0\)</span> or,</div>
+<div class="para">Find the eigen values and associated eigen vector for the matrix</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\begin{bmatrix} 
-\cos\theta - \lambda &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta -\lambda 
-\end{bmatrix}=0
+A = \begin{bmatrix} 
+2 &amp; -1 &amp; 1\\-1 &amp; 2 &amp; -1\\1 &amp; -1 &amp; 2 
+\end{bmatrix} 
 \end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{align*}
-or, (\cos\theta - \lambda)^{2}+\sin^{2}\theta  \amp =0 \\
-or, \cos^{2}\theta - 2\lambda\cos\theta)+\lambda^{2}+\sin^{2}\theta \amp =0\\
-or, 1-2\lambda \cos\theta+\lambda^{2} \amp =0\\
-or, \lambda^{2}-2\lambda \cos\theta +1 \amp =0 
-\end{align*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-or, \lambda  = \frac{+2\cos\theta \pm \sqrt{4\cos^{2}\theta -4}}{2.1}  
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \cos\theta \pm i\sin\theta = e^{i\theta}\cdot e^{-i\theta} 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore  \quad   \lambda_{1}=e^{i\theta}\quad  \text{and}\quad  \lambda_{2}=e^{-i\theta}
-\end{equation*}
-</div>
-<div class="para">The eigen vector corresponding to eigen value <span class="process-math">\(\lambda_{1}=e^{i\theta}\)</span> is given by <span class="process-math">\((A-\lambda I)X=0\text{,}\)</span> i.e.,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{bmatrix} 
-\cos\theta - e^{i\theta} &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta -e^{i\theta} 
-\end{bmatrix} \begin{bmatrix} 
-x_{1}\\x_{2} 
-\end{bmatrix} = \begin{bmatrix} 
-0\\0 
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{bmatrix} 
-\cos\theta - \cos\theta - i\sin\theta &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta - \cos\theta - i\sin\theta 
-\end{bmatrix} \begin{bmatrix} 
-x_{1}\\x_{2} 
-\end{bmatrix} = \begin{bmatrix} 
-0\\0 
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{bmatrix} 
-- i\sin\theta &amp; -\sin\theta \\  \sin\theta  &amp; - i\sin\theta 
-\end{bmatrix} \begin{bmatrix} 
-x_{1}\\x_{2} 
-\end{bmatrix} = \begin{bmatrix} 
-0\\0 
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-or, \hspace{3pt} -ix_{1}\sin\theta - x_{2}\sin\theta =0 \quad \Rightarrow x_{1}=ix_{2} 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-and \hspace{6pt} x_{1}\sin\theta -ix_{2}\sin\theta =0 \quad \Rightarrow x_{1}=ix_{2}.
-\end{equation*}
-</div>
-<div class="para">Putting <span class="process-math">\(x_{2}=c_{1}\)</span> gives <span class="process-math">\(x_{1}=ic_{1}\text{.}\)</span> Hence,</div>
-<div class="displaymath process-math">
-\begin{equation}
-X_{1}=c_{1}\begin{bmatrix} 
-i\\1 
-\end{bmatrix}, \tag{2.6.7}
-\end{equation}
-</div>
-<div class="para">similarly,</div>
-<div class="displaymath process-math">
-\begin{equation}
-X_{2}=c_{1}\begin{bmatrix} 
--i\\1 
-\end{bmatrix} \quad \text{for}\quad \lambda_{2}=e^{i\theta}\tag{2.6.8}
-\end{equation}
 </div>
 </div>
 <span class="incontext"><a href="sec_second-examplesC.html#p-319" class="internal">in-context</a></span>

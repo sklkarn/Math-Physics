@@ -11,48 +11,27 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h5 class="heading"><span class="type">Paragraph</span></h5>
 <div class="para logical">
-<div class="para">We have from the Inverse Fourier Transform</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-rayleigh1.html">
+<div class="para">Taking</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathcal{A}(p) = \int\limits_{-\infty}^{\infty}f(t)\cos pt\,dt
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathcal{B}(p) = \int\limits_{-\infty}^{\infty}f(t)\sin pt\,dt
+\end{equation*}
+</div>
+<div class="para">we obtain,</div>
+<div class="displaymath process-math">
 \begin{equation}
-g(x)=\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}G(k)e^{+ikx}\,dk   \tag{6.1.10}
+f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\left[\mathcal{A}(p)\cos px + \mathcal{B}(p)\sin px\right]\,dp\tag{6.1.7}
 \end{equation}
 </div>
-<div class="para">taking complex conjugate of both sides of equation <a href="" class="xref" data-knowl="./knowl/eqn-rayleigh1.html" title="Equation 6.1.10">(6.1.10)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-rayleigh1.html">
-\begin{equation}
-g^{*}(x)=\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}G^{*}(k)e^{-ikx}\,dk \tag{6.1.11}
-\end{equation}
 </div>
-<div class="para">but,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-rayleigh1.html">
-\begin{equation*}
-\int\limits_{-\infty}^{\infty}f(x)g^{*}(x)\,dx =\int\limits_{-\infty}^{\infty}f(x)\left\{\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}G^{*}(k)e^{-ikx}\,dk\right\}\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-rayleigh1.html">
-\begin{equation*}
-=\frac{1}{2\pi}\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}f(x)G^{*}(k)e^{-ikx}\,dx\,dk
-\end{equation*}
-</div>
-<div class="para">(on changing their order of integration)</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-rayleigh1.html">
-\begin{equation*}
-=  \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}G^{*}(k)\,dk \left[\int\limits_{-\infty}^{\infty}f(x)e^{-ikx}\,dx\right] 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-rayleigh1.html">
-\begin{equation*}
-=  \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}\mathcal{G}^{*}(k)\,dk \{F(k)\} 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-rayleigh1.html">
-\begin{equation*}
-=   \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}F(k)G^{*}(k)\,dk.
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="subsec-rayleigh_theorm.html#p-906" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-fourier_trans.html#p-906" class="internal">in-context</a></span>
 </body>
 </html>

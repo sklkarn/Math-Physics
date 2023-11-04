@@ -13,38 +13,13 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Fourier transform of <span class="process-math">\(f(x)\)</span> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}\{f(x)\} =  F(s) = \int\limits_{0}^{\infty}f(x)e^{-ikx} \, dx
+F_{c}\{f\left(\frac{x}{a}\right)\}= aF_{c}(as)
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\int\limits_{-\infty}^{-a}x e^{-isx} \, dx+ \int\limits_{-a}^{a}x e^{-isx} \, dx +\int\limits_{a}^{\infty}0. e^{-isx} \, dx
-\end{equation*}
+<div class="para">[We can easily proved this as above].</div>
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\int\limits_{\infty}^{a}f(-t)e^{+ist} \,(-dt)+ \left[\frac{x.e^{-isx}}{-is}+\frac{e^{-isx}.1}{s^{2}}\right]_{-a}^{a}+0
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\int\limits_{a}^{\infty}0.e^{+ist} \,(dt)+ \frac{a}{is}\left(e^{-isa}+e^{isa}\right)+\frac{1}{s^{2}}\left(e^{-isa}-e^{isa}\right)
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=0+ \frac{ia}{s}.2\cos sa + \frac{1}{s^{2}}.2\sin sa
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{2i}{s^{2}}(sa\cos sa- \sin sa)
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="sec_sixth-examplesA.html#p-928" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-Ftrans_prop.html#p-928" class="internal">in-context</a></span>
 </body>
 </html>

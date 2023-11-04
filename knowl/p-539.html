@@ -11,15 +11,72 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Paragraph</span></h2>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Thus <span class="process-math">\(x=0\)</span> is an ordinary point of the given diffn. eqn. We assume the solution of this equation as</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation}
+x^{2}y''+xy' - y=x^{2}e^{x} \tag{4.2.15}
+\end{equation}
+</div>
+<div class="para">This is the equation with decreasing power of x. Hence put <span class="process-math">\(x=e^{z}\)</span> and <span class="process-math">\(\frac{d}{dz}\equiv D\text{.}\)</span> We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
 \begin{equation*}
-y = \sum\limits_{\lambda =0}^{\infty}a_{\lambda}x^{\lambda}.
+D(D-1)y+Dy-y=e^{2z}e^{e^{z}}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation}
+(D^{2}-1)y=e^{2z}e^{e^{z}}\tag{4.2.16}
+\end{equation}
+</div>
+<div class="para">A.E. is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation*}
+D^{2}-1 =0 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation*}
+D=+1,-1
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation}
+\text{C.F.} = C_{1}e^{z}+C_{2}e^{-z} = C_{1}x+\frac{C_{2}}{x} \tag{4.2.17}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(y_{1}=x\)</span> and <span class="process-math">\(y_{2}=\frac{1}{x}\)</span> also</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation*}
+|W| =y_{1}y'_{2} -y'_{1}y_{2} = x(-\frac{1}{x^{2}})-1.\frac{1}{x} =-\frac{2}{x}
+\end{equation*}
+</div>
+<div class="para">The standard form of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vcoef4.html" title="Equation 4.2.15">(4.2.15)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation}
+y'' +\frac{1}{x}y'-\frac{1}{x^{2}}y = e^{x} \tag{4.2.18}
+\end{equation}
+</div>
+<div class="para">Now the complete solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vcoef7.html" title="Equation 4.2.18">(4.2.18)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation*}
+y=x\left[-\int\frac{e^{x}.\frac{1}{x}}{-\frac{2}{x}}\,dx +C_{1}\right]+\frac{1}{x}\left[\int\frac{e^{x}.x}{-\frac{2}{x}}\,dx+C_{2}\right]
+\end{equation*}
+</div>
+<div class="para"><a href="" class="fn-knowl original" data-knowl="./knowl/fn-4-hidden.html" title="Footnote 4.2.1"><sup> 1 </sup></a></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation*}
+=x\left[\frac{e^{x}}{2}+C_{1}\right]+\frac{1}{x}\left[-\frac{1}{2}e^{x}x^{2}+xe^{x}-e^{x}+C_{2}\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vcoef4.html ./knowl/eqn-vcoef7.html">
+\begin{equation*}
+= (C_{1}x+\frac{C_{2}}{x})+(e^{x}-\frac{e^{x}}{x})
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="sec_fourth-power.html#p-539" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_fourth-examplesA.html#p-539" class="internal">in-context</a></span>
 </body>
 </html>

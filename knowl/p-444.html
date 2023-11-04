@@ -11,22 +11,39 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h1 class="heading"><span class="type">Paragraph</span></h1>
 <div class="para logical">
-<div class="para">Putting <span class="process-math">\(n = 2\)</span> in the standard form of linear differential equation <a href="" class="xref" data-knowl="./knowl/eqn-diffeq1.html" title="Equation 4.0.1">(4.0.1)</a> gives the second order linear differential equation.</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html">
+<div class="para">An equation containing differential coefficients is known as <dfn class="terminology">differential equation</dfn>. The differential equation containing only one independent variable is known as <dfn class="terminology">ordinary differential equation</dfn>. The differential equation containing more than one independent variable is known as <dfn class="terminology">partial differential equation</dfn>. The changing entity is a variable and the rate at which one variable changes with respect to another is its derivative or differential coefficient. The differential coefficient or derivative of <span class="process-math">\(y [=f(x)]\)</span> with respect to ’x’ (for any particular value of <span class="process-math">\(x\)</span>) is defined as <span class="process-math">\(f'(x)\)</span> or <span class="process-math">\(\frac{\,dy}{\,dx}\)</span> such that</div>
+<div class="displaymath process-math">
 \begin{equation*}
-f_{o}(x)\frac{\,d^{2}y}{\,dx^{2}}+f_{1}(x)\frac{\,dy}{\,dx}+Qy=R
+f'(x)  = \frac{\,dy}{\,dx} = \lim\limits_{\delta x \to 0}\frac{f(x+\delta x)-f(x)}{\,\delta x},
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html">
+<div class="para">where <span class="process-math">\(x\)</span> is independent variable and <span class="process-math">\(y\)</span> is dependent variable which depends upon <span class="process-math">\(x\text{.}\)</span> Here are some types of differential equations and their significance: Ordinary Differential Equations (ODEs): These equations involve derivatives with respect to a single independent variable. ODEs are essential in modeling dynamic systems, such as population growth, mechanical vibrations, and electrical circuits. Partial Differential Equations (PDEs): These equations involve derivatives with respect to multiple independent variables. PDEs are widely used in physics, engineering, and applied mathematics to describe phenomena like heat conduction, wave propagation, fluid flow, and quantum mechanics. Some examples of ordinary differential equations are</div>
+<ol class="upper-roman">
+<li><div class="para"><div class="displaymath process-math">
 \begin{equation*}
-\frac{\,d^{2}y}{\,dx^{2}}+P\frac{\,dy}{\,dx}+Qy=R
+\frac{\,dy}{\,dx} =\frac{1}{x},
+\end{equation*}
+</div></div></li>
+<li><div class="para"><div class="displaymath process-math">
+\begin{equation*}
+\frac{\,d^{2}y}{\,dx^{2}}+4\frac{\,dy}{\,dx}-y =0
+\end{equation*}
+</div></div></li>
+<li><div class="para"><div class="displaymath process-math">
+\begin{equation*}
+\left[1+\left(\frac{\,dy}{\,dx}\right)^{2}\right]^{3}=\left(\frac{\,d^{2}y}{\,dx^{2}}\right)^{2}
+\end{equation*}
+</div></div></li>
+<li><div class="para">If z is a function of two independent variables x and y i.e., <span class="process-math">\(z=f(x,y)\)</span> then <span class="process-math">\(\frac{\,dz}{\,dx}\)</span> and <span class="process-math">\(\frac{\,dz}{\,dy} \)</span> is partial derivatives of z with respect to x and y respectively. Hence the differential equation containing these partial derivatives are the partial differential equation,	e.g.,<div class="displaymath process-math">
+\begin{equation*}
+\frac{\,dz}{\,dx}+\frac{\,dz}{\,dy} =x^{2}.
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(P {,} Q\text{,}\)</span> and <span class="process-math">\(R\)</span> are functions of <span class="process-math">\(x\)</span> or constants.</div>
+</div></li>
+</ol>
 </div>
-<span class="incontext"><a href="subsec-second_order-diff.html#p-444" class="internal">in-context</a></span>
+<span class="incontext"><a href="ch_fourth.html#p-444" class="internal">in-context</a></span>
 </body>
 </html>

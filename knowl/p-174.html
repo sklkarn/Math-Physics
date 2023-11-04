@@ -13,21 +13,78 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Use eqns. <a href="" class="xref" data-knowl="./knowl/eqn-unit_vect4.html" title="Equation 1.7.4">(1.7.4)–(1.7.6)</a>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para">The position vector of any point P in a cylindrical coordinate is</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\hat{i}= \cos\phi\hat{e_{\rho}}-\sin\phi\hat{e_{\phi}},  \quad 
-\hat{j}= \sin\phi\hat{e_{\rho}}+\cos\phi\hat{e_{\phi}},   \quad 
-\hat{k}=\hat{e_{z}}
+\vec{r}= x\hat{i}+y\hat{j}+z\hat{k}= \rho\cos\phi\hat{i}+\rho\sin\phi\hat{j}+z\hat{k}
 \end{equation*}
 </div>
-<div class="para">to find</div>
-<div class="displaymath process-math" data-contains-math-knowls="">
+<div class="para">Now,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\vec{F} =\frac{\hat{e_{\phi}}}{\rho}.
+\frac{\partial \vec{r}}{\partial \rho}, \frac{\partial \vec{r}}{\partial \phi}, \frac{\partial \vec{r}}{\partial z}
 \end{equation*}
 </div>
+<div class="para">are the tangent vectors along the curves <span class="process-math">\(\rho, \phi,z,\text{,}\)</span> respectively.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad  \frac{\partial \vec{r}}{\partial \rho} = \cos\phi\hat{i}+\sin\phi\hat{j},
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial \vec{r}}{\partial \phi} = -\rho\sin\phi\hat{i}+\rho\cos\phi\hat{j},
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{and} \quad \frac{\partial \vec{r}}{\partial z} = \hat{k}.
+\end{equation*}
+</div>
+<div class="para">The unit vectors along the tangents are</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat{e}_{1}=\hat{e}_{\rho}=\frac{\frac{\partial \vec{r}}{\partial \rho}}{\mid\frac{\partial \vec{r}}{\partial \rho}\mid}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
+= \frac{\cos\phi\hat{i}+\sin\phi\hat{j}}{\sqrt{\cos^{2}\phi + \sin^{2}\phi}} = \cos\phi\hat{i}+\sin\phi\hat{j},\tag{1.7.1}
+\end{equation}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat{e}_{2}=\hat{e}_{\phi}=\frac{\frac{\partial \vec{r}}{\partial \phi}}{\mid\frac{\partial \vec{r}}{\partial \phi}\mid} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
+= \frac{-\rho\sin\phi\hat{i}+\rho\cos\phi\hat{j}}{\sqrt{\rho^{2}\sin^{2}\phi + \rho^{2}\cos^{2}\phi}} = -\sin\phi\hat{i}+\cos\phi\hat{j},\tag{1.7.2}
+\end{equation}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
+\hat{e}_{3}=\hat{e}_{z}=\frac{\frac{\partial \vec{r}}{\partial z}}{\mid\frac{\partial \vec{r}}{\partial z}\mid} = \hat{k}\tag{1.7.3}
+\end{equation}
+</div>
+<div class="para">Then,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat{e}_{1}\cdot\hat{e}_{2} = (\cos\phi\hat{i}+\sin\phi\hat{j})\cdot(-\sin\phi\hat{i}+\cos\phi\hat{j}) = 0,
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat{e}_{1}\cdot\hat{e}_{3} = (\cos\phi\hat{i}+\sin\phi\hat{j})\cdot (\hat{k})=0,
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat{e}_{2}\cdot\hat{e}_{3} = (-\sin\phi\hat{i}+\cos\phi\hat{j})\cdot (\hat{k}) = 0.
+\end{equation*}
+</div>
+<div class="para">Hence <span class="process-math">\(\hat{e_{1}}, \hat{e_{2}}\text{,}\)</span> and  <span class="process-math">\(\hat{e_{3}}\)</span> are mutually perpendicular and the coordinate system is orthogonal.</div>
 </div>
 <span class="incontext"><a href="sec_first-examplesC.html#p-174" class="internal">in-context</a></span>
 </body>

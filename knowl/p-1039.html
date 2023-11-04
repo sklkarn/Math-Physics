@@ -13,71 +13,38 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">we have</div>
+<div class="para">If we put <span class="process-math">\(t=u+nT\text{,}\)</span> then <span class="process-math">\(f(u+nT)=f(u)\)</span> as <span class="process-math">\(T\)</span> is period of the given function. Thus</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[y''-2y'+2y] =\mathscr{L}[e^{-x}]
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-s^{2}Y(s)-sy(0)-y'(0)-2s\mathscr{L}[y(x)] +2y(0)+2\mathscr{L}y(x) = \frac{1}{s+1}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-s^{2}Y(s)-s.1-2sY(s) +2.1+2Y(s) = \frac{1}{s+1}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(s^{2}-2s+2)Y(s) = \frac{1}{s+1}+(s-2)
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-Y(s)  =\frac{1+(s-2)(s+1)}{(s+1)(s^{2}-2s+2)}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{s^{2}-s-1}{(s+1)(s^{2}-2s+2)}  = \frac{A}{s+1}+\frac{Bs+C}{s^{2}-2s+2}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1/5}{s+1}+\frac{(4/5)s-(7/5)}{s^{2}-2s+2} 
+\mathscr{L}\{f(t)\} = \sum\limits_{n=0}^{\infty}\int\limits_{0}^{T}e^{-s(u+nT)} f(u)\,du 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{5(s+1)}+\frac{1}{5}\frac{4s}{(s-1)^{2}+1}-\frac{7}{5}\frac{1}{(s-1)^{2}+1}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-y(x) =\mathscr{L}^{-1}\left[\frac{1}{5(s+1)}+\frac{4}{5}\frac{(s-1)}{(s-1)^{2}+1}-\frac{3}{5}\frac{1}{(s-1)^{2}+1}\right]
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{5}e^{-x}+\frac{4}{5}e^{x}\cos x -\frac{3}{5}e^{x}\sin x 
+= \sum\limits_{n=0}^{\infty}e^{-snt}\int\limits_{0}^{T}e^{-su}f(u)\,du
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{5}e^{-x}+\frac{e^{x}}{5}(4\cos x -3\sin x)
+=1+e^{-st}+e^{-2st}+\cdots+\int\limits_{0}^{T}e^{-su}f(u)\,du 
 \end{equation*}
 </div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{1-e^{-sT}}\int\limits_{0}^{T}e^{-su}f(u)\,du
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_sixth-examplesC.html#p-1039" class="internal">in-context</a></span>
+<div class="para">
+<span class="process-math">\([\because \quad 1+a+a^{2}+a^{3}+\cdots=\frac{1}{1-a};\)</span> if <span class="process-math">\(a \lt 1]\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad \mathscr{L}\{f(t)\} = \frac{\int\limits_{0}^{T}e^{-st} f(t)\,dt}{1-e^{-sT}}
+\end{equation*}
+</div>
+<div class="para">by changing <span class="process-math">\(u\)</span> into <span class="process-math">\(t\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="subsec-pf_LT.html#p-1039" class="internal">in-context</a></span>
 </body>
 </html>

@@ -11,23 +11,108 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<div class="para">
-<span class="process-math">\(\therefore\)</span> Surface integral of <span class="process-math">\(\vec{F}\)</span> over S</div>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical"><ol class="lower-alpha">
+<li><div class="para">
 <div class="displaymath process-math">
 \begin{equation*}
-=\sum  \vec{F}\cdot \hat{n}=\iint\limits_{s}\left(\vec{F}\cdot \hat{n}\right) ds.
+\nabla^{2}\left(\frac{1}{r}\right) = \left(\frac{\partial^{2}}{\partial x^{2}} 
++\frac{\partial^{2}}{\partial y^{2}} 
++\frac{\partial^{2}}{\partial z^{2}}\right)\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right], 
+\end{equation*}
+</div>here,<div class="displaymath process-math">
+\begin{equation*}
+\nabla^{2} = \frac{\partial^{2}}{\partial x^{2}} 
++\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
+\end{equation*}
+</div>is a Laplacian operator. But,<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial}{\partial x}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+= -\frac{1}{2}\left[\frac{1(2x)}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
+\end{equation*}
+</div>and<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2}}{\partial x^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+= \frac{\partial}{\partial x}\left[\frac{-x}{(x^{2}+y^{2}+z^{2})^{3/2}}\right] 
 \end{equation*}
 </div>
-<div class="para"><dfn class="terminology">Note:</dfn></div>
 <div class="displaymath process-math">
 \begin{equation*}
-Flux  = \iint\limits_{s}\left(\vec{F}\cdot \hat{n}\right) \,ds
+= \left[\frac{+\frac{3}{2}(x)2x}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
+- \left[\frac{-1}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
+\end{equation*}
+</div>Similarly,<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2}}{\partial y^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(\vec{F}\)</span> is the velocity of fluid and <span class="process-math">\((\vec{F}\cdot \hat{n})\,ds\)</span> denotes the amount of fluid passing normally through the surface element  <span class="process-math">\(\,ds\)</span> per unit time. [If <span class="process-math">\(\iint\limits_{s}\left(\vec{F}\cdot \hat{n}\right)\,ds = 0\text{,}\)</span> then <span class="process-math">\(\vec{F}\)</span> is said to be a solenoidal vector].</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left[\frac{+3y^{2}}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
+- \left[\frac{-1}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
+\end{equation*}
+</div>also,<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial^{2}}{\partial z^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-surf_int.html#p-114" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left[\frac{3(x^{2}+y^{2}+z^{2})}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
+- \left[\frac{3}{(x^{2}+y^{2}+z^{2})^{3/2}}\right] = 0. 
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para">Let<div class="displaymath process-math">
+\begin{equation*}
+\vec{r}=x\hat{i}+y\hat{J}+z\hat{k}\text{,}
+\end{equation*}
+</div>so that<div class="displaymath process-math">
+\begin{equation*}
+r^{2}=x^{2}+y^{2}+z^{2}
+\end{equation*}
+</div>also, suppose <span class="process-math">\(r^{2}=\phi\)</span> and <span class="process-math">\(\vec{r}=\vec{F}\text{.}\)</span>  Then as<div class="displaymath process-math">
+\begin{equation*}
+\vec{\nabla}\times\left(\phi\vec{F}\right) 
+= \left(\vec{\nabla \phi}\right)\times \vec{F} 
++\phi \left(\vec{\nabla} \times \vec{F}\right)
+\end{equation*}
+</div>we have<div class="displaymath process-math">
+\begin{equation*}
+\vec{\nabla}\times \left(\frac{\vec{r}}{r^{2}}\right)
+= \vec{\nabla}\left(\frac{1}{r^{2}}\right)\times \vec{r}  
++ \frac{1}{r^{2}}\left(\vec{\nabla}\times \vec{r}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[\vec{\nabla}\left(\frac{1}{x^{2}+y^{2} +z^{2}}\right)\right]
+\times (x\hat{i}+y\hat{J}+z\hat{k})
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++\frac{1}{x^{2}+y^{2}+z^{2}}\left[\vec{\nabla} 
+\times (x^{2}+y^{2}+z^{2})\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[\left(\hat{i}\frac{\partial}{\partial x} 
++\hat{j}\frac{\partial}{\partial y} 
++\hat{k}\frac{\partial}{\partial z}\right) 
+\left(\frac{1}{x^{2}+y^{2}+z^{2}}\right)\right] 
+\times  (x\hat{i}+y\hat{J}+z\hat{k}) +0
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{-2}{(x^{2}+y^{2}+z^{2})^{2}}(x\hat{i}+y\hat{J}+z\hat{k}) 
+\times (x\hat{i}+y\hat{J}+z\hat{k})=0.
+\end{equation*}
+</div>
+</div></li>
+</ol></div>
+<span class="incontext"><a href="sec_first-examplesA.html#p-114" class="internal">in-context</a></span>
 </body>
 </html>

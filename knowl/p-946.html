@@ -15,14 +15,25 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}_{s}^{-1}\{e^{-\pi x}\} =F_{s}(s) = \frac{2}{\pi}\int\limits_{0}^{\infty}e^{-\pi s}\sin sx\,ds 
+\mathscr{F}\{f(x)\} = F(s) = \int\limits_{0}^{t}f(x) \frac{\sin n\pi x}{l}\,dx
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{2}{\pi}\frac{x}{\pi^{2}+x^{2}} = \frac{2x}{\pi(\pi^{2}+x^{2})}. 
+=	\int\limits_{0}^{4}x^{2} \frac{\sin n\pi x}{4}\,dx
 \end{equation*}
 </div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[-\frac{4}{n\pi}x^{2}\cos \frac{n\pi x}{4}\right]_{0}^{4}+ \int\limits_{0}^{4}2x\frac{4}{n\pi}\cos \frac{n\pi x}{4}\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-\frac{4^{3}}{n\pi}\cos n\pi+ \frac{8}{n\pi}\left[\frac{4x}{n\pi} \sin \frac{n\pi x}{4}+ \frac{4^{2}}{n^{2}\pi^{2}}\cos \frac{n\pi x}{4}\right]_{0}^{4}
+\end{equation*}
+</div>
+<div class="para">similarly Fourier cosine transform can be obtained.</div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesA.html#p-946" class="internal">in-context</a></span>
 </body>

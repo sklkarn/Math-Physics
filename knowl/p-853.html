@@ -13,13 +13,65 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Triangular wave is given by</div>
+<div class="para">Here, <span class="process-math">\(2c=1,\)</span> <span class="process-math">\(\therefore c = 1/2\text{.}\)</span>
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \begin{cases} 
-2at/T,  \quad \text{for} \quad  0 \lt t \lt T/2\\ 
-2a(T-t)/T,  \quad \text{for} \quad   T/2 \lt t \lt T. 
-\end{cases} 
+a_{0}= \frac{1}{c}\int\limits_{-c}^{c}f(x) \,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{1/2}\left[\int\limits_{-1/2}^{0}\left( \frac{1}{2}+x\right) \,dx + \int\limits_{0}^{1/2}\left( \frac{1}{2}+x\right) \,dx\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=2\left[\left\{\frac{x}{2}+\frac{x^{2}}{2}\right\}_{-1/2}^{0} +  \left\{\frac{x}{2}-\frac{x^{2}}{2}\right\}_{0}^{1/2}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=2\left[\frac{1}{2}\left\{+\frac{1}{2}-\frac{1}{4}\right\} +\frac{1}{2}\left\{\frac{1}{2}-\frac{1}{4}\right\}\right] = \frac{1}{2}.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{n}=	\frac{1}{c}\int\limits_{-c}^{c}f(x)\cos \left(\frac{n\pi x}{c}\right) \,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 2\left[\int\limits_{-1/2}^{0}\left( \frac{1}{2}+x\right)\cos \left(\frac{n\pi x}{1/2}\right) \,dx \right.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left.+ \int\limits_{0}^{1/2}\left( \frac{1}{2}-x\right)\cos \left(\frac{n\pi x}{1/2}\right) \,dx\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=	2\left[\int\limits_{-1/2}^{0}\left( \frac{1}{2}+x\right)\cos 2n\pi x\,dx +\int\limits_{0}^{1/2}\left( \frac{1}{2}-x\right)\cos 2n\pi x\,dx\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{\pi^{2}}\left[\frac{1}{n^{2}}-\frac{(-1)^{n}}{n}\right] 
+=\begin{cases} 
+\frac{2}{n^{2}\pi^{2}}, &amp; \text{if n is odd}\\ 
+0,  &amp; \text{if n is even}. 
+\end{cases}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+b_{n}=	\frac{1}{c}\int\limits_{-c}^{c}f(x)\sin \left(\frac{n\pi x}{c}\right) \,dx =0
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore f(x) = \frac{1}{4}+\frac{2}{\pi^{2}}\left[\frac{\cos \pi x}{1^{2}}+\frac{\cos 3\pi x}{3^{2}}+\frac{\cos 5\pi x}{5^{2}}+\cdots\right]
 \end{equation*}
 </div>
 </div>

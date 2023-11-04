@@ -11,58 +11,19 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">The boundary conditions are</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
+<div class="para">A rod of length <span class="process-math">\(\lambda\)</span> with insulated sides is initially at a uniform temperature <span class="process-math">\(u\text{.}\)</span> Its ends are suddenly cooled to  <span class="process-math">\(0^{o} C\)</span> and maintained at this temperature. Prove that the temperature function <span class="process-math">\(u\)</span> is given by</div>
+<div class="displaymath process-math">
 \begin{equation*}
-u(0,y)=0=u(\lambda,y)=u(x,\infty)
+u(x,t) =  \sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}}.
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
+<div class="para">where <span class="process-math">\(b_{n} \)</span> is determined from the equation</div>
+<div class="displaymath process-math">
 \begin{equation*}
-u(x,0)=f(x).
+u_{o}= \sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{\lambda}.
 \end{equation*}
-</div>
-<div class="para">The steady state heat equation is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation}
-\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} =0 \tag{7.4.14}
-\end{equation}
-</div>
-<div class="para">Let</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation}
-u(x,y)=X(x)Y(y)  \tag{7.4.15}
-\end{equation}
-</div>
-<div class="para">be the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-std_heat1.html" title="Equation 7.4.14">(7.4.14)</a>. Substituting of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-std_heat2.html" title="Equation 7.4.15">(7.4.15)</a> into eqn. <a href="" class="xref" data-knowl="./knowl/eqn-std_heat1.html" title="Equation 7.4.14">(7.4.14)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation*}
-Y\frac{\partial^{2}X}{\partial x^{2}} +X\frac{\partial^{2}Y}{\partial y^{2}} =0 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation}
-\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =-\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}} = -p^{2} \quad \text{(say)} \tag{7.4.16}
-\end{equation}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation*}
-\therefore,  X=A\cos px +B\sin px 	
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation*}
-Y=Ce^{py}+De^{-py} 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation}
-\therefore \quad u(x,y) = \left(A\cos px+B\sin px\right)\left(Ce^{py}+De^{-py}\right) \tag{7.4.17}
-\end{equation}
 </div>
 </div>
 <span class="incontext"><a href="sec_seventh-examplesB.html#p-1211" class="internal">in-context</a></span>

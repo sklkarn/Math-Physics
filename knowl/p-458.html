@@ -13,26 +13,66 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Assume</div>
-<ol class="lower-roman">
-<li><div class="para">
-<span class="process-math">\(y_{1}=e^{mx}\)</span> be a known integral of C.F.  if <span class="process-math">\(m^{2}+mP+Q=0\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(y_{1}=e^{x}\)</span> be a known integral of C.F.  if <span class="process-math">\(1+P+Q=0 \text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(y_{1}=e^{-x} \)</span> be a known integral of C.F.  if <span class="process-math">\(1-P+Q=0\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(y_{1}=x \)</span> be a known integral of C.F.  if <span class="process-math">\(P+Qx=0\text{.}\)</span>
-</div></li>
-<li><div class="para">
-<span class="process-math">\(y_{1}=x^{2}\)</span> be a known integral of C.F.  if <span class="process-math">\(2+2Px+Qx^{2}=0 \text{.}\)</span>
-</div></li>
-<li><div class="para">and put <span class="process-math">\(y=vy_{1}\)</span> be the solution of corresponding homogeneous differential equation. Where <span class="process-math">\(v\)</span> is any parameter depends on <span class="process-math">\(x\text{.}\)</span>
-</div></li>
-</ol>
+<div class="para">If <span class="process-math">\(m_{1} = m_{2} =m \)</span> then from case I, <span class="process-math">\(y=(C_{1}+C_{2})e^{mx} =Ce^{mx}\text{.}\)</span> Where C is only one constant in this solution. But the order of given equation is two the solution must contain two constants in order to satisfy the given equation. Hence we have to seek its solution by another way. Let’s write equation <a href="" class="xref" data-knowl="./knowl/eqn-diffsol14.html" title="Equation 4.1.14">(4.1.14)</a> in the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+(D-m)(D-m)y=0
+\end{equation*}
+</div>
+<div class="para">put</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+(D-m)y=z 
+\end{equation*}
+</div>
+<div class="para">then,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+(D-m)z=0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+Dz-mz=0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+\frac{\,dz}{\,dx}-mz=0 \quad\Rightarrow z=Ae^{mx}
+\end{equation*}
+</div>
+<div class="para">Thus,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+(D-m)y=Ae^{mx}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+\frac{\,dy}{\,dx}-my=Ae^{mx}.
+\end{equation*}
+</div>
+<div class="para">which is an inhomogenous first order linear differential equation. whose integrating factor is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+I.F. = e^{\int P\,dx}=e^{-mx}
+\end{equation*}
+</div>
+<div class="para">Hence, the solution of this differential equation is given by equation <a href="" class="xref" data-knowl="./knowl/eqn-diffsol11.html" title="Equation 4.1.11">(4.1.11)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+ye^{-mx} = \int Ae^{mx}\cdot e^{-mx}\,dx+B = \int A\,dx+B=Ax+B 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+\begin{equation*}
+\therefore  \quad y=(Ax+B)e^{mx}.
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="subsec-second_order-diff.html#p-458" class="internal">in-context</a></span>
 </body>

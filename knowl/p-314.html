@@ -13,101 +13,75 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">We know that the secular equation is <span class="process-math">\(|A-\lambda I|=0,\)</span> i.e.,</div>
-<div class="displaymath process-math">
+<div class="para">Let <span class="process-math">\(A\)</span> be a unitary matrix. Hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
+\begin{equation}
+A^{\dagger}A = AA^{\dagger} =I  \tag{2.6.3}
+\end{equation}
+</div>
+<div class="para">If <span class="process-math">\(\lambda\)</span> be an eigen value of the matrix <span class="process-math">\(A\)</span> and <span class="process-math">\(X\)</span> is its eigen vector then from characteristic equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
+\begin{equation}
+AX=\lambda X \tag{2.6.4}
+\end{equation}
+</div>
+<div class="para">on taking the transpose conjugate of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-eigen5.html" title="Equation 2.6.4">(2.6.4)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
 \begin{equation*}
-\begin{vmatrix} 
-2-\lambda &amp; -1 &amp; 1 \\ 
--1 &amp; 2-\lambda &amp; -1 \\ 
-1 &amp; -1 &amp; 2-\lambda 
-\end{vmatrix} =0 
+(AX)^{\dagger}=(\lambda X)^{\dagger}
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
+\begin{equation}
+X^{\dagger}A^{\dagger}= \bar{\lambda}X^{\dagger}  \tag{2.6.5}
+\end{equation}
+</div>
+<div class="para">on multiplying eqns. <a href="" class="xref" data-knowl="./knowl/eqn-eigen5.html" title="Equation 2.6.4">(2.6.4)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-eigen6.html" title="Equation 2.6.5">(2.6.5)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
 \begin{equation*}
-(2-\lambda)[(2-\lambda)(2-\lambda)-1]-1[-1+1(2-\lambda)] +1[1-(2-\lambda)]=0
+(X^{\dagger}A^{\dagger})(AX)= (\bar{\lambda}X^{\dagger})(\lambda X)
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
 \begin{equation*}
-(2-\lambda)[(4-4\lambda + \lambda^{2}-1]-1[-1+2-\lambda] +1[1-2+\lambda]=0
+X^{\dagger}(A^{\dagger}A)X= (\lambda\bar{\lambda})(X^{\dagger} X)
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
 \begin{equation*}
-(2-\lambda)[ \lambda^{2}-4\lambda +3]-(1-\lambda) +(\lambda -1)=0
+X^{\dagger}X = (\lambda\bar{\lambda})(X^{\dagger} X)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
+\begin{equation}
+(1-\lambda\bar{\lambda})X^{\dagger} X =0    \tag{2.6.6}
+\end{equation}
+</div>
+<div class="para">Since <span class="process-math">\(X\)</span> is an eigen vector, it is a non - zero vector. Hence, <span class="process-math">\(X^{\dagger} X \neq 0\text{.}\)</span> Therefore, frome eqn. <a href="" class="xref" data-knowl="./knowl/eqn-eigen7.html" title="Equation 2.6.6">(2.6.6)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
+\begin{equation*}
+1-\lambda\bar{\lambda} = 0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
+\begin{equation*}
+\Rightarrow \lambda\bar{\lambda} = 1
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
 \begin{equation*}
-2 \lambda^{2}- \lambda^{3}-8\lambda +4 \lambda^{2}+6 - 3 \lambda-1+\lambda +\lambda -1=0
+|\lambda|^{2} = 1
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen5.html ./knowl/eqn-eigen5.html ./knowl/eqn-eigen6.html ./knowl/eqn-eigen7.html">
 \begin{equation*}
-6 \lambda^{2}- \lambda^{3}-9\lambda +4=0
+\therefore  \vert\lambda \vert = 1 \hspace{3pt} proved.
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\lambda^{3}- 6 \lambda^{2}+ 9\lambda - 4=0
-\end{equation*}
-</div>
-<div class="para">Now from zero method, <span class="process-math">\(\lambda = 1\)</span> satisfies the above equation. Hence we can write the above equation as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\lambda^{3}- \lambda^{2} -5\lambda^{2}+ 5\lambda +4\lambda - 4=0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\lambda^{2}(\lambda-1)-5\lambda (\lambda-1) + 4(\lambda-1)=0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-(\lambda-1)(\lambda^{2}-5\lambda + 4)=0\quad \Rightarrow \lambda = 1,1,4
-\end{equation*}
-</div>
-<div class="para">Hence the eigen values are <span class="process-math">\(\lambda_{1} = 1\text{,}\)</span>  and <span class="process-math">\(\lambda_{2} = 4\text{.}\)</span> The eigen vector associated with <span class="process-math">\(\lambda_{1} = 1\)</span> is given by <span class="process-math">\((A-\lambda I)X = 0\text{,}\)</span> i.e.,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{bmatrix} 
-1 &amp; -1 &amp; 1 \\ -1 &amp; 1 &amp; -1 \\ 1 &amp; -1 &amp; 1 
-\end{bmatrix}  \begin{bmatrix} 
-x_{1}\\x_{2}\\x_{3} 
-\end{bmatrix} = \begin{bmatrix} 
-0\\0\\0 
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">this gives</div>
-<div class="displaymath process-math">
-\begin{equation*}
-x_{1} - x_{2}+x_{3}=0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
--x_{1} + x_{2} - x_{3}=0  
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-x_{1} - x_{2}+x_{3}=0
-\end{equation*}
-</div>
-<div class="para">on solving these, we get -</div>
 </div>
 <span class="incontext"><a href="sec_second-examplesC.html#p-314" class="internal">in-context</a></span>
 </body>

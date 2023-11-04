@@ -13,24 +13,72 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We have  <span class="process-math">\(\,curl\vec{v}=0\text{,}\)</span> or,  <span class="process-math">\(\vec{\bigtriangledown}\times\vec{v}=0\text{,}\)</span> or,</div>
+<div class="para">We have</div>
 <div class="displaymath process-math">
-\begin{equation*}
-{\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+\begin{align*}
+\vec{\nabla}\times\left(\phi\vec{F}\right)\amp 
+=  \vec{\nabla}\times\left(\phi\vec{F_{1}\hat{i}} 
++\phi\vec{F_{2}\hat{j}}+\phi\vec{F_{3}\hat{k}}\right)\\
+\amp = {det\begin{bmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
 \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
-x+y+az &amp; bx+3y-z &amp; 3x+cy+z 
-\end{vmatrix}} = 0
+\phi F_{1} &amp; \phi F_{2} &amp; \phi F_{3} \end{bmatrix}}\\
+\amp  =\left[\frac{\partial}{\partial y}\left(\phi F_{3}\right) 
+-\frac{\partial}{\partial z}\left(\phi F_{2}\right)\right]\hat{i}\\
+\amp \quad -\left[\frac{\partial}{\partial x}\left(\phi F_{3}\right) 
+-\frac{\partial}{\partial z}\left(\phi F_{1}\right)\right]\hat{j}\\
+\amp \quad +\left[\frac{\partial}{\partial x}\left(\phi F_{2}\right) 
+-\frac{\partial}{\partial y}\left(\phi F_{1}\right)\right]\hat{k} 
+\end{align*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[\phi\frac{\partial F_{3}}{\partial y} 
++F_{3}\frac{\partial \phi}{\partial y}-\phi\frac{\partial F_{2}}{\partial z} 
+-F_{2}\frac{\partial \phi}{\partial z}\right]\hat{i}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-or, \quad (c+1)\hat{i}-(3-a)\hat{j}+(b-1)\hat{k} = 0.\hat{i}+0.\hat{j}+0.\hat{k} 
+-\left[\phi\frac{\partial F_{3}}{\partial x}+F_{3}\frac{\partial \phi}{\partial x} 
+-\phi\frac{\partial F_{1}}{\partial z}-F_{1}\frac{\partial \phi}{\partial z}\right]\hat{j}
 \end{equation*}
 </div>
-<div class="para">now, equating the coefficients of <span class="process-math">\(\hat{i}\text{,}\)</span> <span class="process-math">\(\hat{j}\text{,}\)</span> <span class="process-math">\(\hat{k}\text{,}\)</span> we get-</div>
 <div class="displaymath process-math">
 \begin{equation*}
-c+1=0  \Rightarrow c=-1, \quad  3-a=0  \Rightarrow a=3,\quad \text{and}\quad b-1=0  \Rightarrow b=1.
++\left[\phi\frac{\partial F_{2}}{\partial x}+F_{2}\frac{\partial \phi}{\partial x} 
+-\phi\frac{\partial F_{1}}{\partial y}-F_{1}\frac{\partial \phi}{\partial y}\right]\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\phi \left[\left(\frac{\partial F_{3}}{\partial y} 
+-\frac{\partial F_{2}}{\partial z}\right)\hat{i}+\left(\frac{\partial F_{1}}{\partial z} 
+-\frac{\partial F_{3}}{\partial x}\right)\hat{j}+\left(\frac{\partial F_{2}}{\partial x} 
+-\frac{\partial F_{1}}{\partial y}\right)\right]\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++ \left[\left(F_{3}\frac{\partial \phi}{\partial y} 
+-F_{2}\frac{\partial \phi}{\partial z}\right)\hat{i} 
++\left(F_{1}\frac{\partial \phi}{\partial z} 
+-F_{3}\frac{\partial \phi}{\partial x}\right)\hat{j} 
++\left(F_{3}\frac{\partial \phi}{\partial x} 
+-F_{3}\frac{\partial \phi}{\partial y}\right)\right]\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\phi \left(\vec{\nabla}\times\vec{F}\right) 
++{\begin{Vmatrix} \hat{i} &amp; \hat{j}  &amp; \hat{k} \\ 
+\frac{\partial \phi}{\partial x}  &amp; \frac{\partial \phi}{\partial y}  &amp; \frac{\partial \phi}{\partial z}\\ 
+F_{1}  &amp; F_{2}  &amp;  F_{3} \end{Vmatrix}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=  \left(\vec{\nabla}\phi\times\vec{F}\right) 
++ \phi\left(\vec{\nabla}\times\vec{F}\right)
 \end{equation*}
 </div>
 </div>

@@ -11,15 +11,43 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">A string is stretched between two points (0,0) and (l,0) and then released at rest from the positions  <span class="process-math">\(y=a\sin \frac{\pi x}{l}\text{.}\)</span> Show that the displacement of any point at a distance  <span class="process-math">\(x\)</span> from one end at a time <span class="process-math">\(t\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="para">Now from equation <a href="" class="xref" data-knowl="./knowl/eqn-cir_memb15.html" title="Equation 7.1.72">(7.1.72)</a> and the boundary condition when <span class="process-math">\(t=0\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cir_memb15.html ./knowl/eqn-cir_memb16.html ./knowl/eqn-cir_memb17.html ./knowl/eqn-cir_memb15.html">
 \begin{equation*}
-y(x,t) = a\sin (\frac{\pi x}{l})\cos (\frac{\pi vt}{l}).
+u(r,0)= \sum\limits_{n=1}^{\infty}A_{n}J_{o}(k_{n}r)=f(r)
 \end{equation*}
 </div>
+<div class="para">
+<span class="process-math">\([\because   f(r,\theta)\)</span>   becomes <span class="process-math">\(f(r)\)</span> when it is independent of <span class="process-math">\(\theta\)</span>]. Therefore <span class="process-math">\(A'_{n}s\)</span>  must be the coefficient of Fourier - Bessel series, which represents <span class="process-math">\(f(r)\)</span> in terms of <span class="process-math">\(J_{o}(k_{n}r) \)</span> i.e.,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cir_memb15.html ./knowl/eqn-cir_memb16.html ./knowl/eqn-cir_memb17.html ./knowl/eqn-cir_memb15.html">
+\begin{equation}
+A_{n}=\frac{2}{a^{2}J_{1}(k_{n}a)}\int\limits_{0}^{a}rf(r)J_{o}(k_{n}r)\,dr\tag{7.1.73}
+\end{equation}
 </div>
-<span class="incontext"><a href="sec_seventh-examplesA.html#p-1149" class="internal">in-context</a></span>
+<div class="para">Also, from</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cir_memb15.html ./knowl/eqn-cir_memb16.html ./knowl/eqn-cir_memb17.html ./knowl/eqn-cir_memb15.html">
+\begin{equation*}
+\left(\frac{\partial u}{\partial t}\right)_{t=0}=g(r,\theta),
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cir_memb15.html ./knowl/eqn-cir_memb16.html ./knowl/eqn-cir_memb17.html ./knowl/eqn-cir_memb15.html">
+\begin{equation*}
+u(r,0)=\sum\limits_{n=1}^{\infty}vk_{n}B_{n}J_{o}(k_{n}r)=g(r), 
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\(g\)</span>  being independent of <span class="process-math">\(\theta\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-cir_memb15.html ./knowl/eqn-cir_memb16.html ./knowl/eqn-cir_memb17.html ./knowl/eqn-cir_memb15.html">
+\begin{equation}
+B_{n}=\frac{2}{vk_{n}a^{2}J^{2}_{1}(k_{n}a)}\int\limits_{0}^{a}rg(r)J_{o}(k_{n}r)\,dr\tag{7.1.74}
+\end{equation}
+</div>
+<div class="para">Substituting these values of <span class="process-math">\(A_{n}\)</span> and <span class="process-math">\(B_{n}\)</span> from equations <a href="" class="xref" data-knowl="./knowl/eqn-cir_memb16.html" title="Equation 7.1.73">(7.1.73)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-cir_memb17.html" title="Equation 7.1.74">(7.1.74)</a> in equation <a href="" class="xref" data-knowl="./knowl/eqn-cir_memb15.html" title="Equation 7.1.72">(7.1.72)</a>, we get the solution for the vibrations of circular membrane in the case when displacements are independent of <span class="process-math">\(\theta \text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="subsec-2Dwave_sol.html#p-1149" class="internal">in-context</a></span>
 </body>
 </html>

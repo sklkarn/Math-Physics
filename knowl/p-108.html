@@ -16,99 +16,84 @@
 <li><div class="para">
 <div class="displaymath process-math">
 \begin{equation*}
-\nabla^{2}\left(\frac{1}{r}\right) = \left(\frac{\partial^{2}}{\partial x^{2}} 
-+\frac{\partial^{2}}{\partial y^{2}} 
-+\frac{\partial^{2}}{\partial z^{2}}\right)\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right], 
-\end{equation*}
-</div>here,<div class="displaymath process-math">
-\begin{equation*}
-\nabla^{2} = \frac{\partial^{2}}{\partial x^{2}} 
-+\frac{\partial^{2}}{\partial y^{2}}+\frac{\partial^{2}}{\partial z^{2}}
-\end{equation*}
-</div>is a Laplacian operator. But,<div class="displaymath process-math">
-\begin{equation*}
-\frac{\partial}{\partial x}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
-= -\frac{1}{2}\left[\frac{1(2x)}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
-\end{equation*}
-</div>and<div class="displaymath process-math">
-\begin{equation*}
-\frac{\partial^{2}}{\partial x^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
-= \frac{\partial}{\partial x}\left[\frac{-x}{(x^{2}+y^{2}+z^{2})^{3/2}}\right] 
+\vec{\nabla}\times \left(\vec{\nabla}\phi\right) = \vec{\nabla}\times 
+\left(\frac{\partial \phi}{\partial x}\hat{i} 
++\frac{\partial \phi}{\partial y}\hat{j}+\frac{\partial \phi}{\partial z}\hat{k}\right) 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \left[\frac{+\frac{3}{2}(x)2x}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
-- \left[\frac{-1}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
-\end{equation*}
-</div>Similarly,<div class="displaymath process-math">
-\begin{equation*}
-\frac{\partial^{2}}{\partial y^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+= {\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+\frac{\partial \phi}{\partial x} &amp; \frac{\partial\phi}{\partial y} &amp; \frac{\partial \phi}{\partial z} 
+\end{Vmatrix}}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \left[\frac{+3y^{2}}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
-- \left[\frac{-1}{(x^{2}+y^{2}+z^{2})^{3/2}}\right]
-\end{equation*}
-</div>also,<div class="displaymath process-math">
-\begin{equation*}
-\frac{\partial^{2}}{\partial z^{2}}\left[\frac{1}{(x^{2}+y^{2}+z^{2})^{1/2}}\right] 
+=\left[\frac{\partial}{\partial y}\left(\frac{\partial \phi}{\partial z}\right) 
+-\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial y}\right)\right]\hat{i} 
++\left[\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial x}\right) 
+-\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial x}\right)\right]\hat{j}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \left[\frac{3(x^{2}+y^{2}+z^{2})}{(x^{2}+y^{2}+z^{2})^{5/2}}\right] 
-- \left[\frac{3}{(x^{2}+y^{2}+z^{2})^{3/2}}\right] = 0. 
++\left[\frac{\partial}{\partial x}\left(\frac{\partial \phi}{\partial y}\right) 
+-\frac{\partial}{\partial y}\left(\frac{\partial \phi}{\partial x}\right)\right]\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left(\frac{\partial^{2} \phi}{\partial y \partial z} 
+-\frac{\partial^{2} \phi}{\partial z \partial y}\right)\hat{i} 
++\left(\frac{\partial^{2} \phi}{\partial z \partial x} 
+-\frac{\partial^{2} \phi}{\partial x \partial z}\right)\hat{j} 
++\left(\frac{\partial^{2} \phi}{\partial x \partial y} 
+-\frac{\partial^{2} \phi}{\partial y \partial x}\right)\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=0
 \end{equation*}
 </div>
 </div></li>
-<li><div class="para">Let<div class="displaymath process-math">
+<li><div class="para">
+<div class="displaymath process-math">
 \begin{equation*}
-\vec{r}=x\hat{i}+y\hat{J}+z\hat{k}\text{,}
-\end{equation*}
-</div>so that<div class="displaymath process-math">
-\begin{equation*}
-r^{2}=x^{2}+y^{2}+z^{2}
-\end{equation*}
-</div>also, suppose <span class="process-math">\(r^{2}=\phi\)</span> and <span class="process-math">\(\vec{r}=\vec{F}\text{.}\)</span>  Then as<div class="displaymath process-math">
-\begin{equation*}
-\vec{\nabla}\times\left(\phi\vec{F}\right) 
-= \left(\vec{\nabla \phi}\right)\times \vec{F} 
-+\phi \left(\vec{\nabla} \times \vec{F}\right)
-\end{equation*}
-</div>we have<div class="displaymath process-math">
-\begin{equation*}
-\vec{\nabla}\times \left(\frac{\vec{r}}{r^{2}}\right)
-= \vec{\nabla}\left(\frac{1}{r^{2}}\right)\times \vec{r}  
-+ \frac{1}{r^{2}}\left(\vec{\nabla}\times \vec{r}\right)
+\vec{\nabla}\cdot \left(\vec{\nabla}\times\vec{A}\right) 
+= \vec{\nabla}\cdot {det\begin{bmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+A_{1} &amp; A_{2} &amp; A_{3} \end{bmatrix}}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\left[\vec{\nabla}\left(\frac{1}{x^{2}+y^{2} +z^{2}}\right)\right]
-\times (x\hat{i}+y\hat{J}+z\hat{k})
+= \vec{\nabla}\cdot \left\{\left[\frac{\partial A_{3}}{\partial y} 
+-\frac{\partial A_{2}}{\partial z}\right]\hat{i}+\left[\frac{\partial A_{1}}{\partial z} 
+-\frac{\partial A_{3}}{\partial x}\right]\hat{j}+\left[\frac{\partial A_{2}}{\partial x} 
+-\frac{\partial A_{1}}{\partial y}\right]\hat{k}\right\}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-+\frac{1}{x^{2}+y^{2}+z^{2}}\left[\vec{\nabla} 
-\times (x^{2}+y^{2}+z^{2})\right]
+=\frac{\partial}{\partial x}\left[\frac{\partial A_{3}}{\partial y} 
+-\frac{\partial A_{2}}{\partial z}\right] 
++\frac{\partial}{\partial y}\left[\frac{\partial A_{1}}{\partial z} 
+-\frac{\partial A_{3}}{\partial x}\right] 
++\frac{\partial}{\partial z}\left[\frac{\partial A_{2}}{\partial x} 
+-\frac{\partial A_{1}}{\partial y}\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\left[\left(\hat{i}\frac{\partial}{\partial x} 
-+\hat{j}\frac{\partial}{\partial y} 
-+\hat{k}\frac{\partial}{\partial z}\right) 
-\left(\frac{1}{x^{2}+y^{2}+z^{2}}\right)\right] 
-\times  (x\hat{i}+y\hat{J}+z\hat{k}) +0
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{-2}{(x^{2}+y^{2}+z^{2})^{2}}(x\hat{i}+y\hat{J}+z\hat{k}) 
-\times (x\hat{i}+y\hat{J}+z\hat{k})=0.
+=\frac{\partial^{2}A_{3}}{\partial x\partial y} 
+-\frac{\partial^{2}A_{2}}{\partial x\partial z} 
++\frac{\partial^{2}A_{1}}{\partial y\partial z} 
+-\frac{\partial^{2}A_{3}}{\partial y\partial x} 
++\frac{\partial^{2}A_{2}}{\partial z\partial x} 
+-\frac{\partial^{2}A_{1}}{\partial z\partial y}=0.
 \end{equation*}
 </div>
 </div></li>

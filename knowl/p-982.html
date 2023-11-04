@@ -11,26 +11,45 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/Lap_Q1.html">
+<div class="para">Let</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\because \quad \cos2t = 2\cos^{2}t-1; \quad  \therefore \cos^{2}t= \frac{1}{2}[\cos 2t+1]
+\phi (t) = \int\limits_{0}^{t}f(t)\,dt 
 \end{equation*}
 </div>
-<div class="para">Now,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/Lap_Q1.html">
+<div class="para">then</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[\cos^{2}t]= \int\limits_{0}^{\infty}e^{-st}\cos^{2}t\,dt 
+\phi' (t) = \frac{\,d}{\,dt}\left[\int\limits_{0}^{t}f(t)\,dt\right] =f(t) 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/Lap_Q1.html">
+<div class="para">and</div>
+<div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{2}\int\limits_{0}^{\infty}e^{-st}[\cos 2t+1] =\frac{1}{2}[ \frac{1}{s}+ \frac{s}{s^{2}+4}].
+\phi (0) =  \int\limits_{0}^{0}f(t)\,dt=0
 \end{equation*}
 </div>
-<div class="para">(see problem <a href="" class="xref" data-knowl="./knowl/Lap_Q1.html" title="Example 6.4.1">Example 6.4.1</a>)</div>
+<div class="para">Now</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[\phi' (t)]=s\mathscr{L}[\phi (t)]-\phi (0)=s\mathscr{L}[\phi (t)]
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_sixth-examplesB.html#p-982" class="internal">in-context</a></span>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[\phi (t)]=\frac{1}{s}\mathscr{L}[\phi' (t)]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}\left[\int\limits_{0}^{t}f(t)\,dt\right] = \frac{1}{s}\mathscr{L}[f(t)]=\frac{1}{s}F(s)
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="subsec-derv_LT.html#p-982" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,16 +13,47 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">If the three vectors <span class="process-math">\(\vec{a}\text{,}\)</span> <span class="process-math">\(\vec{b}\text{,}\)</span> and <span class="process-math">\(\vec{c}\)</span> are non-coplanar, i.e., <span class="process-math">\([\vec{a}\vec{b}\vec{c}] \neq 0,\)</span> and the vectors <span class="process-math">\(\vec{a'}\text{,}\)</span> <span class="process-math">\(\vec{b'}\text{,}\)</span> and <span class="process-math">\(\vec{c'}\)</span> are defind as</div>
+<div class="para">
+<dfn class="terminology">Definition:</dfn>  Let <span class="process-math">\(\vec{a}\text{,}\)</span> <span class="process-math">\(\vec{b}\text{,}\)</span> and <span class="process-math">\(\vec{c}\)</span> be three vectors then their scalar triple product is determined by <span class="process-math">\(\vec{a}\cdot{(\vec{b}\times\vec{c})}\)</span> and <span class="process-math">\([\vec{a}\vec{b}\vec{c}]\text{.}\)</span> If <span class="process-math">\(\vec{a} = a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}\)</span> <span class="process-math">\(\vec{b} = b_{1}\hat{i}+b_{2}\hat{j}+ b_{3}\hat{k}, \)</span> and <span class="process-math">\(\vec{c} = c_{1}\hat{i}+c_{2}\hat{j}+ c_{3}\hat{k}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{align*}
+\vec{a}\cdot{(\vec{b}\times\vec{c})}  \amp = (a_{1}\hat{i}+a_{2}\hat{j} 
++ a_{3}\hat{k})  \cdot{\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ b_{1} &amp; 
+b_{2} &amp; b_{3}\\c_{1} &amp; c_{2} &amp; c_{3} \end{Vmatrix}}
+\end{align*}
+</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\vec{a'} = \frac{\vec{b}\times\vec{c}}{[\vec{a}\vec{b}\vec{c}]}; \quad \vec{b'} 
-= \frac{\vec{c}\times\vec{a}}{[\vec{a}\vec{b}\vec{c}]}; \quad \text{and}\quad \vec{c'} 
-= \frac{\vec{a}\times\vec{b}}{[\vec{a}\vec{b}\vec{c}]}
+=(a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) 
 \end{equation*}
 </div>
-<div class="para">then the vectors <span class="process-math">\(\vec{a}\text{,}\)</span> <span class="process-math">\(\vec{b}\text{,}\)</span> <span class="process-math">\(\vec{c}\)</span> and  <span class="process-math">\(\vec{a'}\text{,}\)</span> <span class="process-math">\(\vec{b'}\text{,}\)</span> <span class="process-math">\(\vec{c'}\)</span> are called the reciprocal sets of vectors.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\cdot [(b_{2}c_{3}-b_{3}c_{2})\hat{i} - (b_{1}c_{3}-b_{3}c_{1})\hat{j} + (b_{1}c_{2}-b_{2}c_{1})\hat{k}]
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-recvec.html#p-39" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+=a_{1}(b_{2}c_{3}-b_{3}c_{2}) + a_{2}(b_{3}c_{1}-b_{1}c_{3}) + a_{3}(b_{1}c_{2}-b_{2}c_{1})
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\begin{Vmatrix} a_{1} &amp; a_{2} &amp; a_{3} \\ b_{1} &amp; b_{2} &amp; b_{3}\\ c_{1} &amp; c_{2} &amp; c_{3} \end{Vmatrix} 
+= [\vec{a}\vec{b}\vec{c}]
+\end{equation*}
+</div>
+<div class="para">From the properties of a determinant, we can find that the value of the product depends upon the cyclic order of the vectors and is independent of the position of the dot and cross. Thus, dot and cross may be interchangeable in a scalar triple product, i.e.,</div>
+<div class="displaymath process-math">
+\begin{align*}
+[\vec{a}\vec{b}\vec{c}] \amp  = [\vec{c}\vec{a}\vec{b}] = [\vec{b}\vec{c}\vec{a}]\\
+\text{or,}\quad \vec{a}\cdot{(\vec{b}\times\vec{c})} \amp = \vec{c}\cdot{(\vec{a}\times\vec{b})} 
+= \vec{b}\cdot{(\vec{c}\times\vec{a})}
+\end{align*}
+</div>
+<div class="para">The value of product changes in sign if the order is non-cyclic, i.e., <span class="process-math">\([\vec{a}\vec{b}\vec{c}] = -[\vec{b}\vec{a}\vec{c}] = -[\vec{a}\vec{c}\vec{b}]\)</span>
+</div>
+</div>
+<span class="incontext"><a href="subsec-sctrip.html#p-39" class="internal">in-context</a></span>
 </body>
 </html>

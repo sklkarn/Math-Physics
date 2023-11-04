@@ -13,106 +13,82 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+<div class="para">On solving these we get -</div>
+<div class="displaymath process-math">
 \begin{equation*}
-A = \begin{bmatrix} 
-\cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">The characteristic equation is <span class="process-math">\(|A-\lambda I|=0\text{,}\)</span> which gives the eigen values <span class="process-math">\(\lambda_{1} = e^{i\theta},\)</span>  <span class="process-math">\(\lambda_{2} = e^{-i\theta}\text{.}\)</span> The corresponding eigen vector associated with <span class="process-math">\(\lambda_{1} = e^{i\theta}\)</span> and <span class="process-math">\(\lambda_{2} = e^{-i\theta}\)</span> are given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-X_{1}= \begin{bmatrix} 
-i\\1 
-\end{bmatrix}, 
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-X_{2}= \begin{bmatrix} 
-1\\i 
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">by setting <span class="process-math">\(c_{1}=1\)</span> in eqns. <a href="" class="xref" data-knowl="./knowl/eqn-eig_mat3.html" title="Equation 2.6.7">(2.6.7)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-eig_mat4.html" title="Equation 2.6.8">(2.6.8)</a>. Now a matrix that diagonalize <span class="process-math">\(A\)</span> is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-P = \begin{bmatrix} 
-X_{1} &amp; X_{2}  
-\end{bmatrix}	= \begin{bmatrix} 
-i &amp; 1 \\ 1 &amp; i 
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-P^{-1} =\frac{adj P}{|P|} =-\frac{1}{2}\begin{bmatrix} 
-i &amp; -1 \\ -1 &amp; i  
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">Hence a diagonal matrix is <span class="process-math">\(D =P^{-1}AP\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-or, \quad
-D = -\frac{1}{2} \begin{bmatrix} 
-i &amp; -1 \\ -1 &amp; i  
-\end{bmatrix} \begin{bmatrix} 
-\cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
-\end{bmatrix} \begin{bmatrix} 
-i &amp; 1 \\ 1 &amp; i  
-\end{bmatrix} 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-=\begin{bmatrix} 
-e^{i\theta} &amp; 0 \\ 0 &amp; e^{-i\theta}  
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-\therefore    D^{n}=  \begin{bmatrix} 
-e^{in\theta} &amp; 0 \\ 0 &amp; e^{-in\theta}  
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">But,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-D^{n} =  (P^{-1}AP)^{n} = (P^{-1}AP)(P^{-1}AP)  \cdots (P^{-1}AP)
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-= P^{-1}A^{n}P \Rightarrow  A^{n}=PD^{n}P^{-1}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
-\begin{equation*}
-\therefore A^{n} = -\frac{1}{2}\begin{bmatrix} 
-i &amp; 1 \\ 1 &amp; i  
-\end{bmatrix} \begin{bmatrix} 
-e^{in\theta} &amp; 0 \\ 0 &amp; e^{-in\theta} 
-\end{bmatrix} \begin{bmatrix} 
-i &amp; -1 \\ -1 &amp; i  
-\end{bmatrix}
+\frac{x_{1}}{1-1} = \frac{x_{2}}{-1+1} =\frac{x_{3}}{1-1} = k_{1}  \quad	 \text{(say)}
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x_{1}}{0} = \frac{x_{2}}{0} =\frac{x_{3}}{0} = k_{1}	
+\end{equation*}
+</div>
+<div class="para">Hence the required eigen vector corresponding to the eigen value <span class="process-math">\(\lambda_{1}=1\text{,}\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X_{1} = \begin{bmatrix} 
+x_{1}\\x_{2}\\x_{3} 
+\end{bmatrix}=\begin{bmatrix} 
+0\\0\\0 
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para">The eigen vector corresponding to the root, <span class="process-math">\(\lambda_{2}=4\)</span> is given by</div>
+<div class="displaymath process-math">
 \begin{equation*}
 \begin{bmatrix} 
-\cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
-\end{bmatrix}^{n} = \begin{bmatrix} 
-\cos n\theta  &amp; -\sin n \theta \\  \sin n\theta  &amp; \cos n\theta 
+2-4 &amp; -1 &amp; 1 \\ -1 &amp; 2-4 &amp; -1 \\ 1 &amp; -1 &amp; 2-4 
+\end{bmatrix} 
+\begin{bmatrix} 
+x_{1}\\x_{2}\\x_{3} 
+\end{bmatrix}=\begin{bmatrix} 
+0\\0\\0 
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 
+-2 &amp; -1 &amp; 1 \\ -1 &amp; -2 &amp; -1 \\ 1 &amp; -1 &amp; -2 
+\end{bmatrix} 
+\begin{bmatrix} 
+x_{1}\\x_{2}\\x_{3} 
+\end{bmatrix}=\begin{bmatrix} 
+0\\0\\0 
 \end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math">
+\begin{align*}
+-2x_{1} - x_{2}+x_{3}\amp =0 \\
+or, -x_{1} -2 x_{2} - x_{3} \amp =0\\
+and x_{1} - x_{2}-2x_{3} \amp =0
+\end{align*}
+</div>
+<div class="para">On solving these equations, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x_{1}}{4-1} = \frac{x_{2}}{-1-2} =\frac{x_{3}}{+1+2} = k_{2} \quad \text{(say)}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x_{1}}{3} = \frac{x_{2}}{-3} =\frac{x_{3}}{3} = k_{2}
+\end{equation*}
+</div>
+<div class="para">Hence an eigen vector corresponding to the eigen value, <span class="process-math">\(\lambda_{2}=4\)</span>  will be</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X_{2} = \begin{bmatrix} 
+x_{1}\\x_{2}\\x_{3} 
+\end{bmatrix}=3k_{2}\begin{bmatrix} 
+1\\-1\\1 
+\end{bmatrix}.
 \end{equation*}
 </div>
 </div>

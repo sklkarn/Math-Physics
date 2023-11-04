@@ -11,24 +11,37 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="displaymath process-math">
+<div class="para">we have,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-nderv_LT1.html">
+\begin{equation}
+L[f'(t)]=sL[f(t)]-f(0)\tag{6.3.1}
+\end{equation}
+</div>
+<div class="para">replacing <span class="process-math">\(f(t)\)</span> by <span class="process-math">\(f'(t)\)</span> and <span class="process-math">\(f'(t)\)</span> by <span class="process-math">\(f''(t)\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-nderv_LT1.html" title="Equation 6.3.1">(6.3.1)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-nderv_LT1.html">
 \begin{equation*}
-\mathscr{L}(1+\cos2t)=\int\limits_{0}^{\infty}e^{-st}(1+\cos2t)\,dt 
+L[f''(t)]=sL[f'(t)]-f'(0) = s\{sL[f(t)]-f(0)\}-f'(0) 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-nderv_LT1.html">
 \begin{equation*}
-= \int\limits_{0}^{\infty}e^{-st}.1\,dt + \int\limits_{0}^{\infty}e^{-st}\cos at\,dt
+=s^{2}L[f(t)]-sf(0)-f'(0)
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">Similarly,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-nderv_LT1.html">
 \begin{equation*}
-=\frac{1}{s}+ \frac{s}{s^{2}+2^{2}} = \frac{1}{s}+ \frac{s}{s^{2}+4}
+L[f'''(t)]=s^{3}L[f(t)]-s^{2}f(0)-sf'(0)-f''(0)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-nderv_LT1.html">
+\begin{equation*}
+\therefore  L[f^{n}(t)] =s^{n}L[f(t)]-s^{n-1}f(0)-s^{n-2}f' (0)-s^{n-3}f''(0) -\cdots-f^{n-1}(0).
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="sec_sixth-examplesB.html#p-980" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-derv_LT.html#p-980" class="internal">in-context</a></span>
 </body>
 </html>

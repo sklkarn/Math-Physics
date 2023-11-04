@@ -13,34 +13,50 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
-\begin{equation}
-\int\limits_{-\infty}^{\infty}\left(\frac{\sin sa\cos sx}{s}\right)\,ds 
-= \begin{cases}
-\pi, &amp; \text{if} \quad |x| \lt a  \\
-0, &amp; \text{if} \quad |x| \gt a
-\end{cases} \tag{6.2.2}
-\end{equation}
-</div>
-<div class="para">Also, if <span class="process-math">\(x=0, a=1,\)</span>  then from expression <a href="" class="xref" data-knowl="./knowl/eqn-ftrans2.html" title="Equation 6.2.2">(6.2.2)</a> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
+<div class="para">We have</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\int\limits_{-\infty}^{\infty}\frac{\sin s}{s}\,ds =\pi 
+\mathscr{F}\{f(x)\} = \int\limits_{-\infty}^{\infty}e^{-isx}f(x) \,dx
 \end{equation*}
 </div>
-<div class="para">[for <span class="process-math">\(|x| \lt a \Rightarrow 0 \lt 1,\)</span>  and <span class="process-math">\(\cos 0 =1\)</span>] Or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
+<div class="para">Now replace <span class="process-math">\(f(x)\)</span> by <span class="process-math">\(f'(x)\)</span> we get -</div>
+<div class="displaymath process-math">
 \begin{equation*}
-2\int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds =\pi
+\mathscr{F}\{f'(x)\} = \int\limits_{-\infty}^{\infty}e^{-isx}f'(x) \,dx 
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds=\frac{\pi}{2} 
+= \left.e^{-isx}f(x)\right\vert_{-\infty}^{\infty} + is \int\limits_{-\infty}^{\infty}f(x)e^{-isx}\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 0+is\mathscr{F}\{f(x)\}.
+\end{equation*}
+</div>
+<div class="para">[<span class="process-math">\(\because f(x) \rightarrow 0 \)</span> as <span class="process-math">\(x\rightarrow \pm \infty\)</span>] Also, generalising these for <span class="process-math">\(n^{th}\)</span> derivatives, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{F}\{f^{n}(x)\}   =  \mathscr{F}\{\frac{d^{n}f(x)}{\,dx^{n}}\}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \int\limits_{-\infty}^{\infty}\frac{d^{n}f(x)}{\,dx^{n}}e^{-isx}\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=  \left[\frac{d^{n-1}f(x)}{\,dx^{n-1}}e^{-isx}\right]_{-\infty}^{\infty} - \int\limits_{-\infty}^{\infty}\frac{d^{n-1}f(x)}{\,dx^{n-1}}e^{-isx}(-is)\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=0+is\int\limits_{-\infty}^{\infty}\frac{d^{n-1}f(x)}{\,dx^{n-1}}e^{-isx}(-is)\,dx = (is)^{1}\mathscr{F}\{\frac{d^{n-1}f(x)}{\,dx^{n-1}}\}
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="sec_sixth-examplesA.html#p-932" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-ftrans_deriv.html#p-932" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,10 +13,28 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Find the inverse Laplace Transfoem of the function,</div>
+<div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\log \left(1+\frac{\omega^{2}}{s^{2}}\right).
+\mathscr{L}^{-1}\left[\frac{1}{(s^{2}+1)}\right] = \sin t
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}^{-1}\left[\frac{1}{s(s^{2}+1)}\right] = \int\limits_{0}^{t}1.\sin t\,dt 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[-\cos t]_{0}^{t} = (-\cos t +1)
+\end{equation*}
+</div>
+<div class="para">i.e.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}^{-1}\left[\frac{1}{s(s^{2}+1)}\right] = 1-\cos t
 \end{equation*}
 </div>
 </div>

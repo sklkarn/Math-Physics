@@ -11,19 +11,23 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para"> If <span class="process-math">\(\vec{F}=F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}\)</span>  be the vector point function at a point in space then curl of <span class="process-math">\(\vec{F}\)</span> is defined as</div>
-<div class="displaymath process-math">
-\begin{align*}
-\,curl\vec{F} \amp = \vec{\nabla}\times \vec{F}\\
-\amp= \left(\hat{i}\frac{\partial}{\partial x}+ \hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\times \left(F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}\right)  \\
-\amp = {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\F_{1} &amp; F_{2} &amp; F_{3} \end{vmatrix}}\\
-\amp =\hat{i}\left(\frac{\partial F_{3}}{\partial y}-\frac{\partial F_{2}}{\partial z}\right)+\hat{j}\left(\frac{\partial F_{1}}{\partial z}-\frac{\partial F_{3}}{\partial x}\right)+\hat{k}\left(\frac{\partial F_{2}}{\partial x}-\frac{\partial F_{1}}{\partial y}\right) 
-\end{align*}
+<div class="para">If <span class="process-math">\(\phi (x,y,z)\)</span> be a scalar function at point <span class="process-math">\((x,y,z)\)</span> in space then <span class="process-math">\(\frac{\partial\phi}{\partial x}\)</span> is the rate of change of <span class="process-math">\(\phi\)</span> at <span class="process-math">\((x,yz)\)</span> in the direction of <span class="process-math">\(x\)</span>-axis and is called as the directional derivative of <span class="process-math">\(\phi\)</span> along <span class="process-math">\(x- axis\text{.}\)</span> Similarly, <span class="process-math">\(\frac{\partial\phi}{\partial y}\)</span>  and <span class="process-math">\(\frac{\partial\phi}{\partial z}\)</span> are the directional derivative of <span class="process-math">\(\phi\)</span> along <span class="process-math">\(y\)</span>- and <span class="process-math">\(z\)</span>-axes, respectively. The directional derivative of <span class="process-math">\(\phi\)</span>  at A along AB is defined as <span class="process-math">\(\frac{\partial\phi}{\partial r}\)</span> such that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-delphi.html">
+\begin{equation*}
+\frac{\partial\phi}{\partial r} = \frac{\partial\phi}{\partial n} \frac{\partial n}{\partial r} 
+= \frac{\partial\phi}{\partial n} cos\theta   =  \frac{\partial\phi}{\partial n} \hat{n} \cdot\hat{a} 
+=  \vec{ \nabla \phi}\cdot \hat{a}
+\end{equation*}
 </div>
-<div class="para">which is a vector quantity.</div>
+<div class="para">where <span class="process-math">\(\hat{a}\)</span> is the unit vector along \textbf{AB}, as shown in <a href="" class="xref" data-knowl="./knowl/fig-delphi.html" title="Figure 1.2.1">Figure 1.2.1</a>. Hence the directional derivative of function <span class="process-math">\(\phi\)</span> along the given direction is the projection of a gradient of that function along this direction, i.e.,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-delphi.html">
+\begin{equation*}
+\frac{\partial\phi}{\partial r}  = \text{projection of}\quad \vec{ \nabla \phi}\quad \text{along}\quad \hat{a}.
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-curl_vect.html#p-54" class="internal">in-context</a></span>
+</div>
+<span class="incontext"><a href="subsec-gradscf.html#p-54" class="internal">in-context</a></span>
 </body>
 </html>

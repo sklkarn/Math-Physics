@@ -11,25 +11,83 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">If a half - range series for a function  <span class="process-math">\(f(x)\)</span> is desired, then the function is generally defined in an open interval <span class="process-math">\([0.\pi]\text{,}\)</span> which is half of the interval <span class="process-math">\([-\pi, \pi]\)</span> and hence the name half - range. In this case the function <span class="process-math">\(f(x)\)</span> is expressed as an odd or even function. For interval (0,c)</div>
+<div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{0}= \frac{2}{c}\int\limits_{0}^{c}f(x)\,dx;
+f(x) =e^{-x} = 	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{o} = \frac{1}{\pi}\int\limits_{0}^{2\pi}f(x)\,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi}e^{-x}\,dx =  \frac{1}{\pi}\left[\frac{e^{-x}}{-1}\right]^{2\pi}_{0} 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{n}= \frac{2}{c}\int\limits_{0}^{c} f(x) \cos (\frac{n\pi x}{c}) \,dx; 
+= \frac{1}{\pi}\left[-e^{-2\pi}+1\right] = \frac{1-e^{-2\pi}}{\pi}.
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-b_{n}= \frac{2}{c}\int\limits_{0}^{c} f(x) \sin (\frac{n\pi x}{c}) \,dx
+a_{n} = \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\cos nx \,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi} e^{-x}\cos nx \,dx 
 \end{equation*}
 </div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{\pi}\left[\frac{e^{-x}}{1+n^{2}}(-\cos nx +n \sin nx)\right]_{0}^{2\pi}
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-fourier_sum.html#p-819" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{\pi(1+n^{2})}\left[e^{-x}(-\cos 2n\pi+n\sin 2n\pi) - e^{0}(-\cos 0+n\sin 0)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{\pi(1+n^{2})}\left[1-e^{-2\pi}\right].
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+b_{n} = \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\sin nx \,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi} e^{-x}\sin nx \,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{\pi}\left[\frac{e^{-x}}{1+n^{2}}(-\sin nx +n \cos nx)\right]_{0}^{2\pi}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{\pi (1+n^{2})}\left[e^{-2\pi}(-\sin 2n\pi - n \cos 2n \pi) - e^{0}(-\sin 0 - n\cos 0)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{n}{\pi (1+n^{2})}\left[e^{-2\pi}(-n) - e^{0}(-n)\right].
+\end{equation*}
+</div>
+<div class="para">From expression <span class="process-math">\(f(x)\text{,}\)</span> we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{-x} = \frac{1-e^{-2\pi}}{\pi} + \sum\limits_{n=1}^{\infty}\left[\frac{1-e^{-2\pi}}{\pi (1+n^{2})} \cos nx + \frac{1-e^{-2\pi}}{\pi (1+n^{2})}n \sin nx\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1-e^{-2\pi}}{\pi}\left[\frac{1}{2}+\left\{\frac{\cos x}{2}+\frac{\cos 2x}{5}+\cdots + \right\} \right.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left. + \left\{\frac{\sin x}{2}+\frac{2\sin 2x}{5}+\cdots + \right\}\right].
+\end{equation*}
+</div>
+<div class="para">which is the required Fourier series.</div>
+</div>
+<span class="incontext"><a href="sec_fifth-examplesA.html#p-819" class="internal">in-context</a></span>
 </body>
 </html>

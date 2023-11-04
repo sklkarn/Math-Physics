@@ -11,63 +11,56 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<ol class="upper-roman">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical"><ol class="lower-alpha">
 <li><div class="para">
-<dfn class="terminology">Definition:</dfn>  Let <span class="process-math">\(\vec{a}\text{,}\)</span> <span class="process-math">\(\vec{b}\text{,}\)</span> and <span class="process-math">\(\vec{c}\)</span> be three vectors then their scalar triple product is determined by <span class="process-math">\(\vec{a}\cdot{(\vec{b}\times\vec{c})}\)</span> and <span class="process-math">\([\vec{a}\vec{b}\vec{c}]\text{.}\)</span> If <span class="process-math">\(\vec{a} = a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}\)</span> <span class="process-math">\(\vec{b} = b_{1}\hat{i}+b_{2}\hat{j}+ b_{3}\hat{k}, \)</span> and <span class="process-math">\(\vec{c} = c_{1}\hat{i}+c_{2}\hat{j}+ c_{3}\hat{k}\)</span> then<div class="displaymath process-math">
+<dfn class="terminology">Commutative Law:</dfn><div class="displaymath process-math">
 \begin{align*}
-\vec{a}\cdot{(\vec{b}\times\vec{c})}  \amp = (a_{1}\hat{i}+a_{2}\hat{j} 
-+ a_{3}\hat{k})  \cdot{\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ b_{1} &amp; 
-b_{2} &amp; b_{3}\\c_{1} &amp; c_{2} &amp; c_{3} \end{vmatrix}}
+\vec{a}\cdot {\vec{b}} \amp = \vec{b}\cdot {\vec{a}}\\
+\because [\vec{a}\cdot {\vec{b}}\amp = ab\cos\theta] \quad \text{and} 
+[\vec{b}\cdot {\vec{a}} = ba\cos(-\theta) = ab\cos\theta ] \\
+\amp [\because \cos(-\theta) = \cos\theta ]\\
+\therefore \quad  \vec{a}\cdot {\vec{b}}\amp =\vec{b}\cdot {\vec{a}} 
 \end{align*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=(a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\cdot [(b_{2}c_{3}-b_{3}c_{2})\hat{i} - (b_{1}c_{3}-b_{3}c_{1})\hat{j} + (b_{1}c_{2}-b_{2}c_{1})\hat{k}]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=a_{1}(b_{2}c_{3}-b_{3}c_{2}) + a_{2}(b_{3}c_{1}-b_{1}c_{3}) + a_{3}(b_{1}c_{2}-b_{2}c_{1})
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\begin{vmatrix} a_{1} &amp; a_{2} &amp; a_{3} \\ b_{1} &amp; b_{2} &amp; b_{3}\\ c_{1} &amp; c_{2} &amp; c_{3} \end{vmatrix} = [\vec{a}\vec{b}\vec{c}]
-\end{equation*}
-</div>From the properties of a determinant, we can find that the value of the product depends upon the cyclic order of the vectors and is independent of the position of the dot and cross. Thus, dot and cross may be interchangeable in a scalar triple product, i.e.,<div class="displaymath process-math">
-\begin{align*}
-[\vec{a}\vec{b}\vec{c}] \amp  = [\vec{c}\vec{a}\vec{b}] = [\vec{b}\vec{c}\vec{a}]\\
-\text{or,}\quad \vec{a}\cdot{(\vec{b}\times\vec{c})} \amp = \vec{c}\cdot{(\vec{a}\times\vec{b})} 
-= \vec{b}\cdot{(\vec{c}\times\vec{a})}
-\end{align*}
-</div>The value of product changes in sign if the order is non-cyclic, i.e., <span class="process-math">\([\vec{a}\vec{b}\vec{c}] = -[\vec{b}\vec{a}\vec{c}] = -[\vec{a}\vec{c}\vec{b}]\)</span>
 </div></li>
 <li><div class="para">
-<dfn class="terminology">Geometrical Interpretation:</dfn> Let <span class="process-math">\(\vec{a}\text{,}\)</span> <span class="process-math">\(\vec{b}\text{,}\)</span> and <span class="process-math">\(\vec{c}\)</span> be the co-terminous edges of the parallelopiped, as shown in figure <a href="" class="xref" data-knowl="./knowl/fig-sctrip2.html" title="Figure 1.1.10">Figure 1.1.10</a>, then<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-sctrip2.html">
-\begin{align*}
-\vec{a}\cdot{(\vec{b}\times\vec{c})} \amp = \vec{a}\cdot \text{(area of} \parallel^{gm}OBDC)\hat{n} \\
-\amp= (\text{area of} \parallel^{gm}OBDC) (\text{projection of} \vec{a} \quad \text{on}  \hat{n}) \\
-\amp  = (\text{area of} \parallel^{gm}OBDC) (a \cos\theta) \\
-\amp = (\text{area of} \parallel^{gm}OBDC) \text{(height of the parallelopiped)} \\
-\amp = \text{Volume of the parallelopiped}.
-\end{align*}
-</div>That is, the scalar triple product gives the volume of the parallelopiped having these vectors as co-terminous edges.</div></li>
-</ol>
-<div class="para">
-<em class="alert">Note:</em> If <span class="process-math">\(\vec{a}\cdot{(\vec{b}\times\vec{c})} = 0\text{,}\)</span> then <span class="process-math">\(\vec{a}\text{,}\)</span> <span class="process-math">\(\vec{b}\text{,}\)</span> <span class="process-math">\(\vec{c}\)</span> are coplanars, and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-sctrip2.html">
+<dfn class="terminology">Distributive Law:</dfn><div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-prodvect2b.html">
 \begin{equation*}
-\text{ Volume of tetrahedron} = \frac{1}{6}[\vec{a}\vec{b}\vec{c}]. 
+\vec{a}\cdot{(\vec{b}+\vec{c})}= \vec{a}\cdot {\vec{b}} + \vec{a}\cdot {\vec{c}}
+\end{equation*}
+</div>Let <span class="process-math">\(\vec{OA} =\vec{a}\text{,}\)</span> <span class="process-math">\(\vec{OB} =\vec{b}\text{,}\)</span> and <span class="process-math">\(\vec{BC} =\vec{c}\)</span> as shown in <a href="" class="xref" data-knowl="./knowl/fig-prodvect2b.html" title="Figure 1.1.7.(b)">Figure 1.1.7.(b)</a>, then<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-prodvect2b.html">
+\begin{equation*}
+\vec{a}\cdot {\vec{b}} + \vec{a}\cdot {\vec{c}} = \vec{OA}\cdot {\vec{OB}} + \vec{OA}\cdot {\vec{BC}}
 \end{equation*}
 </div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-prodvect2b.html">
+\begin{equation*}
+= OA\cdot{OM}+OA\cdot{MN} = OA(OM+MN) = OA.ON  
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-sctrip.html#p-35" class="internal">in-context</a></span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-prodvect2b.html">
+\begin{equation*}
+\vec{a}\cdot{(\vec{b}+\vec{c})}  =  \vec{OA}\cdot{(\vec{OB}+\vec{BC})} = \vec{OA}\cdot{\vec{OC}} = OA.ON
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-prodvect2b.html">
+\begin{equation*}
+\therefore   \quad \vec{a}\cdot{(\vec{b}+\vec{c})} = \vec{a}\cdot {\vec{b}} + \vec{a}\cdot {\vec{c}}
+\end{equation*}
+</div>
+</div></li>
+<li><div class="para">
+<dfn class="terminology">Useful Results:</dfn>  If <span class="process-math">\(\hat{i}\text{,}\)</span> <span class="process-math">\(\hat{j}\text{,}\)</span> <span class="process-math">\(\hat{k}\text{,}\)</span> be the unit vector along <span class="process-math">\(x\text{,}\)</span> <span class="process-math">\(y\text{,}\)</span> <span class="process-math">\(z\)</span> axes, respectively, then<div class="displaymath process-math">
+\begin{align*}
+\hat{i}\cdot{\hat{i}} \amp = \hat{j}\cdot{\hat{j}} = \hat{k}\cdot{\hat{k}} 
+=1 \hspace{1cm}  \because \theta = 0^{o}\\
+\hat{i}\cdot{\hat{j}} \amp  = \hat{j}\cdot{\hat{k}}  = \hat{k}\cdot{\hat{i}} 
+= 0 \hspace{1cm} \because \theta = 90^{o}
+\end{align*}
+</div>
+</div></li>
+</ol></div>
+<span class="incontext"><a href="subsec-prodvect.html#p-35" class="internal">in-context</a></span>
 </body>
 </html>

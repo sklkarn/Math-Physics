@@ -13,20 +13,42 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Therefore, the unit vector along a line CA</div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{\vec{CA}}{|CA|} = \hat{i}\frac{\sqrt{3}}{2}+\hat{j}\frac{1}{2} 
-= \hat{a} \quad \text{(say).}
+\text{grad} \phi = \vec{\nabla \phi} 
 \end{equation*}
 </div>
-<div class="para">Hence the directional derivative at (0,2) in figure, in the direction of <dfn class="terminology">CA</dfn>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left(\hat{i}\frac{\partial }{\partial x}+\hat{j}\frac{\partial}{\partial y} 
++\hat{k}\frac{\partial}{\partial z}\right)\left(3 x^{2}y-y^{3}z^{2}\right)
+\end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=  \vec{\nabla \phi}\cdot \hat{a} 
-= \frac{\hat{i}}{4}\cdot\left(\hat{i}\frac{\sqrt{3}}{2}+\hat{j}\frac{1}{2}\right) 
-= \frac{\sqrt{3}}{8} \hspace{1cm} \text{Ans.}
+=\hat{i}\frac{\partial}{\partial x}\left(3 x^{2}y-y^{3}z^{2}\right) 
++ \hat{j}\frac{\partial}{\partial y}\left(3 x^{2}y-y^{3}z^{2}\right)
++\hat{k}\frac{\partial}{\partial z}\left(3 x^{2}y-y^{3}z^{2}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\hat{i}(6 x y)+\hat{j}\left((3 x^{2}-3 y^{2}z^{2}\right)+\hat{k}\left(-2 y^{3}z\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad \text{grad} \phi \hspace{2pt} \text{at} (1,-2,-1) 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \hat{i}[6\cdot1\cdot(-2)]+\hat{j}[3.1^{2}-3(-2)^{2}(-1)^{2}]+\hat{k}[-2(-2)^{3}(-1)] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= -12\hat{i}-9\hat{j}-16\hat{k}. \quad Ans.
 \end{equation*}
 </div>
 </div>

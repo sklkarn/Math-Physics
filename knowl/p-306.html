@@ -11,43 +11,66 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(A\)</span> be an orthogonal matrix. Hence  <span class="process-math">\(A^{'}A=AA^{'}=I\text{.}\)</span> Now, from a characteristic equation, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen2.html ./knowl/eqn-eigen2.html ./knowl/eqn-eigen3.html">
-\begin{equation}
-AX=\lambda X \tag{2.6.1}
-\end{equation}
-</div>
-<div class="para">on taking the transpose on both sides of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-eigen2.html" title="Equation 2.6.1">(2.6.1)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen2.html ./knowl/eqn-eigen2.html ./knowl/eqn-eigen3.html">
-\begin{equation}
-(AX)' =(\lambda X)'\tag{2.6.2}
-\end{equation}
-</div>
-<div class="para">on multiplying eqns. <a href="" class="xref" data-knowl="./knowl/eqn-eigen2.html" title="Equation 2.6.1">(2.6.1)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-eigen3.html" title="Equation 2.6.2">(2.6.2)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen2.html ./knowl/eqn-eigen2.html ./knowl/eqn-eigen3.html">
-\begin{align*}
-(AX)' (AX) \amp =(\lambda X)' (\lambda X)\\
-\text{or,} \quad (X' A')(AX) \amp =\lambda^{2} X' X  \\
-\text{or,} \quad X'(A' A)X \amp =\lambda^{2} X' X \\
-\text{or,} \quad X' X \amp =\lambda^{2} X' X \\
-\text{or,} \quad (1-\lambda^{2})X' X \amp = 0 
-\end{align*}
-</div>
-<div class="para">Since <span class="process-math">\(X\)</span> is an eigen vector, <span class="process-math">\(X \neq 0\)</span> and consequently <span class="process-math">\(X' X \neq 0\text{.}\)</span> Hence, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen2.html ./knowl/eqn-eigen2.html ./knowl/eqn-eigen3.html">
+<div class="para">Let us consider an example where a matrix,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
 \begin{equation*}
-(1-\lambda^{2}) = 0	
+A=\begin{bmatrix} 
+1 &amp; 2\\2 &amp; 1 
+\end{bmatrix}
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eigen2.html ./knowl/eqn-eigen2.html ./knowl/eqn-eigen3.html">
+<div class="para">acts on a vector</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
 \begin{equation*}
-\lambda = \pm 1. \hspace{5pt}     proved.
+X= \begin{bmatrix} 
+1\\3 
+\end{bmatrix},
 \end{equation*}
 </div>
+<div class="para">then the resulting vector would be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
+\begin{equation*}
+AX=\begin{bmatrix} 
+1 &amp; 2\\ 2 &amp; 1 
+\end{bmatrix} 
+\begin{bmatrix} 
+1\\3 
+\end{bmatrix} = \begin{bmatrix} 
+7\\5 
+\end{bmatrix}.
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_second-examplesC.html#p-306" class="internal">in-context</a></span>
+<div class="para">In this case the vector <span class="process-math">\(AX\)</span> is transformed into a new vector <a href="" class="xref" data-knowl="./knowl/fig-eigen.html" title="Figure 2.5.1">Figure 2.5.1</a>. The vector may gets elongated or shortened or rotated in the transformation process. For a given square matrix, <span class="process-math">\(A\)</span> there always exits special vector/s which retain/s their original direction, such vectors are called eigen vectors. The vector which scaled but will not change its direction is called an eigen vector and its scaled factor is known as eigen value. An eigenvector of a square matrix A is a non-zero vector X that, when multiplied by A, results in a scalar multiple of itself. That is, if <span class="process-math">\(AX = \lambda λX\text{,}\)</span> where <span class="process-math">\(\lambda \)</span> is a scalar, then X is an eigenvector of A associated with the eigenvalue <span class="process-math">\(\lambda \text{.}\)</span> For example,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
+\begin{equation*}
+A=\begin{bmatrix} 
+1 &amp; 2\\2 &amp; 1 
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
+\begin{equation*}
+X= \begin{bmatrix} 
+1\\1 
+\end{bmatrix}, 
+\end{equation*}
+</div>
+<div class="para">then,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
+\begin{equation*}
+AX= \begin{bmatrix} 
+3\\3 
+\end{bmatrix} = 3\begin{bmatrix} 
+1\\1 
+\end{bmatrix}.
+\end{equation*}
+</div>
+<div class="para">Hence the vector <span class="process-math">\(X\)</span> remains the same with scalar multiplication 3. This scalar value is called eigen value, <span class="process-math">\(\lambda\)</span> of the vector <span class="process-math">\(AX\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec_second-eigen.html#p-306" class="internal">in-context</a></span>
 </body>
 </html>

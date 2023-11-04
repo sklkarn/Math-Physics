@@ -11,49 +11,53 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">from boundary condition <span class="process-math">\(u(x,\infty)=0 \quad \Rightarrow C=0 \)</span> <span class="process-math">\([ \because \quad e^{-\infty}=0.]\)</span>
-</div>
-<div class="displaymath process-math">
+<div class="para">Let the heat equation be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat-rod2.html ./knowl/eqn-1Dheat-rod1.html">
 \begin{equation}
-\therefore \quad u(x,y)=\left(A' \cos px+B' \sin px\right)e^{-py}    \tag{7.4.18}
+\frac{\partial u}{\partial t} =h^{2}\frac{\partial^{2}u}{\partial x^{2}}\tag{7.4.11}
 \end{equation}
 </div>
-<div class="para">from boundary condition <span class="process-math">\(u(0,y) =0=A' e^{-py} \quad  \Rightarrow A' =0 \text{.}\)</span>
-</div>
-<div class="displaymath process-math">
+<div class="para">and solution of which is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat-rod2.html ./knowl/eqn-1Dheat-rod1.html">
 \begin{equation}
-\therefore \quad u(x,y) = B' \sin px e^{-py} \tag{7.4.19}
+u(x,t)=X(x)T(t) =(A\cos\lambda x+B\sin\lambda x)Ce^{-\lambda^{2}h^{2}t} \tag{7.4.12}
 \end{equation}
 </div>
-<div class="para">also,</div>
-<div class="displaymath process-math">
+<div class="para">The boundary conditions <span class="process-math">\(u=0\)</span> at <span class="process-math">\(x=0\text{,}\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat-rod2.html ./knowl/eqn-1Dheat-rod1.html">
 \begin{equation*}
-u(\lambda,y) = 0 = B' \sin p\lambda e^{-py} \quad \because  B' \neq 0
+0= ACe^{-\lambda^{2}h^{2}t} \Rightarrow A=0 \quad \text{since}\quad C\neq 0.
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="para">again, <span class="process-math">\(u=0\)</span> at <span class="process-math">\(x=\lambda\text{,}\)</span> we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat-rod2.html ./knowl/eqn-1Dheat-rod1.html">
 \begin{equation*}
-\sin p\lambda = 0 =\sin n\pi, \quad  \therefore  \quad p=\frac{n\pi}{\lambda}, \quad n=1,2,3,\cdots 
+0=Ce^{-\lambda^{2}h^{2}t}\cdot B\sin\lambda\lambda, 
 \end{equation*}
 </div>
-<div class="para">Hence,</div>
-<div class="displaymath process-math">
+<div class="para">since <span class="process-math">\(B\)</span> can not be zero. or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat-rod2.html ./knowl/eqn-1Dheat-rod1.html">
+\begin{equation*}
+\sin\lambda\lambda = 0=\sin n\pi  \Rightarrow \lambda = \frac{n\pi}{\lambda},  
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(n=1,2,3,\cdots \text{.}\)</span> Now eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat-rod2.html" title="Equation 7.4.12">(7.4.12)</a> becomes -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat-rod2.html ./knowl/eqn-1Dheat-rod1.html">
+\begin{equation*}
+u=BC\sin\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat-rod2.html ./knowl/eqn-1Dheat-rod1.html">
 \begin{equation}
-u(x,y) = B_{n}\sin\frac{n\pi x}{\lambda}e^{-\frac{n\pi y}{\lambda}}\tag{7.4.20}
+=\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} \tag{7.4.13}
 \end{equation}
 </div>
-<div class="para">again from</div>
-<div class="displaymath process-math">
+<div class="para">which is the required solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat-rod1.html" title="Equation 7.4.11">(7.4.11)</a>. By initial condition <span class="process-math">\(u=u_{o} \)</span> at <span class="process-math">\(t=0\text{,}\)</span> we have-</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat-rod2.html ./knowl/eqn-1Dheat-rod1.html">
 \begin{equation*}
-u(x,0) = B_{n}\sin\frac{n\pi x}{\lambda} =f(x)
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore  \quad B_{n} = \frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\sin\frac{n\pi x}{\lambda}\,dx 
+u_{o}=\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi x}{\lambda}  
 \end{equation*}
 </div>
 </div>

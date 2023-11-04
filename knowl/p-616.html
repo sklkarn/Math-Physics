@@ -13,42 +13,52 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="displaymath process-math">
+<div class="para">Let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
+\begin{equation}
+4x^{3}+6x^{2}+7x+2\equiv aP_{3}(x)+bP_{2}(x)+cP_{1}(x)+dP_{0}(x) \tag{4.6.1}
+\end{equation}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-\int\limits_{-1}^{+1}x^{m}P_{n}(x)\,dx =\int\limits_{-1}^{+1}x^{m}\frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}\,dx 
+=a\left[\frac{5}{2}x^{3}-\frac{3x}{2}\right]+b\left[\frac{3}{2}x^{2}-\frac{1}{2}\right]+c(x)+d(1)
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-= \frac{1}{2^{n}n!}\int\limits_{-1}^{+1}x^{m}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}\,dx
+=\frac{5ax^{3}}{2}-\frac{3ax}{2}+\frac{3bx^{2}}{2}-\frac{b}{2}+cx+d
 \end{equation*}
 </div>
-<div class="para">On integrating by parts we get -</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-=\frac{1}{2^{n}n!}\left[\left\{x^{m}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\right\}_{-1}^{+1}-\int\limits_{-1}^{+1}mx^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\,dx\right]
+=\frac{5ax^{3}}{2}+\frac{3bx^{2}}{2}+\left(-\frac{3a}{2}+c\right)x-\frac{b}{2}+d
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">Equating the coefficients of like powers of <span class="process-math">\(x\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-=0-\frac{m}{2^{n}n!}\int\limits_{-1}^{+1}x^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\,dx
+\frac{5a}{2}=4 \quad \Rightarrow a =\frac{8}{5};
 \end{equation*}
 </div>
-<div class="para">Integrating we have</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-=(-1)^{2}\frac{m(m-1)}{2^{n}n!}\int\limits_{-1}^{+1}x^{m-2}\frac{d^{n-2}}{dx^{n-2}}(x^{2}-1)^{n}\,dx
+\frac{3b}{2}=6 \quad \Rightarrow b =4
 \end{equation*}
 </div>
-<div class="para">Integrating <span class="process-math">\(m-2 \)</span> times, we get -</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-=(-1)^{m}\frac{m(m-1)\cdots 2\cdot 1}{2^{n}n!}\int\limits_{-1}^{+1}\frac{d^{n-m}}{dx^{n-m}}(x^{2}-1)^{n}\,dx 
+\frac{-3a}{2}+c=7 \quad \Rightarrow -\frac{3}{2}\cdot\frac{8}{5}+c =7 \quad \Rightarrow c=\frac{47}{5}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-=\frac{(-1)^{m}m!}{2^{n}n!}\left[\frac{d^{n-m-1}}{dx^{n-m-1}}(x^{2}-1)^{n}\right]_{-1}^{+1}=0.
+\frac{-b}{2}+d=2 \quad \Rightarrow -\frac{4}{2}+d=2 \quad \Rightarrow d=4.
+\end{equation*}
+</div>
+<div class="para">Putting these values in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-legneq1.html" title="Equation 4.6.1">(4.6.1)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
+\begin{equation*}
+\frac{8}{5}P_{3}(x)+4P_{2}(x)+\frac{47}{5}P_{1}(x)+4P_{0}(x) 
 \end{equation*}
 </div>
 </div>

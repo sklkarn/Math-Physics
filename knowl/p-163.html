@@ -13,47 +13,67 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para"> Let <span class="process-math">\((u,v,w)\)</span> be the curvilinear coordinates of point P and <span class="process-math">\((x,y,z)\)</span> be its corresponding cartesian coordinates. If <span class="process-math">\(\vec{r}\)</span> be the position vector of point P then the spherical coordinates of point P are specified by <span class="process-math">\((r, \theta, \phi)\text{,}\)</span> as shown in <a href="" class="xref" data-knowl="./knowl/fig-fig30.html" title="Figure 1.6.3">Figure 1.6.3</a>. where <span class="process-math">\(r\geq 0, \quad 0\leq \theta \leq \pi, \quad 0\leq \phi \leq 2\pi\text{.}\)</span> The corresponding transformation into cartesian systems are <span class="process-math">\(x=OQ\cos\phi = O'P\cos\phi = r\sin\theta \cos\phi\text{,}\)</span> <span class="process-math">\(y=OQ\sin\phi = r\sin\theta \sin\phi\text{,}\)</span> and <span class="process-math">\(z=PQ= OO'= OP\cos\theta = r\cos\theta\text{.}\)</span> Here,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig30.html">
+<div class="displaymath process-math">
 \begin{equation*}
-x=x(r{,}\theta{,}\phi)
+\,curl\vec{F} =\vec{\nabla}\times\vec{F} = \vec{\nabla}\times F_{1}\hat{e}_{1}+F_{2}\hat{e}_{2}+F_{3}\hat{e}_{3}
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig30.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\,dx=  \frac{\partial x}{\partial r}\,dr +\frac{\partial x}{\partial \theta}\,d\theta 
-+ \frac{\partial x}{\partial \phi}d\phi 
+=\left(\frac{\hat{e}_{1}}{h_{1}}\frac{\partial}{\partial u}+ \frac{\hat{e}_{2}}{h_{2}}\frac{\partial}{\partial v}+\frac{\hat{e}_{3}}{h_{3}}\frac{\partial}{\partial w}\right)\times(F_{1}\hat{e}_{1}+F_{2}\hat{e}_{2}+F_{3}\hat{e}_{3})
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig30.html">
+<div class="displaymath process-math">
 \begin{equation*}
-= \sin\theta\cos\phi \,dr+ r\cos\theta\cos\phi \,d\theta-r\sin\theta \sin\phi \,d\phi 
+= {\begin{vmatrix} 
+\hat{e}_{1} &amp; \hat{e}_{2} &amp; \hat{e}_{3} \\ 
+\frac{1}{h_{1}}\frac{\partial}{\partial u} &amp; \frac{1}{h_{1}}\frac{\partial}{\partial v}  &amp; \frac{1}{h_{1}}\frac{\partial}{\partial w} \\ 
+F_{1} &amp; F_{2} &amp; F_{3} 
+\end{vmatrix}}
 \end{equation*}
 </div>
-<div class="para">Similarly,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig30.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\,dy=  \sin\theta\sin\phi \,dr+ r\cos\theta\sin\phi \,d\theta +r\sin\theta \cos\phi \,d\phi
+=\hat{e}_{1}\left[\frac{1}{h_{2}}\frac{\partial F_{3}}{\partial v} 
+-\frac{1}{h_{3}}\frac{\partial F_{2}}{\partial w}\right] - 
+\hat{e}_{2}\left[\frac{1}{h_{1}}\frac{\partial F_{3}}{\partial u} 
+-\frac{1}{h_{3}}\frac{\partial F_{1}}{\partial w}\right]
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig30.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\,dz=  \cos\theta \,dr+ -r\sin\theta \,d\theta.
++ \hat{e}_{3}\left[\frac{1}{h_{1}}\frac{\partial F_{2}}{\partial u} 
+-\frac{1}{h_{2}}\frac{\partial F_{1}}{\partial v}\right]
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig30.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\therefore \quad  \,ds^{2}= dx^{2}+dy^{2}+\,dz^{2}
+=\frac{\hat{e}_{1}}{h_{2}h_{3}}\left[\frac{\partial}{\partial v}(F_{3}h_{3}) 
+-\frac{\partial}{\partial w}(F_{2}h_{2})\right]
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig30.html">
-\begin{equation}
-= \,dr^{2}+r^{2}\,d\theta^{2}+r^{2}\sin^{2}\phi \,d\phi^{2}\tag{1.6.15}
-\end{equation}
+<div class="displaymath process-math">
+\begin{equation*}
++ \frac{\hat{e}_{2}}{h_{3}h_{1}}\left[\frac{\partial}{\partial w}(F_{1}h_{1}) 
+-\frac{\partial}{\partial u}(F_{3}h_{3})\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++\frac{\hat{e}_{3}}{h_{1}h_{2}}\left[\frac{\partial}{\partial u}(F_{2}h_{2}) 
+-\frac{\partial}{\partial v}(F_{1}h_{1})\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore  	\vec{\nabla}\times\vec{F}= {\begin{vmatrix} 
+h_{1}\hat{e}_{1} &amp; h_{2}\hat{e}_{2}  &amp; h_{3}\hat{e}_{3} \\ 
+\frac{\partial}{\partial u} &amp; \frac{\partial}{\partial v} &amp; \frac{\partial}{\partial w} \\ 
+F_{1}h_{1}  &amp; F_{2}h_{2}  &amp; F_{3}h_{3} 
+\end{vmatrix}} 
+\end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-spher_cord.html#p-163" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-curl_curvcord.html#p-163" class="internal">in-context</a></span>
 </body>
 </html>

@@ -11,8 +11,46 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Paragraph</span></h2>
-<div class="para">Ordinary linear differential equtions with constant coefficient or variable coefficient can easily be solved using Laplace Transform method, without finding the general solution and arbitrary constants.</div>
-<span class="incontext"><a href="sec_sixth-diffLT.html#p-1019" class="internal">in-context</a></span>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[\sin 4t] = \frac{4}{s^{2}+16}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[e^{t}\sin 4t] = \frac{4}{(s-1)^{2}+16}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}[t^{2}e^{t}\sin 4t] =(-1)^{2}\frac{\,d^{2}}{\,ds^{2}}\left[ \frac{4}{(s-1)^{2}+16}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{\,d^{2}}{\,ds^{2}}\left[\frac{4}{s^{2}-2s+17}\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{\,d}{\,ds}\left[\frac{-4(2s-2)}{(s^{2}-2s +17)^{2}}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-4\left[\frac{(s^{2}-2s +17)^{2}\{2s^{2}-4s+34-8s^{2}+16s-8\}}{(s^{2}-2s +17)^{4}}\right]  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{-4\{-6s^{2}+12s+26\}}{(s^{2}-2s +17)^{3}}
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_sixth-examplesB.html#p-1019" class="internal">in-context</a></span>
 </body>
 </html>

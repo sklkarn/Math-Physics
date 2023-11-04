@@ -13,86 +13,60 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math">
-\begin{align*}
-1.I_{1}+2.I_{1}+3.I_{1}-3.I_{2} \amp = 5 \\
-\text{or,}\quad 6.I_{1}-3.I_{2} + 0.I_{3} \amp = 5 
-\end{align*}
+<div class="para">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are two vectors relative to the basis of unprimed system and are represented by <span class="process-math">\(X'\)</span> and <span class="process-math">\(Y'\)</span> relative to the basis of a primed system, so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+\begin{equation}
+X=PX';	\quad  	Y=PY' \tag{2.4.12}
+\end{equation}
 </div>
-<div class="para">From loop 2,</div>
-<div class="displaymath process-math">
-\begin{align*}
-5. I_{2}+3.I_{2}+4.I_{2}-3.I_{1}+5.I_{3} \amp = 10 \\
-\text{or,}\quad -3.I_{1}+12.I_{2} +5.I_{3} \amp  = 10 
-\end{align*}
+<div class="para">where <span class="process-math">\(P\)</span> is transformation matrix. Suppose <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are themselves related by the transformation matrix <span class="process-math">\(A\)</span> in the unprimed system, so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+\begin{equation}
+X=AY\tag{2.4.13}
+\end{equation}
 </div>
-<div class="para">From loop 3,</div>
-<div class="displaymath process-math">
-\begin{align*}
-6.I_{3}+5.I_{3}+5.I_{2} \amp = 5 \\
-\text{or,}\quad 0.I_{1}+5.I_{2} +11.I_{3}  \amp = 5 
-\end{align*}
+<div class="para">Now, from eqns. <a href="" class="xref" data-knowl="./knowl/eqn-trac1.html" title="Equation 2.4.12">(2.4.12)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-trac2.html" title="Equation 2.4.13">(2.4.13)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+\begin{align}
+X' \amp  = P^{-1}X = P^{-1}AY = P^{-1}APY' \equiv BY' \tag{2.4.14}\\
+\text{where} \quad B \amp  = P^{-1}AP \tag{2.4.15}
+\end{align}
 </div>
-<div class="para">Hence in the matrix form</div>
-<div class="displaymath process-math">
+<div class="para">This implies that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
+\begin{equation}
+A = PBP^{-1}.\tag{2.4.16}
+\end{equation}
+</div>
+<div class="para">i.e., the matrix of transformation for the same two vectors in the coordinate system is related by <span class="process-math">\(P^{-1}AP\)</span> and <span class="process-math">\(PBP^{-1}\text{.}\)</span> Hence <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are said to be related under similarity transformation. From eqn. <a href="" class="xref" data-knowl="./knowl/eqn-trac4.html" title="Equation 2.4.15">(2.4.15)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
 \begin{equation*}
-\begin{bmatrix} 
-6 &amp; -3 &amp; 0 \\ 
--3 &amp; 12 &amp; 5\\ 
-0 &amp; 5 &amp; 11  
-\end{bmatrix} 
-\begin{bmatrix} 
-I_{1}\\ I_{2}\\I_{3} 
-\end{bmatrix} 
-= \begin{bmatrix} 
-5\\ 10\\5 
-\end{bmatrix} 
+Tr(B)=\sum\limits_{i}B_{ii}=\sum\limits_{i}(P^{-1}AP)_{ii}	=\sum\limits_{i}\sum\limits_{jk}P^{-1}_{ij}A_{jk}P_{ki}
 \end{equation*}
 </div>
-<div class="para">The determinant of the given matrix is</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
 \begin{equation*}
-D=\begin{vmatrix} 
-6 &amp; -3 &amp; 0 \\ 
--3 &amp; 12 &amp; 5\\ 
-0 &amp; 5 &amp; 11  
-\end{vmatrix} 
+= \sum\limits_{j}\sum\limits_{k}\left[\sum\limits_{i}P_{ki}P^{-1}_{ii}\right]A_{jk}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
 \begin{equation*}
-= 6(12\times 11-5\times 5)+3(-3\times 11-0\times 5) +0(-3\times 5-0\times 12) = 543.
+\left[\because \quad \sum\limits_{i}(AB)_{ij}=\sum\limits_{i}\sum\limits_{j}a_{ij}b_{ji}\right]  
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">after changing the sign for the places.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
 \begin{equation*}
-\therefore \quad I_{1} = \frac{\begin{vmatrix} 
-5 &amp; -3 &amp; 0 \\ 
-10 &amp; 12 &amp; 5\\ 
-5 &amp; 5 &amp; 11 
-\end{vmatrix}}{D} = 1.455 A
+=\sum\limits_{j}\sum\limits_{k}\left[\sum\limits_{i}PP^{-1}\right]_{kj}A_{jk} = \sum\limits_{j}\left[APP^{-1}\right]_{jj}= \sum\limits_{j}A_{jj} = Tr(A) 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">i.e., trace is invarient under similarity transformation. Also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trac1.html ./knowl/eqn-trac2.html ./knowl/eqn-trac4.html">
 \begin{equation*}
-I_{2} = \frac{\begin{vmatrix} 
-6 &amp; 5 &amp; 0 \\ 
--3 &amp; 10 &amp; 5\\ 
-0 &amp; 5 &amp; 11  
-\end{vmatrix}}{D} = 1.243 A
+|B| = det B = [P^{-1}AP| = |P^{-1}||A||P|  = A 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-I_{3} = \frac{\begin{vmatrix} 
-6 &amp; -3 &amp; 5 \\ 
--3 &amp; 12 &amp; 10\\ 
-0 &amp; 5 &amp; 5 
-\end{vmatrix}}{D} = -0.1105 A
-\end{equation*}
-</div>
-<div class="para">
-<span class="process-math">\(-ve\)</span> sign indicats that the current <span class="process-math">\(I_{3}\)</span> should be taken in  opposite direction. Hence, the potential drop at <span class="process-math">\(R_{6} = 6\times 0.1105 = 0.663\)</span> volt.</div>
+<div class="para">[<span class="process-math">\(\because |P^{-1}||P| = 1\)</span>]  proved.</div>
 </div>
 <span class="incontext"><a href="sec_second-examplesB.html#p-298" class="internal">in-context</a></span>
 </body>

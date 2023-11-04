@@ -11,21 +11,57 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">In cylindrical coordinates,</div>
-<div class="displaymath process-math">
+<div class="para">Putting <span class="process-math">\(\frac{\partial u}{\partial x}=0\)</span> at <span class="process-math">\(x=\lambda \)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_inslbar5.html" title="Equation 7.3.20">(7.3.20)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_inslbar5.html ./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_0ed1.html">
 \begin{equation*}
-\nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =0.
+0=-AC\lambda\sin\lambda\lambda e^{-\lambda^{2}h^{2}t}
 \end{equation*}
 </div>
-<div class="para">In spherical polar coordinates,</div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_inslbar5.html ./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_0ed1.html">
 \begin{equation*}
-\nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}}+\frac{2}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{1}{r^{2}\sin\theta}\frac{\partial^{2}u}{\partial \phi^{2}} =0.
+\sin\lambda\lambda =0 =\sin n\pi \quad	[\text{since,}\quad  A, C \neq 0 ]  
 \end{equation*}
 </div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_inslbar5.html ./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_0ed1.html">
+\begin{equation*}
+\lambda = \frac{n\pi}{\lambda}, 
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-Lapleqn.html#p-1182" class="internal">in-context</a></span>
+<div class="para">where <span class="process-math">\(n=1,2,3,\cdots\text{.}\)</span> Hence the general solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_0ed1.html" title="Equation 7.3.10">(7.3.10)</a> becomes -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_inslbar5.html ./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_0ed1.html">
+\begin{equation*}
+u=AC\cos\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} =B_{n}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} \cos\frac{n\pi x}{\lambda}   
+\end{equation*}
+</div>
+<div class="para">put <span class="process-math">\(AC= B_{n} \text{.}\)</span>] However, for the given boundary conditions the above solution satisfies all the values of <span class="process-math">\(n\)</span> including zero.  Hence the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_0ed1.html" title="Equation 7.3.10">(7.3.10)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_inslbar5.html ./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_0ed1.html">
+\begin{equation}
+u=B_{o}+\sum\limits_{n=1}^{\infty}B_{n}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} \cos\frac{n\pi x}{\lambda}\tag{7.3.21}
+\end{equation}
+</div>
+<div class="para">Now,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_inslbar5.html ./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_0ed1.html">
+\begin{equation}
+f(x) = u(x,0) = B_{o}+\sum\limits_{n=1}^{\infty} B_{n} \cos\frac{n\pi x}{\lambda}\tag{7.3.22}
+\end{equation}
+</div>
+<div class="para">from which we can find,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_inslbar5.html ./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_0ed1.html">
+\begin{equation}
+B_{n}=\frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\cos\frac{n\pi x}{\lambda}\,dx\tag{7.3.23}
+\end{equation}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_inslbar5.html ./knowl/eqn-1Dheat_0ed1.html ./knowl/eqn-1Dheat_0ed1.html">
+\begin{equation}
+B_{o}=\frac{1}{\lambda}\int\limits_{0}^{\lambda}f(x)\,dx\tag{7.3.24}
+\end{equation}
+</div>
+</div>
+<span class="incontext"><a href="subsec-1D_heat.html#p-1182" class="internal">in-context</a></span>
 </body>
 </html>

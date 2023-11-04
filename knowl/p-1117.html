@@ -11,33 +11,50 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">
-<dfn class="terminology">Note:</dfn> If we assume the initial velocity of the string <span class="process-math">\(f'(x)=0\text{,}\)</span> then from equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs14.html" title="Equation 7.1.19">(7.1.19)</a> we have <span class="process-math">\(d_{n}=0\text{.}\)</span> Thus equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs15.html" title="Equation 7.1.20">(7.1.20)</a> reduces to</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
-\begin{equation}
-y(x,t) = \sum\limits_{n=1}^{\infty} b_{n}\cos  \frac{n\pi vt}{l}\sin \frac{n\pi x}{l}\tag{7.1.23}
-\end{equation}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
+<div class="para">For small displacement</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pde_wave2.html">
 \begin{equation*}
-=\frac{1}{2}\sum\limits_{n=1}^{\infty} b_{n}\left[\sin \frac{n\pi}{l}(x-vt)+ \sin \frac{n\pi}{l}(x+vt)\right]
+\cos\beta = \cos \alpha \Rightarrow F_{x} =0,
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
+<div class="para">i.e., the motion of the particle of string along x - axis is zero. Also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pde_wave2.html">
 \begin{equation*}
-= \frac{1}{2}\sum\limits_{n=1}^{\infty} b_{n}\sin \frac{n\pi}{l}(x-vt)+ \frac{1}{2}\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi}{l}(x+vt)	
+\sin\beta = \tan\beta = \left(\frac{\partial y}{\partial x}\right)_{B} = \left(\frac{\partial y}{\partial x}\right)_{x+\,dx}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pde_wave2.html">
+\begin{equation*}
+\sin\alpha = \tan\alpha = \left(\frac{\partial y}{\partial x}\right)_{A} = \left(\frac{\partial y}{\partial x}\right)_{x}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\frac{\partial y}{\partial x}\)</span> defines the slope of tangents at a perticular point at any time ’t’. From equation <a href="" class="xref" data-knowl="./knowl/eqn-pde_wave2.html" title="Equation 7.1.2">(7.1.2)</a>, we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pde_wave2.html">
+\begin{equation*}
+F_{y}=T\left(\frac{\partial y}{\partial x}\right)_{x+\,dx}-T\left(\frac{\partial y}{\partial x}\right)_{x} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pde_wave2.html">
+\begin{equation*}
+=T\left[\left(\frac{\partial y}{\partial x}\right)_{x+\,dx}-\left(\frac{\partial y}{\partial x}\right)_{x}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pde_wave2.html">
+\begin{equation*}
+=T\left[\left(\frac{\partial y}{\partial x}\right)_{x}+\frac{\partial}{\partial x}\left(\frac{\partial y}{\partial x}\right)_{x}\,dx+\cdots-\left(\frac{\partial y}{\partial x}\right)_{x}\right]
+\end{equation*}
+</div>
+<div class="para">(using Taylor’s expansions)</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pde_wave2.html">
 \begin{equation}
-\therefore y(x,t) = \frac{1}{2}[f(x-vt)+f(x+vt)]\tag{7.1.24}
+\therefore  F_{y}=T\frac{\partial^{2} y}{\partial x^{2}}\,dx\tag{7.1.3}
 \end{equation}
 </div>
-<div class="para">which is the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs1.html" title="Equation 7.1.6">(7.1.6)</a>, where the function <span class="process-math">\(f\)</span> is odd and periodic in period <span class="process-math">\(2l\text{.}\)</span>
+<div class="para">(neglicting higher order terms.) i.e., <span class="process-math">\(F_{y} \neq 0\)</span>  hence the motion of the particle of string is only along y - axis.</div>
 </div>
-</div>
-<span class="incontext"><a href="subsec-sol_vs.html#p-1117" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_seventh-waveeq.html#p-1117" class="internal">in-context</a></span>
 </body>
 </html>

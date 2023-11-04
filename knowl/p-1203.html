@@ -13,48 +13,56 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">The general solution is given as</div>
-<div class="displaymath process-math">
+<div class="para"> The equation is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplRect1.html ./knowl/eqn-3D_laplRect3.html ./knowl/eqn-3D_laplRect1.html">
+\begin{equation}
+\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =0\tag{7.3.90}
+\end{equation}
+</div>
+<div class="para">Let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplRect1.html ./knowl/eqn-3D_laplRect3.html ./knowl/eqn-3D_laplRect1.html">
+\begin{equation}
+u=X(x)Y(y)Z(z) \tag{7.3.91}
+\end{equation}
+</div>
+<div class="para">be the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_laplRect1.html" title="Equation 7.3.90">(7.3.90)</a> Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplRect1.html ./knowl/eqn-3D_laplRect3.html ./knowl/eqn-3D_laplRect1.html">
+\begin{equation}
+\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}}+\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}}+\frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}} =0\tag{7.3.92}
+\end{equation}
+</div>
+<div class="para">In equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_laplRect3.html" title="Equation 7.3.92">(7.3.92)</a> all are independent to each other hence each may be seperately equal to some constant, i.e.,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplRect1.html ./knowl/eqn-3D_laplRect3.html ./knowl/eqn-3D_laplRect1.html">
 \begin{equation*}
-u(x,y,t)=\sum\limits_{r,s=1}^{\infty}a_{rs}e^{-m_{rs}t}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}
+\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =n^{2} \quad  \Rightarrow X=A\cos nx+B\sin nx,
 \end{equation*}
 </div>
-<div class="para">where</div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplRect1.html ./knowl/eqn-3D_laplRect3.html ./knowl/eqn-3D_laplRect1.html">
 \begin{equation*}
-a_{rs} =\frac{4}{ab}\int\limits_{0}^{a}\int\limits_{0}^{b}f(x,y)\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}\,dx\,dy 
+\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}} =-m^{2} \quad  \Rightarrow Y=C\cos my+D\sin my,
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplRect1.html ./knowl/eqn-3D_laplRect3.html ./knowl/eqn-3D_laplRect1.html">
 \begin{equation*}
-= \frac{4B}{ab}\int\limits_{0}^{a}\int\limits_{0}^{b}\sin\frac{\pi x}{a}\sin\frac{\pi y}{b}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}\,dx\,dy
+\frac{1}{Z}\frac{\partial^{2}Z}{\partial z^{2}}=p^{2} \quad  \Rightarrow Z=Ee^{pz}+Fe^{-pz}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">Thus, the general solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_laplRect1.html" title="Equation 7.3.90">(7.3.90)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplRect1.html ./knowl/eqn-3D_laplRect3.html ./knowl/eqn-3D_laplRect1.html">
 \begin{equation*}
-\therefore  \quad a_{r1}= \frac{4B}{ab}\int\limits_{0}^{a}\frac{b}{2}\sin\frac{\pi x}{a}\sin\frac{r\pi x}{a}\,dx
+u=(A\cos nx+B\sin nx)
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-\because \quad \int\limits_{0}^{b}\sin\frac{\pi y}{b}\sin\frac{s\pi y}{b}\,dy 
-= \begin{cases} 0, &amp; n=2,3,4,\cdots\\
-b/2, &amp; n=1  \end{cases} 
-\end{equation*}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_laplRect1.html ./knowl/eqn-3D_laplRect3.html ./knowl/eqn-3D_laplRect1.html">
+\begin{equation}
+(C\cos my+D\sin my)(Ee^{pz}+Fe^{-pz})\tag{7.3.93}
+\end{equation}
 </div>
-<div class="para">so that <span class="process-math">\(a_{11}=B\)</span>  and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-m_{11}=h^{2}\pi^{2}\left(\frac{1}{a^{2}}+\frac{1}{b^{2}}\right) 
-\end{equation*}
-</div>
-<div class="para">Hence the solution is</div>
-<div class="displaymath process-math">
-\begin{equation*}
-u(x,y,t) =a_{11}e^{-m_{11}t}\cdot \sin\frac{\pi x}{a}\sin\frac{\pi y}{b}.
-\end{equation*}
+<div class="para">where <span class="process-math">\(p^{2}=m^{2}+n^{2}\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="sec_seventh-examplesB.html#p-1203" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-3D_lapleq.html#p-1203" class="internal">in-context</a></span>
 </body>
 </html>

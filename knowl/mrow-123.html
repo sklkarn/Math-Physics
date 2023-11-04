@@ -13,11 +13,22 @@
 <body class="ignore-math">
 <div class="displaymath process-math">
 \begin{align*}
-\vec{\nabla}\cdot \vec{r} \amp =\left(\hat{i}\frac{\partial}{\partial x} 
-+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right) 
-\cdot \left(x\hat{i}+y\hat{j}+z\hat{k}\right) =3.
+\vec{\nabla}\cdot\vec{\nabla\phi} \amp = \left(\hat{i}\frac{\partial}{\partial x} 
++ \hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right) 
+\cdot \left(\frac{\partial \phi}{\partial x}\hat{i} 
++\frac{\partial \phi}{\partial y}\hat{j} 
++\frac{\partial \phi}{\partial z}\hat{k}\right)\\
+\amp = \frac{\partial}{\partial x}\left(\frac{\partial \phi}{\partial x}\right) 
++\frac{\partial}{\partial y}\left(\frac{\partial \phi}{\partial y}\right) 
++\frac{\partial}{\partial z}\left(\frac{\partial \phi}{\partial z}\right) \\
+\amp =\frac{\partial^{2} \phi}{\partial x^{2}} 
++\frac{\partial^{2} \phi}{\partial y^{2}}+\frac{\partial^{2} \phi}{\partial z^{2}}
+= \left(\frac{\partial^{2}}{\partial x^{2}} 
++\frac{\partial^{2}}{\partial y^{2}} 
++\frac{\partial^{2}}{\partial z^{2}}\right)\phi\\
+\amp  = \nabla^{2}\phi. 
 \end{align*}
 </div>
-<span class="incontext"><a href="sec_first-examplesA.html#md-38" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_first-examplesA.html#md-39" class="internal">in-context</a></span>
 </body>
 </html>

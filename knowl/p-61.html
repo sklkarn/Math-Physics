@@ -13,31 +13,68 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let</div>
-<div class="displaymath process-math">
+<div class="para">Let <span class="process-math">\(\vec{v}=v_{1}\hat{i}+v_{2}\hat{j}+v_{3}\hat{k}\)</span> be the vector field at point P(x,y,z). If P be the center of a test area as shown in <a href="" class="xref" data-knowl="./knowl/fig-fig14b.html" title="Figure 1.2.3.(b)">Figure 1.2.3.(b)</a> and <span class="process-math">\(\,dx\)</span> and <span class="process-math">\(\,dy\)</span> are its sides, then the value of field at the middle of side <span class="process-math">\(ab\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig14b.html">
 \begin{equation*}
-\vec{\alpha} = \vec{a}-2\vec{b}+3\vec{c}{;} \vec{\beta}  
-= -2\vec{a}+3\vec{b}-4\vec{c}{;} \text{and}\quad \vec{\gamma} 
-= -\vec{b}+2\vec{c} 
+= v_{x}\left(x,y-\frac{\,dy}{2},z\right)
+=v_{x}\left(x,y,z\right)-\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy
 \end{equation*}
 </div>
-<div class="para">then,</div>
-<div class="displaymath process-math">
+<div class="para">the value of field at middle of side <span class="process-math">\(cd\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig14b.html">
 \begin{equation*}
-\vec{\alpha}\cdot (\vec{\beta}\times \vec{\gamma}) 
-= \begin{bmatrix} 
-1 &amp; -2 &amp; 3 \\ 
--2 &amp; 3 &amp; -4 \\ 
-0 &amp; -1 &amp; 2 
-\end{bmatrix} 
+= v_{x}\left(x,y+\frac{\,dy}{2},z\right)=v_{x}\left(x,y,z\right)+\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">the value of field at middle of side <span class="process-math">\(bc\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig14b.html">
 \begin{equation*}
-= 1(6-4)+2(-4)+3(2)  =2-8+6 = 0.
+= v_{y}\left(x+\frac{\,dx}{2},y,z\right)=v_{y}\left(x,y,z\right)+\frac{1}{2}\frac{\partial v_{y}}{\partial x}\,dx 
 \end{equation*}
 </div>
+<div class="para">the value of field at the middle of side <span class="process-math">\(da\)</span>
 </div>
-<span class="incontext"><a href="sec_first-examplesA.html#p-61" class="internal">in-context</a></span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig14b.html">
+\begin{equation*}
+= v_{y}\left(x-\frac{\,dx}{2},y,z\right)=v_{y}\left(x,y,z\right)-\frac{1}{2}\frac{\partial v_{y}}{\partial x}\,dx 
+\end{equation*}
+</div>
+<div class="para">Since the test area is so small that the value of field at the middle of side is taken as an average along that side. Therefore, the line integral of field along <span class="process-math">\(ab\)</span> and <span class="process-math">\(cd\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig14b.html">
+\begin{equation*}
+=\vec{v}_{ab}\cdot \vec{dx}+\vec{v}_{cd}\cdot \vec{\,dx} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig14b.html">
+\begin{equation*}
+=\left[\left(v_{x}-\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy\right)\right] - \left[\left(v_{x}+\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy\right)\right]\,dx  
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig14b.html">
+\begin{equation*}
+= -\frac{\partial v_{x}}{\partial y}\,dx\,dy
+\end{equation*}
+</div>
+<div class="para">Similarly, the line integral along <span class="process-math">\(bc\)</span> and  <span class="process-math">\(da\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig14b.html">
+\begin{equation*}
+=\frac{\partial v_{y}}{\partial x}\,dx\,dy.
+\end{equation*}
+</div>
+<div class="para">Therefore, the line integral around the rectangle <span class="process-math">\(abcd\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig14b.html">
+\begin{equation*}
+= \left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\,dx\,dy = \left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\,ds\hat{k}
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\,ds\)</span> is area of a rectangle and <span class="process-math">\(\hat{k}\)</span> gives its direction.</div>
+</div>
+<span class="incontext"><a href="subsec-curl_vect.html#p-61" class="internal">in-context</a></span>
 </body>
 </html>

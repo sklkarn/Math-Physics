@@ -13,45 +13,68 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
+<div class="para">Let,</div>
 <div class="displaymath process-math">
 \begin{align*}
-\text{Let} \quad \vec{r} \amp 
-=\cos(t-1)\hat{i}+\sinh (t-1)\hat{j}+\alpha t^{3}\hat{k}\\
-\text{or, velocity}  \amp = \frac{\vec{dr}}{dt} 
-= - \sin(t-1)\hat{i}+\cosh (t-1)\hat{j}+3\alpha t^{2}\hat{k} \\
-\text{or, acceleration }  \amp = \frac{{d^{2}\vec{r}}}{dt^{2}} 
-= - \cos(t-1)\hat{i}+\sin(t-1)\hat{j}+6\alpha t\hat{k}
+\vec{a} \amp  = a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}; \
+quad  \vec{b} = b_{1}\hat{i}+b_{2}\hat{j}+ b_{3}\hat{k}; \\
+and, \vec{c} \amp = c_{1}\hat{i}+c_{2}\hat{j}+ c_{3}\hat{k}\\
+\vec{l} \amp  = l_{1}\hat{i}+l_{2}\hat{j}+ l_{3}\hat{k}, \quad  
+\vec{m} = m_{1}\hat{i}+m_{2}\hat{j}+ m_{3}\hat{k}, \\
+and, \vec{n}\amp = n_{1}\hat{i}+n_{2}\hat{j}+ n_{3}\hat{k}, 
 \end{align*}
 </div>
-<div class="para">At <span class="process-math">\(t=1\text{,}\)</span>
-</div>
+<div class="para">then,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\vec{a} =  \frac{{d^{2}\vec{r}}}{dt^{2}} = -\hat{i}+6\alpha\hat{k},
+\vec{l}\cdot \vec{a} = \left(l_{1}\hat{i}+l_{2}\hat{j}+ l_{3}\hat{k}\right)
+\cdot \left(a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}\right) 
+=  l_{1}a_{1} + l_{2}a_{2}  + l_{3}a_{3} 
 \end{equation*}
 </div>
-<div class="para">and</div>
+<div class="para">similarly, we can find the value of <span class="process-math">\(\vec{l}\cdot \vec{b}\text{,}\)</span> <span class="process-math">\(\vec{l}\cdot \vec{c}\text{,}\)</span> and <span class="process-math">\(\vec{m}\cdot \vec{a}\)</span> etc. Now,</div>
+<div class="displaymath process-math">
+\begin{align*}
+\left[\vec{l}\vec{m}\vec{n}\right]\left[\vec{a}\vec{b}\vec{c}\right] \amp 
+= {\begin{bmatrix} 
+l_{1} &amp; l_{2} &amp; l_{3} \\ 
+m_{1} &amp; m_{2} &amp; m_{3} \\ 
+n_{1} &amp; n_{2} &amp; n_{3} 
+\end{bmatrix}} 
+{\begin{bmatrix} 
+a_{1} &amp; a_{2} &amp; a_{3} \\ 
+b_{1} &amp; b_{2} &amp; b_{3} \\ 
+c_{1} &amp; c_{2} &amp; c_{3} 
+\end{bmatrix}} \\
+\amp = {\begin{bmatrix} 
+l_{1} &amp; l_{2} &amp; l_{3} \\ 
+m_{1} &amp; m_{2} &amp; m_{3} \\ 
+n_{1} &amp; n_{2} &amp; n_{3} 
+\end{bmatrix}} 
+{\begin{bmatrix} 
+a_{1} &amp; b_{1} &amp; c_{1} \\ 
+a_{2} &amp; b_{2} &amp; c_{2} \\ 
+a_{3} &amp; b_{3} &amp; c_{3} 
+\end{bmatrix}} 
+\end{align*}
+</div>
+<div class="para">[using properties of determinant where rows, (or, column) can be exchanged without changing the value of determinant.]</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\vec{r}=\hat{i}+\alpha\hat{k}.
+={\begin{bmatrix} 
+l_{1} a_{1} + l_{2} a_{2} + l_{3} a_{3} &amp; l_{1} b_{1} + l_{2} b_{2} + l_{3} b_{3} &amp; l_{1} c_{1} + l_{2} c_{2} + l_{3} c_{3} \\ 
+m_{1} a_{1} + m_{2} a_{2} + m_{3} a_{3}  &amp; m_{1} b_{1} + m_{2} b_{2} + m_{3} b_{3} &amp; m_{1} c_{1} + m_{2} c_{2} + m_{3} c_{3} \\ 
+n_{1} a_{1} + n_{2} a_{2} + n_{3} a_{3} &amp; n_{1} b_{1} + nl_{2} b_{2} + n_{3} b_{3} &amp; n_{1} c_{1} + n_{2} c_{2} + n_{3} c_{3} 
+\end{bmatrix}}
 \end{equation*}
 </div>
-<div class="para">If <span class="process-math">\(\vec{r}\)</span> and <span class="process-math">\(\vec{a}\)</span> are normal, then <span class="process-math">\(\vec{r} \cdot \vec{a}  = 0.\text{.}\)</span>
-</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\text{or,}\quad (\hat{i}+\alpha\hat{k})(-\hat{i}+6\alpha\hat{k}) = 0.
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
--1+6\alpha^{2} =0.
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore \quad \alpha = \pm\frac{1}{\sqrt{6}} \hspace{1cm} Ans.
+={\begin{bmatrix} 
+\vec{l}\cdot \vec{a} &amp; \vec{l}\cdot \vec{b} &amp; \vec{l}\cdot \vec{c} \\ 
+\vec{m}\cdot \vec{a} &amp; \vec{m}\cdot \vec{b} &amp; \vec{m}\cdot \vec{c} \\ 
+\vec{n}\cdot \vec{a} &amp; \vec{n}\cdot \vec{b} &amp; \vec{n}\cdot \vec{c} 
+\end{bmatrix}}.
 \end{equation*}
 </div>
 </div>

@@ -11,15 +11,35 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para"> The surface integral of the normal component of function <span class="process-math">\(\vec{F}\)</span> over the boundary of a closed surface <span class="process-math">\(S\)</span> of any shape is equal to the volume integral of the divergence of <span class="process-math">\(\vec{F}\)</span> taken throughout the enclosed volume V, i.e.,</div>
+<div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\iint_{S} \vec{F} \cdot \hat{n} \,dS =\iiint_{V}(\vec{\nabla}\cdot \vec{F})\,dV
+\left(\vec{\nabla}\times\vec{v}\right) 
+= {\begin{Vmatrix} 
+\hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+\frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
+v_{1} &amp; v_{2} &amp; v_{3} 
+\end{Vmatrix}} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=  \left[\frac{\partial v_{3}}{\partial y} 
+-\frac{\partial v_{2}}{\partial z}\right]\hat{i} 
++\left[\frac{\partial v_{1}}{\partial z} 
+-\frac{\partial v_{3}}{\partial x}\right]\hat{j} 
++\left[\frac{\partial v_{2}}{\partial x} 
+-\frac{\partial v_{1}}{\partial y}\right]\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \hat{k}(-\frac{\partial v_{1}}{\partial y})=  (-2x)\hat{k}
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-divergence_thrm.html#p-116" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_first-examplesA.html#p-116" class="internal">in-context</a></span>
 </body>
 </html>

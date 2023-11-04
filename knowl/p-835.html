@@ -13,65 +13,130 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para"> The complex form of Fourier series is obtained by expressing  <span class="process-math">\(\cos nx\)</span> and <span class="process-math">\(\sin nx\)</span> in the exponential form, i.e.,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
+<div class="para">Let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
 \begin{equation*}
-f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
+<div class="para">here,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
 \begin{equation*}
-=\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}a_{n}\left[\frac{e^{inx}+e^{-inx}}{2}\right] + \sum\limits_{n=1}^{\infty}b_{n}\left[\frac{e^{inx}-e^{-inx}}{2i}\right]	
+a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
 \begin{equation*}
-=\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[\frac{a_{n}}{2}-\frac{ib_{n}}{2}\right]e^{inx}+\sum\limits_{n=1}^{\infty}\left[\frac{a_{n}}{2}+\frac{ib_{n}}{2}\right]e^{-inx} 
+= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}(x+x^{2}) \,dx = \frac{1}{\pi}\left[\frac{x^{2}}{2}+\frac{x^{3}}{3}\right]_{-\pi}^{\pi}=\frac{2 \pi^{2}}{3}.
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
 \begin{equation*}
-=c_{0}+\sum\limits_{n=1}^{\infty}c_{n}e^{inx}+\sum\limits_{n=1}^{\infty}c_{-n}e^{-inx}
+a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} (x+x^{2}) \cos nx\,dx
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+=\frac{1}{\pi}\left[\left\{(x+x^{2})\left(\frac{\sin nx}{n}\right)\right\}_{-\pi}^{\pi} \left\{(1+2 x) \left(\frac{\cos nx}{-n^{2}}\right)\right\}_{-\pi}^{\pi} \right.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+\left.+ \left\{2\left(\frac{\sin nx}{-n^{3}}\right)\right\}_{-\pi}^{\pi}\right].
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+=\frac{1}{\pi}\left[0+(1+2\pi)\left(\frac{\cos n\pi}{n^{2}}\right)-(1-2\pi)\left(\frac{\cos n\pi}{n^{2}}\right)+0\right]
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\([\because  \cos (-\theta ) = \cos \theta ] \)</span></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+=\frac{1}{n^{2}\pi}	\left[(1+2\pi)\cos n\pi -(1-2\pi)\cos n\pi\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+=\frac{1}{n^{2}\pi}	\left[\cos n\pi +2\pi\cos n\pi-\cos n\pi+2\pi \cos n\pi\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+=\frac{1}{n^{2}\pi}	\left[4\pi \cos n\pi\right] = \frac{4}{n^{2}}(-1)^{n}. 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} (x+x^{2}) \sin nx\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+=\frac{1}{\pi}\left[(x+x^{2})\left(\frac{\cos nx}{-n}\right)-(1+2x)\left(\frac{\sin nx}{-n^{2}}\right)+2\left(\frac{\cos nx}{+n^{3}}\right)\right]_{-\pi}^{\pi}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+=\frac{1}{\pi}\left[\left\{(\pi+\pi^{2})\left(\frac{\cos n\pi}{-n}\right)-(-\pi+\pi^{2})\left(\frac{\cos n\pi}{-n}\right)\right\} \right.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+\left. + 0 +2\left(\frac{\cos n\pi}{n^{3}}-\frac{\cos n\pi}{n^{3}}\right)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+=\frac{1}{\pi}\left[-\frac{1}{n}\left\{\pi+\pi^{2}+\pi-\pi^{2}\right\}\cos n\pi+0\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+=\frac{1}{\pi}\left[-\frac{2\pi}{n}\cos n\pi\right] = -\frac{2}{n}(-1)^{n}.
+\end{equation*}
+</div>
+<div class="para">Therefore, the expression <span class="process-math">\(f(x)\)</span> becomes -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+x+x^{2} = \frac{\pi^{2}}{3}+\frac{4}{n^{2}}(-)^{n}\cos nx-\frac{2}{n}(-1)^{n}\sin nx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
+\begin{equation*}
+x+x^{2} = \frac{\pi^{2}}{3}+4\left[-\cos x + \frac{\cos 2x}{2^{2}}-\frac{\cos 3x}{3^{2}}+\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
 \begin{equation}
-\therefore  \quad f(x) = \sum\limits_{n=-\infty}^{\infty}c_{n}e^{inx};\tag{5.5.3}
+-2\left[-\sin x +\frac{\sin 2x}{2}-\frac{\sin 3x}{3}+\cdots\right]  \tag{5.4.2}
 \end{equation}
 </div>
-<div class="para">where,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
+<div class="para">As <span class="process-math">\(-\pi\)</span> and <span class="process-math">\(\pi\)</span> are points of discontinuties, the sum of the series of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-fourier_sum2.html" title="Equation 5.4.2">(5.4.2)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
 \begin{equation*}
-\begin{cases} 
-c_{0} = \frac{a_{0}}{2}\\
-c_{n} = \frac{1}{2}(a_{n}-ib_{n})\\ 
-c_{-n} = \frac{1}{2}(a_{n}+ib_{n}) 
-\end{cases}	
+f(x)=\frac{1}{2}\left[f(-\pi+0)+f(\pi-0)\right] =\frac{1}{2}\left[(-\pi+\pi^{2})+(\pi+\pi^{2})\right] 
 \end{equation*}
 </div>
-<div class="para">Equation <a href="" class="xref" data-knowl="./knowl/eqn-comp_fourier1.html" title="Equation 5.5.3">(5.5.3)</a> is a complex form of Fourier series. On multiplying both sides of equation <a href="" class="xref" data-knowl="./knowl/eqn-comp_fourier1.html" title="Equation 5.5.3">(5.5.3)</a> by <span class="process-math">\(e^{-imx}\)</span> and integrating w.r.t. 'x', we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
 \begin{equation*}
-\int\limits_{c}^{c+2\pi}f(x)e^{-imx} \,dx = \sum\limits_{n=-\infty}^{\infty}c_{n}\int\limits_{c}^{c+2\pi}e^{i(n-mx)} \,dx 
+=\frac{1}{2}[-\pi+\pi^{2}+\pi+\pi^{2}] = \frac{1}{2}.2\pi^{2}=\pi^{2}.
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
+<div class="para">Hence, from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-fourier_sum2.html" title="Equation 5.4.2">(5.4.2)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
 \begin{equation*}
-= \sum\limits_{n=-\infty}^{\infty}c_{n}2\pi \delta_{mn}=2\pi c_{m}
+\pi^{2}=\frac{\pi^{2}}{3}+4[1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\cdots]-2[0+0+\cdots] 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum2.html ./knowl/eqn-fourier_sum2.html">
 \begin{equation*}
-\therefore  c_{n}	=\frac{1}{2\pi}\int\limits_{c}^{c+2\pi}f(x)e^{-inx} \,dx.
-\end{equation*}
-</div>
-<div class="para">The function <span class="process-math">\(f(x)\)</span> is being defined in the interval <span class="process-math">\([c, c+2\pi]\text{.}\)</span> Hence,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-comp_fourier1.html ./knowl/eqn-comp_fourier1.html">
-\begin{equation*}
-c_{0}=\frac{1}{2\pi}\int\limits_{c}^{c+2\pi}f(x) \,dx = \frac{a_{0}}{2}.
+\frac{\pi^{2}}{6} =1+\frac{1}{2^{2}}+\frac{1}{3^{2}}+\cdots =\sum\limits_{n=1}^{\infty}\frac{1}{n^{2}}.
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-fourier_complex.html#p-835" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_fifth-examplesB.html#p-835" class="internal">in-context</a></span>
 </body>
 </html>

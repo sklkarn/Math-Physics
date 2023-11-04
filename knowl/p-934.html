@@ -13,71 +13,14 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Given that</div>
+<div class="para">Convolution theorem is a mathematical operation widely used in communication physics. If <span class="process-math">\(F(s)\)</span> and <span class="process-math">\(G(s)\)</span> are Fourier transform of two functions <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> respectively, then Fourier transform of the convolution (coiled) of <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(g(x)\)</span> is the product of their Fourier transforms, i.e.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \begin{cases}
-1-x^{2}, &amp;  -1 \leq x \leq 1\\
-0, &amp;  -1 \gt x \gt 1
-\end{cases}
+\mathscr{F}	\{f(x) * g(x)\} = F(s).G(s) 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore   \mathscr{F}\{f(x)\} = F(s) = \int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx  
-\end{equation*}
+<div class="para">where the astric <span class="process-math">\(($*$)\)</span> denotes convolution (not a complex conjugate).</div>
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{-\infty}^{-1}f(x) e^{-isx}\,dx+\int\limits_{-1}^{1}f(x) e^{-isx}\,dx + \int\limits_{1}^{\infty}f(x) e^{-isx}\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{\infty}^{1}f(-y) e^{isy}\,(-dy)+\int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx + \int\limits_{1}^{\infty}0. e^{-isx}\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\int\limits_{1}^{\infty}f(-y) e^{isy}\,(dy)+\int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx + 0 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{1}^{\infty}0. e^{isy}\,(dy)+\int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx + 0
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx = \int\limits_{-1}^{1} e^{-isx}\,dx - \int\limits_{-1}^{1} x^{2} e^{-isx}\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\left[\frac{e^{-isx}}{-is}\right]_{-1}^{1} - \left[\frac{x^{2}e^{-isx}}{-is}-2x \frac{e^{-isx}}{i^{2}s^{2}}+2\frac{e^{-isx}}{+is^{3}}\right]_{-1}^{1}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{-is}\left[e^{-is}-e^{is}\right]-\frac{e^{-is}}{-is}+2\frac{e^{-is}}{-s^{2}}-2\frac{e^{-is}}{is^{3}}+\frac{e^{is}}{-is}+2\frac{e^{is}}{-s^{2}}+2\frac{e^{is}}{is^{3}}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{-is}\left[e^{-is}-e^{is}\right]+\frac{1}{is}\left[e^{-is}-e^{is}\right] - \frac{2}{s^{2}}\left[e^{-is}+e^{is}\right]+\frac{2}{is^{3}}\left[e^{is}-e^{-is}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=-\frac{2s}{s^{3}}\left[e^{-is}+e^{is}\right]-\frac{2i}{s^{3}}\left[e^{is}-e^{-is}\right] 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{s^{3}}(4\sin s-4s\cos s).
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="sec_sixth-examplesA.html#p-934" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-Fconvl.html#p-934" class="internal">in-context</a></span>
 </body>
 </html>

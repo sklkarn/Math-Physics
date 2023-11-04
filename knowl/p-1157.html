@@ -13,83 +13,53 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Therefore the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-waveeqn1.html" title="Equation 7.2.26">(7.2.26)</a> is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+<div class="para">Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation}
-u(x,y,t)=\sum\limits_{m=1}^{\infty}A_{mn}\cos\lambda_{mn}t\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}	\tag{7.2.29}
+u=C \cos\lambda_{1}x\cos\lambda_{2}y\cos\lambda_{3}z\cos\lambda vt\tag{7.1.80}
 \end{equation}
 </div>
-<div class="para">where</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+<div class="para">The result <a href="" class="xref" data-knowl="./knowl/eqn-3D_wave6.html" title="Equation 7.1.80">(7.1.80)</a> may be deduced from equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_wave3.html" title="Equation 7.1.77">(7.1.77)</a>, since, when <span class="process-math">\(x=0, \sin\alpha_{1}x =0\)</span>  etc. According to boundary condition i., we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation*}
-A_{mn}=\frac{4}{1\cdot 1}\int\limits_{x=0}^{1}\int\limits_{y=0}^{1}f(x,y)\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}\,dx\,dy 
+\sin\lambda_{1}a\cos\lambda_{2}y\cos\lambda_{3}z\cos\lambda vt=0,	
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+<div class="para">i.e., <span class="process-math">\(\sin\lambda_{1}a=0 \)</span> or,	<span class="process-math">\(\sin\lambda_{1}a =N_{1}\pi\)</span>	and <span class="process-math">\(\lambda_{1}=\frac{N_{1}\pi}{a}, N_{1}\)</span> being an integer. Similarly,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
+\begin{equation*}
+\lambda_{2}=\frac{N_{2}\pi}{a}, \quad \lambda_{3}=\frac{N_{3}\pi}{a},
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
+\begin{equation*}
+\lambda =\sqrt{\lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2}} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
+\begin{equation*}
+=\frac{\pi}{a}\sqrt{N_{1}^{2}+N_{2}^{2}+N_{3}^{2}}
+\end{equation*}
+</div>
+<div class="para">now, equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_wave6.html" title="Equation 7.1.80">(7.1.80)</a> reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
+\begin{equation*}
+u=C\cos \frac{N_{1}\pi x}{a} \cos \frac{N_{2}\pi y}{a}\cos \frac{N_{3}\pi z}{a} \cos\{\sqrt{N_{1}^{2}+N_{2}^{2}+N_{3}^{2}}\frac{\pi vt}{a}\}
+\end{equation*}
+</div>
+<div class="para">Hence the general solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_wave1.html" title="Equation 7.1.75">(7.1.75)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
+\begin{equation*}
+u=\sum_{N_{1}=1}^{\infty}\sum_{N_{2}=1}^{\infty}\sum_{N_{3}=1}^{\infty}C_{N_{1}N_{2}N_{3}}\cos( \frac{N_{1}\pi x}{a})
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation}
-=4\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin 2\pi y \sin m\pi x\sin n\pi y\,dx\,dy \tag{7.2.30}
+\cos (\frac{N_{2}\pi y}{a}) \cos (\frac{N_{3}\pi z}{a}) \cos\left\{\sqrt{N_{1}^{2}+N_{2}^{2}+N_{3}^{2}}\frac{\pi vt}{a}\right\}\tag{7.1.81}
 \end{equation}
 </div>
-<div class="para">on integration, we find that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-A_{m1}=A_{m3}=A_{m4}=\cdots=0
-\end{equation*}
 </div>
-<div class="para">but,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-A_{m2} =4A\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin m\pi x\sin^{2} 2\pi y\,dx\,dy 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-= 2A\int\limits_{0}^{1}\int\limits_{0}^{1}\sin \pi x\sin m\pi x(1-\cos4\pi y)\,dx\,dy
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-=2A\int\limits_{0}^{1}\sin \pi x\sin m\pi x\left(y-\frac{1}{4\pi}\sin 4\pi y\right)_{0}^{1}\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-= 2A \int\limits_{0}^{1}\sin \pi x\sin m\pi x\,dx 
-\end{equation*}
-</div>
-<div class="para">on integration, we find that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-A_{22}= A_{32}=A_{42}=\cdots=0
-\end{equation*}
-</div>
-<div class="para">Also, we find</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-A_{12} =2A\int\limits_{0}^{1}\sin \pi x\sin \pi x\,dx = A\int\limits_{0}^{1}(1-\cos 2\pi x)\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-= A\left(x-\frac{\sin 2\pi x}{2\pi}\right)_{0}^{1}=A.
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-\therefore \quad u(x,y,t)= A_{12}\cos\lambda_{12}t\sin\pi x\sin 2\pi y 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-=A\cos\sqrt{5}\pi t\sin\pi x\sin 2\pi t
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
-\begin{equation*}
-[ \because \quad \lambda_{12}^{2}=1^{2}\cdot k_{12}^{2}=\pi^{2}(1^{2}+2^{2}); \quad \therefore \quad \lambda_{12}=\pi \sqrt{5}].
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="sec_seventh-examplesA.html#p-1157" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-2Dwave_sol.html#p-1157" class="internal">in-context</a></span>
 </body>
 </html>

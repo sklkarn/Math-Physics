@@ -11,52 +11,134 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Paragraph</span></h2>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Now if <span class="process-math">\(\rho\)</span> be the density of the body, <span class="process-math">\(c\)</span> be the specific heat capacity, then the total heat <span class="process-math">\(Q\)</span> contained in the body is given by</div>
-<div class="displaymath process-math">
+<div class="para">The wave equation is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
 \begin{equation}
-Q=\iiint\limits_{V}c\rho u\,dV  \tag{7.3.3}
+\frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}} \tag{7.2.1}
 \end{equation}
 </div>
-<div class="para">
-<span class="process-math">\([\because\quad Q = mc\theta =V\rho c \theta ] \)</span> here <span class="process-math">\(\theta\)</span> = temperature, <span class="process-math">\(u\)</span>] so the rate of decrease of <span class="process-math">\(Q\)</span> is given by</div>
-<div class="displaymath process-math">
+<div class="para">Let us assume its solution as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
 \begin{equation}
--\frac{\partial Q}{\partial t}=-\iiint\limits_{V}c\rho \frac{\partial u}{\partial t}\,dV\tag{7.3.4}
+y(x,t) = X(x) T(t) \tag{7.2.2}
 \end{equation}
 </div>
-<div class="para">This must be equal to the amount of heat leaving the body in unit time, i.e.,</div>
-<div class="displaymath process-math">
+<div class="para">so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
 \begin{equation*}
--\iiint\limits_{V}c\rho \frac{\partial u}{\partial t}\,dV = -k \iiint\limits_{V}\nabla^{2}u\,dV
+\frac{\partial y}{\partial t} =X\frac{\partial T}{\partial t}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\frac{\partial^{2} y}{\partial t^{2}}=X\frac{\partial^{2} T}{\partial t^{2}}
+\end{equation*}
+</div>
+<div class="para">also</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\frac{\partial y}{\partial x} =T\frac{\partial X}{\partial x}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\frac{\partial^{2} y}{\partial x^{2}}=T\frac{\partial^{2} X}{\partial x^{2}}
+\end{equation*}
+</div>
+<div class="para">Substituting these values in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dwave1.html" title="Equation 7.2.1">(7.2.1)</a>(i), we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+X\frac{\partial^{2} T}{\partial t^{2}} =  Tv^{2}\frac{\partial^{2} X}{\partial x^{2}}
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}} =\frac{1}{ v^{2}T} \frac{\partial^{2} T}{\partial t^{2}} =-k^{2} \text{(say)}
+\end{equation*}
+</div>
+<div class="para">or, and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
 \begin{equation}
-\iiint\limits_{V}\left[c\rho \frac{\partial u}{\partial t}-k\nabla^{2}u\right]\,dV=0\tag{7.3.5}
+\frac{\partial^{2} X}{\partial x^{2}}+k^{2}X = 0 \quad \text{and} \quad \frac{\partial^{2} T}{\partial t^{2}}+k^{2}v^{2}T = 0 \tag{7.2.3}
 \end{equation}
 </div>
-<div class="para">Since the surface <span class="process-math">\(S\)</span> is arbitrary, the volume enclosed by surface <span class="process-math">\(\,dS\)</span> is <span class="process-math">\(\,dV\neq 0\text{.}\)</span>Thus the integrands must be zero. i.e.,</div>
-<div class="displaymath process-math">
+<div class="para">Now, auxiliary equations are - <span class="process-math">\(m^{2}+k^{2}=0\text{,}\)</span> or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
 \begin{equation*}
-c\rho \frac{\partial u}{\partial t}= k\nabla^{2}u
+m=\pm ik
+\end{equation*}
+</div>
+<div class="para">and <span class="process-math">\(m^{2}+k^{2}v^{2}=0\)</span> or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+m=\pm ikv\text{.}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation}
+X=c_{1}\cos kx+c_{2}\sin kx \quad  \text{and} \quad  T=c_{3}\cos kvt+c_{4}\sin kvt  \tag{7.2.4}
+\end{equation}
+</div>
+<div class="para">Thus</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation}
+y(x,t)=(c_{1}\cos kx+c_{2}\sin kx)(c_{3}\cos kvt+c_{4}\sin kvt)\tag{7.2.5}
+\end{equation}
+</div>
+<div class="para">[from eqn.<a href="" class="xref" data-knowl="./knowl/eqn-1Dwave2.html" title="Equation 7.2.2">(7.2.2)</a>]. Put <span class="process-math">\(y=0\)</span> when <span class="process-math">\(x=0\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+0=c_{1}(c_{3}\cos kvt+c_{4}\sin kvt) \Rightarrow c_{1} =0.
+\end{equation*}
+</div>
+<div class="para">Hence, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dwave3.html" title="Equation 7.2.3">(7.2.3)</a>(iii) reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+y=c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt)
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{\partial u}{\partial t}=\frac{k}{c\rho} \nabla^{2}u
-\end{equation*}
-</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
 \begin{equation}
-\therefore \quad \frac{\partial u}{\partial t} =h^{2}\nabla^{2}u\tag{7.3.6}
+y=c_{2}c_{3}\cos kvt.\sin kx+c_{2}c_{4}\sin kvt.\sin kx\tag{7.2.6}
 \end{equation}
 </div>
-<div class="para">This equation is known as heat equation. The quantity <span class="process-math">\(h^{2}\)</span> is known as diffusivity of the solid, and is defined as the ratio of thermal conductivity and heat capacity of solid per unit volume.</div>
+<div class="para">put <span class="process-math">\(y=p_{o}\cos pt\)</span>  when <span class="process-math">\(x=1\text{,}\)</span>
 </div>
-<span class="incontext"><a href="sec_seventh-heateq.html#p-1159" class="internal">in-context</a></span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+\therefore \quad p_{o}\cos pt = c_{2}c_{3}\cos kvt.\sin kl+c_{2}c_{4}\sin kvt.\sin kl
+\end{equation*}
+</div>
+<div class="para">equating the coefficients of <span class="process-math">\(\sin\)</span> and <span class="process-math">\(\cos\)</span> on both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+p_{o} =c_{2}c_{3}\sin kl  \quad		\Rightarrow  c_{2}c_{3} = \frac{p_{o}}{\sin kl},
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+0=c_{2}c_{4}\sin kl \quad \Rightarrow c_{2}c_{2}c_{4} =0,
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+p=kv \quad \Rightarrow \frac{p}{v}=k  
+\end{equation*}
+</div>
+<div class="para">Hence, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dwave6.html" title="Equation 7.2.6">(7.2.6)</a> becomes -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+\begin{equation*}
+y=\frac{p_{o}}{\sin kl}\cos pt.\sin \frac{p}{v}x = \frac{p_{o}}{\sin (\frac{p}{v})l}\cos pt.\sin (\frac{p}{v})x
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_seventh-examplesA.html#p-1159" class="internal">in-context</a></span>
 </body>
 </html>
