@@ -403,7 +403,7 @@
       <mrow>  \amp  = \hat{i} n \cdot r^{n-2}\cdot x 
       + \hat{j} n \cdot r^{n-2}\cdot y + \hat{k} n \cdot r^{n-2}\cdot z</mrow>
       <mrow> \amp =n \cdot r^{n-2}\left(\hat{i} x+\hat{j} y+\hat{k} z\right) 
-      =  n r^{n-2}\vec{r} \hspace{1cm} \text{proved.} </mrow>
+      =  n r^{n-2}\vec{r}  </mrow>
     </md>
       </p>
     </solution>
@@ -725,7 +725,7 @@ where <m>\theta</m>  is the required angle. Now,
           = \left(\frac{\partial^{2}}{\partial x^{2}} 
           +\frac{\partial^{2}}{\partial y^{2}} 
           +\frac{\partial^{2}}{\partial z^{2}}\right)\phi</mrow>
-          <mrow> \amp  = \nabla^{2}\phi. Proved.</mrow>
+          <mrow> \amp  = \nabla^{2}\phi. </mrow>
       </md>
       Where,
       <me>
@@ -791,7 +791,7 @@ where <m>\theta</m>  is the required angle. Now,
      <mrow> \amp  = \frac{1}{r^{2}}\left[3r-\left(\frac{x^{2}}{r}+\frac{y^{2}}{r} 
      +\frac{z^{2}}{r}\right)\right]  </mrow>
      <mrow> \amp = \frac{1}{r^{2}}\left[3r-\left(\frac{r^{2}}{r}\right)\right] 
-     =\frac{1}{r^{2}}(2r)=\frac{2}{r}. \quad Proved.</mrow>
+     =\frac{1}{r^{2}}(2r)=\frac{2}{r}. </mrow>
     </md>
       </p>
     </solution>
@@ -857,13 +857,13 @@ where <m>\theta</m>  is the required angle. Now,
     </me>
     <me>
       =\phi \left(\vec{\nabla}\times\vec{F}\right) 
-      +{\begin{vmatrix} \hat{i} &amp; \hat{j}  &amp; \hat{k} \\ 
+      +{\begin{Vmatrix} \hat{i} &amp; \hat{j}  &amp; \hat{k} \\ 
       \frac{\partial \phi}{\partial x}  &amp; \frac{\partial \phi}{\partial y}  &amp; \frac{\partial \phi}{\partial z}\\ 
-      F_{1}  &amp; F_{2}  &amp;  F_{3} \end{vmatrix}}
+      F_{1}  &amp; F_{2}  &amp;  F_{3} \end{Vmatrix}}
     </me>
     <me>
       =  \left(\vec{\nabla}\phi\times\vec{F}\right) 
-      + \phi\left(\vec{\nabla}\times\vec{F}\right) \quad  proved.
+      + \phi\left(\vec{\nabla}\times\vec{F}\right)
     </me>
       </p>
     </solution>
@@ -875,10 +875,10 @@ where <m>\theta</m>  is the required angle. Now,
         Prove that   
         <ol marker ="a.">
           <li>
-            <m>\vec{\nabla}\times \left(\vec{\nabla}\phi\right) = 0 </m> \quad and 
+            <m>\vec{\nabla}\times \left(\vec{\nabla}\phi\right) = 0 </m>
           </li>
           <li>
-            <m>\vec{\nabla}\cdot \left(\vec{\nabla}\times\vec{A}\right) = 0.</m>
+           and <m>\vec{\nabla}\cdot \left(\vec{\nabla}\times\vec{A}\right) = 0.</m>
           </li>
         </ol> 
       </p>
@@ -893,10 +893,10 @@ where <m>\theta</m>  is the required angle. Now,
               +\frac{\partial \phi}{\partial y}\hat{j}+\frac{\partial \phi}{\partial z}\hat{k}\right) 
             </me>
             <me>
-              = {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+              = {\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
               \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
               \frac{\partial \phi}{\partial x} &amp; \frac{\partial\phi}{\partial y} &amp; \frac{\partial \phi}{\partial z} 
-              \end{vmatrix}}
+              \end{Vmatrix}}
             </me>
             <me>
               =\left[\frac{\partial}{\partial y}\left(\frac{\partial \phi}{\partial z}\right) 
@@ -974,7 +974,9 @@ where <m>\theta</m>  is the required angle. Now,
         </me>
         Put, <m>\vec{a}=\vec{b}=\vec{\nabla}</m>, then
         <me>
-          \vec{\nabla}\times \left(\vec{\nabla}\times\vec{A}\right) = \left(\vec{\nabla}\cdot\vec{A}\right)\vec{\nabla}-\left(\vec{\nabla}\cdot\vec{\nabla}\right)\vec{A}=\vec{\nabla}\left(\vec{\nabla}\cdot\vec{A}\right)-\nabla^{2}\vec{A}.
+          \vec{\nabla}\times \left(\vec{\nabla}\times\vec{A}\right) 
+          = \left(\vec{\nabla}\cdot\vec{A}\right)\vec{\nabla}-\left(\vec{\nabla}\cdot\vec{\nabla}\right)\vec{A}
+          =\vec{\nabla}\left(\vec{\nabla}\cdot\vec{A}\right)-\nabla^{2}\vec{A}.
         </me>
       </p>
     </solution>
@@ -991,10 +993,10 @@ where <m>\theta</m>  is the required angle. Now,
       <p>
         We have  <m>\,curl\vec{v}=0</m>, or,  <m>\vec{\bigtriangledown}\times\vec{v}=0</m>, or,
         <me>
-          {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+          {\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
           \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
           x+y+az &amp; bx+3y-z &amp; 3x+cy+z 
-          \end{vmatrix}} = 0
+          \end{Vmatrix}} = 0
         </me>
         <me>
           or, \quad (c+1)\hat{i}-(3-a)\hat{j}+(b-1)\hat{k} = 0.\hat{i}+0.\hat{j}+0.\hat{k} 
@@ -1119,11 +1121,11 @@ where <m>\theta</m>  is the required angle. Now,
         We have 
         <me>
           \left(\vec{\nabla}\times\vec{v}\right) 
-          = {\begin{vmatrix} 
+          = {\begin{Vmatrix} 
           \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
           \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\ 
           v_{1} &amp; v_{2} &amp; v_{3} 
-          \end{vmatrix}} 
+          \end{Vmatrix}} 
         </me>
         <me>
           =  \left[\frac{\partial v_{3}}{\partial y} 
@@ -1136,8 +1138,7 @@ where <m>\theta</m>  is the required angle. Now,
         <me>
           = \hat{k}(-\frac{\partial v_{1}}{\partial y})=  (-2x)\hat{k}
         </me>
-        
-      </p>
+         </p>
     </solution>
   </example>
 </paragraphs>

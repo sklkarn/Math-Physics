@@ -13,7 +13,7 @@
     <idx><h>Laguerre's Differential Equation</h></idx>
     The differential equation  
     <men xml:id="eqn-laguer_eq1">
-      x\frac{d^{2}y}{dx^{2}}+(1-x)\frac{dy}{dx}+\lambda y=0
+      x\frac{d^{2}y}{dx^{2}}+(1-x)\frac{\,dy}{\,dx}+\lambda y=0
     </men>
         where <m>\lambda</m> is constant, is known as Laguerre's differential equation. 
         Such type of equation yields on solving Shrodinger's equation for Hydrogen atom. 
@@ -24,7 +24,7 @@
         </men>
         so that 
         <me>
-          \frac{dy}{dx}=\sum\limits_{k=0}^{\infty}a_{k}(m+k)x^{m+k-1} 
+          \frac{\,dy}{\,dx}=\sum\limits_{k=0}^{\infty}a_{k}(m+k)x^{m+k-1} 
         </me>
         and 
         <me>

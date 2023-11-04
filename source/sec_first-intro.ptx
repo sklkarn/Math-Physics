@@ -12,6 +12,9 @@
  
   <subsection xml:id="subsec_addvec-subsection">
     <title>Addition of Vectors</title>
+    <introduction>
+     
+
    <p>
     A vector whose effect is same as that of a set of two vectors is called the sum  or  
     the resultant of the given  vectors. Let  <m>\vec{OP} = \vec{a}</m> and  
@@ -85,10 +88,9 @@
       </ol>
     </p>
   </paragraphs>
+</introduction>
 
- </subsection>
-
-   <subsection xml:id="subsubsec_subvec_subsection">
+  <subsubsection xml:id="subsubsec_subvec">
     <title>Subtraction of Vectors</title>
     <p>
       The subtraction of a vector <m>\vec{b}</m>  from <m>\vec{a}</m> is the addition of a 
@@ -97,27 +99,32 @@
         \vec{a} - \vec{b} = \vec{a} + (-\vec{b})
       </me>
     </p>
-  </subsection>
+  </subsubsection>
 
-  <subsection xml:id="subsubsec_mltvec_subsection">
+   
+  <subsubsection xml:id="subsubsec_mltvec">
     <title>Scalar Multiplication of a Vector</title>
     <p>
       Let a vector  <m>\vec{a}</m> is multiplied by any real positive number <m>n</m>,  then the 
       product <m>n \vec{a}</m> is a vector whose magnitude is <m>n</m> times as that of  
       <m>\vec{a}</m> and its direction is the same as <m>\vec{a}</m>. If <m>n</m> is a negative 
       number then the direction of <m>n \vec{a}</m> is opposite to <m>\vec{a}</m>. 
-      If <m>\hat{a}</m> is a unit vector in the direction of <m>\vec{a}</m> then, we have  
-      <ol marker="a">
-        <li><m>\vec{a} = |a| \hat{a}</m></li> where <m>|a|</m>  is a magnitude of <m>\vec{a}</m>.
-        <li><m>(k+l)\vec{a} = (k+l)a \hat{a}  = k a \hat{a} + l a \hat{a} = k \vec{a} + l \vec{a}</m></li>
-        where <m>k</m> and <m>l</m> are scalars. 
-        <li><m>k(\vec{a} + \vec{b}) = k \vec{a} + k\vec{b}</m></li>
-        <li><m>k(l\vec{a}) = (k l) \vec{a}</m></li>
-      </ol>
-    </p>
-  </subsection>
+       </p>
+       <p>
+        If <m>\hat{a}</m> is a unit vector in the direction of <m>\vec{a}</m> then, we have  
+        <ol marker="a">
+          <li><m>\vec{a} = |a| \hat{a}</m></li> where <m>|a|</m>  is a magnitude of <m>\vec{a}</m>.
+          <li><m>(k+l)\vec{a} = (k+l)a \hat{a}  = k a \hat{a} + l a \hat{a} = k \vec{a} + l \vec{a}</m></li>
+          where <m>k</m> and <m>l</m> are scalars. 
+          <li><m>k(\vec{a} + \vec{b}) = k \vec{a} + k\vec{b}</m></li>
+          <li><m>k(l\vec{a}) = (k l) \vec{a}</m></li>
+        </ol>
+       </p>
+  </subsubsection>
 
-  <subsection xml:id="subsubsec_compntvec_subsection">
+
+
+  <subsubsection xml:id="subsubsec_compntvec">
     <title>Components of a Vector</title>
     <p>
       Any vector <m>\vec{r}</m> in a space can be resolved into three rectangular components. 
@@ -126,6 +133,8 @@
      are the unit vectors along <m>OX, OY</m> and <m>OZ</m>  axes, respectively so that  
      <m>\vec{OA} = x \hat{i}</m>, <m>\vec{OB} = y \hat{j}</m>, and <m>\vec{OC}= z \hat{k}</m>, 
      the rectangular components of <m>\vec{r}</m>. 
+    </p>
+    <p>
      <md>
      <mrow>\text{Now,}\quad \vec{r} \amp = \vec{OP} = (\vec{OF} + \vec{FP})</mrow>  
      <mrow> \amp  = (\vec{OA} + \vec{AF}) + \vec{FP}= \vec{OA} + \vec{OB} + \vec{OC}  </mrow>
@@ -178,7 +187,11 @@ cosines of <m>\vec{r}</m>. Obviously,
 </me>
 <m>\therefore  \quad  l^{2}+m^{2}+n^{2} = 1</m>.
     </p>
-  </subsection>
+  </subsubsection>
+
+ </subsection>
+
+ 
 
   <subsection xml:id="subsec-dbetpnts">
     <title>Distance between two points</title>
@@ -222,6 +235,7 @@ cosines of <m>\vec{r}</m>. Obviously,
       </corollary>
     </p>
    </subsection>
+
    <subsection xml:id="subsec-lincombvects">
     <title>Linear Combination of Vectors</title>
     <p>
@@ -315,12 +329,17 @@ cosines of <m>\vec{r}</m>. Obviously,
     </p>
     <p>
       Equating the coefficients of <m>\hat{i}</m>, <m>\hat{j}</m>, and <m>\hat{k}</m> on both sides, we get-
-      <mdn>
-        <mrow xml:id="eqn-1i"> l+2m+3n  \amp =0 </mrow>
-        <mrow xml:id="eqn-1ii"> -3l-4m+2n  \amp =0 </mrow>
-        <mrow xml:id="eqn-1iii"> \text{and} \quad 2l-m-n  \amp =0 </mrow>
-      </mdn>
-      From eqns. <xref ref="eqn-1i"/> and <xref ref="eqn-1ii"/> we get- 
+     <men xml:id="eqn-1i">
+      l+2m+3n  =0
+     </men>
+     <men xml:id="eqn-1ii">
+      -3l-4m+2n  =0
+     </men>
+     <men xml:id="eqn-1iii">
+      \text{and} \quad 2l-m-n  =0 
+     </men>
+
+            From eqns. <xref ref="eqn-1i"/> and <xref ref="eqn-1ii"/> we get- 
       <md>
         <mrow> \frac{l}{4+12}\amp =\frac{m}{-9-2} =\frac{n}{-4+6} =\lambda \quad \text{(say)} </mrow>
       <mrow> \text{or,} \quad \frac{l}{16} \amp =\frac{m}{-11}=\frac{n}{2} =\lambda</mrow>
@@ -400,7 +419,7 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
           </figure>
         </sidebyside>
   </figure>
-
+<p>
   <ol marker ="I">
     <li>
       <p>
@@ -424,6 +443,7 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
       </p>
     </li>
   </ol>
+</p>
  </subsubsection>
 
  <paragraphs>
@@ -575,7 +595,7 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
       + (a_{1}b_{2}-(a_{2}b_{1})\hat{k} </mrow>
      </md>
      <m>
-      =\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\a_{1} &amp; a_{2} &amp; a_{3} \\ b_{1} &amp; b_{2} &amp; b_{3} \end{vmatrix}
+      =\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\a_{1} &amp; a_{2} &amp; a_{3} \\ b_{1} &amp; b_{2} &amp; b_{3} \end{Vmatrix}
      </m>
     </li>
     </ol>
@@ -607,7 +627,8 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
   <p>
     <ol marker ="I">
       <li>
-       <term>Definition:</term>  Let <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>\vec{c}</m> 
+       <p>
+        <term>Definition:</term>  Let <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>\vec{c}</m> 
        be three vectors then their scalar triple product is determined by 
        <m>\vec{a}\cdot{(\vec{b}\times\vec{c})}</m> and <m> [\vec{a}\vec{b}\vec{c}]</m>.
        If <m> \vec{a} = a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}</m> 
@@ -615,8 +636,8 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
         and <m> \vec{c} = c_{1}\hat{i}+c_{2}\hat{j}+ c_{3}\hat{k}</m> then 
         <md>
           <mrow>\vec{a}\cdot{(\vec{b}\times\vec{c})}  \amp = (a_{1}\hat{i}+a_{2}\hat{j} 
-          + a_{3}\hat{k})  \cdot{\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ b_{1} &amp; 
-          b_{2} &amp; b_{3}\\c_{1} &amp; c_{2} &amp; c_{3} \end{vmatrix}}</mrow>
+          + a_{3}\hat{k})  \cdot{\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ b_{1} &amp; 
+          b_{2} &amp; b_{3}\\c_{1} &amp; c_{2} &amp; c_{3} \end{Vmatrix}}</mrow>
           </md> 
           <me>
             =(a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) 
@@ -628,7 +649,8 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
             =a_{1}(b_{2}c_{3}-b_{3}c_{2}) + a_{2}(b_{3}c_{1}-b_{1}c_{3}) + a_{3}(b_{1}c_{2}-b_{2}c_{1})
           </me>
           <me>
-            =\begin{vmatrix} a_{1} &amp; a_{2} &amp; a_{3} \\ b_{1} &amp; b_{2} &amp; b_{3}\\ c_{1} &amp; c_{2} &amp; c_{3} \end{vmatrix} = [\vec{a}\vec{b}\vec{c}]
+            =\begin{Vmatrix} a_{1} &amp; a_{2} &amp; a_{3} \\ b_{1} &amp; b_{2} &amp; b_{3}\\ c_{1} &amp; c_{2} &amp; c_{3} \end{Vmatrix} 
+            = [\vec{a}\vec{b}\vec{c}]
           </me>  
       From the properties of a determinant, we can find that the value of the product depends 
       upon the cyclic order of the vectors and is independent of the position of the dot and cross. 
@@ -640,18 +662,21 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
       </md>
     The value of product changes in sign if the order is non-cyclic, i.e., 
     <m>[\vec{a}\vec{b}\vec{c}] = -[\vec{b}\vec{a}\vec{c}] = -[\vec{a}\vec{c}\vec{b}]</m>
+       </p>
    </li>
    <li>
+   <p>
     <term>Geometrical Interpretation:</term> Let <m>\vec{a}</m>, <m>\vec{b}</m>, and <m>\vec{c}</m> 
     be the co-terminous edges of the parallelopiped, as shown in figure <xref ref="fig-sctrip2"/>, then
     <md>
-      <mrow>\vec{a}\cdot{(\vec{b}\times\vec{c})} \amp = \vec{a}\cdot \text{(area of} \parallel^{gm}OBDC)\hat{n} </mrow>
+      <mrow>\vec{a}\cdot{(\vec{b}\times\vec{c})} \amp = \vec{a}\cdot (\text{area of} \parallel^{gm} \,OBDC)\hat{n} </mrow>
     <mrow> \amp= (\text{area of} \parallel^{gm}OBDC) (\text{projection of} \vec{a} \quad \text{on}  \hat{n}) </mrow>
    <mrow> \amp  = (\text{area of} \parallel^{gm}OBDC) (a \cos\theta) </mrow>
   <mrow> \amp = (\text{area of} \parallel^{gm}OBDC) \text{(height of the parallelopiped)} </mrow>
   <mrow> \amp = \text{Volume of the parallelopiped}.</mrow>
   </md>
   That is, the scalar triple product gives the volume of the parallelopiped having these vectors as co-terminous edges. 
+   </p>
    </li>
     </ol>
     <alert>Note:</alert> If <m>\vec{a}\cdot{(\vec{b}\times\vec{c})} = 0</m>, then <m>\vec{a}</m>, 
@@ -670,8 +695,8 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
    + b_{3}\hat{k},</m> and <m> \vec{c}  = c_{1}\hat{i}+c_{2}\hat{j}+ c_{3}\hat{k},</m> then 
    <me>
     \vec{a}\times{(\vec{b}\times\vec{c})} =  (a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) 
-    \times{\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ b_{1} &amp; b_{2} &amp; b_{3}\\c_{1} &amp; 
-    c_{2} &amp; c_{3} \end{vmatrix}}
+    \times{\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ b_{1} &amp; b_{2} &amp; b_{3}\\c_{1} &amp; 
+    c_{2} &amp; c_{3} \end{Vmatrix}}
    </me>
    <me>
     =(a_{1}\hat{i}+a_{2}\hat{j}+ a_{3}\hat{k}) \times[(b_{2}c_{3}-b_{3}c_{2})\hat{i} + (b_{1}c_{3}-b_{3}c_{1})\hat{j} + (b_{1}c_{2}-b_{2}c_{1})\hat{k}]
@@ -804,16 +829,16 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
        As <m>\delta t \to 0</m>, point Q tends to point P and the chord becomes the tangent at P,  
        we define
        <me>
-        \frac{\vec{d r}}{d t} = \lim\limits_{\delta t \to 0} \frac{\vec{\delta r}}{\delta t}
+        \frac{\vec{\,dr}}{\,dt} = \lim\limits_{\,\delta t \to 0} \frac{\vec{\,\delta r}}{\,\delta t}
        </me>
        </p>
 <p>
   Then, <m>\frac{\vec{d r}}{d t}</m>  is a vector in the direction of tangent at P and defines 
-  the velocity of the particle at P, <m>\frac{\vec{d r}}{d t}</m>  is also called the differential 
-  coefficient of <m>\vec{r}</m> with respect to 't'. Similarly, <m>\frac{ {d^{2} \vec{r}}}{d t^{2}}</m> 
+  the velocity of the particle at P, <m>\frac{\vec{\,dr}}{\,dt}</m>  is also called the differential 
+  coefficient of <m>\vec{r}</m> with respect to 't'. Similarly, <m>\frac{ {\,d^{2} \vec{r}}}{\,dt^{2}}</m> 
   is the second order derivative of <m>\vec{r}</m> which gives the acceleration of the particle at P. 
   <term>Note:</term> The derivative of a constant vector <m>\vec{C}</m> is zero, i.e. 
-  if <m>\vec{C}</m> is a constant vector, then <m>\frac{\vec{d C}}{d t} = 0</m>, because there is no 
+  if <m>\vec{C}</m> is a constant vector, then <m>\frac{\vec{\,dC}}{\,dt} = 0</m>, because there is no 
   change in <m>\vec{C}</m> in the interval <m>\delta t</m>.
   </p>
 

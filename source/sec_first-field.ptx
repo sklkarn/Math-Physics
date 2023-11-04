@@ -138,14 +138,16 @@ is normal to the surface of equation <m>\phi (x,y,z) = constant</m>.
       <idx><h>divergence of vector function</h></idx> If <m>\vec{F}=F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}</m> 
       be the vector point function then divergence of a vector  is defined as 	
       <me>
-        \,div \vec{F}  =  \vec{\nabla}\cdot\vec{F} = \left(\hat{i}\frac{\partial }{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\cdot \left(F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}\right)  
+        \,div \vec{F}  =  \vec{\nabla}\cdot\vec{F} 
       </me>
-     <me>
+      <me>
+        = \left(\hat{i}\frac{\partial }{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\cdot \left(F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}\right)  
+      </me>
+       <me>
       =\left(\frac{\partial F_{1} }{\partial x}+\frac{\partial F_{2}}{\partial y}+\frac{\partial F_{3}}{\partial z}\right).
     </me>
     which is a scalar quantity.
-      
-    </p>
+     </p>
     </introduction>
    
     <subsubsection xml:id="subsubsec-signif_diver">
@@ -159,50 +161,58 @@ is normal to the surface of equation <m>\phi (x,y,z) = constant</m>.
       point P <m>(x,y,z)</m>. If P be the centre of an  elementary parallelopiped considering 
        in the moving fluid and <m>\,dx, \,dy, \,dz</m> are the  edges of such element, 
        then  the  x- component of velocity at point P = <m>v_{x} (x,y,z)</m>, as shown in figure.  
-       The x- component of velocity at the middle of the face ABCD  = <m>v_{x} (x-\frac{dx}{2},y,z)</m>
+       The x- component of velocity at the middle of the face ABCD  = <m>v_{x} (x-\frac{\,dx}{2},y,z)</m>
        <me>
-        = v_{x} (x,y,z)-\frac{1}{2}\frac{\partial v_{x}}{\partial x} dx 
+        = v_{x} (x,y,z)-\frac{1}{2}\frac{\partial v_{x}}{\partial x} \,dx 
        </me>
-       [using Taylor's series, <m>f(x+dx) = f(x)+f'(x)dx+ f"(x)/2 (dx)^{2} +\cdots </m>] </p>
+       [using Taylor's series, <m>f(x+\,dx) = f(x)+f'(x)\,dx+ f"(x)/2 (\,dx)^{2} +\cdots </m>] </p>
        <p>
        Similarly, x- component of velocity at the middle of face EFGH
        <me>
-        =v_{x} (x+\frac{dx}{2},y,z)	
-         = v_{x}(x,y,z) + \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx.
+        =v_{x} (x+\frac{\,dx}{2},y,z)	
+         = v_{x}(x,y,z) + \frac{1}{2}\frac{\partial v_{x}}{\partial x} \,dx.
        </me>
        
        Since the parallelopiped is very small, the value at the middle of face is considered 
        as the average  over that face. The volume of fluid entering per unit time through the face ABCD
       =velocity <m>\times</m> area of the face
       <me>
-        =\left( v_{x} - \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx\right) dy dz 
+        =\left( v_{x} - \frac{1}{2}\frac{\partial v_{x}}{\partial x} \,dx\right) \,dy \,dz 
       </me>
       <me>
         [\because  \frac{volume}{time} = \frac{area\cdot length}{time} = velocity\cdot area]
       </me>
       and volume of fluid leaving per unit time through face EFGH 
       <me>
-        =\left( v_{x} + \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx\right) dy dz. 
+        =\left( v_{x} + \frac{1}{2}\frac{\partial v_{x}}{\partial x} \,dx\right) \,dy \,dz. 
       </me>
       Therefore, loss in volume of fluid per unit time along x- axis 
       <me>
-        =\left( v_{x} + \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx\right) dy dz - \left( v_{x} - \frac{1}{2}\frac{\partial v_{x}}{\partial x} dx\right) dy dz = \frac{\partial v_{x}}{\partial x} dx dy dz 
+        =\left( v_{x} + \frac{1}{2}\frac{\partial v_{x}}{\partial x} \,dx\right) \,dy \,dz - \left(v_{x} - \frac{1}{2}\frac{\partial v_{x}}{\partial x} \,dx\right) \,dy \,dz 
       </me>
+      <me>
+        = \frac{\partial v_{x}}{\partial x} \,dx \,dy \,dz 
+      </me>
+      
 Similarly, losses in volume per unit time along y- and z- axes, respectively are
 <me>
-  \frac{\partial v_{y}}{\partial y}dx dy dz \hspace{5pt}\text{and} \hspace{5pt} \frac{\partial v_{z}}{\partial z}dx dy dz. 
+  \frac{\partial v_{y}}{\partial y}dx dy dz \hspace{5pt}\text{and} \hspace{5pt} \frac{\partial v_{z}}{\partial z}\,dx \,dy \,dz. 
 </me>
 Hence, total loss in volume per unit time = <m>\frac{\,dV}{\,dt}</m>
 <me>
-  = \left(\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}\right)dx dy dz 
+  = \left(\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}\right)\,dx \,dy \,dz 
 </me>
 or,  total loss in volume per unit time per unit volume = <m>\frac{1}{\,dV}\frac{\,dV}{\,dt}</m>  
 <me>
   =\left(\frac{\partial v_{x}}{\partial x}+\frac{\partial v_{y}}{\partial y}+\frac{\partial v_{z}}{\partial z}\right)  
 </me>
 <me>
-  =\left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\cdot \left(v_{x}\hat{i}+v_{y}\hat{j}+v_{z}\hat{k}\right) = \vec{\nabla}\cdot\vec{v} =  div \vec{v}
+  =\left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\cdot \left(v_{x}\hat{i}+v_{y}\hat{j}+v_{z}\hat{k}\right) 
 </me>
+<me>
+  = \vec{\nabla}\cdot\vec{v} =  div \vec{v}
+</me>
+
 The divergence of a vector field at a point gives the rate at which the fluid is diverging 
 from that point per unit volume. If div <m>\vec{v}</m> is positive at a point, then either 
 the fluid is expanding and its density at that point is decreasing with time, 
@@ -227,7 +237,7 @@ gain in volume. </p>
       <md>
         <mrow> \,curl\vec{F} \amp = \vec{\nabla}\times \vec{F}</mrow> 
         <mrow> \amp= \left(\hat{i}\frac{\partial}{\partial x}+ \hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\times \left(F_{1}\hat{i}+F_{2}\hat{j}+F_{3}\hat{k}\right)  </mrow>
-     <mrow> \amp = {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\F_{1} &amp; F_{2} &amp; F_{3} \end{vmatrix}}</mrow>
+     <mrow> \amp = {\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\F_{1} &amp; F_{2} &amp; F_{3} \end{Vmatrix}}</mrow>
      <mrow> \amp =\hat{i}\left(\frac{\partial F_{3}}{\partial y}-\frac{\partial F_{2}}{\partial z}\right)+\hat{j}\left(\frac{\partial F_{1}}{\partial z}-\frac{\partial F_{3}}{\partial x}\right)+\hat{k}\left(\frac{\partial F_{2}}{\partial x}-\frac{\partial F_{1}}{\partial y}\right) </mrow>
     </md>
     which is a vector quantity.
@@ -294,7 +304,7 @@ the value of field at the middle of side <m>da</m>
 Since the test area is so small that the value of field at the middle of side is taken as an average along that side.
 Therefore, the line integral of field along <m>ab</m> and <m>cd</m>
 <me>
-  =\vec{v}_{ab}\cdot \vec{dx}+\vec{v}_{cd}\cdot \vec{dx} 
+  =\vec{v}_{ab}\cdot \vec{dx}+\vec{v}_{cd}\cdot \vec{\,dx} 
 </me>
 <me>
   =\left[\left(v_{x}-\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy\right)\right] - \left[\left(v_{x}+\frac{1}{2}\frac{\partial v_{x}}{\partial y}\,dy\right)\right]\,dx  
@@ -309,9 +319,11 @@ Therefore, the line integral of field along <m>ab</m> and <m>cd</m>
   </me>
   Therefore, the line integral around the rectangle <m>abcd</m> 
   <me>
-    = \left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\,dx\,dy = \left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)ds\hat{k}
+    = \left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\,dx\,dy = \left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\,ds\hat{k}
   </me>
   where <m>\,ds</m> is area of a rectangle and <m>\hat{k}</m> gives its direction. 
+ </p>
+ <p>
   Therefore, line integral per unit area 
   <me>
     =\left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\hat{k}.
@@ -328,12 +340,12 @@ Therefore, the line integral of field along <m>ab</m> and <m>cd</m>
     +\left(\frac{\partial v_{y}}{\partial x} - \frac{\partial v_{x}}{\partial y}\right)\hat{k}
   </me>
   <me>
-    =  {\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+    =  {\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
     \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z} \\ 
-    v_{x} &amp; v_{y} &amp; v_{z} \end{vmatrix}}= \,curl\vec{v}. 
+    v_{x} &amp; v_{y} &amp; v_{z} \end{Vmatrix}}= \,curl\vec{v}. 
   </me>
-  If <m>\vec{\nabla}\times \vec{v}=0</m>	then vector <m>\vec{v}</m> is called an irrotational vector.
-</p>
+  If <m>\vec{\nabla}\times \vec{v}=0</m>	then vector <m>\vec{v}</m> is called an <em>irrotational vector</em>.
+ </p>
 </subsubsection>
 
   </subsection>

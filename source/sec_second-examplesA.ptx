@@ -188,7 +188,7 @@
         A'=\gamma^{-1}A\gamma
       </me>
       <me>
-        \text{or,}\hspace{5pt}  A=\gamma A' \gamma^{-1}.
+        \text{or,}\quad  A=\gamma \,A' \,\gamma^{-1}.
       </me>
       This is an example of a similarity transformation which is defined to be a transformation of square 
       matrices of the form <m>A'=s^{-1} A s</m>. Any algebric matrix remains unchanged under a 
