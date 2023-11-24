@@ -361,18 +361,18 @@
       <p>
         From divergence theorem, we have
         <me>
-          \iint\limits_{S} \vec{E}\cdot\vec{\,dS}= \iiint\limits_{V}(\vec{\nabla}\cdot \vec{E})\,dV=\iiint\limits_{V}\left[\frac{\delta E_{x}}{\delta x}+\frac{\delta E_{y}}{\delta y}+\frac{\delta E_{z}}{\delta z}\right] \,dV 
+          \mathop{\vcenter{\huge\unicode{x222F}\,}}\limits_{S} \vec{E}\cdot\vec{\,dS}= \iiint\limits_{V}(\vec{\nabla}\cdot \vec{E})\,dV=\iiint\limits_{V}\left[\frac{\delta E_{x}}{\delta x}+\frac{\delta E_{y}}{\delta y}+\frac{\delta E_{z}}{\delta z}\right] \,dV 
         </me>
         Here, <m>\frac{\delta E_{x}}{\delta x}=a</m>, while <m>E_{y}</m>  and <m>E_{z}</m> is each zero.
 <men xml:id="eqn-diver1">
-  \therefore  \quad \iint_{S} \vec{E}\cdot\vec{\,dS} = \iiint\limits_{V} a \,dV = aV=aL^{3} 
+  \therefore  \quad \mathop{\vcenter{\huge\unicode{x222F}\,}}_{S} \vec{E}\cdot\vec{\,dS} = \iiint\limits_{V} a \,dV = aV=aL^{3} 
 </men>
 Since, volume of a cube = <m>L^{3}</m>. 
       </p>
       <p>
         But, from Gauss's  law in electrostatics, we have  -
         <men xml:id="eqn-diver2">
-          \iint\limits_{S} \vec{E}\cdot\vec{\,dS} = \frac{q}{\epsilon_{o}}   
+          \mathop{\vcenter{\huge\unicode{x222F}\,}}\limits_{S} \vec{E}\cdot\vec{\,dS} = \frac{q}{\epsilon_{o}}   
         </men>
         where <m>q</m> is the charge within the surface <m>S</m> which encloses the volume <m>V</m>. 
         Equating eqns. <xref ref="eqn-diver1"/> and <xref ref="eqn-diver2"/>, we get -
@@ -389,7 +389,7 @@ Since, volume of a cube = <m>L^{3}</m>.
    <example>
     <statement>
       <p>
-        Use divergence theorem to evaluate <m>\iint\limits_{S} \vec{A}\cdot\vec{dS}</m> 
+        Use divergence theorem to evaluate <m>\mathop{\vcenter{\huge\unicode{x222F}\,}}\limits_{S} \vec{A}\cdot\vec{dS}</m> 
         where <m>\vec{A}=x^{3}\hat{i}+ y^{3}\hat{j}+z^{3}\hat{k}</m> and <m>S</m> is the surface of the sphere 
         <m>x^{2}+y^{2}+z^{2}=a^{2}</m>.
       </p>
@@ -398,18 +398,17 @@ Since, volume of a cube = <m>L^{3}</m>.
       <p>
         The divergence theorem is 
         <me>
-          \iint\limits_{S} \vec{A}\cdot\vec{dS}=\iiint\limits_{V} div\vec{A} \,dV
+          \mathop{\vcenter{\huge\unicode{x222F}\,}}\limits_{S} \vec{A}\cdot\vec{dS}=\iiint\limits_{V} div\vec{A} \,dV
         </me>
          <me>
-          = \iiint\limits_{V} \left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y}+\hat{k}\frac{\partial}{\partial z}\right)\cdot (x^{3}\hat{i}+ y^{3}\hat{j}+z^{3}\hat{k})\,dV
+          = \iiint\limits_{V} \left(\hat{i}\frac{\partial}{\partial x}+\hat{j}\frac{\partial}{\partial y} 
+          +\hat{k}\frac{\partial}{\partial z}\right)\cdot (x^{3}\hat{i}+ y^{3}\hat{j}+z^{3}\hat{k})\,dV
          </me>
          <me>
-          =\iiint\limits_{V} \left(3x^{2}+ 3y^{2}+3z^{2}\right)dV= 3\iiint\limits_{V} \left(x^{2}+ y^{2}+z^{2}\right)\,dV
-         </me>
-         <me>
+          =\iiint\limits_{V} \left(3x^{2}+ 3y^{2}+3z^{2}\right)dV= 3\iiint\limits_{V} \left(x^{2}+ y^{2}+z^{2}\right)\,dV 
           =3\iiint\limits_{V}a^{2}dV= 3a^{2}\iiint\limits_{V}\,dV = 3a^{2}\left(\frac{4}{3}\pi a^{3}\right) = 4\pi a^{5}.
          </me>
-        </p>
+           </p>
     </solution>
    </example>
 

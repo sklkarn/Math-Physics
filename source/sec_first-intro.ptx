@@ -595,7 +595,11 @@ These values of <m>l, m, n </m> satisfies the eqn.<xref ref="eqn-1v"/>, hence fo
       + (a_{1}b_{2}-(a_{2}b_{1})\hat{k} </mrow>
      </md>
      <m>
-      =\begin{Vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\a_{1} &amp; a_{2} &amp; a_{3} \\ b_{1} &amp; b_{2} &amp; b_{3} \end{Vmatrix}
+      =\begin{Vmatrix} 
+      \hat{i} &amp; \hat{j} &amp; \hat{k} \\ 
+      a_{1} &amp; a_{2} &amp; a_{3} \\ 
+      b_{1} &amp; b_{2} &amp; b_{3} 
+      \end{Vmatrix}
      </m>
     </li>
     </ol>
