@@ -13,11 +13,21 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">This is a square matrix in which all the non-diagonal elements are 0. The diagonal elements can be any numbers, including 0. It is denoted by D. A diagonal matrix can be used to represent a system of linear equations with diagonal coefficients. A diagonal matrix is shown as</div>
+<div class="para">This is a square matrix in which all the diagonal elements are equal to 1, and all the other elements are 0. It is denoted by I.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-D = \begin{bmatrix} 
-a &amp; 0 &amp; 0\\0 &amp; b &amp; 0\\0 &amp; 0 &amp; c 
+I=\delta_{ij} = 
+\begin{cases} 
+1, &amp; \text{if } i = j\\ 
+0,  &amp; \text{otherwise} 
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">and for any matrix A, <span class="process-math">\(AI = IA = A \text{.}\)</span> A <span class="process-math">\(3\times 3\)</span> unit matrix is shown as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+I = \begin{bmatrix}
+1 &amp; 0 &amp; 0\\0 &amp; 1 &amp; 0\\0 &amp; 0 &amp; 1
 \end{bmatrix}
 \end{equation*}
 </div>

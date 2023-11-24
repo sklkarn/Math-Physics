@@ -12,8 +12,24 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Find the Fourier series expansion of <span class="process-math">\(f(x) =x\text{,}\)</span>  where <span class="process-math">\(0\lt x \lt 2\pi\text{,}\)</span> 	and sketch its graph from <span class="process-math">\(x=-4\pi\)</span> to <span class="process-math">\(4\pi\text{.}\)</span>
+<div class="para logical">
+<div class="para">To find <span class="process-math">\(b_{n}\text{:}\)</span> Multiply equation <a href="" class="xref" data-knowl="./knowl/eqn-fourier1.html" title="Equation 5.1.1">(5.1.1)</a> by <span class="process-math">\(\sin nx\)</span> and integrate it from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(2\pi\text{,}\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier1.html">
+\begin{equation*}
+\int\limits_{0}^{2\pi} f(x)\sin nx \,dx = \frac{a_{o}}{2}\int\limits_{0}^{2\pi} \sin nx \,dx + \cdots + a_{n}\int\limits_{0}^{2\pi} \cos nx.\sin nx \,dx + \cdots  
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_fifth-examplesA.html#p-816" class="internal">in-context</a></span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier1.html">
+\begin{equation*}
++ b_{n}\int\limits_{0}^{2\pi} \sin^{2} nx \,dx + \cdots =b_{n}\int\limits_{0}^{2\pi} \sin^{2} nx \,dx  = b_{n}\pi
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier1.html">
+\begin{equation}
+\therefore \quad b_{n}= \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\sin nx \,dx\tag{5.1.4}
+\end{equation}
+</div>
+</div>
+<span class="incontext"><a href="subsec-fourier_coef.html#p-816" class="internal">in-context</a></span>
 </body>
 </html>

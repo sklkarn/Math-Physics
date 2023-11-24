@@ -13,23 +13,129 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Or, <span class="process-math">\(\alpha =\frac{n\pi}{\lambda}\text{,}\)</span>	where <span class="process-math">\(n=1,2,3,\cdots\text{.}\)</span> Or,</div>
-<div class="displaymath process-math">
+<div class="para">Suppose the bar is given the constant temperature <span class="process-math">\(f(x)\)</span> initially and face <span class="process-math">\(x=0\)</span> is kept at temperature zero, while the face <span class="process-math">\(x=\lambda\)</span> is kept at constatn temperature <span class="process-math">\(u_{o}\)</span> for <span class="process-math">\(t \gt 0\text{,}\)</span> then the boundary conditions of the problem becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
 \begin{equation}
-u(x,t) = \frac{u_{o}x}{\lambda}+\sum\limits_{n=1}^{\infty} b_{n}\sin\frac{n\pi x}{\lambda} \,e^{-n^{2}\pi^{2}h^{2}t/\lambda}\tag{7.3.40}
-\end{equation}
-</div>
-<div class="para">Constant <span class="process-math">\(b_{n}\)</span> may be calculated by using the initial condition <span class="process-math">\(u(x,0)=f(x)\text{.}\)</span> Hence,</div>
-<div class="displaymath process-math">
-\begin{equation}
-f(x)-\frac{u_{o}x}{\lambda}=\sum\limits_{n=1}^{\infty} b_{n}\sin\frac{n\pi x}{\lambda}\tag{7.3.41}
+\left.\begin{aligned}	
+u(0,t) = 0\\
+u(\lambda,t) = u_{o}
+\end{aligned}\right\} \text{for all}\quad t\tag{7.3.25}
 \end{equation}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
 \begin{equation}
-b_{n}=\frac{2}{\lambda}\int\limits_{0}^{\lambda}\left[f(x)-\frac{u_{o}x}{\lambda}\right]\sin\frac{n\pi x}{\lambda}\,dx\tag{7.3.42}
+u(x,0)=f(x)  \quad (say)\tag{7.3.26}
 \end{equation}
+</div>
+<div class="para">The equation of heat flow is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+\frac{\partial u}{\partial t} =h^{2}\frac{\partial^{2}u}{\partial x^{2}}		\tag{7.3.27}
+\end{equation}
+</div>
+<div class="para">Let the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_u03.html" title="Equation 7.3.27">(7.3.27)</a> be</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+u(x,t) = X(x)T(t)\tag{7.3.28}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation*}
+\frac{\partial u}{\partial t} =X\frac{\partial T}{\partial t} 		
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation*}
+\frac{\partial^{2}u}{\partial x^{2}}=T\frac{\partial^{2}X}{\partial x^{2}} 
+\end{equation*}
+</div>
+<div class="para">Substituting these in equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_u03.html" title="Equation 7.3.27">(7.3.27)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =\frac{1}{h^{2}T}\frac{\partial T}{\partial t} =-\alpha^{2}  \quad  (say)\tag{7.3.29}
+\end{equation}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+\frac{\partial T}{\partial t} =-\alpha^{2}h^{2}T  \quad \Rightarrow T =Ae^{-\alpha^{2}h^{2}t} \tag{7.3.30}
+\end{equation}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+\frac{\partial^{2}X}{\partial x^{2}}  = -\alpha^{2}X\tag{7.3.31}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+\frac{\partial^{2}X}{\partial x^{2}} + \alpha^{2}X = 0 \quad \Rightarrow X=B\cos\alpha x+C\sin\alpha x\tag{7.3.32}
+\end{equation}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+u(x,t)=(a\cos\alpha x+b\sin\alpha x)e^{-\alpha^{2}h^{2}t}\tag{7.3.33}
+\end{equation}
+</div>
+<div class="para">This solution shows <span class="process-math">\(u(x,t) \to 0 \)</span> at <span class="process-math">\(t \to \infty\)</span> for all <span class="process-math">\(x\)</span> but the boundary condition shows that <span class="process-math">\(u(x,t) = u_{o} \)</span> at <span class="process-math">\(x=\lambda\text{,}\)</span> a non - zero constant. Therefore, the solution <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_u09.html" title="Equation 7.3.33">(7.3.33)</a> though satisfies the boundary condition at <span class="process-math">\(x=0\)</span> does not satisfy it at <span class="process-math">\(x=\lambda\text{.}\)</span> Hence we should add one more solution to this solution so that <span class="process-math">\(u(x,t) \to u_{o} \)</span> at <span class="process-math">\(x=\lambda\)</span> when <span class="process-math">\(t \to \infty\)</span> and at the same time it becomes zero at <span class="process-math">\(x=0\text{.}\)</span> Such solution may be obtained by choosing the constant <span class="process-math">\(\alpha^{2}\)</span> equal to zero. Then equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_u07.html" title="Equation 7.3.31">(7.3.31)</a> becomes <span class="process-math">\(T=A\)</span> and equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_u08.html" title="Equation 7.3.32">(7.3.32)</a> reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation*}
+\frac{\partial^{2}X}{\partial x^{2}}=0 \Rightarrow X=Bx+C.
+\end{equation*}
+</div>
+<div class="para">Hence, solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_u03.html" title="Equation 7.3.27">(7.3.27)</a> in this case is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+u(x,t) =A(Bx+C)=a' x+b'\tag{7.3.34}
+\end{equation}
+</div>
+<div class="para">The complete solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_u03.html" title="Equation 7.3.27">(7.3.27)</a> is thus -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+u(x,t)=(a' x+b')+(a\cos\alpha x+b\sin\alpha x)e^{-\alpha^{2}h^{2}t}\tag{7.3.35}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+u(x,t)=u_{s}(x)+u_{T}(x,t)\tag{7.3.36}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(u_{s}(x)\)</span> is the temperature distribution after a long interval of time when there exists steady state of temperature and <span class="process-math">\(u_{T}(x,t)\)</span> is the transient temperature which tends to zero as  <span class="process-math">\(t\)</span> increases. Now, for <span class="process-math">\(t \to \infty\text{,}\)</span> <span class="process-math">\(u(0,t)= 0\text{,}\)</span> and <span class="process-math">\(u(\lambda,t)=u_{o}\)</span> and from equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_u011.html" title="Equation 7.3.35">(7.3.35)</a>, we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation*}
+0=b'+0 \quad  \therefore  b' =0 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation*}
+u_{o}=a' \lambda
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+\therefore a'=u_{o}/\lambda\tag{7.3.37}
+\end{equation}
+</div>
+<div class="para">so that	<span class="process-math">\(u_{s}(x)=(u_{o}/\lambda)x \text{.}\)</span> Thus solution <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_u011.html" title="Equation 7.3.35">(7.3.35)</a> (7.2.1.12) reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+u(x,t)=\frac{u_{o}x}{\lambda}+(a\cos\alpha x+b\sin\alpha x)e^{-\alpha^{2}h^{2}t}\tag{7.3.38}
+\end{equation}
+</div>
+<div class="para">which must be zero at <span class="process-math">\(x=0\)</span> for every value of <span class="process-math">\(t\text{.}\)</span> Thus we have <span class="process-math">\(a=0\text{.}\)</span> and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u09.html ./knowl/eqn-1Dheat_u07.html ./knowl/eqn-1Dheat_u08.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u03.html ./knowl/eqn-1Dheat_u011.html ./knowl/eqn-1Dheat_u011.html">
+\begin{equation}
+u(x,t)=\frac{u_{o}x}{\lambda}+b\sin\alpha x \,e^{-\alpha^{2}h^{2}t}\tag{7.3.39}
+\end{equation}
+</div>
+<div class="para">which must give <span class="process-math">\(u(\lambda,t)=u_{o}\)</span> for every <span class="process-math">\(t\)</span>  and hence <span class="process-math">\(\sin\alpha\lambda =0=\sin n\pi\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="subsec-1D_heat.html#p-1184" class="internal">in-context</a></span>

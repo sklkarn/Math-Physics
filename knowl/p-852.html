@@ -13,16 +13,51 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Find the Fourier series expansion of the periodic function of period <span class="process-math">\(1\text{.}\)</span>
+<div class="para">Here,	<span class="process-math">\(f(-x) =|-x| = |x| = f(x)\)</span> and so is even. Therefore it can be expanded only in cosine series and the coefficients can be evaluated from half range only. i.e., the Fourier series is</div>
+<div class="displaymath process-math">
+\begin{equation}
+f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{c}\right)\right] \tag{5.6.1}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{0}= \frac{2}{c}\int\limits_{0}^{c}f(x) \,dx = \frac{2}{2}\int\limits_{0}^{2}|x| \,dx =\int\limits_{0}^{2}x \,dx = 2.
+\end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x)= 
-\begin{cases} 
-\frac{1}{2}+x, \quad \text{for} \quad -1/2 \lt x \lt 0\\ 
-\frac{1}{2}-x,\quad \text{for}\quad 0 \lt x \lt 1/2. 
-\end{cases}
+a_{n}=	\frac{2}{c}\int\limits_{0}^{c}f(x)\cos \left(\frac{n\pi x}{c}\right) \,dx  
 \end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{2}{c}\int\limits_{0}^{c}|x|\cos \left(\frac{n\pi x}{c}\right) \,dx = \frac{2}{2}\int\limits_{0}^{2}x\cos \left(\frac{n\pi x}{2}\right) \,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[x \frac{2}{n\pi}\sin \left(\frac{n\pi x}{2}\right) -1-\frac{4}{-n^{2}\pi^{2}}\cos \left(\frac{n\pi x}{2}\right)\right]_{0}^{2}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=0+\frac{4}{n^{2}\pi^{2}}(\cos n\pi-1)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{4}{n^{2}\pi^{2}}\left[(-1)^{n}-1\right]
+= \begin{cases}
+-\frac{8}{n^{2}\pi^{2}},\quad \text{if n is odd}\\
+0, \quad \text{if n is even} 
+\end{cases} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
+f(x) = 1-\frac{8}{\pi^{2}}\left[\frac{\cos \pi x/2}{1^{2}}+\frac{\cos 3\pi x/2}{3^{2}}+\frac{\cos 5\pi x/2}{5^{2}}+\cdots\right] \tag{5.6.2}
+\end{equation}
 </div>
 </div>
 <span class="incontext"><a href="sec_fifth-examplesC.html#p-852" class="internal">in-context</a></span>

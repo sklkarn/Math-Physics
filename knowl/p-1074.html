@@ -13,40 +13,13 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
+<div class="para">Find the Laplace transform of the half wave rectifier.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}\{f(t)\}=\frac{1}{1-e^{-st}}\int\limits_{0}^{T}e^{-st} f(t)\,dt 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{1-e^{-s(2\pi/\omega )s}}\int\limits_{0}^{2\pi/\omega}e^{-st} f(t)\,dt 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{1-e^{-s(2\pi/\omega )s}}\left[\int\limits_{0}^{\pi/\omega}e^{-st} \sin \omega t\,dt+ \int\limits_{\pi/\omega}^{2\pi/\omega}e^{-st}.0 \,dt\right]
-\end{equation*}
-</div>
-<div class="para">we know that,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int e^{ax}\sin bx\,dx = e^{ax}\left(\frac{a\sin bx-b\cos bx}{a^{2}+b^{2}}\right)
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{1-e^{-(2\pi s/\omega)}}\left[\frac{\omega e^{-\pi s/\omega}+\omega}{s^{2}+\omega^{2}}\right] 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{\omega [1+e^{-\pi s/\omega}]}{(s^{2}+\omega^{2})[[1-e^{-2\pi s/\omega}]} 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{\omega}{(s^{2}+\omega^{2})[1-e^{-\pi s/\omega}]}
+f(t) =\begin{cases}
+\sin \omega, \quad    0 \lt t \lt \pi/\omega\\
+0, \quad   \pi/\omega  \lt t \lt 2\pi/\omega
+\end{cases}
 \end{equation*}
 </div>
 </div>

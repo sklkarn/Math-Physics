@@ -13,68 +13,42 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">For, <span class="process-math">\(m=-n-1,\)</span>  we have from equation <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq6.html" title="Equation 4.5.6">(4.5.6)</a>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
+<div class="para">If we choose the arbitrary constant <span class="process-math">\(a_{o}=\frac{1\cdot 3\cdot 5\cdots (2n-1)}{n!}\)</span> where <span class="process-math">\(n\)</span> is a positive integer, then this solution of Legender’s equation is known as Legender’s Polynomials or Legender’s Function of First Kind, <span class="process-math">\(P_{n}(x)\text{,}\)</span> i.e.,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-a_{k+2} = \frac{(n+k+1)(n+k+2)}{(k+2)(2n+k+3)}a_{k}
+P_{n}(x) = \frac{1\cdot 3\cdot 5\cdots (2n-1)}{n!}\left[x^{n}-\frac{n(n-1)}{(2n-1)\cdot 2}x^{n-2} \right. 
 \end{equation*}
 </div>
-<div class="para">so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-a_{2}=-\frac{(n+1)(n+2)}{2(2n+3)}a_{o};
+\left. +\frac{n(n-1)(n-2)(n-3)}{(2n-1)(2n-3)\cdot 4\cdot 2}x^{n-4}-\cdots\right.
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-a_{4}=\frac{(n+1)(n+2)(n+3)(n+4)}{2\cdot 4\cdot (2n+3)(2n+5)}a_{o} 
++\left.(-1)^{r}\frac{n(n-1)(n-2)\cdots(n-2r+1)}{2\cdot 4\cdots 2r(2n-1)(2n-3)\cdots (2n-2r+1)}x^{n-2r}\right.
 \end{equation*}
 </div>
-<div class="para">and so on. Also ,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
-\begin{equation*}
-a_{1}=a_{3}=a_{5}=\cdots =0.
-\end{equation*}
-</div>
-<div class="para">Hence,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
-\begin{equation*}
-y=a_{o}\left[x^{-n-1}+\frac{(n+1)(n+2)}{2(2n+3)}x^{-n-3} +\frac{(n+1)(n+2)(n+3)(n+4)}{2\cdot 4\cdot (2n+3)(2n+5)}x^{-n-5}+\right.
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
+<div class="displaymath process-math">
 \begin{equation}
-\left.\cdots+ \frac{(n+1)(n+2)(n+3)\cdots(n+2r)}{2\cdot 4\cdot 2r(2n+3)(2n+5)\cdots (2n+2r+1)}x^{-n-2r-1}+\cdots\right] \tag{4.5.10}
+\left.\cdots +\cdots\right] \tag{4.5.9}
 \end{equation}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
+<div class="para">This is a terminating series. When <span class="process-math">\(n\)</span> is even, <span class="process-math">\(n=2r\)</span> and the last term is</div>
+<div class="displaymath process-math">
 \begin{equation*}
-y=a_{o}x^{-n-1}\left[1+\frac{(n+1)(n+2)}{2(2n+3)}x^{-2}+\cdots \right.
+(-1)^{\frac{n}{2}}\frac{n(n-1)(n-2)\cdots 3\cdot 2\cdot 1}{(2n-1)(2n-3)\cdots (n+1)\cdot 2\cdot 4\cdot 6\cdots n}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
+<div class="para">when <span class="process-math">\(n\)</span> is odd, <span class="process-math">\(n=2r+1\)</span> and the last term is</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\left. + \frac{(n+1)(n+2)(n+3)\cdots(n+2r)}{2\cdot 4\cdot 2r(2n+3)(2n+5)\cdots (2n+2r+1)}x^{-2r}\right.
+(-1)^{\frac{n-1}{2}}\frac{n(n-1)(n-2)\cdots 3\cdot 2\cdot 1}{(2n-1)(2n-3)\cdots (n+2)\cdot 2\cdot 4\cdot 6\cdots (n-1)}x
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
-\begin{equation}
-\left.\cdots +\cdots\right]\tag{4.5.11}
-\end{equation}
+<div class="para">
+<span class="process-math">\(P_{n}(x)\)</span> is that solution of Legender’s equation which is equal to unity when <span class="process-math">\(x=1\text{.}\)</span>
 </div>
-<div class="para">This gives an another solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq1.html" title="Equation 4.5.1">(4.5.1)</a>. If we choose, <span class="process-math">\(a_{o}=\frac{n!}{1\cdot 3\cdot5 \cdots (2n+1)}\)</span> where <span class="process-math">\(n\)</span> is a positive integer, then this solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq1.html" title="Equation 4.5.1">(4.5.1)</a> is known as  Legender’s Function of Second Kind, <span class="process-math">\(Q_{n}(x)\text{,}\)</span> i.e.,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
-\begin{equation*}
-Q_{n}(x) =\frac{n!}{1\cdot 3\cdot5 \cdots (2n+1)}\left[x^{-n-1}+\frac{(n+1)(n+2)}{2(2n+3)}x^{-n-3}+\cdots\right.
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq6.html ./knowl/eqn-leg_eq1.html ./knowl/eqn-leg_eq1.html">
-\begin{equation}
-\left.\cdots+\frac{(n+1)(n+2)\cdots(n+2r)}{2\cdot 4\cdots2r\cdot(2n+3)\cdots(2n+2r+1)}x^{-n-2r-1}+\cdots\right]\tag{4.5.12}
-\end{equation}
-</div>
-<div class="para">This is a non - terminating series. The most general solution of  Legender’s Equation is <span class="process-math">\(y=AP_{n}(x)+BQ_{n}(x)\)</span> where <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are arbitrary constants.</div>
 </div>
 <span class="incontext"><a href="subsec-Legnd_eq.html#p-572" class="internal">in-context</a></span>
 </body>

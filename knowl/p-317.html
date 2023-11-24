@@ -13,64 +13,42 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">The eigen vector associated with <span class="process-math">\(\lambda_{1}\)</span> is given by</div>
+<div class="para">To find the eigen value, the secular equation is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(A-\lambda I)X =0\text{.}
+\vert A-\lambda I\vert=0
 \end{equation*}
 </div>
-<div class="para">i.e.,</div>
+<div class="para">That is,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\begin{bmatrix} 
-3-1 &amp; 1\\2 &amp; 2-1 
-\end{bmatrix} \begin{bmatrix} 
-x_{1}\\x_{2} 
-\end{bmatrix} = \begin{bmatrix} 
-0\\0 \end{bmatrix} \quad  \text{for}\quad  \lambda = 1
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\text{or,}  \quad \begin{bmatrix} 
-2 &amp; 1\\2 &amp; 1 
-\end{bmatrix} \begin{bmatrix} 
-x_{1}\\x_{2} 
-\end{bmatrix} = \begin{bmatrix} 
-0\\0  \end{bmatrix} 
-\end{equation*}
-</div>
-<div class="para">This gives</div>
-<div class="displaymath process-math">
-\begin{equation*}
-2x_{1} + x_{2} = 0 \Rightarrow x_{1} = -x_{2}/2
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-2x_{1} + x_{2} = 0 \Rightarrow x_{1} = -x_{2}/2
+\begin{vmatrix}
+\begin{pmatrix} 
+3 &amp; 1\\2 &amp; 2 
+\end{pmatrix} - \lambda \begin{pmatrix} 
+1 &amp; 0\\0 &amp; 1 
+\end{pmatrix}
+\end{vmatrix}  = 0
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{x_{1}}{1} = -\frac{x_{2}}{2} = k_{1} \quad \text{(say)}
+\begin{vmatrix} 
+3-\lambda &amp; 1\\ 2 &amp; 2-\lambda 
+\end{vmatrix} =0
 \end{equation*}
 </div>
-<div class="para">Hence the required eigen vector corresponding to the eigen value <span class="process-math">\(\lambda_{1} = 1\text{,}\)</span> is</div>
 <div class="displaymath process-math">
-\begin{equation*}
-X= \begin{bmatrix} 
-x_{1}\\x_{2} 
-\end{bmatrix} = \begin{bmatrix} 
-k_{1}\\-2k_{1} 
-\end{bmatrix}  = \begin{bmatrix} 
-1\\-2 
-\end{bmatrix}
-\end{equation*}
+\begin{align*}
+or, (3-\lambda)(2-\lambda)-2 \amp  = 0\\
+or, \quad 6-2\lambda -3 \lambda + \lambda^{2} \amp =0\\
+or,  \lambda^{2} -5\lambda +4  \amp =0\\
+or, (\lambda -1)(\lambda -4)  \amp =0 \\
+\Rightarrow  \lambda \amp = 1, 4 
+\end{align*}
 </div>
-<div class="para">by choosing <span class="process-math">\(k_{1}=1\text{.}\)</span>
+<div class="para">Hence the eigen values are <span class="process-math">\(\lambda_{1} = 1\text{,}\)</span> and <span class="process-math">\(\lambda_{2} = 4\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="sec_second-examplesC.html#p-317" class="internal">in-context</a></span>

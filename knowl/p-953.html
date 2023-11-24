@@ -12,7 +12,71 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Show that Fourier transform of <span class="process-math">\(e^{-x^{2}/2}\)</span> is its own Fourier transform.</div>
+<div class="para logical">
+<div class="para">By definition</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+\mathscr{F}_{c}\{e^{-x^{2}/2}\}=\int\limits_{0}^{\infty}e^{-x^{2}/2}\cos sx\,dx= I \quad (say)
+\end{equation*}
+</div>
+<div class="para">Now, differentiating w.r.t. ’s’, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+\frac{\,dI}{\,ds}=\int\limits_{0}^{\infty}\left(-xe^{-x^{2}/2}\right)\sin sx\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+= \left[\left.e^{-x^{2}/2} \sin sx\right\vert_{0}^{\infty} - \int\limits_{0}^{\infty} s.\cos sx. e^{-x^{2}/2}\,dx\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+=0-s\int\limits_{0}^{\infty}e^{-x^{2}/2} \cos sx\,dx = -sI
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+\frac{\,dI}{\,ds} =-sI 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+\frac{\,dI}{I} = -s\,ds
+\end{equation*}
+</div>
+<div class="para">on integrating, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+\log I = -\frac{s^{2}}{2} +\log A
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation}
+I=Ae^{-s^{2}/2}  \tag{6.2.3}
+\end{equation}
+</div>
+<div class="para">when  s =0,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+I = \int\limits_{0}^{\infty}e^{-x^{2}/2}\cos 0\,dx = \frac{1}{2}\sqrt{\pi/2}
+\end{equation*}
+</div>
+<div class="para">putting this value in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-FC_trans1.html" title="Equation 6.2.3">(6.2.3)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+\frac{\sqrt{\pi}}{2\sqrt{2}}=A  
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+\begin{equation*}
+\therefore  I = \frac{\sqrt{\pi}}{2\sqrt{2}}e^{-s^{2}/2}.
+\end{equation*}
+</div>
+</div>
 <span class="incontext"><a href="sec_sixth-examplesA.html#p-953" class="internal">in-context</a></span>
 </body>
 </html>

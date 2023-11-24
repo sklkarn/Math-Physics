@@ -12,7 +12,112 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Thus the function <span class="process-math">\((1-2xz+z^{2})^{-\frac{1}{2}}\)</span> is defined as generating function of <span class="process-math">\(P_{n}(x) \text{.}\)</span>
+<div class="para logical">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(1-2xz+z^{2})^{-\frac{1}{2}} =\left[1-z(2x-z)\right]^{-\frac{1}{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=1+\frac{1}{2}z(2x-z)+\frac{(-\frac{1}{2})(-\frac{3}{2})}{2!}z^{2}(2x-z)^{2}+\cdots
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++\cdots \frac{(-\frac{1}{2})(-\frac{3}{2})(-\frac{5}{2})\cdots(-\frac{1}{2}-n+1)}{n!}(-z)^{n}(2x-z)^{n}+\cdots 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=1+\frac{1}{2}z(2x-z)+\frac{1\cdot 3}{2^{2}2!}z^{2}(2x-z)^{2}+
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\cdots+\frac{1\cdot 3\cdot 5\cdots(2n-5)}{2^{n-2}(n-2)!}z^{n-2}(2x-z)^{n-2}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++ \frac{1\cdot 3\cdot 5\cdots(2n-3)}{2^{n-1}(n-1)!}z^{n-1}(2x-z)^{n-1}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
++\frac{1\cdot 3\cdot 5\cdots(2n-1)}{2^{n}(n)!}z^{n}(2x-z)^{n}+\cdots\tag{4.5.20}
+\end{equation}
+</div>
+<div class="para">
+<a href="" class="fn-knowl original" data-knowl="./knowl/fn-7-hidden.html" title="Footnote 4.5.2"><sup> 2 </sup></a> But,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z^{n}(2x-z)^{n}=z^{n}(2x^{n}+\cdots 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z^{n-1}(2x-z)^{n-1}=z^{n-1}\left[(2x)^{n-1}-\comb{n-1}{1}(2x)^{n-2}z+\cdots\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= z^{n-1}(2x)^{n-1}-(n-1)(2x)^{n-2}z^{n}+\cdots 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+z^{n-2}(2x-z)^{n-2}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=z^{n-2}\left[(2x)^{n-2}-\comb{n-2}{1}(2x)^{n-3}z+\cdots+\comb{n-2}{2}(2x)^{n-4}z^{2}+\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=z^{n-2}(2x)^{n-2}-(n-2)(2x)^{n-3}z^{n-1}+\frac{(n-2)(n-3)}{2!}(2x)^{n-4}z^{n}+\cdots
+\end{equation*}
+</div>
+<div class="para">Hence, replacing by these values to collect the coefficient of <span class="process-math">\(z^{n}\text{,}\)</span> we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(1-2xz+z^{2})^{-\frac{1}{2}}=1+xz+\left(\frac{3}{2}x^{2}-\frac{1}{2}\right)z^{2}+\cdots
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\cdots+\left[\frac{1\cdot3\cdot5\cdots(2n-1)}{2^{n}n!}2^{n}x^{n}-\frac{1\cdot3\cdot5\cdots(2n-3)}{2^{n-1}(n-1)!}(n-1)(2x)^{n-2}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++\left.\frac{1\cdot3\cdot5\cdots(2n-5)(n-2)(n-3)}{2^{n-2}(n-2)!2!}2^{n-4}x^{n-4}\right]z^{n}+\cdots
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=1+xz+\frac{1}{2}(3x^{2}-1)z^{2}+\cdots
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++\frac{1\cdot3\cdot5\cdots(2n-1)}{n!}\left[x^{n}-\frac{n(n-1)}{2(2n-1)}x^{n-2}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left. +\frac{n(n-1)(n-2)(n-3)}{2\cdot4(2n-1)(2n-3)}x^{n-4}+\cdots\right]z^{n}+\cdots
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=P_{o}(x)+P_{1}(x)z+P_{2}(x)z^{2}+\cdots+P_{n}(x)z^{n}+\cdots =\sum\limits_{n=0}^{\infty}P_{n}(x)z^{n}
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="subsec-Legnd_eq.html#p-598" class="internal">in-context</a></span>
 </body>

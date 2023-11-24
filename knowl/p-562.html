@@ -13,55 +13,106 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Hence, put <span class="process-math">\(a_{o}=b_{o}(k+1)\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq19.html" title="Equation 4.4.18">(4.4.18)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
-\begin{equation*}
-y=b_{o}x^{k}\left[(k+1)-\frac{(k+1)x^{2}}{(k+1)(k+3)}+\frac{(k+1)x^{4}}{(k+1)(k+3)^{2}(k+5)}-\cdots\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
 \begin{equation}
-=b_{o}x^{k}\left[(k+1)-\frac{x^{2}}{(k+3)}+\frac{x^{4}}{(k+3)^{2}(k+5)}-\cdots\right] \tag{4.4.20}
+x^{2}y''+xy'+(x^{2}-1)y=0 \tag{4.4.15}
 \end{equation}
 </div>
-<div class="para">On differentiating eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq21.html" title="Equation 4.4.20">(4.4.20)</a> w.r.t. ’k’, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+<div class="para">Let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation}
+y=\sum\limits_{\lambda =0}^{\infty}a_{\lambda}x^{\lambda+k}\tag{4.4.16}
+\end{equation}
+</div>
+<div class="para">be the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq16.html" title="Equation 4.4.15">(4.4.15)</a>. With the help of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq17.html" title="Equation 4.4.16">(4.4.16)</a>, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq16.html" title="Equation 4.4.15">(4.4.15)</a> becomes-</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
 \begin{equation*}
-\frac{\partial y}{\partial k}=b_{o}x^{k}\log x\left[(k+1)-\frac{x^{2}}{(k+3)}+\frac{x^{4}}{(k+3)^{2}(k+5)}-\cdots\right]
+x^{2}\sum a_{\lambda}(\lambda+k)(\lambda+k-1)x^{\lambda+k-2}+x\sum a_{\lambda}(\lambda+k)x^{\lambda+k-1} 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
 \begin{equation*}
-+ b_{o}x^{k}\left[1+\frac{x^{2}}{(k+3)^{2}}-\frac{2x^{4}}{(k+3)^{2}(k+5)}-\frac{x^{4}}{(k+3)^{2}(k+5)^{2}}+\cdots\right]
-\end{equation*}
-</div>
-<div class="para">on replacing <span class="process-math">\(k\)</span> by -1, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
-\begin{equation*}
-\left(\frac{\partial y}{\partial k}\right)_{k=-1}=b_{o}x^{-1}\log x\left[0-\frac{x^{2}}{2}+\frac{x^{4}}{2^{2}\cdot 4}-\cdots\right] 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
-\begin{equation*}
-+ b_{o}x^{-1}\left[1+\frac{x^{2}}{2^{2}}-\frac{2x^{4}}{2^{2}\cdot 4}-\frac{x^{4}}{2^{2}\cdot 4^{2}}+\cdots\right]
++(x^{2}-1)\sum a_{\lambda}x^{\lambda+k}=0
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
 \begin{equation*}
-y=b_{o}x\log x\left[-\frac{1}{2}+\frac{x^{2}}{2^{2}\cdot 4}-\cdots\right]+ b_{o}x^{-1}\left[1+\frac{x^{2}}{2^{2}}-\frac{x^{4}}{2^{2}\cdot 4}(1+\frac{1}{4})+\cdots\right]
+\sum a_{\lambda}\left[(\lambda+k)(\lambda+k-1)+(\lambda +k)-1\right]x^{\lambda+k}+\sum a_{\lambda}x^{\lambda+k-2}=0
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
 \begin{equation*}
-\therefore y=C_{1}x\left[1-\frac{x^{2}}{2\cdot 4}+\frac{x^{4}}{2\cdot 4^{2}\cdot 6}-\cdots\right]+ C_{2}x\log x\left[-\frac{1}{2}+\frac{x^{2}}{2^{2}\cdot 4}-\cdots\right]
+\sum a_{\lambda}\left[(\lambda+k)^{2}-1\right]x^{\lambda+k}+\sum a_{\lambda}x^{\lambda+k+2}=0
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq21.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation}
+\sum\limits_{\lambda=0}^{\infty} a_{\lambda}\left[(\lambda+k+1)(\lambda+k-1)\right]x^{\lambda+k}+\sum\limits_{\lambda=0}^{\infty} a_{\lambda}x^{\lambda+k+2}=0 \tag{4.4.17}
+\end{equation}
+</div>
+<div class="para">Equating the coefficient of <span class="process-math">\(x^{k}\)</span> to zero, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
 \begin{equation*}
-+C_{2}x^{-1}\left[1+\frac{x^{2}}{2^{2}}-\frac{x^{4}}{2^{2}\cdot 4}(1+\frac{1}{4})+\cdots\right] 
+a_{o}(k+1)(k-1)=0 \quad \Rightarrow k=1,-1 \quad \because a_{o} \neq 0 
 \end{equation*}
 </div>
+<div class="para">Equating the coefficient of  <span class="process-math">\(x^{k+1}\)</span>  to zero, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation*}
+a_{1}(k+2)k=0 \Rightarrow a_{1}=0  \quad \because (k+2)k \neq 0 \quad \text{for}\quad k=\pm 1
+\end{equation*}
+</div>
+<div class="para">Equating the coefficient of <span class="process-math">\(x^{\lambda+ k+2}\)</span> to zero, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation*}
+a_{\lambda+ 2}\left[(\lambda +k+3)(\lambda+ k+1)\right]+a_{\lambda}=0 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation*}
+a_{\lambda+ 2}=- \frac{a_{\lambda}}{\left[(\lambda +k+3)(\lambda+ k+1)\right]} 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation*}
+a_{2}=- \frac{a_{o}}{(k+3)(k+1)}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation*}
+a_{3}=- \frac{a_{1}}{(k+4)(k+2)}=0 =a_{5}=a_{7}=\cdots
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation*}
+a_{4}=- \frac{a_{2}}{(k+5)(k+3)}= \frac{a_{o}}{(k+1)(k+3)^{2}(k+5)} 
+\end{equation*}
+</div>
+<div class="para">Hence, from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq17.html" title="Equation 4.4.16">(4.4.16)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation*}
+y=a_{o}x^{k}\left[1-\frac{x^{2}}{(k+1)(k+3)}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation}
+\left. +\frac{x^{4}}{(k+1)(k+3)^{2}(k+5)}-\cdots\right] \tag{4.4.18}
+\end{equation}
+</div>
+<div class="para">putting <span class="process-math">\(k=1\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq19.html" title="Equation 4.4.18">(4.4.18)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq16.html ./knowl/eqn-powers_eq17.html ./knowl/eqn-powers_eq19.html ./knowl/eqn-powers_eq19.html">
+\begin{equation}
+y=a_{o}x\left[1-\frac{x^{2}}{(2)(4)}+\frac{x^{4}}{(2)(4)^{2}(6)}-\cdots\right] \tag{4.4.19}
+\end{equation}
+</div>
+<div class="para">Coefficient of <span class="process-math">\(x^{2}{,}x^{4},\)</span> etc. in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-powers_eq19.html" title="Equation 4.4.18">(4.4.18)</a> becomes infinite when <span class="process-math">\(k=-1 \text{.}\)</span> If any one coefficient of the series becomes infinite at <span class="process-math">\(k=k_{2}\text{,}\)</span> we should put <span class="process-math">\(a_{o}=b_{o}(k-k_{2})\)</span> to overcome this difficulty.</div>
 </div>
 <span class="incontext"><a href="sec_fourth-examplesB.html#p-562" class="internal">in-context</a></span>
 </body>

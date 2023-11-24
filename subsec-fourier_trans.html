@@ -256,7 +256,7 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="sec_first-vectinteg.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Vector Integration</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="subsec-lineint.html" class="internal"><span class="codenumber">1.4.1</span> <span class="title">the Line Integral</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-lineint.html" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The Line Integral</span></a></div></li>
 <li><div class="toc-item"><a href="subsec-surf_int.html" class="internal"><span class="codenumber">1.4.2</span> <span class="title">The Surface Integral</span></a></div></li>
 <li><div class="toc-item"><a href="subsec-volint.html" class="internal"><span class="codenumber">1.4.3</span> <span class="title">The Volume Integral</span></a></div></li>
 <li><div class="toc-item"><a href="subsec-divergence_thrm.html" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Gauss’s Divergence Theorem</span></a></div></li>
@@ -616,7 +616,7 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="subsection" id="subsec-fourier_trans"><h2 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.1.2</span> <span class="title">Fourier Transforms</span>
 </h2>
-<section class="introduction" id="introduction-42"><div class="para logical" id="p-900">
+<section class="introduction" id="introduction-42"><div class="para logical" id="p-901">
 <div class="para"> The Fourier transform is a mathematical tool used to analyze functions and signals, particularly in the field of signal processing. It decomposes a function of time, <span class="process-math">\(f(t)\text{,}\)</span> into its frequency components <span class="process-math">\(F(\omega)\text{.}\)</span> The Fourier transform allows us to represent a function in terms of its constituent frequencies. <em class="emphasis">It is useful in finding the solution of partial differential equation with boundary value conditions.</em> The Fourier transform can also be used to transform functions from one spatial domain to another. In particular, the Fourier transform can convert a function from the <em class="emphasis">spatial domain</em> to the <em class="emphasis">wavevector domain</em>, which is analogous to the frequency domain. When considering functions in multiple dimensions, such as functions of space variables, the Fourier transform can be extended to perform spatial transformations. For instance, in one dimension, if we have a function <span class="process-math">\(f(x) \)</span> defined in the spatial domain, its Fourier transform <span class="process-math">\(F(k) \)</span> is given by:</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -633,7 +633,7 @@ f(x) = \mathscr{F}^{-1}\{f(k)\} =  \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}f
 </div></section><section class="subsubsection" id="subsubsec-fourier_inttrans"><h3 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">6.1.2.1</span> <span class="title">Fourier Integral Theorem</span>
 </h3>
-<div class="para logical" id="p-901">
+<div class="para logical" id="p-902">
 <div class="para"> If the function <span class="process-math">\(f(x)\)</span> satisfies the Dritchlet conditions in every interval of <span class="process-math">\(-l \leq x \leq l\)</span> and the integration</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -649,7 +649,7 @@ f(x) = \frac{1}{2\pi}\int\limits_{p=-\infty}^{\infty}\int\limits_{t=-\infty}^{\i
 <div class="para">The integral on right hand side is then called Fourier integral of <span class="process-math">\(f(x)\text{.}\)</span>
 </div>
 </div>
-<article class="hiddenproof" id="proof-32"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-32"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-32"><article class="hiddenproof"><div class="para logical" id="p-902">
+<article class="hiddenproof" id="proof-32"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-32"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-32"><article class="hiddenproof"><div class="para logical" id="p-903">
 <div class="para">Fourier series of a function <span class="process-math">\(f(x)\)</span> in interval <span class="process-math">\((-c,c)\)</span> is given by</div>
 <div class="displaymath process-math" id="eqn-fint_trans1">
 \begin{equation}
@@ -676,7 +676,7 @@ f(x) = \frac{a_{o}}{2}+\sum\limits_{n=1}^{\infty}a_{n}\cos \left(\frac{n\pi x}{c
 =\frac{1}{2c}\int\limits_{-c}^{c}f(t)\left[1+2\sum\limits_{n=1}^{\infty}\cos \frac{n\pi (t-x)}{c}\right]\,dt\tag{6.1.3}
 \end{equation}
 </div>
-</div> <div class="para logical" id="p-903">
+</div> <div class="para logical" id="p-904">
 <div class="para">since cosine functions are even function, we have <span class="process-math">\(\cos (-\theta) = \cos \theta\text{.}\)</span> Hence the expression</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -693,7 +693,7 @@ f(x) = \frac{a_{o}}{2}+\sum\limits_{n=1}^{\infty}a_{n}\cos \left(\frac{n\pi x}{c
 \therefore f(x) = \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt + \frac{1}{2\pi}\int\limits_{-c}^{c}f(t)\left[\sum\limits_{n=-\infty}^{\infty}\left\{\frac{\pi}{c}\cos \frac{n\pi (t-x)}{c}\right\}\right]\,dt 
 \end{equation*}
 </div>
-</div> <div class="para logical" id="p-904">
+</div> <div class="para logical" id="p-905">
 <div class="para">Now assume that <span class="process-math">\(c\)</span> increases indefinitely and making use of definition of integral as a limit of sum, we can write -</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -732,7 +732,7 @@ f(x) = \frac{1}{2\pi}\int\limits_{p=-\infty}^{\infty}\int\limits_{t=-\infty}^{\i
 </div></article></div></section><section class="subsubsection" id="subsubsec-fint_forms"><h3 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">6.1.2.2</span> <span class="title">Different Forms of Fourier Integral.</span>
 </h3>
-<div class="para logical" id="p-905">
+<div class="para logical" id="p-906">
 <div class="para">Since,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fint_trans4.html">
 \begin{equation*}
@@ -746,7 +746,7 @@ f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)\c
 \end{equation}
 </div>
 </div>
-<section class="paragraphs" id="paragraphs-33"><h4 class="heading"><span class="title">Cosine Form.</span></h4> <div class="para logical" id="p-906">
+<section class="paragraphs" id="paragraphs-33"><h4 class="heading"><span class="title">Cosine Form.</span></h4> <div class="para logical" id="p-907">
 <div class="para">Taking</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -765,7 +765,7 @@ f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)\c
 f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\left[\mathcal{A}(p)\cos px + \mathcal{B}(p)\sin px\right]\,dp\tag{6.1.7}
 \end{equation}
 </div>
-</div> <div class="para logical" id="p-907">
+</div> <div class="para logical" id="p-908">
 <div class="para">Let <span class="process-math">\(f(t)\)</span> be an even function of <span class="process-math">\(t\)</span> so that <span class="process-math">\(f(t) =f(-t)\text{,}\)</span> then <span class="process-math">\(f(t)\cos pt\)</span> is even and <span class="process-math">\(f(t)\sin pt\)</span> is odd function of <span class="process-math">\(t\text{.}\)</span> Consequently,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fint_trans6.html">
 \begin{equation*}
@@ -785,7 +785,7 @@ f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\left[\mathcal{A}(p)\cos px +0.\sin 
 \end{equation*}
 </div>
 <div class="para">which is the required form of Fourier Cosine Integral.</div>
-</div></section><section class="paragraphs" id="paragraphs-34"><h4 class="heading"><span class="title">Sine Form.</span></h4> <div class="para logical" id="p-908">
+</div></section><section class="paragraphs" id="paragraphs-34"><h4 class="heading"><span class="title">Sine Form.</span></h4> <div class="para logical" id="p-909">
 <div class="para">Let <span class="process-math">\(f(t)\)</span> be an odd function of <span class="process-math">\(t\)</span> so that <span class="process-math">\(f(t) = -f(t)\text{,}\)</span> then <span class="process-math">\(f(t)\cos pt\)</span> is an odd and <span class="process-math">\(f(t)\sin pt\)</span> is an even function of <span class="process-math">\(t\text{.}\)</span> Consequently,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fint_trans6.html">
 \begin{equation*}
@@ -805,11 +805,11 @@ f(x) = \frac{2}{\pi}\int\limits_{0}^{\infty}\int\limits_{0}^{\infty}f(t)\sin pt\
 \end{equation*}
 </div>
 <div class="para">which is the required form of Fourier Sine Integral.</div>
-</div></section><section class="paragraphs" id="paragraphs-35"><h4 class="heading"><span class="title">Exponential Form.</span></h4> <div class="para logical" id="p-909"><div class="displaymath process-math">
+</div></section><section class="paragraphs" id="paragraphs-35"><h4 class="heading"><span class="title">Exponential Form.</span></h4> <div class="para logical" id="p-910"><div class="displaymath process-math">
 \begin{equation*}
 f(x) = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}e^{ipx}\,dp\,dt
 \end{equation*}
-</div></div> <article class="hiddenproof" id="proof-33"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-33"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-33"><article class="hiddenproof"><div class="para logical" id="p-910">
+</div></div> <article class="hiddenproof" id="proof-33"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-33"><h5 class="heading"><span class="type">Proof<span class="period">.</span></span></h5></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-33"><article class="hiddenproof"><div class="para logical" id="p-911">
 <div class="para">From Fourier integral formula</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -831,7 +831,7 @@ f(x) = \frac{1}{\pi}\int\limits_{p=0}^{\infty}\int\limits_{t=-\infty}^{\infty}f(
 =\frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt+\frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}e^{ipt}e^{-ipx}\,(-dp)\,dt
 \end{equation*}
 </div>
-</div> <div class="para logical" id="p-911">
+</div> <div class="para logical" id="p-912">
 <div class="para">Putting <span class="process-math">\(p=-p'\)</span> in the second integral, we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -850,7 +850,7 @@ f(x) = \frac{1}{2\pi}\int\limits_{0}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e
 f(x) = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}\int\limits_{-\infty}^{\infty}f(t)e^{-ipt}.e^{ipx}\,dp\,dt\tag{6.1.8}
 \end{equation}
 </div>
-</div> <div class="para logical" id="p-912">
+</div> <div class="para logical" id="p-913">
 <div class="para">
 <dfn class="terminology">Note:</dfn>  putting <span class="process-math">\(p=-p'\text{,}\)</span> in the last integral, we get -</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fint_trans7.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans8.html ./knowl/eqn-fint_trans7.html" id="eqn-fint_trans8">

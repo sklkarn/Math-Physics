@@ -13,95 +13,31 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">The equation of vibrating string is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
+<div class="para">
+<dfn class="terminology">Note:</dfn> If we assume the initial velocity of the string <span class="process-math">\(f'(x)=0\text{,}\)</span> then from equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs14.html" title="Equation 7.1.19">(7.1.19)</a> we have <span class="process-math">\(d_{n}=0\text{.}\)</span> Thus equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs15.html" title="Equation 7.1.20">(7.1.20)</a> reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
 \begin{equation}
-\frac{\partial^{2} y}{\partial x^{2}} =  \frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}} \tag{7.1.25}
+y(x,t) = \sum\limits_{n=1}^{\infty} b_{n}\cos  \frac{n\pi vt}{l}\sin \frac{n\pi x}{l}\tag{7.1.23}
 \end{equation}
 </div>
-<div class="para">The solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb1.html" title="Equation 7.1.25">(7.1.25)</a> may be obtained by changing the variable <span class="process-math">\(x\)</span> and <span class="process-math">\(t\)</span> in the other parameters as <span class="process-math">\(p=x+vt\text{,}\)</span>   and <span class="process-math">\(q=x-vt\text{,}\)</span> so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
 \begin{equation*}
-\frac{\partial p}{\partial x}=\frac{\partial q}{\partial x}=1\quad \text{and}\quad \frac{\partial p}{\partial t} =v, \frac{\partial q}{\partial t} =-v, \quad \text{now,}\quad y=f(p,q)
+=\frac{1}{2}\sum\limits_{n=1}^{\infty} b_{n}\left[\sin \frac{n\pi}{l}(x-vt)+ \sin \frac{n\pi}{l}(x+vt)\right]
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
 \begin{equation*}
-\frac{\partial y}{\partial x} = 	\frac{\partial y}{\partial p}	\frac{\partial p}{\partial x}+\frac{\partial y}{\partial q}	\frac{\partial q}{\partial x}
+= \frac{1}{2}\sum\limits_{n=1}^{\infty} b_{n}\sin \frac{n\pi}{l}(x-vt)+ \frac{1}{2}\sum\limits_{n=1}^{\infty}b_{n}\sin \frac{n\pi}{l}(x+vt)	
 \end{equation*}
 </div>
-<div class="para">at constant <span class="process-math">\(t\text{.}\)</span> Or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
 \begin{equation}
-\frac{\partial y}{\partial x} = \frac{\partial y}{\partial p}+\frac{\partial y}{\partial q}\tag{7.1.26}
+\therefore y(x,t) = \frac{1}{2}[f(x-vt)+f(x+vt)]\tag{7.1.24}
 \end{equation}
 </div>
-<div class="para">In operator form</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation}
-\frac{\partial}{\partial x} \equiv \frac{\partial}{\partial p}+\frac{\partial}{\partial q}\tag{7.1.27}
-\end{equation}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation*}
-\frac{\partial^{2}y}{\partial x^{2}}=\frac{\partial}{\partial x} \left(\frac{\partial y}{\partial x}\right)= \left(\frac{\partial}{\partial p}+\frac{\partial}{\partial q}\right)\left(\frac{\partial y}{\partial p}+\frac{\partial y}{\partial q}\right) 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation}
-= \frac{\partial^{2}y}{\partial p^{2}}+2\frac{\partial^{2}y}{\partial p \partial q}+\frac{\partial^{2}y}{\partial q^{2}}\tag{7.1.28}
-\end{equation}
-</div>
-<div class="para">also</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation*}
-\frac{\partial y}{\partial t}=\frac{\partial y}{\partial p}\frac{\partial p}{\partial t}+\frac{\partial y}{\partial q}\frac{\partial q}{\partial t}
-\end{equation*}
-</div>
-<div class="para">at constant <span class="process-math">\(x\text{.}\)</span> Or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation*}
-\frac{\partial y}{\partial t}=v\left[\frac{\partial y}{\partial p}-\frac{\partial y}{\partial q}\right] 
-\end{equation*}
-</div>
-<div class="para">i.e.,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation*}
-\frac{\partial}{\partial t}=v\left[\frac{\partial}{\partial p}-\frac{\partial}{\partial q}\right]
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation*}
-\frac{\partial^{2}y}{\partial t^{2}}=\frac{\partial}{\partial t} \left(\frac{\partial y}{\partial t}\right)= v^{2}\left(\frac{\partial}{\partial p}-\frac{\partial}{\partial q}\right)\left(\frac{\partial y}{\partial p}-\frac{\partial y}{\partial q}\right) 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation}
-= v^{2}\frac{\partial^{2}y}{\partial p^{2}}+2\frac{\partial^{2}y}{\partial p \partial q}+\frac{\partial^{2}y}{\partial q^{2}}	\tag{7.1.29}
-\end{equation}
-</div>
-<div class="para">Substituting the values of equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb4.html" title="Equation 7.1.28">(7.1.28)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-dalemb5.html" title="Equation 7.1.29">(7.1.29)</a> in equation <a href="" class="xref" data-knowl="./knowl/eqn-dalemb1.html" title="Equation 7.1.25">(7.1.25)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation*}
-\frac{\partial^{2}y}{\partial p\partial q}=0.
-\end{equation*}
-</div>
-<div class="para">Integrating this expression with respect to <span class="process-math">\(q\text{,}\)</span> we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation*}
-\int\frac{\partial}{\partial q}\left(\frac{\partial y}{\partial p}\right)\,dq=\int 0.\,dq
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-dalemb1.html ./knowl/eqn-dalemb4.html ./knowl/eqn-dalemb5.html ./knowl/eqn-dalemb1.html">
-\begin{equation*}
-\frac{\partial y}{\partial p}  =  constant  =  f(p)\quad \text{(say)}.
-\end{equation*}
+<div class="para">which is the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs1.html" title="Equation 7.1.6">(7.1.6)</a>, where the function <span class="process-math">\(f\)</span> is odd and periodic in period <span class="process-math">\(2l\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="subsec-dalembert.html#p-1129" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-sol_vs.html#p-1129" class="internal">in-context</a></span>
 </body>
 </html>

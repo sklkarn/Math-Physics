@@ -13,57 +13,61 @@
 <body class="ignore-math">
 <h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">Substituting these values in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl2.html" title="Equation 4.7.2">(4.7.2)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
+<div class="para">Equating the coefficient of general term <span class="process-math">\(x^{m+k+2}\)</span> to zero, we get the recurrence relation for the coefficients as</div>
+<div class="displaymath process-math">
 \begin{equation*}
-y=a_{o}x^{n}\left[1-\frac{1}{4(n+1)}x^{2}+\frac{1}{4^{2}2!(n+1)(n+2)}x^{4}\right.
+a_{k+2}[(m+k+2)^{2}-n^{2}]+a_{k}=0
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation*}
-\left.-\frac{1}{4^{3}3!(n+1)(n+2)(n+3)}x^{6}+\cdots\right.
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation*}
-\left.+\cdots+\frac{(-1)^{r}x^{2r}}{4^{r}r!(n+1)(n+2)\cdots(n+r)}+\cdots\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
+<div class="para">or,</div>
+<div class="displaymath process-math">
 \begin{equation}
-\therefore \quad y=a_{o}\sum\limits_{r=0}^{\infty}(-1)^{r}\frac{x^{n+2r}}{2^{2r}r!(n+1)(n+2)\cdots(n+r)}\tag{4.7.5}
+a_{k+2}=-\frac{a_{k}}{(m+k+2)^{2}-n^{2}}\tag{4.7.4}
 \end{equation}
 </div>
-<div class="para">where <span class="process-math">\(a_{o}\)</span> is an arbitrary constant. If we choose <span class="process-math">\(a_{o} = \frac{1}{2^{n}n!}\)</span> then the solution <a href="" class="xref" data-knowl="./knowl/eqn-bessl5.html" title="Equation 4.7.5">(4.7.5)</a> is called Bessel’s function of the first kind and is denoted by <span class="process-math">\(J_{n}(x)\text{.}\)</span> Thus</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
+<div class="para">for</div>
+<div class="displaymath process-math">
 \begin{equation*}
-J_{n}(x) = \frac{1}{2^{n}n!} \sum\limits_{r=0}^{\infty}(-1)^{r}\frac{x^{n+2r}}{2^{2r}r!(n+1)(n+2)\cdots(n+r)}
+m=+n, \quad a_{k+2}=-\frac{a_{k}}{(n+k+2)^{2}-n^{2}} 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation}
-=  \sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}\tag{4.7.6}
-\end{equation}
-</div>
-<div class="para">for <span class="process-math">\(m=-n\text{,}\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
+<div class="para">and</div>
+<div class="displaymath process-math">
 \begin{equation*}
-a_{k+2}=-\frac{a_{k}}{(-n+k+2)^{2}-n^{2}}
+a_{2}=-\frac{a_{o}}{(n+2)^{2}-n^{2}}=-\frac{a_{o}}{4(n+1)};
 \end{equation*}
 </div>
-<div class="para">hence the second solution is obtained by replacing <span class="process-math">\(n\)</span> with <span class="process-math">\(-n\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl6.html" title="Equation 4.7.6">(4.7.6)</a>, i.e.,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation}
-J_{-n}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(-n+r)!}\left(\frac{x}{2}\right)^{-n+2r}\tag{4.7.7}
-\end{equation}
+<div class="displaymath process-math">
+\begin{equation*}
+a_{3}=-\frac{a_{1}}{(n+3)^{2}-n^{2}}=0 \quad [\because a_{1}=0]
+\end{equation*}
 </div>
-<div class="para">Therefore, the general solution of Bessel’s differential equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl1.html" title="Equation 4.7.1">(4.7.1)</a> is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation}
-y=AJ_{n}(x)+BJ_{-n}(x)\tag{4.7.8}
-\end{equation}
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad a_{5} =a_{7} =\cdots=0,
+\end{equation*}
 </div>
-<div class="para">Where <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are two arbitrary constants.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{4}=-\frac{a_{2}}{(n+4)^{2}-n^{2}}  =+\frac{a_{o}}{4(n+1)8(n+2)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{a_{o}}{4^{2}2!(n+1)(n+2)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{6}=-\frac{a_{4}}{(n+6)^{2}-n^{2}}=- \frac{a_{0}}{4^{2}2!(n+1)(n+2)(n+3)12} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-\frac{a_{0}}{4^{3}3!(n+1)(n+2)(n+3)} 
+\end{equation*}
+</div>
+<div class="para">and so on.</div>
 </div>
 <span class="incontext"><a href="sec_fourth-besslfn.html#p-629" class="internal">in-context</a></span>
 </body>

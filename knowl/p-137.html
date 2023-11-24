@@ -12,7 +12,54 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">If <span class="process-math">\(\vec{F}=2z\hat{i}-x\hat{j}+y\hat{k}\text{,}\)</span> evaluate <span class="process-math">\(\iiint\limits_{V}\vec{F}\,dv\)</span> where <span class="process-math">\(V\)</span> is the region bounded by the surfaces <span class="process-math">\(x=0\text{,}\)</span>  <span class="process-math">\(x=2\text{,}\)</span> <span class="process-math">\(y=0\text{,}\)</span> <span class="process-math">\(y=4\text{,}\)</span> and <span class="process-math">\(z=x^2\text{,}\)</span>  <span class="process-math">\(z=2\text{.}\)</span>
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\iint\limits_{S}\vec{F}\cdot \hat{n}ds=\iint\limits_{R}\vec{F}\cdot \hat{n}\frac{dxdz}{\mid \hat{n}\cdot\hat{j}\mid} 
+\end{equation*}
+</div>
+<div class="para">But,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat{n}=\frac{grad f}{\mid grad f\mid}= \frac{\vec{\nabla f}}{\mid\vec{\nabla f}\mid} =\frac{\vec{\nabla}(x^{2}+y^{2}-16)}{\mid\vec{\nabla}(x^{2}+y^{2}-16)\mid} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{(2x\hat{i}+2y\hat{j})}{\sqrt{(4x^{2}+4y^{2})}} 
+=\frac{(x\hat{i}+y\hat{j})}{\sqrt{(x^{2}+y^{2})}} 
+=\frac{(x\hat{i}+y\hat{j})}{4},
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vec{F}\cdot\hat{n}=(z\hat{i}-x\hat{j}+3y^{2}z\hat{k}).\frac{1}{4}(x\hat{i}+y\hat{j}) 
+= \frac{1}{4}(xz+xy),
+\end{equation*}
+</div>
+<div class="para">also,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\hat{n}\cdot\hat{j}= \frac{1}{4}(x\hat{i}+y\hat{j})\cdot\hat{j}=\frac{1}{4}y
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore   \iint\limits_{R}\vec{F}\cdot \hat{n}\frac{dxdz}{\mid \hat{n}\cdot\hat{j}\mid} =\iint\limits_{R}\frac{1}{4}(xz+xy)\cdot\frac{4}{y}\,dx\,dz 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\iint\limits_{R}\left(\frac{xz}{\sqrt{(16-x^{2})}}+x\right)\,dx\,dz
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \int\limits_{x=0}^{4}\int\limits_{z=0}^{5}\left(\frac{xz}{\sqrt{(16-x^{2})}}+x\right)dxdz 
+= \int\limits_{z=0}^{5}(4z+8)dz=90.    
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_first-examplesB.html#p-137" class="internal">in-context</a></span>
 </body>

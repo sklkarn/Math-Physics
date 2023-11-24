@@ -13,26 +13,26 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Find</div>
+<div class="para">we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}_{s}\{f(x)\}  
+\mathscr{F}_{s}\{f(x)\} = F(s) = \int\limits_{0}^{\infty}f(x) \sin sx \,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \int\limits_{0}^{a}1.\sin sx \,dx = \left[-\frac{\cos sx}{s}\right]_{0}^{a} = -\frac{\cos as}{s}+\frac{1}{s}
 \end{equation*}
 </div>
 <div class="para">and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}_{c}\{f(x)\}
+\mathscr{F}_{c}\{f(x)\} = F(s) = \int\limits_{0}^{\infty}f(x) \cos sx \,dx\
 \end{equation*}
 </div>
-<div class="para">if</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \begin{cases}
-x, &amp;  \text{for} \quad 0 \lt x \lt 1\\
-2-x, &amp;  \text{for} \quad 1 \lt x \lt 2\\
-0, &amp; \text{for} \quad    x \gt 2
-\end{cases}
+= \int\limits_{0}^{a}1.\cos sx \,dx = \left[-\frac{\sin sx}{s}\right]_{0}^{a} = \frac{\sin as}{s}.
 \end{equation*}
 </div>
 </div>

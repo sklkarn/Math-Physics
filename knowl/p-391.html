@@ -11,9 +11,36 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">If suffix <span class="process-math">\(i\)</span> occurs twice in a term, then that suffix <span class="process-math">\(i\)</span> is called dummy suffix. For example, <span class="process-math">\(i\)</span> is a dummy suffix in <span class="process-math">\(a_{ij}x_{i}\text{.}\)</span> Also a dummy suffix can be replace by another dummy suffix i.e., <span class="process-math">\(a_{ij}x_{i}\equiv a_{kj}x_{k}\text{.}\)</span>
+<h2 class="heading"><span class="type">Paragraph</span></h2>
+<div class="para logical">
+<div class="para">Like vector algebra, tensor also obeys the laws of algebra. ,</div>
+<ol class="decimal">
+<li><div class="para">
+<dfn class="terminology">Addition:</dfn> when two similar tensors are added the third tensor of same type will yield.<div class="displaymath process-math">
+\begin{equation*}
+A_{q}^{mp} + B_{q}^{mp} = C_{q}^{mp}
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-dummy.html#p-391" class="internal">in-context</a></span>
+</div></li>
+<li><div class="para">
+<dfn class="terminology">Multiplication (outer product or direct product):</dfn> when two tensors of any rank will be multiplied as outer product the third tensor has the rank multiple of their ranks. such as <span class="process-math">\(A_{q}^{pr} \bigotimes B_{s}^{m} = C_{qs}^{prm}\text{.}\)</span> The result of the direct product is a tensor whose rank is the sum of the ranks of the tensors being multiplied. <em class="emphasis">The division of a tensor of rank greater than zero by another tensor of rank greater than zero is not defined</em>.</div></li>
+<li><div class="para">
+<dfn class="terminology">Contraction:</dfn> The process of reducing the number of indices of a mixed tensor by one. for example: to contract the components of <span class="process-math">\(A_{klm}^{ij}\)</span> into <span class="process-math">\(B_{lm}^{j}\)</span> we have to set <span class="process-math">\(i=j\text{,}\)</span> then <span class="process-math">\(A_{klm}^{ij}= B_{lm}^{j}\text{,}\)</span> again, if <span class="process-math">\(j=l\text{,}\)</span> then <span class="process-math">\(B_{lm}^{j} = C_{m}\text{,}\)</span> a tensor of rank one.</div></li>
+<li><div class="para">
+<dfn class="terminology">Inner multiplication:</dfn> The inner product between two tensors results from first forming the direct product, and then setting the two nearest indices (with one index coming from each tensor) equal to one another and performing the sum according to the summation convention, e.g. If we multiply <span class="process-math">\(A_{q}^{mp}\)</span> and <span class="process-math">\(B_{st}^{r}\)</span> then the outer product is <span class="process-math">\(A_{q}^{mp}B_{st}^{r}\text{.}\)</span> Now set <span class="process-math">\(q=r\)</span> we get the inner product as <span class="process-math">\(A_{r}^{mp}B_{st}^{r}\text{,}\)</span> again if <span class="process-math">\(q=r\)</span> and <span class="process-math">\(p=s\text{,}\)</span> then another inner product <span class="process-math">\(A_{r}^{mp}B_{pt}^{r}\)</span> is obtained.</div></li>
+<li><div class="para">
+<dfn class="terminology">Quotient Law:</dfn>  This law is useful to determine whether the given quantity is a tensor or not. Suppose it is not known whether X is a tensor or not but its inner product with an arbitrary tensor is a tensor then X itself is also a tensor. This is called a quotient law. The quotient rule can generally be written as <span class="process-math">\(KA = B\)</span> where <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are tensors of known rank and <span class="process-math">\(K\)</span> is an unknown quantity. The quotient rule gives the rank of <span class="process-math">\(K\text{,}\)</span> e.g., in <span class="process-math">\(\vec{L}=I\vec{\omega}\text{,}\)</span> where <span class="process-math">\(\vec{l}\)</span> and <span class="process-math">\(\vec{\omega}\)</span> are known vectors, then from quotient rule we come to know that <span class="process-math">\(I\)</span> is a second rank tensor. Some well know quotient rules are<div class="displaymath process-math">
+\begin{align*}
+K_{i}A_{i} \amp =B;\\
+K_{ij}A_{j} \amp =B_{i};\\
+K_{ij}A_{jk} \amp =B_{ik}; \\
+K_{ijkl}A_{ij} \amp =B_{kl}; \\
+K_{ij}A_{k} \amp =B_{ijk}.
+\end{align*}
+</div>
+</div></li>
+</ol>
+</div>
+<span class="incontext"><a href="sec_third-tens_alg.html#p-391" class="internal">in-context</a></span>
 </body>
 </html>

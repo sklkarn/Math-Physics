@@ -13,37 +13,28 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">we have</div>
+<div class="para">Find the Fourier transform of <span class="process-math">\(f(x)\)</span> defined by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}\{f(x)\}=F(s)=\int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx
+f(x) = \begin{cases}
+1,   &amp; |x| \lt a   \\
+0,   &amp; |x| \gt a  
+\end{cases}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">and hence evalute</div>
+<ol class="upper-roman">
+<li><div class="para"><div class="displaymath process-math">
 \begin{equation*}
-= \int\limits_{-\infty}^{a}f(x) e^{-isx}\,dx + \int\limits_{-a}^{a}f(x) e^{-isx}\,dx + \int\limits_{a}^{\infty}f(x) e^{-isx}\,dx
+\int\limits_{-\infty}^{\infty}\frac{\sin sa.\cos sa}{s}\,ds 
 \end{equation*}
-</div>
-<div class="displaymath process-math">
+</div></div></li>
+<li><div class="para"><div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{\infty}^{a}f(-t) e^{+ist}\,(-dt)+\int\limits_{-a}^{a}1. e^{-isx}\,(dx)+ \int\limits_{a}^{\infty}0. e^{-isx}\,dx  
+\int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds 
 \end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\int\limits_{a}^{\infty}f(-t) e^{+ist}\,(dt)+\left[\frac{e^{-isx}}{-is}\right]_{a}^{a}+0
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{a}^{\infty}0. e^{+ist}\,(dt)+\left[\frac{e^{isa}-e^{-isa}}{is}\right]+0 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation}
-= \frac{2}{s}\sin sa\tag{6.2.1}
-\end{equation}
-</div>
+</div></div></li>
+</ol>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesA.html#p-940" class="internal">in-context</a></span>
 </body>

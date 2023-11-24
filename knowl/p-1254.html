@@ -13,17 +13,16 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Solve</div>
+<div class="para">A square plate has its faces and its edges <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=\pi\)</span> for <span class="process-math">\((0 \lt y \lt \pi)\)</span> is insulated. Its edges <span class="process-math">\(y=0\)</span> and <span class="process-math">\(y=\pi\)</span> are kept at  temperatures zero and <span class="process-math">\(f(x)\)</span> respectively. Show that the steady temperature is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} = 0
+u(x,y) = \frac{1}{2\pi}a_{o}y+\sum\limits_{n=1}^{\infty}a_{n}\frac{\sinh ny}{\sinh n\pi} \cos nx
 \end{equation*}
 </div>
-<div class="para">for <span class="process-math">\(0 \lt x \lt \pi, \quad 0 \lt y \lt \pi\)</span> under the boundary conditions <span class="process-math">\(u(x,0)=x^{2}, u(x,\pi)=0,\)</span>
-</div>
+<div class="para">where</div>
 <div class="displaymath process-math">
 \begin{equation*}
-u_{x}(0,y)=\frac{\partial}{\partial x}u_{x}(0,y)=0=u_{x}(\pi,y) 
+a_{n}=\frac{2}{\pi}\int\limits_{0}^{\pi}f(x) \sin\cos nx\,dx,  \quad  n=0,1,2,3,\cdots.
 \end{equation*}
 </div>
 </div>

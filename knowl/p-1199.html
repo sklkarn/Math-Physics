@@ -13,103 +13,33 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">This is a homogenous linear differential equation. Its solution can be found by putting <span class="process-math">\(r=e^{z}\)</span> or, <span class="process-math">\(\log r=z\)</span> or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-\frac{1}{r}\frac{\partial r}{\partial z} =1.
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">The Laplace equation in two dimensional case is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd1.html">
 \begin{equation}
-\frac{\partial r}{\partial z} =r\tag{7.3.77}
+\frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}=0	\tag{7.3.72}
 \end{equation}
 </div>
-<div class="para">Also,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-\frac{\partial R}{\partial r} =\frac{\partial R}{\partial z}\cdot\frac{\partial z}{\partial r} = \frac{1}{r}\frac{\partial R}{\partial z}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">Let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd1.html">
 \begin{equation}
-r\frac{\partial R}{\partial r}=\frac{\partial R}{\partial z}= DR   \tag{7.3.78}
+u(r,\theta) = R(r)\Theta(\theta) \tag{7.3.73}
 \end{equation}
 </div>
-<div class="para">assume</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-D\equiv \frac{\partial }{\partial z}.
-\end{equation*}
-</div>
-<div class="para">again,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-\frac{\partial^{2}R}{\partial r^{2}} = \frac{\partial }{\partial r}\left(\frac{\partial R}{\partial r}\right)  = \frac{\partial }{\partial z}\left(\frac{1}{r}\frac{\partial R}{\partial z}\right)\frac{\partial z}{\partial z}	
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-= \frac{1}{r}\left[\frac{1}{r}\frac{\partial^{2}R}{\partial z^{2}}- \frac{1}{r^{2}}\frac{\partial r}{\partial z}\frac{\partial R}{\partial z}\right]  = \frac{1}{r}\left[\frac{1}{r}D^{2}R- \frac{1}{r^{2}}\cdot r\cdot DR\right]
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-r^{2}\frac{\partial^{2}R}{\partial r^{2}}=D^{2}R-DR=D(D-1)R 
-\end{equation*}
-</div>
-<div class="para">from eqn.<a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_ccylnd5.html" title="Equation 7.3.76">(7.3.76)</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-D(D-1)R+DR-n^{2}R =0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-D^{2}R -DR+DR-n^{2}R =0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">be the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_ccylnd1.html" title="Equation 7.3.72">(7.3.72)</a>, so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd1.html">
 \begin{equation}
-(D^{2}-n^{2})R=0\tag{7.3.79}
+\Theta\frac{\partial^{2}R}{\partial r^{2}}+\frac{\Theta}{r}\frac{\partial R}{\partial r}+\frac{R}{r^{2}}\frac{\partial^{2}\Theta}{\partial \theta^{2}}\tag{7.3.74}
 \end{equation}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-D=\pm n
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-R=C_{1}e^{nz} +C_{2}e^{-nz}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd1.html">
 \begin{equation}
-\therefore  R=C_{1}r^{n}+C_{2}r^{-n} \tag{7.3.80}
+\frac{1}{R}\left(r^{2}\frac{\partial^{2}R}{\partial r^{2}}+r\frac{\partial R}{\partial r}\right) =-\frac{1}{\Theta}\frac{\partial^{2}\Theta}{\partial \theta^{2}}=n^{2} \quad	\text{(say)}	\tag{7.3.75}
 \end{equation}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-[e^{nz}=e^{n\log r}=e^{\log r^{n}} = r^{n}].
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd1.html">
 \begin{equation}
-\frac{\partial^{2}\Theta}{\partial \theta^{2}}+n^{2}\Theta =0 \quad  \Rightarrow  \Theta =C_{3}\cos n\theta + C_{4}\sin n\theta \tag{7.3.81}
-\end{equation}
-</div>
-<div class="para">Hence,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation}
-u_{n}=\left(C_{1}r^{n}+C_{2}r^{-n}\right)\left(C_{3}\cos n\theta+C_{4}\sin n\theta\right)\tag{7.3.82}
+r^{2}\frac{\partial^{2}R}{\partial r^{2}}+r\frac{\partial R}{\partial r}=-n^{2}R=0	\tag{7.3.76}
 \end{equation}
 </div>
 </div>

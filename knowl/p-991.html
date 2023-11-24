@@ -12,7 +12,22 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Find the Laplace transform of <span class="process-math">\(\cos^{2}t\text{.}\)</span>
+<div class="para logical">
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}(1+\cos2t)=\int\limits_{0}^{\infty}e^{-st}(1+\cos2t)\,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \int\limits_{0}^{\infty}e^{-st}.1\,dt + \int\limits_{0}^{\infty}e^{-st}\cos at\,dt
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{s}+ \frac{s}{s^{2}+2^{2}} = \frac{1}{s}+ \frac{s}{s^{2}+4}
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesB.html#p-991" class="internal">in-context</a></span>
 </body>

@@ -13,10 +13,24 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Use convolution theorem to find</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}^{-1}\{\frac{s^{2}}{(s^{2}+a^{2})(s^{2}+b^{2})}\}, \text{for} \quad a \neq b.
+f(t) =k[u_{o}(t)-2u_{a}(t)+2u_{2a}(t)-2u_{3a}(t)+\cdots]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad \mathscr{L}\{f(t)\}=k[\mathscr{L}u_{o}(t)-2\mathscr{L} u_{a}(t)+\cdots] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{k}{s}\left[1-2\frac{e^{-as}}{1+e^{-as}}\right]= \frac{k}{s}\left[\frac{1-e^{-as}}{1+e^{-as}}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{k}{s}\left[\frac{e^{as/2}-e^{-as/2}}{e^{as/2}+e^{-as/2}}\right]  = \frac{k}{s}\tanh \left(\frac{as}{2}\right)
 \end{equation*}
 </div>
 </div>

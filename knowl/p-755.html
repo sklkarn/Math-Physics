@@ -12,11 +12,43 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical"><div class="displaymath process-math">
+<div class="para logical">
+<div class="para">Differentiating above equation <a href="" class="xref" data-knowl="./knowl/eqn-laguer_recr1.html" title="Equation 4.11.12">(4.11.12)</a> w. r. to ’x’, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
 \begin{equation*}
-xL'_{n}=n[L_{n}-n^{2}L_{n-1}
+-(1-t)^{-1}\frac{1}{(1-t)}e^{-xt/(1-t)}=\sum\limits_{n=0}^{\infty}\frac{L'_{n}}{(n)!}t^{n}
 \end{equation*}
-</div></div>
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+-t\sum\limits_{n=0}^{\infty}\frac{L_{n}}{(n)!}t^{n}=(1-t)\sum\limits_{n=0}^{\infty}\frac{L'_{n}}{(n)!}t^{n}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+-\sum\limits_{n=0}^{\infty}\frac{L_{n}}{(n)!}t^{n+1}=\sum\limits_{n=0}^{\infty}\frac{L'_{n}}{(n)!}t^{n}-\sum\limits_{n=0}^{\infty}\frac{L'_{n}}{(n)!}t^{n+1}
+\end{equation*}
+</div>
+<div class="para">Equating the coefficient of <span class="process-math">\(t^{n}\)</span> on both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+-\frac{L_{n+1}}{(n-1)!}=\frac{L'_{n}}{n!}-\frac{L'_{n-1}}{(n-1)!}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+L'_{n}=nL'_{n-1}-nL_{n-1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
+\begin{equation*}
+\therefore L'_{n}=n[L'_{n-1}-L_{n-1}] 
+\end{equation*}
+</div>
+</div>
 <span class="incontext"><a href="subsec-laguer_pol.html#p-755" class="internal">in-context</a></span>
 </body>
 </html>

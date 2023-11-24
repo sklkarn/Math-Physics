@@ -13,20 +13,54 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Putting <span class="process-math">\(n = 2\)</span> in the standard form of linear differential equation <a href="" class="xref" data-knowl="./knowl/eqn-diffeq1.html" title="Equation 4.0.1">(4.0.1)</a> gives the second order linear differential equation.</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html">
+<div class="para">Now differentiating <span class="process-math">\(u= e^{-\int P\,dx }\)</span> with respect to ’x’, we have</div>
+<div class="displaymath process-math">
 \begin{equation*}
-f_{o}(x)\frac{\,d^{2}y}{\,dx^{2}}+f_{1}(x)\frac{\,dy}{\,dx}+Qy=R
+\frac{\,du}{\,dx} =-P e^{-\int P\,dx}=-Pu
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{\,d^{2}y}{\,dx^{2}}+P\frac{\,dy}{\,dx}+Qy=R
+\frac{\,du}{\,dx} +Pu =0 
 \end{equation*}
 </div>
-<div class="para">where <span class="process-math">\(P {,} Q\text{,}\)</span> and <span class="process-math">\(R\)</span> are functions of <span class="process-math">\(x\)</span> or constants.</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\,d(cu)}{\,dx} +P(cu) =0
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-second_order-diff.html#p-452" class="internal">in-context</a></span>
+<div class="para">which shows that <span class="process-math">\(y=cu\)</span> is the solution of <span class="process-math">\(\frac{\,du}{\,dx} +Pu =0\text{,}\)</span> again, differentiating</div>
+<div class="displaymath process-math">
+\begin{equation*}
+v=e^{-\int P\,dx}\int\left(Qe^{\int P\,dx}\right)\,dx
+\end{equation*}
+</div>
+<div class="para">w.r.t. ’x’, we have -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\,dv}{\,dx}=-Pe^{-\int P\,dx}\left(Qe^{\int P\,dx}\right)\,dx + e^{-\int P\,dx}Qe^{\int P\,dx}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\,dv}{\,dx} =-Pv+Q 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}\quad  \frac{\,dv}{\,dx} +Pv=Q 
+\end{equation*}
+</div>
+<div class="para">which shows that <span class="process-math">\(y=v\)</span> is the solution of <span class="process-math">\(\frac{\,dy}{\,dx} +Py=Q\text{.}\)</span> Hence, the first part of the solution of differential equation is the solution of its homogeneous equation and <span class="process-math">\(cu \)</span> is known as <dfn class="terminology">Complementry Function</dfn>. Second part is free from any arbitrary constant and <span class="process-math">\(v\)</span> is known as <dfn class="terminology">Particular Integral</dfn>. <span class="process-math">\(\therefore\)</span> <dfn class="terminology">Complete Solution = Complementry Function + Particular Integral</dfn>. That is,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y   =    C.F.   +    P.I.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="subsec-first_order-diff.html#p-452" class="internal">in-context</a></span>
 </body>
 </html>

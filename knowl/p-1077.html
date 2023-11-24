@@ -13,16 +13,19 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">A periodic square wave function <span class="process-math">\(f(t)\)</span> in terms of unit step function is given as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(t) =k[u_{o}(t)-2u_{a}(t)+2u_{2a}(t)-2u_{3a}(t)+\cdots].
+\mathscr{L}\{f(t)\}=\frac{1}{1-e^{-sT}}\int\limits_{0}^{T}e^{-st}f(t)\,dt 
 \end{equation*}
 </div>
-<div class="para">Show that the Laplce Transform of <span class="process-math">\(f(t)\)</span> is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}\{f(t)\}=\frac{k}{s}\tanh (\frac{as}{2}).
+= \frac{1}{1-e^{-sT}}\int\limits_{0}^{T}e^{-st}.\frac{kt}{T}\,dt  = \frac{1}{1-e^{-sT}}\frac{k}{T}\int\limits_{0}^{T}e^{-st}.t\,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= -\frac{ke^{-sT}}{s(1-e^{-sT})}+\frac{k}{Ts^{2}}.
 \end{equation*}
 </div>
 </div>

@@ -12,37 +12,7 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para logical">
-<div class="para">we have</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mathscr{F}\{f(x)\} =F(s) = \int\limits_{-\infty}^{\infty}e^{-isx}f(x) \,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{-\infty}^{\infty}e^{-x^{2}/2}e^{-isx}\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\int\limits_{-\infty}^{\infty}e^{-\frac{1}{2}(x^{2}+2isx)}\,dx = \int\limits_{-\infty}^{\infty}e^{-\frac{1}{2}(x+is)^{2}s^{2}/2}\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= e^{-s^{2}/2}\int\limits_{-\infty}^{\infty}e^{-\frac{1}{2}(x+is)^{2}}\,dx
-\end{equation*}
-</div>
-<div class="para">put <span class="process-math">\(x+is = y\)</span> so that <span class="process-math">\(\,dx =\,dy\text{.}\)</span>
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore  F(s)=	e^{-s^{2}/2}\int\limits_{-\infty}^{\infty}e^{-y^{2}/2}\,dy = e^{-s^{2}/2}.1
-\end{equation*}
-</div>
-<div class="para">[<span class="process-math">\(\because   \int\limits_{-\infty}^{\infty}e^{-y^{2}/2}\,dy =1\)</span>] Hence, <span class="process-math">\(f(x)=e^{-x^{2}}\)</span> is its own Fourier transform.</div>
-</div>
+<div class="para">Show that Fourier transform of <span class="process-math">\(e^{-x^{2}/2}\)</span> is its own Fourier transform.</div>
 <span class="incontext"><a href="sec_sixth-examplesA.html#p-954" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,65 +13,24 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let us consider an infinite bar of insulated surfaces. The initial temperature on the bar is given as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
+<div class="para">Or, <span class="process-math">\(\alpha =\frac{n\pi}{\lambda}\text{,}\)</span>	where <span class="process-math">\(n=1,2,3,\cdots\text{.}\)</span> Or,</div>
+<div class="displaymath process-math">
 \begin{equation}
-u(x,0)=f(x), \quad \text{for}  \quad -\infty \lt x \lt \infty\tag{7.3.43}
+u(x,t) = \frac{u_{o}x}{\lambda}+\sum\limits_{n=1}^{\infty} b_{n}\sin\frac{n\pi x}{\lambda} \,e^{-n^{2}\pi^{2}h^{2}t/\lambda}\tag{7.3.40}
 \end{equation}
 </div>
-<div class="para">The solution of one dimensional heat equaiton is given as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
+<div class="para">Constant <span class="process-math">\(b_{n}\)</span> may be calculated by using the initial condition <span class="process-math">\(u(x,0)=f(x)\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math">
 \begin{equation}
-u(x,t) =X(x)T(t)=(a\cos\alpha x+b\sin \alpha x)e^{-\alpha^{2}h^{2}t}\tag{7.3.44}
+f(x)-\frac{u_{o}x}{\lambda}=\sum\limits_{n=1}^{\infty} b_{n}\sin\frac{n\pi x}{\lambda}\tag{7.3.41}
 \end{equation}
-</div>
-<div class="para">This solution is periodic in <span class="process-math">\(x\)</span> at <span class="process-math">\(t=0\text{.}\)</span> But <span class="process-math">\(f(x)\)</span> is not taken as periodic function, we shall therefore, use Fourier integral instead of Fourier series for the determination of constants  <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> Let us assume the  arbitrary coefficients <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> to be the functions of <span class="process-math">\(\alpha\)</span> i.e., <span class="process-math">\(a=a(\alpha)\)</span>  and  <span class="process-math">\(b=b(\alpha)\text{.}\)</span> Then</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
-\begin{equation*}
-u(x,t)=\int\limits_{0}^{\infty}u(x,t,\alpha)\,d\alpha 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
-\begin{equation}
-=\int\limits_{0}^{\infty}\{a(\alpha)\cos\alpha x+b(\alpha)\sin\alpha x\}e^{-\alpha^{2}h^{2}t}\,d\alpha\tag{7.3.45}
-\end{equation}
-</div>
-<div class="para">using initial condition, we have -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
-\begin{equation}
-u(x,0) =\int\limits_{0}^{\infty}\{a(\alpha)\cos\alpha x+b(\alpha)\sin\alpha x\}\,d\alpha =f(x)\tag{7.3.46}
-\end{equation}
-</div>
-<div class="para">from this equation, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
-\begin{equation*}
-a(\alpha) = \frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(x)\cos\alpha x\,dx=\frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(\mu)\cos\alpha \mu\,d\mu
-\end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
-\begin{equation*}
-b(\alpha) = \frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(x)\sin\alpha x\,dx=\frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(\mu)\sin\alpha \mu\,d\mu 
-\end{equation*}
-</div>
-<div class="para">so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
-\begin{equation*}
-u(x,0) = \frac{1}{\pi}\int\limits_{0}^{\infty}\left[\int\limits_{-\infty}^{\infty}f(\mu)\cos\alpha (x-\mu)\,d\mu\right]\,d\alpha
-\end{equation*}
-</div>
-<div class="para">as such the equation <a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_infbar3.html" title="Equation 7.3.45">(7.3.45)</a> takes the form,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
-\begin{equation*}
-u(x,t) = \frac{1}{\pi}\int\limits_{0}^{\infty}\left[\int\limits_{-\infty}^{\infty}f(\mu)\cos\alpha (x-\mu)e^{-\alpha^{2}h^{2}t}\,d\mu\right]\,d\alpha
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_infbar3.html">
+<div class="displaymath process-math">
 \begin{equation}
-=\frac{1}{\pi}\int\limits_{-\infty}^{\infty}f(\mu)\left[\cos\alpha(x-\mu)e^{-\alpha^{2}h^{2}t}\,d\alpha\right]\,d\mu\tag{7.3.47}
+b_{n}=\frac{2}{\lambda}\int\limits_{0}^{\lambda}\left[f(x)-\frac{u_{o}x}{\lambda}\right]\sin\frac{n\pi x}{\lambda}\,dx\tag{7.3.42}
 \end{equation}
 </div>
-<div class="para">which gives the required temperature at any point at any time.</div>
 </div>
 <span class="incontext"><a href="subsec-1D_heat.html#p-1185" class="internal">in-context</a></span>
 </body>

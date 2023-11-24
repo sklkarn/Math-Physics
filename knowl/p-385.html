@@ -13,44 +13,57 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">The tensor whose components transform like the partial derivatives of the coordinate are called covariant tensors. In the expression</div>
+<div class="para">The tensor whose components transform like coordinate differential are called contravariant tensors. In this expression</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\bar{A}_{j} = \sum\limits_{i=1}^{3}\frac{\partial x^{i}}{\partial \bar{x}^{j}}{A}_{i};
+\bar{A}^{i} = \sum\limits_{j=1}^{3}\frac{\partial \bar{x}^{i}}{\partial x^{j}}{A}^{j};
 \end{equation*}
 </div>
-<div class="para">where, <span class="process-math">\(\frac{\partial x^{i}}{\partial \bar{x}^{j}}\)</span> are partial derivatives of the coordinates. If <span class="process-math">\(\psi\)</span> expresses a velocity function, then the components of velocity in <span class="process-math">\((x,y)\)</span> system are <span class="process-math">\(\frac{\,d\psi}{\,dx}\)</span> and <span class="process-math">\(\frac{\,d\psi}{\,dy}\text{.}\)</span> The transformations of these resolved parts are given as</div>
+<div class="para">where <span class="process-math">\(\frac{\partial \bar{x}^{i}}{\partial x^{j}}\)</span> are the coordinate differentials. For example:</div>
+<ol class="decimal">
+<li><div class="para">In cartesian coordinates <span class="process-math">\((x,y)\text{,}\)</span> suppose the velocity components are <span class="process-math">\(\dot{x}=\frac{\,dx}{\,dt}\text{,}\)</span> <span class="process-math">\(\dot{y}=\frac{dy}{dt}\text{;}\)</span>
+</div></li>
+<li><div class="para">In oblique coordinats <span class="process-math">\((\alpha{,}\beta)\)</span> the velocity components are <span class="process-math">\(\dot{\alpha}=\frac{\,d \alpha}{\,dt}\text{,}\)</span> <span class="process-math">\(\dot{\beta}=\frac{\,d \beta}{\,dt}\text{;}\)</span> and</div></li>
+<li><div class="para">In polar coordinates <span class="process-math">\((r, \theta)\text{,}\)</span> the velocity components are <span class="process-math">\(\dot{r}=\frac{\,dr}{\,dt}\text{,}\)</span> <span class="process-math">\(\dot{\theta}=\frac{\,d\theta}{\,dt}\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para">Since all these relations express the velocity of same particle, they are related to each other in the following way:</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{\,d\psi}{\,d\alpha} = \frac{\,d\psi}{\,dx} \frac{\,dx}{\,d\alpha} 
-+ \frac{\,d\psi}{\,dy}\frac{\,dy}{\,d\alpha}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{\,d\psi}{\,d\beta} = \frac{\,d\psi}{\,dx} \frac{\,dx}{\,d\beta} 
-+ \frac{\,d\psi}{\,dy} \frac{\,dy}{\,d\beta}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{\,d\psi}{\,dr} = \frac{\,d\psi}{\,dx}\frac{\,dx}{\,dr} + \frac{\,d\psi}{\,dy} \frac{\,dy}{\,dr}
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{\,d\psi}{\,d\theta} = \frac{\,d\psi}{\,dx}\frac{\,dx}{\,d\theta} 
-+ \frac{\,d\psi}{\,dy}\frac{\,dy}{\,d\theta}
+\frac{\,d\alpha}{\,dt} = \frac{\,d\alpha}{\,dx} \frac{\,dx}{\,dt} + \frac{\,d\alpha}{\,dy}\frac{\,dy}{\,dt}
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\bar{v}_{j} = \sum\limits_{j=1}^{3}\frac{\partial x^{i}}{\partial \bar{x}^{j}}{v}_{i}
+\dot{\alpha} = \frac{\,d\alpha}{\,dx} \dot{x}  + \frac{\,d\alpha}{\,dy} \dot{y}
 \end{equation*}
 </div>
-<div class="para">The components which transform like this equation are called the covariant tensor components of a vector because the transformation is characterised by the partial derivatives of the coordinates or transforms like the derivatives of a scalar.</div>
+<div class="para">also,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dot{\beta} = \frac{\,d\beta}{\,dx}\dot{x}  + \frac{\,d\beta}{\,dy} \dot{y}
+\end{equation*}
+</div>
+<div class="para">Now,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dot{r} = \frac{\,dr}{\,dx} \dot{x}  + \frac{\,dr}{\,dy}\dot{y}
+\end{equation*}
+</div>
+<div class="para">and,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\dot{\theta} = \frac{\,d\theta}{\,dx}\dot{x}  + \frac{\,d\theta}{\,dy} \dot{y}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{v}^{i} = \sum\limits_{j=1}^{3}\frac{\partial \bar{x}^{i}}{\partial x^{j}}{v}^{j}	
+\end{equation*}
+</div>
+<div class="para">The components transforming like this equation are known as the contravariant tensor components of a vector and are characterised by coordinates differential transformation or transforms like the coordinate differentials.</div>
 </div>
 <span class="incontext"><a href="subsec-cont_cov.html#p-385" class="internal">in-context</a></span>
 </body>

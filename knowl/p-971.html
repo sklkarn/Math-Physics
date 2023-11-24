@@ -11,15 +11,26 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Paragraph</span></h2>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para"> The Laplace transform is used to solve differential equations and analyze systems in the field of mathematics and engineering. It transforms a function of time, typically denoted as <span class="process-math">\(f(t)\text{,}\)</span> into a function of a complex variable, usually denoted as m<span class="process-math">\(F(s)\text{,}\)</span> where ’s’ is the complex variable. The Laplace transform provides a way to analyze functions in the frequency domain rather than the time domain. Laplace transform helps us in solving the differential equations with boundary values without finding the general solution and the values of the arbitrary constants. It converts differential equation (partial differential equation, PDE or ordinary differential equation, ODE) into algebric equation and hence easy to solve. It transforms a function with continuous time domain to Laplace domain (called s-parameter). Let <span class="process-math">\(f(t)\)</span> be the function defined for all <span class="process-math">\(+ ve\)</span> values of <span class="process-math">\(t\text{,}\)</span> then Laplace Transform of <span class="process-math">\(f(t)\)</span>  is denoted as</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}\{f(t)\} = F(s) = \int\limits_{0}^{\infty}e^{-st}f(t)\,dt.
+\mathscr{F}_{s}\{f(x)\} = F(s) = \int\limits_{0}^{\infty}f(x)\sin sx\,dx = \int\limits_{0}^{\infty}\frac{e^{-ax}}{x}\sin sx\,dx
+\end{equation*}
+</div>
+<div class="para">Differentiating w.r.t. ’s’, we get-</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\,d}{\,ds}\left[F(s)\right] = \int\limits_{0}^{\infty}\frac{e^{-ax}}{x}(x\cos sx)\,dx = \int\limits_{0}^{\infty}e^{-ax}\cos sx\,dx = \frac{a}{a^{2}+s^{2}}
+\end{equation*}
+</div>
+<div class="para">Integrating w.r.t. ’s’, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+F_{s}(s)= \int\limits_{0}^{\infty}\frac{a}{a^{2}+s^{2}}\,ds = \tan^{-1}\frac{s}{a}+c.
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="sec_sixth-Ltrans.html#p-971" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_sixth-examplesA.html#p-971" class="internal">in-context</a></span>
 </body>
 </html>

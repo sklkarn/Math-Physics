@@ -13,41 +13,142 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">
-<dfn class="terminology">Note 1.</dfn> If <span class="process-math">\(\lambda=0\text{,}\)</span> then equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_lalpsph10.html" title="Equation 7.3.113">(7.3.113)</a> reduces to Legendre’s equation,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
 \begin{equation*}
-\Theta = P_{n}(\mu)=P_{n}(\cos\theta)
+\frac{\partial^{2}u}{\partial r^{2}}
 \end{equation*}
 </div>
-<div class="para">also,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
-\begin{equation*}
-\Theta = Q_{n}(\mu)=Q_{n}(\cos\theta).
-\end{equation*}
-</div>
-<div class="para">Thus,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
-\begin{equation*}
-\Theta = C_{n}P_{n}(\mu)+D_{n}Q_{n}(\mu) 
-\end{equation*}
-</div>
-<div class="para">so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
-\begin{equation*}
-u(r,\theta,\phi) = \sum\limits_{n=0}^{\infty}\left(A_{n}r^{n}+\frac{B_{n}}{r^{n+1}}\right)\{C_{n}P_{n}(\cos\theta) 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
 \begin{equation}
-+D_{n}Q_{n}(\cos\theta)\} e^{\pm i\lambda\phi}\tag{7.3.116}
++\frac{2}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{\cot\theta}{r^{2}}\frac{\partial u}{\partial \theta}+\frac{1}{r^{2}\sin ^{2}\theta}\frac{\partial^{2}u}{\partial \phi^{2}} =0\tag{7.3.104}
 \end{equation}
 </div>
-<div class="para">In case <span class="process-math">\(D_{n}=0\)</span> under specific boundary conditions, then <span class="process-math">\(\Theta =  C_{n}P_{n}(\cos\theta)\)</span>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+r^{2}\frac{\partial^{2}u}{\partial r^{2}}
+\end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
 \begin{equation}
-\therefore u= \sum\limits_{n=0}^{\infty}\left(A_{n}r^{n} +\frac{B_{n}}{r^{n+1}}\right)C_{n}P_{n}(\cos\theta) e^{\pm i\lambda\phi}\tag{7.3.117}
++2r\frac{\partial u}{\partial r}+\frac{1}{\sin\theta}\frac{\partial }{\partial \theta}\left(\sin\theta\frac{\partial u}{\partial \theta}\right)+\frac{1}{\sin ^{2}\theta}\frac{\partial^{2}u}{\partial \phi^{2}} =0\tag{7.3.105}
+\end{equation}
+</div>
+<div class="para">Suppose,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+u(r,\theta,\phi) = R(r)\Theta(\theta)\Phi(\phi)\tag{7.3.106}
+\end{equation}
+</div>
+<div class="para">be its solution. Then,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+\left[\frac{r^{2}}{R}\frac{\partial^{2}R}{\partial r^{2}}+\frac{2r}{R}\frac{\partial R}{\partial r}+\frac{1}{\Theta\sin\theta}\frac{\partial }{\partial \theta}\left(\sin\theta\frac{\partial \Theta}{\partial \theta}\right)\right]\sin ^{2}\theta 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+= -\frac{1}{\Phi}\frac{\partial^{2}\Phi}{\partial \phi^{2}} = \lambda^{2}  \quad  \text{(say)}\tag{7.3.107}
+\end{equation}
+</div>
+<div class="para">considering eqn.<a href="" class="xref" data-knowl="./knowl/eqn-3D_lalpsph4.html" title="Equation 7.3.107">(7.3.107)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+\frac{1}{\Phi}\frac{\partial^{2}\Phi}{\partial \phi^{2}} = -\lambda^{2} \quad \Rightarrow \Phi=Ce^{\pm i\lambda \phi}\tag{7.3.108}
+\end{equation}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+\frac{1}{R}\frac{\partial }{\partial r}\left(r^{2}\frac{\partial R}{\partial r}\right) 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+-\frac{1}{\Theta\sin\theta}\frac{\partial }{\partial \theta}\left(\sin\theta\frac{\partial \Theta}{\partial \theta}\right)+\frac{\lambda^{2}}{\sin^{2}\theta} =n(n+1) \quad \text{(say)}\tag{7.3.109}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+\frac{\partial }{\partial r}\left(r^{2}\frac{\partial R}{\partial r}\right)-n(n+1)R =0\tag{7.3.110}
+\end{equation}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+\frac{1}{\sin\theta}\frac{\partial }{\partial \theta}\left(\sin\theta\frac{\partial \Theta}{\partial \theta}\right)+\left[n(n+1)-\frac{\lambda^{2}}{\sin^{2}\theta}\right]\Theta =0\tag{7.3.111}
+\end{equation}
+</div>
+<div class="para">As equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_lalpsph7.html" title="Equation 7.3.110">(7.3.110)</a> being the homogenous, put <span class="process-math">\(r=e^{z} \text{,}\)</span> hence equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_lalpsph7.html" title="Equation 7.3.110">(7.3.110)</a> reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+[D(D-1)+2D-n(n+1)]R=0  
+\end{equation*}
+</div>
+<div class="para">where, <span class="process-math">\(D\equiv \frac{\partial }{\partial z}\text{.}\)</span> or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+[D^{2}+D-n(n+1)]R =0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+(D-n)(D+n+1)R =0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+D=n,-(n+1),
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+\therefore R=Ae^{nz}+Be^{-(n+1)z} = Ar^{n}+Br^{-n-1}\tag{7.3.112}
+\end{equation}
+</div>
+<div class="para">again, if we put <span class="process-math">\(\cos\theta =\mu \)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_lalpsph8.html" title="Equation 7.3.111">(7.3.111)</a>, then since</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+\frac{\partial \Theta}{\partial\theta} = \frac{\partial \Theta}{\partial\mu} \cdot \frac{\partial \mu}{\partial\theta} =-\sin\theta \frac{\partial \Theta}{\partial\mu}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+\frac{1}{\sin\theta} \frac{\partial }{\partial\theta}=-\frac{\partial }{\partial\mu}  
+\end{equation*}
+</div>
+<div class="para">we have,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+\frac{\partial }{\partial\mu} \left\{(1-\mu^{2})\frac{\partial \Theta}{\partial\mu} \right\}+\left\{n(n+1)-\frac{\lambda^{2}}{1-\mu^{2}}\right\}\Theta =0 
+\end{equation*}
+</div>
+<div class="para">Now,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+(1-\mu^{2})\frac{\partial^{2} \Theta}{\partial\mu^{2}}-2\mu \frac{\partial \Theta}{\partial\mu}+\left\{n(n+1)--\frac{\lambda^{2}}{1-\mu^{2}}\right\}\Theta =0\tag{7.3.113}
+\end{equation}
+</div>
+<div class="para">which is Legendre’s associated differential equational and hence has the solution,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+\Theta =AP^{\lambda}_{n}(\mu)+BQ^{\lambda}_{n}(\mu)=AP^{\lambda}_{n}(\cos\theta)+BQ^{\lambda}_{n}(\cos\theta)\tag{7.3.114}
+\end{equation}
+</div>
+<div class="para">Now as <span class="process-math">\(\Theta\)</span> is the function of <span class="process-math">\(\cos\theta \text{,}\)</span> then solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_lalpsph1.html" title="Equation 7.3.104">(7.3.104)</a> is in the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation*}
+u=(Ar^{n}+Br^{-n-1})\Theta(\cos\theta)e^{\pm i\lambda\phi}
+\end{equation*}
+</div>
+<div class="para">The summing over all <span class="process-math">\(n\text{,}\)</span> the general solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_lalpsph1.html" title="Equation 7.3.104">(7.3.104)</a> may be written as</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph4.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph7.html ./knowl/eqn-3D_lalpsph8.html ./knowl/eqn-3D_lalpsph1.html ./knowl/eqn-3D_lalpsph1.html">
+\begin{equation}
+u(r,\theta,\phi) = \sum\limits_{n=0}^{\infty}(Ar^{n}+Br^{-n-1})\Theta(\cos\theta)e^{\pm i\lambda\phi}\tag{7.3.115}
 \end{equation}
 </div>
 </div>

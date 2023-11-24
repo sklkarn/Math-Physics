@@ -13,41 +13,22 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Now assume that <span class="process-math">\(c\)</span> increases indefinitely and making use of definition of integral as a limit of sum, we can write -</div>
+<div class="para">since cosine functions are even function, we have <span class="process-math">\(\cos (-\theta) = \cos \theta\text{.}\)</span> Hence the expression</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{n\pi}{c}=p \quad  \text{and}\quad \frac{\pi}{c}=\frac{p}{n}= \,dp
+1+2\sum\limits_{n=1}^{\infty}\cos \frac{n\pi (t-x)}{c} = 1+\sum\limits_{n=1}^{\infty}\left\{\cos \frac{n\pi (t-x)}{c}+\cos \frac{-n\pi (t-x)}{c}\right\}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\therefore  \quad \lim\limits_{c\to \infty}\left[\frac{\pi}{c} \sum\limits_{n=-\infty}^{\infty}\cos \frac{n\pi (t-x)}{c}\right] = \int\limits_{-\infty}^{\infty}\cos p(t-x)\,dp
+= 1+ \sum\limits_{n=-\infty}^{\infty}\left\{\cos \frac{n\pi (t-x)}{c}\right\}
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation}
-f(x) = 0+ \frac{1}{2\pi} \int\limits_{-\infty}^{\infty} f(t)\,dt\int\limits_{-\infty}^{\infty}\cos p(t-x)\,dp\tag{6.1.4}
-\end{equation}
-</div>
-<div class="para">here</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt = 0
+\therefore f(x) = \frac{1}{2c}\int\limits_{-c}^{c}f(t)\,dt + \frac{1}{2\pi}\int\limits_{-c}^{c}f(t)\left[\sum\limits_{n=-\infty}^{\infty}\left\{\frac{\pi}{c}\cos \frac{n\pi (t-x)}{c}\right\}\right]\,dt 
 \end{equation*}
 </div>
-<div class="para">at  <span class="process-math">\(c\rightarrow \infty\)</span>  and making use of the fact</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int\limits_{-\infty}^{\infty} |f(x)|\,dx \quad \text{ is convergent. }
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation}
-f(x) = \frac{1}{2\pi}\int\limits_{p=-\infty}^{\infty}\int\limits_{t=-\infty}^{\infty}f(t)\cos p(t-x)\,dp \,dt\tag{6.1.5}
-\end{equation}
-</div>
-<div class="para">which is known as Fourier integral.</div>
 </div>
 <span class="incontext"><a href="subsec-fourier_trans.html#p-904" class="internal">in-context</a></span>
 </body>

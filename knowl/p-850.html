@@ -12,7 +12,26 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">A periodic function of period 4 is defined as <span class="process-math">\(f(x) = |x|\)</span> for <span class="process-math">\(-2 \leq x \leq 2\text{.}\)</span> Find its Fourier series expansion.</div>
-<span class="incontext"><a href="sec_fifth-examplesC.html#p-850" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Hence the remainder, the deviation of the approximation from <span class="process-math">\((\pi-x)/2\)</span> at <span class="process-math">\(x_{k}\)</span> which approaches the point of the discontinuity at <span class="process-math">\(x=0\)</span>(end point), tends to the limit</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs8.html">
+\begin{equation}
+\displaystyle{\lim_{p \to \infty}} R_{p}(x_{k}) \rightarrow \frac{\pi}{2}-\int\limits_{0}^{\pi_{k}}\frac{\sin u}{u}\, du\tag{5.5.13}
+\end{equation}
+</div>
+<div class="para">For <span class="process-math">\(k=1\text{,}\)</span> we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs8.html">
+\begin{equation*}
+\displaystyle{\lim_{p \to \infty}} R_{p}(x_{1}) \rightarrow \frac{\pi}{2}-\int\limits_{0}^{\pi}\frac{\sin u}{u}\, du 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs8.html">
+\begin{equation}
+= \frac{\pi}{2}-\frac{\pi}{2}(1.179) = -0.281\tag{5.5.14}
+\end{equation}
+</div>
+<div class="para">Hence the negative sign in equation <a href="" class="xref" data-knowl="./knowl/eqn-gibbs8.html" title="Equation 5.5.14">(5.5.14)</a> indicates that the approximate curve for <span class="process-math">\(f(x)\)</span> is overshooted by about m<span class="process-math">\(18 \% \)</span> at a jump discontinuity (i.e., at <span class="process-math">\(x=0\)</span>), in the Fourier series.</div>
+</div>
+<span class="incontext"><a href="subsec-gibbs_phen.html#p-850" class="internal">in-context</a></span>
 </body>
 </html>

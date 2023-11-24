@@ -13,16 +13,49 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">
-<dfn class="terminology">Case I.</dfn> When <span class="process-math">\(\lambda=0\text{,}\)</span> we have from equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs3.html" title="Equation 7.1.8">(7.1.8)</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs3.html">
+<div class="para"> Let us consider an elastic string of length <span class="process-math">\(l\)</span> tightly stretched between points O and P, as shown in figure <a href="" class="xref" data-knowl="./knowl/fig-fig72.html" title="Figure 7.1.2">Figure 7.1.2</a>. If y be the displacement of string at point A(x,y) at any time t, then the wave equation for a vibrating  string is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig72.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs3.html">
 \begin{equation}
-\begin{cases}
-\frac{\partial^{2} X}{\partial x^{2}}  = 0 &amp; \Rightarrow X=c_{1}x+c_{2}\\
-\frac{\partial^{2} T}{\partial t^{2}} = 0 &amp; \Rightarrow T=c_{3}t+c_{4}
-\end{cases}\tag{7.1.9}
+\frac{\partial^{2} y}{\partial x^{2}} =  \frac{1}{v^{2}}\frac{\partial^{2} y}{\partial t^{2}}\tag{7.1.6}
 \end{equation}
 </div>
+<div class="para">where  <span class="process-math">\(v\)</span> is a constant. Equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs1.html" title="Equation 7.1.6">(7.1.6)</a> shows that the displacement y is a function of x and t, i.e., <span class="process-math">\(y=f(x,t)\)</span>  hence from the method of separation of variables, the solution for equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs1.html" title="Equation 7.1.6">(7.1.6)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig72.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs3.html">
+\begin{equation}
+y(x,t) = X(x)T(t)\tag{7.1.7}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(X\)</span> is a function of <span class="process-math">\(x\)</span> only and <span class="process-math">\(T\)</span> is a function of <span class="process-math">\(t\)</span> only.  Now</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig72.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs3.html">
+\begin{equation*}
+\frac{\partial y}{\partial t}=X\frac{\partial T}{\partial t}\hspace{1cm} \text{or,}\quad \frac{\partial^{2} y}{\partial t^{2}}=X\frac{\partial^{2} T}{\partial t^{2}}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig72.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs3.html">
+\begin{equation*}
+\frac{\partial y}{\partial x}=T\frac{\partial X}{\partial x}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig72.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs3.html">
+\begin{equation*}
+\frac{\partial^{2} y}{\partial x^{2}}=T\frac{\partial^{2} X}{\partial x^{2}}
+\end{equation*}
+</div>
+<div class="para">substituting these values in equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs1.html" title="Equation 7.1.6">(7.1.6)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig72.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs3.html">
+\begin{equation*}
+T\frac{\partial^{2} X}{\partial x^{2}}=\frac{1}{v^{2}}X\frac{\partial^{2} T}{\partial t^{2}}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig72.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs3.html">
+\begin{equation}
+\frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}}=\frac{1}{v^{2}T}\frac{\partial^{2} T}{\partial t^{2}}=\lambda \quad \text{(say)}.\tag{7.1.8}
+\end{equation}
+</div>
+<div class="para">This is because each side of equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs3.html" title="Equation 7.1.8">(7.1.8)</a> contains only one variable which is possible if each side must be seperately equal to some constant, say, <span class="process-math">\(\lambda\text{.}\)</span> Now, according to the value of <span class="process-math">\(\lambda\)</span> there arises three cases.</div>
 </div>
 <span class="incontext"><a href="subsec-sol_vs.html#p-1120" class="internal">in-context</a></span>
 </body>

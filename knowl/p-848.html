@@ -13,69 +13,13 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Thus, if the Fourier expansion for such functions is valid, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
+<div class="para">In the immediate vicinity of a jump discontinuity i.e. at <span class="process-math">\(x{+}\)</span> or <span class="process-math">\(x{-}\text{,}\)</span> the function <span class="process-math">\(f(x)\)</span> is not same and hence the convergence of the Fourier series is not uniform since <span class="process-math">\(f(x) \rightarrow \frac{1}{2}[f(x+0)+f(x-0)]\text{.}\)</span> Here partial sums move progressively closer to the function as the number of terms is increased, but the partial sums (approximating curves) overshoot or undershoot the function at the jump discontinuity. To verify the validity of Gibbs phenomenon, i.e. Fourier expansion for functions which are discontinuous but piecewise smooth, Bocher considered the following specific function defined by</div>
+<div class="displaymath process-math">
 \begin{equation}
-s(x)=\displaystyle{\lim_{p \to \infty}} s_{p}(x) = \sum\limits_{n=1}^{\infty}\frac{\sin nx}{n}\tag{5.5.8}
+f(x) = \frac{1}{2}(\pi-x)   \quad  (0\leq x \leq 2\pi)\tag{5.5.7}
 \end{equation}
 </div>
-<div class="para">The partial sum is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation*}
-s_{p}(x) =	 \sum\limits_{n=1}^{p}\frac{\sin nx}{n} = \sin x +\frac{1}{2}\sin 2x +\cdots+\frac{1}{p}\sin px
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation*}
-=\int\limits_{0}^{x}(\cos u +\cos 2u + \cdots + \cos pu)\,du  =\int\limits_{0}^{x}\left(\sum\limits_{n=1}^{p}\cos nu\right)\,du
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation*}
-=\frac{1}{2} \int\limits_{0}^{x}\frac{\sin\left[\left(p+\frac{1}{2}\right)u\right]}{\sin u/2}\,du -\frac{x}{2} 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation*}
-\left[\because  \sum\limits_{n=1}^{p}\cos nx = \frac{\sin \left(p+\frac{1}{2}\right)x}{2\sin x/2}-\frac{1}{2}\right]
-\end{equation*}
-</div>
-<div class="para">The remainder,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation*}
-R_{p}(x) = 	\sum\limits_{n=p+1}^{\infty}\frac{\sin nx}{n}		=f(x)-s_{p}(x) = \frac{\pi-x}{2}-s_{p}(x)
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation}
-\therefore  \quad R_{p}(x)=\frac{\pi}{2}-	\frac{1}{2}\int\limits_{0}^{x}\frac{\sin\left[\left(p+\frac{1}{2}\right)u\right]}{\sin u/2}\,du \tag{5.5.9}
-\end{equation}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation}
-R_{p}(x)=\frac{\pi}{2}-	\int\limits_{0}^{(p+1/2)x}\frac{\sin u}{u}\,du +\rho_{p}(x)\tag{5.5.10}
-\end{equation}
-</div>
-<div class="para">where</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation}
-\rho_{p}(x)=\int\limits_{0}^{x}\left\{ \frac{\sin u/2 -u/2}{u \sin u/2}\right\}\sin \left[\left(p+\frac{1}{2}\right)u\right]\,du\tag{5.5.11}
-\end{equation}
-</div>
-<div class="para">On differentiating equation <a href="" class="xref" data-knowl="./knowl/eqn-gibbs4.html" title="Equation 5.5.10">(5.5.10)</a> with respect to ’x’, we find that <span class="process-math">\(R_{p}(x)\)</span> has maxima or minima at</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation*}
-x_{k}=\frac{2\pi k}{2p+1}   \quad (k=0,1,2,\cdots)	
-\end{equation*}
-</div>
-<div class="para">The value of <span class="process-math">\(R_{p}(x)\)</span> at <span class="process-math">\(x_{k}\)</span> is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs4.html">
-\begin{equation}
-R_{p}(x)=\frac{\pi}{2}-\int\limits_{0}^{\pi k}\frac{\sin u}{u}\,du + \rho_{p}\left(\frac{2\pi k}{2p+1}\right)\tag{5.5.12}
-\end{equation}
-</div>
-<div class="para">As <span class="process-math">\(p\rightarrow \infty\)</span> for fixed <span class="process-math">\(k, \rho_{p}\rightarrow 0.\)</span>
+<div class="para">here <span class="process-math">\(f(0) = 0\)</span> and <span class="process-math">\(f(x+2\pi) =f(x)\text{.}\)</span> i.e., the function jumps by <span class="process-math">\(\pi\)</span> at the points <span class="process-math">\(x = \pm 2m\pi\)</span> where <span class="process-math">\(m=0,1,2,\cdots\text{.}\)</span> The Fourier coefficients of this function are <span class="process-math">\(a_{0}=a_{n}=0, \quad b_{n}=\frac{1}{n}\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="subsec-gibbs_phen.html#p-848" class="internal">in-context</a></span>

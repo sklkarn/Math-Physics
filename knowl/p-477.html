@@ -13,14 +13,67 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">For equation</div>
-<div class="displaymath process-math">
+<div class="para">
+<dfn class="terminology">The solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffeq6.html" title="Equation 4.2.6">(4.2.6)</a> by successive integration method.</dfn> The roots of A.E. are real and equal, i.e., <span class="process-math">\(m=1,1\text{.}\)</span> Hence, from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-pisol5.html" title="Equation 4.1.19">(4.1.19)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation}
+y= e^{x}\int \bar{Q}(x)e^{-x}\,dx +C_{2}e^{x}  \tag{4.2.10}
+\end{equation}
+</div>
+<div class="para">where,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation}
+\bar{Q}(x) =2e^{x}\int e^{-x}\cos x\,dx+C_{1}e^{x} \tag{4.2.11}
+\end{equation}
+</div>
+<div class="para">using <a href="" class="xref" data-knowl="./knowl/eqn-pisol6.html" title="Equation 4.1.20">(4.1.20)</a>. Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
 \begin{equation*}
-\frac{\,di}{\,dt}+\frac{Ri}{L}=\frac{E}{L}
+\int e^{-x}\cos x\,dx=\frac{e^{-x}(\sin x-\cos x)}{1+1}=\frac{e^{-x}(\sin x-\cos x)}{2}
 \end{equation*}
 </div>
-<div class="para">
-<dfn class="terminology">the Python code is</dfn>  <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="external/odeQ1.png" class="contained"></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation*}
+\because \quad \int e^{mx}\cos nx\,dx=\frac{e^{mx}(n\sin nx+m\cos nx)}{m^{2}+n^{2}}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation*}
+\int e^{mx}\sin nx\,dx=\frac{e^{mx}(m\sin nx-n\cos nx)}{m^{2}+n^{2}}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation*}
+\bar{Q}(x)=e^{x}.e^{-x}(\sin x-\cos x)+C_{1}e^{x}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation*}
+\therefore y=e^{x}\int \left\{\left(\sin x-\cos x\right)+C_{1}e^{x}\right\}e^{-x}\,dx +C_{2}e^{x}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation*}
+=e^{x}\left[\int e^{-x}\sin x\,dx-\int e^{-x}\cos x\,dx+C_{1}\int\,dx\right]+C_{2}e^{x}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation*}
+=e^{x}\left[\frac{e^{-x}(-\sin x-\cos x)}{2}-\frac{e^{-x}(\sin x-\cos x)}{2}+C_{1}x\right]+C_{2}e^{x}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation*}
+=\frac{(-\sin x-\cos x)}{2}-\frac{(\sin x-\cos x)}{2}+C_{1}xe^{x}+C_{2}e^{x}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-pisol5.html ./knowl/eqn-pisol6.html">
+\begin{equation*}
+=(C_{1}x+C_{2})e^{x}-\sin x.   \qquad \text{ans}.
+\end{equation*}
 </div>
 </div>
 <span class="incontext"><a href="sec_fourth-examplesA.html#p-477" class="internal">in-context</a></span>

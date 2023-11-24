@@ -13,11 +13,51 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Solve</div>
 <div class="displaymath process-math">
 \begin{equation*}
-x^{2}y''+xy'+(x^{2}-1)y=0.
+\frac{\partial y}{\partial m} =a_{o}x^{m}\log x\left[1-\frac{x^{3}}{(m+3)^{2}}+\frac{x^{6}}{(m+3)^{2}(m+6)^{2}}-\cdots\right]
 \end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++a_{o}x^{m}\left[\frac{2x^{3}}{(m+3)^{3}}-\frac{2x^{6}}{(m+3)^{3}(m+6)^{2}}-\frac{2x^{6}}{(m+3)^{2}(m+6)^{3}}+\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore y_{2}=\left(\frac{\partial y}{\partial m}\right)_{m=0}= a_{o}\log x \left[1-\frac{x^{3}}{3^{2}}+\frac{x^{6}}{3^{2}\cdot 6^{2}}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
++a_{o}\left[\frac{2x^{3}}{3^{3}}-\frac{2x^{6}}{3^{3}\cdot 6^{2}}-\frac{2x^{6}}{3^{2}\cdot 6^{3}}+\cdots\right]     \tag{4.4.13}
+\end{equation}
+</div>
+<div class="para">Hence the general solution is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y=C_{1}y_{1}+C_{2}y_{2}=a_{o}C_{1}\left[1-\frac{x^{3}}{3^{2}}+\frac{x^{6}}{3^{2}\cdot 6^{2}}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++a_{o}C_{2}\log x\left[1-\frac{x^{3}}{3^{2}}+\frac{x^{6}}{3^{2}\cdot 6^{2}}-\cdots\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
++a_{o}C_{2}\left[\frac{2x^{3}}{3^{3}}-\frac{2x^{6}}{3^{2}\cdot 6^{2}}(\frac{1}{3}+\frac{1}{6})-\frac{2x^{6}}{3^{2}\cdot 6^{2}\cdot 9^{2}}(\frac{1}{3}+\frac{1}{6}+\frac{1}{9})+\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore y =\left(C_{1}+C_{2}\log x\right)a_{o}\left[1-\frac{x^{3}}{3^{2}}+\frac{x^{6}}{3^{2}\cdot 6^{2}}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation}
++2a_{o}C_{2}\left[\frac{x^{3}}{3^{3}}-\frac{x^{6}}{3^{5}\cdot 2^{2}}(1+\frac{1}{2})+\cdots\right]  \tag{4.4.14}
+\end{equation}
 </div>
 </div>
 <span class="incontext"><a href="sec_fourth-examplesB.html#p-560" class="internal">in-context</a></span>

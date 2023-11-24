@@ -13,32 +13,47 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">If <span class="process-math">\(n^{2}\)</span> quantities <span class="process-math">\(A^{kl}\)</span> in a coordinate system <span class="process-math">\((x^{1}{,} x^{2}{,} x^{3}{,} \cdots{,} x^{n})\)</span> are related to <span class="process-math">\(n^{2}\)</span> other quantities <span class="process-math">\(\bar{A}^{ij}\)</span> in another coordinates <span class="process-math">\((\bar{x}^{1}{,} \bar{x}^{2}{,} \bar{x}^{3}{,} \cdots{,} \bar{x}^{n})\)</span> by the transformation eqn.</div>
-<div class="displaymath process-math">
+<div class="para">Thus eqn. <a href="" class="xref" data-knowl="./knowl/eqn-tens5.html" title="Equation 3.1.2">(3.1.2)</a> is an alternative to eqn. <a href="" class="xref" data-knowl="./knowl/eqn-tens4.html" title="Equation 3.1.1">(3.1.1)</a>. where Kronecker delta,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-tens5.html ./knowl/eqn-tens4.html">
+\begin{equation*}
+\delta_{j,k} = 
+\begin{cases} 
+1, &amp; \text{if } j = k \\
+0,  &amp; \text{if } j \neq k 
+\end{cases}	
+\end{equation*}
+</div>
+<div class="para">A set of quantities <span class="process-math">\(B\)</span> is called the components of a covarient vector or covarient tensor of rank one if <span class="process-math">\(A^{k}B_{k}\)</span> = invarient (a scalar)  = <span class="process-math">\(\bar{A}^{k}\bar{B}_{k}\text{.}\)</span> Or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-tens5.html ./knowl/eqn-tens4.html">
+\begin{equation*}
+\bar{A}^{k}\bar{B}_{k} = A^{k}B_{k} = \frac{\partial x^{k}}{\partial \bar{x}^{i}}\bar{A}^{i} B_{k} 
+= \frac{\partial x^{\alpha}}{\partial \bar{x}^{k}}\bar{A}^{k} B_{\alpha}
+\end{equation*}
+</div>
+<div class="para">by changing <span class="process-math">\(k\)</span> with <span class="process-math">\(\alpha\)</span> and  <span class="process-math">\(i\)</span> with <span class="process-math">\(k\text{.}\)</span> Or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-tens5.html ./knowl/eqn-tens4.html">
+\begin{equation*}
+\bar{A}^{k} \left[B_{k}-\frac{\partial x^{\alpha}}{\partial \bar{x}^{k}}B_{\alpha}\right] = 0 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-tens5.html ./knowl/eqn-tens4.html">
 \begin{equation}
-\bar{A}^{ij}=\frac{\partial \bar{x}^{i}}{\partial x^{k}} \frac{\partial \bar{x}^{j}}{\partial x^{l}} A^{kl}\tag{3.1.6}
+\therefore  \bar{B}_{k} = \frac{\partial x^{\alpha}}{\partial \bar{x}^{k}}B_{\alpha}\tag{3.1.3}
 \end{equation}
 </div>
-<div class="para">
-<span class="process-math">\(here, [i,j = 1,2,3, \cdots n]\text{,}\)</span> The <span class="process-math">\(A^{kl}\)</span> are the components of a second rank contravarient tensor. Similarly,</div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-tens5.html ./knowl/eqn-tens4.html">
 \begin{equation}
-\bar{A}_{ij}=\frac{\partial x^{k}}{\partial \bar{x}^{i}} \frac{\partial x^{l}}{\partial \bar{x}^{j}} A_{kl}\tag{3.1.7}
+\bar{A}_{j} = \frac{\partial x^{i}}{\partial \bar{x}^{j}}A_{i} \tag{3.1.4}
 \end{equation}
 </div>
-<div class="para">and the <span class="process-math">\(A_{kl}\)</span> are the components of a second rank covarient tensor. Also,</div>
-<div class="displaymath process-math">
+<div class="para">also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-tens5.html ./knowl/eqn-tens4.html">
 \begin{equation}
-\bar{A}^{i}_{j}=\frac{\partial \bar{x}^{i}}{\partial x^{k}} \frac{\partial x^{l}}{\partial \bar{x}^{j}} A^{k}_{l}\tag{3.1.8}
+A_{i}=\frac{\partial \bar{x}^{j}}{\partial x^{i}}\bar{A}_{j}\tag{3.1.5}
 \end{equation}
 </div>
-<div class="para">and the <span class="process-math">\(A^{k}_{l}\)</span> are the components of a second rank mixed tensor. Again,</div>
-<div class="displaymath process-math">
-\begin{equation}
-\bar{A}^{prm}_{ij} = \frac{\partial \bar{x}^{p}}{\partial x^{q}} \frac{\partial \bar{x}^{r}}{\partial x^{s}} \frac{\partial \bar{x}^{m}}{\partial x^{t}}  \frac{\partial x^{k}}{\partial \bar{x}^{i}} \frac{\partial x^{l}}{\partial \bar{x}^{j}}A^{qst}_{kl}\tag{3.1.9}
-\end{equation}
-</div>
-<div class="para">and <span class="process-math">\(A^{qst}_{kl}\)</span> are a components of fifth - rank mixed tensor.</div>
+<div class="para">are covarient tensor of rank one.</div>
 </div>
 <span class="incontext"><a href="subsec-cont_cov.html#p-382" class="internal">in-context</a></span>
 </body>

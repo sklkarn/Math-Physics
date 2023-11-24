@@ -12,29 +12,7 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para logical">
-<div class="para">In <dfn class="terminology">step (1)</dfn> take <span class="process-math">\(v_{1} = u_{1}\text{,}\)</span> in <dfn class="terminology">step (2)</dfn> let <span class="process-math">\(v_{2} = u_{2}+\lambda v_{1}\)</span> where <span class="process-math">\(\lambda\)</span> is a constant to be determined from the condition that <span class="process-math">\(v_{2}\)</span> to be orthogonal to <span class="process-math">\(v_{1}\text{.}\)</span> That is, <span class="process-math">\((v_{1},v_{2}=0)\)</span>	 or, <span class="process-math">\(\lt v_{1}, u_{2} +\lambda v_{1}\gt =0=\lt v_{1}, u_{2}\gt +\lambda \lt v_{1}, v_{1} \gt \text{,}\)</span> and in <dfn class="terminology">step (3)</dfn> let <span class="process-math">\(v_{3} = u_{3}+\lambda_{1} v_{1}+\lambda_{2} v_{2}\)</span> where <span class="process-math">\(\lambda_{1}\)</span> and <span class="process-math">\(\lambda_{2}\)</span> are constants to be determined from the conditions that <span class="process-math">\(v_{3}\)</span> is orthogonal to <span class="process-math">\(v_{1}\)</span> and <span class="process-math">\(v_{2}\text{.}\)</span> This gives - <span class="process-math">\(\lt v_{1}, v_{3} \gt = 0 = \lt v_{1}, u_{3} \gt +\lambda_{1} \lt v_{1}, v_{1} \gt + 
-\lambda_{2} \lt v_{1}, v_{2}\gt \text{,}\)</span> since <span class="process-math">\(\lt v_{1}, v_{2}\gt = 0.\)</span> Therefore, we have -</div>
-<div class="displaymath process-math">
-\begin{equation}
-\Rightarrow \lambda_{1}=-\frac{\lt v_{1}, u_{3}\gt}{\lt v_{1}, v_{1}\gt}\tag{2.1.4}
-\end{equation}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\text{Also,}  \quad \lt v_{2}, v_{3}\gt = 0 = \lt v_{2}, u_{3}\gt +\lambda_{1} \lt v_{2}, v_{1}\gt 
-+\lambda_{2} \lt v_{2}, v_{2}\gt
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation}
-\Rightarrow \lambda_{2}=-\frac{\lt v_{2}, u_{3}\gt}{\lt v_{2}, v_{2}\gt } \quad 
-[\because  \lt v_{2}, v_{1}\gt = \lt v_{1}, v_{2}\gt  = 0]\tag{2.1.5}
-\end{equation}
-</div>
-<div class="para">Now, we have three mutually orthogonal vectors <span class="process-math">\(v_{1},v_{2}\)</span> and <span class="process-math">\(v_{3}\text{.}\)</span> The same procedure can be continued to obtain other othogonal vectors. Finally, all the vectors can be normalized to obtain an orthonormal set <span class="process-math">\(\left\{x_{i}\right\}\text{,}\)</span> where <span class="process-math">\(x_{i}= \frac{v_{i}}{\parallel v_{i} \parallel}\text{.}\)</span>
-</div>
-</div>
+<div class="para">An orthogonal basis is the best basis for a vector space because the coefficients of which can easily be expressed a vector as a linear combination of basis vectors. However, we are not always given an orthogonal basis. Gram-Schmidt orthogonalization is a process used to transform a set of linearly independent vectors into a set of orthonormal vectors, which may not be orthogonal to each other. This process is named after Jørgen Pedersen Gram and Erhard Schmidt, who independently developed it in the late <span class="process-math">\(19^{th}\)</span> century. Let <span class="process-math">\(u_{1},u_{2},u_{3},\cdots, u_{n}\)</span> be a set of linearly independent vectors which are not necessarily orthogonal to each other. Now, It is required to obtain a set of orthogonal vectors <span class="process-math">\(v_{1},v_{2},v_{3},\cdots, v_{n}\)</span> from the original set of vectors <span class="process-math">\(u_{1},u_{2},u_{3},\cdots, u_{n}\)</span> by following the steps below.</div>
 <span class="incontext"><a href="subsec-2dimen_vect.html#p-235" class="internal">in-context</a></span>
 </body>
 </html>

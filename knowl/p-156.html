@@ -13,28 +13,75 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Now integrate this vector over the three surfaces <span class="process-math">\(OAB\text{,}\)</span> <span class="process-math">\(OBC\text{,}\)</span> and <span class="process-math">\(OCA\)</span> lying on the plane <span class="process-math">\(x+y+z=1\text{.}\)</span> Over the surface  <span class="process-math">\(OAB\text{,}\)</span> <span class="process-math">\(\hat{n}=\hat{k}, \,ds=\frac{1}{2}\,dx\,dy\text{,}\)</span> The surface integral over the surface <span class="process-math">\(OAB\text{,}\)</span>
+<div class="para">Consider the surface <span class="process-math">\(S\)</span> of boundary <span class="process-math">\(ABC\)</span> as shown by the arrows in the figure below. <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig27.png" class="contained"></div>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\iint\limits_{S}\left(\vec{\nabla}\times\vec{F}\right)\cdot\hat{n}ds=\iint\limits_{S}(2\hat{i}+2\hat{j}-\hat{k})\cdot\hat{k}\frac{1}{2}\,dx\,dy
+\int\limits_{C}\vec{F}\cdot\vec{\,dr}=\int\limits_{C}[(2y+z)\hat{i}+(x-z)\hat{j}+(y-x)\hat{k}]\cdot (\,dx\hat{i}+\,dy\hat{j}+\,dz\hat{k}) 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{0}^{1}\int\limits_{0}^{1}(-\frac{1}{2})\,dx\,dy= -\frac{1}{2}[x]^{1}_{0}[y]^{1}_{0}=-\frac{1}{2}
+=\int\limits_{C}[(2y+z)\,dx+(x-z)\,dy+(y-x)\,dz].
 \end{equation*}
 </div>
-<div class="para">Over the surface  <span class="process-math">\(OBC\text{,}\)</span> <span class="process-math">\(\hat{n}=\hat{i}, \,ds=\frac{1}{2}\,dy\,dz\text{,}\)</span> The surface integral over the surface <span class="process-math">\(OBC\text{,}\)</span>
+<div class="para">But,</div>
+<div class="displaymath process-math">
+\begin{equation}
+\int\limits_{C}\vec{F}\cdot\vec{\,dr}=\int\limits_{AB}\vec{F}\cdot\vec{\,dr}+\int\limits_{BC}\vec{F}\cdot\vec{\,dr}+\int\limits_{CA}\vec{F}\cdot\vec{\,dr}. \tag{1.5.6}
+\end{equation}
+</div>
+<div class="para">Along AB, <span class="process-math">\(z=0\text{,}\)</span> <span class="process-math">\(\,dz=0\text{,}\)</span> and <span class="process-math">\(x+y=1.\)</span>
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\iint\limits_{S}\left(\vec{\nabla}\times\vec{F}\right)\cdot\hat{n}\,ds=\iint\limits_{S}(2\hat{i}+2\hat{j}-\hat{k})\cdot\hat{i}(\frac{1}{2})\,dy\,dz
+\int\limits_{AB}\vec{F}\cdot\vec{\,dr}= \int\limits_{A}^{B}(2y\,dx+x\,dy) = \int\limits_{1}^{0}2(1-x)\,dx+\int\limits_{0}^{1}(1-y)\,dy 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{0}^{1}\int\limits_{0}^{1}(2.\frac{1}{2})\,dy\,dz= 1.
+=2\left(x-\frac{x^{2}}{2}\right)^{0}_{1}+\left(y-\frac{y^{2}}{2}\right)^{1}_{0}=-\frac{1}{2}.
+\end{equation*}
+</div>
+<div class="para">Along BC, <span class="process-math">\(x=0\text{,}\)</span> <span class="process-math">\(\,dx=0\text{,}\)</span> and <span class="process-math">\(y+z=1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{BC}\vec{F}\cdot\vec{\,dr}= \int\limits_{B}^{C}(-z\,dy+y\,dz) = \int\limits_{1}^{0}(1-y)\,dy+\int\limits_{0}^{1}(1-z)\,dz
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-\left(y-\frac{y^{2}}{2}\right)^{0}_{1}+\left(z-\frac{z^{2}}{2}\right)^{1}_{0}=1.
+\end{equation*}
+</div>
+<div class="para">Along CA, <span class="process-math">\(y=0\text{,}\)</span> <span class="process-math">\(\,dy=0\text{,}\)</span> and <span class="process-math">\(x+z=1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{CA}\vec{F}\cdot\vec{\,dr}= \int\limits_{C}^{A}(z\,dx-x\,dz)= \int\limits_{0}^{1}(1-x)\,dx-\int\limits_{1}^{0}(1-z)\,dz
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left(x-\frac{x^{2}}{2}\right)^{1}_{0}-\left(z-\frac{z^{2}}{2}\right)^{0}_{1}=1. 
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation}
+\int\limits_{C}\vec{F}\cdot\vec{\,dr}=-\frac{1}{2}+1+1=\frac{3}{2}. \tag{1.5.7}
+\end{equation}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+{\begin{vmatrix} \hat{i} &amp; \hat{j} &amp; \hat{k} \\ \frac{\partial}{\partial x} &amp; \frac{\partial}{\partial y} &amp; \frac{\partial}{\partial z}\\2y+z &amp; x-z &amp; y-x \end{vmatrix}} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \hat{i}(1+1)-\hat{j}(-1-1)+\hat{k}(1-2) = 2\hat{i}+2\hat{j}-\hat{k}.
 \end{equation*}
 </div>
 </div>

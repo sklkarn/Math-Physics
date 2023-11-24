@@ -13,52 +13,76 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">
-<em class="alert">Note:</em> we can evaluate <span class="process-math">\(P_{n}(x)\)</span> by expanding <span class="process-math">\((x^{2}-1)^{n}\)</span> from Binomial theorem.</div>
+<div class="para">The Rodrigue’s formula for Legendre’s Polynomials is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(x^{2}-1)^{n}=\sum\limits_{r=0}^{n}{\comb{n}{r}(x^{2})^{n-r}(-1)^{r}}
+P_{n}(x) = \frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(n=0\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{o}(x) = \frac{1}{2^{0}0!}=1
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(n=1\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{1}(x) = \frac{1}{2^{1}1!}\frac{d}{dx}(x^{2}-1)=\frac{1}{2}(2x)=x.
+\end{equation*}
+</div>
+<div class="para">If <span class="process-math">\(n=2\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{2}(x) = \frac{1}{2^{2}2!}\frac{d^{2}}{dx^{2}}(x^{2}-1)^{2}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=	\sum\limits_{r=0}^{n}(-1)^{r}\frac{n!}{r!(n-r)!}(x^{2n-2r})
-\end{equation*}
-</div>
-<div class="para">However,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-P_{n}(x) = \frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}=\frac{1}{2^{n}n!}\sum\limits_{r=0}^{n}\frac{n!}{r!(n-r)!}\frac{d^{n}}{dx^{n}}(x^{2n-2r})
+=\frac{1}{8}\frac{d}{dx}[2(x^{2}-1)(2x)] = \frac{1}{2}[2(x^{2}\cdot 1+2x\cdot x]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\sum\limits_{r=0}^{n}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r}
+=\frac{1}{2}[3x^{2}-1]
 \end{equation*}
 </div>
-<div class="para">The last term contains either <span class="process-math">\(x^{0}\)</span> or <span class="process-math">\(x^{1}\text{.}\)</span>
+<div class="para">similarly,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{3}(x) = \frac{1}{2}(5x^{3}-3x)
+\end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\therefore \quad n-2r = 0
+P_{4}(x) = \frac{1}{8}(35x^{4}-30x^{2}+3)
 \end{equation*}
 </div>
-<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-r=\frac{n}{2}  \quad	\text{(for n even)}
+P_{5}(x) = \frac{1}{8}(63x^{5}-70x^{2}+15x)
 \end{equation*}
 </div>
-<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-n-2r=1 
+\vdots  \hspace{4cm}  \vdots
 \end{equation*}
 </div>
-<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-r =\frac{1}{2}(n-1) \quad \text{(for n odd)}.
+P_{n}(x) =\sum\limits_{r=0}^{N}(-1)^{r} \frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r};
+\end{equation*}
+</div>
+<div class="para">where,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+N = \quad \begin{cases} 
+\frac{n}{2}, \quad \text{if n is even.}\\ 
+\frac{1}{2}(n-1),\quad \text{if n is odd.} 
+\end{cases}	
 \end{equation*}
 </div>
 </div>

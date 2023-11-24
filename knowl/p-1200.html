@@ -13,33 +13,103 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">If <span class="process-math">\(n=0\text{,}\)</span> we have from equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_ccylnd10.html" title="Equation 7.3.81">(7.3.81)</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd10.html ./knowl/eqn-2DLapl_ccylnd8.html ./knowl/eqn-2DLapl_ccylnd1.html">
+<div class="para">This is a homogenous linear differential equation. Its solution can be found by putting <span class="process-math">\(r=e^{z}\)</span> or, <span class="process-math">\(\log r=z\)</span> or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+\frac{1}{r}\frac{\partial r}{\partial z} =1.
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
 \begin{equation}
-\frac{\partial^{2}\Theta}{\partial \theta^{2}} =0 \quad \Rightarrow  \Theta = A_{o}\theta+B_{o}\tag{7.3.83}
+\frac{\partial r}{\partial z} =r\tag{7.3.77}
 \end{equation}
 </div>
-<div class="para">from equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_ccylnd8.html" title="Equation 7.3.79">(7.3.79)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd10.html ./knowl/eqn-2DLapl_ccylnd8.html ./knowl/eqn-2DLapl_ccylnd1.html">
+<div class="para">Also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+\frac{\partial R}{\partial r} =\frac{\partial R}{\partial z}\cdot\frac{\partial z}{\partial r} = \frac{1}{r}\frac{\partial R}{\partial z}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
 \begin{equation}
-D^{2}R =0  \quad  \Rightarrow  R = C_{o}z+D_{o} =  C_{o}\log r + D_{o}\tag{7.3.84}
+r\frac{\partial R}{\partial r}=\frac{\partial R}{\partial z}= DR   \tag{7.3.78}
+\end{equation}
+</div>
+<div class="para">assume</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+D\equiv \frac{\partial }{\partial z}.
+\end{equation*}
+</div>
+<div class="para">again,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+\frac{\partial^{2}R}{\partial r^{2}} = \frac{\partial }{\partial r}\left(\frac{\partial R}{\partial r}\right)  = \frac{\partial }{\partial z}\left(\frac{1}{r}\frac{\partial R}{\partial z}\right)\frac{\partial z}{\partial z}	
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+= \frac{1}{r}\left[\frac{1}{r}\frac{\partial^{2}R}{\partial z^{2}}- \frac{1}{r^{2}}\frac{\partial r}{\partial z}\frac{\partial R}{\partial z}\right]  = \frac{1}{r}\left[\frac{1}{r}D^{2}R- \frac{1}{r^{2}}\cdot r\cdot DR\right]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+r^{2}\frac{\partial^{2}R}{\partial r^{2}}=D^{2}R-DR=D(D-1)R 
+\end{equation*}
+</div>
+<div class="para">from eqn.<a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_ccylnd5.html" title="Equation 7.3.76">(7.3.76)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+D(D-1)R+DR-n^{2}R =0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+D^{2}R -DR+DR-n^{2}R =0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation}
+(D^{2}-n^{2})R=0\tag{7.3.79}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+D=\pm n
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+R=C_{1}e^{nz} +C_{2}e^{-nz}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation}
+\therefore  R=C_{1}r^{n}+C_{2}r^{-n} \tag{7.3.80}
+\end{equation}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation*}
+[e^{nz}=e^{n\log r}=e^{\log r^{n}} = r^{n}].
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+\begin{equation}
+\frac{\partial^{2}\Theta}{\partial \theta^{2}}+n^{2}\Theta =0 \quad  \Rightarrow  \Theta =C_{3}\cos n\theta + C_{4}\sin n\theta \tag{7.3.81}
 \end{equation}
 </div>
 <div class="para">Hence,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd10.html ./knowl/eqn-2DLapl_ccylnd8.html ./knowl/eqn-2DLapl_ccylnd1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
 \begin{equation}
-u_{o}=(A_{o}\theta+B_{o})(C_{o}\log r + D_{o})\tag{7.3.85}
-\end{equation}
-</div>
-<div class="para">But the general single - valued solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_ccylnd1.html" title="Equation 7.3.72">(7.3.72)</a> for all possible value of <span class="process-math">\(n\)</span> may be written as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd10.html ./knowl/eqn-2DLapl_ccylnd8.html ./knowl/eqn-2DLapl_ccylnd1.html">
-\begin{equation*}
-u=a_{o}\log r+\sum\limits_{n=1}^{\infty}r^{n}(a_{n}\cos n\theta +b_{n}\cos n\theta)
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd10.html ./knowl/eqn-2DLapl_ccylnd8.html ./knowl/eqn-2DLapl_ccylnd1.html">
-\begin{equation}
-+\sum\limits_{n=1}^{\infty}r^{-n}(p_{n}\cos n\theta +q_{n}\cos n\theta)+c_{o}\tag{7.3.86}
+u_{n}=\left(C_{1}r^{n}+C_{2}r^{-n}\right)\left(C_{3}\cos n\theta+C_{4}\sin n\theta\right)\tag{7.3.82}
 \end{equation}
 </div>
 </div>

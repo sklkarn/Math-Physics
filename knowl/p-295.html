@@ -13,14 +13,38 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">
-<dfn class="terminology">Case I:</dfn> Let <span class="process-math">\(i=j\text{,}\)</span> then <span class="process-math">\(\left(\lambda_{i} - \bar{\lambda}_{i}\right)=0\)</span> [<span class="process-math">\(\because X^{\dagger}_{i}X_{i} \neq 0\text{,}\)</span> as <span class="process-math">\(X_{i}\)</span> is a non - zero vector.</div>
-<div class="displaymath process-math">
+<div class="para">Let <span class="process-math">\(\lambda_{i}\)</span> and <span class="process-math">\(\lambda_{j}\)</span>  be two eigen values and <span class="process-math">\(X_{i}\)</span>  and <span class="process-math">\(X_{j}\)</span> be two eigen vectors of Hermitian matrix (operator) <span class="process-math">\(H\text{.}\)</span> Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-herm_ort1.html ./knowl/eqn-herm_ort2.html ./knowl/eqn-herm_ort4.html ./knowl/eqn-herm_ort3.html ./knowl/eqn-herm_ort5.html">
+\begin{align}
+HX_{i} \amp  = \lambda_{i}X_{i} \tag{2.4.5}\\
+HX_{j} \amp  = \lambda_{j}X_{j}  \tag{2.4.6}
+\end{align}
+</div>
+<div class="para">premultiplying by <span class="process-math">\(X^{\dagger}_{j}\)</span> to eqn. <a href="" class="xref" data-knowl="./knowl/eqn-herm_ort1.html" title="Equation 2.4.5">(2.4.5)</a> and <span class="process-math">\(X^{\dagger}_{i}\)</span> to eqn. <a href="" class="xref" data-knowl="./knowl/eqn-herm_ort2.html" title="Equation 2.4.6">(2.4.6)</a>, respectively, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-herm_ort1.html ./knowl/eqn-herm_ort2.html ./knowl/eqn-herm_ort4.html ./knowl/eqn-herm_ort3.html ./knowl/eqn-herm_ort5.html">
+\begin{align}
+X^{\dagger}_{j} HX_{i}  \amp = \lambda_{i}X^{\dagger}_{j}X_{i}   \tag{2.4.7}\\
+\text{and}\quad X^{\dagger}_{i} HX_{j} \amp  = \lambda_{j}X^{\dagger}_{i}X_{j} \tag{2.4.8}
+\end{align}
+</div>
+<div class="para">taking conjugate transpose of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-herm_ort4.html" title="Equation 2.4.8">(2.4.8)</a>, we  get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-herm_ort1.html ./knowl/eqn-herm_ort2.html ./knowl/eqn-herm_ort4.html ./knowl/eqn-herm_ort3.html ./knowl/eqn-herm_ort5.html">
 \begin{equation*}
-\therefore  \quad  \lambda_{i} = \bar{\lambda}_{i}		
+\left(X^{\dagger}_{i} HX_{j}\right)^{\dagger}=\left(\lambda_{j} X_{i}^{\dagger}X_{j}\right)^{\dagger} 
 \end{equation*}
 </div>
-<div class="para">i.e., <span class="process-math">\(\lambda_{i}\)</span> is real for each <span class="process-math">\(i\text{.}\)</span>
+<div class="para">[for Hermitian matrix <span class="process-math">\(H^{\dagger} =H\)</span>] or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-herm_ort1.html ./knowl/eqn-herm_ort2.html ./knowl/eqn-herm_ort4.html ./knowl/eqn-herm_ort3.html ./knowl/eqn-herm_ort5.html">
+\begin{equation}
+X^{\dagger}_{j} HX_{i} = \bar{\lambda}_{j}X^{\dagger}_{j}X_{i} \tag{2.4.9}
+\end{equation}
+</div>
+<div class="para">equating eqns. <a href="" class="xref" data-knowl="./knowl/eqn-herm_ort3.html" title="Equation 2.4.7">(2.4.7)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-herm_ort5.html" title="Equation 2.4.9">(2.4.9)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-herm_ort1.html ./knowl/eqn-herm_ort2.html ./knowl/eqn-herm_ort4.html ./knowl/eqn-herm_ort3.html ./knowl/eqn-herm_ort5.html">
+\begin{align}
+\lambda_{i}X^{\dagger}_{j}X_{i}  \amp = \bar{\lambda}_{j}X^{\dagger}_{j}X_{i}  \tag{2.4.10}\\
+\left(\lambda_{i} - \bar{\lambda}_{j}\right)X^{\dagger}_{j}X_{i} \amp = 0\tag{2.4.11}
+\end{align}
 </div>
 </div>
 <span class="incontext"><a href="sec_second-examplesB.html#p-295" class="internal">in-context</a></span>

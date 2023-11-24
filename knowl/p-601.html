@@ -15,36 +15,31 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-P_{n}(-x) =(-1)^{n} P_{n}(x)
+P_{n}(-1) =(-1)^{n}P_{n}
 \end{equation*}
 </div>
-<div class="para">we have</div>
+<div class="para">putting <span class="process-math">\(x=-1\)</span> in the generating function of <span class="process-math">\(P_{n}(x)\text{,}\)</span> we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-(1-2xz+z^{2})^{-\frac{1}{2}} 
+(1+2z+z^{2})^{-\frac{1}{2}} =\sum\limits_{n=0}^{\infty}z^{n}P_{n}(-1)z^{n}
 \end{equation*}
 </div>
+<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-=[1-2(-x)(-z)+(-z)^{2}]^{-\frac{1}{2}}=\sum\limits_{n=0}^{\infty}P_{n}(-x)(-z)^{n}
+\sum\limits_{n=0}^{\infty}z^{n}P_{n}(-1)z^{n}=(1+z)^{-1}=\sum\limits_{n=0}^{\infty}(-1)^{n}z^{n}
 \end{equation*}
 </div>
-<div class="para">now replacing <span class="process-math">\(x\)</span> by <span class="process-math">\(-x\)</span> and <span class="process-math">\(z\)</span> by <span class="process-math">\(-z\text{.}\)</span>
-</div>
+<div class="para">equating the coefficient of <span class="process-math">\(z^{n}\text{,}\)</span> we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum\limits_{n=0}^{\infty}P_{n}(x)(z)^{n}=\sum\limits_{n=0}^{\infty}(-1)^{n}P_{n}(-x)(z)^{n}
+P_{n}(-1)=(-1)^{n},
 \end{equation*}
 </div>
-<div class="para">equating the coefficients of <span class="process-math">\(z^{n}\text{,}\)</span> we get -</div>
+<div class="para">i.e.,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P_{n}(x)=(-1)^{n}P_{n}(-x) 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-P_{n}(-x)=(-1)^{n}P_{n}(x)
+P_{n}(-1)=(-1)^{n}P_{n}(1)
 \end{equation*}
 </div>
 </div>

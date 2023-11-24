@@ -12,7 +12,48 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Show that the inner product of a <span class="process-math">\(2^{nd}\)</span> tensor and a <span class="process-math">\(3^{rd}\)</span> rank tensor is a tensor of rank three.</div>
+<div class="para logical">
+<div class="para">Let us consider <span class="process-math">\(A^{p}_{r}\)</span> and <span class="process-math">\(B^{qs}\)</span> are any tensors of rank two, then -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{A}^{j} _{k} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}} A^{p} _{r} 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{B}^{lm}= \frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}} B^{qs}
+\end{equation*}
+</div>
+<div class="para">multiplying them, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{A}^{j} _{k}\bar{B}^{lm} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{r}B^{qs}
+\end{equation*}
+</div>
+<div class="para">set <span class="process-math">\(k=l,\)</span>	we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{A}^{j} _{k}\bar{B}^{km} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{k}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{r}B^{qs}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{\partial\bar{x}^{j}}{\partial x^{p}} \delta_{q}^{r} \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{r}B^{qs} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{q}B^{qs} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial\bar{x}^{m}}{\partial x^{s}} C^{ps}
+\end{equation*}
+</div>
+<div class="para">which is a second rank tensor.</div>
+</div>
 <span class="incontext"><a href="sec_third-examplesA.html#p-413" class="internal">in-context</a></span>
 </body>
 </html>

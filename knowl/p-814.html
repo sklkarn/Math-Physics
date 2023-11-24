@@ -13,25 +13,25 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">To find <span class="process-math">\(a_{n}\text{:}\)</span>	Multiply equation, <a href="" class="xref" data-knowl="./knowl/eqn-fourier1.html" title="Equation 5.1.1">(5.1.1)</a> by <span class="process-math">\(\cos nx\)</span> and integrate from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(2\pi\text{,}\)</span> we get -</div>
+<div class="para">To find <span class="process-math">\(a_{o}\text{:}\)</span> Integrate equation <a href="" class="xref" data-knowl="./knowl/eqn-fourier1.html" title="Equation 5.1.1">(5.1.1)</a> from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(2\pi\text{,}\)</span> we get -</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier1.html">
 \begin{equation*}
-\int\limits_{0}^{2\pi} f(x)\cos nx \,dx = \frac{a_{o}}{2}\int\limits_{0}^{2\pi} \cos nx \,dx + \cdots 
+\int\limits_{0}^{2\pi}f(x)\,dx = \frac{a_{o}}{2}\int\limits_{0}^{2\pi}\,dx + a_{1}\int\limits_{0}^{2\pi} \cos x\,dx + \cdots + a_{n}\int\limits_{0}^{2\pi} \cos nx\,dx 
 \end{equation*}
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier1.html">
 \begin{equation*}
-+ a_{n}\int\limits_{0}^{2\pi} \cos^{2} nx \,dx + \cdots + b_{n}\int\limits_{0}^{2\pi} \sin nx .\cos nx \,dx + \cdots
++ \cdots+b_{1}\int\limits_{0}^{2\pi} \sin x\,dx  + \cdots + b_{n}\int\limits_{0}^{2\pi} \sin nx\,dx + \cdots
 \end{equation*}
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier1.html">
 \begin{equation*}
-=0+\cdots + a_{n}\int\limits_{0}^{2\pi} \cos^{2} nx \,dx + 0+ \cdots = a_{n}\pi
+=\frac{a_{o}}{2}\left[x\right]^{2\pi}_{0}+0+0 +\cdots.+ 0+0+ \cdots =\frac{a_{o}}{2}.2\pi =  a_{o}\pi
 \end{equation*}
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier1.html">
 \begin{equation}
-\therefore \quad a_{n}= \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\cos nx \,dx.\tag{5.1.3}
+\therefore  a_{o} = \frac{1}{\pi}\int\limits_{0}^{2\pi}f(x)\,dx.\tag{5.1.2}
 \end{equation}
 </div>
 </div>

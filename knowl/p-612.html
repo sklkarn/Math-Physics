@@ -13,90 +13,129 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para"> Laplace’s equation in spherical polar coordinates is given by	<span class="process-math">\(\nabla^{2}\psi=0\text{.}\)</span> Or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="para">
+<span class="process-math">\(P_{n}(x)\)</span>  is a solution of</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation}
+(1-x^{2})\frac{d^{2}y}{dx^{2}}-2x\frac{\,dy}{\,dx}+n(n+1) y =0\tag{4.5.27}
+\end{equation}
+</div>
+<div class="para">
+<span class="process-math">\(P_{m}(x)\)</span>	 is a solution of</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation}
+(1-x^{2})\frac{d^{2}z}{dx^{2}}-2x\frac{dz}{dx}+m(m+1) z =0	\tag{4.5.28}
+\end{equation}
+</div>
+<div class="para">Multiplying equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth2.html" title="Equation 4.5.27">(4.5.27)</a> by ’z’ and equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth3.html" title="Equation 4.5.28">(4.5.28)</a> by ’y’ and then subtracte, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation*}
-\frac{1}{r^{2}\sin\theta}\left[\sin\theta\frac{\partial}{\partial r}\left(r^{2}\frac{\partial\psi}{\partial r}\right)+\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial\psi}{\partial \theta}\right)+\frac{1}{\sin\theta}\frac{\partial^{2}\psi}{\partial\phi^{2}}\right]=0
+(1-x^{2})\left[z\frac{d^{2}y}{dx^{2}}-y\frac{d^{2}z}{dx^{2}}\right]-2x\left[z\frac{\,dy}{\,dx}-y\frac{\,dz}{\,dx}\right]
 \end{equation*}
 </div>
-<div class="para">[see Laplacian in spherical curvilinear coordinates <a href="subsec-spher_cord.html" class="internal" title="Subsection 1.6.6: Spherical  Orthogonal Curvilinear  Coordinates">Subsection 1.6.6</a>] or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation*}
-\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial\psi}{\partial r}\right)+\frac{1}{r^{2}}\left[\frac{1}{\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial\psi}{\partial \theta}\right)+\frac{1}{\sin^{2}\theta}\frac{\partial^{2}\psi}{\partial\phi^{2}}\right]=0	
++\left[n(n+1)-m(m+1)\right]y z =0
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
-\begin{equation}
-\left[\nabla_{r}^{2}+\frac{1}{r^{2}}\nabla^{2}_{\theta,\phi}\right]\psi(r,\theta,\phi) =0\tag{4.5.32}
-\end{equation}
-</div>
-<div class="para">On solving the potential problems some solution yields to relate the Legendre’s Polynomials called associated Legendre’s polynomials. Let</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
-\begin{equation}
-\psi(r,\theta,\phi)=R(r)Y(\theta,\phi)\tag{4.5.33}
-\end{equation}
-</div>
-<div class="para">be the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-assoc_legn1.html" title="Equation 4.5.32">(4.5.32)</a>. Then</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation*}
-\nabla_{r}^{2}\left[R(r)Y(\theta,\phi)\right]+\frac{1}{r^{2}}\nabla^{2}_{\theta,\phi}\left[R(r)Y(\theta,\phi)\right]=0 
+\frac{\,d}{\,dx}\left[(1-x^{2})\left\{z\frac{\,dy}{\,dx}-y\frac{\,dz}{\,dx}\right\}\right]+(n-m)(n+m+1)yz =0
+\end{equation*}
+</div>
+<div class="para">Integrating with respect to <span class="process-math">\(x\)</span> from -1 to +1, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation*}
+\left[(1-x^{2})\left(z\frac{dy}{dx}-y\frac{dz}{dx}\right)\right]^{1}_{-1}+(n-m)(n+m+1)\int\limits_{-1}^{+1}yz\,dx = 0 
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation}
+0+(n-m)(n+m+1)\int\limits_{-1}^{+1}yz\,dx = 0\tag{4.5.29}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation*}
-r^{2}\nabla_{r}^{2}\left[R(r)Y(\theta,\phi)\right]=-\nabla^{2}_{\theta,\phi}\left[R(r)Y(\theta,\phi)\right]
+\int\limits_{-1}^{+1}P_{m}(x)P_{n}(x)\,dx=0\quad \text{if}\quad m \neq n.
 \end{equation*}
 </div>
-<div class="para">Dividing by <span class="process-math">\(R(r)Y(\theta,\phi)\)</span> on both sides, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="para">since <span class="process-math">\(P_{n}(x)\)</span>  satisfies equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth2.html" title="Equation 4.5.27">(4.5.27)</a> and <span class="process-math">\(P_{m}(x)\)</span>  satisfies equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth3.html" title="Equation 4.5.28">(4.5.28)</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation}
-\frac{r^{2}}{R}\nabla_{r}^{2}R(r)=-\frac{1}{Y}\nabla^{2}_{\theta,\phi}Y(\theta,\phi) =\lambda \quad \text{(say)}\tag{4.5.34}
+\therefore \quad \int\limits_{-1}^{+1}P_{m}(x)P_{n}(x)\,dx=0\tag{4.5.30}
 \end{equation}
 </div>
-<div class="para">In equation <a href="" class="xref" data-knowl="./knowl/eqn-assoc_legn3.html" title="Equation 4.5.34">(4.5.34)</a> Left Hand Side (LHS) is a function of <span class="process-math">\(r\)</span> only and Right Hand Side (RHS) is a function of <span class="process-math">\((\theta,\phi)\)</span> only hence such an equation must be equal to some constant, say <span class="process-math">\(\lambda \text{.}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
-\begin{equation}
-\nabla^{2}_{\theta,\phi}Y(\theta,\phi)+\lambda Y(\theta,\phi) =0\tag{4.5.35}
-\end{equation}
-</div>
-<div class="para">Assume</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
-\begin{equation}
-Y(\theta,\phi) = \Theta(\theta)\Phi(\phi) \tag{4.5.36}
-\end{equation}
-</div>
-<div class="para">be the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-assoc_legn4.html" title="Equation 4.5.35">(4.5.35)</a>, then</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="para">If <span class="process-math">\(m=n\text{,}\)</span> then equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth4.html" title="Equation 4.5.29">(4.5.29)</a> has zero on both its sides and hence we can not get the value of integral for <span class="process-math">\(m=n\)</span> from this equation. To calculate the integral in such a case we may proceed from generating function as <span class="process-math">\((1-2xz+z^{2})^{-\frac{1}{2}}=\sum z^{n}P_{n}(x)\text{.}\)</span> Squaring both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation*}
-\nabla^{2}_{\theta,\phi}\Theta(\theta)\Phi(\phi)+\lambda \Theta(\theta)\Phi(\phi) =0
+(1-2xz+z^{2})^{-1}=\sum [z^{n}P_{n}(x)]^{2}=\sum[P_{n}(x)]^{2}z^{2n}
+\end{equation*}
+</div>
+<div class="para">Integrating with respect to <span class="process-math">\(x\)</span> from -1 to +1, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation*}
+\int\limits_{-1}^{+1}\frac{dx}{(1-2xz+z^{2})}=\sum\int\limits_{-1}^{+1}[P_{n}(x)]^{2}z^{2n}\,dx
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation*}
-\left[\frac{1}{\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial}{\partial \theta}\right)+\frac{1}{\sin^{2}\theta}\frac{\partial^{2}}{\partial \phi^{2}}\right]\Theta(\theta)\Phi(\phi)+\lambda \Theta(\theta)\Phi(\phi)=0
+\sum z^{2n}	\int\limits_{-1}^{+1}[P_{n}(x)]^{2}\,dx=\int\limits_{-1}^{+1}\frac{dx}{(1-2xz+z^{2})}\times\frac{-2z}{-2z} 
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation*}
-\left[\nabla^{2}_{\theta}+\lambda\right]\Theta\cdot\Phi =-\frac{1}{\sin^{2}\theta}\nabla^{2}_{\phi}(\Theta\cdot\Phi)
+=-\frac{1}{2z}\left[\log(1-2xz+z^{2})\right]_{-1}^{+1} =-\frac{1}{2z}\log\frac{1-2z+z^{2}}{1+2z+z^{2}}
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation*}
-\sin^{2}\theta\left[\nabla^{2}_{\theta}+\lambda\right]\Theta\cdot\Phi=-\nabla^{2}_{\phi}(\Theta\cdot\Phi)
+=-\frac{1}{2z}\log\left(\frac{1-z}{1+z}\right)^{2} =\frac{1}{z}\log\left(\frac{1+z}{1-z}\right) =\frac{1}{z}[\log(1+z)-\log(1-z)]
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsec-spher_cord.html ./knowl/eqn-assoc_legn1.html ./knowl/eqn-assoc_legn3.html ./knowl/eqn-assoc_legn4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation*}
+=\frac{1}{z}\left[(z-\frac{z^{2}}{2}+\frac{z^{3}}{3}-\frac{z^{4}}{4}+\cdots)-(-z-\frac{z^{2}}{2}-\frac{z^{3}}{3}-\frac{z^{4}}{4}-\cdots)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation*}
+=\frac{2}{z}\left[z+\frac{z^{3}}{3}+\frac{z^{5}}{5}+\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation*}
+=\frac{2}{z}\left[\sum\limits_{n=0}^{\infty}\frac{z^{2n+1}}{2n+1}\right]=2\sum \frac{z^{2n}}{2n+1}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation*}
+\therefore \quad \sum z^{2n}\int\limits_{-1}^{+1}[P_{n}(x)]^{2}\,dx=2\sum\frac{z^{2n}}{2n+1}.
+\end{equation*}
+</div>
+<div class="para">Equating the coefficient of <span class="process-math">\(z^{2n}\)</span> on both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
 \begin{equation}
-\sin^{2}\theta\frac{\nabla^{2}_{\theta}\Theta}{\Theta}+\sin^{2}\theta\lambda=-\frac{\nabla^{2}_{\phi}\Phi}{\Phi}=m^{2}\quad\text{(say)}\tag{4.5.37}
+\int\limits_{-1}^{+1}[P_{n}(x)]^{2}\,dx=\frac{2}{2n+1}\tag{4.5.31}
 \end{equation}
+</div>
+<div class="para">Now, from equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth5.html" title="Equation 4.5.30">(4.5.30)</a> and equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth6.html" title="Equation 4.5.31">(4.5.31)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation*}
+\int\limits_{-1}^{+1}P_{m}(x)\cdot P_{n}(x)\,dx	=\frac{2}{2n+1}\delta_{m,n};
+\end{equation*}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+\begin{equation*}
+\delta_{m,n}=\begin{cases} 
+0 \quad \text{for}\quad  m \neq n \\
+1 \quad \text{for}\quad  m=n 
+\end{cases}
+\end{equation*}
 </div>
 </div>
 <span class="incontext"><a href="subsec-Legnd_eq.html#p-612" class="internal">in-context</a></span>

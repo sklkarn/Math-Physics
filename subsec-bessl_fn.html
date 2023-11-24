@@ -256,7 +256,7 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="sec_first-vectinteg.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Vector Integration</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="subsec-lineint.html" class="internal"><span class="codenumber">1.4.1</span> <span class="title">the Line Integral</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-lineint.html" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The Line Integral</span></a></div></li>
 <li><div class="toc-item"><a href="subsec-surf_int.html" class="internal"><span class="codenumber">1.4.2</span> <span class="title">The Surface Integral</span></a></div></li>
 <li><div class="toc-item"><a href="subsec-volint.html" class="internal"><span class="codenumber">1.4.3</span> <span class="title">The Volume Integral</span></a></div></li>
 <li><div class="toc-item"><a href="subsec-divergence_thrm.html" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Gauss’s Divergence Theorem</span></a></div></li>
@@ -617,7 +617,7 @@ window.MathJax = {
 <section class="subsection" id="subsec-bessl_fn"><h2 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.7.1</span> <span class="title">Bessel’s Functions, <span class="process-math">\(J_{n}(x)\)</span></span>
 </h2>
-<section class="introduction" id="introduction-30"><div class="para logical" id="p-630">
+<section class="introduction" id="introduction-30"><div class="para logical" id="p-631">
 <div class="para">The Bessel’s function is</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig44.html">
 \begin{equation*}
@@ -649,7 +649,7 @@ J_{1}(x)=\frac{x}{2}-\frac{x^{3}}{2^{2}\cdot 4}+\frac{x^{5}}{2^{2}\cdot 4^{4}\cd
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.7.1<span class="period">.</span></span><span class="space"> </span>Bessel’s Function</figcaption></figure></section><section class="subsubsection" id="subsubsec-bessl_genfn"><h3 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">4.7.1.1</span> <span class="title">Generating Function for <span class="process-math">\(J_{n}(x)\)</span></span>
 </h3>
-<div class="para logical" id="p-631">
+<div class="para logical" id="p-632">
 <div class="para">
 <span class="process-math">\(J_{n}(x)\text{,}\)</span> the Bessel’s function of first kind is the coefficient of <span class="process-math">\(z^{n}\)</span> in the expansion of</div>
 <div class="displaymath process-math" id="eqn-bessl_gen1">
@@ -658,7 +658,7 @@ e^{\frac{x}{2}(z-\frac{1}{z})}=\sum\limits_{n=-\infty}^{\infty}J_{n}(x) z^{n}\ta
 \end{equation}
 </div>
 </div>
-<article class="hiddenproof" id="proof-10"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><div class="para logical" id="p-632">
+<article class="hiddenproof" id="proof-10"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-10"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-10"><article class="hiddenproof"><div class="para logical" id="p-633">
 <div class="para">we know that <span class="process-math">\(e^{t}=1+t+\frac{t^{2}}{2!}+\frac{t^{3}}{3!} +\cdots\)</span>
 </div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen2.html ./knowl/eqn-bessl_gen3.html">
@@ -709,7 +709,7 @@ e^{\frac{x}{2}(z-\frac{1}{z})} 	= \sum\limits_{s=-n}^{-1}\{\}z^{n+s}+\sum\limits
 =\sum\limits_{s=0}^{\infty}\frac{(-1)^{s}}{s!(n+s)!}\left(\frac{x}{2}\right)^{n+2s}z^{n}=J_{n}(x)z^{n}\tag{4.7.13}
 \end{equation}
 </div>
-</div> <div class="para logical" id="p-633">
+</div> <div class="para logical" id="p-634">
 <div class="para">The coefficient of <span class="process-math">\(z^{-n}\)</span> is obtained by putting <span class="process-math">\(s=n+r\text{,}\)</span> so we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_gen5.html ./knowl/eqn-bessl_gen6.html ./knowl/eqn-bessl_gen8.html ./knowl/eqn-bessl_gen9.html">
 \begin{equation*}
@@ -791,15 +791,15 @@ e^{\frac{x}{2}(e^{i\theta}-e^{-i\theta})}=e^{ix\sin\theta}=\sum\limits_{n=-\inft
 \end{equation}
 </div>
 </div></article></div>
-<section class="paragraphs" id="paragraphs-25"><h4 class="heading"><span class="title">Python Code:.</span></h4> <div class="para" id="p-634">from scipy.special import j1</div> <div class="para" id="p-635">import numpy as np</div> <div class="para" id="p-636">import scipy as sp</div> <div class="para" id="p-637">import matplotlib.pyplot as plt</div> <div class="para" id="p-638">x = np.linspace(0, 20,100)</div> <div class="para" id="p-639">for n in range(4):</div> <div class="para" id="p-640">y = sp.special.jn(n,x)</div> <div class="para" id="p-641">plt.plot(x, y, label=r’$J_{}(x)$’.format(n))</div> <div class="para" id="p-642">plt.title("Bessel’s Function")</div> <div class="para" id="p-643">plt.xlabel("x")</div> <div class="para" id="p-644">plt.ylabel(r’$J_m(x)$’)</div> <div class="para" id="p-645">plt.legend(loc=’lower right’)</div> <div class="para" id="p-646">plt.show()</div></section></section><section class="subsubsection" id="subsubsec-bessl_intg"><h3 class="heading hide-type">
+<section class="paragraphs" id="paragraphs-25"><h4 class="heading"><span class="title">Python Code:.</span></h4> <div class="para" id="p-635">from scipy.special import j1</div> <div class="para" id="p-636">import numpy as np</div> <div class="para" id="p-637">import scipy as sp</div> <div class="para" id="p-638">import matplotlib.pyplot as plt</div> <div class="para" id="p-639">x = np.linspace(0, 20,100)</div> <div class="para" id="p-640">for n in range(4):</div> <div class="para" id="p-641">y = sp.special.jn(n,x)</div> <div class="para" id="p-642">plt.plot(x, y, label=r’$J_{}(x)$’.format(n))</div> <div class="para" id="p-643">plt.title("Bessel’s Function")</div> <div class="para" id="p-644">plt.xlabel("x")</div> <div class="para" id="p-645">plt.ylabel(r’$J_m(x)$’)</div> <div class="para" id="p-646">plt.legend(loc=’lower right’)</div> <div class="para" id="p-647">plt.show()</div></section></section><section class="subsubsection" id="subsubsec-bessl_intg"><h3 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">4.7.1.2</span> <span class="title">Integral Represntation of <span class="process-math">\(J_{n}(x)\)</span></span>
 </h3>
-<div class="para logical" id="p-647"><div class="displaymath process-math">
+<div class="para logical" id="p-648"><div class="displaymath process-math">
 \begin{equation*}
 J_{n}(x)=\frac{1}{\pi}\int\limits_{0}^{\pi}\cos(n\theta-x\sin\theta)\,d\theta.	
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-11"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-11"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-11"><article class="hiddenproof"><div class="para logical" id="p-648">
+<article class="hiddenproof" id="proof-11"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-11"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-11"><article class="hiddenproof"><div class="para logical" id="p-649">
 <div class="para">We know that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
 \begin{equation*}
@@ -869,7 +869,7 @@ J_{n}(x) =\frac{1}{\pi}	\int\limits_{0}^{\pi}\{\cos(x\sin\theta)\cos n\theta +\s
 <div class="para">where <span class="process-math">\(n\)</span> is any integer. <a href="" data-knowl="" class="id-ref fn-knowl original" data-refid="hk-fn-8" id="fn-8"><sup> 1 </sup></a> <article class="corollary theorem-like" id="cor-bessl_intg"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">4.7.2</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-650">
+<div class="para logical" id="p-651">
 <div class="para">If  n= 0, we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -890,12 +890,12 @@ J_{o}(x)= \frac{1}{\pi}	\int\limits_{0}^{\pi}\cos(x\sin\theta)\,d\theta.
 </h3>
 <ol class="decimal">
 <li id="li-120">
-<div class="para logical" id="p-651"><div class="displaymath process-math">
+<div class="para logical" id="p-652"><div class="displaymath process-math">
 \begin{equation*}
 xJ'_{n}=n J_{n} -xJ_{n+1}
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-12"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-12"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><div class="para logical" id="p-652">
+<article class="hiddenproof" id="proof-12"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-12"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><div class="para logical" id="p-653">
 <div class="para">we know that</div>
 <div class="displaymath process-math" id="eqn-bessl_rec1">
 \begin{equation}
@@ -944,12 +944,12 @@ xJ'_{n}=nJ_{n}+x\sum\limits_{s=0}^{\infty}\frac{(-1)^{s+1}}{s!(n+s+1)!}\left(\fr
 </div></article></div>
 </li>
 <li id="li-121">
-<div class="para logical" id="p-653"><div class="displaymath process-math">
+<div class="para logical" id="p-654"><div class="displaymath process-math">
 \begin{equation*}
 xJ'_{n}=-n J_{n}+xJ_{n-1}.
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-13"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-13"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-13"><article class="hiddenproof"><div class="para logical" id="p-654">
+<article class="hiddenproof" id="proof-13"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-13"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-13"><article class="hiddenproof"><div class="para logical" id="p-655">
 <div class="para">From equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_rec1.html" title="Equation 4.7.25">(4.7.25)</a> of relation 1, we have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_rec1.html">
 \begin{equation*}
@@ -984,12 +984,12 @@ xJ'_{n}=	\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}(n+2r)}{r!(n+r)!}\left(\frac{x}
 </div></article></div>
 </li>
 <li id="li-122">
-<div class="para logical" id="p-655"><div class="displaymath process-math">
+<div class="para logical" id="p-656"><div class="displaymath process-math">
 \begin{equation*}
 2J'_{n} =J_{n-1}-J_{n+1}
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-14"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-14"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-14"><article class="hiddenproof"><div class="para logical" id="p-656">
+<article class="hiddenproof" id="proof-14"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-14"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-14"><article class="hiddenproof"><div class="para logical" id="p-657">
 <div class="para">We know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1017,12 +1017,12 @@ xJ'_{n}=-nJ_{n}+xJ_{n-1}
 </div></article></div>
 </li>
 <li id="li-123">
-<div class="para logical" id="p-657"><div class="displaymath process-math">
+<div class="para logical" id="p-658"><div class="displaymath process-math">
 \begin{equation*}
 2nJ_{n}=x(J_{n-1} +J_{n+1})
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-15"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-15"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-15"><article class="hiddenproof"><div class="para logical" id="p-658">
+<article class="hiddenproof" id="proof-15"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-15"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-15"><article class="hiddenproof"><div class="para logical" id="p-659">
 <div class="para">We know that -</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1050,12 +1050,12 @@ xJ'_{n}=-nJ_{n}+xJ_{n-1}
 </div></article></div>
 </li>
 <li id="li-124">
-<div class="para logical" id="p-659"><div class="displaymath process-math">
+<div class="para logical" id="p-660"><div class="displaymath process-math">
 \begin{equation*}
 \frac{\,d}{\,dx}\left(x^{-n}J_{n}\right)=-x^{-n}J_{n+1}
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-16"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-16"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-16"><article class="hiddenproof"><div class="para logical" id="p-660">
+<article class="hiddenproof" id="proof-16"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-16"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-16"><article class="hiddenproof"><div class="para logical" id="p-661">
 <div class="para">We know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1083,12 +1083,12 @@ x^{-n}J'_{n}-nx^{-n-1}J_{n}=-x^{-n}J_{n+1}
 </div></article></div>
 </li>
 <li id="li-125">
-<div class="para logical" id="p-661"><div class="displaymath process-math">
+<div class="para logical" id="p-662"><div class="displaymath process-math">
 \begin{equation*}
 \frac{\,d}{\,dx}\left(x^{n}J_{n}\right)=x^{n}J_{n+1}
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-17"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-17"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-17"><article class="hiddenproof"><div class="para logical" id="p-662">
+<article class="hiddenproof" id="proof-17"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-17"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-17"><article class="hiddenproof"><div class="para logical" id="p-663">
 <div class="para">We know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1118,7 +1118,7 @@ x^{n}J'_{n}+nx^{-n-1}J_{n}=x^{n}J_{n-1}
 </ol></section><section class="subsubsection" id="subsubsec-bessl_orth"><h3 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">4.7.1.4</span> <span class="title">Orthogonality of Bessel’s Functions</span>
 </h3>
-<div class="para logical" id="p-663">
+<div class="para logical" id="p-664">
 <div class="displaymath process-math">
 \begin{equation*}
 \int\limits_{0}^{1}xJ_{n}(\alpha x)\cdot J_{n}(\beta x) \,dx =0
@@ -1127,7 +1127,7 @@ x^{n}J'_{n}+nx^{-n-1}J_{n}=x^{n}J_{n-1}
 <div class="para">Where <span class="process-math">\(\alpha\)</span> and <span class="process-math">\(\beta\)</span> are the roots of <span class="process-math">\(J_{n}(x)=0\text{.}\)</span> Provided <span class="process-math">\(\alpha \neq \beta \text{.}\)</span>
 </div>
 </div>
-<article class="hiddenproof" id="proof-18"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-18"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-18"><article class="hiddenproof"><div class="para logical" id="p-664">
+<article class="hiddenproof" id="proof-18"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-18"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-18"><article class="hiddenproof"><div class="para logical" id="p-665">
 <div class="para">We know that the Bessel’s equation</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth1.html ./knowl/eqn-bessl_orth2.html ./knowl/eqn-bessl_orth3.html ./knowl/eqn-bessl_orth4.html ./knowl/eqn-bessl_orth5.html ./knowl/eqn-bessl_orth6.html" id="eqn-bessl_orth1">
 \begin{equation}
@@ -1225,7 +1225,7 @@ x\left[v\frac{d^{2}u}{dx^{2}}-u\frac{d^{2}v}{dx^{2}}\right]+\left[v\frac{du}{dx}
 \int\limits_{0}^{1}x J_{n}(\alpha x)J_{n}(\beta x)\,dx=0.
 \end{equation*}
 </div>
-</div></article></div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-8"><div class="fn"><div class="para logical" id="p-649">
+</div></article></div></section></section><div class="hidden-content tex2jax_ignore" id="hk-fn-8"><div class="fn"><div class="para logical" id="p-650">
 <div class="para">The Kronecker delta</div>
 <div class="displaymath process-math">
 \begin{equation*}

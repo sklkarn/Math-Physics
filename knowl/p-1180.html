@@ -13,23 +13,31 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">summing over for all values of <span class="process-math">\(n\text{,}\)</span> this eqn. becomes</div>
-<div class="displaymath process-math">
-\begin{equation}
-u(x,t) = \sum\limits_{n=1}^{\infty} A_{n}\sin\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} \tag{7.3.14}
-\end{equation}
+<div class="para">But,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed4.html">
+\begin{equation*}
+u(0,t)=0=A\cdot Ce^{-\lambda^{2}h^{2}t} \Rightarrow A=0 \quad \because C \neq 0 
+\end{equation*}
 </div>
-<div class="para">also, <span class="process-math">\(u(x,0) =f(x),\)</span>  we have</div>
-<div class="displaymath process-math">
-\begin{equation}
-f(x) = \sum\limits_{n=1}^{\infty} A_{n}\sin\frac{n\pi x}{\lambda}\tag{7.3.15}
-\end{equation}
+<div class="para">again,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed4.html">
+\begin{equation*}
+u(\lambda,t) =0= B\sin\lambda \lambda)Ce^{-\lambda^{2}h^{2}t}
+\end{equation*}
 </div>
-<div class="para">which is Fourier sine series with</div>
-<div class="displaymath process-math">
-\begin{equation}
-A_{n} = \frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\sin\frac{n\pi x}{l}\,dx	 \tag{7.3.16}
-\end{equation}
+<div class="para">As <span class="process-math">\(B\)</span> should not be zero, <span class="process-math">\(\sin\lambda \lambda =0 =\sin n\pi\text{.}\)</span> Or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed4.html">
+\begin{equation*}
+\lambda = \frac{n\pi}{\lambda}, \quad  n=1,2,3,\cdots 
+\end{equation*}
+</div>
+<div class="para">putting <span class="process-math">\(A\)</span> and <span class="process-math">\(\lambda \)</span> in equation,<a href="" class="xref" data-knowl="./knowl/eqn-1Dheat_0ed4.html" title="Equation 7.3.13">(7.3.13)</a>, we get-</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dheat_0ed4.html">
+\begin{equation*}
+u(x,t)=B\sin\frac{n\pi x}{\lambda} Ce^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}} = A_{n}\sin\frac{n\pi x}{\lambda}e^{-n^{2}\pi^{2}h^{2}t/\lambda^{2}}
+\end{equation*}
+</div>
+<div class="para">put <span class="process-math">\([BC=A_{n}].\)</span>
 </div>
 </div>
 <span class="incontext"><a href="subsec-1D_heat.html#p-1180" class="internal">in-context</a></span>

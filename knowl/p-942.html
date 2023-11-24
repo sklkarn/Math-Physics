@@ -13,33 +13,63 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
-\begin{equation}
-\int\limits_{-\infty}^{\infty}\left(\frac{\sin sa\cos sx}{s}\right)\,ds 
-= \begin{cases}
-\pi, &amp; \text{if} \quad |x| \lt a  \\
-0, &amp; \text{if} \quad |x| \gt a
-\end{cases} \tag{6.2.2}
-\end{equation}
-</div>
-<div class="para">Also, if <span class="process-math">\(x=0, a=1,\)</span>  then from expression <a href="" class="xref" data-knowl="./knowl/eqn-ftrans2.html" title="Equation 6.2.2">(6.2.2)</a> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
+<div class="para">Again, if</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans1.html">
 \begin{equation*}
-\int\limits_{-\infty}^{\infty}\frac{\sin s}{s}\,ds =\pi 
+\mathscr{F}\{f(x)\}=F(s)=\int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx
 \end{equation*}
 </div>
-<div class="para">[for <span class="process-math">\(|x| \lt a \Rightarrow 0 \lt 1,\)</span>  and <span class="process-math">\(\cos 0 =1\)</span>] Or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
+<div class="para">then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans1.html">
 \begin{equation*}
-2\int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds =\pi
+f(x) = \mathscr{F}^{-1}\{F(s)\} = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}F(s) e^{isx}\,ds
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans1.html">
+\begin{equation*}
+\therefore \quad  \int\limits_{-\infty}^{\infty}F(s) e^{isx}\,ds = 2\pi f(x) 
+= \begin{cases}
+2\pi, &amp; \text{if} \quad |x| \lt a \\
+0, &amp; \text{if} \quad |x| \gt a
+\end{cases} 
+\end{equation*}
+</div>
+<div class="para">but,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans1.html">
+\begin{equation*}
+F(s) = \frac{2\sin sa}{s}, 
+\end{equation*}
+</div>
+<div class="para">from <a href="" class="xref" data-knowl="./knowl/eqn-ftrans1.html" title="Equation 6.2.1">(6.2.1)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans1.html">
+\begin{equation*}
+\therefore \quad  \int\limits_{-\infty}^{\infty}\left(\frac{2\sin sa}{s}\right)(\cos sx+i\sin sx)\, dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans1.html">
+\begin{equation*}
+= \begin{cases}
+2\pi, &amp; \text{if} \quad |x| \lt a\\
+0, &amp; \text{if} \quad |x| \gt a
+\end{cases}
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans1.html">
 \begin{equation*}
-\int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds=\frac{\pi}{2} 
+\int\limits_{-\infty}^{\infty}\left(\frac{\sin sa\cos sx}{s}\right)\,ds +i \int\limits_{-\infty}^{\infty}\left(\frac{\sin sa\sin sx}{s}\right)\,ds 
 \end{equation*}
 </div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans1.html">
+\begin{equation*}
+= \begin{cases}
+\pi, &amp; \text{if} \quad |x| \lt a\\
+0, &amp; \text{if} \quad |x| \gt a
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">equating real parts on both sides, we get -</div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesA.html#p-942" class="internal">in-context</a></span>
 </body>

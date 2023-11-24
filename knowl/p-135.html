@@ -12,7 +12,93 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Evaluate <span class="process-math">\(\iint\limits_{S}\vec{F}\cdot \hat{n}ds\text{,}\)</span> where <span class="process-math">\(\vec{F}=z\hat{i}-x\hat{j}+3y^{2}z\hat{k}\)</span> and  <span class="process-math">\(S\)</span> is the sutface of cylinder <span class="process-math">\(x^{2}+y^{2}=16\)</span> included in the first octant between <span class="process-math">\(z=0,\)</span> to <span class="process-math">\(z=5,\)</span> as shown in figure. <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="external/fig21.png" class="contained"></div>
+<div class="para logical">
+<div class="para">The surface  <span class="process-math">\(S\)</span> and its projection <span class="process-math">\(R\)</span> on the x-y plane are shown in figure. Now,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation}
+\iint\limits_{S}\vec{F}\cdot \hat{n}ds=\iint\limits_{R}\vec{F}\cdot \hat{n}\frac{dxdy}{\mid \hat{n}\cdot\hat{k}\mid}\tag{1.5.2}
+\end{equation}
+</div>
+<div class="para">Where,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+\hat{n}=\frac{\text{grad f} }{\mid \text{grad f} \mid}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+\text{grad} f=\vec{\nabla}f = \vec{\nabla}(2x+3y+6z-12)=2\hat{i}+3\hat{j}+6\hat{k}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+\mid \text{grad} f\mid =\sqrt{4+9+36} =\sqrt{49} = 7.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+\therefore  \hat{n}=\frac{2\hat{i}+3\hat{j}+6\hat{k}}{7}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+\hat{n}\cdot\hat{k} = \frac{1}{7}(2\hat{i}+3\hat{j}+6\hat{k})\cdot\hat{k}=\frac{6}{7}
+\end{equation*}
+</div>
+<div class="para">also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+\vec{F}\cdot\hat{n}=(18z\hat{i}-12\hat{j}+3y\hat{k})\cdot \frac{1}{7}(2\hat{i}+3\hat{j}+6\hat{k}) = \frac{36z-36+18y}{7},
+\end{equation*}
+</div>
+<div class="para">but from the equation of surface, ,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+z=\frac{12-2x-3y}{6}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+\therefore   \vec{F}\cdot\hat{n}=\frac{1}{7}\left[36\left(\frac{12-2x-3y}{6}\right)-36+18y\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+= \frac{1}{7}(72-12x-18y-36+18y) = \frac{1}{7}(36-12x).
+\end{equation*}
+</div>
+<div class="para">From eqn. <a href="" class="xref" data-knowl="./knowl/eqn-vectint4.html" title="Equation 1.5.2">(1.5.2)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+\iint\limits_{S}\vec{F}\cdot \hat{n}ds=\iint\limits_{R}\vec{F}\cdot \hat{n}\frac{dxdy}{\mid \hat{n}\cdot\hat{k}\mid}
+=\iint\limits_{R} \frac{1}{7}(36-12x)\frac{dxdy}{6}\cdot7  
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+= \iint\limits_{R} (6-2x) \,dx\,dy
+\end{equation*}
+</div>
+<div class="para">To integrate it, consider the relation <span class="process-math">\(2x+3y=12\)</span> and cover the whole region R, i.e., the region BOA where y varies from <span class="process-math">\(y=0\)</span> to <span class="process-math">\(y=\frac{12-2x}{3}\text{,}\)</span> and x varies from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=6.\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+\therefore \quad \iint\limits_{S}\vec{F}\cdot \hat{n}\,ds
+=\int\limits_{x=0}^{6}\int\limits_{y=0}^{(12-2x)/3}(6-2x)\,dx\,dy
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+=\int\limits_{x=0}^{6}(6-2x)dx[y]^{(12-2x)/3}_{3} = \int\limits_{x=0}^{6}(24-12x+\frac{4}{3}x^{2})dx
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-vectint4.html">
+\begin{equation*}
+=24.
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_first-examplesB.html#p-135" class="internal">in-context</a></span>
 </body>

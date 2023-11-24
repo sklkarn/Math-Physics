@@ -14,62 +14,29 @@
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
 <div class="para">From eqn. <a href="" class="xref" data-knowl="./knowl/eqn-gauss1.html" title="Equation 1.4.1">(1.4.1)</a> let us first evaluate -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html">
 \begin{equation*}
 \iiint\limits_{V}\frac{\partial F_{z}}{\partial z}\,dx\,dy\,dz \quad \text{from z' to z''.} 
 \end{equation*}
 </div>
 <div class="para">That is,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html">
 \begin{equation*}
 \iiint\limits_{z'}^{z"}\frac{\delta F_{z}}{\delta z}\,dx\,dy\,dz 
 \end{equation*}
 </div>
 <div class="para">[value of <span class="process-math">\(\vec{F}\)</span> along z axis is <span class="process-math">\(F_{z}(x,y,z)\)</span>]</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html">
 \begin{equation*}
 \therefore \hspace{2pt} \iint\limits_{S}[F_{z}(x,y,z")-F_{z}(x,y,z')\,dx\,dy]  
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html">
 \begin{equation}
 =\iint\limits_{S_{2}}F_{z}(x,y,z")\,dx\,dy-\iint\limits_{S_{1}}F_{z}(x,y,z')\,dx\,dy\tag{1.4.2}
 \end{equation}
 </div>
-<div class="para">But, <span class="process-math">\(\hat{n_{1}}\cdot\hat{k}\,dS_{1}=-\,dx\,dy\)</span> (bottom surface ) and <span class="process-math">\(\hat{n_{2}}\cdot\hat{k}dS_{2}=\,dx\,dy\)</span> (top). Hence from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-gauss2.html" title="Equation 1.4.2">(1.4.2)</a>, we get-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
-\begin{equation*}
-\iiint\limits_{z'}^{z"}\frac{\partial F_{z}}{\partial z}\,dx\,dy\,dz
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
-\begin{equation*}
-=\iint\limits_{S_{2}}F_{z}(x,y,z")\hat{n_{2}}\cdot\hat{k}\,dS_{2}+\iint\limits_{S_{1}}F_{z}(x,y,z')\hat{n_{1}}\cdot\hat{k}dS_{1}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
-\begin{equation}
-= \iint_{S} F_{z}\hat{k} \cdot \hat{n} \,dS \tag{1.4.3}
-\end{equation}
-</div>
-<div class="para">where surface integrals of the other sides are zero because <span class="process-math">\(\hat{k}\)</span> is perpendicular to the surfaces <span class="process-math">\(\,dS_{3},\,dS_{4},\,dS_{5},\,dS_{6}\text{.}\)</span>  Similarly, we can show that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
-\begin{equation}
-\iiint\limits_{V}\frac{\partial F_{x}}{\partial x}dxdydz = \iint\limits_{S} F_{x}\hat{i} \cdot \hat{n} \,dS \tag{1.4.4}
-\end{equation}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
-\begin{equation}
-\iiint\limits_{V}\frac{\partial F_{y}}{\partial y}\,dx\,dy\,dz = \iint\limits_{S} F_{y}\hat{j} \cdot \hat{n} \,dS \tag{1.4.5}
-\end{equation}
-</div>
-<div class="para">Adding eqns. <a href="" class="xref" data-knowl="./knowl/eqn-gauss3.html" title="Equation 1.4.3">(1.4.3)–(1.4.5)</a>, we get-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gauss1.html ./knowl/eqn-gauss2.html ">
-\begin{equation*}
-\iiint\limits_{V}(\vec{\nabla}\cdot \vec{F})\,dV  = \iint\limits_{S} (F_{x}\hat{i}+F_{y}\hat{j}+F_{z}\hat{k}) \cdot \hat{n} \,dS =  \iint\limits_{S} \vec{F}\cdot\vec{\,dS} 
-\end{equation*}
-</div>
+<div class="para">But, <span class="process-math">\(\hat{n_{1}}\cdot\hat{k}\,dS_{1}=-\,dx\,dy\)</span> (bottom surface ) and <span class="process-math">\(\hat{n_{2}}\cdot\hat{k}dS_{2}=\,dx\,dy\)</span> (top).</div>
 </div>
 <span class="incontext"><a href="subsec-divergence_thrm.html#p-124" class="internal">in-context</a></span>
 </body>

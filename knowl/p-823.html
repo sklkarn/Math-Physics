@@ -13,42 +13,30 @@
 <body class="ignore-math">
 <h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">In this case, Fourier Series is represented by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig52a.html ./knowl/fig-fig52b.html">
+<div class="para">A function <span class="process-math">\(f(x)\)</span> is said to be an even function if <span class="process-math">\(f(x)=f(-x).\)</span> e.g., <span class="process-math">\(\cos x {,} \sec x {,} x^{2} {,} x \sin nx {,} \)</span> etc. are even functions. The graph of such a function is symmetrical with respect to <span class="process-math">\(f(x)\)</span> axis. The area under such a curve from <span class="process-math">\(-\pi\)</span>  to <span class="process-math">\(\pi\)</span> is double the area from 0 to <span class="process-math">\(\pi\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
 \begin{equation*}
-f(x) =\frac{a_{0}}{2}+\sum\limits_{n=1}^{\infty}a_{n} \cos nx
+\therefore  \int\limits_{-\pi}^{\pi}f(x)\,dx = 2\int\limits_{0}^{\pi}f(x)\,dx 
 \end{equation*}
 </div>
-<div class="para">and is called Fourier cosine series as <span class="process-math">\(b_{n}=0\)</span> for all the even function [figure <a href="" class="xref" data-knowl="./knowl/fig-fig52a.html" title="Figure 5.3.1.(a)">Figure 5.3.1.(a)</a>]. Again, a function <span class="process-math">\(f(x)\)</span> is said to be an odd function if <span class="process-math">\(f(-x) = -f(x)\text{.}\)</span> For example, <span class="process-math">\(x {,} \tan x {,}x^{3}{,} \sin x{,}\)</span> etc. are odd functions. The graph of such a function is skew symmetrical with respect to <span class="process-math">\(f(x)\)</span> axis. The area under such a curve from <span class="process-math">\(-\pi\)</span> to <span class="process-math">\(\pi\)</span> is zero. That is,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig52a.html ./knowl/fig-fig52b.html">
+<div class="para">here,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\int\limits_{-\pi}^{\pi}f(x) \,dx =0; 
+a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx = 2\int\limits_{0}^{\pi}f(x)\,dx;
 \end{equation*}
 </div>
-<div class="para">here</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig52a.html ./knowl/fig-fig52b.html">
+<div class="displaymath process-math">
 \begin{equation*}
-a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx = 0; 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig52a.html ./knowl/fig-fig52b.html">
-\begin{equation*}
-a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = 0;
+a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{2}{\pi}\int\limits_{0}^{\pi}f(x)\cos nx\,dx;
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig52a.html ./knowl/fig-fig52b.html">
+<div class="displaymath process-math">
 \begin{equation*}
-b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = \frac{2}{\pi}\int\limits_{0}^{\pi}f(x) \sin nx\,dx \quad \text{[Half-Range Series]}
+b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = 0  \quad \text{[Half-Range Series]}
 \end{equation*}
 </div>
-<div class="para">In this case, Fourier series is represented by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig52a.html ./knowl/fig-fig52b.html">
-\begin{equation*}
-f(x) = \sum\limits_{n=1}^{\infty}b_{n} \sin nx
-\end{equation*}
-</div>
-<div class="para">is called Fourier sine series as <span class="process-math">\(a_{0}\)</span> and <span class="process-math">\(a_{n}\)</span> are zero in all the odd function [figure <a href="" class="xref" data-knowl="./knowl/fig-fig52b.html" title="Figure 5.3.1.(b)">Figure 5.3.1.(b)</a>].</div>
 </div>
 <span class="incontext"><a href="sec_fifth-trig.html#p-823" class="internal">in-context</a></span>
 </body>

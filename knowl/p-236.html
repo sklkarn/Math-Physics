@@ -11,39 +11,30 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">The transformation in which the components of a vector in one coordinate system are linear functions of another coordinate system is called a linear transformation. In sych transformation origin of two coordinate systems do not displace. If <span class="process-math">\(x_{i}\)</span> are the components of a vector in one coordinate system and <span class="process-math">\(y_{i}\)</span> are those in another coordinate system then after a linear transformation, we have -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
+<div class="para">In <dfn class="terminology">step (1)</dfn> take <span class="process-math">\(v_{1} = u_{1}\text{,}\)</span> in <dfn class="terminology">step (2)</dfn> let <span class="process-math">\(v_{2} = u_{2}+\lambda v_{1}\)</span> where <span class="process-math">\(\lambda\)</span> is a constant to be determined from the condition that <span class="process-math">\(v_{2}\)</span> to be orthogonal to <span class="process-math">\(v_{1}\text{.}\)</span> That is, <span class="process-math">\((v_{1},v_{2}=0)\)</span>	 or, <span class="process-math">\(\lt v_{1}, u_{2} +\lambda v_{1}\gt =0=\lt v_{1}, u_{2}\gt +\lambda \lt v_{1}, v_{1} \gt \text{,}\)</span> and in <dfn class="terminology">step (3)</dfn> let <span class="process-math">\(v_{3} = u_{3}+\lambda_{1} v_{1}+\lambda_{2} v_{2}\)</span> where <span class="process-math">\(\lambda_{1}\)</span> and <span class="process-math">\(\lambda_{2}\)</span> are constants to be determined from the conditions that <span class="process-math">\(v_{3}\)</span> is orthogonal to <span class="process-math">\(v_{1}\)</span> and <span class="process-math">\(v_{2}\text{.}\)</span> This gives - <span class="process-math">\(\lt v_{1}, v_{3} \gt = 0 = \lt v_{1}, u_{3} \gt +\lambda_{1} \lt v_{1}, v_{1} \gt + 
+\lambda_{2} \lt v_{1}, v_{2}\gt \text{,}\)</span> since <span class="process-math">\(\lt v_{1}, v_{2}\gt = 0.\)</span> Therefore, we have -</div>
+<div class="displaymath process-math">
+\begin{equation}
+\Rightarrow \lambda_{1}=-\frac{\lt v_{1}, u_{3}\gt}{\lt v_{1}, v_{1}\gt}\tag{2.1.4}
+\end{equation}
+</div>
+<div class="displaymath process-math">
 \begin{equation*}
-y_{i}=b_{i1}x_{1}+b_{i2}x_{2}+\cdots+b_{in}x_{n} 
+\text{Also,}  \quad \lt v_{2}, v_{3}\gt = 0 = \lt v_{2}, u_{3}\gt +\lambda_{1} \lt v_{2}, v_{1}\gt 
++\lambda_{2} \lt v_{2}, v_{2}\gt
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
+<div class="displaymath process-math">
 \begin{equation}
-= \sum\limits_{k=1}^{n}b_{ik}x_{k},  \quad 1 \leq i\leq n.\tag{2.1.6}
+\Rightarrow \lambda_{2}=-\frac{\lt v_{2}, u_{3}\gt}{\lt v_{2}, v_{2}\gt } \quad 
+[\because  \lt v_{2}, v_{1}\gt = \lt v_{1}, v_{2}\gt  = 0]\tag{2.1.5}
 \end{equation}
 </div>
-<div class="para">Again, the same vector has components <span class="process-math">\(z_{i}\text{,}\)</span> which are linearly related to the components <span class="process-math">\(y_{i}\)</span> then after a linear transformation, we have -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
-\begin{equation}
-z_{i}= \sum\limits_{k=1}^{n}a_{ik}y_{k},  \quad 1 \leq i\leq n.\tag{2.1.7}
-\end{equation}
-</div>
-<div class="para">Now it is possible to obtain a transformation directly from the components <span class="process-math">\(x_{i}\text{,}\)</span> from eqns. <a href="" class="xref" data-knowl="./knowl/eqn-2linetr1.html" title="Equation 2.1.6">(2.1.6)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-2linetr2.html" title="Equation 2.1.7">(2.1.7)</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
-\begin{equation*}
-z_{i}= \sum\limits_{k=1}^{n}a_{ik} \sum\limits_{j=1}^{n}b_{kj}x_{j} 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
-\begin{equation}
-= \sum\limits_{j=1}^{n} \sum\limits_{k=1}^{n} a_{ik} b_{kj}x_{j} = \sum\limits_{j=1}^{n}c_{ij}x_{j}, \quad 1 \leq i\leq n.\tag{2.1.8}
-\end{equation}
-</div>
-<div class="para">where,  <span class="process-math">\(c_{ij} = \sum\limits_{k=1}^{n}a_{ik}b_{kj}, \quad 1 \leq i, j\leq n.\)</span>
+<div class="para">Now, we have three mutually orthogonal vectors <span class="process-math">\(v_{1},v_{2}\)</span> and <span class="process-math">\(v_{3}\text{.}\)</span> The same procedure can be continued to obtain other othogonal vectors. Finally, all the vectors can be normalized to obtain an orthonormal set <span class="process-math">\(\left\{x_{i}\right\}\text{,}\)</span> where <span class="process-math">\(x_{i}= \frac{v_{i}}{\parallel v_{i} \parallel}\text{.}\)</span>
 </div>
 </div>
-<span class="incontext"><a href="subsec-2lin_trans.html#p-236" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-2dimen_vect.html#p-236" class="internal">in-context</a></span>
 </body>
 </html>

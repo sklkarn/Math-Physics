@@ -256,7 +256,7 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="sec_first-vectinteg.html" class="internal"><span class="codenumber">1.4</span> <span class="title">Vector Integration</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="subsec-lineint.html" class="internal"><span class="codenumber">1.4.1</span> <span class="title">the Line Integral</span></a></div></li>
+<li><div class="toc-item"><a href="subsec-lineint.html" class="internal"><span class="codenumber">1.4.1</span> <span class="title">The Line Integral</span></a></div></li>
 <li><div class="toc-item"><a href="subsec-surf_int.html" class="internal"><span class="codenumber">1.4.2</span> <span class="title">The Surface Integral</span></a></div></li>
 <li><div class="toc-item"><a href="subsec-volint.html" class="internal"><span class="codenumber">1.4.3</span> <span class="title">The Volume Integral</span></a></div></li>
 <li><div class="toc-item"><a href="subsec-divergence_thrm.html" class="internal"><span class="codenumber">1.4.4</span> <span class="title">Gauss’s Divergence Theorem</span></a></div></li>
@@ -654,11 +654,11 @@ window.MathJax = {
 <div class="displaymath process-math">
 \begin{equation*}
 \vec{\alpha}\cdot (\vec{\beta}\times \vec{\gamma}) 
-= \begin{bmatrix} 
+= \begin{Vmatrix} 
 1 &amp; -2 &amp; 3 \\ 
 -2 &amp; 3 &amp; -4 \\ 
 0 &amp; -1 &amp; 2 
-\end{bmatrix} 
+\end{Vmatrix} 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
@@ -764,11 +764,11 @@ window.MathJax = {
 <div class="displaymath process-math">
 \begin{equation*}
 \left[\vec{l}\vec{m}\vec{n}\right]\left[\vec{a}\vec{b}\vec{c}\right] 
-= {\begin{bmatrix} 
+= {\begin{Vmatrix} 
 \vec{l}\cdot \vec{a} &amp; \vec{l}\cdot \vec{b}  &amp; \vec{l}\cdot \vec{c} \\ 
 \vec{m}\cdot \vec{a}  &amp; \vec{m}\cdot \vec{b}  &amp; \vec{m}\cdot \vec{c} \\ 
 \vec{n}\cdot \vec{a}  &amp; \vec{n}\cdot \vec{b}  &amp; \vec{n}\cdot \vec{c} 
-\end{bmatrix}}
+\end{Vmatrix}}
 \end{equation*}
 </div>
 </div>
@@ -797,45 +797,45 @@ and, \vec{n}\amp = n_{1}\hat{i}+n_{2}\hat{j}+ n_{3}\hat{k},
 <div class="displaymath process-math" id="md-26">
 \begin{align*}
 \left[\vec{l}\vec{m}\vec{n}\right]\left[\vec{a}\vec{b}\vec{c}\right] \amp 
-= {\begin{bmatrix} 
+= {\begin{Vmatrix} 
 l_{1} &amp; l_{2} &amp; l_{3} \\ 
 m_{1} &amp; m_{2} &amp; m_{3} \\ 
 n_{1} &amp; n_{2} &amp; n_{3} 
-\end{bmatrix}} 
-{\begin{bmatrix} 
+\end{Vmatrix}} 
+{\begin{Vmatrix} 
 a_{1} &amp; a_{2} &amp; a_{3} \\ 
 b_{1} &amp; b_{2} &amp; b_{3} \\ 
 c_{1} &amp; c_{2} &amp; c_{3} 
-\end{bmatrix}} \\
-\amp = {\begin{bmatrix} 
+\end{Vmatrix}} \\
+\amp = {\begin{Vmatrix} 
 l_{1} &amp; l_{2} &amp; l_{3} \\ 
 m_{1} &amp; m_{2} &amp; m_{3} \\ 
 n_{1} &amp; n_{2} &amp; n_{3} 
-\end{bmatrix}} 
-{\begin{bmatrix} 
+\end{Vmatrix}} 
+{\begin{Vmatrix} 
 a_{1} &amp; b_{1} &amp; c_{1} \\ 
 a_{2} &amp; b_{2} &amp; c_{2} \\ 
 a_{3} &amp; b_{3} &amp; c_{3} 
-\end{bmatrix}} 
+\end{Vmatrix}} 
 \end{align*}
 </div>
 <div class="para">[using properties of determinant where rows, (or, column) can be exchanged without changing the value of determinant.]</div>
 <div class="displaymath process-math">
 \begin{equation*}
-={\begin{bmatrix} 
+={\begin{Vmatrix} 
 l_{1} a_{1} + l_{2} a_{2} + l_{3} a_{3} &amp; l_{1} b_{1} + l_{2} b_{2} + l_{3} b_{3} &amp; l_{1} c_{1} + l_{2} c_{2} + l_{3} c_{3} \\ 
 m_{1} a_{1} + m_{2} a_{2} + m_{3} a_{3}  &amp; m_{1} b_{1} + m_{2} b_{2} + m_{3} b_{3} &amp; m_{1} c_{1} + m_{2} c_{2} + m_{3} c_{3} \\ 
 n_{1} a_{1} + n_{2} a_{2} + n_{3} a_{3} &amp; n_{1} b_{1} + nl_{2} b_{2} + n_{3} b_{3} &amp; n_{1} c_{1} + n_{2} c_{2} + n_{3} c_{3} 
-\end{bmatrix}}
+\end{Vmatrix}}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-={\begin{bmatrix} 
+={\begin{Vmatrix} 
 \vec{l}\cdot \vec{a} &amp; \vec{l}\cdot \vec{b} &amp; \vec{l}\cdot \vec{c} \\ 
 \vec{m}\cdot \vec{a} &amp; \vec{m}\cdot \vec{b} &amp; \vec{m}\cdot \vec{c} \\ 
 \vec{n}\cdot \vec{a} &amp; \vec{n}\cdot \vec{b} &amp; \vec{n}\cdot \vec{c} 
-\end{bmatrix}}.
+\end{Vmatrix}}.
 \end{equation*}
 </div>
 </div></div></div>

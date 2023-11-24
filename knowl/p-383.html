@@ -13,14 +13,32 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">
-<dfn class="terminology">Note:</dfn> The contravarient tensor is represented by components in the directions of coordinate increase whereas a covarient tensor is represented by components in the directions orthogonal to constant coordinate surfaces. In case of a cartesian coordinate system, the coordinate direction <span class="process-math">\(x^{i}\)</span> concides with the direction orthogonal to the constant <span class="process-math">\(x^{i}\)</span> surface so that the direction between the covarient and contravarient tensors vanishes. Hence we can not distinguish between them in cartesian systems. The covariance or contravariance of the tensor components is not intrinsic property of the entity but this distinction is due to the way in which the entity is related to coordinate system to which it is referred. It is to be noted that in a cartesian system</div>
+<div class="para">If <span class="process-math">\(n^{2}\)</span> quantities <span class="process-math">\(A^{kl}\)</span> in a coordinate system <span class="process-math">\((x^{1}{,} x^{2}{,} x^{3}{,} \cdots{,} x^{n})\)</span> are related to <span class="process-math">\(n^{2}\)</span> other quantities <span class="process-math">\(\bar{A}^{ij}\)</span> in another coordinates <span class="process-math">\((\bar{x}^{1}{,} \bar{x}^{2}{,} \bar{x}^{3}{,} \cdots{,} \bar{x}^{n})\)</span> by the transformation eqn.</div>
 <div class="displaymath process-math">
-\begin{equation*}
-\frac{\partial x^{j}}{\partial \bar{x}^{i}}= \frac{\partial \bar{x}^{i}}{\partial x^{j}}.
-\end{equation*}
+\begin{equation}
+\bar{A}^{ij}=\frac{\partial \bar{x}^{i}}{\partial x^{k}} \frac{\partial \bar{x}^{j}}{\partial x^{l}} A^{kl}\tag{3.1.6}
+\end{equation}
 </div>
-<div class="para">That is, both these partial derivatives are equal to the direction cosines between <span class="process-math">\(\bar{x}^{i}\)</span> - and  <span class="process-math">\(x^{i}\)</span> - axes. Hence there is no difference between contravariant and covariant transformations in cartesian coordinates. In other coordinate system this is not true in general, thus the difference in covariant and contravariant is observed.</div>
+<div class="para">
+<span class="process-math">\(here, [i,j = 1,2,3, \cdots n]\text{,}\)</span> The <span class="process-math">\(A^{kl}\)</span> are the components of a second rank contravarient tensor. Similarly,</div>
+<div class="displaymath process-math">
+\begin{equation}
+\bar{A}_{ij}=\frac{\partial x^{k}}{\partial \bar{x}^{i}} \frac{\partial x^{l}}{\partial \bar{x}^{j}} A_{kl}\tag{3.1.7}
+\end{equation}
+</div>
+<div class="para">and the <span class="process-math">\(A_{kl}\)</span> are the components of a second rank covarient tensor. Also,</div>
+<div class="displaymath process-math">
+\begin{equation}
+\bar{A}^{i}_{j}=\frac{\partial \bar{x}^{i}}{\partial x^{k}} \frac{\partial x^{l}}{\partial \bar{x}^{j}} A^{k}_{l}\tag{3.1.8}
+\end{equation}
+</div>
+<div class="para">and the <span class="process-math">\(A^{k}_{l}\)</span> are the components of a second rank mixed tensor. Again,</div>
+<div class="displaymath process-math">
+\begin{equation}
+\bar{A}^{prm}_{ij} = \frac{\partial \bar{x}^{p}}{\partial x^{q}} \frac{\partial \bar{x}^{r}}{\partial x^{s}} \frac{\partial \bar{x}^{m}}{\partial x^{t}}  \frac{\partial x^{k}}{\partial \bar{x}^{i}} \frac{\partial x^{l}}{\partial \bar{x}^{j}}A^{qst}_{kl}\tag{3.1.9}
+\end{equation}
+</div>
+<div class="para">and <span class="process-math">\(A^{qst}_{kl}\)</span> are a components of fifth - rank mixed tensor.</div>
 </div>
 <span class="incontext"><a href="subsec-cont_cov.html#p-383" class="internal">in-context</a></span>
 </body>

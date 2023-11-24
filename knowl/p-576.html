@@ -13,42 +13,83 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">From expression <a href="" class="xref" data-knowl="./knowl/eqn-leg_eq13.html" title="Equation 4.5.13">(4.5.13)</a>, we deduce that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+<div class="para">The expansion of <span class="process-math">\(P_{n}(x)\)</span> can also be written as</div>
+<div class="displaymath process-math">
 \begin{equation*}
-P_{n}(x) =\sum\limits_{r=0}^{N}\frac{ (-1)^{r} }{2^{n}r!(n-r)!}\frac{d^{n}}{dx^{n}}(x^{2n-2r}) 
+P_{n}(x) = \sum\limits_{r=0}^{N} (-1)^{r}\frac{1\cdot 3\cdot 5\cdots (2n-1)}{n!} 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+<div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}\sum\limits_{r=0}^{N}(-1)^{r}\frac{n!}{r!(n-r)!}x^{2n-2r} 
+\times\frac{n(n-1)\cdots(n-2r+1)}{2\cdot 4\cdots 2r\cdot(2n-1)(2n-3)\cdots (2n-2r+1)}x^{n-2r}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\left[ \because   \frac{d^{n}}{dx^{n}}x^{2n-2r} = \frac{(2n-2r)!}{(n-2r)!}x^{2n-2r}\right]
+=\sum\limits_{r=0}^{N} (-1)^{r}\frac{1\cdot 3\cdot 5\cdots (2n-2r-1)}{2^{r}\cdot r! (n-2r)!}x^{n-2r}
 \end{equation*}
 </div>
-<div class="para">Now extended the upper limit from <span class="process-math">\(N\)</span> to <span class="process-math">\(n\)</span> since the extra terms from <span class="process-math">\(N+1\)</span> to <span class="process-math">\(n\)</span> do not contribute anything because each term in the series</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\sum\limits_{r=N+1}^{n} \frac{d^{n}}{dx^{n}}\frac{(-1)^{r}n!}{r!(n-r)!}x^{2n-2r}
+=\sum\limits_{r=0}^{N} (-1)^{r}\frac{1\cdot 2\cdot 3\cdot 5\cdots (2n-2r)}{2^{r}\cdot r! (n-2r)!\cdot 2\cdot 4\cdots (2n-2r)}x^{n-2r}
 \end{equation*}
 </div>
-<div class="para">vanishes for <span class="process-math">\(r\)</span> and <span class="process-math">\(n\)</span> integrals. Also,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+<div class="displaymath process-math">
+\begin{equation}
+=\sum\limits_{r=0}^{N} (-1)^{r}\frac{1(2n-2r)!}{2^{r}\cdot r! (n-r)!(n-2r)!}x^{n-2r}\tag{4.5.13}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(N=\frac{n}{2}\)</span> for <span class="process-math">\(n\)</span> even and <span class="process-math">\(N=n-\frac{1}{2}\)</span> for <span class="process-math">\(n\)</span> odd. In particular,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-(x^{2}-1)^{n}=  \sum\limits_{r=0}^{n} \frac{(-1)^{r}n!}{r!(n-r)!}x^{2(n-r)} 
+P_{n}(x) = \frac{1\cdot 3\cdot 5\cdots (2n-1)}{n!}\left[x^{n}-\frac{n(n-1)}{2(2n-1)}x^{n-2}\right.
 \end{equation*}
 </div>
-<div class="para">from Binomial expansion of <span class="process-math">\((x^{2}-1)^{n}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-leg_eq13.html ./knowl/fig-fig43.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\therefore \quad P_{n}(x) = \frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}
+\left.+\frac{n(n-1)(n-2)(n-3)}{2\cdot 4\cdots (2n-1)(2n-3)}x^{n-4}-\cdots\right]
 \end{equation*}
 </div>
-<div class="para">This is the Rodrigue’s Formula for Legender’s Polynomial. The plot for Legender’s polynomial is shown in <a href="" class="xref" data-knowl="./knowl/fig-fig43.html" title="Figure 4.5.1">Figure 4.5.1</a>.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{2n)!}{(2\cdot 4\cdot 6 \cdots 2n)n!}\left[x^{n}-\frac{n(n-1)}{2(2n-1)}x^{n-2} \right.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left.+\frac{n(n-1)(n-2)(n-3)}{2\cdot 4\cdots (2n-1)(2n-3)}x^{n-4}-\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{2n)!}{(2^{n}n!n!}\left[x^{n}-\frac{n(n-1)}{2(2n-1)}x^{n-2}\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left.+\frac{n(n-1)(n-2)(n-3)}{2\cdot 4\cdots (2n-1)(2n-3)}x^{n-4}-\cdots\right]
+\end{equation*}
+</div>
+<div class="para">putting,	<span class="process-math">\(n=0,1,2,3,\cdots\)</span>  etc., we get - <span class="process-math">\(P_{n}(x)=1\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{1}(x)=\frac{2!}{2\cdot 1!\cdot1!}[x] =x,
+\end{equation*}
+</div>
+<div class="para">other terms are vanished.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{2}(x)=\frac{4!}{2^{2}\cdot 2!\cdot 2!}[x^{2}-\frac{1}{3}] = \frac{3}{2}(x^{2}-\frac{1}{3}) = \frac{3x^{2}-1}{2},
+\end{equation*}
+</div>
+<div class="para">other terms are vanished.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_{3}(x)=\frac{6!}{2^{3}\cdot 3!\cdot 3!}[x^{3}-\frac{3}{2}\frac{2}{5}x] = \frac{5x^{3}-3x}{2},
+\end{equation*}
+</div>
+<div class="para">etc.</div>
 </div>
 <span class="incontext"><a href="subsec-Legnd_eq.html#p-576" class="internal">in-context</a></span>
 </body>

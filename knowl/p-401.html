@@ -12,7 +12,32 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Show that the contraction of the outer product of the tensors <span class="process-math">\(A^{p}\)</span> and <span class="process-math">\(B_{q}\)</span> is an invariant.</div>
+<div class="para logical">
+<div class="para">Let <span class="process-math">\(\phi = \phi(x^{j})\)</span> be a scalar field. The functional form of scalar field is same under coordinate transformations, hence</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trans_eqn5.html">
+\begin{equation*}
+\phi(x^{j}) =  \bar{\phi}(\bar{x}^{i}) = \phi(\bar{x}^{i})
+\end{equation*}
+</div>
+<div class="para">now under frame rotation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trans_eqn5.html">
+\begin{equation*}
+\frac{\partial\phi}{\partial x^{j}} =  \frac{\partial\phi}{\partial \bar{x}^{i}}\frac{\partial\bar{x}^{i}}{\partial x^{j}}	
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trans_eqn5.html">
+\begin{equation*}
+\frac{\partial\phi}{\partial x^{j}} =  \frac{\partial\phi}{\partial \bar{x}^{i}}\frac{\partial\bar{x}^{i}}{\partial x^{j}}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-trans_eqn5.html">
+\begin{equation}
+\quad A_{j} =  \frac{\partial\bar{x}^{i}}{\partial x^{j}}\bar{A_{i}}  \tag{3.3.5}
+\end{equation}
+</div>
+<div class="para">i.e., the <a href="" class="xref" data-knowl="./knowl/eqn-trans_eqn5.html" title="Equation 3.3.5">(3.3.5)</a> shows the transformation rule for covarient tensor. If we suppose, <span class="process-math">\(A^{j} = \frac{\partial\phi}{\partial x^{j}}\)</span>	and <span class="process-math">\(\bar{A^{i}} =  \frac{\partial\phi}{\partial \bar{x}^{i}}\)</span> then <span class="process-math">\(A^{j}=\frac{\partial\bar{x^{i}}}{\partial x^{j}}\bar{A^{i}}\)</span> which is not the transformation rule. Hence the gradient of a scalar field is not a contravarient vector.</div>
+</div>
 <span class="incontext"><a href="sec_third-examplesA.html#p-401" class="internal">in-context</a></span>
 </body>
 </html>

@@ -564,8 +564,8 @@ var ptx_lunr_docs = [
   "url": "subsec-lineint.html",
   "type": "Subsection",
   "number": "1.4.1",
-  "title": "the Line Integral",
-  "body": " the Line Integral       Let us consider a curve , as shown in and a vector function acting at a point P then the line integral of a vector function along that curve is defined as integral of the component of along the tangent to the curve . Therefore, the component of along a tangent at P = dot product of with a unit vector along . [ is a unit vector along and is a small element and is a small arc of curve at P.] from A to B along the curve If a force is acting on a particle along arc AB, then the line integral gives the total work done by the force as work done = . If be the velocity of a liquid, then the line integral is called the flow of a vector field along the curve or the circulation of around the curve . If , then, is called an irrotational vector. The integration around a closed curve is denoted by the symbol in place of .  "
+  "title": "The Line Integral",
+  "body": " The Line Integral       Let us consider a curve , as shown in and a vector function acting at a point P then the line integral of a vector function along that curve is defined as integral of the component of along the tangent to the curve . Therefore, the component of along a tangent at P = dot product of with a unit vector along . [ is a unit vector along and is a small element and is a small arc of curve at P.] from A to B along the curve If a force is acting on a particle along arc AB, then the line integral gives the total work done by the force as work done = . If be the velocity of a liquid, then the line integral is called the flow of a vector field along the curve or the circulation of around the curve . If , then, is called an irrotational vector. The integration around a closed curve is denoted by the symbol in place of .  "
 },
 {
   "id": "fig-fig15",
@@ -628,7 +628,7 @@ var ptx_lunr_docs = [
   "type": "Subsection",
   "number": "1.4.4",
   "title": "Gauss’s Divergence Theorem",
-  "body": " Gauss's Divergence Theorem   Gauss' divergence theorem The surface integral of the normal component of function over the boundary of a closed surface of any shape is equal to the volume integral of the divergence of taken throughout the enclosed volume V, i.e.,    From right - hand side of the above equation, we have - Since the theorem is valid for any shape. We chose parallelopiped of volume V enclosed by the surface S, as showh in the figure .       From eqn. let us first evaluate - That is, [value of along z axis is ]  But, (bottom surface ) and (top). Hence from eqn. , we get-   where surface integrals of the other sides are zero because is perpendicular to the surfaces . Similarly, we can show that and Adding eqns. , we get-    "
+  "body": " Gauss's Divergence Theorem   Gauss' divergence theorem The surface integral of the normal component of function over the boundary of a closed surface of any shape is equal to the volume integral of the divergence of taken throughout the enclosed volume V, i.e.,    From right - hand side of the above equation, we have - Since the theorem is valid for any shape. We chose parallelopiped of volume V enclosed by the surface S, as showh in the figure .       From eqn. let us first evaluate - That is, [value of along z axis is ]  But, (bottom surface ) and (top).  Hence from eqn. , we get-  where surface integrals of the other sides are zero because is perpendicular to the surfaces . Similarly, we can show that and Adding eqns. , we get-    "
 },
 {
   "id": "proof-3",
@@ -637,7 +637,7 @@ var ptx_lunr_docs = [
   "type": "Proof",
   "number": "1.4.4.1",
   "title": "",
-  "body": " From right - hand side of the above equation, we have - Since the theorem is valid for any shape. We chose parallelopiped of volume V enclosed by the surface S, as showh in the figure .       From eqn. let us first evaluate - That is, [value of along z axis is ]  But, (bottom surface ) and (top). Hence from eqn. , we get-   where surface integrals of the other sides are zero because is perpendicular to the surfaces . Similarly, we can show that and Adding eqns. , we get-   "
+  "body": " From right - hand side of the above equation, we have - Since the theorem is valid for any shape. We chose parallelopiped of volume V enclosed by the surface S, as showh in the figure .       From eqn. let us first evaluate - That is, [value of along z axis is ]  But, (bottom surface ) and (top).  Hence from eqn. , we get-  where surface integrals of the other sides are zero because is perpendicular to the surfaces . Similarly, we can show that and Adding eqns. , we get-   "
 },
 {
   "id": "subsec-stoke_thrm",
@@ -673,7 +673,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.5",
   "title": "Examples B",
-  "body": " Examples B   Vector Integration    Find the total work done by a force if it displaces a particle from (0,0) to (1,4) along a curve .    Along the given curve, as , and or,          Find , if a particle is traversing counter clockwise on the curve due to the influence of force Here is a circle  .    Suppose and . Then,  Parametric equations of the circle are from the given figure. and        Show that the flux, , where and is the surface of the cube bounded by the planes , , , , and , as shown in figure                     On putting these values in eqn. , we get -       Evaluate , where and is the part of plane , which is located in the first octant. [In first octant the value of coordinates are positive.]     The surface and its projection on the x-y plane are shown in figure. Now, Where,    and also, but from the equation of surface, ,   From eqn.   To integrate it, consider the relation and cover the whole region R, i.e., the region BOA where y varies from to , and x varies from to          Evaluate , where and is the sutface of cylinder included in the first octant between to as shown in figure.      But,  and also,          If , evaluate where is the region bounded by the surfaces , , , , and , .                   Evaluate , where is the closed region bounded by the planes , , and , and .        varies from to , varies from to , and varies from to .    On solving, we get-         Gauss's Divergence Theorem    The electric field of a certain space is given by Use Gauss's theorem to evaluate the charge enclosed in a cube of side length .    From divergence theorem, we have Here, , while and is each zero. Since, volume of a cube = .  But, from Gauss's law in electrostatics, we have - where is the charge within the surface which encloses the volume . Equating eqns. and , we get -        Use divergence theorem to evaluate where and is the surface of the sphere .    The divergence theorem is          Evaluate surface integral where , and S is the surface of the tetrahedron and is the unit normal in the outward direction to the closed surface S, as shown in the figure.     We have -            Stoke's Theorem    Use Stoke's theorem to evaluate where C is the circle , corresponding to the surface of sphere of unit radius, as shown in the figure.       From Stoke's theorem,  Putting the value of in eqn. , we get -           Apply Stoke's theorem to evaluate , where , S is the surface of the paraboloid and is the unit normal to S, as shown in figure below.       Now for circle, we have -         Verify Stoke's thereom for the vector field ver the portion of the plane cut off by the coordinate planes.    Consider the surface of boundary as shown by the arrows in the figure below.   But, Along AB, , , and   Along BC, , , and .  Along CA, , , and .  Hence, Also,    Now integrate this vector over the three surfaces , , and lying on the plane . Over the surface , , The surface integral over the surface ,  Over the surface , , The surface integral over the surface ,    Over the surface , , The surface integral over the surface ,  Therefore, total surface integral = Hence from eqns. and , Stoke's theorem is verified.     "
+  "body": " Examples B   Vector Integration    Find the total work done by a force if it displaces a particle from (0,0) to (1,4) along a curve .    Along the given curve, as , and or,          Find , if a particle is traversing counter clockwise on the curve due to the influence of force Here is a circle  .    Suppose and . Then,  Parametric equations of the circle are from the given figure. and        Show that the flux, , where and is the surface of the cube bounded by the planes , , , , and , as shown in figure                     On putting these values in eqn. , we get -       Evaluate , where and is the part of plane , which is located in the first octant. [In first octant the value of coordinates are positive.]     The surface and its projection on the x-y plane are shown in figure. Now, Where,    and also, but from the equation of surface, ,   From eqn.   To integrate it, consider the relation and cover the whole region R, i.e., the region BOA where y varies from to , and x varies from to          Evaluate , where and is the sutface of cylinder included in the first octant between to as shown in figure.      But,  and also,          If , evaluate where is the region bounded by the surfaces , , , , and , .                   Evaluate , where is the closed region bounded by the planes , , and , and .        varies from to , varies from to , and varies from to .    On solving, we get-         Gauss's Divergence Theorem    The electric field of a certain space is given by Use Gauss's theorem to evaluate the charge enclosed in a cube of side length .    From divergence theorem, we have Here, , while and is each zero. Since, volume of a cube = .  But, from Gauss's law in electrostatics, we have - where is the charge within the surface which encloses the volume . Equating eqns. and , we get -        Use divergence theorem to evaluate where and is the surface of the sphere .    The divergence theorem is         Evaluate surface integral where , and S is the surface of the tetrahedron and is the unit normal in the outward direction to the closed surface S, as shown in the figure.     We have -            Stoke's Theorem    Use Stoke's theorem to evaluate where C is the circle , corresponding to the surface of sphere of unit radius, as shown in the figure.       From Stoke's theorem,  Putting the value of in eqn. , we get -           Apply Stoke's theorem to evaluate , where , S is the surface of the paraboloid and is the unit normal to S, as shown in figure below.       Now for circle, we have -         Verify Stoke's thereom for the vector field ver the portion of the plane cut off by the coordinate planes.    Consider the surface of boundary as shown by the arrows in the figure below.   But, Along AB, , , and   Along BC, , , and .  Along CA, , , and .  Hence, Also,    Now integrate this vector over the three surfaces , , and lying on the plane . Over the surface , , The surface integral over the surface ,  Over the surface , , The surface integral over the surface ,    Over the surface , , The surface integral over the surface ,  Therefore, total surface integral = Hence from eqns. and , Stoke's theorem is verified.     "
 },
 {
   "id": "example-27",
@@ -754,7 +754,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.5.9",
   "title": "",
-  "body": "  Use divergence theorem to evaluate where and is the surface of the sphere .    The divergence theorem is       "
+  "body": "  Use divergence theorem to evaluate where and is the surface of the sphere .    The divergence theorem is      "
 },
 {
   "id": "example-36",
@@ -1171,9 +1171,9 @@ var ptx_lunr_docs = [
   "body": " Addition of Vectors    If then  (commutative law)   If then  (associative law)   There exists a unique vector 0 (zero or null vector) in such that . For any in . (Existance of a zero vector)   For each vector in , there exists a unique vector in such that . (Existance of additive inverse)     "
 },
 {
-  "id": "p-228",
+  "id": "p-229",
   "level": "2",
-  "url": "subsec-2add_vects.html#p-228",
+  "url": "subsec-2add_vects.html#p-229",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1207,9 +1207,9 @@ var ptx_lunr_docs = [
   "body": " Dimensionality of a Vector Space   A vector space is said to be an - dimensional if it contains linearly independent vectors. A vector space is called an infinite - dimensional if there exists an arbitrary large number of linearly independent vectors in the space. If an arbitrary vector in can be represented as a linear combination of vectors in and scalars , \\i.e. then is said to be a span of the vector space . A linearly independent set of vectors that spans a vector space is called a basis for . For example, the unit vectors and of a position vector are the basis for the three - dimensional vector space. The three mutually perpendicular vectors forms an orthogonal basis for a three - dimensional vector space. In other words, if the scalar product of two vectors is zero, the vectors are said to be an orthogonal to each other. The orthogonal bases orthogonal bases of unit magnitude such as and forms a normal orthogonal basis, called an orthonormal basis. A scalar has one component (magnitude only) and hence zero basis vector per component, A vector has 3 components (magnitude and one direction) in 3D and hence has 1 basis vector per component. A tensor of rank 2 (dyad) has components (magnitude and two directions) in 3D hence has 2 basis vectors per component. A tensor of rank 3 (triad) has components (magnitude and three directions) in 3D hence has 3 basis vectors per component.    Inner Product  The inner or scalar product of two vectors u and v is denoted by in vector space , which hold the following properties -  and (unless ). The length (or Norm), , of a vector is defined as . The inner product of two vectors equals zero, for and , then the vectors are said to form an orthogonal set. If the norm within an orthogonal set is unity, i.e. , then the set is called an orthonormal set.    Gram Schmidt's Orthogonalization  An orthogonal basis is the best basis for a vector space because the coefficients of which can easily be expressed a vector as a linear combination of basis vectors. However, we are not always given an orthogonal basis. Gram-Schmidt orthogonalization is a process used to transform a set of linearly independent vectors into a set of orthonormal vectors, which may not be orthogonal to each other. This process is named after Jørgen Pedersen Gram and Erhard Schmidt, who independently developed it in the late century. Let be a set of linearly independent vectors which are not necessarily orthogonal to each other. Now, It is required to obtain a set of orthogonal vectors from the original set of vectors by following the steps below.  In step (1) take , in step (2) let where is a constant to be determined from the condition that to be orthogonal to . That is, or, , and in step (3) let where and are constants to be determined from the conditions that is orthogonal to and . This gives - , since Therefore, we have -   Now, we have three mutually orthogonal vectors and . The same procedure can be continued to obtain other othogonal vectors. Finally, all the vectors can be normalized to obtain an orthonormal set , where .   "
 },
 {
-  "id": "p-235",
+  "id": "p-236",
   "level": "2",
-  "url": "subsec-2dimen_vect.html#p-235",
+  "url": "subsec-2dimen_vect.html#p-236",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -1729,9 +1729,9 @@ var ptx_lunr_docs = [
   "body": " Contravarient and Covarient Tensors   Covariance and contravariance describe how the quantitative description of physical entities change with a change of basis. A covariant tensor is one that transforms in the same way as the coordinate system itself. This means that the components of the tensor change in a particular way when the coordinates of the system are changed. A contravariant tensor, on the other hand, transforms in the opposite way to the coordinate system. This means that the components of the tensor change in a particular way when the coordinates of the system are changed. For a contravariant vector to be basis independent, the components of the vector must contra-vary (opposite manner) with a change of basis to compensate. That is, the components must vary with the inverse transformation to that of the change of basis. These componets of vectors are said to be contravariant. Examples of vectors with contravariant componets include the position of an object (displacement) relative to an observer, or any derivative of position with respect to time including velocity, acceleration, and jerk. For a covariant vector to be basis-independent, the components of the vector must co-vary (same manner) with change of basis to remain representing the same vector. That is, the componets must vary by the same transformation as the change of basis. The componets of these vectors are said to be covariant. Examples of covariant vectors apear when taking a gradiant of a function.  If a set of components of a physical quantity in a coordinate system are related to the set of components of the same quantity in another coordinate system by the transformation equation. then they are called components of a contravarient vector or contravarient tensor of rank one. Multiply eqn. by , we get - or, we can also say, by replacing with .  Thus eqn. is an alternative to eqn. . where Kronecker delta, A set of quantities is called the components of a covarient vector or covarient tensor of rank one if = invarient (a scalar) = . Or, by changing with and with . Or,  or, also, are covarient tensor of rank one.  If quantities in a coordinate system are related to other quantities in another coordinates by the transformation eqn.  , The are the components of a second rank contravarient tensor. Similarly, and the are the components of a second rank covarient tensor. Also, and the are the components of a second rank mixed tensor. Again, and are a components of fifth - rank mixed tensor.   Note: The contravarient tensor is represented by components in the directions of coordinate increase whereas a covarient tensor is represented by components in the directions orthogonal to constant coordinate surfaces. In case of a cartesian coordinate system, the coordinate direction concides with the direction orthogonal to the constant surface so that the direction between the covarient and contravarient tensors vanishes. Hence we can not distinguish between them in cartesian systems. The covariance or contravariance of the tensor components is not intrinsic property of the entity but this distinction is due to the way in which the entity is related to coordinate system to which it is referred. It is to be noted that in a cartesian system That is, both these partial derivatives are equal to the direction cosines between - and - axes. Hence there is no difference between contravariant and covariant transformations in cartesian coordinates. In other coordinate system this is not true in general, thus the difference in covariant and contravariant is observed.  The tensor whose components transform like coordinate differential are called contravariant tensors. In this expression where are the coordinate differentials. For example:  In cartesian coordinates , suppose the velocity components are , ;  In oblique coordinats the velocity components are , ; and  In polar coordinates , the velocity components are , .  Since all these relations express the velocity of same particle, they are related to each other in the following way: or, also, Now, and, or, The components transforming like this equation are known as the contravariant tensor components of a vector and are characterised by coordinates differential transformation or transforms like the coordinate differentials.  The tensor whose components transform like the partial derivatives of the coordinate are called covariant tensors. In the expression where, are partial derivatives of the coordinates. If expresses a velocity function, then the components of velocity in system are and . The transformations of these resolved parts are given as   and or, The components which transform like this equation are called the covariant tensor components of a vector because the transformation is characterised by the partial derivatives of the coordinates or transforms like the derivatives of a scalar.    Discussion   Axis Transormation             In coordinate transformation component of a tensor changes either by a contravariant manner or a covariant manner. In      also also,  In coordinate transformation, vectors remains the same but its components change. Suppose we have two types of cartesian coordinates where the basis vectors are related as and , then and . For example, consider a vector in unprimed system then in the primed system, meaning if basis vectors increase the components decrease. Such type of transformation is called the contravariant transformation. Displacement, velocity, acceleration, etc. obey such type of transformation. Now consider a gradiant of scalar function Gradiant of a scalar function is a vector which represents the magnitude of maximum rate of change of the function. In previous case for a vector if then it's component and hence the component of the gradiant Here as basis vector increses component also has to increase by the same fasion otherwise the maximum rate of sclar changes differently in different coordinate systems. Such system where component increases as basis vector increases is called a covariant vector.  The has shown and are parallel projection of a vector and and are perpendicular projection of the same vector . Hence where and are a contravariant vectors, and where and are covariant vectors.   "
 },
 {
-  "id": "p-383",
+  "id": "p-384",
   "level": "2",
-  "url": "subsec-cont_cov.html#p-383",
+  "url": "subsec-cont_cov.html#p-384",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2089,18 +2089,18 @@ var ptx_lunr_docs = [
   "body": " First Order Linear Differential Equation  The first order linear differential equation is obtained by putting in the standard form of linear equation , i.e., or, where and are functions of or constants. To find its solution, first consider the homogeneous equation by setting .  integrating, we get - where is an arbitrary constant of integration. or, where . Let,  Differentiate eqn. w.r.t. 'x', we get - or, or, or, Now multiplying eqn. by , we get - which by using eqn. , becomes Integrating, we get - where is an arbitrary constant. This is the required solution and the factor is known as integration factor (I.F.) . Therefore the solution of first order linear differential equation can be easily found by the formula Equation may be written as i.e. the general solution of differential equation consists of two parts. where and also .  Now differentiating with respect to 'x', we have or, or, which shows that is the solution of , again, differentiating w.r.t. 'x', we have - or,  which shows that is the solution of . Hence, the first part of the solution of differential equation is the solution of its homogeneous equation and is known as Complementry Function . Second part is free from any arbitrary constant and is known as Particular Integral .  Complete Solution = Complementry Function + Particular Integral . That is,   "
 },
 {
-  "id": "p-450",
+  "id": "p-451",
   "level": "2",
-  "url": "subsec-first_order-diff.html#p-450",
+  "url": "subsec-first_order-diff.html#p-451",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "integration factor (I.F.) "
 },
 {
-  "id": "p-451",
+  "id": "p-452",
   "level": "2",
-  "url": "subsec-first_order-diff.html#p-451",
+  "url": "subsec-first_order-diff.html#p-452",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2116,36 +2116,36 @@ var ptx_lunr_docs = [
   "body": " Second Order Linear Differential Equations   Putting in the standard form of linear differential equation gives the second order linear differential equation. or, where , and are functions of or constants.  The method for finding the solution of linear differential equations is depends on the nature of and . If and are constants then the differential equation is said to be second order linear differential equation with constant coefficients. But if and are functions of then the differential equation is said to be differential equation with variable coefficients.    Linear Equations with Constant Coefficients  The general form of linear differential equation of second order is where and are constants and is a function of or constant. In the operator form, where,     Let be the trial solution of of eqn. with m being root of the equation, then it satisfies the equation. or, from eqn. , or,  or, or, It is called an Auxiliary Equation (A.E.) . Which is quadratic in m (or D), roots of which can be appeared by three ways. Viz. real and unequal, real and equal, or a complex pair. Also it should be noted that if and are two linearly independent solution of the corresponding homogenous equation then . The condition for and to be linearly independent is This determinant is called Wornskian of and .   Case I. Roots are real and unequal: If and are the roots of an A.E. then a C.F. is given by The wronskian for and is since . The wronskian . Hence and are linearly independent.   Case II. Roots are real and equal: If (say), then C.F. is . why?  If then from case I, . Where C is only one constant in this solution. But the order of given equation is two the solution must contain two constants in order to satisfy the given equation. Hence we have to seek its solution by another way. Let's write equation in the form put then, or, or, Thus, or, which is an inhomogenous first order linear differential equation. whose integrating factor is given by Hence, the solution of this differential equation is given by equation      Case III. Roots are imaginary pair. If the roots are then the solution will be     where C and are arbitrary constants.    There are various methods to find the particular integral of a differential equation, here we discuss some of the easy methods.      General Method of Finding the Particular Integral of Any Function   or, or, or, which is a first order linear differential equation. Its solution is  Particular Integral can also be obtained by inspection method which will be discussed in examples given below. However, there may be developed a general method for solving the differential equation directly, called the successive integration method. Let the equation in the form If and are the roots of A.E., then eqn. can be written as put, so that or, Its solution is  from eqn. , we have or, or, where,     Linear Equations with Variable Coefficients  The linear equation of the form or, is called a linear differential equation with variable coefficient if and are function of only.  In fact, there is no general method to solve such differential equations. However, we discuss one artificial but elegent method to solve such type of equations. This method is known as Method of Variation of Parameters . Lagrange developed it. It provides the complete solution of a linear equation whose complementary function is known.  Let the equation is The C.F. of which is given as where and are two linearly independent solution of the correspnding homogenous eqn. i.e.,  clearly equation will not satisfy the given equation . As , so we should consider the constants and as unknown parameters which are the functions of , then be a complete solution of the given equation . Hence equation must satisfy the equation . Now, If we set, by assuming and to be the arbitrary constants for complementary part of the equation. Then, and Therefore, from given eqn. , we have - or, from eqns. and , we have the first two terms equal to zero. Solving eqns. and , we get - multiplying top equation by and bottom equation by we get-  and  where is known as the Wronskian for solutions and . Which does not equal to zero if and are two linearly independent solution of eqn. .  Integrating eqn. , we get - Substituting and in equation , we get -  Note: There are no specific method to solve the differential equation with variable coefficients but it can be solved by many method according to the type of eqution. If the equation containing decreasing power of x then put so that equation can be converted into variable coefficient to constant coefficient. Here are some rules which help us to find the complementary function of the given differential equation. When C.F. is not easily obtained we should use Power Series method to solve such equation.  Assume   be a known integral of C.F. if .   be a known integral of C.F. if .   be a known integral of C.F. if .   be a known integral of C.F. if .   be a known integral of C.F. if .  and put be the solution of corresponding homogeneous differential equation. Where is any parameter depends on .     "
 },
 {
-  "id": "p-455",
+  "id": "p-456",
   "level": "2",
-  "url": "subsec-second_order-diff.html#p-455",
+  "url": "subsec-second_order-diff.html#p-456",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Auxiliary Equation (A.E.) Wornskian "
 },
 {
-  "id": "p-459",
+  "id": "p-460",
   "level": "2",
-  "url": "subsec-second_order-diff.html#p-459",
+  "url": "subsec-second_order-diff.html#p-460",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Case III. Roots are imaginary pair. "
 },
 {
-  "id": "p-463",
+  "id": "p-464",
   "level": "2",
-  "url": "subsec-second_order-diff.html#p-463",
+  "url": "subsec-second_order-diff.html#p-464",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Method of Variation of Parameters "
 },
 {
-  "id": "p-465",
+  "id": "p-466",
   "level": "2",
-  "url": "subsec-second_order-diff.html#p-465",
+  "url": "subsec-second_order-diff.html#p-466",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2197,9 +2197,9 @@ var ptx_lunr_docs = [
   "body": "  Solve       or,   Let,  , and, . Therefore, is a P.I. of eqn. , becouse it satisfies the equation. It is a general solution of eqn. .   The solution of eqn. by successive integration method. The roots of A.E. are real and equal, i.e., . Hence, from eqn.  where, using . Hence,  and or,         "
 },
 {
-  "id": "p-477",
+  "id": "p-478",
   "level": "2",
-  "url": "sec_fourth-examplesA.html#p-477",
+  "url": "sec_fourth-examplesA.html#p-478",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2251,9 +2251,9 @@ var ptx_lunr_docs = [
   "body": " When is a Regular Singular Point of the Equation  In this case, the solution is and on substituting of and in the given differential equation we get the identity. The index will be determined by the quadratic equation obtained by equating the coefficient of lowest power of to zero. The quadratic equation in is called the Indicial equation . Thus, we will get two values of . The series solution of equation will depend upon the nature of the roots of the indicial equation.   Case I. When roots ( ) are distinct and not differing by an integer, then the complete solution is  Case II. When roots are equal ( ), then  Case III. When roots are distinct and differ by an integer, then there arise two possibilities  If some of the coefficients of y series become infinite at , then replace by . The complete solution is then [on taking , we obtain a solution which is a constant multiple of that obtained for .]  When the coefficient of y series does not become infinite for any , then the complete solution is     "
 },
 {
-  "id": "p-550",
+  "id": "p-551",
   "level": "2",
-  "url": "subsec-reg_sing.html#p-550",
+  "url": "subsec-reg_sing.html#p-551",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2341,18 +2341,18 @@ var ptx_lunr_docs = [
   "body": " We have           But,   and   Hence, replacing by these values to collect the coefficient of , we get -         Thus the function is defined as generating function of .  "
 },
 {
-  "id": "p-602",
+  "id": "p-603",
   "level": "2",
-  "url": "subsec-Legnd_eq.html#p-602",
+  "url": "subsec-Legnd_eq.html#p-603",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Alternative: "
 },
 {
-  "id": "p-604",
+  "id": "p-605",
   "level": "2",
-  "url": "subsec-Legnd_eq.html#p-604",
+  "url": "subsec-Legnd_eq.html#p-605",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4366,22 +4366,13 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-1120",
-  "level": "2",
-  "url": "subsec-sol_vs.html#p-1120",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Case I. "
-},
-{
   "id": "p-1121",
   "level": "2",
   "url": "subsec-sol_vs.html#p-1121",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Case II. "
+  "body": "Case I. "
 },
 {
   "id": "p-1122",
@@ -4390,12 +4381,21 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
+  "body": "Case II. "
+},
+{
+  "id": "p-1123",
+  "level": "2",
+  "url": "subsec-sol_vs.html#p-1123",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
   "body": "Case III. "
 },
 {
-  "id": "p-1128",
+  "id": "p-1129",
   "level": "2",
-  "url": "subsec-sol_vs.html#p-1128",
+  "url": "subsec-sol_vs.html#p-1129",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4429,9 +4429,9 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-1134",
+  "id": "p-1135",
   "level": "2",
-  "url": "subsec-2Dwaveeqn.html#p-1134",
+  "url": "subsec-2Dwaveeqn.html#p-1135",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4456,22 +4456,13 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-1138",
-  "level": "2",
-  "url": "subsec-2Dwave_sol.html#p-1138",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Case - I "
-},
-{
   "id": "p-1139",
   "level": "2",
   "url": "subsec-2Dwave_sol.html#p-1139",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
-  "body": "Case - II "
+  "body": "Case - I "
 },
 {
   "id": "p-1140",
@@ -4480,12 +4471,21 @@ var ptx_lunr_docs = [
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
+  "body": "Case - II "
+},
+{
+  "id": "p-1141",
+  "level": "2",
+  "url": "subsec-2Dwave_sol.html#p-1141",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
   "body": "Case - III "
 },
 {
-  "id": "p-1145",
+  "id": "p-1146",
   "level": "2",
-  "url": "subsec-2Dwave_sol.html#p-1145",
+  "url": "subsec-2Dwave_sol.html#p-1146",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4636,18 +4636,18 @@ var ptx_lunr_docs = [
   "body": " Three Dimensional Laplace's Equation   The Laplace equation arises in various physical problems, including electrostatics, heat conduction, fluid flow, and potential theory. Solving the 3D Laplace equation involves finding a function that satisfies the equation . This typically involves specifying appropriate boundary conditions or constraints on the function at the boundaries of the domain. The solutions to the Laplace equation are harmonic functions, which have many interesting mathematical properties.    In Rectangular Coordinates   rectangular coordinates The equation is Let be the solution of equation Then In equation all are independent to each other hence each may be seperately equal to some constant, i.e., or, and Thus, the general solution of equation is  where .  Alternative solution of equation is      In Cylindrical Coordinates   cylindrical coordinates We have, Let be the solution of eqn. . Hence, As variables are separated, we may take - or, and also, and Now put so that and therefore equation reduces to or, which is Bessel's equation and it's general solution is given as or, since be finite at , we have or, Hence,     In Spherical Coordinates    or,  Suppose, be its solution. Then,  considering eqn. , and  or, and As equation being the homogenous, put , hence equation reduces to where, . or, or, or,  again, if we put in equation , then since or, we have, Now, which is Legendre's associated differential equational and hence has the solution, Now as is the function of , then solution of equation is in the form The summing over all , the general solution of equation may be written as    Note 1. If , then equation reduces to Legendre's equation, also, Thus, so that  In case under specific boundary conditions, then     Note 2. If there is axial symmetry about z - axis, then depens only upon and so that in equation , If ,    "
 },
 {
-  "id": "p-1207",
+  "id": "p-1208",
   "level": "2",
-  "url": "subsec-3D_lapleq.html#p-1207",
+  "url": "subsec-3D_lapleq.html#p-1208",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Note 1. "
 },
 {
-  "id": "p-1208",
+  "id": "p-1209",
   "level": "2",
-  "url": "subsec-3D_lapleq.html#p-1208",
+  "url": "subsec-3D_lapleq.html#p-1209",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",

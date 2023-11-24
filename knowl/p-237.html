@@ -13,25 +13,37 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">An entity <span class="process-math">\(\hat{A}\)</span> which relates every vector <span class="process-math">\(\psi_{i}\)</span> in a vector space <span class="process-math">\(V_{n}\)</span> to another vector  <span class="process-math">\(\phi_{i}\)</span> in this space by the equation</div>
-<div class="displaymath process-math">
+<div class="para">The transformation in which the components of a vector in one coordinate system are linear functions of another coordinate system is called a linear transformation. In sych transformation origin of two coordinate systems do not displace. If <span class="process-math">\(x_{i}\)</span> are the components of a vector in one coordinate system and <span class="process-math">\(y_{i}\)</span> are those in another coordinate system then after a linear transformation, we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
+\begin{equation*}
+y_{i}=b_{i1}x_{1}+b_{i2}x_{2}+\cdots+b_{in}x_{n} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
 \begin{equation}
-\phi_{i}=\hat{A} \psi_{i}\tag{2.1.9}
+= \sum\limits_{k=1}^{n}b_{ik}x_{k},  \quad 1 \leq i\leq n.\tag{2.1.6}
 \end{equation}
 </div>
-<div class="para">is called an operator. The operator <span class="process-math">\(\hat{A}\)</span> is said to be linear if it possesses the following properties</div>
-<div class="displaymath process-math">
+<div class="para">Again, the same vector has components <span class="process-math">\(z_{i}\text{,}\)</span> which are linearly related to the components <span class="process-math">\(y_{i}\)</span> then after a linear transformation, we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
 \begin{equation}
-\hat{A} (\psi_{a}+\psi_{b}) = \hat{A} \psi_{a}+\hat{A} \psi_{b})\tag{2.1.10}
+z_{i}= \sum\limits_{k=1}^{n}a_{ik}y_{k},  \quad 1 \leq i\leq n.\tag{2.1.7}
 \end{equation}
 </div>
-<div class="displaymath process-math">
+<div class="para">Now it is possible to obtain a transformation directly from the components <span class="process-math">\(x_{i}\text{,}\)</span> from eqns. <a href="" class="xref" data-knowl="./knowl/eqn-2linetr1.html" title="Equation 2.1.6">(2.1.6)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-2linetr2.html" title="Equation 2.1.7">(2.1.7)</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
+\begin{equation*}
+z_{i}= \sum\limits_{k=1}^{n}a_{ik} \sum\limits_{j=1}^{n}b_{kj}x_{j} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2linetr1.html ./knowl/eqn-2linetr2.html">
 \begin{equation}
-\text{and}\quad \hat{A} (\lambda \psi) = \lambda\hat{A} \psi\tag{2.1.11}
+= \sum\limits_{j=1}^{n} \sum\limits_{k=1}^{n} a_{ik} b_{kj}x_{j} = \sum\limits_{j=1}^{n}c_{ij}x_{j}, \quad 1 \leq i\leq n.\tag{2.1.8}
 \end{equation}
 </div>
-<div class="para">where  <span class="process-math">\(\lambda\)</span> is a scalar (a real or complex number).</div>
+<div class="para">where,  <span class="process-math">\(c_{ij} = \sum\limits_{k=1}^{n}a_{ik}b_{kj}, \quad 1 \leq i, j\leq n.\)</span>
 </div>
-<span class="incontext"><a href="subsec-2lin_op.html#p-237" class="internal">in-context</a></span>
+</div>
+<span class="incontext"><a href="subsec-2lin_trans.html#p-237" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,60 +13,10 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We have</div>
+<div class="para">Show that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-L_{n}(x)=\frac{1}{n!}e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
-\end{equation*}
-</div>
-<div class="para">Therefore</div>
-<div class="displaymath process-math">
-\begin{equation*}
-L_{o}(x)=1, \hspace{1cm} L_{1}(x)=\frac{1}{1!}(1-x) =1-x.
-\end{equation*}
-</div>
-<div class="para">Replacing <span class="process-math">\(x\)</span> by <span class="process-math">\(2x\text{,}\)</span> we get -</div>
-<div class="displaymath process-math">
-\begin{equation*}
-L_{1}(2x)=1-2x =2(1-x)-1=2L_{1}(x)-2\frac{1}{1!}L_{o}(x) 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= 1!\sum\limits_{m=0}^{1}\frac{2^{1-m}(-1)^{m}}{m!(1-m)!}L_{1-m}(x)
-\end{equation*}
-</div>
-<div class="para">Also,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-L_{2}(2x)=\frac{1}{2!}(2-8x+4x^{2}) = 1-4x+2x^{2}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=4(1-2x+\frac{x^{2}}{2})-4(1-x)+1
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=2^{2}L_{2}(x)-2\frac{2!}{1!1!}L_{1}(x)+\frac{2!}{0!2!}L_{o}(x)
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=2!\sum\limits_{m=0}^{2}\frac{2^{2-m}(-1)^{m}}{m!(2-m)!}L_{2-m}(x)
-\end{equation*}
-</div>
-<div class="para">similarly,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-L_{3}(2x)=3!\sum\limits_{m=0}^{3}\frac{2^{3-m}(-1)^{m}}{m!(3-m)!}L_{3-m}(x)
-\end{equation*}
-</div>
-<div class="para">and in general,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-L_{n}(2x)=3!\sum\limits_{m=0}^{n}\frac{2^{n-m}(-1)^{m}}{m!(n-m)!}L_{n-m}(x) 
+L_{2n}(x) = n!\sum\limits_{m=0}^{n}\frac{2^{n-m}(-1)^{m}}{m!(n-m)!}L_{n-m}(x), \hspace{1cm} n \gt m.
 \end{equation*}
 </div>
 </div>

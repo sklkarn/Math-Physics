@@ -12,7 +12,36 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">To find the steady state temperature distribution in a thin plate bounded by the lines <span class="process-math">\(x=0,x=\lambda,y=0,y=\infty\text{,}\)</span> the sides <span class="process-math">\(x=0,x=\lambda\)</span>  are kept at temperature zero, the side <span class="process-math">\(y=0\)</span> is kept at temperature <span class="process-math">\(f(x)\)</span> and the edge <span class="process-math">\(y=\infty\)</span> at temperature zero. <div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/fig712.png" class="contained"></div>
+<div class="para logical">
+<div class="para">The solution of this problem is obtained as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u(x,y) = \sum\limits_{n=1}^{\infty}\left[C_{n}\cosh\frac{n\pi y}{a}+D_{n}\sinh\frac{n\pi y}{a}\right] \sin \frac{n\pi x}{a}    
+\end{equation*}
+</div>
+<div class="para">from condition (iii), we have -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x)= \sum\limits_{n=1}^{\infty}C_{n}\sin\frac{n\pi x}{a}\quad \text{so that }\quad  C_{n} =\frac{2}{a}\int\limits_{0}^{a}f(x) \sin \frac{n\pi x}{a}\,dx 
+\end{equation*}
+</div>
+<div class="para">and from condition (iv) -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+0=u_{y}(x,b) = \sum\limits_{n=1}^{\infty}\frac{n\pi}{a}\left(C_{n}\sinh\frac{n\pi b}{a} + D_{n}\cosh\frac{n\pi b}{a}\right)\sin\frac{n\pi x}{a} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\Rightarrow  D_{n} = -C_{n}\tanh\frac{n\pi b}{a}.
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+u(x,y) = \frac{2}{a}\sum\limits_{n=1}^{\infty}\left(\cosh\frac{n\pi y}{a}-\tanh\frac{n\pi y}{a}\sin\frac{n\pi y}{a}\right)\sin\frac{n\pi x}{a}\int\limits_{0}^{a}f(x) \sin \frac{n\pi x}{a}\,dx. 
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_seventh-examplesB.html#p-1221" class="internal">in-context</a></span>
 </body>

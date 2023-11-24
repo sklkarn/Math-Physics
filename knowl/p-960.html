@@ -13,34 +13,13 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
+<div class="para">Find the Fourier sine transform of the function</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}_{s}\{f(x)\}=\int\limits_{0}^{\infty}f(x) \sin sx\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{0}^{a}f(x) \sin sx\,dx + \int\limits_{a}^{\infty}f(x) \sin sx\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\int\limits_{0}^{a}f(x) \sin x\sin sx\,dx + 0 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{2}\int\limits_{0}^{a}\left[\cos (1-s)x-\cos(1+s)x\right]\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{2}\left[\frac{\sin (1-s)x}{1-s}-\frac{\sin (1+s)x}{1+s}\right]_{0}^{a} 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{2}\left[\frac{\sin (1-s)a}{1-s}-\frac{\sin (1+s)a}{1+s}\right].
+f(x) = \begin{cases}
+\sin x,    &amp; \text{when}  \quad   0 \lt x \lt a \\
+0,  &amp; \text{when}  \quad   x \gt a 
+\end{cases}.
 \end{equation*}
 </div>
 </div>
