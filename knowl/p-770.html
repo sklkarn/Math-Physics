@@ -13,35 +13,60 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
+<div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int\limits_{0}^{\infty}e^{-x}x^{m}L_{n}(x)\,dx= \int\limits_{0}^{\infty}x^{m}e^{-x}e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})\,dx 
+L_{n}(x)=\frac{1}{n!}e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
 \end{equation*}
 </div>
-<div class="para">Rodrigue’s formula for <span class="process-math">\(L_{n}(x)\)</span> is</div>
+<div class="para">Therefore</div>
 <div class="displaymath process-math">
 \begin{equation*}
-e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})  =\int\limits_{0}^{\infty}x^{m}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})\,dx
+L_{o}(x)=1, \hspace{1cm} L_{1}(x)=\frac{1}{1!}(1-x) =1-x.
 \end{equation*}
 </div>
+<div class="para">Replacing <span class="process-math">\(x\)</span> by <span class="process-math">\(2x\text{,}\)</span> we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\left.x^{m}\frac{d^{n-1}}{dx^{n-1}}(x^{n}e^{-x})\right\vert_{0}^{\infty}-\int\limits_{0}^{\infty}mx^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{n}e^{-x})\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=0+(-1)m\int\limits_{0}^{\infty}x^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{n}e^{-x})\,dx
+L_{1}(2x)=1-2x =2(1-x)-1=2L_{1}(x)-2\frac{1}{1!}L_{o}(x) 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=(-1)^{2}m(m-1)\int\limits_{0}^{\infty}x^{m-2}\frac{d^{n-2}}{dx^{n-2}}(x^{n}e^{-x})\,dx
+= 1!\sum\limits_{m=0}^{1}\frac{2^{1-m}(-1)^{m}}{m!(1-m)!}L_{1-m}(x)
+\end{equation*}
+</div>
+<div class="para">Also,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L_{2}(2x)=\frac{1}{2!}(2-8x+4x^{2}) = 1-4x+2x^{2}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=(-1)^{m}m!\int\limits_{0}^{\infty}\frac{d^{n-m}}{dx^{n-m}}(x^{n}e^{-x})\,dx =0. \quad if \quad  n \gt m.
+=4(1-2x+\frac{x^{2}}{2})-4(1-x)+1
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=2^{2}L_{2}(x)-2\frac{2!}{1!1!}L_{1}(x)+\frac{2!}{0!2!}L_{o}(x)
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=2!\sum\limits_{m=0}^{2}\frac{2^{2-m}(-1)^{m}}{m!(2-m)!}L_{2-m}(x)
+\end{equation*}
+</div>
+<div class="para">similarly,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L_{3}(2x)=3!\sum\limits_{m=0}^{3}\frac{2^{3-m}(-1)^{m}}{m!(3-m)!}L_{3-m}(x)
+\end{equation*}
+</div>
+<div class="para">and in general,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L_{n}(2x)=3!\sum\limits_{m=0}^{n}\frac{2^{n-m}(-1)^{m}}{m!(n-m)!}L_{n-m}(x) 
 \end{equation*}
 </div>
 </div>

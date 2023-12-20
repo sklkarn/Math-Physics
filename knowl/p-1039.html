@@ -15,20 +15,26 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}\{f(t)\} = \int\limits_{0}^{\infty}e^{-st} f(t)\,dt
+\mathscr{L}[f(t).u(t-a)]=\int\limits_{0}^{\infty}e^{-st}[f(t).u(t-a)]\,dt
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \int\limits_{0}^{T}e^{-st} f(t)\,dt+ \int\limits_{T}^{2T}e^{-st} f(t)\,dt+ \int\limits_{2T}^{3T}e^{-st} f(t)\,dt+\cdots
+=\int\limits_{0}^{a}e^{-st}[f(t).u(t-a)]\,dt+\int\limits_{a}^{\infty}e^{-st}[f(t).u(t-a)]\,dt
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\sum\limits_{n=0}^{\infty}\int\limits_{nT}^{(n+1)T}e^{-st} f(t)\,dt
+= 0+ \int\limits_{a}^{\infty}e^{-st}f(t).1\,dt
 \end{equation*}
 </div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \int\limits_{0}^{\infty}e^{-s(y+a)}f(y+a)\,dy= e^{-as}\int\limits_{0}^{\infty}e^{-sy}f(y+a)\,dy = e^{-as}F(s+a)
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-pf_LT.html#p-1039" class="internal">in-context</a></span>
+<div class="para">[put <span class="process-math">\(y+a = t\text{.}\)</span>]</div>
+</div>
+<span class="incontext"><a href="sec_sixth-diffLT.html#p-1039" class="internal">in-context</a></span>
 </body>
 </html>

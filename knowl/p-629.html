@@ -13,61 +13,49 @@
 <body class="ignore-math">
 <h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">Equating the coefficient of general term <span class="process-math">\(x^{m+k+2}\)</span> to zero, we get the recurrence relation for the coefficients as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-a_{k+2}[(m+k+2)^{2}-n^{2}]+a_{k}=0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="para">Let the solution of this equation is in the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
 \begin{equation}
-a_{k+2}=-\frac{a_{k}}{(m+k+2)^{2}-n^{2}}\tag{4.7.4}
+y=\sum\limits_{k=0}^{\infty}a_{k}x^{m+k}\tag{4.7.2}
 \end{equation}
 </div>
-<div class="para">for</div>
-<div class="displaymath process-math">
+<div class="para">so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
 \begin{equation*}
-m=+n, \quad a_{k+2}=-\frac{a_{k}}{(n+k+2)^{2}-n^{2}} 
+\frac{dy}{dx}=\sum a_{k}(m+k)x^{m+k-1}
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
 \begin{equation*}
-a_{2}=-\frac{a_{o}}{(n+2)^{2}-n^{2}}=-\frac{a_{o}}{4(n+1)};
+\frac{d^{2}y}{dx^{2}}=\sum a_{k}(m+k)(m+k-1)x^{m+k-2}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">substitutuing these values in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl1.html" title="Equation 4.7.1">(4.7.1)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
 \begin{equation*}
-a_{3}=-\frac{a_{1}}{(n+3)^{2}-n^{2}}=0 \quad [\because a_{1}=0]
+\sum a_{k}(m+k)(m+k-1)x^{m+k}+\sum a_{k}(m+k)x^{m+k}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
 \begin{equation*}
-\therefore \quad a_{5} =a_{7} =\cdots=0,
++\sum a_{k}x^{m+k+2}-n^{2}\sum a_{k}x^{m+k}=0
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
 \begin{equation*}
-a_{4}=-\frac{a_{2}}{(n+4)^{2}-n^{2}}  =+\frac{a_{o}}{4(n+1)8(n+2)}
+\sum a_{k}\left[(m+k)(m+k-1)+(m+k)-n^{2}\right]x^{m+k}+\sum a_{k}x^{m+k+2}=0
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{a_{o}}{4^{2}2!(n+1)(n+2)}
-\end{equation*}
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
+\begin{equation}
+\sum a_{k}\left[(m+k)^{2}-n^{2}\right]x^{m+k}+\sum a_{k}x^{m+k+2}=0\tag{4.7.3}
+\end{equation}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-a_{6}=-\frac{a_{4}}{(n+6)^{2}-n^{2}}=- \frac{a_{0}}{4^{2}2!(n+1)(n+2)(n+3)12} 
-\end{equation*}
+<div class="para">Equating the coefficient of lowest of power of <span class="process-math">\(x\text{.}\)</span> i.e., <span class="process-math">\(x^{m}\)</span> to zero, by putting <span class="process-math">\(k=0\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl3.html" title="Equation 4.7.3">(4.7.3)</a>, we get the indicial equation as <span class="process-math">\(a_{o}(m^{2}-n^{2})=0 \text{.}\)</span> Since, <span class="process-math">\(a_{o} \neq 0\text{,}\)</span> we have <span class="process-math">\(m=\pm n \text{.}\)</span>
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=-\frac{a_{0}}{4^{3}3!(n+1)(n+2)(n+3)} 
-\end{equation*}
-</div>
-<div class="para">and so on.</div>
 </div>
 <span class="incontext"><a href="sec_fourth-besslfn.html#p-629" class="internal">in-context</a></span>
 </body>

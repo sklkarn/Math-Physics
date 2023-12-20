@@ -11,17 +11,46 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Find the temperature distribution in the bar if bar and its ends are perfactly insulated, i.e.,</div>
-<div class="displaymath process-math">
+<div class="para">
+<dfn class="terminology">Note 1.</dfn> If <span class="process-math">\(\lambda=0\text{,}\)</span> then equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_lalpsph10.html" title="Equation 7.3.113">(7.3.113)</a> reduces to Legendre’s equation,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
 \begin{equation*}
-\left.\frac{\partial u}{\partial x}\right\vert_{(0,t)} =0= \left.\frac{\partial u}{\partial x}\right\vert_{(\lambda,t)}
+\Theta = P_{n}(\mu)=P_{n}(\cos\theta)
 \end{equation*}
 </div>
-<div class="para">and initial temperature is <span class="process-math">\(u(x,0)=f(x)\text{.}\)</span>
+<div class="para">also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
+\begin{equation*}
+\Theta = Q_{n}(\mu)=Q_{n}(\cos\theta).
+\end{equation*}
+</div>
+<div class="para">Thus,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
+\begin{equation*}
+\Theta = C_{n}P_{n}(\mu)+D_{n}Q_{n}(\mu) 
+\end{equation*}
+</div>
+<div class="para">so that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
+\begin{equation*}
+u(r,\theta,\phi) = \sum\limits_{n=0}^{\infty}\left(A_{n}r^{n}+\frac{B_{n}}{r^{n+1}}\right)\{C_{n}P_{n}(\cos\theta) 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
+\begin{equation}
++D_{n}Q_{n}(\cos\theta)\} e^{\pm i\lambda\phi}\tag{7.3.116}
+\end{equation}
+</div>
+<div class="para">In case <span class="process-math">\(D_{n}=0\)</span> under specific boundary conditions, then <span class="process-math">\(\Theta =  C_{n}P_{n}(\cos\theta)\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_lalpsph10.html">
+\begin{equation}
+\therefore u= \sum\limits_{n=0}^{\infty}\left(A_{n}r^{n} +\frac{B_{n}}{r^{n+1}}\right)C_{n}P_{n}(\cos\theta) e^{\pm i\lambda\phi}\tag{7.3.117}
+\end{equation}
 </div>
 </div>
-<span class="incontext"><a href="sec_seventh-examplesB.html#p-1210" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-3D_lapleq.html#p-1210" class="internal">in-context</a></span>
 </body>
 </html>

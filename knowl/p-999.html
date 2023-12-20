@@ -15,17 +15,17 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[\sin (\omega t + \theta)] = \mathscr{L}[\sin \omega t \cos \theta +\cos \omega t \sin \theta]
+\mathscr{L}[\cos at \sinh at] = \mathscr{L}\left[\cos at\{\frac{e^{at}-e^{-at}}{2}\}\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \cos \theta \mathscr{L}[\sin \omega t] +\sin \theta \mathscr{L}[\cos \omega t] 
+=\frac{1}{2}[\mathscr{L}(\cos at e^{at})-\mathscr{L}(\cos at e^{-at})]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \cos \theta \left[\frac{\omega}{s^{2}+\omega ^{2}}\right] +  \sin \theta \left[\frac{s}{s^{2}+\omega ^{2}}\right].
+= \frac{1}{2}\left[\frac{s-a}{(s-a)^{2}+a^{2}}-\frac{s+a}{(s+a)^{2}+a^{2}}\right]
 \end{equation*}
 </div>
 </div>

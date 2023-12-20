@@ -13,17 +13,23 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
+<div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-F_{s}\{f\left(\frac{x}{a}\right)\}= \int\limits_{0}^{\infty}f\left(\frac{x}{a}\right)\sin sx \,dx = \int\limits_{0}^{\infty}f(t) \sin (sat)a\,dt
+\mathscr{F}\{f(x)\} =F(s) =  \int\limits_{-\infty}^{\infty} e^{-isx}f(x) \,dx 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{0}^{\infty}af(t) \sin (sat)\,dt = aF_{s}(as)
+\therefore  \mathscr{F}\{f(ax)\}=	\int\limits_{-\infty}^{\infty} e^{-isx}f(ax) \,dx = \int\limits_{-\infty}^{\infty} e^{-ist/a}f(t) \,dt/a 
 \end{equation*}
 </div>
-<div class="para">put <span class="process-math">\(\frac{x}{a}=t\)</span>]</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{a}\int\limits_{-\infty}^{\infty} e^{(-is/a)t}f(t) \,dt = \frac{1}{a}F\left(\frac{s}{a}\right) 
+\end{equation*}
+</div>
+<div class="para">[put <span class="process-math">\(ax=t\)</span>]</div>
 </div>
 <span class="incontext"><a href="subsec-Ftrans_prop.html#p-928" class="internal">in-context</a></span>
 </body>

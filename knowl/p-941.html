@@ -13,36 +13,36 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">we have</div>
+<div class="para">Fourier transform of <span class="process-math">\(f(x)\)</span> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}\{f(x)\}=F(s)=\int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx
+\mathscr{F}\{f(x)\} =  F(s) = \int\limits_{0}^{\infty}f(x)e^{-ikx} \, dx
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \int\limits_{-\infty}^{a}f(x) e^{-isx}\,dx + \int\limits_{-a}^{a}f(x) e^{-isx}\,dx + \int\limits_{a}^{\infty}f(x) e^{-isx}\,dx
+=\int\limits_{-\infty}^{-a}x e^{-isx} \, dx+ \int\limits_{-a}^{a}x e^{-isx} \, dx +\int\limits_{a}^{\infty}0. e^{-isx} \, dx
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{\infty}^{a}f(-t) e^{+ist}\,(-dt)+\int\limits_{-a}^{a}1. e^{-isx}\,(dx)+ \int\limits_{a}^{\infty}0. e^{-isx}\,dx  
+=\int\limits_{\infty}^{a}f(-t)e^{+ist} \,(-dt)+ \left[\frac{x.e^{-isx}}{-is}+\frac{e^{-isx}.1}{s^{2}}\right]_{-a}^{a}+0
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{a}^{\infty}f(-t) e^{+ist}\,(dt)+\left[\frac{e^{-isx}}{-is}\right]_{a}^{a}+0
+=\int\limits_{a}^{\infty}0.e^{+ist} \,(dt)+ \frac{a}{is}\left(e^{-isa}+e^{isa}\right)+\frac{1}{s^{2}}\left(e^{-isa}-e^{isa}\right)
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \int\limits_{a}^{\infty}0. e^{+ist}\,(dt)+\left[\frac{e^{isa}-e^{-isa}}{is}\right]+0 
+=0+ \frac{ia}{s}.2\cos sa + \frac{1}{s^{2}}.2\sin sa
 \end{equation*}
 </div>
 <div class="displaymath process-math">
-\begin{equation}
-= \frac{2}{s}\sin sa\tag{6.2.1}
-\end{equation}
+\begin{equation*}
+=\frac{2i}{s^{2}}(sa\cos sa- \sin sa)
+\end{equation*}
 </div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesA.html#p-941" class="internal">in-context</a></span>

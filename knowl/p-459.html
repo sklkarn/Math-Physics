@@ -13,66 +13,23 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">If <span class="process-math">\(m_{1} = m_{2} =m \)</span> then from case I, <span class="process-math">\(y=(C_{1}+C_{2})e^{mx} =Ce^{mx}\text{.}\)</span> Where C is only one constant in this solution. But the order of given equation is two the solution must contain two constants in order to satisfy the given equation. Hence we have to seek its solution by another way. Let’s write equation <a href="" class="xref" data-knowl="./knowl/eqn-diffsol14.html" title="Equation 4.1.14">(4.1.14)</a> in the form</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="para">
+<em class="alert">Case I. Roots are real and unequal:</em> If <span class="process-math">\(m_{1}\)</span> and <span class="process-math">\(m_{2}\)</span> are the roots of an A.E. then a C.F. is given by</div>
+<div class="displaymath process-math">
 \begin{equation*}
-(D-m)(D-m)y=0
+y=C_{1}e^{m_{1}x}+C_{2}e^{m_{2}x} = C_{1} y_{1}+C_{2} y_{2}.
 \end{equation*}
 </div>
-<div class="para">put</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
+<div class="para">The wronskian for <span class="process-math">\(y_{1}\)</span> and <span class="process-math">\(y_{2}\)</span> is</div>
+<div class="displaymath process-math">
 \begin{equation*}
-(D-m)y=z 
+\begin{vmatrix} 
+C_{1}e^{m_{1}x} &amp; C_{2}e^{m_{2}x}\\ 
+m_{1}C_{1}e^{m_{1}x} &amp; m_{2}C_{2}e^{m_{2}x} 
+\end{vmatrix} 
 \end{equation*}
 </div>
-<div class="para">then,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-(D-m)z=0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-Dz-mz=0
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-\frac{\,dz}{\,dx}-mz=0 \quad\Rightarrow z=Ae^{mx}
-\end{equation*}
-</div>
-<div class="para">Thus,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-(D-m)y=Ae^{mx}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-\frac{\,dy}{\,dx}-my=Ae^{mx}.
-\end{equation*}
-</div>
-<div class="para">which is an inhomogenous first order linear differential equation. whose integrating factor is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-I.F. = e^{\int P\,dx}=e^{-mx}
-\end{equation*}
-</div>
-<div class="para">Hence, the solution of this differential equation is given by equation <a href="" class="xref" data-knowl="./knowl/eqn-diffsol11.html" title="Equation 4.1.11">(4.1.11)</a>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-ye^{-mx} = \int Ae^{mx}\cdot e^{-mx}\,dx+B = \int A\,dx+B=Ax+B 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-diffsol11.html">
-\begin{equation*}
-\therefore  \quad y=(Ax+B)e^{mx}.
-\end{equation*}
-</div>
+<div class="para">since <span class="process-math">\(m_{1}  \neq m_{2}\text{.}\)</span>  The wronskian <span class="process-math">\(\neq 0\text{.}\)</span>  Hence <span class="process-math">\(y_{1}\)</span> and <span class="process-math">\(y_{2}\)</span> are linearly independent.</div>
 </div>
 <span class="incontext"><a href="subsec-second_order-diff.html#p-459" class="internal">in-context</a></span>
 </body>

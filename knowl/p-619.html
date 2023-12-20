@@ -13,60 +13,54 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We know that</div>
-<div class="displaymath process-math">
+<div class="para">Let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
+\begin{equation}
+4x^{3}+6x^{2}+7x+2\equiv aP_{3}(x)+bP_{2}(x)+cP_{1}(x)+dP_{0}(x) \tag{4.6.1}
+\end{equation}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-P_{n}(x)=\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r};
+=a\left[\frac{5}{2}x^{3}-\frac{3x}{2}\right]+b\left[\frac{3}{2}x^{2}-\frac{1}{2}\right]+c(x)+d(1)
 \end{equation*}
 </div>
-<div class="para">where,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-N= \begin{cases} 
-\frac{n}{2},\quad \text{for n even}\\ 
-=\frac{n-1}{2},\quad \text{for n odd.} 
-\end{cases}
+=\frac{5ax^{3}}{2}-\frac{3ax}{2}+\frac{3bx^{2}}{2}-\frac{b}{2}+cx+d
 \end{equation*}
 </div>
-<div class="para">Thus</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-P_{n}(-x)=\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}(-1)^{n-2r}x^{n-2r}	
+=\frac{5ax^{3}}{2}+\frac{3bx^{2}}{2}+\left(-\frac{3a}{2}+c\right)x-\frac{b}{2}+d
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">Equating the coefficients of like powers of <span class="process-math">\(x\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-=(-1)^{n}\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r} =(-1)^{n}  P_{n}(x)
+\frac{5a}{2}=4 \quad \Rightarrow a =\frac{8}{5};
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-\therefore \quad P_{n}(-x)=(-1)^{n}P_{n}(x)
+\frac{3b}{2}=6 \quad \Rightarrow b =4
 \end{equation*}
 </div>
-<div class="para">Now,</div>
-<ol class="decimal">
-<li><div class="para">if <span class="process-math">\(n=2m\text{,}\)</span> we have<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-P_{2m}(-x)=(-1)^{2m}P_{2m}(x)
-\end{equation*}
-</div>or,<div class="displaymath process-math">
-\begin{equation*}
-P_{2m}(-x)= P_{2m}(x) 
+\frac{-3a}{2}+c=7 \quad \Rightarrow -\frac{3}{2}\cdot\frac{8}{5}+c =7 \quad \Rightarrow c=\frac{47}{5}
 \end{equation*}
 </div>
-</div></li>
-<li><div class="para">if <span class="process-math">\(n=2m+1\text{,}\)</span> we have<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
 \begin{equation*}
-P_{2m+1}(-x)=(-1)^{2m+1}P_{2m+1}(x)
-\end{equation*}
-</div>or,<div class="displaymath process-math">
-\begin{equation*}
-P_{2m+1}(-x)= - P_{2m+1}(x) 
+\frac{-b}{2}+d=2 \quad \Rightarrow -\frac{4}{2}+d=2 \quad \Rightarrow d=4.
 \end{equation*}
 </div>
-</div></li>
-</ol>
+<div class="para">Putting these values in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-legneq1.html" title="Equation 4.6.1">(4.6.1)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legneq1.html">
+\begin{equation*}
+\frac{8}{5}P_{3}(x)+4P_{2}(x)+\frac{47}{5}P_{1}(x)+4P_{0}(x) 
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_fourth-examplesC.html#p-619" class="internal">in-context</a></span>
 </body>

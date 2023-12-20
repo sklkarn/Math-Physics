@@ -13,35 +13,25 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">The motion of string is harmonic because the damping motion of the string is neglected by assuming the small displacement of string hence there are number of solutions obtained for equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs1.html" title="Equation 7.1.6">(7.1.6)</a>. Therefore the desired solution is given by summing the equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs12.html" title="Equation 7.1.17">(7.1.17)</a> for <span class="process-math">\(n=0\)</span> to <span class="process-math">\(\infty\text{,}\)</span> i.e.,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs12.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
+<div class="para">Hence equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs9.html" title="Equation 7.1.14">(7.1.14)</a> becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs9.html ./knowl/eqn-sol_vs7.html">
 \begin{equation}
-y(x,t) = \sum\limits_{n=1}^{\infty} 	\left[b_{n}\cos  \frac{n\pi vt}{l}+d_{n}\sin \frac{n\pi vt}{l}\right]\sin \frac{n\pi x}{l}\tag{7.1.20}
+y(x,t) = c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt)\tag{7.1.15}
 \end{equation}
 </div>
-<div class="para">Now, the constants <span class="process-math">\(b_{n}\)</span> and <span class="process-math">\(d_{n}\)</span> are determined by multiplying equations <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs13.html" title="Equation 7.1.18">(7.1.18)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs14.html" title="Equation 7.1.19">(7.1.19)</a> on both sides by <span class="process-math">\(\sin \frac{n\pi x}{l}\)</span> and then integrating from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=l\text{,}\)</span> from equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs13.html" title="Equation 7.1.18">(7.1.18)</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs12.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs9.html ./knowl/eqn-sol_vs7.html">
 \begin{equation*}
-\int\limits_{0}^{l}f(x)\sin \frac{n\pi x}{l}\,dx = \int\limits_{0}^{l}b_{n}\sin^{2} \frac{n\pi x}{l}\,dx 
+0= c_{2}\sin kl(c_{3}\cos kvt+c_{4}\sin kvt)
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs12.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
-\begin{equation*}
-= \frac{b_{n}}{2}\int\limits_{0}^{l}\left(1-\cos \frac{2n\pi x}{l}\right)\,dx = \frac{b_{n}}{2}.l  
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs12.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
+<div class="para">from equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs7.html" title="Equation 7.1.12">(7.1.12)</a> <span class="process-math">\(y(x,t) = 0 \)</span> at <span class="process-math">\(x=l\)</span> or, <span class="process-math">\(\sin kl = 0 = \sin n\pi\)</span> <span class="process-math">\(\because \quad c_{2}\neq 0.\text{.}\)</span> or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs9.html ./knowl/eqn-sol_vs7.html">
 \begin{equation}
-\therefore \quad  b_{n}=\frac{2}{l}\int\limits_{0}^{l}f(x)\sin \frac{n\pi x}{l}\,dx\tag{7.1.21}
+kl=n\pi \qquad \therefore  \quad k=\frac{n\pi}{l}\tag{7.1.16}
 \end{equation}
 </div>
-<div class="para">from equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs14.html" title="Equation 7.1.19">(7.1.19)</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-sol_vs1.html ./knowl/eqn-sol_vs12.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs13.html ./knowl/eqn-sol_vs14.html ./knowl/eqn-sol_vs15.html ./knowl/eqn-sol_vs1.html">
-\begin{equation}
-\frac{n\pi v}{l} d_{n}=\frac{2}{l}\int\limits_{0}^{l}f'(x)\sin \frac{n\pi x}{l}\,dx\tag{7.1.22}
-\end{equation}
-</div>
-<div class="para">By substituting the value of <span class="process-math">\(b_{n}\)</span>  and <span class="process-math">\(d_{n}\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs15.html" title="Equation 7.1.20">(7.1.20)</a>, we get the complete solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-sol_vs1.html" title="Equation 7.1.6">(7.1.6)</a>.</div>
+<div class="para">where <span class="process-math">\(n=1,2,3,\cdots\)</span>  (<span class="process-math">\(n \neq 0,\)</span> otherwise <span class="process-math">\(k=0\text{,}\)</span>the case I.)</div>
 </div>
 <span class="incontext"><a href="subsec-sol_vs.html#p-1128" class="internal">in-context</a></span>
 </body>

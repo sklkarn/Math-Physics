@@ -616,10 +616,10 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="subsection" id="subsec-laguer_pol"><h2 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">4.11.1</span> <span class="title">Laguerre’s Polynomial</span>
 </h2>
-<section class="introduction" id="introduction-34"><section class="paragraphs" id="paragraphs-29"><h3 class="heading"><span class="title">Python Code:.</span></h3> <div class="para" id="p-733">import numpy as np</div> <div class="para" id="p-734">from scipy.special import genlaguerre</div> <div class="para" id="p-735">from scipy.special import laguerre</div> <div class="para" id="p-736">import matplotlib.pyplot as plt</div> <div class="para" id="p-737">x = np.arange(-1.0, 5.0, 0.01)</div> <div class="para" id="p-738">fig, ax = plt.subplots()</div> <div class="para" id="p-739">ax.set_ylim(-5.0, 5.0)</div> <div class="para" id="p-740">ax.set_title(r’Laguerre polynomials $L_n$’)</div> <div class="para" id="p-741">for n in np.arange(0, 5):</div> <div class="para" id="p-742">ax.plot(x, laguerre(n)(x), label=rf’$L_{n}(x)$’)</div> <div class="para" id="p-743">plt.legend(loc=’best’)</div> <div class="para" id="p-744">plt.xlabel("x")</div> <div class="para" id="p-745">plt.ylabel(r’$L_n(x)$’)</div> <div class="para" id="p-746">plt.legend(loc=’lower right’)</div> <div class="para" id="p-747">plt.show()</div></section></section><section class="subsubsection" id="subsubsec-laguer_genfn"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-34"><section class="paragraphs" id="paragraphs-29"><h3 class="heading"><span class="title">Python Code:.</span></h3> <div class="para" id="p-735">import numpy as np</div> <div class="para" id="p-736">from scipy.special import genlaguerre</div> <div class="para" id="p-737">from scipy.special import laguerre</div> <div class="para" id="p-738">import matplotlib.pyplot as plt</div> <div class="para" id="p-739">x = np.arange(-1.0, 5.0, 0.01)</div> <div class="para" id="p-740">fig, ax = plt.subplots()</div> <div class="para" id="p-741">ax.set_ylim(-5.0, 5.0)</div> <div class="para" id="p-742">ax.set_title(r’Laguerre polynomials $L_n$’)</div> <div class="para" id="p-743">for n in np.arange(0, 5):</div> <div class="para" id="p-744">ax.plot(x, laguerre(n)(x), label=rf’$L_{n}(x)$’)</div> <div class="para" id="p-745">plt.legend(loc=’best’)</div> <div class="para" id="p-746">plt.xlabel("x")</div> <div class="para" id="p-747">plt.ylabel(r’$L_n(x)$’)</div> <div class="para" id="p-748">plt.legend(loc=’lower right’)</div> <div class="para" id="p-749">plt.show()</div></section></section><section class="subsubsection" id="subsubsec-laguer_genfn"><h3 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">4.11.1.1</span> <span class="title">Generating Function for <span class="process-math">\(L_{n}(x)\)</span></span>
 </h3>
-<div class="para logical" id="p-748">
+<div class="para logical" id="p-750">
 <div class="para"> The generating function for Laguerre’s polynomial is defined as</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -627,7 +627,7 @@ f(x,t)=\frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^
 \end{equation*}
 </div>
 </div>
-<article class="hiddenproof" id="proof-26"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-26"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-26"><article class="hiddenproof"><div class="para logical" id="p-749">
+<article class="hiddenproof" id="proof-26"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-26"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-26"><article class="hiddenproof"><div class="para logical" id="p-751">
 <div class="para">We have</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
 \begin{equation*}
@@ -687,12 +687,12 @@ e^{-xt/(1-t)}=1-\frac{xt}{1-t}+\frac{1}{2!}\left(\frac{xt}{1-t}\right)^{2}+\cdot
 </div></article></div></section><section class="subsubsection" id="subsubsec-laguer_rodr"><h3 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">4.11.1.2</span> <span class="title">Rodrigue’s Differential Formula for <span class="process-math">\(L_{n}(x)\)</span></span>
 </h3>
-<div class="para logical" id="p-750"><div class="displaymath process-math">
+<div class="para logical" id="p-752"><div class="displaymath process-math">
 \begin{equation*}
 L_{n}(x)=e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x}).
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-27"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-27"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-27"><article class="hiddenproof"><div class="para logical" id="p-751">
+<article class="hiddenproof" id="proof-27"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-27"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-27"><article class="hiddenproof"><div class="para logical" id="p-753">
 <div class="para">We have the generating function for <span class="process-math">\(L_{n}(x)\)</span> is</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
 \begin{equation*}
@@ -759,12 +759,12 @@ L_{n}(x)= e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
 </h3>
 <ol class="decimal">
 <li id="li-140">
-<div class="para logical" id="p-752"><div class="displaymath process-math">
+<div class="para logical" id="p-754"><div class="displaymath process-math">
 \begin{equation*}
 (1+2n-x)L_{n}=n^{2}L_{n-1}+L_{n+1}
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-28"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-28"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-28"><article class="hiddenproof"><div class="para logical" id="p-753">
+<article class="hiddenproof" id="proof-28"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-28"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-28"><article class="hiddenproof"><div class="para logical" id="p-755">
 <div class="para">We have the generating function</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html" id="eqn-laguer_recr1">
 \begin{equation}
@@ -815,12 +815,12 @@ L_{n}(x)= e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
 </div></article></div>
 </li>
 <li id="li-141">
-<div class="para logical" id="p-754"><div class="displaymath process-math">
+<div class="para logical" id="p-756"><div class="displaymath process-math">
 \begin{equation*}
 L'_{n}=n[L'_{n-1}-L_{n+1}
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-29"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-29"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-29"><article class="hiddenproof"><div class="para logical" id="p-755">
+<article class="hiddenproof" id="proof-29"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-29"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-29"><article class="hiddenproof"><div class="para logical" id="p-757">
 <div class="para">Differentiating above equation <a href="" class="xref" data-knowl="./knowl/eqn-laguer_recr1.html" title="Equation 4.11.12">(4.11.12)</a> w. r. to ’x’, we get -</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr1.html">
 \begin{equation*}
@@ -859,12 +859,12 @@ L'_{n}=nL'_{n-1}-nL_{n-1}
 </div></article></div>
 </li>
 <li id="li-142">
-<div class="para logical" id="p-756"><div class="displaymath process-math">
+<div class="para logical" id="p-758"><div class="displaymath process-math">
 \begin{equation*}
 xL'_{n}=n[L_{n}-n^{2}L_{n-1}
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-30"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-30"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-30"><article class="hiddenproof"><div class="para logical" id="p-757">
+<article class="hiddenproof" id="proof-30"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-30"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-30"><article class="hiddenproof"><div class="para logical" id="p-759">
 <div class="para">Differentiating the recurrence relation (1) w. r. to ’x’, we get -</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_recr3.html ./knowl/eqn-laguer_recr4.html ./knowl/eqn-laguer_recr2.html" id="eqn-laguer_recr2">
 \begin{equation}
@@ -929,7 +929,7 @@ L'_{n-1}=L_{n-1}+\frac{1}{n}L'_{n}\tag{4.11.15}
 </ol></section><section class="subsubsection" id="subsubsec-laguer-orth"><h3 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber">4.11.1.4</span> <span class="title">Orthogonal Property of Laguerre Polynomials</span>
 </h3>
-<div class="para logical" id="p-758"><div class="displaymath process-math">
+<div class="para logical" id="p-760"><div class="displaymath process-math">
 \begin{equation*}
 \int\limits_{0}^{\infty}e^{-x}\frac{L_{m}(x)}{m!}\frac{L_{n}(x)}{n!}\,dx = \delta_{m,n} 
 =\begin{cases}
@@ -938,7 +938,7 @@ L'_{n-1}=L_{n-1}+\frac{1}{n}L'_{n}\tag{4.11.15}
 \end{cases}
 \end{equation*}
 </div></div>
-<article class="hiddenproof" id="proof-31"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-31"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-31"><article class="hiddenproof"><div class="para logical" id="p-759">
+<article class="hiddenproof" id="proof-31"><a href="" data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-31"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-31"><article class="hiddenproof"><div class="para logical" id="p-761">
 <div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}

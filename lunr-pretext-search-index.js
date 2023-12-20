@@ -1465,7 +1465,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.5",
   "title": "Eigen Value Problem",
-  "body": " Eigen Value Problem   When an operator acts on a vector then the resulting vector is different from . However there may exist certain non-zero vectors for which is just multiplied by a constant . i.e., is known as an eigen value problem. Now, or, where is a unit matrix, is an eigen vector or eigen function of an operator and the constant is an eigen value. when is represented by a square matrix, then the eigen values of a matrix are determined by an eqn. is called a secular or a characteristic equation.  Let us consider an example where a matrix, acts on a vector then the resulting vector would be In this case the vector is transformed into a new vector . The vector may gets elongated or shortened or rotated in the transformation process. For a given square matrix, there always exits special vector\/s which retain\/s their original direction, such vectors are called eigen vectors. The vector which scaled but will not change its direction is called an eigen vector and its scaled factor is known as eigen value. An eigenvector of a square matrix A is a non-zero vector X that, when multiplied by A, results in a scalar multiple of itself. That is, if , where is a scalar, then X is an eigenvector of A associated with the eigenvalue . For example, and then, Hence the vector remains the same with scalar multiplication 3. This scalar value is called eigen value, of the vector .      Eigenvectors help understand linear transformations easily. There are directions along which a linear transformation acts simply by stretching\/compressing and\/or flipping ; eigenvalues give the factors by which this compression occurs. Consider a matrix undergoing a physical transformation (e.g rotation). When this matrix is used to transform a given vector the result is . Now ask a question: Are there any vectors which does not change their direction under this transformation, but allow the vector magnitude to vary by scalar ? Such a question is of the form So, such special are called eigenvector(s) and the change in magnitude depends on the eigenvalue . Eigenvalues characterize important aspect of linear transformations, such as whether a system of linear equations has a unique solution or not. In many applications eigenvalues also describe physical propereties of a mathematical model. In Quantum Mechanics, the eigenvectors of operators which corresponds to observable quantities, like energy, position, etc., form a complete basis for the space of all possible states of the system that you're analysing. That is, any state you want can be written as a linear combination of these eigenvectors . Naturally, this makes to solve problems much easier, all we need is to find the coefficients in this linear combination for which there is a neat formula.   "
+  "body": " Eigen Value Problem   When an operator acts on a vector then the resulting vector is different from . However there may exist certain non-zero vectors for which is just multiplied by a constant . i.e., is known as an eigen value problem.  Let's first understand the eigen function and eigen value . Suppose we differentiate with respect to , we get , then is not an eigen function, because is different function then Now, differentiate , we will get , again is not an eigenfunction. Howabout, if we differentiate , now we have , here a constant is multiplied by the same function . Hence, is an eigen function and an yield constant, after the operation (differentiation) is known as eigen value. Also, Here, the form of equation looks like , hence is an eigen function for the operator and is an eigen value for the function .  Now, or, where is a unit matrix, is an eigen vector or eigen function of an operator and the constant is an eigen value. when is represented by a square matrix, then the eigen values of a matrix are determined by an eqn. is called a secular or a characteristic equation.  Let us consider an example where a matrix, acts on a vector then the resulting vector would be In this case the vector is transformed into a new vector . The vector may gets elongated or shortened or rotated in the transformation process. For a given square matrix, there always exits special vector\/s which retain\/s their original direction, such vectors are called eigen vectors. The vector which scaled but will not change its direction is called an eigen vector and its scaled factor is known as eigen value. An eigenvector of a square matrix A is a non-zero vector X that, when multiplied by A, results in a scalar multiple of itself. That is, if , where is a scalar, then X is an eigenvector of A associated with the eigenvalue . For example, and then, Hence the vector remains the same with scalar multiplication 3. This scalar value is called eigen value, of the vector .      Eigenvectors help understand linear transformations easily. There are directions along which a linear transformation acts simply by stretching\/compressing and\/or flipping ; eigenvalues give the factors by which this compression occurs. Consider a matrix undergoing a physical transformation (e.g rotation). When this matrix is used to transform a given vector the result is . Now ask a question: Are there any vectors which does not change their direction under this transformation, but allow the vector magnitude to vary by scalar ? Such a question is of the form So, such special are called eigenvector(s) and the change in magnitude depends on the eigenvalue . Eigenvalues characterize important aspect of linear transformations, such as whether a system of linear equations has a unique solution or not. In many applications eigenvalues also describe physical propereties of a mathematical model. In Quantum Mechanics, the eigenvectors of operators which corresponds to observable quantities, like energy, position, etc., form a complete basis for the space of all possible states of the system that you're analysing. That is, any state you want can be written as a linear combination of these eigenvectors . Naturally, this makes to solve problems much easier, all we need is to find the coefficients in this linear combination for which there is a neat formula.   "
+},
+{
+  "id": "p-307",
+  "level": "2",
+  "url": "sec_second-eigen.html#p-307",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "eigen function eigen value "
 },
 {
   "id": "fig-eigen",
@@ -1729,9 +1738,9 @@ var ptx_lunr_docs = [
   "body": " Contravarient and Covarient Tensors   Covariance and contravariance describe how the quantitative description of physical entities change with a change of basis. A covariant tensor is one that transforms in the same way as the coordinate system itself. This means that the components of the tensor change in a particular way when the coordinates of the system are changed. A contravariant tensor, on the other hand, transforms in the opposite way to the coordinate system. This means that the components of the tensor change in a particular way when the coordinates of the system are changed. For a contravariant vector to be basis independent, the components of the vector must contra-vary (opposite manner) with a change of basis to compensate. That is, the components must vary with the inverse transformation to that of the change of basis. These componets of vectors are said to be contravariant. Examples of vectors with contravariant componets include the position of an object (displacement) relative to an observer, or any derivative of position with respect to time including velocity, acceleration, and jerk. For a covariant vector to be basis-independent, the components of the vector must co-vary (same manner) with change of basis to remain representing the same vector. That is, the componets must vary by the same transformation as the change of basis. The componets of these vectors are said to be covariant. Examples of covariant vectors apear when taking a gradiant of a function.  If a set of components of a physical quantity in a coordinate system are related to the set of components of the same quantity in another coordinate system by the transformation equation. then they are called components of a contravarient vector or contravarient tensor of rank one. Multiply eqn. by , we get - or, we can also say, by replacing with .  Thus eqn. is an alternative to eqn. . where Kronecker delta, A set of quantities is called the components of a covarient vector or covarient tensor of rank one if = invarient (a scalar) = . Or, by changing with and with . Or,  or, also, are covarient tensor of rank one.  If quantities in a coordinate system are related to other quantities in another coordinates by the transformation eqn.  , The are the components of a second rank contravarient tensor. Similarly, and the are the components of a second rank covarient tensor. Also, and the are the components of a second rank mixed tensor. Again, and are a components of fifth - rank mixed tensor.   Note: The contravarient tensor is represented by components in the directions of coordinate increase whereas a covarient tensor is represented by components in the directions orthogonal to constant coordinate surfaces. In case of a cartesian coordinate system, the coordinate direction concides with the direction orthogonal to the constant surface so that the direction between the covarient and contravarient tensors vanishes. Hence we can not distinguish between them in cartesian systems. The covariance or contravariance of the tensor components is not intrinsic property of the entity but this distinction is due to the way in which the entity is related to coordinate system to which it is referred. It is to be noted that in a cartesian system That is, both these partial derivatives are equal to the direction cosines between - and - axes. Hence there is no difference between contravariant and covariant transformations in cartesian coordinates. In other coordinate system this is not true in general, thus the difference in covariant and contravariant is observed.  The tensor whose components transform like coordinate differential are called contravariant tensors. In this expression where are the coordinate differentials. For example:  In cartesian coordinates , suppose the velocity components are , ;  In oblique coordinats the velocity components are , ; and  In polar coordinates , the velocity components are , .  Since all these relations express the velocity of same particle, they are related to each other in the following way: or, also, Now, and, or, The components transforming like this equation are known as the contravariant tensor components of a vector and are characterised by coordinates differential transformation or transforms like the coordinate differentials.  The tensor whose components transform like the partial derivatives of the coordinate are called covariant tensors. In the expression where, are partial derivatives of the coordinates. If expresses a velocity function, then the components of velocity in system are and . The transformations of these resolved parts are given as   and or, The components which transform like this equation are called the covariant tensor components of a vector because the transformation is characterised by the partial derivatives of the coordinates or transforms like the derivatives of a scalar.    Discussion   Axis Transormation             In coordinate transformation component of a tensor changes either by a contravariant manner or a covariant manner. In      also also,  In coordinate transformation, vectors remains the same but its components change. Suppose we have two types of cartesian coordinates where the basis vectors are related as and , then and . For example, consider a vector in unprimed system then in the primed system, meaning if basis vectors increase the components decrease. Such type of transformation is called the contravariant transformation. Displacement, velocity, acceleration, etc. obey such type of transformation. Now consider a gradiant of scalar function Gradiant of a scalar function is a vector which represents the magnitude of maximum rate of change of the function. In previous case for a vector if then it's component and hence the component of the gradiant Here as basis vector increses component also has to increase by the same fasion otherwise the maximum rate of sclar changes differently in different coordinate systems. Such system where component increases as basis vector increases is called a covariant vector.  The has shown and are parallel projection of a vector and and are perpendicular projection of the same vector . Hence where and are a contravariant vectors, and where and are covariant vectors.   "
 },
 {
-  "id": "p-384",
+  "id": "p-386",
   "level": "2",
-  "url": "subsec-cont_cov.html#p-384",
+  "url": "subsec-cont_cov.html#p-386",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2089,18 +2098,18 @@ var ptx_lunr_docs = [
   "body": " First Order Linear Differential Equation  The first order linear differential equation is obtained by putting in the standard form of linear equation , i.e., or, where and are functions of or constants. To find its solution, first consider the homogeneous equation by setting .  integrating, we get - where is an arbitrary constant of integration. or, where . Let,  Differentiate eqn. w.r.t. 'x', we get - or, or, or, Now multiplying eqn. by , we get - which by using eqn. , becomes Integrating, we get - where is an arbitrary constant. This is the required solution and the factor is known as integration factor (I.F.) . Therefore the solution of first order linear differential equation can be easily found by the formula Equation may be written as i.e. the general solution of differential equation consists of two parts. where and also .  Now differentiating with respect to 'x', we have or, or, which shows that is the solution of , again, differentiating w.r.t. 'x', we have - or,  which shows that is the solution of . Hence, the first part of the solution of differential equation is the solution of its homogeneous equation and is known as Complementry Function . Second part is free from any arbitrary constant and is known as Particular Integral .  Complete Solution = Complementry Function + Particular Integral . That is,   "
 },
 {
-  "id": "p-451",
+  "id": "p-453",
   "level": "2",
-  "url": "subsec-first_order-diff.html#p-451",
+  "url": "subsec-first_order-diff.html#p-453",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "integration factor (I.F.) "
 },
 {
-  "id": "p-452",
+  "id": "p-454",
   "level": "2",
-  "url": "subsec-first_order-diff.html#p-452",
+  "url": "subsec-first_order-diff.html#p-454",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2116,36 +2125,36 @@ var ptx_lunr_docs = [
   "body": " Second Order Linear Differential Equations   Putting in the standard form of linear differential equation gives the second order linear differential equation. or, where , and are functions of or constants.  The method for finding the solution of linear differential equations is depends on the nature of and . If and are constants then the differential equation is said to be second order linear differential equation with constant coefficients. But if and are functions of then the differential equation is said to be differential equation with variable coefficients.    Linear Equations with Constant Coefficients  The general form of linear differential equation of second order is where and are constants and is a function of or constant. In the operator form, where,     Let be the trial solution of of eqn. with m being root of the equation, then it satisfies the equation. or, from eqn. , or,  or, or, It is called an Auxiliary Equation (A.E.) . Which is quadratic in m (or D), roots of which can be appeared by three ways. Viz. real and unequal, real and equal, or a complex pair. Also it should be noted that if and are two linearly independent solution of the corresponding homogenous equation then . The condition for and to be linearly independent is This determinant is called Wornskian of and .   Case I. Roots are real and unequal: If and are the roots of an A.E. then a C.F. is given by The wronskian for and is since . The wronskian . Hence and are linearly independent.   Case II. Roots are real and equal: If (say), then C.F. is . why?  If then from case I, . Where C is only one constant in this solution. But the order of given equation is two the solution must contain two constants in order to satisfy the given equation. Hence we have to seek its solution by another way. Let's write equation in the form put then, or, or, Thus, or, which is an inhomogenous first order linear differential equation. whose integrating factor is given by Hence, the solution of this differential equation is given by equation      Case III. Roots are imaginary pair. If the roots are then the solution will be     where C and are arbitrary constants.    There are various methods to find the particular integral of a differential equation, here we discuss some of the easy methods.      General Method of Finding the Particular Integral of Any Function   or, or, or, which is a first order linear differential equation. Its solution is  Particular Integral can also be obtained by inspection method which will be discussed in examples given below. However, there may be developed a general method for solving the differential equation directly, called the successive integration method. Let the equation in the form If and are the roots of A.E., then eqn. can be written as put, so that or, Its solution is  from eqn. , we have or, or, where,     Linear Equations with Variable Coefficients  The linear equation of the form or, is called a linear differential equation with variable coefficient if and are function of only.  In fact, there is no general method to solve such differential equations. However, we discuss one artificial but elegent method to solve such type of equations. This method is known as Method of Variation of Parameters . Lagrange developed it. It provides the complete solution of a linear equation whose complementary function is known.  Let the equation is The C.F. of which is given as where and are two linearly independent solution of the correspnding homogenous eqn. i.e.,  clearly equation will not satisfy the given equation . As , so we should consider the constants and as unknown parameters which are the functions of , then be a complete solution of the given equation . Hence equation must satisfy the equation . Now, If we set, by assuming and to be the arbitrary constants for complementary part of the equation. Then, and Therefore, from given eqn. , we have - or, from eqns. and , we have the first two terms equal to zero. Solving eqns. and , we get - multiplying top equation by and bottom equation by we get-  and  where is known as the Wronskian for solutions and . Which does not equal to zero if and are two linearly independent solution of eqn. .  Integrating eqn. , we get - Substituting and in equation , we get -  Note: There are no specific method to solve the differential equation with variable coefficients but it can be solved by many method according to the type of eqution. If the equation containing decreasing power of x then put so that equation can be converted into variable coefficient to constant coefficient. Here are some rules which help us to find the complementary function of the given differential equation. When C.F. is not easily obtained we should use Power Series method to solve such equation.  Assume   be a known integral of C.F. if .   be a known integral of C.F. if .   be a known integral of C.F. if .   be a known integral of C.F. if .   be a known integral of C.F. if .  and put be the solution of corresponding homogeneous differential equation. Where is any parameter depends on .     "
 },
 {
-  "id": "p-456",
+  "id": "p-458",
   "level": "2",
-  "url": "subsec-second_order-diff.html#p-456",
+  "url": "subsec-second_order-diff.html#p-458",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Auxiliary Equation (A.E.) Wornskian "
 },
 {
-  "id": "p-460",
+  "id": "p-462",
   "level": "2",
-  "url": "subsec-second_order-diff.html#p-460",
+  "url": "subsec-second_order-diff.html#p-462",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Case III. Roots are imaginary pair. "
 },
 {
-  "id": "p-464",
+  "id": "p-466",
   "level": "2",
-  "url": "subsec-second_order-diff.html#p-464",
+  "url": "subsec-second_order-diff.html#p-466",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Method of Variation of Parameters "
 },
 {
-  "id": "p-466",
+  "id": "p-468",
   "level": "2",
-  "url": "subsec-second_order-diff.html#p-466",
+  "url": "subsec-second_order-diff.html#p-468",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2197,9 +2206,9 @@ var ptx_lunr_docs = [
   "body": "  Solve       or,   Let,  , and, . Therefore, is a P.I. of eqn. , becouse it satisfies the equation. It is a general solution of eqn. .   The solution of eqn. by successive integration method. The roots of A.E. are real and equal, i.e., . Hence, from eqn.  where, using . Hence,  and or,         "
 },
 {
-  "id": "p-478",
+  "id": "p-480",
   "level": "2",
-  "url": "sec_fourth-examplesA.html#p-478",
+  "url": "sec_fourth-examplesA.html#p-480",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2251,9 +2260,9 @@ var ptx_lunr_docs = [
   "body": " When is a Regular Singular Point of the Equation  In this case, the solution is and on substituting of and in the given differential equation we get the identity. The index will be determined by the quadratic equation obtained by equating the coefficient of lowest power of to zero. The quadratic equation in is called the Indicial equation . Thus, we will get two values of . The series solution of equation will depend upon the nature of the roots of the indicial equation.   Case I. When roots ( ) are distinct and not differing by an integer, then the complete solution is  Case II. When roots are equal ( ), then  Case III. When roots are distinct and differ by an integer, then there arise two possibilities  If some of the coefficients of y series become infinite at , then replace by . The complete solution is then [on taking , we obtain a solution which is a constant multiple of that obtained for .]  When the coefficient of y series does not become infinite for any , then the complete solution is     "
 },
 {
-  "id": "p-551",
+  "id": "p-553",
   "level": "2",
-  "url": "subsec-reg_sing.html#p-551",
+  "url": "subsec-reg_sing.html#p-553",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -2341,18 +2350,18 @@ var ptx_lunr_docs = [
   "body": " We have           But,   and   Hence, replacing by these values to collect the coefficient of , we get -         Thus the function is defined as generating function of .  "
 },
 {
-  "id": "p-603",
+  "id": "p-605",
   "level": "2",
-  "url": "subsec-Legnd_eq.html#p-603",
+  "url": "subsec-Legnd_eq.html#p-605",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Alternative: "
 },
 {
-  "id": "p-605",
+  "id": "p-607",
   "level": "2",
-  "url": "subsec-Legnd_eq.html#p-605",
+  "url": "subsec-Legnd_eq.html#p-607",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4366,36 +4375,36 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-1121",
-  "level": "2",
-  "url": "subsec-sol_vs.html#p-1121",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Case I. "
-},
-{
-  "id": "p-1122",
-  "level": "2",
-  "url": "subsec-sol_vs.html#p-1122",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Case II. "
-},
-{
   "id": "p-1123",
   "level": "2",
   "url": "subsec-sol_vs.html#p-1123",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
+  "body": "Case I. "
+},
+{
+  "id": "p-1124",
+  "level": "2",
+  "url": "subsec-sol_vs.html#p-1124",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Case II. "
+},
+{
+  "id": "p-1125",
+  "level": "2",
+  "url": "subsec-sol_vs.html#p-1125",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
   "body": "Case III. "
 },
 {
-  "id": "p-1129",
+  "id": "p-1131",
   "level": "2",
-  "url": "subsec-sol_vs.html#p-1129",
+  "url": "subsec-sol_vs.html#p-1131",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4429,9 +4438,9 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-1135",
+  "id": "p-1137",
   "level": "2",
-  "url": "subsec-2Dwaveeqn.html#p-1135",
+  "url": "subsec-2Dwaveeqn.html#p-1137",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4456,36 +4465,36 @@ var ptx_lunr_docs = [
   "body": "   "
 },
 {
-  "id": "p-1139",
-  "level": "2",
-  "url": "subsec-2Dwave_sol.html#p-1139",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Case - I "
-},
-{
-  "id": "p-1140",
-  "level": "2",
-  "url": "subsec-2Dwave_sol.html#p-1140",
-  "type": "Paragraph (with a defined term)",
-  "number": "",
-  "title": "",
-  "body": "Case - II "
-},
-{
   "id": "p-1141",
   "level": "2",
   "url": "subsec-2Dwave_sol.html#p-1141",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
+  "body": "Case - I "
+},
+{
+  "id": "p-1142",
+  "level": "2",
+  "url": "subsec-2Dwave_sol.html#p-1142",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
+  "body": "Case - II "
+},
+{
+  "id": "p-1143",
+  "level": "2",
+  "url": "subsec-2Dwave_sol.html#p-1143",
+  "type": "Paragraph (with a defined term)",
+  "number": "",
+  "title": "",
   "body": "Case - III "
 },
 {
-  "id": "p-1146",
+  "id": "p-1148",
   "level": "2",
-  "url": "subsec-2Dwave_sol.html#p-1146",
+  "url": "subsec-2Dwave_sol.html#p-1148",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
@@ -4636,18 +4645,18 @@ var ptx_lunr_docs = [
   "body": " Three Dimensional Laplace's Equation   The Laplace equation arises in various physical problems, including electrostatics, heat conduction, fluid flow, and potential theory. Solving the 3D Laplace equation involves finding a function that satisfies the equation . This typically involves specifying appropriate boundary conditions or constraints on the function at the boundaries of the domain. The solutions to the Laplace equation are harmonic functions, which have many interesting mathematical properties.    In Rectangular Coordinates   rectangular coordinates The equation is Let be the solution of equation Then In equation all are independent to each other hence each may be seperately equal to some constant, i.e., or, and Thus, the general solution of equation is  where .  Alternative solution of equation is      In Cylindrical Coordinates   cylindrical coordinates We have, Let be the solution of eqn. . Hence, As variables are separated, we may take - or, and also, and Now put so that and therefore equation reduces to or, which is Bessel's equation and it's general solution is given as or, since be finite at , we have or, Hence,     In Spherical Coordinates    or,  Suppose, be its solution. Then,  considering eqn. , and  or, and As equation being the homogenous, put , hence equation reduces to where, . or, or, or,  again, if we put in equation , then since or, we have, Now, which is Legendre's associated differential equational and hence has the solution, Now as is the function of , then solution of equation is in the form The summing over all , the general solution of equation may be written as    Note 1. If , then equation reduces to Legendre's equation, also, Thus, so that  In case under specific boundary conditions, then     Note 2. If there is axial symmetry about z - axis, then depens only upon and so that in equation , If ,    "
 },
 {
-  "id": "p-1208",
+  "id": "p-1210",
   "level": "2",
-  "url": "subsec-3D_lapleq.html#p-1208",
+  "url": "subsec-3D_lapleq.html#p-1210",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",
   "body": "Note 1. "
 },
 {
-  "id": "p-1209",
+  "id": "p-1211",
   "level": "2",
-  "url": "subsec-3D_lapleq.html#p-1209",
+  "url": "subsec-3D_lapleq.html#p-1211",
   "type": "Paragraph (with a defined term)",
   "number": "",
   "title": "",

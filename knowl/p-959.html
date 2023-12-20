@@ -15,32 +15,12 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}\{e^{-|x|}\} = F(s)=\int\limits_{-\infty}^{\infty}e^{-|x|}e^{-isx}\,dx 
+\mathscr{F}_{s}^{-1}\{e^{-\pi x}\} =F_{s}(s) = \frac{2}{\pi}\int\limits_{0}^{\infty}e^{-\pi s}\sin sx\,ds 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \int\limits_{-\infty}^{0}e^{-|x|}e^{-isx}\,dx + \int\limits_{0}^{\infty}e^{-|x|}e^{-isx}\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\int\limits_{-\infty}^{0}e^{x}e^{-isx}\,dx + \int\limits_{0}^{\infty}e^{-x}e^{-isx}\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{-\infty}^{0}e^{x(1-is)}\,dx + \int\limits_{0}^{\infty}e^{-x(1+is)}\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\left[\left.\frac{e^{x(1-is)}}{1-is}\right\vert_{-\infty}^{0}+\left.\frac{e^{-x(1+is)}}{-(1-is)}\right\vert_{0}^{\infty}\right] 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{1-is}+\frac{1}{1+is}= \frac{2}{1+s^{2}}. 
+= \frac{2}{\pi}\frac{x}{\pi^{2}+x^{2}} = \frac{2x}{\pi(\pi^{2}+x^{2})}. 
 \end{equation*}
 </div>
 </div>

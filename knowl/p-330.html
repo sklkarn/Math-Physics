@@ -13,73 +13,106 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">This set of equations is equivalent to the single matrix equation</div>
-<div class="displaymath process-math">
+<div class="para">Let,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
 \begin{equation*}
-Y=AX
-\end{equation*}
-</div>
-<div class="para">i.e.,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{bmatrix} 
-y_{1} \\  y_{2} \\  y_{3} 
-\end{bmatrix} = \begin{bmatrix}
-\frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}} \\ 
-0 &amp; 1 &amp; 0 \\ 
--\frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}}
-\end{bmatrix} \begin{bmatrix}
-x_{1} \\  x_{2} \\  x_{3} 
-\end{bmatrix} 
-\end{equation*}
-</div>
-<div class="para">For orthogonal matrix <span class="process-math">\(A^{t}A = I\text{,}\)</span> or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{bmatrix}
-\frac{1}{\sqrt{2}} &amp; 0 &amp; -\frac{1}{\sqrt{2}} \\ 
-0 &amp; 1 &amp; 0 \\ 
-\frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}}
-\end{bmatrix} \begin{bmatrix}
-\frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}} \\ 
-0 &amp; 1 &amp; 0 \\ 
--\frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}}
-\end{bmatrix} = \begin{bmatrix}
-1 &amp; 0 &amp; 0 \\ 
-0 &amp; 1 &amp; 0 \\ 
-0 &amp; 0 &amp; 1
-\end{bmatrix} I 
-\end{equation*}
-</div>
-<div class="para">Now, <span class="process-math">\(X= A^{-1}Y\)</span> where <span class="process-math">\(A^{-1} = \frac{A^{ct}}{|A|}.\text{.}\)</span> Hence,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\begin{bmatrix}
-x_{1} \\  x_{2} \\ x_{3} 
-\end{bmatrix} = \begin{bmatrix}
-\frac{1}{\sqrt{2}} &amp; 0 &amp; -\frac{1}{\sqrt{2}} \\ 
-0 &amp; 1 &amp; 0 \\ 
-\frac{1}{\sqrt{2}} &amp; 0 &amp; \frac{1}{\sqrt{2}}
-\end{bmatrix} \begin{bmatrix}
-y_{1} \\  y_{2} \\  y_{3} 
+A = \begin{bmatrix} 
+\cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
 \end{bmatrix}
 \end{equation*}
 </div>
-<div class="para">Thus the inverse transformation equation is</div>
-<div class="displaymath process-math">
+<div class="para">The characteristic equation is <span class="process-math">\(|A-\lambda I|=0\text{,}\)</span> which gives the eigen values <span class="process-math">\(\lambda_{1} = e^{i\theta},\)</span>  <span class="process-math">\(\lambda_{2} = e^{-i\theta}\text{.}\)</span> The corresponding eigen vector associated with <span class="process-math">\(\lambda_{1} = e^{i\theta}\)</span> and <span class="process-math">\(\lambda_{2} = e^{-i\theta}\)</span> are given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
 \begin{equation*}
-x_{1} =  \frac{1}{\sqrt{2}}y_{1} -	\frac{1}{\sqrt{2}}y_{3},
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-x_{2} =  y_{2},
+X_{1}= \begin{bmatrix} 
+i\\1 
+\end{bmatrix}, 
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
 \begin{equation*}
-x_{3} =  \frac{1}{\sqrt{2}}y_{1} +	\frac{1}{\sqrt{2}}y_{3}
+X_{2}= \begin{bmatrix} 
+1\\i 
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">by setting <span class="process-math">\(c_{1}=1\)</span> in eqns. <a href="" class="xref" data-knowl="./knowl/eqn-eig_mat3.html" title="Equation 2.6.7">(2.6.7)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-eig_mat4.html" title="Equation 2.6.8">(2.6.8)</a>. Now a matrix that diagonalize <span class="process-math">\(A\)</span> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+\begin{equation*}
+P = \begin{bmatrix} 
+X_{1} &amp; X_{2}  
+\end{bmatrix}	= \begin{bmatrix} 
+i &amp; 1 \\ 1 &amp; i 
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+\begin{equation*}
+P^{-1} =\frac{adj P}{|P|} =-\frac{1}{2}\begin{bmatrix} 
+i &amp; -1 \\ -1 &amp; i  
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">Hence a diagonal matrix is <span class="process-math">\(D =P^{-1}AP\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+\begin{equation*}
+or, \quad
+D = -\frac{1}{2} \begin{bmatrix} 
+i &amp; -1 \\ -1 &amp; i  
+\end{bmatrix} \begin{bmatrix} 
+\cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
+\end{bmatrix} \begin{bmatrix} 
+i &amp; 1 \\ 1 &amp; i  
+\end{bmatrix} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+\begin{equation*}
+=\begin{bmatrix} 
+e^{i\theta} &amp; 0 \\ 0 &amp; e^{-i\theta}  
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+\begin{equation*}
+\therefore    D^{n}=  \begin{bmatrix} 
+e^{in\theta} &amp; 0 \\ 0 &amp; e^{-in\theta}  
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">But,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+\begin{equation*}
+D^{n} =  (P^{-1}AP)^{n} = (P^{-1}AP)(P^{-1}AP)  \cdots (P^{-1}AP)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+\begin{equation*}
+= P^{-1}A^{n}P \Rightarrow  A^{n}=PD^{n}P^{-1}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+\begin{equation*}
+\therefore A^{n} = -\frac{1}{2}\begin{bmatrix} 
+i &amp; 1 \\ 1 &amp; i  
+\end{bmatrix} \begin{bmatrix} 
+e^{in\theta} &amp; 0 \\ 0 &amp; e^{-in\theta} 
+\end{bmatrix} \begin{bmatrix} 
+i &amp; -1 \\ -1 &amp; i  
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-eig_mat3.html ./knowl/eqn-eig_mat4.html">
+\begin{equation*}
+\begin{bmatrix} 
+\cos\theta  &amp; -\sin\theta \\  \sin\theta  &amp; \cos\theta 
+\end{bmatrix}^{n} = \begin{bmatrix} 
+\cos n\theta  &amp; -\sin n \theta \\  \sin n\theta  &amp; \cos n\theta 
+\end{bmatrix}
 \end{equation*}
 </div>
 </div>

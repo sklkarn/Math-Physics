@@ -15,47 +15,50 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-P'_{n}-xP'_{n-1} = nP_{n-1}.
+nP_{n}=(2n-1)xP_{n-1}-(n-1)P_{n-2}.
 \end{equation*}
 </div>
-<div class="para">solution: From relation I, we have -</div>
+<div class="para">Solution: We know that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(1-2xz+z^{2})^{-\frac{1}{2}}=\sum z^{n}[P_{n}(x)]
+\end{equation*}
+</div>
+<div class="para">Differentiating it with respect to <span class="process-math">\(z\text{,}\)</span> we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-\frac{1}{2}(1-2xz+z^{2})^{-\frac{3}{2}}(-2x+2z)=\sum n z^{n-1}P_{n}(x)
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(1-2xz+z^{2})^{-\frac{1}{2}}(x-z)=(1-2xz+z^{2})\sum n z^{n-1}P_{n}(x)
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(x-z)\sum z^{n}P_{n}(x)=(1-2xz+z^{2})\sum nz^{n-1}P_{n}(x)
+\end{equation*}
+</div>
+<div class="para">Equating the coefficient of <span class="process-math">\(z^{n-1}\)</span> on both sides, we get-</div>
+<div class="displaymath process-math">
+\begin{equation*}
+xP_{n-1}-P_{n-2}=nP_{n}-2x(n-1)P_{n-1}+(n-2)P_{n-2}
+\end{equation*}
+</div>
+<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 nP_{n}=(2n-1)xP_{n-1}-(n-1)P_{n-2}
 \end{equation*}
 </div>
-<div class="para">Differentiating this with respect to <span class="process-math">\(x\text{,}\)</span> we get -</div>
+<div class="para">
+<dfn class="terminology">Note:</dfn> If <span class="process-math">\(n-1=m \text{,}\)</span> then this result reduces to</div>
 <div class="displaymath process-math">
 \begin{equation*}
-n P'_{n}=(2n-1)P_{n-1}+(2n-1)xP'_{n-1}-(n-1)P'_{n-2}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-n\left[P'_{n}-xP'_{n-1}\right]-(n-1)\left[xP'_{n-1}-P'_{n-2}\right]=(2n-1)P_{n-1}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-n\left[P'_{n}-xP'_{n-1}\right]-(n-1)\left[(n-1)P_{n-1}\right]=(2n-1)P_{n-1}
-\end{equation*}
-</div>
-<div class="para">from relation II. or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-n\left[P'_{n}-xP'_{n-1}\right]=\left[(n-1)^{2}+(2n-1)\right]P_{n-1} 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\left[n^{2}-2n+1+2n-1\right]P_{n-1} = n^{2}P_{n-1}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore \quad P'_{n}-xP'_{n-1}=nP_{n-1}.
+(m+1)P_{m+1}(x)=(2M+1)xP_{m}(x)-mP_{m-1}(x).
 \end{equation*}
 </div>
 </div>

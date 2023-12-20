@@ -11,79 +11,50 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para"> Fourier series of a periodic function <span class="process-math">\(f(x)\)</span> in the interval [-l,l]  is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
-\begin{equation}
-f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{l}\right) + b_{n}\sin \left(\frac{n\pi x}{l}\right)\right] \tag{5.5.4}
-\end{equation}
-</div>
-<div class="para">where,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
+<div class="para">Now,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-a_{0}=\frac{1}{l}\int\limits_{-l}^{l}f(t) \,dt,
+f(x) = f\left(\frac{cz}{\pi}\right) = F(z)\quad \text{(say)}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-a_{n} = \frac{1}{l}\int\limits_{-l}^{l}f(t) \cos \left(\frac{n\pi t}{l}\right)\,dt, 
+a_{0}=  \frac{1}{\pi}\int\limits_{-\pi}^{\pi}F(z)\,dz
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-b_{n} = \frac{1}{l}\int\limits_{-l}^{l}f(t) \sin \left(\frac{n\pi t}{l}\right)\,dt.
+=\frac{1}{\pi}\int\limits_{-\pi}^{\pi} f\left(\frac{cz}{\pi}\right)\,dz = \frac{1}{\pi}\int\limits_{-c}^{c} f(x)\,d\left(\frac{\pi x}{c}\right) = \frac{1}{c}\int\limits_{-c}^{c}f(x)\,dx 
 \end{equation*}
 </div>
-<div class="para">Substituting these values in equation <a href="" class="xref" data-knowl="./knowl/eqn-fourier_intg1.html" title="Equation 5.5.4">(5.5.4)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-f(x) = \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt 
+a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}F(z) \cos nz\,dz = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f\left(\frac{cz}{\pi}\right)\cos nz\,dz 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-+ \frac{1}{l}\sum\limits_{n=1}^{\infty}\left[\int\limits_{-l}^{l}f(t)\left\{\cos \left(\frac{n\pi x}{l}\right) \cos \left(\frac{n\pi t}{l}\right)\right.
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
-\begin{equation*}
-\left.+ \sin \left(\frac{n\pi x}{l}\right)\sin \left(\frac{n\pi t}{l}\right)\right\}\,dt \right]
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
-\begin{equation}
-f(x) = \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt+ \frac{1}{l}\sum\limits_{n=1}^{\infty}f(t) \cos \left[\frac{n\pi}{l}(x-t)\right]\,dt\tag{5.5.5}
-\end{equation}
-</div>
-<div class="para">If we set <span class="process-math">\(u=\frac{n\pi}{l} \)</span>  so that  <span class="process-math">\(\bigtriangleup u= \frac{\bigtriangleup n\pi}{l}, \)</span> where  <span class="process-math">\(\bigtriangleup n = 1  \)</span>  and <span class="process-math">\(\frac{1}{l}=\frac{\bigtriangleup u} {\pi}.\)</span> Hence, equation <a href="" class="xref" data-knowl="./knowl/eqn-fourier_intg2.html" title="Equation 5.5.5">(5.5.5)</a> becomes</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
-\begin{equation*}
-f(x) = \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt+ \frac{1}{\pi}\sum\limits_{u=\pi/l}^{\infty}\bigtriangleup u \int\limits_{-l}^{l}f(t) \cos \left[u(x-t)\right]\,dt  
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
-\begin{equation}
-f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\, du \int\limits_{-\infty}^{\infty}[u(x-t)]\,dt \tag{5.5.6}
-\end{equation}
-</div>
-<div class="para">Since</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
-\begin{equation*}
-\frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt \rightarrow 0,
+= \frac{1}{\pi}\int\limits_{-c}^{c}f(x)\cos  \left(\frac{n \pi x}{c}\right)\,d \left(\frac{\pi x}{c}\right) = \frac{1}{c}\int\limits_{-c}^{c}f(x)\cos  \frac{n \pi x}{c}\,dx
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_intg1.html ./knowl/eqn-fourier_intg2.html ./knowl/eqn-fourier_intg3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\sum\limits_{u=\pi/l}^{\infty}\bigtriangleup u \rightarrow   \int\limits_{0}^{\infty} \,du 
+b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}F(z) \sin nz\,dz = \frac{1}{c}\int\limits_{-c}^{c}f(x)\sin  \frac{n \pi x}{c}\,dx 
 \end{equation*}
 </div>
-<div class="para">[as <span class="process-math">\(l\rightarrow \infty\)</span>]. Equation <a href="" class="xref" data-knowl="./knowl/eqn-fourier_intg3.html" title="Equation 5.5.6">(5.5.6)</a> is called the Fourier integral formula.</div>
+<div class="para">The function <span class="process-math">\(f(x)\)</span> is now expressed as</div>
+<div class="displaymath process-math">
+\begin{equation}
+f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{c}\right) + b_{n}\sin \left(\frac{n\pi x}{c}\right)\right] \tag{5.5.2}
+\end{equation}
 </div>
-<span class="incontext"><a href="subsec-fourier_intg.html#p-846" class="internal">in-context</a></span>
+<div class="para">for the period <span class="process-math">\(2c\text{.}\)</span>
+</div>
+</div>
+<span class="incontext"><a href="sec_fifth-frinterval.html#p-846" class="internal">in-context</a></span>
 </body>
 </html>

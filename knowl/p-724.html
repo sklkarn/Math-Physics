@@ -13,50 +13,44 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We have</div>
+<div class="para">We know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\int\limits_{-\infty}^{\infty}xe^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =	\int\limits_{-\infty}^{\infty}\frac{1}{x}\frac{d}{dx}\left(-\frac{1}{2}e^{-x^{2}}\right)xH_{m}(x)H_{n}(x)\,dx 
+\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}=e^{2zx-z^{2}} =e^{2zx}\cdot e^{-z^{2}}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\left.H_{m}(x)H_{n}(x)\left(-\frac{1}{2}e^{-x^{2}}\right)\right\vert_{-\infty}^{\infty}-\int\limits_{-\infty}^{\infty}\frac{d}{dx}[H_{m}(x)H_{n}(x)]\left(-\frac{1}{2}e^{-x^{2}}\right)\,dx
+=\sum_{n=0}^{\infty}\frac{(2x)^{n}z^{n}}{n!}\cdot \sum_{n=0}^{\infty}\frac{(-1)^{n}z^{2n}}{n!}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\left.-\frac{1}{2}e^{-x^{2}}H_{m}(x)H_{n}(x)\right\vert_{-\infty}^{\infty}+\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}\frac{d}{dx}[H_{m}(x)H_{n}(x)]\,dx 
+=\sum_{n=0}^{\infty}\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}(2x)^{n-2s}}{s!(n-2s)!}z^{n}
 \end{equation*}
 </div>
-<div class="para">[Integrating by parts]</div>
+<div class="para">Equating the coefficient of <span class="process-math">\(\frac{z^{n}}{n!}\)</span> on both sides, we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-=0+\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}\left[H'_{m}(x)H_{n}(x)+H_{m}(x)H'_{n}(x)\right]\,dx
+H_{n}(x)=\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(2x)^{n-2s}}{s!(n-2s)!}
 \end{equation*}
 </div>
+<div class="para">Replacing <span class="process-math">\(x\)</span> by <span class="process-math">\(-x\text{,}\)</span> we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{2}\int\limits_{-\infty}^{\infty}e^{-x^{2}}\left[2mH_{m-1}(x)H_{n}(x)+2nH_{m}(x)H_{n-1}(x)\right]\,dx 
-\end{equation*}
-</div>
-<div class="para">( using recurrence relation 1.)</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=m\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m-1}(x)H_{n}(x)\,dx+n\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n-1}(x)\,dx
+H_{n}(-x)=\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(-2x)^{n-2s}}{s!(n-2s)!} = 	\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}(-1)^{n-2s}n!(2x)^{n-2s}}{s!(n-2s)!}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=m\sqrt{\pi}2^{n}n!\delta_{n,m-1}+n\sqrt{\pi}2^{n-1}(n-1)!\delta_{m,n-1} 
+=(-1)^{n}\sum_{s=0}^{\frac{n}{2}}\frac{(-1)^{s}n!(2x)^{n-2s}}{s!(n-2s)!}=(-1)^{n}H_{n}(x)
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\sqrt{\pi}\left[2^{n-1}n!\delta_{m,n-1}+2^{n}(n+1)!\delta_{m,n+1}\right] 
+\therefore  H_{n}(-x)=(-1)^{n} H_{n}(x) 
 \end{equation*}
 </div>
-<div class="para">[<span class="process-math">\(\because \delta_{n,m-1}=\delta_{n+1,m}\)</span>]</div>
 </div>
 <span class="incontext"><a href="sec_fourth-examplesE.html#p-724" class="internal">in-context</a></span>
 </body>

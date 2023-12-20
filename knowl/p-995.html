@@ -13,27 +13,23 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/sec_sixth-Ltrans.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/Lap_Q1.html">
 \begin{equation*}
-\mathscr{L}[t\sin at] = \mathscr{L}\left[t\{\frac{e^{iat}-e^{-iat}}{2i}\}\right] =\frac{1}{2i}[\mathscr{L}(te^{iat})-\mathscr{L}(te^{-iat})]
+\because \quad \cos2t = 2\cos^{2}t-1; \quad  \therefore \cos^{2}t= \frac{1}{2}[\cos 2t+1]
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/sec_sixth-Ltrans.html">
+<div class="para">Now,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/Lap_Q1.html">
 \begin{equation*}
-=\frac{1}{2i}\left[\frac{1}{(s-ia)^{2}}-\frac{1}{(s+ia)^{2}}\right]. 
+\mathscr{L}[\cos^{2}t]= \int\limits_{0}^{\infty}e^{-st}\cos^{2}t\,dt 
 \end{equation*}
 </div>
-<div class="para">(see formula 8 in <a href="sec_sixth-Ltrans.html" class="internal" title="Section 6.3: Laplace Transforms">Section 6.3</a>)</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/sec_sixth-Ltrans.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/Lap_Q1.html">
 \begin{equation*}
-=\frac{1}{2i}\left[\frac{s^{2}+2ias-a^{2}-s^{2}+2ias+a^{2}}{(s^{2}+a^{2})^{2}}\right]
+= \frac{1}{2}\int\limits_{0}^{\infty}e^{-st}[\cos 2t+1] =\frac{1}{2}[ \frac{1}{s}+ \frac{s}{s^{2}+4}].
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/sec_sixth-Ltrans.html">
-\begin{equation*}
-= \frac{1}{2i}\left[\frac{4ias}{(s^{2}+a^{2})^{2}}\right]= \frac{2as}{(s^{2}+a^{2})^{2}} 
-\end{equation*}
-</div>
+<div class="para">(see problem <a href="" class="xref" data-knowl="./knowl/Lap_Q1.html" title="Example 6.4.1">Example 6.4.1</a>)</div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesB.html#p-995" class="internal">in-context</a></span>
 </body>

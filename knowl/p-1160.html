@@ -11,134 +11,55 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">The wave equation is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+<div class="para">Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation}
-\frac{\partial^{2} y}{\partial t^{2}} =  v^{2}\frac{\partial^{2} y}{\partial x^{2}} \tag{7.2.1}
+u=C \cos\lambda_{1}x\cos\lambda_{2}y\cos\lambda_{3}z\cos\lambda vt\tag{7.1.80}
 \end{equation}
 </div>
-<div class="para">Let us assume its solution as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation}
-y(x,t) = X(x) T(t) \tag{7.2.2}
-\end{equation}
-</div>
-<div class="para">so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+<div class="para">The result <a href="" class="xref" data-knowl="./knowl/eqn-3D_wave6.html" title="Equation 7.1.80">(7.1.80)</a> may be deduced from equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_wave3.html" title="Equation 7.1.77">(7.1.77)</a>, since, when <span class="process-math">\(x=0, \sin\alpha_{1}x =0\)</span>  etc. According to boundary condition i., we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation*}
-\frac{\partial y}{\partial t} =X\frac{\partial T}{\partial t}
+\sin\lambda_{1}a\cos\lambda_{2}y\cos\lambda_{3}z\cos\lambda vt=0,	
+\end{equation*}
+</div>
+<div class="para">i.e., <span class="process-math">\(\sin\lambda_{1}a=0 \)</span> or,	<span class="process-math">\(\sin\lambda_{1}a =N_{1}\pi\)</span>	and <span class="process-math">\(\lambda_{1}=\frac{N_{1}\pi}{a}, N_{1}\)</span> being an integer. Similarly,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
+\begin{equation*}
+\lambda_{2}=\frac{N_{2}\pi}{a}, \quad \lambda_{3}=\frac{N_{3}\pi}{a},
 \end{equation*}
 </div>
 <div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation*}
-\frac{\partial^{2} y}{\partial t^{2}}=X\frac{\partial^{2} T}{\partial t^{2}}
+\lambda =\sqrt{\lambda_{1}^{2}+\lambda_{2}^{2}+\lambda_{3}^{2}} 
 \end{equation*}
 </div>
-<div class="para">also</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation*}
-\frac{\partial y}{\partial x} =T\frac{\partial X}{\partial x}
+=\frac{\pi}{a}\sqrt{N_{1}^{2}+N_{2}^{2}+N_{3}^{2}}
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+<div class="para">now, equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_wave6.html" title="Equation 7.1.80">(7.1.80)</a> reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation*}
-\frac{\partial^{2} y}{\partial x^{2}}=T\frac{\partial^{2} X}{\partial x^{2}}
+u=C\cos \frac{N_{1}\pi x}{a} \cos \frac{N_{2}\pi y}{a}\cos \frac{N_{3}\pi z}{a} \cos\{\sqrt{N_{1}^{2}+N_{2}^{2}+N_{3}^{2}}\frac{\pi vt}{a}\}
 \end{equation*}
 </div>
-<div class="para">Substituting these values in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dwave1.html" title="Equation 7.2.1">(7.2.1)</a>(i), we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+<div class="para">Hence the general solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-3D_wave1.html" title="Equation 7.1.75">(7.1.75)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation*}
-X\frac{\partial^{2} T}{\partial t^{2}} =  Tv^{2}\frac{\partial^{2} X}{\partial x^{2}}
+u=\sum_{N_{1}=1}^{\infty}\sum_{N_{2}=1}^{\infty}\sum_{N_{3}=1}^{\infty}C_{N_{1}N_{2}N_{3}}\cos( \frac{N_{1}\pi x}{a})
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-\frac{1}{X}\frac{\partial^{2} X}{\partial x^{2}} =\frac{1}{ v^{2}T} \frac{\partial^{2} T}{\partial t^{2}} =-k^{2} \text{(say)}
-\end{equation*}
-</div>
-<div class="para">or, and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave3.html ./knowl/eqn-3D_wave6.html ./knowl/eqn-3D_wave1.html">
 \begin{equation}
-\frac{\partial^{2} X}{\partial x^{2}}+k^{2}X = 0 \quad \text{and} \quad \frac{\partial^{2} T}{\partial t^{2}}+k^{2}v^{2}T = 0 \tag{7.2.3}
+\cos (\frac{N_{2}\pi y}{a}) \cos (\frac{N_{3}\pi z}{a}) \cos\left\{\sqrt{N_{1}^{2}+N_{2}^{2}+N_{3}^{2}}\frac{\pi vt}{a}\right\}\tag{7.1.81}
 \end{equation}
 </div>
-<div class="para">Now, auxiliary equations are - <span class="process-math">\(m^{2}+k^{2}=0\text{,}\)</span> or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-m=\pm ik
-\end{equation*}
 </div>
-<div class="para">and <span class="process-math">\(m^{2}+k^{2}v^{2}=0\)</span> or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-m=\pm ikv\text{.}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation}
-X=c_{1}\cos kx+c_{2}\sin kx \quad  \text{and} \quad  T=c_{3}\cos kvt+c_{4}\sin kvt  \tag{7.2.4}
-\end{equation}
-</div>
-<div class="para">Thus</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation}
-y(x,t)=(c_{1}\cos kx+c_{2}\sin kx)(c_{3}\cos kvt+c_{4}\sin kvt)\tag{7.2.5}
-\end{equation}
-</div>
-<div class="para">[from eqn.<a href="" class="xref" data-knowl="./knowl/eqn-1Dwave2.html" title="Equation 7.2.2">(7.2.2)</a>]. Put <span class="process-math">\(y=0\)</span> when <span class="process-math">\(x=0\text{,}\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-0=c_{1}(c_{3}\cos kvt+c_{4}\sin kvt) \Rightarrow c_{1} =0.
-\end{equation*}
-</div>
-<div class="para">Hence, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dwave3.html" title="Equation 7.2.3">(7.2.3)</a>(iii) reduces to</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-y=c_{2}\sin kx(c_{3}\cos kvt+c_{4}\sin kvt)
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation}
-y=c_{2}c_{3}\cos kvt.\sin kx+c_{2}c_{4}\sin kvt.\sin kx\tag{7.2.6}
-\end{equation}
-</div>
-<div class="para">put <span class="process-math">\(y=p_{o}\cos pt\)</span>  when <span class="process-math">\(x=1\text{,}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-\therefore \quad p_{o}\cos pt = c_{2}c_{3}\cos kvt.\sin kl+c_{2}c_{4}\sin kvt.\sin kl
-\end{equation*}
-</div>
-<div class="para">equating the coefficients of <span class="process-math">\(\sin\)</span> and <span class="process-math">\(\cos\)</span> on both sides, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-p_{o} =c_{2}c_{3}\sin kl  \quad		\Rightarrow  c_{2}c_{3} = \frac{p_{o}}{\sin kl},
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-0=c_{2}c_{4}\sin kl \quad \Rightarrow c_{2}c_{2}c_{4} =0,
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-p=kv \quad \Rightarrow \frac{p}{v}=k  
-\end{equation*}
-</div>
-<div class="para">Hence, eqn. <a href="" class="xref" data-knowl="./knowl/eqn-1Dwave6.html" title="Equation 7.2.6">(7.2.6)</a> becomes -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-1Dwave1.html ./knowl/eqn-1Dwave2.html ./knowl/eqn-1Dwave3.html ./knowl/eqn-1Dwave6.html">
-\begin{equation*}
-y=\frac{p_{o}}{\sin kl}\cos pt.\sin \frac{p}{v}x = \frac{p_{o}}{\sin (\frac{p}{v})l}\cos pt.\sin (\frac{p}{v})x
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="sec_seventh-examplesA.html#p-1160" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-2Dwave_sol.html#p-1160" class="internal">in-context</a></span>
 </body>
 </html>

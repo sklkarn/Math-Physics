@@ -11,94 +11,9 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Paragraph</span></h2>
-<div class="para logical">
-<div class="para">Consider a rigid body rotating about an axis that is passing through a point O as shown in figure <a href="" class="xref" data-knowl="./knowl/fig-mit1.html" title="Figure 3.4.1">Figure 3.4.1</a>. Now the angular momentum of the body about such an axis is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-L = \sum\limits_{i}m_{i}(\vec{r_{i}}\times \vec{v_{i}}) =  \sum\limits_{i}m_{i}(\vec{r_{i}}\times \vec{\dot{r}_{i}}) 
-\end{equation*}
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para">Prove <span class="process-math">\(\delta_{ik}\omega_{ik} = \omega_{ii}\text{.}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-=   \sum\limits_{i}m_{i}[\vec{r_{i}}\times (\vec{\omega}\times\vec{r_{i}})] = \sum\limits_{i}m_{i}\left[\vec{\omega}r^{2}_{i} - (\vec{r_{i}}\cdot \vec{\omega})\vec{r_{i}}\right]
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-\hat{i}L_{x}+\hat{j}L_{y}+\hat{k}L_{z} = \sum\limits_{i}m_{i}\left[(\hat{i}\omega_{x}+ \hat{j}\omega_{y}+\hat{k}\omega_{z})r^{2}_{i} - (\vec{r_{i}}\cdot \vec{\omega})(\hat{i}x_{i}+\hat{j}y_{i}+\hat{k}z_{i})\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-= \sum\limits_{i}m_{i} \left[(\hat{i}\omega_{x} + \hat{j}\omega_{y}+\hat{k}\omega_{z})r^{2}_{i} - (x_{i}\omega_{x}+y_{i}\omega_{y}+z_{i}\omega_{z})(\hat{i}x_{i}+\hat{j}y_{i}+\hat{k}z_{i})\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-=\hat{i}\left[\omega_{x}\sum\limits_{i}m_{i}\left(r^{2}_{i}-x^{2}_{i}\right) - \omega_{y} \sum\limits_{i}m_{i}x_{i}y_{i} - \omega_{z}\sum\limits_{i}m_{i}x_{i}z_{i}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-+ \hat{j}\left[-\omega_{x}\sum\limits_{i}m_{i}x_{i}y_{i} + \omega_{y}\sum\limits_{i}m_{i}\left(r^{2}_{i}-y^{2}_{i}\right) - \omega_{z}\sum\limits_{i}m_{i}y_{i}z_{i}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-+  \hat{k}\left[-\omega_{x}\sum\limits_{i}m_{i}x_{i}z_{i} - \omega_{y}\sum\limits_{i}m_{i}y_{i}z_{i}+\omega_{z}\sum\limits_{i}m_{i}\left(r^{2}_{i}-z^{2}_{i}\right) \right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-=\hat{i}\left[I_{xx}\omega_{x} +I_{xy}\omega_{y}+I_{xz}\omega_{z}\right] + \hat{j}\left[I_{yx}\omega_{x} +I_{yy}\omega_{y}+I_{yz}\omega_{z}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-+\hat{k}\left[I_{zx}\omega_{x} +I_{zx}\omega_{y}+I_{zz}\omega_{z}\right] 
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation}
-\begin{cases} 
-L_{x} = \left[I_{xx}\omega_{x} +I_{xy}\omega_{y}+I_{xz}\omega_{z}\right];\\ 
-L_{y}=\left[I_{yx}\omega_{x} +I_{yy}\omega_{y}+I_{yz}\omega_{z}\right];\\ 
-L_{z} = \left[I_{zx}\omega_{x} +I_{zx}\omega_{y}+I_{zz}\omega_{z}\right] 
-\end{cases}\tag{3.4.1}
-\end{equation}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation*}
-\begin{bmatrix} 
-L_{x} \\  L_{y} \\ L_{z} 
-\end{bmatrix}	= \begin{bmatrix} 
-I_{xx} &amp; I_{xy} &amp; I_{xz} \\ I_{yx} &amp; I_{yy} &amp; I_{yz} \\ I_{zx} &amp; I_{zy} &amp; I_{zz} 
-\end{bmatrix} \begin{bmatrix} 
-\omega_{x} \\ \omega_{y} \\ \omega_{z} 
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation}
-\therefore   \quad   \vec{L_{i}}=I_{ij}\vec{\omega_{j}}\tag{3.4.2}
-\end{equation}
-</div>
-<div class="para">Where,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-mit1.html">
-\begin{equation}
-\begin{cases} 
-I_{xx} = \sum\limits_{i}m_{i}\left(r^{2}_{i}-x^{2}_{i}\right);  \\  
-I_{yy} =  \sum\limits_{i}m_{i}\left(r^{2}_{i}-y^{2}_{i}\right); \\ 
-\quad  I_{zz} =\sum\limits_{i}m_{i}\left(r^{2}_{i}-z^{2}_{i}\right) 
-\end{cases}\tag{3.4.3}
-\end{equation}
-</div>
-<div class="para">are the coefficients of a moment of inertia.</div>
-</div>
-<span class="incontext"><a href="sec_third-mit.html#p-424" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_third-examplesA.html#p-424" class="internal">in-context</a></span>
 </body>
 </html>

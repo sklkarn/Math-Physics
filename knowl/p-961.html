@@ -15,32 +15,32 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}_{s}\{f(x)\}=\int\limits_{0}^{\infty}f(x) \sin sx\,dx 
+\mathscr{F}\{e^{-|x|}\} = F(s)=\int\limits_{-\infty}^{\infty}e^{-|x|}e^{-isx}\,dx 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \int\limits_{0}^{a}f(x) \sin sx\,dx + \int\limits_{a}^{\infty}f(x) \sin sx\,dx
+= \int\limits_{-\infty}^{0}e^{-|x|}e^{-isx}\,dx + \int\limits_{0}^{\infty}e^{-|x|}e^{-isx}\,dx
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{0}^{a}f(x) \sin x\sin sx\,dx + 0 
+=\int\limits_{-\infty}^{0}e^{x}e^{-isx}\,dx + \int\limits_{0}^{\infty}e^{-x}e^{-isx}\,dx 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{2}\int\limits_{0}^{a}\left[\cos (1-s)x-\cos(1+s)x\right]\,dx
+= \int\limits_{-\infty}^{0}e^{x(1-is)}\,dx + \int\limits_{0}^{\infty}e^{-x(1+is)}\,dx
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{2}\left[\frac{\sin (1-s)x}{1-s}-\frac{\sin (1+s)x}{1+s}\right]_{0}^{a} 
+=\left[\left.\frac{e^{x(1-is)}}{1-is}\right\vert_{-\infty}^{0}+\left.\frac{e^{-x(1+is)}}{-(1-is)}\right\vert_{0}^{\infty}\right] 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{2}\left[\frac{\sin (1-s)a}{1-s}-\frac{\sin (1+s)a}{1+s}\right].
+= \frac{1}{1-is}+\frac{1}{1+is}= \frac{2}{1+s^{2}}. 
 \end{equation*}
 </div>
 </div>

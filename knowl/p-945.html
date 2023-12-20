@@ -13,68 +13,31 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Given that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
+\begin{equation}
+\int\limits_{-\infty}^{\infty}\left(\frac{\sin sa\cos sx}{s}\right)\,ds 
+= \begin{cases}
+\pi, &amp; \text{if} \quad |x| \lt a  \\
+0, &amp; \text{if} \quad |x| \gt a
+\end{cases} \tag{6.2.2}
+\end{equation}
+</div>
+<div class="para">Also, if <span class="process-math">\(x=0, a=1,\)</span>  then from expression <a href="" class="xref" data-knowl="./knowl/eqn-ftrans2.html" title="Equation 6.2.2">(6.2.2)</a> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
 \begin{equation*}
-f(x) = \begin{cases}
-1-x^{2}, &amp;  -1 \leq x \leq 1\\
-0, &amp;  -1 \gt x \gt 1
-\end{cases}
+\int\limits_{-\infty}^{\infty}\frac{\sin s}{s}\,ds =\pi 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">[for <span class="process-math">\(|x| \lt a \Rightarrow 0 \lt 1,\)</span>  and <span class="process-math">\(\cos 0 =1\)</span>] Or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
 \begin{equation*}
-\therefore   \mathscr{F}\{f(x)\} = F(s) = \int\limits_{-\infty}^{\infty}f(x) e^{-isx}\,dx  
+2\int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds =\pi
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ftrans2.html">
 \begin{equation*}
-= \int\limits_{-\infty}^{-1}f(x) e^{-isx}\,dx+\int\limits_{-1}^{1}f(x) e^{-isx}\,dx + \int\limits_{1}^{\infty}f(x) e^{-isx}\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{\infty}^{1}f(-y) e^{isy}\,(-dy)+\int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx + \int\limits_{1}^{\infty}0. e^{-isx}\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\int\limits_{1}^{\infty}f(-y) e^{isy}\,(dy)+\int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx + 0 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{1}^{\infty}0. e^{isy}\,(dy)+\int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx + 0
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \int\limits_{-1}^{1}(1-x^{2}) e^{-isx}\,dx = \int\limits_{-1}^{1} e^{-isx}\,dx - \int\limits_{-1}^{1} x^{2} e^{-isx}\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\left[\frac{e^{-isx}}{-is}\right]_{-1}^{1} - \left[\frac{x^{2}e^{-isx}}{-is}-2x \frac{e^{-isx}}{i^{2}s^{2}}+2\frac{e^{-isx}}{+is^{3}}\right]_{-1}^{1}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{-is}\left[e^{-is}-e^{is}\right]-\frac{e^{-is}}{-is}+2\frac{e^{-is}}{-s^{2}}-2\frac{e^{-is}}{is^{3}}+\frac{e^{is}}{-is}+2\frac{e^{is}}{-s^{2}}+2\frac{e^{is}}{is^{3}}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{-is}\left[e^{-is}-e^{is}\right]+\frac{1}{is}\left[e^{-is}-e^{is}\right] - \frac{2}{s^{2}}\left[e^{-is}+e^{is}\right]+\frac{2}{is^{3}}\left[e^{is}-e^{-is}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=-\frac{2s}{s^{3}}\left[e^{-is}+e^{is}\right]-\frac{2i}{s^{3}}\left[e^{is}-e^{-is}\right] 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{s^{3}}(4\sin s-4s\cos s).
+\int\limits_{0}^{\infty}\frac{\sin s}{s}\,ds=\frac{\pi}{2} 
 \end{equation*}
 </div>
 </div>

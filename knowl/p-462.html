@@ -13,105 +13,34 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
+<div class="para">
+<dfn class="terminology">Case III. Roots are imaginary pair.</dfn> If the roots are <span class="process-math">\(\alpha \pm i\beta,\)</span> then the solution will be</div>
+<div class="displaymath process-math">
 \begin{equation*}
-P.I.=\frac{1}{D-a}\phi(x) =v
+y=C_{1}e^{(\alpha + i\beta)x}+C_{2}e^{(\alpha - i\beta)x} = e^{\alpha x}\left[C_{1}e^{i\beta x}+C_{2}e^{-i\beta x}\right]
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\phi(x) = (D-a)v
+= e^{\alpha x}\left[C_{1}(\cos\beta x+i\sin\beta x)+C_{2}(\cos\beta x-i\sin\beta x)\right]
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\phi(x) = Dv-av
+=e^{\alpha x}\left[(C_{1}+C_{2})\cos\beta x+i(C_{1}-C_{2})\sin\beta x)\right]
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{\,dv}{\,dx}-av = \phi(x)
+=e^{\alpha x}\left[A\cos\beta x+iB\sin\beta x)\right]
 \end{equation*}
 </div>
-<div class="para">which is a first order linear differential equation. Its solution is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-ve^{-\int a\,dx}=\int e^{-\int a\,dx}\phi(x)\,dx =\int e^{-ax}\phi(x) \,dx
+=Ce^{\alpha x}\sin(\beta x+\gamma).
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation}
-\therefore \quad v=e^{ax}\int e^{-ax}\phi(x)\,dx=P.I.\tag{4.1.15}
-\end{equation}
-</div>
-<div class="para">Particular Integral can also be obtained by inspection method which will be discussed in examples given below. However, there may be developed a general method for solving the differential equation directly, called the successive integration method. Let the equation in the form</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation}
-(D^{2}+PD+Q)y=f(x)\tag{4.1.16}
-\end{equation}
-</div>
-<div class="para">If <span class="process-math">\(m_{1}=a\)</span> and <span class="process-math">\(m_{2}=b\)</span> are the roots of A.E., then eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol14.html" title="Equation 4.1.14">(4.1.14)</a> can be written as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation}
-(D-a)(D-b)y=f(x)\tag{4.1.17}
-\end{equation}
-</div>
-<div class="para">put,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation*}
-(D-b)y=v
-\end{equation*}
-</div>
-<div class="para">so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation*}
-(D-a)v=f(x)
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation*}
-\frac{\,dv}{\,dx}-av=f(x)
-\end{equation*}
-</div>
-<div class="para">Its solution is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation*}
-v\cdot e^{-\int a\,dx}=\int f(x)e^{-\int a\,dx}\,dx+C_{1}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation}
-\therefore \quad v= e^{ax}\int f(x) e^{-ax}\,dx+C_{1} e^{ax}\tag{4.1.18}
-\end{equation}
-</div>
-<div class="para">from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-pisol3.html" title="Equation 4.1.17">(4.1.17)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation*}
-(D-b)y=e^{ax}\int f(x)e^{-ax}\,dx+C_{1}e^{ax}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation*}
-\frac{\,dy}{\,dx}-by=\bar{Q}(x)
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation}
-\therefore  \quad y=e^{bx}\int\bar{Q}(x)e^{-bx}\,dx+C_{2}e^{bx}\tag{4.1.19}
-\end{equation}
-</div>
-<div class="para">where,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol14.html ./knowl/eqn-pisol3.html">
-\begin{equation}
-\bar{Q}(x)=e^{ax}\int f(x) e^{-ax}\,dx+C_{1}e^{ax}\tag{4.1.20}
-\end{equation}
-</div>
+<div class="para">where C and <span class="process-math">\(\gamma\)</span> are arbitrary constants.</div>
 </div>
 <span class="incontext"><a href="subsec-second_order-diff.html#p-462" class="internal">in-context</a></span>
 </body>

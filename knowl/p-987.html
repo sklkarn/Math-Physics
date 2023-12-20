@@ -13,32 +13,51 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">We have,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-Prod_LT1.html">
+\begin{equation}
+\mathscr{L}[f(t)] =F(s)=\int\limits_{0}^{\infty}e^{-st}f(t)\,dt\tag{6.3.2}
+\end{equation}
+</div>
+<div class="para">Differentiating equation <a href="" class="xref" data-knowl="./knowl/eqn-Prod_LT1.html" title="Equation 6.3.2">(6.3.2)</a>, w. r. t. ’s’, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-Prod_LT1.html">
 \begin{equation*}
-\mathscr{L}[f(t)] =\int\limits_{0}^{\infty}e^{-st}f(t)\,dt 
+\frac{d}{\,ds}[F(s)] = \frac{d}{\,ds}\left[\int\limits_{0}^{\infty}e^{-st}f(t)\,dt\right]  	= \int\limits_{0}^{\infty}\frac{d}{\,ds}(e^{-st})f(t)\,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-Prod_LT1.html">
+\begin{equation*}
+= \int\limits_{0}^{\infty}(-t e^{-st})f(t)\,dt  =\int\limits_{0}^{\infty}e^{-st}[-tf(t)]\,dt = L[-t f(t)]
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-Prod_LT1.html">
 \begin{equation*}
-\mathscr{L}[f(at)] = \int\limits_{0}^{\infty}e^{-st}f(at)\,dt 
+L[tf(t)] = (-1)^{1}\frac{d}{\,ds}F(s)
 \end{equation*}
 </div>
-<div class="para">put <span class="process-math">\(at=u\)</span>  so that <span class="process-math">\(\,dt=\frac{1}{a}\,du\text{.}\)</span>
-</div>
-<div class="displaymath process-math">
+<div class="para">Similarly,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-Prod_LT1.html">
 \begin{equation*}
-\therefore \quad \mathscr{L}[f(at)]=\int\limits_{0}^{\infty}e^{-su/a}f(u)\,du 
+L[t^{2} f(t)] = (-1)^{2}\frac{d^{2}}{\,ds^{2}}F(s)
 \end{equation*}
 </div>
-<div class="para">where</div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-Prod_LT1.html">
 \begin{equation*}
-p=s/a =  \frac{1}{a}F(p) =  \frac{1}{a}F(s/a)\text{.}
+L[t^{3} f(t)] = (-1)^{3}\frac{d^{3}}{\,ds^{3}}[F(s)]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-Prod_LT1.html">
+\begin{equation*}
+\vdots
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-Prod_LT1.html">
+\begin{equation*}
+\mathscr{L}[t^{n} f(t)] = (-1)^{n}\frac{d^{n}}{\,ds^{n}}[F(s)]
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-scale_LT.html#p-987" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-Prod_LT.html#p-987" class="internal">in-context</a></span>
 </body>
 </html>

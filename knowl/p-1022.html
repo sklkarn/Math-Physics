@@ -13,33 +13,41 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-F(s)= \log (1+\frac{\omega^{2}}{s^{2}})  
-\end{equation*}
-</div>
-<div class="para">we know that,</div>
-<div class="displaymath process-math">
-\begin{equation*}
--\frac{\,d}{\,ds}\log \left(\frac{s^{2}+\omega^{2}}{s^{2}}\right) =-\frac{\,d}{\,ds}[\log (s^{2}+\omega^{2}) -\log s^{2}]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=-\left[\frac{1\cdot2s}{s^{2}+\omega^{2}}-\frac{2s}{s^{2}}\right] = \left[\frac{2}{s}-\frac{2s}{s^{2}+\omega^{2}}\right]
+\mathscr{L}[\sin 4t] = \frac{4}{s^{2}+16}
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-tf(t)   =\mathscr{L}^{-1}\left[\frac{2}{s}-\frac{2s}{s^{2}+\omega^{2}}\right] = 2-2\cos \omega t
+\mathscr{L}[e^{t}\sin 4t] = \frac{4}{(s-1)^{2}+16}
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(t)=\frac{2}{t}[1-\cos \omega t] 
+\mathscr{L}[t^{2}e^{t}\sin 4t] =(-1)^{2}\frac{\,d^{2}}{\,ds^{2}}\left[ \frac{4}{(s-1)^{2}+16}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{\,d^{2}}{\,ds^{2}}\left[\frac{4}{s^{2}-2s+17}\right] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{\,d}{\,ds}\left[\frac{-4(2s-2)}{(s^{2}-2s +17)^{2}}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-4\left[\frac{(s^{2}-2s +17)^{2}\{2s^{2}-4s+34-8s^{2}+16s-8\}}{(s^{2}-2s +17)^{4}}\right]  
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{-4\{-6s^{2}+12s+26\}}{(s^{2}-2s +17)^{3}}
 \end{equation*}
 </div>
 </div>

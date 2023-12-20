@@ -12,8 +12,72 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">
-<span class="process-math">\(u(x,y,t)= 0\)</span> at <span class="process-math">\(y=0\)</span> gives <span class="process-math">\(B=0\text{,}\)</span>
+<div class="para logical">
+<div class="para">Consider the flow of heat in a metal plate of uniform thickness in the directions parallel to the breadth of the plate. The surface of the plate is insulated as shown in figure <a href="" class="xref" data-knowl="./knowl/fig-fig710.html" title="Figure 7.3.3">Figure 7.3.3</a>. Let <span class="process-math">\(u(x,y,t)\)</span> be the temperature at any point <span class="process-math">\((x,y)\)</span> of the plate at any time <span class="process-math">\(t\)</span> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation}
+\frac{\partial u}{\partial t}= h^{2} \left( \frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}\right)	\tag{7.3.48}
+\end{equation}
+</div>
+<div class="para">If the edges are kept at zero temperature then the boundary conditions are</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation*}
+u(0,y,t) = u(a,y,t) =u(x,0,t) = u(x,b,t)= 0
+\end{equation*}
+</div>
+<div class="para">and the initial condition is given as <span class="process-math">\(u(x,y,0) = f(x,y)\text{.}\)</span> Let us assume that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation}
+u(x,y,t) = X(x)Y(y)T(t)\tag{7.3.49}
+\end{equation}
+</div>
+<div class="para">be  the solution of equation <a href="" class="xref" data-knowl="./knowl/eqn-2Dheat_sol1.html" title="Equation 7.3.48">(7.3.48)</a>. Then from equation <a href="" class="xref" data-knowl="./knowl/eqn-2Dheat_sol1.html" title="Equation 7.3.48">(7.3.48)</a> we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation*}
+YT\frac{\partial^{2}X}{\partial x^{2}}+XT\frac{\partial^{2}Y}{\partial y^{2}} =\frac{XY}{h^{2}}\frac{\partial T}{\partial t}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation}
+h^{2}\left[\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}}+\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}}\right] = \frac{1}{T}\frac{\partial T}{\partial t} = -m \quad (\text{or,}  -\lambda^{2})\tag{7.3.50}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation}
+\frac{\partial T}{\partial t} =-mT \text{or,}  \frac{\partial T}{\partial t}+mT=0 \Rightarrow T=Ae^{-mt}\tag{7.3.51}
+\end{equation}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation*}
+\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} +\frac{m}{h^{2}}=-\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}}=k^{2}\quad \text{(say)}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation}
+\frac{\partial^{2}Y}{\partial y^{2}}+k^{2}Y=0  \quad \Rightarrow Y=B\cos ky+C\sin ky\tag{7.3.52}
+\end{equation}
+</div>
+<div class="para">also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation*}
+\frac{\partial^{2}X}{\partial x^{2}}+\left(\frac{m}{h^{2}}-k^{2}\right)X = 0
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation}
+\frac{\partial^{2}X}{\partial x^{2}}+p^{2}X = 0 \quad \Rightarrow  X=D\cos px+E\sin px\tag{7.3.53}
+\end{equation}
+</div>
+<div class="para">where,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig710.html ./knowl/eqn-2Dheat_sol1.html ./knowl/eqn-2Dheat_sol1.html">
+\begin{equation}
+p^{2}= \frac{m}{h^{2}}-k^{2}\tag{7.3.54}
+\end{equation}
+</div>
 </div>
 <span class="incontext"><a href="subsec-2D_heat.html#p-1189" class="internal">in-context</a></span>
 </body>

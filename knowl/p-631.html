@@ -11,36 +11,64 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">The Bessel’s function is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig44.html">
+<div class="para">Equating the coefficient of general term <span class="process-math">\(x^{m+k+2}\)</span> to zero, we get the recurrence relation for the coefficients as</div>
+<div class="displaymath process-math">
 \begin{equation*}
-J_{n}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n-2r}
-\end{equation*}
-</div>
-<div class="para">If <span class="process-math">\(n=0\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig44.html">
-\begin{equation*}
-J_{o}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{(r!)^{2}}\left(\frac{x}{2}\right)^{2r}
+a_{k+2}[(m+k+2)^{2}-n^{2}]+a_{k}=0
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig44.html">
+<div class="displaymath process-math">
+\begin{equation}
+a_{k+2}=-\frac{a_{k}}{(m+k+2)^{2}-n^{2}}\tag{4.7.4}
+\end{equation}
+</div>
+<div class="para">for</div>
+<div class="displaymath process-math">
 \begin{equation*}
-J_{o}(x) = 1-\frac{x^{2}}{2^{2}}+\frac{x^{4}}{2^{2}\cdot 4^{4}}-\frac{x^{6}}{2^{2}\cdot 4^{2}\cdot 6^{2}}+\cdots
+m=+n, \quad a_{k+2}=-\frac{a_{k}}{(n+k+2)^{2}-n^{2}} 
 \end{equation*}
 </div>
-<div class="para">If <span class="process-math">\(n=1\text{,}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig44.html">
+<div class="para">and</div>
+<div class="displaymath process-math">
 \begin{equation*}
-J_{1}(x)=\frac{x}{2}-\frac{x^{3}}{2^{2}\cdot 4}+\frac{x^{5}}{2^{2}\cdot 4^{4}\cdot 6}-\cdots
+a_{2}=-\frac{a_{o}}{(n+2)^{2}-n^{2}}=-\frac{a_{o}}{4(n+1)};
 \end{equation*}
 </div>
-<div class="para">The graph of these functions are damped oscillatory with a varying period, as shown in figure <a href="" class="xref" data-knowl="./knowl/fig-fig44.html" title="Figure 4.7.1">Figure 4.7.1</a>.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{3}=-\frac{a_{1}}{(n+3)^{2}-n^{2}}=0 \quad [\because a_{1}=0]
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-bessl_fn.html#p-631" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad a_{5} =a_{7} =\cdots=0,
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{4}=-\frac{a_{2}}{(n+4)^{2}-n^{2}}  =+\frac{a_{o}}{4(n+1)8(n+2)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{a_{o}}{4^{2}2!(n+1)(n+2)}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{6}=-\frac{a_{4}}{(n+6)^{2}-n^{2}}=- \frac{a_{0}}{4^{2}2!(n+1)(n+2)(n+3)12} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-\frac{a_{0}}{4^{3}3!(n+1)(n+2)(n+3)} 
+\end{equation*}
+</div>
+<div class="para">and so on.</div>
+</div>
+<span class="incontext"><a href="sec_fourth-besslfn.html#p-631" class="internal">in-context</a></span>
 </body>
 </html>

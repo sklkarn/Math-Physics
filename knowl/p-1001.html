@@ -13,15 +13,19 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let us convert the given function into partial fractions.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}^{-1}\left(\frac{1}{s^{2}-5s+6}\right) = \mathscr{L}^{-1}\left(\frac{1}{s-3}\right)-L^{-1}\left(\frac{1}{s-2}\right) 
+\mathscr{L}[\sin (\omega t + \theta)] = \mathscr{L}[\sin \omega t \cos \theta +\cos \omega t \sin \theta]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= e^{3t}-e^{2t}
+= \cos \theta \mathscr{L}[\sin \omega t] +\sin \theta \mathscr{L}[\cos \omega t] 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \cos \theta \left[\frac{\omega}{s^{2}+\omega ^{2}}\right] +  \sin \theta \left[\frac{s}{s^{2}+\omega ^{2}}\right].
 \end{equation*}
 </div>
 </div>

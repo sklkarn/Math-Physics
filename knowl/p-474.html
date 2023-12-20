@@ -13,76 +13,80 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">A.E. is  <span class="process-math">\(D^{2}+a^{2}=0\)</span> or, <span class="process-math">\(D=\pm ai\text{.}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="para">The motion executed by a spring is simple harmonic motion, therefore, <span class="process-math">\(F=-ky\)</span> (where <span class="process-math">\(y\)</span> is the displacement of mass <span class="process-math">\(m\)</span> at any time, <span class="process-math">\(t\text{.}\)</span>)</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-C.F. = C_{1}\cos ax+C_{2}\sin ax
+m\frac{\,d^{2}y}{\,dt^{2}}=-ky
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-P.I. = \frac{1}{D^{2}+a^{2}}\cdot \sec ax = \frac{1}{(D+ai)(D-ai)}\cdot \sec ax
+\frac{\,d^{2}y}{\,dt^{2}}+\frac{k}{m}y=0 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
-\begin{equation*}
-= \frac{1}{2ai}\left[\frac{1}{(D-ai)}-\frac{1}{(D+ai)}\right]\sec ax
-\end{equation*}
-</div>
-<div class="para">Therefore,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation}
-P.I. = \frac{1}{2ai}\frac{1}{(D-ai)}\sec ax-\frac{1}{2ai}\frac{1}{(D+ai)}\sec ax \tag{4.2.4}
+\frac{\,d^{2}y}{\,dt^{2}}+\omega^{2}y=0\tag{4.2.2}
 \end{equation}
 </div>
-<div class="para">Now,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="para">where <span class="process-math">\(\omega^{2} = \frac{k}{m}\text{.}\)</span> The eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffex2.html" title="Equation 4.2.2">(4.2.2)</a> is the equation of motion.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
+\begin{equation*}
+A.E. = m^{2}+\omega^{2}=0 \hspace{0.5cm}  \text{or,} \quad m=\pm i\omega
+\end{equation*}
+</div>
+<div class="para">The general solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffex2.html" title="Equation 4.2.2">(4.2.2)</a> is then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation}
-\frac{1}{(D-ai)}\sec ax = e^{aix}\int e^{-aix}\sec ax\,dx\tag{4.2.5}
+y(t) =C_{1}e^{i\omega}t+C_{2}e^{-i\omega}t = A\cos\omega t+B\sin\omega t\tag{4.2.3}
 \end{equation}
 </div>
-<div class="para">[using eqns. <a href="" class="xref" data-knowl="./knowl/eqn-pisol3.html" title="Equation 4.1.17">(4.1.17)</a>, and <a href="" class="xref" data-knowl="./knowl/eqn-pisol4.html" title="Equation 4.1.18">(4.1.18)</a>]</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="para">If <span class="process-math">\(T\)</span> be the period of motion, then <span class="process-math">\(y(t)=y(t+T)\text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-=e^{aix}\int\frac{\cos ax-i\sin ax}{\cos ax}\,dx =e^{aix}\int(1-i\tan ax)\,dx 
+\therefore A \cos\omega t +B\sin\omega t =A\cos(\omega t+\omega T)+B\sin(\omega t+\omega t)
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-= e^{aix}(x+\frac{i}{a}\log\cos ax)
+= A\left[\cos\omega t\cdot\cos\omega T-\sin\omega t\cdot\sin\omega T\right] 
++ B\left[\sin\omega t\cdot\cos\omega T+\cos\omega t\cdot\sin\omega T\right]
 \end{equation*}
 </div>
-<div class="para">changing <span class="process-math">\(i\)</span> to <span class="process-math">\(-i\text{,}\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-\frac{1}{(D+ai)}\sec ax =e^{-aix}(x-\frac{i}{a}\log\cos ax)
+=\left(A\cos\omega T+B\sin\omega T\right)\cos\omega t+\left(B\cos\omega T-A\sin\omega T\right)\sin\omega t
 \end{equation*}
 </div>
-<div class="para">putting these values in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffeq4.html" title="Equation 4.2.4">(4.2.4)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="para">equating on both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-P.I. = \frac{1}{2ai}\left[e^{aix}\left(x+\frac{i}{a}\log\cos ax\right)-e^{-aix}\left(x-\frac{i}{a}\log\cos ax\right)\right]
+A\cos\omega T+B\sin\omega T = A 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-=\frac{x}{2ai}e^{aix}-\frac{x}{2ai}e^{-aix}+\frac{e^{aix}\log\cos ax}{2a^{2}}+\frac{e^{-aix}\log\cos ax}{2a^{2}}
+\Rightarrow \cos\omega T =1 \hspace{1cm} \text{and} \quad  \sin\omega T =0.
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="para">i.e.,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-=\frac{x}{a}\frac{e^{aix}-e^{-aix}}{2i}+\frac{1}{a^{2}}\frac{e^{aix}+e^{-aix}}{2}\log\cos ax
+\cos\omega T =1=\cos 2n\pi  
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-=\frac{x}{a}\sin ax +\frac{1}{a^{2}}\cos ax\cdot\log\cos ax
+\omega T = 2n\pi
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffex2.html ./knowl/eqn-diffex2.html">
 \begin{equation*}
-\therefore  y= C_{1}\cos ax+C_{2}\sin ax+\frac{x}{a}\sin ax+\frac{1}{a^{2}}\cos ax\cdot\log\cos ax.
+\therefore  T = \frac{2n\pi}{\omega} = 2n\pi\sqrt{\frac{m}{k}} 
 \end{equation*}
 </div>
 </div>

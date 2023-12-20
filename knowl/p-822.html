@@ -16,77 +16,77 @@
 <div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+f(x) =e^{-x} = 	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
 \end{equation*}
 </div>
 <div class="para">where</div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{o} = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx = \frac{1}{\pi}\left[\int\limits_{-\pi}^{-\pi/2}(-1)\,dx + \int\limits_{-\pi/2}^{\pi/2} 0. \,dx + \int\limits_{\pi/2}^{\pi}(+1)\,dx\right]
+a_{o} = \frac{1}{\pi}\int\limits_{0}^{2\pi}f(x)\,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi}e^{-x}\,dx =  \frac{1}{\pi}\left[\frac{e^{-x}}{-1}\right]^{2\pi}_{0} 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{\pi}\left[-\left(x\right)_{-\pi}^{-\pi/2}+\left(x\right)_{\pi/2}^{\pi}\right]
+= \frac{1}{\pi}\left[-e^{-2\pi}+1\right] = \frac{1-e^{-2\pi}}{\pi}.
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{\pi}\left[-\left\{-\frac{\pi}{2}+\pi \right\} + \left\{\pi -\frac{\pi}{2} \right\}\right] = \frac{1}{\pi}\left[-\left\{-\frac{\pi}{2} +\frac{\pi}{2} \right\}\right] = 0.
+a_{n} = \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\cos nx \,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi} e^{-x}\cos nx \,dx 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{n} = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} f(x)\cos nx \,dx 
+= \frac{1}{\pi}\left[\frac{e^{-x}}{1+n^{2}}(-\cos nx +n \sin nx)\right]_{0}^{2\pi}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{\pi}\left[\int\limits_{-\pi}^{-\pi/2} (-1)\cos nx \,dx + \int\limits_{-\pi/2}^{\pi/2} 0.\cos nx \,dx + \int\limits_{\pi/2}^{\pi} (+1)\cos nx \,dx\right]
+=\frac{1}{\pi(1+n^{2})}\left[e^{-x}(-\cos 2n\pi+n\sin 2n\pi) - e^{0}(-\cos 0+n\sin 0)\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{\pi}\left[-\left(\frac{\sin nx}{n}\right)_{-\pi}^{-\pi/2}+\left(\frac{\sin nx}{n}\right)_{\pi/2}^{\pi}\right]
+=\frac{1}{\pi(1+n^{2})}\left[1-e^{-2\pi}\right].
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{\pi}\left[-\left(-\frac{\sin n\pi/2}{n}+	\frac{\sin n\pi}{n}\right)+\left(\frac{\sin n\pi}{n} -	\frac{\sin n\pi/2}{n}\right)\right] = 0.
+b_{n} = \frac{1}{\pi}\int\limits_{0}^{2\pi} f(x)\sin nx \,dx = \frac{1}{\pi}\int\limits_{0}^{2\pi} e^{-x}\sin nx \,dx 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-b_{n} = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} f(x)\sin nx \,dx 
+= \frac{1}{\pi}\left[\frac{e^{-x}}{1+n^{2}}(-\sin nx +n \cos nx)\right]_{0}^{2\pi}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{\pi}\left[\int\limits_{-\pi}^{-\pi/2} (-1)\sin nx \,dx + \int\limits_{-\pi/2}^{\pi/2} 0.\sin nx \,dx + \int\limits_{\pi/2}^{\pi} (+1)\sin nx \,dx\right]
+=\frac{1}{\pi (1+n^{2})}\left[e^{-2\pi}(-\sin 2n\pi - n \cos 2n \pi) - e^{0}(-\sin 0 - n\cos 0)\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{\pi}\left[+\left(\frac{\cos nx}{n}\right)_{-\pi}^{-\pi/2}+\left(\frac{\cos nx}{-n}\right)_{\pi/2}^{\pi}\right]
+=\frac{n}{\pi (1+n^{2})}\left[e^{-2\pi}(-n) - e^{0}(-n)\right].
 \end{equation*}
 </div>
-<div class="para">now, from expression <span class="process-math">\(f(x)\text{,}\)</span> we get -</div>
+<div class="para">From expression <span class="process-math">\(f(x)\text{,}\)</span> we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x)=\sum\limits_{n=1}^{\infty} \left[+\frac{2}{n\pi}\left(\cos \frac{n\pi}{2}-\cos n\pi\right)\sin nx\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= +\frac{2}{\pi}\left[\frac{\sin x}{1}-\frac{2\sin 2x}{2}+\frac{\sin 3x}{3}-\cdots\right]
+e^{-x} = \frac{1-e^{-2\pi}}{\pi} + \sum\limits_{n=1}^{\infty}\left[\frac{1-e^{-2\pi}}{\pi (1+n^{2})} \cos nx + \frac{1-e^{-2\pi}}{\pi (1+n^{2})}n \sin nx\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= +\frac{2}{\pi}\left[\sin x-\frac{2\sin 2x}{2}+\frac{\sin 3x}{3}-\cdots\right].
+=\frac{1-e^{-2\pi}}{\pi}\left[\frac{1}{2}+\left\{\frac{\cos x}{2}+\frac{\cos 2x}{5}+\cdots + \right\} \right.
 \end{equation*}
 </div>
-<div class="para">which is the required Fourier series expansion.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left. + \left\{\frac{\sin x}{2}+\frac{2\sin 2x}{5}+\cdots + \right\}\right].
+\end{equation*}
+</div>
+<div class="para">which is the required Fourier series.</div>
 </div>
 <span class="incontext"><a href="sec_fifth-examplesA.html#p-822" class="internal">in-context</a></span>
 </body>

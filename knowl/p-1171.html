@@ -11,52 +11,85 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Paragraph</span></h2>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Now if <span class="process-math">\(\rho\)</span> be the density of the body, <span class="process-math">\(c\)</span> be the specific heat capacity, then the total heat <span class="process-math">\(Q\)</span> contained in the body is given by</div>
-<div class="displaymath process-math">
+<div class="para">Therefore the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-waveeqn1.html" title="Equation 7.2.26">(7.2.26)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
 \begin{equation}
-Q=\iiint\limits_{V}c\rho u\,dV  \tag{7.3.3}
+u(x,y,t)=\sum\limits_{m=1}^{\infty}A_{mn}\cos\lambda_{mn}t\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}	\tag{7.2.29}
 \end{equation}
 </div>
-<div class="para">
-<span class="process-math">\([\because\quad Q = mc\theta =V\rho c \theta ] \)</span> here <span class="process-math">\(\theta\)</span> = temperature, <span class="process-math">\(u\)</span>] so the rate of decrease of <span class="process-math">\(Q\)</span> is given by</div>
-<div class="displaymath process-math">
-\begin{equation}
--\frac{\partial Q}{\partial t}=-\iiint\limits_{V}c\rho \frac{\partial u}{\partial t}\,dV\tag{7.3.4}
-\end{equation}
-</div>
-<div class="para">This must be equal to the amount of heat leaving the body in unit time, i.e.,</div>
-<div class="displaymath process-math">
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
 \begin{equation*}
--\iiint\limits_{V}c\rho \frac{\partial u}{\partial t}\,dV = -k \iiint\limits_{V}\nabla^{2}u\,dV
+A_{mn}=\frac{4}{1\cdot 1}\int\limits_{x=0}^{1}\int\limits_{y=0}^{1}f(x,y)\sin\frac{m\pi x}{1}\sin\frac{n\pi y}{1}\,dx\,dy 
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
 \begin{equation}
-\iiint\limits_{V}\left[c\rho \frac{\partial u}{\partial t}-k\nabla^{2}u\right]\,dV=0\tag{7.3.5}
+=4\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin 2\pi y \sin m\pi x\sin n\pi y\,dx\,dy \tag{7.2.30}
 \end{equation}
 </div>
-<div class="para">Since the surface <span class="process-math">\(S\)</span> is arbitrary, the volume enclosed by surface <span class="process-math">\(\,dS\)</span> is <span class="process-math">\(\,dV\neq 0\text{.}\)</span>Thus the integrands must be zero. i.e.,</div>
-<div class="displaymath process-math">
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
 \begin{equation*}
-c\rho \frac{\partial u}{\partial t}= k\nabla^{2}u
+A_{m1}=A_{m3}=A_{m4}=\cdots=0
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="para">but,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
 \begin{equation*}
-\frac{\partial u}{\partial t}=\frac{k}{c\rho} \nabla^{2}u
+A_{m2} =4A\int\limits_{0}^{1}\int\limits_{0}^{1}A\sin \pi x\sin m\pi x\sin^{2} 2\pi y\,dx\,dy 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation}
-\therefore \quad \frac{\partial u}{\partial t} =h^{2}\nabla^{2}u\tag{7.3.6}
-\end{equation}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= 2A\int\limits_{0}^{1}\int\limits_{0}^{1}\sin \pi x\sin m\pi x(1-\cos4\pi y)\,dx\,dy
+\end{equation*}
 </div>
-<div class="para">This equation is known as heat equation. The quantity <span class="process-math">\(h^{2}\)</span> is known as diffusivity of the solid, and is defined as the ratio of thermal conductivity and heat capacity of solid per unit volume.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=2A\int\limits_{0}^{1}\sin \pi x\sin m\pi x\left(y-\frac{1}{4\pi}\sin 4\pi y\right)_{0}^{1}\,dx 
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_seventh-heateq.html#p-1171" class="internal">in-context</a></span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= 2A \int\limits_{0}^{1}\sin \pi x\sin m\pi x\,dx 
+\end{equation*}
+</div>
+<div class="para">on integration, we find that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{22}= A_{32}=A_{42}=\cdots=0
+\end{equation*}
+</div>
+<div class="para">Also, we find</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+A_{12} =2A\int\limits_{0}^{1}\sin \pi x\sin \pi x\,dx = A\int\limits_{0}^{1}(1-\cos 2\pi x)\,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+= A\left(x-\frac{\sin 2\pi x}{2\pi}\right)_{0}^{1}=A.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+\therefore \quad u(x,y,t)= A_{12}\cos\lambda_{12}t\sin\pi x\sin 2\pi y 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+=A\cos\sqrt{5}\pi t\sin\pi x\sin 2\pi t
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-waveeqn1.html">
+\begin{equation*}
+[ \because \quad \lambda_{12}^{2}=1^{2}\cdot k_{12}^{2}=\pi^{2}(1^{2}+2^{2}); \quad \therefore \quad \lambda_{12}=\pi \sqrt{5}].
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_seventh-examplesA.html#p-1171" class="internal">in-context</a></span>
 </body>
 </html>

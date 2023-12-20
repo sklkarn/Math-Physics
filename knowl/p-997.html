@@ -13,19 +13,25 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sec_sixth-Ltrans.html">
 \begin{equation*}
-\mathscr{L}[\cos at \sinh at] = \mathscr{L}\left[\cos at\{\frac{e^{at}-e^{-at}}{2}\}\right]
+\mathscr{L}[t\sin at] = \mathscr{L}\left[t\{\frac{e^{iat}-e^{-iat}}{2i}\}\right] =\frac{1}{2i}[\mathscr{L}(te^{iat})-\mathscr{L}(te^{-iat})]
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sec_sixth-Ltrans.html">
 \begin{equation*}
-=\frac{1}{2}[\mathscr{L}(\cos at e^{at})-\mathscr{L}(\cos at e^{-at})]
+=\frac{1}{2i}\left[\frac{1}{(s-ia)^{2}}-\frac{1}{(s+ia)^{2}}\right]. 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">(see formula 8 in <a href="sec_sixth-Ltrans.html" class="internal" title="Section 6.3: Laplace Transforms">Section 6.3</a>)</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sec_sixth-Ltrans.html">
 \begin{equation*}
-= \frac{1}{2}\left[\frac{s-a}{(s-a)^{2}+a^{2}}-\frac{s+a}{(s+a)^{2}+a^{2}}\right]
+=\frac{1}{2i}\left[\frac{s^{2}+2ias-a^{2}-s^{2}+2ias+a^{2}}{(s^{2}+a^{2})^{2}}\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/sec_sixth-Ltrans.html">
+\begin{equation*}
+= \frac{1}{2i}\left[\frac{4ias}{(s^{2}+a^{2})^{2}}\right]= \frac{2as}{(s^{2}+a^{2})^{2}} 
 \end{equation*}
 </div>
 </div>

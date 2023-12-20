@@ -16,39 +16,25 @@
 <div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}^{-1}\left[\frac{1}{(s^{2}+a^{2})}\right] = \frac{1}{a}\sin at 
+\mathscr{L}^{-1}\left[\frac{1}{(s^{2}+1)}\right] = \sin t
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}^{-1}\left[\frac{1}{s(s^{2}+a^{2})}\right]  =\frac{1}{a}\int\limits_{0}^{t}\sin at\,dt 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{a}\left[\frac{-\cos at}{a}\right]_{0}^{t}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{a^{2}}[1-\cos at +1] = \frac{1}{a^{2}}[1-\cos at]
+\mathscr{L}^{-1}\left[\frac{1}{s(s^{2}+1)}\right] = \int\limits_{0}^{t}1.\sin t\,dt 
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}^{-1}\left[\frac{1}{s^{2}(s^{2}+a^{2})}\right] =  \frac{1}{a^{2}}\int\limits_{0}^{t}(1-\cos at)\,dt
+[-\cos t]_{0}^{t} = (-\cos t +1)
 \end{equation*}
 </div>
+<div class="para">i.e.,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{a^{2}}\left[\left.t\right\vert_{0}^{t}-\left(\frac{\sin at}{a}\right)_{0}^{t}\right] 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=  \frac{1}{a^{2}}\left[t-\frac{1}{a}\sin at\right]
+\mathscr{L}^{-1}\left[\frac{1}{s(s^{2}+1)}\right] = 1-\cos t
 \end{equation*}
 </div>
 </div>

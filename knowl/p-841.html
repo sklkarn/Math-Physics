@@ -13,48 +13,29 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier-sum4.html">
+<div class="para">There are three points of discontinuities at <span class="process-math">\(x=0\)</span> <span class="process-math">\(\pi\text{,}\)</span> and <span class="process-math">\(-\pi\)</span> at <span class="process-math">\(x=0\text{,}\)</span> the series converges to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum3.html">
 \begin{equation*}
-f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right] 
+f(x)=\frac{1}{2}\left[f(x+0)+f(x-0)\right] 
 \end{equation*}
 </div>
-<div class="para">where,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier-sum4.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum3.html">
 \begin{equation*}
-a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x)\,dx
+= \frac{1}{2}\left[f(0+0)+f(0-0)\right] = \frac{1}{2}\left[0+(-\pi)\right]=-\frac{\pi}{2}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier-sum4.html">
+<div class="para">Therefore from eqn. <a href="" class="xref" data-knowl="./knowl/eqn-fourier_sum3.html" title="Equation 5.4.3">(5.4.3)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum3.html">
 \begin{equation*}
-=\frac{1}{\pi}\left[ 0 + \int\limits_{0}^{\pi} \sin x \,dx \right]  = \frac{1}{\pi}\left[-\cos x \right]_{0}^{\pi}  = \frac{2}{\pi}
+-\frac{\pi}{2} = -\frac{\pi}{4}-\frac{2}{\pi}\left[\frac{1}{1^{2}}+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\cdots\right] +0
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier-sum4.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier_sum3.html">
 \begin{equation*}
-a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{1}{\pi}\int\limits_{0}^{\pi} \sin x \cos nx\,dx 
+\frac{\pi}{8}	 = \frac{1}{1^{2}}+\frac{1}{3^{2}}+\frac{1}{5^{2}}+\cdots. 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier-sum4.html">
-\begin{equation*}
-= \begin{cases} 
--\frac{2}{\pi(n^{2}-1)}, &amp; \text{if  n  is  even}\\ 
-0,  &amp; \text{if n  is odd}, 
-\end{cases}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier-sum4.html">
-\begin{equation*}
-b_{n}= \frac{1}{\pi}\int\limits_{0}^{\pi}\sin x \sin nx\,dx = \frac{1}{2}+0 
-\end{equation*}
-</div>
-<div class="para">[<span class="process-math">\(\because \)</span>  for n=1, <span class="process-math">\(b_{1}=\frac{1}{2}\)</span>]</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-fourier-sum4.html">
-\begin{equation}
-\therefore \quad f(x) = \frac{1}{\pi}-\sum\limits_{m=0}^\infty \left(\frac{2}{\pi(4m^2-1)}\right)\cos 2mx +\frac{1}{2}\sin x; \tag{5.4.4}
-\end{equation}
-</div>
-<div class="para">where n=2m. The graphical representation of the function is shown in figure below. <div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;"><img src="external/fig55.png" class="contained"></div>  put <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=\frac{\pi}{2}\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-fourier-sum4.html" title="Equation 5.4.4">(5.4.4)</a> to deduce the series for a. and b., respectively.</div>
 </div>
 <span class="incontext"><a href="sec_fifth-examplesB.html#p-841" class="internal">in-context</a></span>
 </body>

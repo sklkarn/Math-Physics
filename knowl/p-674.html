@@ -13,36 +13,33 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We have the recurrence relation (4) from <a href="subsec-bessl_fn.html#subsubsec-bessl_recr" class="internal" title="Subsubsection 4.7.1.3: Recurrence Relations for  J_{n}(x)">Subsubsection 4.7.1.3</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq2.html ./knowl/eqn-bessl_eq1.html">
-\begin{equation}
-2nJ_{n}=x(J_{n-1}+J_{n+1}) \tag{4.8.2}
-\end{equation}
-</div>
-<div class="para">putting <span class="process-math">\(n=\frac{1}{2}\text{,}\)</span> we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq2.html ./knowl/eqn-bessl_eq1.html">
+<div class="para">Againg putting <span class="process-math">\(n=-\frac{1}{2}\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq1.html" title="Equation 4.8.1">(4.8.1)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
 \begin{equation*}
-J_{\frac{1}{2}}=x\left(J_{-\frac{1}{2}}+J_{\frac{3}{2}}\right)
+J_{-\frac{1}{2}}(x)=\frac{x^{-\frac{1}{2}}}{2^{-\frac{1}{2}}\frac{1}{2}!}\left[1-\frac{x^{2}}{2\cdot 2(-\frac{1}{2}+1)}\right.
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq2.html ./knowl/eqn-bessl_eq1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
 \begin{equation*}
-J_{\frac{3}{2}}=\frac{1}{x}\left(J_{\frac{1}{2}}\right)-J_{-\frac{1}{2}}
+\left.+\frac{x^{4}}{2\cdot 4\cdot 2^{2}(-\frac{1}{2}+1)(-\frac{1}{2}+2)}-\cdots\right]
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq2.html ./knowl/eqn-bessl_eq1.html">
-\begin{equation}
-=\frac{1}{x}\sqrt{\frac{2}{\pi x}}\sin x- \sqrt{\frac{2}{\pi x}}\cos x = \sqrt{\frac{2}{\pi x}}\left[\frac{\sin x}{x}-\cos x\right] \tag{4.8.3}
-\end{equation}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+=\frac{\sqrt{2}}{\sqrt{x}\Gamma{(-\frac{1}{2}+1})}\left[1-\frac{x^{2}}{2!}+\frac{x^{4}}{2\cdot3\cdot4}-\cdots\right]
+\end{equation*}
 </div>
-<div class="para">Similarly on putting <span class="process-math">\(n=-\frac{1}{2}\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq2.html" title="Equation 4.8.2">(4.8.2)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq2.html ./knowl/eqn-bessl_eq1.html">
-\begin{equation}
-J_{-\frac{3}{2}}=\sqrt{\frac{2}{\pi x}}\left[\frac{-\cos x}{x}-\sin x\right] \tag{4.8.4}
-\end{equation}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+=\frac{\sqrt{2}}{\sqrt{x}\Gamma{(\frac{1}{2})}}\left[1-\frac{x^{2}}{2!}+\frac{x^{4}}{4!}-\cdots\right]
+\end{equation*}
 </div>
-<div class="para">We can also prove it by putting <span class="process-math">\(n=\pm\frac{3}{2}\)</span> in the eqn. <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq1.html" title="Equation 4.8.1">(4.8.1)</a> of previous problem 2.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_eq1.html">
+\begin{equation*}
+=\sqrt{\left(\frac{2}{\pi x}\right)}\cos x 
+\end{equation*}
+</div>
+<div class="para">[since <span class="process-math">\(\Gamma(\frac{1}{2})=\sqrt{\pi}\)</span>].</div>
 </div>
 <span class="incontext"><a href="sec_fourth-examplesD.html#p-674" class="internal">in-context</a></span>
 </body>

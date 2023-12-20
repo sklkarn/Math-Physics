@@ -12,48 +12,7 @@
 </head>
 <body class="ignore-math">
 <h2 class="heading"><span class="type">Paragraph</span></h2>
-<div class="para logical">
-<div class="para">Now,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f(x) = f\left(\frac{cz}{\pi}\right) = F(z)\quad \text{(say)}
-\end{equation*}
-</div>
-<div class="para">Hence,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-a_{0}=  \frac{1}{\pi}\int\limits_{-\pi}^{\pi}F(z)\,dz
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{\pi}\int\limits_{-\pi}^{\pi} f\left(\frac{cz}{\pi}\right)\,dz = \frac{1}{\pi}\int\limits_{-c}^{c} f(x)\,d\left(\frac{\pi x}{c}\right) = \frac{1}{c}\int\limits_{-c}^{c}f(x)\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}F(z) \cos nz\,dz = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f\left(\frac{cz}{\pi}\right)\cos nz\,dz 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{1}{\pi}\int\limits_{-c}^{c}f(x)\cos  \left(\frac{n \pi x}{c}\right)\,d \left(\frac{\pi x}{c}\right) = \frac{1}{c}\int\limits_{-c}^{c}f(x)\cos  \frac{n \pi x}{c}\,dx
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}F(z) \sin nz\,dz = \frac{1}{c}\int\limits_{-c}^{c}f(x)\sin  \frac{n \pi x}{c}\,dx 
-\end{equation*}
-</div>
-<div class="para">The function <span class="process-math">\(f(x)\)</span> is now expressed as</div>
-<div class="displaymath process-math">
-\begin{equation}
-f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{c}\right) + b_{n}\sin \left(\frac{n\pi x}{c}\right)\right] \tag{5.5.2}
-\end{equation}
-</div>
-<div class="para">for the period <span class="process-math">\(2c\text{.}\)</span>
-</div>
+<div class="para"> The period of a function in Fourier series sometimes appears in time like <span class="process-math">\(T\)</span> or in length like <span class="process-math">\(2c\text{,}\)</span> then in order to use Fourier series expansion such period must be converted into in angle like <span class="process-math">\(2\pi\text{.}\)</span> In that case the independent variable <span class="process-math">\(x\)</span> of a function <span class="process-math">\(f(x)\)</span> must also be changed proportionally. Suppose we want to represent the function <span class="process-math">\(f(x)\)</span> defined in the closed interval <span class="process-math">\((-c, c)\)</span> by a Fourier series, <span class="process-math">\(c\)</span> being any positive real number. We consider this interval as a result of elongating (or compressing) the interval <span class="process-math">\([-\pi, \pi]\text{.}\)</span> The interval <span class="process-math">\(-c \leq x \leq c\)</span> is transformed into the interval <span class="process-math">\(-\pi \leq x \leq \pi\)</span> by the transformation <span class="process-math">\(z=\frac{\pi x}{c}\text{.}\)</span>
 </div>
 <span class="incontext"><a href="sec_fifth-frinterval.html#p-844" class="internal">in-context</a></span>
 </body>

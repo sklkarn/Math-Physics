@@ -13,67 +13,45 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">By definition</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+<div class="para">we have</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}_{c}\{e^{-x^{2}/2}\}=\int\limits_{0}^{\infty}e^{-x^{2}/2}\cos sx\,dx= I \quad (say)
+\mathscr{F}_{s}\{f(x)\} =\int\limits_{0}^{\infty} f(x)\sin sx \,dx 
 \end{equation*}
 </div>
-<div class="para">Now, differentiating w.r.t. ’s’, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{\,dI}{\,ds}=\int\limits_{0}^{\infty}\left(-xe^{-x^{2}/2}\right)\sin sx\,dx 
+=\int\limits_{0}^{1} f(x)\sin sx \,dx + \int\limits_{1}^{2} f(x)\sin sx \,dx + \int\limits_{2}^{\infty} f(x)\sin sx \,dx
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-= \left[\left.e^{-x^{2}/2} \sin sx\right\vert_{0}^{\infty} - \int\limits_{0}^{\infty} s.\cos sx. e^{-x^{2}/2}\,dx\right] 
+=\int\limits_{0}^{1} x\sin sx \,dx + \int\limits_{1}^{2} (2-x)\sin sx \,dx + \int\limits_{2}^{\infty} 0.\sin sx \,dx
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-=0-s\int\limits_{0}^{\infty}e^{-x^{2}/2} \cos sx\,dx = -sI
+=\left[-\frac{x\cos sx}{s}+\frac{\sin sx}{s^{2}}\right]_{0}^{1} +\left[	\frac{2\cos sx}{s}\right]_{1}^{2}
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{\,dI}{\,ds} =-sI 
+-\left[-	\frac{x\cos sx}{s}+	\frac{\sin sx}{s^{2}}\right]_{1}^{2}
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{\,dI}{I} = -s\,ds
+=\left[-\frac{\cos s}{s}+\frac{\sin s}{s^{2}}\right]-\frac{2}{s}\cos 2s+\frac{2}{s}\cos s 
 \end{equation*}
 </div>
-<div class="para">on integrating, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\log I = -\frac{s^{2}}{2} +\log A
++\frac{2\cos 2s-\cos s}{s}-	\left[\frac{\sin 2s-\sin s}{s^{2}}\right]
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
-\begin{equation}
-I=Ae^{-s^{2}/2}  \tag{6.2.3}
-\end{equation}
-</div>
-<div class="para">when  s =0,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-I = \int\limits_{0}^{\infty}e^{-x^{2}/2}\cos 0\,dx = \frac{1}{2}\sqrt{\pi/2}
-\end{equation*}
-</div>
-<div class="para">putting this value in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-FC_trans1.html" title="Equation 6.2.3">(6.2.3)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
-\begin{equation*}
-\frac{\sqrt{\pi}}{2\sqrt{2}}=A  
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-FC_trans1.html">
-\begin{equation*}
-\therefore  I = \frac{\sqrt{\pi}}{2\sqrt{2}}e^{-s^{2}/2}.
+= \frac{2\sin s-2\sin s\cos s}{s^{2}}= \frac{2(1-\cos s)\sin s}{s^{2}}.
 \end{equation*}
 </div>
 </div>

@@ -13,39 +13,78 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-diffeq6.html">
-\begin{equation}
-(D^{2}-2D+1)y =2\cos x \tag{4.2.6}
-\end{equation}
+<div class="para">A.E. is  <span class="process-math">\(D^{2}+a^{2}=0\)</span> or, <span class="process-math">\(D=\pm ai\text{.}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-diffeq6.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
 \begin{equation*}
-\text{A.E.,} \quad m^{2}-2m+1=0 
+C.F. = C_{1}\cos ax+C_{2}\sin ax
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-diffeq6.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
 \begin{equation*}
-(m-1)^{2}=0 \quad \Rightarrow  m=1,1
+P.I. = \frac{1}{D^{2}+a^{2}}\cdot \sec ax = \frac{1}{(D+ai)(D-ai)}\cdot \sec ax
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-diffeq6.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+\begin{equation*}
+= \frac{1}{2ai}\left[\frac{1}{(D-ai)}-\frac{1}{(D+ai)}\right]\sec ax
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
 \begin{equation}
-\therefore \quad C.F. = y_{c}  = (C_{1}+C_{2}x)e^{x}  \tag{4.2.7}
+P.I. = \frac{1}{2ai}\frac{1}{(D-ai)}\sec ax-\frac{1}{2ai}\frac{1}{(D+ai)}\sec ax \tag{4.2.4}
 \end{equation}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-diffeq6.html">
+<div class="para">Now,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
 \begin{equation}
-\text{P.I.} = y_{p} \quad \text{(By inspection method)}\tag{4.2.8}
+\frac{1}{(D-ai)}\sec ax = e^{aix}\int e^{-aix}\sec ax\,dx\tag{4.2.5}
 \end{equation}
 </div>
-<div class="para">Let, <span class="process-math">\(y_{p} =-\sin x,\)</span> <span class="process-math">\(Dy_{p}=-\cos x\text{,}\)</span>	and, <span class="process-math">\(D^{2} y_{p} =\sin x\text{.}\)</span> Therefore, <span class="process-math">\(y=y_{p}\)</span> is a P.I. of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffeq6.html" title="Equation 4.2.6">(4.2.6)</a>, becouse it satisfies the equation.</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffeq6.html ./knowl/eqn-diffeq6.html">
-\begin{equation}
-y=y_{c}+y_{p}=(C_{1}+C_{2}x)e^{x}-\sin x \tag{4.2.9}
-\end{equation}
+<div class="para">[using eqns. <a href="" class="xref" data-knowl="./knowl/eqn-pisol3.html" title="Equation 4.1.17">(4.1.17)</a>, and <a href="" class="xref" data-knowl="./knowl/eqn-pisol4.html" title="Equation 4.1.18">(4.1.18)</a>]</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+\begin{equation*}
+=e^{aix}\int\frac{\cos ax-i\sin ax}{\cos ax}\,dx =e^{aix}\int(1-i\tan ax)\,dx 
+\end{equation*}
 </div>
-<div class="para">It is a general solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffeq6.html" title="Equation 4.2.6">(4.2.6)</a>.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+\begin{equation*}
+= e^{aix}(x+\frac{i}{a}\log\cos ax)
+\end{equation*}
+</div>
+<div class="para">changing <span class="process-math">\(i\)</span> to <span class="process-math">\(-i\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+\begin{equation*}
+\frac{1}{(D+ai)}\sec ax =e^{-aix}(x-\frac{i}{a}\log\cos ax)
+\end{equation*}
+</div>
+<div class="para">putting these values in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffeq4.html" title="Equation 4.2.4">(4.2.4)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+\begin{equation*}
+P.I. = \frac{1}{2ai}\left[e^{aix}\left(x+\frac{i}{a}\log\cos ax\right)-e^{-aix}\left(x-\frac{i}{a}\log\cos ax\right)\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+\begin{equation*}
+=\frac{x}{2ai}e^{aix}-\frac{x}{2ai}e^{-aix}+\frac{e^{aix}\log\cos ax}{2a^{2}}+\frac{e^{-aix}\log\cos ax}{2a^{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+\begin{equation*}
+=\frac{x}{a}\frac{e^{aix}-e^{-aix}}{2i}+\frac{1}{a^{2}}\frac{e^{aix}+e^{-aix}}{2}\log\cos ax
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+\begin{equation*}
+=\frac{x}{a}\sin ax +\frac{1}{a^{2}}\cos ax\cdot\log\cos ax
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-pisol3.html ./knowl/eqn-pisol4.html ./knowl/eqn-diffeq4.html">
+\begin{equation*}
+\therefore  y= C_{1}\cos ax+C_{2}\sin ax+\frac{x}{a}\sin ax+\frac{1}{a^{2}}\cos ax\cdot\log\cos ax.
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_fourth-examplesA.html#p-476" class="internal">in-context</a></span>
 </body>

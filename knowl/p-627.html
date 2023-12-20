@@ -11,52 +11,47 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h2 class="heading"><span class="type">Paragraph</span></h2>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let the solution of this equation is in the form</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
-\begin{equation}
-y=\sum\limits_{k=0}^{\infty}a_{k}x^{m+k}\tag{4.7.2}
-\end{equation}
-</div>
-<div class="para">so that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{dy}{dx}=\sum a_{k}(m+k)x^{m+k-1}
+\int\limits_{-1}^{+1}x^{m}P_{n}(x)\,dx =\int\limits_{-1}^{+1}x^{m}\frac{1}{2^{n}n!}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}\,dx 
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{d^{2}y}{dx^{2}}=\sum a_{k}(m+k)(m+k-1)x^{m+k-2}
+= \frac{1}{2^{n}n!}\int\limits_{-1}^{+1}x^{m}\frac{d^{n}}{dx^{n}}(x^{2}-1)^{n}\,dx
 \end{equation*}
 </div>
-<div class="para">substitutuing these values in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl1.html" title="Equation 4.7.1">(4.7.1)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
+<div class="para">On integrating by parts we get -</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\sum a_{k}(m+k)(m+k-1)x^{m+k}+\sum a_{k}(m+k)x^{m+k}
+=\frac{1}{2^{n}n!}\left[\left\{x^{m}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\right\}_{-1}^{+1}-\int\limits_{-1}^{+1}mx^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\,dx\right]
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
+<div class="displaymath process-math">
 \begin{equation*}
-+\sum a_{k}x^{m+k+2}-n^{2}\sum a_{k}x^{m+k}=0
+=0-\frac{m}{2^{n}n!}\int\limits_{-1}^{+1}x^{m-1}\frac{d^{n-1}}{dx^{n-1}}(x^{2}-1)^{n}\,dx
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
+<div class="para">Integrating we have</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\sum a_{k}\left[(m+k)(m+k-1)+(m+k)-n^{2}\right]x^{m+k}+\sum a_{k}x^{m+k+2}=0
+=(-1)^{2}\frac{m(m-1)}{2^{n}n!}\int\limits_{-1}^{+1}x^{m-2}\frac{d^{n-2}}{dx^{n-2}}(x^{2}-1)^{n}\,dx
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl1.html ./knowl/eqn-bessl3.html">
-\begin{equation}
-\sum a_{k}\left[(m+k)^{2}-n^{2}\right]x^{m+k}+\sum a_{k}x^{m+k+2}=0\tag{4.7.3}
-\end{equation}
+<div class="para">Integrating <span class="process-math">\(m-2 \)</span> times, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=(-1)^{m}\frac{m(m-1)\cdots 2\cdot 1}{2^{n}n!}\int\limits_{-1}^{+1}\frac{d^{n-m}}{dx^{n-m}}(x^{2}-1)^{n}\,dx 
+\end{equation*}
 </div>
-<div class="para">Equating the coefficient of lowest of power of <span class="process-math">\(x\text{.}\)</span> i.e., <span class="process-math">\(x^{m}\)</span> to zero, by putting <span class="process-math">\(k=0\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl3.html" title="Equation 4.7.3">(4.7.3)</a>, we get the indicial equation as <span class="process-math">\(a_{o}(m^{2}-n^{2})=0 \text{.}\)</span> Since, <span class="process-math">\(a_{o} \neq 0\text{,}\)</span> we have <span class="process-math">\(m=\pm n \text{.}\)</span>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{(-1)^{m}m!}{2^{n}n!}\left[\frac{d^{n-m-1}}{dx^{n-m-1}}(x^{2}-1)^{n}\right]_{-1}^{+1}=0.
+\end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="sec_fourth-besslfn.html#p-627" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_fourth-examplesC.html#p-627" class="internal">in-context</a></span>
 </body>
 </html>

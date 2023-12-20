@@ -12,7 +12,79 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
 <div class="para">The boundary conditions are</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation*}
+u(0,y)=0=u(\lambda,y)=u(x,0)\quad u(x,h) =f(x).
+\end{equation*}
+</div>
+<div class="para">The steady state heat eqn. is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation}
+\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} =0 \tag{7.4.21}
+\end{equation}
+</div>
+<div class="para">The solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-steady_heat1.html" title="Equation 7.4.21">(7.4.21)</a> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation}
+u(x,y)=\left(A\cos px+B\sin px\right)\left(Ce^{py}+De^{-py}\right) \tag{7.4.22}
+\end{equation}
+</div>
+<div class="para">Now</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation*}
+u(0,y)=0=A\left(Ce^{py}+De^{-py}\right)\quad  \Rightarrow   A=0
+\end{equation*}
+</div>
+<div class="para">also</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation*}
+u(\lambda,y) =0=B\sin p\lambda\left(Ce^{py}+De^{-py}\right) 
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\(\Rightarrow  \sin py =0=\sin n\pi   \quad	[\because B \neq 0]\)</span></div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation}
+\therefore  \quad p=\frac{n\pi}{\lambda},    \quad  n=1,2,3,\cdots  \tag{7.4.23}
+\end{equation}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation}
+u(x,y)= \left(C_{n}e^{\frac{n\pi y}{\lambda}} +D_{n}e^{-\frac{n\pi y}{\lambda}}\right)\sin\frac{n\pi x}{\lambda}  \tag{7.4.24}
+\end{equation}
+</div>
+<div class="para">again,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation*}
+u(x,0) = 0 = C_{n}+D_{n} \quad   \Rightarrow  C_{n}=-D_{n}
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation*}
+u(x,y) = C_{n}\left(e^{\frac{n\pi y}{\lambda}} -e^{-\frac{n\pi y}{\lambda}}\right)\sin\frac{n\pi x}{\lambda}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation}
+=2	C_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}\tag{7.4.25}
+\end{equation}
+</div>
+<div class="para">using the last boundary condition -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation*}
+u(x,h)= 2	C_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}	 =f(x)
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-steady_heat1.html">
+\begin{equation*}
+C_{n}\sin\frac{n\pi h}{\lambda} =\frac{2}{\lambda}\int\limits_{0}^{\lambda}\frac{1}{2}f(x) \sin\frac{n\pi x}{\lambda}\,dx.
+\end{equation*}
+</div>
+</div>
 <span class="incontext"><a href="sec_seventh-examplesB.html#p-1228" class="internal">in-context</a></span>
 </body>
 </html>

@@ -27,51 +27,41 @@ a_{0}=\frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \,dx = \frac{1}{\pi}\left[\int\l
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{\pi}\left[-\int\limits_{-\pi}^{0}\sin x\,dx + \int\limits_{0}^{\pi}\sin x\,dx\right] 
+= \frac{1}{\pi}\left[\int\limits_{-\pi}^{0}0.\,dx + \int\limits_{0}^{\pi}h\,dx\right] = \frac{1}{\pi}\left[h(x)_{0}^{\pi}\right] = \frac{h}{\pi}(\pi) = h.
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{2}{\pi}  \int\limits_{0}^{\pi}\sin x\,dx = \frac{4}{\pi}.
+a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx \,dx=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}0.\cos nx\,dx + \int\limits_{0}^{\pi}h.\cos nx\,dx\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx \,dx=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}f(x)\cos nx\,dx + \int\limits_{0}^{\pi} f(x)\cos nx\,dx\right]
+=\frac{h}{\pi}\left[\int\limits_{0}^{\pi}\cos nx\,dx\right] = \frac{h}{\pi}\left[\left(\frac{\sin nx}{n}\right)_{0}^{\pi}\right]=0
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}-\sin x \cos nx\,dx + \int\limits_{0}^{\pi}\sin x \cos nx\,dx\right] 
+b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx \,dx=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}0.\sin nx\,dx + \int\limits_{0}^{\pi}h.\sin nx\,dx\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{2}{\pi}\int\limits_{0}^{\pi}\sin x \cos nx\,dx  
-=\begin{cases} 
--\frac{4}{\pi(n^{2}-1)}, &amp; \text{for n even}\\ 
-0,   &amp; \text{for n odd} 
+=\frac{h}{\pi}\left[\int\limits_{0}^{\pi}\sin nx \,dx\right]=\frac{h}{\pi}\left[-\frac{\cos nx}{n}\right]_{0}^{\pi}
+= \begin{cases}  
+0, &amp; \text{for n even}\\ 
+\frac{2h}{n\pi}, &amp; \text{for n odd} 
 \end{cases}
 \end{equation*}
 </div>
-<div class="para">and</div>
+<div class="para">Therefore, the required Fourier series is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx \,dx
+f(x) = \frac{h}{2}+\frac{2h}{\pi}\sum\limits_{n_{odd}=1}^{\infty}\left[\frac{\sin nx}{n}\right].
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}-\sin x \sin nx\,dx + \int\limits_{0}^{\pi} \sin x \sin nx\,dx\right]
-\end{equation*}
+<div class="para">The graphical representation of the functions <span class="process-math">\(f(x)\)</span> is shown in the figure below. <div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/fig57.png" class="contained"></div>
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{2}{\pi}\int\limits_{0}^{\pi} \sin x \sin nx \,dx =1.  
-\end{equation*}
-</div>
-<div class="para">
-<span class="process-math">\(\because\)</span> for n=1, <span class="process-math">\(b_{1}=\frac{1}{2}\)</span>]</div>
 </div>
 <span class="incontext"><a href="sec_fifth-examplesC.html#p-868" class="internal">in-context</a></span>
 </body>

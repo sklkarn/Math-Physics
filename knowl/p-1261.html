@@ -13,42 +13,44 @@
 <body class="ignore-math">
 <h1 class="heading"><span class="type">Paragraph</span></h1>
 <div class="para logical">
-<div class="para">also,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{\partial^{2} u}{\partial x^{2}} = \frac{\partial }{\partial x}\left(\frac{\partial u}{\partial x}\right) = \left(\cos\theta\frac{\partial }{\partial r}-\frac{\sin\theta}{r}\frac{\partial }{\partial \theta}\right)\left(\cos\theta\frac{\partial u}{\partial r}-\frac{\sin\theta}{r}\frac{\partial u}{\partial \theta}\right)
+\frac{\partial^{2}u}{\partial t^{2}} =v^{2}\left(\frac{\partial^{2}u}{\partial x^{2}} +\frac{\partial^{2}u}{\partial y^{2}}\right)
 \end{equation*}
 </div>
+<div class="para">can be converted into the polar coordinates  by the parameters</div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \cos^{2}\theta \frac{\partial^{2} u}{\partial r^{2}}-\frac{\cos\theta\cdot \sin\theta}{r}\frac{\partial^{2} u}{\partial r \partial\theta}+\frac{\sin\theta\cdot \cos\theta}{r^{2}}\frac{\partial u}{\partial \theta} 
+x=r\cos\theta \quad \text{and}\quad  y=r\sin\theta
 \end{equation*}
 </div>
+<div class="para">so that</div>
 <div class="displaymath process-math">
 \begin{equation*}
--\frac{\cos\theta\cdot \sin\theta}{r}\frac{\partial^{2} u}{\partial r \partial\theta}+\frac{\sin^{2}\theta}{r}\frac{\partial u}{\partial r}+ \frac{\sin^{2}\theta}{r^{2}}\frac{\partial^{2} u}{\partial \theta^{2}}+\frac{\sin\theta\cdot \cos\theta}{r^{2}}\frac{\partial u}{\partial \theta}
+r^{2}=x^{2}+y^{2} 
 \end{equation*}
 </div>
 <div class="para">and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{\partial^{2} u}{\partial y^{2}} =\left(\sin\theta\frac{\partial }{\partial r}+\frac{\cos\theta}{r}\frac{\partial}{\partial \theta}\right)\left(\sin\theta\frac{\partial u}{\partial r}+\frac{\cos\theta}{r}\frac{\partial u}{\partial \theta}\right)
+\tan\theta =\frac{y}{x},
+\end{equation*}
+</div>
+<div class="para">then,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\partial r}{\partial x}=\frac{x}{r}, \frac{\partial r}{\partial y}=\frac{y}{r}, \frac{\partial \theta}{\partial x}=-\frac{y}{r^{2}}, \frac{\partial \theta}{\partial y}=\frac{x}{r^{2}}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \sin^{2}\theta \frac{\partial^{2} u}{\partial r^{2}} + \frac{\sin\theta\cdot \cos\theta}{r}\frac{\partial^{2} u}{\partial r \partial\theta}-\frac{\sin\theta\cdot \cos\theta}{r^{2}}\frac{\partial u}{\partial\theta} + \frac{\cos\theta\cdot \sin\theta}{r}\frac{\partial^{2} u}{\partial r \partial\theta}
+\therefore  \frac{\partial r}{\partial x} =\cos\theta, \frac{\partial r}{\partial y} =\sin\theta  ,\frac{\partial \theta}{\partial x} =-\frac{\sin\theta}{r},	\frac{\partial \theta}{\partial y} =\frac{\cos\theta}{r}.
 \end{equation*}
 </div>
+<div class="para">Thus,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-+\frac{\cos^{2}\theta}{r}\frac{\partial u}{\partial r}+\frac{\cos^{2}\theta}{r^{2}}\frac{\partial^{2} u}{\partial \theta^{2}}-\frac{\cos\theta\cdot \sin\theta}{r^{2}}\frac{\partial u}{\partial \theta}
-\end{equation*}
-</div>
-<div class="para">Hence,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{\partial^{2} u}{\partial t^{2}} = v^{2}\left(\frac{\partial^{2} u}{\partial x^{2}} +\frac{\partial^{2} u}{\partial y^{2}}\right) = v^{2}\left(\frac{\partial^{2} u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2} u}{\partial \theta^{2}}\right)
+\frac{\partial u}{\partial x} = \frac{\partial u}{\partial r}\frac{\partial r}{\partial x}+ \frac{\partial u}{\partial \theta}\frac{\partial \theta}{\partial x} = \cos\theta\frac{\partial u}{\partial r}-\frac{\sin\theta}{r}\frac{\partial u}{\partial \theta}
 \end{equation*}
 </div>
 </div>

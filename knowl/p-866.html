@@ -13,55 +13,70 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+f(t) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos n\omega t + b_{n}\sin n\omega t\right],
 \end{equation*}
 </div>
 <div class="para">where</div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{0}=\frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \,dx = \frac{1}{\pi}\left[\int\limits_{-\pi}^{0}f(x) \,dx + \int\limits_{0}^{\pi}f(x) \,dx\right]
+a_{0}= \frac{2}{T}\int\limits_{0}^{T}f(t) \,dt = \frac{2}{T}\left[\int\limits_{0}^{T/2} \frac{2\omega t}{T}\,dt + \int\limits_{T/2}^{T} \frac{2\omega (T-t)}{T}\,dt\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{\pi}\left[\int\limits_{-\pi}^{0}0.\,dx + \int\limits_{0}^{\pi}h\,dx\right] = \frac{1}{\pi}\left[h(x)_{0}^{\pi}\right] = \frac{h}{\pi}(\pi) = h.
+=\frac{2}{T}\left[\frac{2a}{T}\left(\frac{t^{2}}{2}\right)_{0}^{T/2}+\frac{2a}{T}\left(Tt-\frac{t^{2}}{2}\right)_{T/2}^{T}\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx \,dx=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}0.\cos nx\,dx + \int\limits_{0}^{\pi}h.\cos nx\,dx\right]
+=\frac{4a}{T^{2}}\left[\frac{T^{2}}{8}+\left(T^{2}-\frac{T^{2}}{2}\right)-\left(\frac{T^{2}}{2}-\frac{T^{2}}{8}\right)\right] = a.
+\end{equation*}
+</div>
+<div class="para">This is the displacement of the axis of the curve from the axis of the co-ordinate system. Now,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+a_{n}= \frac{2}{T}\int\limits_{0}^{T}f(t) \cos n\omega t \,dt=\frac{4a}{T^{2}}\left[\frac{2}{n^{2}\omega^{2}}\left\{(-1)^{n}-1\right\}\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{h}{\pi}\left[\int\limits_{0}^{\pi}\cos nx\,dx\right] = \frac{h}{\pi}\left[\left(\frac{\sin nx}{n}\right)_{0}^{\pi}\right]=0
+=\frac{4a}{T^{2}}\left[\frac{2}{n^{2}(2\pi/T)^{2}}\left\{(-1)^{n}-1\right\}\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx \,dx=\frac{1}{\pi}\left[\int\limits_{-\pi}^{0}0.\sin nx\,dx + \int\limits_{0}^{\pi}h.\sin nx\,dx\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{h}{\pi}\left[\int\limits_{0}^{\pi}\sin nx \,dx\right]=\frac{h}{\pi}\left[-\frac{\cos nx}{n}\right]_{0}^{\pi}
-= \begin{cases}  
-0, &amp; \text{for n even}\\ 
-\frac{2h}{n\pi}, &amp; \text{for n odd} 
+=\frac{2a}{n^{2}\pi^{2}}\left\{(-1)^{n}-1\right\} 
+=\begin{cases} 
+0,   &amp; \text{if n is even}\\ 
+-\frac{4a}{n^{2}\pi^{2}}. &amp; \text{if n is odd} 
 \end{cases}
 \end{equation*}
 </div>
-<div class="para">Therefore, the required Fourier series is</div>
+<div class="para">thus only odd harmonics with cosine terms would appear in the series.</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \frac{h}{2}+\frac{2h}{\pi}\sum\limits_{n_{odd}=1}^{\infty}\left[\frac{\sin nx}{n}\right].
+b_{n}= \frac{2}{T}\int\limits_{0}^{T}f(t) \sin n\omega t \,dt 
 \end{equation*}
 </div>
-<div class="para">The graphical representation of the functions <span class="process-math">\(f(x)\)</span> is shown in the figure below. <div class="image-box" style="width: 45%; margin-left: 27.5%; margin-right: 27.5%;"><img src="external/fig57.png" class="contained"></div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{2}{T}\left[\int\limits_{0}^{T/2}\frac{2at}{T} \sin n\omega   t \, dt  + \int\limits_{T/2}^{T}\frac{2a(T-t)}{T} \sin n\omega t \,dt\right]
+\end{equation*}
 </div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{4a}{T^{2}}\left[\int\limits_{0}^{T/2} t \sin n\omega t \,dt + \int\limits_{T/2}^{T} T \sin n\omega t \,dt - \int\limits_{T/2}^{T} \sin n\omega t \,dt\right] = 0.
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(t) = \frac{a}{2}-\frac{4a}{\pi^{2}}\sum\limits_{n=1}^{\infty}\frac{\cos n\omega t}{n^{2}},
+\end{equation*}
+</div>
+<div class="para">where n is an odd number.</div>
 </div>
 <span class="incontext"><a href="sec_fifth-examplesC.html#p-866" class="internal">in-context</a></span>
 </body>

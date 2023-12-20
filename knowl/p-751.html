@@ -13,66 +13,61 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We have the generating function for <span class="process-math">\(L_{n}(x)\)</span> is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
+<div class="para">We have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
 \begin{equation*}
-\frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{n=0}^{\infty}\frac{L_{n}(x)}{n!}t^{n}
+e^{-xt/(1-t)}=1-\frac{xt}{1-t}+\frac{1}{2!}\left(\frac{xt}{1-t}\right)^{2}+\cdots
 \end{equation*}
 </div>
-<div class="para">Differentiating <span class="process-math">\(n\)</span> times w. r. to ’t’, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
-\begin{equation*}
-\frac{d^{n}}{dt^{n}}\left(\frac{e^{-xt/(1-t)}}{1-t}\right)=	L_{n}(x)+L_{n+1}(x)t+\cdots
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
-\begin{equation*}
-e^{x}\frac{d^{n}}{dt^{n}}\left[(1-t)^{-1}e^{-x/(1-t)}\right] 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
 \begin{equation}
-=L_{n}(x)+L_{n+1}(x)t+\cdots	\tag{4.11.11}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{r}t^{r}}{(1-t)^{r}r!}\tag{4.11.9}
 \end{equation}
 </div>
-<div class="para">But,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
-\begin{equation*}
-\frac{d}{dt}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=\frac{1-x-t}{(1-t)^{3}}e^{-x/(1-t)}
-\end{equation*}
-</div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
 \begin{equation*}
-\lim\limits_{t \to 0}\frac{d}{dt}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=(1-x)e^{-x}=\frac{d}{dx}(xe^{-x})
+\frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{r=0}^{\infty}(-1)^{r}\frac{t^{r}x^{r}}{r!(1-t)^{r+1}}
 \end{equation*}
 </div>
-<div class="para">similarly,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
 \begin{equation*}
-\lim\limits_{t \to 0}\frac{d^{2}}{dt^{2}}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=\frac{d^{2}}{dx^{2}}(x^{2}e^{-x})
+=\sum\limits_{r=0}^{\infty}(-1)^{r}\frac{x^{r}t^{r}}{r!}(1-t)^{-(r+1)}
 \end{equation*}
 </div>
-<div class="para">In general,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
 \begin{equation*}
-\lim\limits_{t \to 0}\frac{d^{n}}{dt^{n}}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!}x^{r}t^{r}\left[1+(r+1)t+\frac{(r+1)(r+2)}{2!}t^{2}\right.
 \end{equation*}
 </div>
-<div class="para">Hence from equation <a href="" class="xref" data-knowl="./knowl/eqn-laguer_rodr1.html" title="Equation 4.11.11">(4.11.11)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
 \begin{equation*}
-e^{x}\lim\limits_{t \to 0}\frac{d^{n}}{dt^{n}}\left[(1-t)^{-1}e^{-x/(1-t)}\right]=e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})=L_{n}(x).
+\left.+\cdots+\frac{(r+1)(r+2)\cdots(r+s)}{s!}t^{s}+\cdots\right]
 \end{equation*}
 </div>
-<div class="para">Thus,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_rodr1.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
 \begin{equation*}
-L_{n}(x)= e^{x}\frac{d^{n}}{dx^{n}}(x^{n}e^{-x})
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{r}t^{r}}{r!}\sum\limits_{s=0}^{\infty}\frac{(r+1)(r+2)\cdots(r+s)}{s!}t^{s}
 \end{equation*}
 </div>
-<div class="para">This is the Rodrigue’s formula for <span class="process-math">\(L_{n}(x)\text{.}\)</span>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}x^{r}t^{r}}{r!}\sum\limits_{s=0}^{\infty}\frac{(r+s)!}{r!s!}t^{s}\tag{4.11.10}
+\end{equation}
+</div>
+<div class="para">on putting <span class="process-math">\(r+s=n\text{,}\)</span> the coefficient of <span class="process-math">\(t^{n}\)</span> for fixed value of <span class="process-math">\(r\)</span>  is <span class="process-math">\(\frac{(-1)^{r}n!}{(r!)^{2}(n-r)!}x^{r}\text{,}\)</span>  as <span class="process-math">\(n-r=s\)</span>  and <span class="process-math">\(s \geq 0\text{.}\)</span> 	Thus <span class="process-math">\(n-r \geq 0\)</span>	or, <span class="process-math">\(r \leq n\text{.}\)</span> Hence the coefficient of <span class="process-math">\(t^{n}\)</span> on RHS of equation <a href="" class="xref" data-knowl="./knowl/eqn-laguer_gen2.html" title="Equation 4.11.10">(4.11.10)</a> is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+\sum\limits_{r=0}^{n}\frac{(-1)^{r}n!}{(r!)^{2}(n-r)!}x^{r} =\frac{L_{n}(x)}{n!}
+\end{equation*}
+</div>
+<div class="para">Therefore,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-laguer_gen2.html">
+\begin{equation*}
+\frac{e^{-xt/(1-t)}}{1-t}=\sum\limits_{r=0}^{n}\frac{L_{n}(x)}{n!}t^{n}
+\end{equation*}
+</div>
+<div class="para">is the generating function of <span class="process-math">\(L_{n}(x)\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="subsec-laguer_pol.html#p-751" class="internal">in-context</a></span>

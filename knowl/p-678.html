@@ -13,52 +13,50 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">By the recurrnce relation 3 from <a href="subsec-bessl_fn.html#subsubsec-bessl_recr" class="internal" title="Subsubsection 4.7.1.3: Recurrence Relations for  J_{n}(x)">Subsubsection 4.7.1.3</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq8.html ./knowl/eqn-bessl_eq9.html ./knowl/eqn-bessl_eq9.html">
+<div class="para">By recurrnce relation 2 from <a href="subsec-bessl_fn.html#subsubsec-bessl_recr" class="internal" title="Subsubsection 4.7.1.3: Recurrence Relations for  J_{n}(x)">Subsubsection 4.7.1.3</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq5.html ./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq6.html">
 \begin{equation}
-2J'_{n}=J_{n-1}-J_{n+1}\tag{4.8.8}
+xJ'_{n}(x)=-nJ_{n}(x)+xJ_{n-1}(x)\tag{4.8.5}
 \end{equation}
 </div>
-<div class="para">differentiating, we get-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq8.html ./knowl/eqn-bessl_eq9.html ./knowl/eqn-bessl_eq9.html">
-\begin{equation}
-2J''_{n}=J'_{n-1}-J'_{n+1}  \tag{4.8.9}
-\end{equation}
-</div>
-<div class="para">replacing <span class="process-math">\(n\)</span> by <span class="process-math">\(n-1\)</span>in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq8.html" title="Equation 4.8.8">(4.8.8)</a> and <span class="process-math">\(n\)</span> by <span class="process-math">\(n+1\)</span> in eqn.  <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq9.html" title="Equation 4.8.9">(4.8.9)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq8.html ./knowl/eqn-bessl_eq9.html ./knowl/eqn-bessl_eq9.html">
+<div class="para">putting <span class="process-math">\(n=2\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq5.html" title="Equation 4.8.5">(4.8.5)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq5.html ./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq6.html">
 \begin{equation*}
-2J'_{n-1}=J_{n-2}-J_{n}
+xJ'_{2}=-2J_{2}+xJ_{1}
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq8.html ./knowl/eqn-bessl_eq9.html ./knowl/eqn-bessl_eq9.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq5.html ./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq6.html">
 \begin{equation}
-J'_{n-1}=\frac{1}{2}J_{n-2}-\frac{J_{n}}{2} \tag{4.8.10}
+J'_{2}=-\frac{2}{x}J_{2}+J_{1} \tag{4.8.6}
 \end{equation}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq8.html ./knowl/eqn-bessl_eq9.html ./knowl/eqn-bessl_eq9.html">
+<div class="para">By recurrnce relation 4 from <a href="subsec-bessl_fn.html#subsubsec-bessl_recr" class="internal" title="Subsubsection 4.7.1.3: Recurrence Relations for  J_{n}(x)">Subsubsection 4.7.1.3</a>,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq5.html ./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq6.html">
 \begin{equation*}
-2J'_{n+1}=J_{n}-J_{n+2}
+2nJ_{n}=x(J_{n-1}+J_{n+1})
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq8.html ./knowl/eqn-bessl_eq9.html ./knowl/eqn-bessl_eq9.html">
+<div class="para">putting <span class="process-math">\(n=1\text{,}\)</span> we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq5.html ./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq6.html">
+\begin{equation*}
+2\cdot1\cdot J_{1}=x(J_{o}+J_{2})
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq5.html ./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq6.html">
 \begin{equation}
-J'_{n+1}=\frac{1}{2}J_{n}-\frac{1}{2}J_{n+2}\tag{4.8.11}
+J_{2}=\frac{2J_{1}}{x}-J_{o} \tag{4.8.7}
 \end{equation}
 </div>
-<div class="para">putting the values of <span class="process-math">\(J'_{n-1} \)</span> and <span class="process-math">\(J'_{n+1}\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq9.html" title="Equation 4.8.9">(4.8.9)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq8.html ./knowl/eqn-bessl_eq9.html ./knowl/eqn-bessl_eq9.html">
+<div class="para">putting the value of <span class="process-math">\(J_{2}\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-bessl_eq6.html" title="Equation 4.8.6">(4.8.6)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq5.html ./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq6.html">
 \begin{equation*}
-2J''_{n}=\frac{1}{2}\left[J_{n-2}-J_{n}\right]-\frac{1}{2}\left[J_{n}-J_{n+2}\right]
+J'_{2}=-\frac{2}{x}\left(\frac{2}{x}J_{1}-J_{o}\right)+J_{1}=-\frac{4}{x^{2}}J_{1}+\frac{2}{x}J_{o}+J_{1} 
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq8.html ./knowl/eqn-bessl_eq9.html ./knowl/eqn-bessl_eq9.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq5.html ./knowl/subsubsec-bessl_recr.html ./knowl/eqn-bessl_eq6.html">
 \begin{equation*}
-4J''_{n}=J_{n-2}-2J_{n}+J_{n+2}.
+= (1-\frac{4}{x^{2}})J_{1}(x)+\frac{2}{x}J_{o}(x)  
 \end{equation*}
 </div>
 </div>

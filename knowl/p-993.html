@@ -13,23 +13,21 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/Lap_Q1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\because \quad \cos2t = 2\cos^{2}t-1; \quad  \therefore \cos^{2}t= \frac{1}{2}[\cos 2t+1]
+\mathscr{L}(1+\cos2t)=\int\limits_{0}^{\infty}e^{-st}(1+\cos2t)\,dt 
 \end{equation*}
 </div>
-<div class="para">Now,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/Lap_Q1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[\cos^{2}t]= \int\limits_{0}^{\infty}e^{-st}\cos^{2}t\,dt 
+= \int\limits_{0}^{\infty}e^{-st}.1\,dt + \int\limits_{0}^{\infty}e^{-st}\cos at\,dt
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/Lap_Q1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{2}\int\limits_{0}^{\infty}e^{-st}[\cos 2t+1] =\frac{1}{2}[ \frac{1}{s}+ \frac{s}{s^{2}+4}].
+=\frac{1}{s}+ \frac{s}{s^{2}+2^{2}} = \frac{1}{s}+ \frac{s}{s^{2}+4}
 \end{equation*}
 </div>
-<div class="para">(see problem <a href="" class="xref" data-knowl="./knowl/Lap_Q1.html" title="Example 6.4.1">Example 6.4.1</a>)</div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesB.html#p-993" class="internal">in-context</a></span>
 </body>

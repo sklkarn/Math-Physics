@@ -13,64 +13,20 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-H_{n}(x)=\sum\limits_{r=0}^{n/2}(-1)^{r}\frac{n!}{r!(n-2r)!}(2x)^{n-2r}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-H_{n}(xt)=\sum\limits_{r=0}^{n/2}(-1)^{r}\frac{n!}{r!(n-2r)!}(2xt)^{n-2r} 
-\end{equation*}
-</div>
-<div class="para">Therefore,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{2}{\sqrt{\pi}n!}\int\limits_{0}^{\infty}t^{n}e^{-t^{2}}H_{n}(xt)\,dt
+H_{2n+1}(x)=\sum\limits_{s=0}^{(2n+1)/2}(-1)^{s}\frac{(2n+1)!(2x)^{2n+1-2s}}{s!(2n+1-2s)!}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{2}{\sqrt{\pi}n!}\int\limits_{0}^{\infty}t^{n}e^{-t^{2}}\sum\limits_{r=0}^{n/2}(-1)^{r}\frac{n!}{r!(n-2r)!}(2xt)^{n-2r}\,dt
+=\sum\limits_{s=0}^{(n+1)/2}(-1)^{s}\frac{(2n+1)!(2x)^{2n-2s+1}}{s!(2n-2s+1)!}
 \end{equation*}
 </div>
+<div class="para">putting <span class="process-math">\(x=0\text{,}\)</span> we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\sum\limits_{r=0}^{n/2}\frac{2^{n-2r+1}(-1)^{r}x^{n-2r}}{\sqrt{\pi}r!(n-2r)!}\int\limits_{0}^{\infty}e^{-t^{2}}t^{2n-2r}\,dt 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \sum\limits_{r=0}^{n/2}\frac{2^{n-2r+1}(-1)^{r}x^{n-2r}}{\sqrt{\pi}r!(n-2r)!}\frac{1}{2}\Gamma\left(n-r+\frac{1}{2}\right)
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\sum\limits_{r=0}^{n/2}\frac{2^{n-2r}(-1)^{r}x^{n-2r}\{2(n-r)\}}{\sqrt{\pi}r!(n-2r)!}\sqrt{\pi}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\sum\limits_{r=0}^{n/2}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)!}x^{n-2r}=P_{n}(x).
-\end{equation*}
-</div>
-<div class="para">Since,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-t^{2n-2r}=t^{2(n-r+\frac{1}{2})-1}; 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-2 \int\limits_{0}^{\infty}e^{-t^{2}}t^{2n-1}\,dt =\Gamma {(n)} 
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\Gamma(x+\frac{1}{2})=\frac{(2x)!}{2^{2x}x!}\sqrt{\pi}.
+H_{2n+1}(0)=(-1)^{n}\frac{(2n+1)!}{n!}\cdot 0 = 0 
 \end{equation*}
 </div>
 </div>

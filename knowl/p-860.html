@@ -13,32 +13,31 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">The Fourier series expansion of a function <span class="process-math">\(f(x)\)</span> is written as:</div>
+<div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right],
+f(x) = \sum\limits_{n=1}^{\infty}\left[b_{n}\sin  nx\right]
 \end{equation*}
 </div>
 <div class="para">where,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{0}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi} x\,dx = 0.
+b_{n}=	\frac{2}{\pi}\int\limits_{0}^{\pi}f(x)\sin nx \,dx =	\frac{2}{\pi}\int\limits_{0}^{\pi}x\sin nx \,dx
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \cos nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}x \cos nx \,dx = 0
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-b_{n}= \frac{1}{\pi}\int\limits_{-\pi}^{\pi}f(x) \sin nx\,dx = \frac{1}{\pi}\int\limits_{-\pi}^{\pi}x\sin nx\,dx = -\frac{2}{n}\cos n\pi = (-1)^{n+1}\frac{2}{n}
+=	\frac{2}{\pi}\left[x.\frac{\cos nx}{-n}-1.\frac{\sin nx}{-n^{2}}\right]^{\pi}_{0}
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\therefore f(x) = x = 2\sum\limits_{n=1}^{\infty}\left[(-1)^{n+1}\frac{\sin nx}{n}\right]
+= \frac{2}{\pi}\left[\pi.\frac{\cos n\pi}{-n}-1.\frac{\sin n\pi}{-n^{2}}\right] = -\frac{2}{n}(-1)^{n}=(-1)^{n+1}\frac{2}{n}	
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore \quad  x = \sum\limits_{n=1}^{\infty}\left[2(-1)^{n+1}\right]\frac{\sin nx}{n} 
 \end{equation*}
 </div>
 </div>

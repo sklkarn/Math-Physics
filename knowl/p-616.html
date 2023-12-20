@@ -12,7 +12,46 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Express <span class="process-math">\(f(x)=4x^{3}+6x^{2}+7x+2 \)</span> in terms of  Legendre’s Polynomials.</div>
-<span class="incontext"><a href="sec_fourth-examplesC.html#p-616" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">LHS is a function of <span class="process-math">\(\theta\)</span> only and RHS is a function of <span class="process-math">\(\phi\)</span> only which is possible only if they are equal to some constant.  From equation <a href="" class="xref" data-knowl="./knowl/eqn-assoc_legn6.html" title="Equation 4.5.37">(4.5.37)</a>,  we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-assoc_legn6.html ./knowl/eqn-assoc_legn6.html">
+\begin{equation*}
+\frac{\nabla^{2}_{\phi}\Phi}{\Phi}=-m^{2}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-assoc_legn6.html ./knowl/eqn-assoc_legn6.html">
+\begin{equation}
+\frac{\partial^{2}\Phi}{\partial\phi^{2}}+m^{2}\Phi =0\tag{4.5.38}
+\end{equation}
+</div>
+<div class="para">[Azimuthal equation]</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-assoc_legn6.html ./knowl/eqn-assoc_legn6.html">
+\begin{equation}
+\therefore  \quad \Phi=c_{1}e^{im\phi}+c_{2}e^{-im\phi}=A\cos m\phi+B\sin m\phi\tag{4.5.39}
+\end{equation}
+</div>
+<div class="para">From equation <a href="" class="xref" data-knowl="./knowl/eqn-assoc_legn6.html" title="Equation 4.5.37">(4.5.37)</a>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-assoc_legn6.html ./knowl/eqn-assoc_legn6.html">
+\begin{equation*}
+\sin^{2}\theta\frac{\nabla^{2}_{\theta}\Theta}{\Theta}+\lambda\sin^{2}\theta=m^{2} 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-assoc_legn6.html ./knowl/eqn-assoc_legn6.html">
+\begin{equation*}
+\nabla^{2}_{\theta}\Theta+\left(\lambda-\frac{m^{2}}{\sin^{2}\theta}\right)=0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-assoc_legn6.html ./knowl/eqn-assoc_legn6.html">
+\begin{equation}
+\frac{1}{\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial\Theta}{\partial \theta}\right)+\left(\lambda-\frac{m^{2}}{\sin^{2}\theta}\right)\Theta =0 \tag{4.5.40}
+\end{equation}
+</div>
+<div class="para">[Theta equation]</div>
+</div>
+<span class="incontext"><a href="subsec-Legnd_eq.html#p-616" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,56 +13,34 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">The boundary conditions are</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
+<div class="para">The solution of this problem is obtained as</div>
+<div class="displaymath process-math">
 \begin{equation*}
-u(0,y)=0=u(\lambda,y)=u(x,\infty)
+u(x,y) = \sum\limits_{n=1}^{\infty}\left[C_{n}\cosh\frac{n\pi y}{a}+D_{n}\sinh\frac{n\pi y}{a}\right] \sin \frac{n\pi x}{a}    
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
+<div class="para">from condition (iii), we have -</div>
+<div class="displaymath process-math">
 \begin{equation*}
-u(x,0)=f(x).
+f(x)= \sum\limits_{n=1}^{\infty}C_{n}\sin\frac{n\pi x}{a}\quad \text{so that }\quad  C_{n} =\frac{2}{a}\int\limits_{0}^{a}f(x) \sin \frac{n\pi x}{a}\,dx 
 \end{equation*}
 </div>
-<div class="para">The steady state heat equation is given by</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation}
-\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} =0 \tag{7.4.14}
-\end{equation}
-</div>
-<div class="para">Let</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation}
-u(x,y)=X(x)Y(y)  \tag{7.4.15}
-\end{equation}
-</div>
-<div class="para">be the solution of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-std_heat1.html" title="Equation 7.4.14">(7.4.14)</a>. Substituting of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-std_heat2.html" title="Equation 7.4.15">(7.4.15)</a> into eqn. <a href="" class="xref" data-knowl="./knowl/eqn-std_heat1.html" title="Equation 7.4.14">(7.4.14)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
+<div class="para">and from condition (iv) -</div>
+<div class="displaymath process-math">
 \begin{equation*}
-Y\frac{\partial^{2}X}{\partial x^{2}} +X\frac{\partial^{2}Y}{\partial y^{2}} =0 
+0=u_{y}(x,b) = \sum\limits_{n=1}^{\infty}\frac{n\pi}{a}\left(C_{n}\sinh\frac{n\pi b}{a} + D_{n}\cosh\frac{n\pi b}{a}\right)\sin\frac{n\pi x}{a} 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation}
-\frac{1}{X}\frac{\partial^{2}X}{\partial x^{2}} =-\frac{1}{Y}\frac{\partial^{2}Y}{\partial y^{2}} = -p^{2} \quad \text{(say)} \tag{7.4.16}
-\end{equation}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\therefore,  X=A\cos px +B\sin px 	
+\Rightarrow  D_{n} = -C_{n}\tanh\frac{n\pi b}{a}.
 \end{equation*}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-Y=Ce^{py}+De^{-py} 
+u(x,y) = \frac{2}{a}\sum\limits_{n=1}^{\infty}\left(\cosh\frac{n\pi y}{a}-\tanh\frac{n\pi y}{a}\sin\frac{n\pi y}{a}\right)\sin\frac{n\pi x}{a}\int\limits_{0}^{a}f(x) \sin \frac{n\pi x}{a}\,dx. 
 \end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-std_heat1.html ./knowl/eqn-std_heat2.html ./knowl/eqn-std_heat1.html">
-\begin{equation}
-\therefore \quad u(x,y) = \left(A\cos px+B\sin px\right)\left(Ce^{py}+De^{-py}\right) \tag{7.4.17}
-\end{equation}
 </div>
 </div>
 <span class="incontext"><a href="sec_seventh-examplesB.html#p-1223" class="internal">in-context</a></span>

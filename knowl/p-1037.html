@@ -15,26 +15,31 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[f(t).u(t-a)]=\int\limits_{0}^{\infty}e^{-st}[f(t).u(t-a)]\,dt
+\mathscr{L}[g(t)] = \int\limits_{0}^{\infty} e^{-st}g(t)\,dt
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{0}^{a}e^{-st}[f(t).u(t-a)]\,dt+\int\limits_{a}^{\infty}e^{-st}[f(t).u(t-a)]\,dt
+= \int\limits_{0}^{a} e^{-st}g(t)\,dt +\int\limits_{a}^{\infty} e^{-st}g(t)\,dt
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= 0+ \int\limits_{a}^{\infty}e^{-st}f(t).1\,dt
+= \int\limits_{0}^{a} e^{-st}.0\,dt +\int\limits_{a}^{\infty} e^{-st}f(t-a)\,dt
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \int\limits_{0}^{\infty}e^{-s(y+a)}f(y+a)\,dy= e^{-as}\int\limits_{0}^{\infty}e^{-sy}f(y+a)\,dy = e^{-as}F(s+a)
+= \int\limits_{0}^{\infty} e^{-s(h+a)}.f(h)\,dh 	=  e^{-as} \int\limits_{0}^{\infty}f(h)\,dh
 \end{equation*}
 </div>
-<div class="para">[put <span class="process-math">\(y+a = t\text{.}\)</span>]</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= e^{-as}F(s) 
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec_sixth-diffLT.html#p-1037" class="internal">in-context</a></span>
+<div class="para">[put <span class="process-math">\(t-a =h\)</span>]</div>
+</div>
+<span class="incontext"><a href="subsec-ssp_LT.html#p-1037" class="internal">in-context</a></span>
 </body>
 </html>

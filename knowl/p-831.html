@@ -11,49 +11,25 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let the given function is expanded in a Fourier series</div>
+<div class="para">If a half - range series for a function  <span class="process-math">\(f(x)\)</span> is desired, then the function is generally defined in an open interval <span class="process-math">\([0.\pi]\text{,}\)</span> which is half of the interval <span class="process-math">\([-\pi, \pi]\)</span> and hence the name half - range. In this case the function <span class="process-math">\(f(x)\)</span> is expressed as an odd or even function. For interval (0,c)</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) =	\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
-\end{equation*}
-</div>
-<div class="para">here, the function <span class="process-math">\(f(x) = x^{2}\)</span> is an even function. Hence,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-a_{0}= \frac{2}{\pi}\int\limits_{0}^{\pi}f(x)\,dx = \frac{2}{\pi}\int\limits_{0}^{\pi}x^{2} \,dx = \frac{2}{3}\pi^{2};
+a_{0}= \frac{2}{c}\int\limits_{0}^{c}f(x)\,dx;
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{n}= \frac{2}{\pi}\int\limits_{0}^{\pi}f(x) \cos nx\,dx = \frac{2}{\pi}\int\limits_{0}^{\pi} x^{2} \cos nx\,dx 
+a_{n}= \frac{2}{c}\int\limits_{0}^{c} f(x) \cos (\frac{n\pi x}{c}) \,dx; 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{2}{\pi}\left[x^{2}\left(\frac{\sin nx}{n}\right) -2 x \left(\frac{\cos nx}{-n^{2}}\right) + 2\left(\frac{\sin nx}{-n^{3}}\right)\right]_{0}^{\pi}
+b_{n}= \frac{2}{c}\int\limits_{0}^{c} f(x) \sin (\frac{n\pi x}{c}) \,dx
 \end{equation*}
 </div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{2}{\pi}\left[\frac{2 \pi \cos n \pi}{n^{2}}\right] = \frac{4}{n^{2}}(-1)^{n}
-\end{equation*}
 </div>
-<div class="para"><span class="process-math">\(\left[\because  \left(\sin nx\right)_{0}^{\pi}=0\right]\)</span></div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore  x^{2} = \frac{2}{3.2}\pi^{2}+\sum\limits_{n=1}^{\infty}\frac{4}{n^{2}}(-1)^{n} \cos nx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation}
-= \frac{\pi^{2}}{3} -4\left[\frac{\cos x}{1^{2}}-\frac{\cos 2x}{2^{2}}+\frac{\cos 3x}{3^{2}}-\cdots\right] \tag{5.4.1}
-\end{equation}
-</div>
-<div class="para">which is the required Fourier series expansion of the given function. The graphical representation of this function is parabolic curves as shown in figure below. <div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;"><img src="external/fig53.png" class="contained"></div>
-</div>
-</div>
-<span class="incontext"><a href="sec_fifth-examplesB.html#p-831" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-fourier_sum.html#p-831" class="internal">in-context</a></span>
 </body>
 </html>

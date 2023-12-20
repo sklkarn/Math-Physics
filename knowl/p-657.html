@@ -13,28 +13,35 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We know that</div>
-<div class="displaymath process-math">
+<div class="para">From equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_rec1.html" title="Equation 4.7.25">(4.7.25)</a> of relation 1, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_rec1.html">
 \begin{equation*}
-xJ'_{n}=nJ_{n}-xJ_{n+1}
+xJ'_{n}=	\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}(n+2r)}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}  
 \end{equation*}
 </div>
-<div class="para">[from relation 1.]</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_rec1.html">
 \begin{equation*}
-xJ'_{n}=-nJ_{n}+xJ_{n-1}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}[(2n+2r)-n]}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}
 \end{equation*}
 </div>
-<div class="para">[from relation 2.] Adding these, we get -</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_rec1.html">
 \begin{equation*}
-2xJ'_{n}= -xJ_{n+1}+xJ_{n-1}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}(2n+2r)}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}-n\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_rec1.html">
 \begin{equation*}
-2J'_{n} =J_{n-1}-J_{n+1}
+=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}\cdot 2}{r!(n+r-1)!}\left(\frac{x}{2}\right)^{n+2r}-nJ_{n}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_rec1.html">
+\begin{equation*}
+=x\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!\{(n-1)+r\}!}\left(\frac{x}{2}\right)^{(n-1)+2r}-nJ_{n}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_rec1.html">
+\begin{equation*}
+=xJ_{n-1}-nJ_{n}. 
 \end{equation*}
 </div>
 </div>

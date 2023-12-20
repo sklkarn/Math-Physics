@@ -13,18 +13,30 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
+<div class="para">we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(t)= E \begin{cases}
-1,  &amp;  a \lt t \lt b\\
-0,  &amp; t \gt b
-\end{cases} = E[u(t-a)-u(t-b)]
+f(t)= \begin{cases}
+8+0,  &amp;  t \lt 2\\
+8-2,  &amp;  t \gt 2
+\end{cases}   = 8+ \begin{cases}
+0,   &amp;  t \lt 2\\
+-2,  &amp; t \gt 2
+\end{cases}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= 8+ (-2) \begin{cases}
+0, &amp;  t \lt 2\\
+1,  &amp; t \gt 2
+\end{cases}  =8-2u(t-2)
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[f(t)] = E[\frac{e^{-as}}{s}-\frac{e^{-bs}}{s}]
+\mathscr{L}[f(t)] =8\mathscr{L}(1) -2\mathscr{L}[u(t-2)] =\frac{8}{s}-2\frac{e^{-2s}}{s}.
 \end{equation*}
 </div>
 </div>

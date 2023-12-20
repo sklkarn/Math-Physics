@@ -13,31 +13,19 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">If</div>
+<div class="para">Again, put <span class="process-math">\(g(x) = f(x)\)</span> in the above expression, we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-F_{s}(k) = \mathscr{F}_{s}\{f(x)\} = \int\limits_{0}^{\infty}f(x)\sin kx \, dx 
+\int\limits_{-\infty}^{\infty}f(x)f^{*}(x)\,dx = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}F(k)F^{*}(k)\,dk
 \end{equation*}
 </div>
-<div class="para">then <span class="process-math">\(F_{s}(k)\)</span> is called the Fourier sine transform of <span class="process-math">\(f(x)\)</span> and if</div>
+<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(x) = \mathscr{F}^{-1}_{s}\{F_{s}(k)\} =\frac{2}{\pi}\int\limits_{0}^{\infty}F_{s}(k)\sin kx \, dk
-\end{equation*}
-</div>
-<div class="para">is called the inverse Fourier sine transform of <span class="process-math">\(F_{s}(k)\text{.}\)</span> Also, Fourier Cosine Transform and Inverse Fourier Cosine Transform are given as</div>
-<div class="displaymath process-math">
-\begin{equation*}
-F_{c}(k) = \mathscr{F}_{c}\{f(x)\} = \int\limits_{0}^{\infty}f(x)\cos kx \, dx
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f(x) = \mathscr{F}^{-1}_{c}\{F_{c}(k)\} =\frac{2}{\pi}\int\limits_{0}^{\infty}F_{c}(k)\cos kx \, dk.
+\int\limits_{-\infty}^{\infty}|f(x)|^{2}\,dx = \frac{1}{2\pi}\int\limits_{-\infty}^{\infty}|F(k)|^{2}\,dk
 \end{equation*}
 </div>
 </div>
-<span class="incontext"><a href="subsec-fsine_trans.html#p-920" class="internal">in-context</a></span>
+<span class="incontext"><a href="subsec-rayleigh_theorm.html#p-920" class="internal">in-context</a></span>
 </body>
 </html>

@@ -15,39 +15,23 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[1-\cos t] = L[1]-L[\cos t] = \frac{1}{s}-\frac{s}{s^{2}+1}
+\mathscr{L}[\sin 2t] = \frac{2}{s^{2}+4} 
 \end{equation*}
 </div>
-<div class="para">or,</div>
+<div class="para">Now,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}\left[\frac{1-\cos t}{t}\right] = \int\limits_{s}^{\infty}\left(\frac{1}{s}-\frac{s}{s^{2}+1}\right)\,ds 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \left[\log s-\frac{1}{2}\log (s^{2}+1)\right]_{s}^{\infty}  =\frac{1}{2}\left[\log s^{2}-\log (s^{2}+1)\right]_{s}^{\infty}  
+\mathscr{L}\left[\frac{\sin2t}{t}\right] = 	\int\limits_{s}^{\infty}\frac{2}{s^{2}+4}\,ds
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}\right]_{s}^{\infty} =\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}(1+1/s^{2})}\right]_{s}^{\infty} 
+=2.\frac{1}{2}\left[\tan^{-1}\frac{s}{2}\right]_{s}^{\infty} = \left[\tan^{-1}\infty -\tan^{-1}\frac{s}{2}\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{1}{2}\left[0-\log \frac{s^{2}}{s^{2}+1}\right] = -\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}\right]
-\end{equation*}
-</div>
-<div class="para">again</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mathscr{L}\left[\frac{1-\cos t}{t^{2}}\right]  =- \frac{1}{2} \int\limits_{s}^{\infty}\log  \frac{s^{2}}{s^{2}+1} \,ds 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= - \frac{1}{2} \int\limits_{s}^{\infty}\log - \frac{1}{2} \int\limits_{s}^{\infty}\log \left(\frac{s^{2}}{s^{2}+1}.1\right)\,ds
+= \frac{\pi}{2}-\tan^{-1}\frac{s}{2} = \cot^{-1}\frac{s}{2}.
 \end{equation*}
 </div>
 </div>

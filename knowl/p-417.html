@@ -13,19 +13,42 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Since only indices <span class="process-math">\(p\)</span> and <span class="process-math">\(q\)</span> are involved, we shall prove that the results for <span class="process-math">\(B^{pq}\text{.}\)</span> If <span class="process-math">\(B^{pq}\)</span> is symmetric then <span class="process-math">\(B^{pq}=  B^{qp}\)</span> and</div>
+<div class="para">Let us consider <span class="process-math">\(A^{p}_{r}\)</span> and <span class="process-math">\(B^{qs}_{t}\)</span> are any tensors of rank two and three, respectively  then -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\bar{B}^{jk} =\frac{\partial\bar{x}^{j}}{\partial x^{p}}\frac{\partial\bar{x}^{k}}{\partial x^{q}}B^{pq} = \frac{\partial\bar{x}^{k}}{\partial x^{q}}\frac{\partial\bar{x}^{j}}{\partial x^{p}}B^{qp} = \bar{B}^{kj}
+\bar{A}^{j} _{k} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}} A^{p} _{r}
 \end{equation*}
 </div>
-<div class="para">hence <span class="process-math">\(B_{qp}\)</span> remains symmetric in the <span class="process-math">\(\bar{x}^{i}\)</span> coordinate system. If <span class="process-math">\(B^{pq}\)</span> is skew - symmetric, then <span class="process-math">\(B^{pq} = - B^{qp}\)</span> and</div>
+<div class="para">and</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\bar{B}^{jk} =\frac{\partial\bar{x}^{j}}{\partial x^{p}}\frac{\partial\bar{x}^{k}}{\partial x^{q}}B^{pq} =- \frac{\partial\bar{x}^{k}}{\partial x^{q}}\frac{\partial\bar{x}^{j}}{\partial x^{p}}B^{qp} = -\bar{B}^{kj}
+\bar{B}^{lm} _{n}= \frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}}. \frac{\partial x^{t}}{\partial \bar{x}^{n}}B^{qs} _{t}
 \end{equation*}
 </div>
-<div class="para">hence <span class="process-math">\(B_{pq}\)</span> remains skew - symmetric in <span class="process-math">\(\bar{x}^{i}\)</span> system.</div>
+<div class="para">multiplying, we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{A}^{j} _{k}\bar{B}^{lm} _{n} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}}. \frac{\partial x^{t}}{\partial \bar{x}^{n}}A^{p} _{r}B^{qs} _{t}
+\end{equation*}
+</div>
+<div class="para">put <span class="process-math">\(j=n\text{,}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\bar{A}^{j} _{k}\bar{B}^{lm} _{j} = \frac{\partial\bar{x}^{j}}{\partial x^{p}}  \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}}. \frac{\partial x^{t}}{\partial \bar{x}^{j}}A^{p} _{r}B^{qs} _{t}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \delta_{p}^{t} \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}} \frac{\partial\bar{x}^{m}}{\partial x^{s}} A^{p} _{r}B^{qs} _{t} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}}. \frac{\partial\bar{x}^{m}}{\partial x^{s}}A^{p} _{r}B^{qs} _{p}  = \frac{\partial x^{r}}{\partial \bar{x}^{k}}\frac{\partial\bar{x}^{l}}{\partial x^{q}} \frac{\partial\bar{x}^{m}}{\partial x^{s}}C^{qs} _{r}
+\end{equation*}
+</div>
+<div class="para">i.e., <span class="process-math">\(A^{p} _{r}B^{qs} _{t}\)</span> is a tensor of rank three.</div>
 </div>
 <span class="incontext"><a href="sec_third-examplesA.html#p-417" class="internal">in-context</a></span>
 </body>

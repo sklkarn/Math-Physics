@@ -11,7 +11,77 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h5 class="heading"><span class="type">Paragraph</span></h5>
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para">We know that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation*}
+\cos(x\sin\theta)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation}
+=J_{o}(x)+2 J_{2}(x)\cos2\theta +2 J_{4}(x)\cos4\theta+\cdots\tag{4.7.20}
+\end{equation}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation}
+\sin(x\cos\theta)=2J_{1}(x)\cos\theta-2J_{3}(x)\cos3\theta+\cdots	\tag{4.7.21}
+\end{equation}
+</div>
+<div class="para">Multiplying equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_intg1.html" title="Equation 4.7.20">(4.7.20)</a> by <span class="process-math">\(\cos n\theta\)</span> and equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl_intg2.html" title="Equation 4.7.21">(4.7.21)</a> by <span class="process-math">\(\sin n\theta\)</span> and integrating between limits 0 to <span class="process-math">\(\pi\text{,}\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation*}
+\int\limits_{0}^{\pi}\cos(x\sin\theta)\cos n\theta\,d\theta=	\int\limits_{0}^{\pi}\left[J_{o}(x)\cos n\theta+2 J_{2}(x)\cos2\theta\cos n\theta +\cdots\right]\,d\theta
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation*}
+=J_{o} \int\limits_{0}^{\pi}\cos n\theta\,d\theta+2 J_{2}\int\limits_{0}^{\pi}\cos2\theta\cos n\theta\,d\theta+\cdots 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation}
+\begin{cases} 
+= 0, \text{if n is odd,}\\  
+= \pi J_{n},  \text{if  n  is even,}
+\end{cases}\tag{4.7.22}
+\end{equation}
+</div>
+<div class="para">Again,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation*}
+\int\limits_{0}^{\pi}\sin(x\sin\theta)\sin n\theta\,d\theta 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation*}
+=2J_{1} \int\limits_{0}^{\pi}\sin n\theta\,d\theta+2 J_{3}\int\limits_{0}^{\pi}\sin3\theta\sin n\theta\,d\theta+\cdots 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation}
+\begin{cases} 
+= 0, \text{if  n  is even,}\\   
+= \pi J_{n},  \text{if  n  is odd,} 
+\end{cases}\tag{4.7.23}
+\end{equation}
+</div>
+<div class="para">Adding equations <a href="" class="xref" data-knowl="./knowl/eqn-bessl_intg3.html" title="Equation 4.7.22">(4.7.22)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-bessl_intg4.html" title="Equation 4.7.23">(4.7.23)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation*}
+J_{n}(x) =\frac{1}{\pi}	\int\limits_{0}^{\pi}\{\cos(x\sin\theta)\cos n\theta +\sin(x\sin\theta)\sin n\theta\} \,d\theta 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl_intg1.html ./knowl/eqn-bessl_intg2.html ./knowl/eqn-bessl_intg3.html ./knowl/eqn-bessl_intg4.html">
+\begin{equation}
+=\frac{1}{\pi}	\int\limits_{0}^{\pi}\cos(n\theta-x\sin\theta)\,d\theta,\tag{4.7.24}
+\end{equation}
+</div>
+<div class="para">where <span class="process-math">\(n\)</span> is any integer. <a href="" class="fn-knowl original" data-knowl="./knowl/fn-8-hidden.html" title="Footnote 4.7.1"><sup> 1 </sup></a> <article class="corollary theorem-like"><h4 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">4.7.2</span><span class="period">.</span>
+</h4>
 <div class="para logical">
 <div class="para">If  n= 0, we have</div>
 <div class="displaymath process-math">
@@ -25,6 +95,8 @@ J_{o}(x)= \frac{1}{\pi}	\int\limits_{0}^{\pi}\cos(x\sin\theta)\,d\theta.
 \end{equation*}
 </div>
 <div class="para">for <span class="process-math">\(m = n\text{.}\)</span>
+</div>
+</div></article>
 </div>
 </div>
 <span class="incontext"><a href="subsec-bessl_fn.html#p-651" class="internal">in-context</a></span>

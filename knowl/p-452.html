@@ -11,56 +11,46 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h3 class="heading"><span class="type">Paragraph</span></h3>
+<h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">Now differentiating <span class="process-math">\(u= e^{-\int P\,dx }\)</span> with respect to ’x’, we have</div>
-<div class="displaymath process-math">
+<div class="para">Let the differential equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html">
+\begin{equation}
+\frac{\,dy}{\,dx}=\frac{1}{x}\tag{4.1.1}
+\end{equation}
+</div>
+<div class="para">Integrating both sides of eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol1.html" title="Equation 4.1.1">(4.1.1)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html">
+\begin{equation}
+y=\int\frac{1}{x}\,dx = \log x+C\tag{4.1.2}
+\end{equation}
+</div>
+<div class="para">The eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol2.html" title="Equation 4.1.2">(4.1.2)</a> is called the general solution of differential eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol1.html" title="Equation 4.1.1">(4.1.1)</a> and <span class="process-math">\(C\)</span> is an arbitrary constant. Consider the another differential equation</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html">
+\begin{equation}
+\frac{\,d^{2}y}{\,dx^{2}}=x\tag{4.1.3}
+\end{equation}
+</div>
+<div class="para">Integrating both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html">
 \begin{equation*}
-\frac{\,du}{\,dx} =-P e^{-\int P\,dx}=-Pu
+\int\,d\left(\frac{\,dy}{\,dx}\right)=\int x\,dx
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{\,du}{\,dx} +Pu =0 
-\end{equation*}
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html">
+\begin{equation}
+\frac{\,dy}{\,dx}=\frac{x^{2}}{2}+C  \tag{4.1.4}
+\end{equation}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{\,d(cu)}{\,dx} +P(cu) =0
-\end{equation*}
+<div class="para">Integrating again, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol1.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html ./knowl/eqn-diffsol2.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol5.html ./knowl/eqn-diffsol3.html">
+\begin{equation}
+y=\frac{x^{3}}{6}+Cx+D\tag{4.1.5}
+\end{equation}
 </div>
-<div class="para">which shows that <span class="process-math">\(y=cu\)</span> is the solution of <span class="process-math">\(\frac{\,du}{\,dx} +Pu =0\text{,}\)</span> again, differentiating</div>
-<div class="displaymath process-math">
-\begin{equation*}
-v=e^{-\int P\,dx}\int\left(Qe^{\int P\,dx}\right)\,dx
-\end{equation*}
+<div class="para">The eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol5.html" title="Equation 4.1.5">(4.1.5)</a> is the general solution of differential eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol3.html" title="Equation 4.1.3">(4.1.3)</a> and C and D are two arbitrary constants. Hence it is clear from eqns. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol2.html" title="Equation 4.1.2">(4.1.2)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-diffsol5.html" title="Equation 4.1.5">(4.1.5)</a> that if the order of differential equation is one the solution contains only one arbitrary constant but if it is second ordered then its solution also contains two arbitrary constants. The number of arbitrary constants in the solution is equal to the order of the differential equation. An equation containing dependent variable y, independent variable x and free from derivative which also satisfies the differential equation is called the <dfn class="terminology">solution of the differential equation</dfn>. The general solution becomes a particular solution by assigning the particular value of arbitrary constant. Suppose we find C = 1 and D = 2 for eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol5.html" title="Equation 4.1.5">(4.1.5)</a> then, <span class="process-math">\(y=\frac{x^{3}}{6}+Cx+D\)</span> is the particular solution of differential eqn. <a href="" class="xref" data-knowl="./knowl/eqn-diffsol3.html" title="Equation 4.1.3">(4.1.3)</a>.</div>
 </div>
-<div class="para">w.r.t. ’x’, we have -</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{\,dv}{\,dx}=-Pe^{-\int P\,dx}\left(Qe^{\int P\,dx}\right)\,dx + e^{-\int P\,dx}Qe^{\int P\,dx}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\frac{\,dv}{\,dx} =-Pv+Q 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\text{or,}\quad  \frac{\,dv}{\,dx} +Pv=Q 
-\end{equation*}
-</div>
-<div class="para">which shows that <span class="process-math">\(y=v\)</span> is the solution of <span class="process-math">\(\frac{\,dy}{\,dx} +Py=Q\text{.}\)</span> Hence, the first part of the solution of differential equation is the solution of its homogeneous equation and <span class="process-math">\(cu \)</span> is known as <dfn class="terminology">Complementry Function</dfn>. Second part is free from any arbitrary constant and <span class="process-math">\(v\)</span> is known as <dfn class="terminology">Particular Integral</dfn>. <span class="process-math">\(\therefore\)</span> <dfn class="terminology">Complete Solution = Complementry Function + Particular Integral</dfn>. That is,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-y   =    C.F.   +    P.I.
-\end{equation*}
-</div>
-</div>
-<span class="incontext"><a href="subsec-first_order-diff.html#p-452" class="internal">in-context</a></span>
+<span class="incontext"><a href="sec_fourth-diff.html#p-452" class="internal">in-context</a></span>
 </body>
 </html>

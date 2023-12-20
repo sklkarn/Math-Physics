@@ -15,22 +15,17 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-f(t) =k[u_{o}(t)-2u_{a}(t)+2u_{2a}(t)-2u_{3a}(t)+\cdots]
+\mathscr{L}\{f(t)\}=\frac{1}{1-e^{-sT}}\int\limits_{0}^{T}e^{-st}f(t)\,dt 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\text{or,}\quad \mathscr{L}\{f(t)\}=k[\mathscr{L}u_{o}(t)-2\mathscr{L} u_{a}(t)+\cdots] 
+= \frac{1}{1-e^{-sT}}\int\limits_{0}^{T}e^{-st}.\frac{kt}{T}\,dt  = \frac{1}{1-e^{-sT}}\frac{k}{T}\int\limits_{0}^{T}e^{-st}.t\,dt 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{k}{s}\left[1-2\frac{e^{-as}}{1+e^{-as}}\right]= \frac{k}{s}\left[\frac{1-e^{-as}}{1+e^{-as}}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{k}{s}\left[\frac{e^{as/2}-e^{-as/2}}{e^{as/2}+e^{-as/2}}\right]  = \frac{k}{s}\tanh \left(\frac{as}{2}\right)
+= -\frac{ke^{-sT}}{s(1-e^{-sT})}+\frac{k}{Ts^{2}}.
 \end{equation*}
 </div>
 </div>

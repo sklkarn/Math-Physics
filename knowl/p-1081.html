@@ -13,47 +13,24 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">We have,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\{\frac{s^{2}}{s^{2}+a^{2}}\} = \mathscr{L}\{\cos at \}
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\{\frac{s^{2}}{s^{2}+b^{2}}\} = \mathscr{L}\{\cos bt \}
-\end{equation*}
-</div>
-<div class="para">Hence by convolution theorem,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mathscr{L}\{\int\limits_{0}^{t}\cos ax \cos b(t-x) \,dx \} = \frac{s^{2}}{(s^{2}+a^{2})(s^{2}+b^{2})}
+f(t) =k[u_{o}(t)-2u_{a}(t)+2u_{2a}(t)-2u_{3a}(t)+\cdots]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-\therefore \quad \mathscr{L}^{-1}\{\frac{s^{2}}{(s^{2}+a^{2})(s^{2}+b^{2})}\} = \int\limits_{0}^{t}\cos ax \cos b(t-x) \,dx 
+\text{or,}\quad \mathscr{L}\{f(t)\}=k[\mathscr{L}u_{o}(t)-2\mathscr{L} u_{a}(t)+\cdots] 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=  \frac{1}{2}  \int\limits_{0}^{t}[\cos ax+bt-bx) +\cos(ax-bt+bx)]\,dx
+= \frac{k}{s}\left[1-2\frac{e^{-as}}{1+e^{-as}}\right]= \frac{k}{s}\left[\frac{1-e^{-as}}{1+e^{-as}}\right]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\frac{1}{2}  \int\limits_{0}^{t}\cos [(a-b)x+bt]\,dx +\frac{1}{2}  \int\limits_{0}^{t}\cos[(a+b)x-bt]\,dx 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\left[\frac{\sin [(a-b)x+bt]}{2(a-b)}\right]_{0}^{t}+\left[\frac{\sin [(a+b)x-bt]}{2(a+b)}\right]_{0}^{t}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\frac{\sin at -\sin bt}{2(a-b)}+\frac{\sin at +\sin bt}{2(a+b)}=  \frac{a\sin at -b\sin bt}{a^{2}-b^{2}} 
+= \frac{k}{s}\left[\frac{e^{as/2}-e^{-as/2}}{e^{as/2}+e^{-as/2}}\right]  = \frac{k}{s}\tanh \left(\frac{as}{2}\right)
 \end{equation*}
 </div>
 </div>

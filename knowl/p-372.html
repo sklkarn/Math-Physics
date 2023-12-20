@@ -12,7 +12,25 @@
 </head>
 <body class="ignore-math">
 <h1 class="heading"><span class="type">Paragraph</span></h1>
-<div class="para">Let us consider a group of students who are measuring the maximum height attained by a projectile or an electric field at a point produced by a charge in a laboratory with their own sets of instrument. Each of them has their own frames of reference orientated in different directions independent of one another. Now if one measures the maximum height of the projectile as 2 meters would it be possible that the others may find it to be 5m, 1m, 10m etc? or if one finds the electric field at a certain point to be 40 N/C and directed eastward, is it likely that another would find it to be 30 N/C and directed southward, and the third would measure it to be 60  N/C and directed upward? Finally, would the height of the projectile or the value of electric field change for individuals just because each of them has distinct coordinate systems? The answer is no because we know that 5 ft person is 5 ft long and it does not matter who and how someone measures it. Thus it is clear that the physical phenomena appear to be the same for all observers stationary relative to each other, independent of the position of each observer, and of the orientation of their frames of refernce.</div>
+<div class="para logical">
+<div class="para">Tensors are a natural and logical generalization of vectors. A scalar is simply a number (positive, negative, and zero). The magnitude of a scalar is independent of the reference system if the system of unit is fixed, e.g., the temperature (scalars) at a point in space is fixed irrespective of the reference system but obviously, <span class="process-math">\(0^{o}C=32^{o}F.\)</span> The magnitude of a vector remains constant irrespective of the frames of reference if the system of unit is fixed. However, the components of a vector depend upon both the frame of reference and system of units. If the system of units is changed the magnitude of a vector also changes, e.g., the magnitude and the direction of acceleration due to gravity at a point in space is fixed irrespective of the reference system but <span class="process-math">\(g = 9.8m/s^{2} = 32 ft/s^{2}\)</span> (no change in direction). In vector algebra, the sums and products of two vectors can be defined very clearly but the quotient of two vectors has no meaning. Tensors arise physically in this situations. For example, consider a stress system which is defined as a force per unit area, i.e., <span class="process-math">\(stress = \frac{\vec{F}}{\vec{A}}\text{.}\)</span> However, the division by a vector is undefined; hence in a stress system, force can be defined as a product of a new entity T with a vector area <span class="process-math">\(A\text{,}\)</span> i.e., a force <span class="process-math">\(F =A\cdot T\text{,}\)</span> where <span class="process-math">\(T\)</span> is a tensor associated with at least two directions. Similarly, <span class="process-math">\(\vec{a} = \frac{\vec{F}}{m}\)</span> and <span class="process-math">\(\vec{j} = \sigma \vec{E}\)</span> but these relations hold only on isotropic media. In an anisotropic medium, the acceleration, <span class="process-math">\(\vec{a}\)</span> is not necessarily parallel to the applied force, and the current flows in a direction different from that of electric field. In such a sutuation the above equation can be generalized as -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+j_{x} = \sigma_{xx} E_{x} + \sigma_{xy} E_{y} + \sigma_{xz} E_{z},
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+j_{y} = \sigma_{yx} E_{x} + \sigma_{yy} E_{y} + \sigma_{yz} E_{z},
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+j_{z} = \sigma_{zx} E_{x} + \sigma_{zy} E_{y} + \sigma_{zz} E_{z} 
+\end{equation*}
+</div>
+<div class="para">where <span class="process-math">\(\sigma_{ij} = (i,j = x,y,z)\)</span> are said to be the components of conductivity tensors of the medium. Similar expression can be obtained for mass (or reciprocal mass) tensors of the particle in the medium. The laws of physics which express the nature are independent upon the choice of reference frame. <em class="emphasis">A study of the transformation of a physical quantity from one frame to another leads to the tensor analysis</em>.</div>
+</div>
 <span class="incontext"><a href="ch_third.html#p-372" class="internal">in-context</a></span>
 </body>
 </html>

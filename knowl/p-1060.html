@@ -15,28 +15,16 @@
 <div class="para logical">
 <div class="displaymath process-math">
 \begin{equation*}
-t^{2}u(t-3) = [(t-3)^{2}+6(t-3) +9]u(t-3) 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=(t-3)^{2}u(t-3)+6(t-3)u(t-3) +9u(t-3)
+f(t)= E \begin{cases}
+1,  &amp;  a \lt t \lt b\\
+0,  &amp; t \gt b
+\end{cases} = E[u(t-a)-u(t-b)]
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[t^{2}u(t-3] 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \mathscr{L}[(t-3)^{2}u(t-3)]+6\mathscr{L}[(t-3)u(t-3)] +9\mathscr{L}[u(t-3)]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= e^{-3s}\left[\frac{2}{s^{3}}+\frac{6}{s^{2}}+\frac{9}{s}\right] = e^{-3s}L[(t+3)^{2}].
+\mathscr{L}[f(t)] = E[\frac{e^{-as}}{s}-\frac{e^{-bs}}{s}]
 \end{equation*}
 </div>
 </div>

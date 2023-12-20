@@ -13,17 +13,48 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para"> With the help of unit step functions, we can find the inverse transform of such functions which can not be determined with the previously explained methods. The unit step functions  <span class="process-math">\(u(t-a)\)</span> is defined as</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-fig61.html">
+<div class="para">Integrating by parts, we have</div>
+<div class="displaymath process-math">
 \begin{equation*}
-u(t-a) = \begin{cases}
-0,  &amp; \text{where} \quad t \lt a\\
-1,  &amp; \text{where} \quad  t\geq a
-\end{cases}
+=-	\frac{1}{2}\left[\log \frac{s^{2}}{s^{2}+1}.s-\int\limits_{s}^{\infty}\frac{s^{2}+1}{s^{2}}.\frac{(s^{2}+1).2s -s^{2}(2s)s}{(s^{2}+1)^{2}}	\,ds\right]_{s}^{\infty}
 \end{equation*}
 </div>
-<div class="para">and <span class="process-math">\(a\geq 0\text{.}\)</span>  The unit step function can be visulized as figure <a href="" class="xref" data-knowl="./knowl/fig-fig61.html" title="Figure 6.5.1">Figure 6.5.1</a>.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-\frac{1}{2}\left[s \log \frac{s^{2}}{s^{2}+1}-2\int\limits_{s}^{\infty}\frac{1}{s^{2}+1}\,ds\right]_{s}^{\infty} 
+\end{equation*}
 </div>
-<span class="incontext"><a href="subsec-usf_LT1.html#p-1031" class="internal">in-context</a></span>
+<div class="displaymath process-math">
+\begin{equation*}
+= -\frac{1}{2}\left[s \log \frac{s^{2}}{s^{2}+1}-2\tan ^{-1}s\right]_{s}^{\infty}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=-\frac{1}{2}\left[0-2(\pi/2) -s \log \frac{s^{2}}{s^{2}+1}+2\tan ^{-1}s\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= -\frac{1}{2}\left[-\pi-s \log \frac{s^{2}}{s^{2}+1}+2\tan ^{-1}s\right]	
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{\pi}{2}+\frac{s}{2} \log \frac{s^{2}}{s^{2}+1}-\tan^{-1}s
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \left(\frac{\pi}{2}-\tan^{-1}s \right) +\frac{s}{2} \log \frac{s^{2}}{s^{2}+1}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\cot^{-1}s + \frac{s}{2} \log \frac{s^{2}}{s^{2}+1}.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec_sixth-examplesB.html#p-1031" class="internal">in-context</a></span>
 </body>
 </html>

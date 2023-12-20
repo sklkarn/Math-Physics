@@ -13,19 +13,47 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">In cylindrical coordinates,</div>
-<div class="displaymath process-math">
+<div class="para">Putting these values in equation <a href="" class="xref" data-knowl="./knowl/eqn-2Dheat_sol7.html" title="Equation 7.3.54">(7.3.54)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dheat_sol7.html ./knowl/eqn-2Dheat_sol2.html">
 \begin{equation*}
-\nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}}+\frac{1}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{\partial^{2}u}{\partial z^{2}} =0.
+\frac{r^{2}\pi^{2}}{a^{2}} =\frac{m}{h^{2}}- \frac{s^{2}\pi^{2}}{b^{2}}
 \end{equation*}
 </div>
-<div class="para">In spherical polar coordinates,</div>
-<div class="displaymath process-math">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dheat_sol7.html ./knowl/eqn-2Dheat_sol2.html">
 \begin{equation*}
-\nabla^{2}u = \frac{\partial^{2}u}{\partial r^{2}}+\frac{2}{r}\frac{\partial u}{\partial r}+\frac{1}{r^{2}}\frac{\partial^{2}u}{\partial \theta^{2}}+\frac{1}{r^{2}\sin\theta}\frac{\partial^{2}u}{\partial \phi^{2}} =0.
+\frac{m}{h^{2}}=\left[\frac{r^{2}}{a^{2}}+ \frac{s^{2}}{b^{2}}\right]\pi^{2}
 \end{equation*}
 </div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dheat_sol7.html ./knowl/eqn-2Dheat_sol2.html">
+\begin{equation}
+\therefore   m= h^{2}\pi^{2}\left[\frac{r^{2}}{a^{2}}+ \frac{s^{2}}{b^{2}}\right] = m_{rs}  	\quad (say)\tag{7.3.55}
+\end{equation}
 </div>
-<span class="incontext"><a href="subsec-Lapleqn.html#p-1194" class="internal">in-context</a></span>
+<div class="para">The solution <a href="" class="xref" data-knowl="./knowl/eqn-2Dheat_sol2.html" title="Equation 7.3.49">(7.3.49)</a> now becomes -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dheat_sol7.html ./knowl/eqn-2Dheat_sol2.html">
+\begin{equation*}
+u=\sum\limits_{r=1}^{\infty}\sum\limits_{s=1}^{\infty}A_{rs}e^{-m_{rs}t}\left(E_{r}\sin\frac{r\pi x}{a}\right)\left(C_{s}\sin\frac{s\pi y}{b}\right)
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dheat_sol7.html ./knowl/eqn-2Dheat_sol2.html">
+\begin{equation}
+=\sum\limits_{r,s=1}^{\infty}a_{rs}e^{-m_{rs}t}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}\tag{7.3.56}
+\end{equation}
+</div>
+<div class="para">To determine the value of constant <span class="process-math">\(a_{rs}\)</span> imposing the initial condition, <span class="process-math">\(u(x,y,0)=f(x,y)\text{,}\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dheat_sol7.html ./knowl/eqn-2Dheat_sol2.html">
+\begin{equation}
+f(x,y)=\sum\limits_{r,s=1}^{\infty}a_{rs}\sin\frac{r\pi x}{a}\sin\frac{s\pi y}{b}\tag{7.3.57}
+\end{equation}
+</div>
+<div class="para">multiplying both sides by <span class="process-math">\(\sin\frac{r\pi x}{a}\cdot \sin\frac{s\pi y}{b} \)</span> and integrating from 0 to <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{,}\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2Dheat_sol7.html ./knowl/eqn-2Dheat_sol2.html">
+\begin{equation}
+a_{rs} =\frac{4}{ab}\int\limits_{0}^{a}\int\limits_{0}^{b}	f(x,y)\sin\frac{r\pi x}{a}\cdot \sin\frac{s\pi y}{b}\,dx \,dy			\tag{7.3.58}
+\end{equation}
+</div>
+</div>
+<span class="incontext"><a href="subsec-2D_heat.html#p-1194" class="internal">in-context</a></span>
 </body>
 </html>

@@ -13,85 +13,13 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">Let the solution of this problem is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
+<div class="para">Consider a thin plate with insulated surfaces bounded by the lines <span class="process-math">\(x=0\text{,}\)</span> <span class="process-math">\(x=\lambda {,}y=0 \text{,}\)</span> and <span class="process-math">\(y=\infty\text{.}\)</span> Let at steady state, the temp. <span class="process-math">\(u(x,y)\)</span> at any point <span class="process-math">\(p(x,y)\)</span> satisfies the equation</div>
+<div class="displaymath process-math">
 \begin{equation}
-u=\left(C_{1}\cos px+C_{2}\sin px\right)\left(C_{3}e^{py}+C_{4}e^{-py}\right)\tag{7.3.67}
+\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}} =0\tag{7.3.59}
 \end{equation}
 </div>
-<div class="para">putting <span class="process-math">\(x=0\)</span> and <span class="process-math">\(u=0\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn9.html" title="Equation 7.3.67">(7.3.67)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation*}
-0=C_{1}\left(C_{3}e^{py}+C_{4}e^{-py}\right) \quad \Rightarrow  C_{1} =0 
-\end{equation*}
-</div>
-<div class="para">hence eqn. <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn9.html" title="Equation 7.3.67">(7.3.67)</a> reduces to</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation}
-u=C_{2}\sin px\left(C_{3}e^{py}+C_{4}e^{-py}\right)	\tag{7.3.68}
-\end{equation}
-</div>
-<div class="para">on putting <span class="process-math">\(x=\lambda\)</span> and <span class="process-math">\(u=0\text{,}\)</span> we have -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation*}
-0=C_{2}\sin p\lambda\left(C_{3}e^{py}+C_{4}e^{-py}\right)
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation*}
-\sin p\lambda =0=\sin n\pi	\quad \text{as}\quad  C_{2} \neq 0 
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation*}
-p=\frac{n\pi}{\lambda},	\quad n=1,2,3,\cdots 
-\end{equation*}
-</div>
-<div class="para">Now equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn10.html" title="Equation 7.3.68">(7.3.68)</a> becomes -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation}
-u=C_{2}\sin\frac{n\pi x}{\lambda}\left(C_{3}e^{\frac{n\pi y}{\lambda}}+C_{4}e^{-\frac{n\pi y}{\lambda}}\right)\tag{7.3.69}
-\end{equation}
-</div>
-<div class="para">on putting <span class="process-math">\(u=0\)</span> and <span class="process-math">\(y=0\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn11.html" title="Equation 7.3.69">(7.3.69)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation*}
-0= C_{2}\sin\frac{n\pi x}{\lambda}(C_{3}+C_{4}) \quad  \Rightarrow  C_{3}+C_{4} =0 
-\end{equation*}
-</div>
-<div class="para">or, <span class="process-math">\(C_{4} =-C_{3}\)</span> therefore, equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn11.html" title="Equation 7.3.69">(7.3.69)</a> becomes</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation*}
-u=C_{2}C_{3}\sin\frac{n\pi x}{\lambda}\left(e^{\frac{n\pi y}{\lambda}}-e^{-\frac{n\pi y}{\lambda}}\right)
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation*}
-u=\sum\limits_{n=1}^{\infty}b_{n}\sin\frac{n\pi x}{\lambda}\left(e^{\frac{n\pi y}{\lambda}}-e^{-\frac{n\pi y}{\lambda}}\right)\times\frac{2}{2}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation}
-u=\sum\limits_{n=1}^{\infty}c_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}  \tag{7.3.70}
-\end{equation}
-</div>
-<div class="para">
-<span class="process-math">\([\because  \quad 2b_{n} =c_{n}]\text{.}\)</span> on putting <span class="process-math">\(y=a\)</span> and <span class="process-math">\(u=f(x)\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn12.html" title="Equation 7.3.70">(7.3.70)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation}
-f(x) =\sum\limits_{n=1}^{\infty}c_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}\tag{7.3.71}
-\end{equation}
-</div>
-<div class="para">where</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
-\begin{equation*}
-c_{n}\sinh \frac{n\pi a}{\lambda} = \frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\sin\frac{n\pi x}{\lambda}\,dx.
-\end{equation*}
-</div>
+<div class="para">assuming the edges <span class="process-math">\(x=0\)</span> and  <span class="process-math">\(x=\lambda \)</span> is kept at temperature zero and also the lower edge <span class="process-math">\(y=0\)</span> is kept at tempemperature <span class="process-math">\(f(x)\)</span> and the edge <span class="process-math">\(y=\infty\)</span> at zero temperature.</div>
 </div>
 <span class="incontext"><a href="subsec-2D_lapleqn.html#p-1198" class="internal">in-context</a></span>
 </body>

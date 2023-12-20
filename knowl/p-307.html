@@ -13,62 +13,13 @@
 <body class="ignore-math">
 <h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">Let us consider an example where a matrix,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
+<div class="para">Let’s first understand the <dfn class="terminology">eigen function</dfn> and <dfn class="terminology">eigen value</dfn>. Suppose we differentiate <span class="process-math">\(\sinx \)</span> with respect to <span class="process-math">\(x\text{,}\)</span> we get <span class="process-math">\(\cosx\text{,}\)</span> then <span class="process-math">\(\sinx \)</span> is not an eigen function, because <span class="process-math">\(\cos x\)</span> is different function then <span class="process-math">\(\sin x.\)</span> Now, differentiate <span class="process-math">\(\sin ax\text{,}\)</span> we will get <span class="process-math">\(a\cos ax\text{,}\)</span> again <span class="process-math">\(\sin ax\)</span> is not an eigenfunction. Howabout, if we differentiate <span class="process-math">\(e^{ax}\text{,}\)</span> now we have <span class="process-math">\(ae^{ax}\text{,}\)</span> here a constant <span class="process-math">\(a\)</span> is multiplied by the same function <span class="process-math">\(e^{ax}\text{.}\)</span> Hence, <span class="process-math">\(e^{ax}\)</span> is an eigen function and an yield constant, <span class="process-math">\(a\)</span> after the operation (differentiation) is known as eigen value. Also,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-A=\begin{bmatrix} 
-1 &amp; 2\\2 &amp; 1 
-\end{bmatrix}
+\frac{d^2}{\,dx^2} [\sin \,ax] = -a^2[\sin \,ax]
 \end{equation*}
 </div>
-<div class="para">acts on a vector</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
-\begin{equation*}
-X= \begin{bmatrix} 
-1\\3 
-\end{bmatrix},
-\end{equation*}
-</div>
-<div class="para">then the resulting vector would be</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
-\begin{equation*}
-AX=\begin{bmatrix} 
-1 &amp; 2\\ 2 &amp; 1 
-\end{bmatrix} 
-\begin{bmatrix} 
-1\\3 
-\end{bmatrix} = \begin{bmatrix} 
-7\\5 
-\end{bmatrix}.
-\end{equation*}
-</div>
-<div class="para">In this case the vector <span class="process-math">\(AX\)</span> is transformed into a new vector <a href="" class="xref" data-knowl="./knowl/fig-eigen.html" title="Figure 2.5.1">Figure 2.5.1</a>. The vector may gets elongated or shortened or rotated in the transformation process. For a given square matrix, <span class="process-math">\(A\)</span> there always exits special vector/s which retain/s their original direction, such vectors are called eigen vectors. The vector which scaled but will not change its direction is called an eigen vector and its scaled factor is known as eigen value. An eigenvector of a square matrix A is a non-zero vector X that, when multiplied by A, results in a scalar multiple of itself. That is, if <span class="process-math">\(AX = \lambda λX\text{,}\)</span> where <span class="process-math">\(\lambda \)</span> is a scalar, then X is an eigenvector of A associated with the eigenvalue <span class="process-math">\(\lambda \text{.}\)</span> For example,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
-\begin{equation*}
-A=\begin{bmatrix} 
-1 &amp; 2\\2 &amp; 1 
-\end{bmatrix}
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
-\begin{equation*}
-X= \begin{bmatrix} 
-1\\1 
-\end{bmatrix}, 
-\end{equation*}
-</div>
-<div class="para">then,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-eigen.html">
-\begin{equation*}
-AX= \begin{bmatrix} 
-3\\3 
-\end{bmatrix} = 3\begin{bmatrix} 
-1\\1 
-\end{bmatrix}.
-\end{equation*}
-</div>
-<div class="para">Hence the vector <span class="process-math">\(X\)</span> remains the same with scalar multiplication 3. This scalar value is called eigen value, <span class="process-math">\(\lambda\)</span> of the vector <span class="process-math">\(AX\text{.}\)</span>
+<div class="para">Here, the form of equation looks like <span class="process-math">\(AX = \lambda X\text{,}\)</span> hence <span class="process-math">\(\sin \,ax\)</span> is an eigen function for the operator <span class="process-math">\(\frac{d^2}{\,dx^2} \)</span> and <span class="process-math">\(-a^2\)</span> is an eigen value for the function <span class="process-math">\(\sin \,ax\text{.}\)</span>
 </div>
 </div>
 <span class="incontext"><a href="sec_second-eigen.html#p-307" class="internal">in-context</a></span>

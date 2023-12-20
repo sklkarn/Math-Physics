@@ -11,24 +11,31 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Solve</div>
 <div class="displaymath process-math">
 \begin{equation}
-\frac{\partial u(x,t)}{\partial t}=k\frac{\partial^{2}u(x,t)}{\partial x^{2}}\tag{6.2.6}
+\mathscr{F}_{c}\{f(x)\} =F_{c}(s) = \int\limits_{0}^{\infty}f(x) \cos sx \,dx = \int\limits_{0}^{\infty} x \cos sx \,dx \tag{6.2.4}
 \end{equation}
 </div>
-<div class="para">(heat flow or diffusion equation) where  <span class="process-math">\(u(0,t) =0\)</span> 	and</div>
 <div class="displaymath process-math">
 \begin{equation}
-u(x,0) = \begin{cases}
-1,  &amp; x \lt 1\\
-0, &amp; x \gt 1
-\end{cases}\tag{6.2.7}
+\mathscr{F}_{s}\{f(x)\} =F_{s}(s) = \int\limits_{0}^{\infty} x \sin sx \,dx \tag{6.2.5}
 \end{equation}
 </div>
-<div class="para">also <span class="process-math">\(u(x,t)\)</span> is bounded.</div>
+<div class="para">Let <span class="process-math">\(F(s) =\int\limits_{0}^{\infty} x e^{-isx} \,dx\)</span> 	put <span class="process-math">\(isx=y\)</span> so that <span class="process-math">\(\,dx=\,dy/s\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore  F(s) = 	\int\limits_{0}^{\infty}\frac{y}{is}e^{-y}\frac{\,dy}{is} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= -\frac{1}{s^{2}}\int\limits_{0}^{\infty}y^{2-1}e^{-y}\,dy  = -\frac{\Gamma(2)}{s^{2}}.
+\end{equation*}
+</div>
+<div class="para"><span class="process-math">\([\because  \Gamma(n+1) =n!]\)</span></div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesA.html#p-965" class="internal">in-context</a></span>
 </body>

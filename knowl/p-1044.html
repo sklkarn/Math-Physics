@@ -11,8 +11,31 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">see <a href="subsec-second_order-diff.html#subsubsec-var_coef" class="internal" title="Subsubsection 4.1.2.3: Linear Equations with Variable Coefficients">Subsubsection 4.1.2.3</a>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">Let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int\limits_{0}^{t}f_{1}(x)f_{2}(t-x)\,dx = H(t).
+\end{equation*}
+</div>
+<div class="para">Then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{L}\{H(t)\}=\int\limits_{0}^{\infty}e^{-st}H(t)\,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \int\limits_{t=0}^{\infty}e^{-st}\left[\int\limits_{x=0}^{t}f_{1}(x)f_{2}(t-x)\,dx\right]\,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{t=0}^{\infty}\left[\int\limits_{x=0}^{t}e^{-st}f_{2}(t-x)\,dx\right]\,dt 
+\end{equation*}
+</div>
+<div class="para">the integration is being done w.r.t. ’x’ first and then w.r.t ’t’.</div>
 </div>
 <span class="incontext"><a href="subsec-conv_LT.html#p-1044" class="internal">in-context</a></span>
 </body>

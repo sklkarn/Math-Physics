@@ -13,57 +13,14 @@
 <body class="ignore-math">
 <h2 class="heading"><span class="type">Paragraph</span></h2>
 <div class="para logical">
-<div class="para">Substituting these values in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl2.html" title="Equation 4.7.2">(4.7.2)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
+<div class="para">Equating the coefficient of  <span class="process-math">\(x^{m+1}\)</span> to zero, we get -</div>
+<div class="displaymath process-math">
 \begin{equation*}
-y=a_{o}x^{n}\left[1-\frac{1}{4(n+1)}x^{2}+\frac{1}{4^{2}2!(n+1)(n+2)}x^{4}\right.
+a_{1}[(m+1)^{2}-n^{2}]=0
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation*}
-\left.-\frac{1}{4^{3}3!(n+1)(n+2)(n+3)}x^{6}+\cdots\right.
-\end{equation*}
+<div class="para">for <span class="process-math">\(k=1\text{,}\)</span> i.e., <span class="process-math">\(a_{1} =0\text{.}\)</span> Since <span class="process-math">\((m+1)^{2}-n^{2} \neq 0\text{,}\)</span> for the given value of <span class="process-math">\(m =\pm n \text{.}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation*}
-\left.+\cdots+\frac{(-1)^{r}x^{2r}}{4^{r}r!(n+1)(n+2)\cdots(n+r)}+\cdots\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation}
-\therefore \quad y=a_{o}\sum\limits_{r=0}^{\infty}(-1)^{r}\frac{x^{n+2r}}{2^{2r}r!(n+1)(n+2)\cdots(n+r)}\tag{4.7.5}
-\end{equation}
-</div>
-<div class="para">where <span class="process-math">\(a_{o}\)</span> is an arbitrary constant. If we choose <span class="process-math">\(a_{o} = \frac{1}{2^{n}n!}\)</span> then the solution <a href="" class="xref" data-knowl="./knowl/eqn-bessl5.html" title="Equation 4.7.5">(4.7.5)</a> is called Bessel’s function of the first kind and is denoted by <span class="process-math">\(J_{n}(x)\text{.}\)</span> Thus</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation*}
-J_{n}(x) = \frac{1}{2^{n}n!} \sum\limits_{r=0}^{\infty}(-1)^{r}\frac{x^{n+2r}}{2^{2r}r!(n+1)(n+2)\cdots(n+r)}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation}
-=  \sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(n+r)!}\left(\frac{x}{2}\right)^{n+2r}\tag{4.7.6}
-\end{equation}
-</div>
-<div class="para">for <span class="process-math">\(m=-n\text{,}\)</span> we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation*}
-a_{k+2}=-\frac{a_{k}}{(-n+k+2)^{2}-n^{2}}
-\end{equation*}
-</div>
-<div class="para">hence the second solution is obtained by replacing <span class="process-math">\(n\)</span> with <span class="process-math">\(-n\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl6.html" title="Equation 4.7.6">(4.7.6)</a>, i.e.,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation}
-J_{-n}(x)=\sum\limits_{r=0}^{\infty}\frac{(-1)^{r}}{r!(-n+r)!}\left(\frac{x}{2}\right)^{-n+2r}\tag{4.7.7}
-\end{equation}
-</div>
-<div class="para">Therefore, the general solution of Bessel’s differential equation <a href="" class="xref" data-knowl="./knowl/eqn-bessl1.html" title="Equation 4.7.1">(4.7.1)</a> is</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-bessl2.html ./knowl/eqn-bessl5.html ./knowl/eqn-bessl6.html ./knowl/eqn-bessl1.html">
-\begin{equation}
-y=AJ_{n}(x)+BJ_{-n}(x)\tag{4.7.8}
-\end{equation}
-</div>
-<div class="para">Where <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> are two arbitrary constants.</div>
 </div>
 <span class="incontext"><a href="sec_fourth-besslfn.html#p-630" class="internal">in-context</a></span>
 </body>

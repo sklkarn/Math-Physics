@@ -13,77 +13,53 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We know that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+<div class="para">We have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+e^{2zx-z^{2}}=e^{2zx}\cdot e^{-z^{2}}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\left[1+2zx+\frac{(2x)^{2}}{2!}z^{2}+\cdots+\frac{(2x)^{r}}{r!}z^{r}+\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\cdot\left[1-\frac{z^{2}}{1!}+\frac{(z^{2})^{2}}{2!}-\cdots+(-1)^{s}\frac{z^{2s}}{s!}+\cdots\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\sum_{r=0}^{\infty} \frac{(2x)^{r}}{r!}z^{r}\cdot\sum_{s=0}^{\infty} (-1)^{s}\frac{(z)^{2s}}{s!}
+\end{equation*}
+</div>
+<div class="displaymath process-math">
 \begin{equation}
-e^{2zx-z^{2}}= e^{x^{2}-(z-x)^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n}\tag{4.9.17}
+=\sum_{r=0}^{\infty}\sum_{s=0}^{\infty}(-1)^{s}\frac{(2x)^{r}}{r!s!} z^{r+2s}\tag{4.9.15}
 \end{equation}
 </div>
-<div class="para">Differentiating <span class="process-math">\(n\)</span> times w. r. t. <span class="process-math">\(z\text{,}\)</span> we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
+<div class="para">for fixed value of <span class="process-math">\(s\text{,}\)</span> (as <span class="process-math">\(r\)</span> in the general term of <span class="process-math">\(H_{n}(x)\)</span>) the coefficient of <span class="process-math">\(z^{n}\)</span> is obtained by putting 	<span class="process-math">\(r+2s=n\)</span> or, <span class="process-math">\(r=n-2s\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\therefore e^{2zx-z^{2}}=\sum_{s=0}^{\infty}\frac{(-1)^{s}(2x)^{n-2s}}{s!(n-2s)!}z^{n}
+\end{equation*}
+</div>
+<div class="para">Now, we know that since <span class="process-math">\(r \geq 0\text{,}\)</span> we must have  <span class="process-math">\(n-2s \geq 0 \)</span> or, <span class="process-math">\(s\leq \frac{n}{2} \text{.}\)</span> Thus, if <span class="process-math">\(n\)</span> is even <span class="process-math">\(s\)</span> varies from 0 to <span class="process-math">\(\frac{n}{2}\)</span> and when <span class="process-math">\(n\)</span> is odd <span class="process-math">\(s\)</span> varies from 0 to <span class="process-math">\(\frac{n-1}{2}\text{.}\)</span> Hence, the coefficient of <span class="process-math">\(z^{n}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\sum_{s=0}^{\infty}\frac{(-1)^{s}(2x)^{n-2s}}{s!(n-2s)!}\frac{n!}{n!}=\frac{H_{n}(x)}{n!}
+\end{equation*}
+</div>
+<div class="para">Hence,</div>
+<div class="displaymath process-math">
 \begin{equation}
-e^{x^{2}}\frac{d^{n}}{dx^{n}}[e^{-(z-x)^{2}}]=	H_{n}(x)+H_{n+1}(x)z+\cdots\tag{4.9.18}
+e^{2zx-z^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}z^{n}\tag{4.9.16}
 \end{equation}
 </div>
-<div class="para">But, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation*}
-\frac{\,d}{\,dz}[e^{-(z-x)^{2}}]=-2(z-x)e^{-(z-x)^{2}}
-\end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation*}
-\frac{\,d}{\,dx}[e^{-(z-x)^{2}}]=+2(z-x)e^{-(z-x)^{2}}
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation*}
-\lim\limits_{z\to 0}\frac{\,d}{\,dz}[e^{-(z-x)^{2}}]=2xe^{-x^{2}}=(-1)^{1}\lim\limits_{z\to 0}\frac{d}{dx}[e^{-(z-x)^{2}}]
-\end{equation*}
-</div>
-<div class="para">similarly,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation*}
-\lim\limits_{z\to 0}\frac{d^{2}}{dz^{2}}[e^{-(z-x)^{2}}]=(-1)^{2}\lim\limits_{z\to 0}\frac{d^{2}}{dx^{2}}[e^{-(z-x)^{2}}]
-\end{equation*}
-</div>
-<div class="para">and so on. In general,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation*}
-\lim\limits_{z\to 0}\frac{d^{n}}{dz^{n}}[e^{-(z-x)^{2}}]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation}
-=(-1)^{n}\lim\limits_{z\to 0}\frac{d^{n}}{dx^{n}}[e^{-(z-x)^{2}}]=(-1)^{n}\frac{d^{n}}{dx^{n}}[e^{-x^{2}}]\tag{4.9.19}
-\end{equation}
-</div>
-<div class="para">Hence from equation <a href="" class="xref" data-knowl="./knowl/eqn-hermt_rodrg2.html" title="Equation 4.9.18">(4.9.18)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation*}
-\lim\limits_{z\to 0}e^{x^{2}}\frac{d^{n}}{dz^{n}}[e^{-(z-x)^{2}}]=H_{n}(x) 
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation*}
-=	 e^{x^{2}}\lim\limits_{z\to 0}\frac{d^{n}}{dz^{n}} [e^{-(z-x)^{2}}]=  e^{x^{2}}(-1)^{n}\frac{d^{n}}{dx^{n}}e^{-x^{2}} 
-\end{equation*}
-</div>
-<div class="para">[from equation <a href="" class="xref" data-knowl="./knowl/eqn-hermt_rodrg3.html" title="Equation 4.9.19">(4.9.19)</a>]</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation}
-\therefore H_{n}(x)=(-1)^{n} e^{x^{2}}\frac{d^{n}}{dx^{n}}[e^{-x^{2}}]  \tag{4.9.20}
-\end{equation}
-</div>
-<div class="para">This is differential form of Hermite polynomial, which gives</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rodrg2.html ./knowl/eqn-hermt_rodrg3.html">
-\begin{equation*}
-H_{o}(x)=1,  H_{1}(x)=2x,  H_{2}(x)=4x^{2}-2,
-\end{equation*}
-</div>
-<div class="para">and so on.</div>
+<div class="para">The function <span class="process-math">\(e^{2zx-z^{2}} \)</span> is thus said to be the generating function of Hermite polynomials.</div>
 </div>
 <span class="incontext"><a href="subsec-hermit-pol.html#p-710" class="internal">in-context</a></span>
 </body>

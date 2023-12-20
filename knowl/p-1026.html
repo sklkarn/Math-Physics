@@ -13,25 +13,26 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
+<div class="para">Let <span class="process-math">\(F(s) = \cot^{-1}(1+s)\)</span> we know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[\sin 2t] = \frac{2}{s^{2}+4} 
-\end{equation*}
-</div>
-<div class="para">Now,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mathscr{L}\left[\frac{\sin2t}{t}\right] = 	\int\limits_{s}^{\infty}\frac{2}{s^{2}+4}\,ds
+\mathscr{L}[tf(t)] =-\frac{\,d}{\,ds}F(s)=-\frac{\,d}{\,ds}\left[\cot^{-1}(1+s)\right] 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=2.\frac{1}{2}\left[\tan^{-1}\frac{s}{2}\right]_{s}^{\infty} = \left[\tan^{-1}\infty -\tan^{-1}\frac{s}{2}\right]
+= -\left[\frac{-1}{1+(1+s)^{2}}\right] = \frac{1}{(s+1)^{2}+1}
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+tf(t) = \mathscr{L}^{-1}\left[\frac{1}{(s+1)^{2}+1}\right] =e^{-t}\sin t
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= \frac{\pi}{2}-\tan^{-1}\frac{s}{2} = \cot^{-1}\frac{s}{2}.
+\therefore f(t) = \frac{1}{t}\left[e^{-t}\sin t\right].
 \end{equation*}
 </div>
 </div>

@@ -13,24 +13,14 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Hence the remainder, the deviation of the approximation from <span class="process-math">\((\pi-x)/2\)</span> at <span class="process-math">\(x_{k}\)</span> which approaches the point of the discontinuity at <span class="process-math">\(x=0\)</span>(end point), tends to the limit</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs8.html">
+<div class="para">In the immediate vicinity of a jump discontinuity i.e. at <span class="process-math">\(x{+}\)</span> or <span class="process-math">\(x{-}\text{,}\)</span> the function <span class="process-math">\(f(x)\)</span> is not same and hence the convergence of the Fourier series is not uniform since <span class="process-math">\(f(x) \rightarrow \frac{1}{2}[f(x+0)+f(x-0)]\text{.}\)</span> Here partial sums move progressively closer to the function as the number of terms is increased, but the partial sums (approximating curves) overshoot or undershoot the function at the jump discontinuity. To verify the validity of Gibbs phenomenon, i.e. Fourier expansion for functions which are discontinuous but piecewise smooth, Bocher considered the following specific function defined by</div>
+<div class="displaymath process-math">
 \begin{equation}
-\displaystyle{\lim_{p \to \infty}} R_{p}(x_{k}) \rightarrow \frac{\pi}{2}-\int\limits_{0}^{\pi_{k}}\frac{\sin u}{u}\, du\tag{5.5.13}
+f(x) = \frac{1}{2}(\pi-x)   \quad  (0\leq x \leq 2\pi)\tag{5.5.7}
 \end{equation}
 </div>
-<div class="para">For <span class="process-math">\(k=1\text{,}\)</span> we find that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs8.html">
-\begin{equation*}
-\displaystyle{\lim_{p \to \infty}} R_{p}(x_{1}) \rightarrow \frac{\pi}{2}-\int\limits_{0}^{\pi}\frac{\sin u}{u}\, du 
-\end{equation*}
+<div class="para">here <span class="process-math">\(f(0) = 0\)</span> and <span class="process-math">\(f(x+2\pi) =f(x)\text{.}\)</span> i.e., the function jumps by <span class="process-math">\(\pi\)</span> at the points <span class="process-math">\(x = \pm 2m\pi\)</span> where <span class="process-math">\(m=0,1,2,\cdots\text{.}\)</span> The Fourier coefficients of this function are <span class="process-math">\(a_{0}=a_{n}=0, \quad b_{n}=\frac{1}{n}\text{.}\)</span>
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-gibbs8.html">
-\begin{equation}
-= \frac{\pi}{2}-\frac{\pi}{2}(1.179) = -0.281\tag{5.5.14}
-\end{equation}
-</div>
-<div class="para">Hence the negative sign in equation <a href="" class="xref" data-knowl="./knowl/eqn-gibbs8.html" title="Equation 5.5.14">(5.5.14)</a> indicates that the approximate curve for <span class="process-math">\(f(x)\)</span> is overshooted by about m<span class="process-math">\(18 \% \)</span> at a jump discontinuity (i.e., at <span class="process-math">\(x=0\)</span>), in the Fourier series.</div>
 </div>
 <span class="incontext"><a href="subsec-gibbs_phen.html#p-850" class="internal">in-context</a></span>
 </body>

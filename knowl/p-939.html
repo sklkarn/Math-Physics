@@ -13,38 +13,64 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Fourier transform of <span class="process-math">\(f(x)\)</span> is</div>
-<div class="displaymath process-math">
+<div class="para">The choice of sine or cosine transform is decided by the form of boundary conditions.</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-\mathscr{F}\{f(x)\} =  F(s) = \int\limits_{0}^{\infty}f(x)e^{-ikx} \, dx
+\mathscr{F}_{c}\{\frac{\partial^{2}u}{\partial x^{2}}\} = \int\limits_{0}^{\infty}\frac{\partial^{2}u}{\partial x^{2}}\cos sx\,dx = \left[\frac{\partial u}{\partial x}\cos sx\right]_{0}^{\infty} +s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\sin sx\,dx
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-=\int\limits_{-\infty}^{-a}x e^{-isx} \, dx+ \int\limits_{-a}^{a}x e^{-isx} \, dx +\int\limits_{a}^{\infty}0. e^{-isx} \, dx
+=\left(-\frac{\partial u}{\partial x}\right)_{x=0}+s\left[u\sin sx\right]_{0}^{\infty} -s^{2}\int\limits_{0}^{\infty}u\cos sx\,dx \quad [\text{if}\quad \lim\limits_{x \to \infty}\frac{\partial u}{\partial x}=0.]
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
+\begin{equation}
+\therefore \quad  \mathscr{F}_{c}\{\frac{\partial^{2}u}{\partial x^{2}}\} 
+= \left(-\frac{\partial u}{\partial x}\right)_{x=0} -s^{2}\bar{u_{c}} \tag{6.1.12}
+\end{equation}
+</div>
+<div class="para">If</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-=\int\limits_{\infty}^{a}f(-t)e^{+ist} \,(-dt)+ \left[\frac{x.e^{-isx}}{-is}+\frac{e^{-isx}.1}{s^{2}}\right]_{-a}^{a}+0
+\lim\limits_{x \to \infty}u=0 \quad \text{and}\quad \int\limits_{0}^{\infty}u\cos sx\,dx = \bar{u_{c}}=\mathscr{F}_{c}\{u\}
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">also,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-=\int\limits_{a}^{\infty}0.e^{+ist} \,(dt)+ \frac{a}{is}\left(e^{-isa}+e^{isa}\right)+\frac{1}{s^{2}}\left(e^{-isa}-e^{isa}\right)
+\mathscr{F}_{s}\{\frac{\partial^{2}u}{\partial x^{2}}\} = \int\limits_{0}^{\infty}\frac{\partial^{2}u}{\partial x^{2}}\sin sx \,dx 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-=0+ \frac{ia}{s}.2\cos sa + \frac{1}{s^{2}}.2\sin sa
+= \left[\frac{\partial^{2}u}{\partial x^{2}}\sin sx\right]_{0}^{\infty}-s\int\limits_{0}^{\infty}\frac{\partial u}{\partial x}\cos sx\,dx 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
 \begin{equation*}
-=\frac{2i}{s^{2}}(sa\cos sa- \sin sa)
+=-s\left[\left.u\cos sx\right\vert_{0}^{\infty}+s\int\limits_{0}^{\infty}u\sin sx\,dx\right]
 \end{equation*}
 </div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
+\begin{equation}
+\therefore  \mathscr{F}_{s}\{\frac{\partial^{2}u}{\partial x^{2}}\}=s(u)_{x=0}-s^{2}\bar{u_{s}}\tag{6.1.13}
+\end{equation}
 </div>
-<span class="incontext"><a href="sec_sixth-examplesA.html#p-939" class="internal">in-context</a></span>
+<div class="para">if</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-infnt_FT1.html ./knowl/eqn-infnt_FT2.html">
+\begin{equation*}
+\lim\limits_{x \to \infty}u =0\quad \text{and}\quad \int\limits_{0}^{\infty}u\sin sx\,dx = \bar{u_{s}}.
+\end{equation*}
+</div>
+<div class="para">From equations <a href="" class="xref" data-knowl="./knowl/eqn-infnt_FT1.html" title="Equation 6.1.12">(6.1.12)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-infnt_FT2.html" title="Equation 6.1.13">(6.1.13)</a>, it follows that if we want to remove the term <span class="process-math">\(\frac{\partial^{2}u}{\partial x^{2}}\)</span> from a given differential equation then we require</div>
+<ol class="lower-roman">
+<li><div class="para">
+<span class="process-math">\(\left(\frac{\partial u}{\partial x}\right)_{x=0}\)</span> in cosine transform and</div></li>
+<li><div class="para">
+<span class="process-math">\((u)_{x=0}\)</span> in sine transform.</div></li>
+</ol>
+</div>
+<span class="incontext"><a href="subsec-infnt_FT.html#p-939" class="internal">in-context</a></span>
 </body>
 </html>

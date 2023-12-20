@@ -14,28 +14,35 @@
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
 <div class="displaymath process-math">
-\begin{equation}
-\mathscr{F}_{c}\{f(x)\} =F_{c}(s) = \int\limits_{0}^{\infty}f(x) \cos sx \,dx = \int\limits_{0}^{\infty} x \cos sx \,dx \tag{6.2.4}
-\end{equation}
-</div>
-<div class="displaymath process-math">
-\begin{equation}
-\mathscr{F}_{s}\{f(x)\} =F_{s}(s) = \int\limits_{0}^{\infty} x \sin sx \,dx \tag{6.2.5}
-\end{equation}
-</div>
-<div class="para">Let <span class="process-math">\(F(s) =\int\limits_{0}^{\infty} x e^{-isx} \,dx\)</span> 	put <span class="process-math">\(isx=y\)</span> so that <span class="process-math">\(\,dx=\,dy/s\text{.}\)</span>
-</div>
-<div class="displaymath process-math">
 \begin{equation*}
-\therefore  F(s) = 	\int\limits_{0}^{\infty}\frac{y}{is}e^{-y}\frac{\,dy}{is} 
+\mathscr{F}_{s}\{f(x)\}=\int\limits_{0}^{\infty}f(x) \sin sx\,dx 
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= -\frac{1}{s^{2}}\int\limits_{0}^{\infty}y^{2-1}e^{-y}\,dy  = -\frac{\Gamma(2)}{s^{2}}.
+= \int\limits_{0}^{a}f(x) \sin sx\,dx + \int\limits_{a}^{\infty}f(x) \sin sx\,dx
 \end{equation*}
 </div>
-<div class="para"><span class="process-math">\([\because  \Gamma(n+1) =n!]\)</span></div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\int\limits_{0}^{a}f(x) \sin x\sin sx\,dx + 0 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{2}\int\limits_{0}^{a}\left[\cos (1-s)x-\cos(1+s)x\right]\,dx
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+=\frac{1}{2}\left[\frac{\sin (1-s)x}{1-s}-\frac{\sin (1+s)x}{1+s}\right]_{0}^{a} 
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+= \frac{1}{2}\left[\frac{\sin (1-s)a}{1-s}-\frac{\sin (1+s)a}{1+s}\right].
+\end{equation*}
+</div>
 </div>
 <span class="incontext"><a href="sec_sixth-examplesA.html#p-963" class="internal">in-context</a></span>
 </body>

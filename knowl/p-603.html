@@ -13,34 +13,33 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">
-<dfn class="terminology">Alternative:</dfn> We know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P_{n}(x)= \sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)}(x)^{n-2r};
+P_{n}(-1) =(-1)^{n}P_{n}
 \end{equation*}
 </div>
+<div class="para">putting <span class="process-math">\(x=-1\)</span> in the generating function of <span class="process-math">\(P_{n}(x)\text{,}\)</span> we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\begin{cases} 
-\text{where}\quad N=\frac{n}{2} \quad \text{for n even}\\ 
-\quad =\frac{n-1}{2} \quad \text{for n odd}\end{cases}
+(1+2z+z^{2})^{-\frac{1}{2}} =\sum\limits_{n=0}^{\infty}z^{n}P_{n}(-1)z^{n}
 \end{equation*}
 </div>
-<div class="para">Thus</div>
+<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-P_{n}(-x) = \sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)}(-1)^{n-2r}(x)^{n-2r}
+\sum\limits_{n=0}^{\infty}z^{n}P_{n}(-1)z^{n}=(1+z)^{-1}=\sum\limits_{n=0}^{\infty}(-1)^{n}z^{n}
 \end{equation*}
 </div>
+<div class="para">equating the coefficient of <span class="process-math">\(z^{n}\text{,}\)</span> we get -</div>
 <div class="displaymath process-math">
 \begin{equation*}
-=(-1)^{n}\sum\limits_{r=0}^{N}(-1)^{r}\frac{(2n-2r)!}{2^{n}r!(n-r)!(n-2r)}(x)^{n-2r}
+P_{n}(-1)=(-1)^{n},
 \end{equation*}
 </div>
+<div class="para">i.e.,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-=(-1)^{n}P_{n}(x)
+P_{n}(-1)=(-1)^{n}P_{n}(1)
 \end{equation*}
 </div>
 </div>

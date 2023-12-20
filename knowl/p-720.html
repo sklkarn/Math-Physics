@@ -13,83 +13,33 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">We know that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
+<div class="para">Differentiating relation 3. w. r. to <span class="process-math">\(x\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rec8.html ./knowl/eqn-hermt_rec7.html">
 \begin{equation}
-e^{2tx-t^{2}}=\sum_{m=0}^{\infty}\frac{H_{m}(x)}{m!}t^{m}\tag{4.9.29}
+H''_{n}=2H_{n}+2xH'_{n}-H'_{n+1}\tag{4.9.27}
 \end{equation}
 </div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
-\begin{equation}
-e^{2sx-s^{2}}=\sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}s^{n}\tag{4.9.30}
-\end{equation}
-</div>
-<div class="para">Multiplying equations <a href="" class="xref" data-knowl="./knowl/eqn-hermt_orth1.html" title="Equation 4.9.29">(4.9.29)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-hermt_orth2.html" title="Equation 4.9.30">(4.9.30)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
+<div class="para">From relation 1, we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rec8.html ./knowl/eqn-hermt_rec7.html">
 \begin{equation*}
-e^{2tx-t^{2}}\times e^{2sx-s^{2}}=	\sum_{m=0}^{\infty}\frac{H_{m}(x)}{m!}t^{m} \times \sum_{n=0}^{\infty}\frac{H_{n}(x)}{n!}s^{n}	
+2nH_{n-1}=H'_{n}
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
+<div class="para">put, <span class="process-math">\(n=n+1\)</span> we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rec8.html ./knowl/eqn-hermt_rec7.html">
+\begin{equation}
+2(n+1)H_{n}=H'_{n+1}\tag{4.9.28}
+\end{equation}
+</div>
+<div class="para">Substituting equation <a href="" class="xref" data-knowl="./knowl/eqn-hermt_rec8.html" title="Equation 4.9.28">(4.9.28)</a> in equation <a href="" class="xref" data-knowl="./knowl/eqn-hermt_rec7.html" title="Equation 4.9.27">(4.9.27)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rec8.html ./knowl/eqn-hermt_rec7.html">
 \begin{equation*}
-\sum_{m,n=0}^{\infty}\frac{H_{m}(x)}{m!}\frac{H_{n}(x)}{n!}t^{m}s^{n}=e^{2tx-t^{2}+2sx-s^{2}}
+H''_{n}=2H_{n}+2xH'_{n}-2(n+1)H_{n}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
-\begin{equation}
-=e^{2x(t+s)-(t^{2}+s^{2})}\tag{4.9.31}
-\end{equation}
-</div>
-<div class="para">Now multiplying equation <a href="" class="xref" data-knowl="./knowl/eqn-hermt_orth3.html" title="Equation 4.9.31">(4.9.31)</a> by <span class="process-math">\(e^{-x^{2}}\)</span> on both sides and integrating w. r. t. ’x’ from <span class="process-math">\(-\infty\)</span> to <span class="process-math">\(\infty \text{,}\)</span> we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_rec8.html ./knowl/eqn-hermt_rec7.html">
 \begin{equation*}
-\sum_{m,n=0}^{\infty}\left[\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx\right]\frac{t^{m}s^{n}}{m!n!} =\int\limits_{-\infty}^{\infty}e^{-x^{2}+2x(t+s)-(t^{2}+s^{2})}\,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
-\begin{equation*}
-=\int\limits_{-\infty}^{\infty}e^{-x^{2}+2x(t+s)-(t+s)^{2}}\cdot e^{2ts}\,dx
-\end{equation*}
-</div>
-<div class="para">putting <span class="process-math">\([x-(t+s)]=y\)</span>	so that <span class="process-math">\(\,dx=\,dy\text{.}\)</span>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
-\begin{equation*}
-=e^{2ts}\int\limits_{-\infty}^{\infty}e^{-y^{2}}\,dy =e^{2ts}\sqrt{\pi} \hspace{1cm}  \left[\because \int\limits_{-\infty}^{\infty}e^{-y^{2}}\,dy=\sqrt{\pi}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
-\begin{equation}
-=\sqrt{\pi}\sum_{n=0}^{\infty}\frac{(2ts)^{n}}{n!}=\sum_{n=0}^{\infty}\sqrt{\pi}\frac{2^{n}t^{n}s^{n}}{n!}\tag{4.9.32}
-\end{equation}
-</div>
-<div class="para">The RHS of series contains only the terms having equal powers of <span class="process-math">\('t'\)</span> and <span class="process-math">\('s'\text{.}\)</span> Therefore the coefficient of <span class="process-math">\(t^{n}s^{n}\)</span> provided <span class="process-math">\(m \neq n\)</span> will be zero. Hence equating the coefficient of <span class="process-math">\(t^{m}s^{n}\)</span> on both sides of equation <a href="" class="xref" data-knowl="./knowl/eqn-hermt_orth4.html" title="Equation 4.9.32">(4.9.32)</a>, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
-\begin{equation}
-\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =0 \text{when} \quad m \neq n\tag{4.9.33}
-\end{equation}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
-\begin{equation}
-\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =\sqrt{\pi} 2^{n}n! \quad \text{when}\quad m = n\tag{4.9.34}
-\end{equation}
-</div>
-<div class="para">Hence from equations <a href="" class="xref" data-knowl="./knowl/eqn-hermt_orth5.html" title="Equation 4.9.33">(4.9.33)</a> and <a href="" class="xref" data-knowl="./knowl/eqn-hermt_orth6.html" title="Equation 4.9.34">(4.9.34)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
-\begin{equation}
-\int\limits_{-\infty}^{\infty}e^{-x^{2}}H_{m}(x)H_{n}(x)\,dx =2^{n}\sqrt{\pi} n!	\delta_{m,n};	\tag{4.9.35}
-\end{equation}
-</div>
-<div class="para">where,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-hermt_orth1.html ./knowl/eqn-hermt_orth2.html ./knowl/eqn-hermt_orth3.html ./knowl/eqn-hermt_orth4.html ./knowl/eqn-hermt_orth5.html ./knowl/eqn-hermt_orth6.html">
-\begin{equation*}
-\delta_{m,n}= \begin{cases} 
-1, &amp; \text{for}\quad m=n\\ 
-0, &amp; \text{for}\quad m \neq n 
-\end{cases}
+H''_{n}-2xH'_{n}+2nH_{n}=0. 
 \end{equation*}
 </div>
 </div>

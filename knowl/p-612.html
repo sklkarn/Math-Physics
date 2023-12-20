@@ -13,128 +13,44 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">
-<span class="process-math">\(P_{n}(x)\)</span>  is a solution of</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation}
-(1-x^{2})\frac{d^{2}y}{dx^{2}}-2x\frac{\,dy}{\,dx}+n(n+1) y =0\tag{4.5.27}
-\end{equation}
-</div>
-<div class="para">
-<span class="process-math">\(P_{m}(x)\)</span>	 is a solution of</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation}
-(1-x^{2})\frac{d^{2}z}{dx^{2}}-2x\frac{dz}{dx}+m(m+1) z =0	\tag{4.5.28}
-\end{equation}
-</div>
-<div class="para">Multiplying equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth2.html" title="Equation 4.5.27">(4.5.27)</a> by ’z’ and equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth3.html" title="Equation 4.5.28">(4.5.28)</a> by ’y’ and then subtracte, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+<div class="displaymath process-math">
 \begin{equation*}
-(1-x^{2})\left[z\frac{d^{2}y}{dx^{2}}-y\frac{d^{2}z}{dx^{2}}\right]-2x\left[z\frac{\,dy}{\,dx}-y\frac{\,dz}{\,dx}\right]
+(x^{2}-1)P'_{n}=(n+1)\left[P_{n+1}-xP_{n}\right] 
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+<div class="para">Solution: From relation I, we have</div>
+<div class="displaymath process-math">
 \begin{equation*}
-+\left[n(n+1)-m(m+1)\right]y z =0
+nP_{n}=(2n-1)xP_{n-1}-(n-1)P_{n-2}
+\end{equation*}
+</div>
+<div class="para">Replacing <span class="process-math">\(n\)</span> by <span class="process-math">\(n+1\text{,}\)</span> we get -</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(n+1)P_{n+1}=(2n+1)xP_{n}-nP_{n-1}
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{\,d}{\,dx}\left[(1-x^{2})\left\{z\frac{\,dy}{\,dx}-y\frac{\,dz}{\,dx}\right\}\right]+(n-m)(n+m+1)yz =0
-\end{equation*}
-</div>
-<div class="para">Integrating with respect to <span class="process-math">\(x\)</span> from -1 to +1, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-\left[(1-x^{2})\left(z\frac{dy}{dx}-y\frac{dz}{dx}\right)\right]^{1}_{-1}+(n-m)(n+m+1)\int\limits_{-1}^{+1}yz\,dx = 0 
+(n+1)\left[P_{n+1}-xP_{n}\right] =n\left[xP_{n}-P_{n-1}\right]
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation}
-0+(n-m)(n+m+1)\int\limits_{-1}^{+1}yz\,dx = 0\tag{4.5.29}
-\end{equation}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\int\limits_{-1}^{+1}P_{m}(x)P_{n}(x)\,dx=0\quad \text{if}\quad m \neq n.
-\end{equation*}
-</div>
-<div class="para">since <span class="process-math">\(P_{n}(x)\)</span>  satisfies equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth2.html" title="Equation 4.5.27">(4.5.27)</a> and <span class="process-math">\(P_{m}(x)\)</span>  satisfies equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth3.html" title="Equation 4.5.28">(4.5.28)</a>.</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation}
-\therefore \quad \int\limits_{-1}^{+1}P_{m}(x)P_{n}(x)\,dx=0\tag{4.5.30}
-\end{equation}
-</div>
-<div class="para">If <span class="process-math">\(m=n\text{,}\)</span> then equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth4.html" title="Equation 4.5.29">(4.5.29)</a> has zero on both its sides and hence we can not get the value of integral for <span class="process-math">\(m=n\)</span> from this equation. To calculate the integral in such a case we may proceed from generating function as <span class="process-math">\((1-2xz+z^{2})^{-\frac{1}{2}}=\sum z^{n}P_{n}(x)\text{.}\)</span> Squaring both sides, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-(1-2xz+z^{2})^{-1}=\sum [z^{n}P_{n}(x)]^{2}=\sum[P_{n}(x)]^{2}z^{2n}
-\end{equation*}
-</div>
-<div class="para">Integrating with respect to <span class="process-math">\(x\)</span> from -1 to +1, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-\int\limits_{-1}^{+1}\frac{dx}{(1-2xz+z^{2})}=\sum\int\limits_{-1}^{+1}[P_{n}(x)]^{2}z^{2n}\,dx
+(n+1)\left[P_{n+1}-xP_{n}\right] +n\left[P_{n-1}-xP_{n}\right]=0
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\sum z^{2n}	\int\limits_{-1}^{+1}[P_{n}(x)]^{2}\,dx=\int\limits_{-1}^{+1}\frac{dx}{(1-2xz+z^{2})}\times\frac{-2z}{-2z} 
+(n+1)\left[P_{n+1}-xP_{n}\right] +(1-x^{2})P'_{n}=0
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
+<div class="displaymath process-math">
 \begin{equation*}
-=-\frac{1}{2z}\left[\log(1-2xz+z^{2})\right]_{-1}^{+1} =-\frac{1}{2z}\log\frac{1-2z+z^{2}}{1+2z+z^{2}}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-=-\frac{1}{2z}\log\left(\frac{1-z}{1+z}\right)^{2} =\frac{1}{z}\log\left(\frac{1+z}{1-z}\right) =\frac{1}{z}[\log(1+z)-\log(1-z)]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-=\frac{1}{z}\left[(z-\frac{z^{2}}{2}+\frac{z^{3}}{3}-\frac{z^{4}}{4}+\cdots)-(-z-\frac{z^{2}}{2}-\frac{z^{3}}{3}-\frac{z^{4}}{4}-\cdots)\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-=\frac{2}{z}\left[z+\frac{z^{3}}{3}+\frac{z^{5}}{5}+\cdots\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-=\frac{2}{z}\left[\sum\limits_{n=0}^{\infty}\frac{z^{2n+1}}{2n+1}\right]=2\sum \frac{z^{2n}}{2n+1}
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-\therefore \quad \sum z^{2n}\int\limits_{-1}^{+1}[P_{n}(x)]^{2}\,dx=2\sum\frac{z^{2n}}{2n+1}.
-\end{equation*}
-</div>
-<div class="para">Equating the coefficient of <span class="process-math">\(z^{2n}\)</span> on both sides, we get -</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation}
-\int\limits_{-1}^{+1}[P_{n}(x)]^{2}\,dx=\frac{2}{2n+1}\tag{4.5.31}
-\end{equation}
-</div>
-<div class="para">Now, from equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth5.html" title="Equation 4.5.30">(4.5.30)</a> and equation <a href="" class="xref" data-knowl="./knowl/eqn-legn_orth6.html" title="Equation 4.5.31">(4.5.31)</a>, we have</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-\int\limits_{-1}^{+1}P_{m}(x)\cdot P_{n}(x)\,dx	=\frac{2}{2n+1}\delta_{m,n};
-\end{equation*}
-</div>
-<div class="para">where</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth2.html ./knowl/eqn-legn_orth3.html ./knowl/eqn-legn_orth4.html ./knowl/eqn-legn_orth5.html ./knowl/eqn-legn_orth6.html">
-\begin{equation*}
-\delta_{m,n}=\begin{cases} 
-0 \quad \text{for}\quad  m \neq n \\
-1 \quad \text{for}\quad  m=n 
-\end{cases}
+\therefore \quad (x^{2}-1)P'_{n}=(n+1)\left[P_{n+1}-xP_{n}\right] 
 \end{equation*}
 </div>
 </div>

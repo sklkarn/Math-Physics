@@ -13,26 +13,33 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Let <span class="process-math">\(F(s) = \cot^{-1}(1+s)\)</span> we know that</div>
+<div class="para">Let</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{L}[tf(t)] =-\frac{\,d}{\,ds}F(s)=-\frac{\,d}{\,ds}\left[\cot^{-1}(1+s)\right] 
+F(s)= \log (1+\frac{\omega^{2}}{s^{2}})  
+\end{equation*}
+</div>
+<div class="para">we know that,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+-\frac{\,d}{\,ds}\log \left(\frac{s^{2}+\omega^{2}}{s^{2}}\right) =-\frac{\,d}{\,ds}[\log (s^{2}+\omega^{2}) -\log s^{2}]
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-= -\left[\frac{-1}{1+(1+s)^{2}}\right] = \frac{1}{(s+1)^{2}+1}
+=-\left[\frac{1\cdot2s}{s^{2}+\omega^{2}}-\frac{2s}{s^{2}}\right] = \left[\frac{2}{s}-\frac{2s}{s^{2}+\omega^{2}}\right]
 \end{equation*}
 </div>
 <div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-tf(t) = \mathscr{L}^{-1}\left[\frac{1}{(s+1)^{2}+1}\right] =e^{-t}\sin t
+tf(t)   =\mathscr{L}^{-1}\left[\frac{2}{s}-\frac{2s}{s^{2}+\omega^{2}}\right] = 2-2\cos \omega t
 \end{equation*}
 </div>
+<div class="para">or,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\therefore f(t) = \frac{1}{t}\left[e^{-t}\sin t\right].
+f(t)=\frac{2}{t}[1-\cos \omega t] 
 \end{equation*}
 </div>
 </div>

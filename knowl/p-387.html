@@ -11,67 +11,59 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">In coordinate transformation component of a tensor changes either by a contravariant manner or a covariant manner. In <a href="" class="xref" data-knowl="./knowl/fig-transaxis1.html" title="Figure 3.1.1.(b)">Figure 3.1.1.(b)</a>
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
+<div class="para">The tensor whose components transform like coordinate differential are called contravariant tensors. In this expression</div>
+<div class="displaymath process-math">
 \begin{equation*}
-x'=OL'= OT+TL' = OT +SL = OL\cos\theta +PL\sin\theta
+\bar{A}^{i} = \sum\limits_{j=1}^{3}\frac{\partial \bar{x}^{i}}{\partial x^{j}}{A}^{j};
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
+<div class="para">where <span class="process-math">\(\frac{\partial \bar{x}^{i}}{\partial x^{j}}\)</span> are the coordinate differentials. For example:</div>
+<ol class="decimal">
+<li><div class="para">In cartesian coordinates <span class="process-math">\((x,y)\text{,}\)</span> suppose the velocity components are <span class="process-math">\(\dot{x}=\frac{\,dx}{\,dt}\text{,}\)</span> <span class="process-math">\(\dot{y}=\frac{dy}{dt}\text{;}\)</span>
+</div></li>
+<li><div class="para">In oblique coordinats <span class="process-math">\((\alpha{,}\beta)\)</span> the velocity components are <span class="process-math">\(\dot{\alpha}=\frac{\,d \alpha}{\,dt}\text{,}\)</span> <span class="process-math">\(\dot{\beta}=\frac{\,d \beta}{\,dt}\text{;}\)</span> and</div></li>
+<li><div class="para">In polar coordinates <span class="process-math">\((r, \theta)\text{,}\)</span> the velocity components are <span class="process-math">\(\dot{r}=\frac{\,dr}{\,dt}\text{,}\)</span> <span class="process-math">\(\dot{\theta}=\frac{\,d\theta}{\,dt}\text{.}\)</span>
+</div></li>
+</ol>
+<div class="para">Since all these relations express the velocity of same particle, they are related to each other in the following way:</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\therefore x'  = x\cos\theta +y\sin\theta
+\frac{\,d\alpha}{\,dt} = \frac{\,d\alpha}{\,dx} \frac{\,dx}{\,dt} + \frac{\,d\alpha}{\,dy}\frac{\,dy}{\,dt}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
+<div class="para">or,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-y'=PL'= PS-L'S =PS-TL = PL\cos\theta -OL\sin\theta
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
-\begin{equation*}
-\therefore y'  = y\cos\theta -x\sin\theta
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
-\begin{equation*}
-\therefore \hat{i'}=\hat{i}\cos\theta +\hat{j}\sin\theta 
-\end{equation*}
-</div>
-<div class="para">also</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
-\begin{equation*}
-\hat{j'}=-\hat{i}\sin\theta +\hat{j}\cos\theta
+\dot{\alpha} = \frac{\,d\alpha}{\,dx} \dot{x}  + \frac{\,d\alpha}{\,dy} \dot{y}
 \end{equation*}
 </div>
 <div class="para">also,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
+<div class="displaymath process-math">
 \begin{equation*}
-\vec{r}=\hat{i'}x'+\hat{j'}y'= [\hat{i}\cos\theta +\hat{j}\sin\theta]x'+[-\hat{i}\sin\theta +\hat{j}\cos\theta]y'
+\dot{\beta} = \frac{\,d\beta}{\,dx}\dot{x}  + \frac{\,d\beta}{\,dy} \dot{y}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
+<div class="para">Now,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\therefore \vec{r}=\hat{i}[x'\cos\theta -y'\sin\theta] +\hat{j}[x'\sin\theta +y'\cos\theta] =\hat{i}x+\hat{i}y
+\dot{r} = \frac{\,dr}{\,dx} \dot{x}  + \frac{\,dr}{\,dy}\dot{y}
 \end{equation*}
 </div>
-<div class="para">In coordinate transformation, vectors remains the same but its components change. Suppose we have two types of cartesian coordinates where the basis vectors are related as <span class="process-math">\(\hat{i'}=2\hat{i}\)</span> and <span class="process-math">\(\hat{j'}=\hat{j}\text{,}\)</span> then <span class="process-math">\(x'= x/2\)</span> and <span class="process-math">\(y'= y \text{.}\)</span> For example, consider a  vector <span class="process-math">\(\vec{a} = 4\hat{i}+ 3\hat{j}\)</span> in unprimed system then <span class="process-math">\(\vec{a} = 2\hat{i'}+ 3\hat{j'}\)</span> in the primed system, meaning if basis vectors increase the components decrease. Such type of transformation is called the contravariant transformation. Displacement, velocity, acceleration, etc. obey such type of  transformation. Now consider a gradiant of scalar function</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
+<div class="para">and,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\vec{\nabla \psi} = \frac{\partial\psi}{\partial x}\hat{i} +\frac{\partial\psi}{\partial y}\hat{j}.
+\dot{\theta} = \frac{\,d\theta}{\,dx}\dot{x}  + \frac{\,d\theta}{\,dy} \dot{y}
 \end{equation*}
 </div>
-<div class="para">Gradiant of a scalar function is a vector which represents the magnitude of maximum rate of change of the function. In previous case for a vector if <span class="process-math">\(\hat{i'}=2\hat{i}\)</span> then it’s component <span class="process-math">\(x'= x/2\)</span> and hence the component of the gradiant</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/fig-transaxis1.html">
+<div class="para">or,</div>
+<div class="displaymath process-math">
 \begin{equation*}
-\frac{\partial\psi}{\partial x'}(\hat{i'}) 
-= \frac{1}{2}\frac{\partial\psi}{\partial x}(\hat{2i}) 
-= \frac{\partial\psi}{\partial x}(\hat{i}).
+\bar{v}^{i} = \sum\limits_{j=1}^{3}\frac{\partial \bar{x}^{i}}{\partial x^{j}}{v}^{j}	
 \end{equation*}
 </div>
-<div class="para">Here as basis vector increses component also has to increase by the same fasion otherwise the maximum rate of sclar changes differently in different coordinate systems. Such system where component increases as basis vector increases is called a covariant vector.</div>
+<div class="para">The components transforming like this equation are known as the contravariant tensor components of a vector and are characterised by coordinates differential transformation or transforms like the coordinate differentials.</div>
 </div>
 <span class="incontext"><a href="subsec-cont_cov.html#p-387" class="internal">in-context</a></span>
 </body>

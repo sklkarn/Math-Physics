@@ -16,42 +16,23 @@
 <div class="para">we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\mathscr{F}_{s}\{f(x)\} =\int\limits_{0}^{\infty} f(x)\sin sx \,dx 
+\mathscr{F}_{s}\{f(x)\} = F(s) = \int\limits_{0}^{\infty}f(x) \sin sx \,dx
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{0}^{1} f(x)\sin sx \,dx + \int\limits_{1}^{2} f(x)\sin sx \,dx + \int\limits_{2}^{\infty} f(x)\sin sx \,dx
+= \int\limits_{0}^{a}1.\sin sx \,dx = \left[-\frac{\cos sx}{s}\right]_{0}^{a} = -\frac{\cos as}{s}+\frac{1}{s}
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mathscr{F}_{c}\{f(x)\} = F(s) = \int\limits_{0}^{\infty}f(x) \cos sx \,dx\
 \end{equation*}
 </div>
 <div class="displaymath process-math">
 \begin{equation*}
-=\int\limits_{0}^{1} x\sin sx \,dx + \int\limits_{1}^{2} (2-x)\sin sx \,dx + \int\limits_{2}^{\infty} 0.\sin sx \,dx
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\left[-\frac{x\cos sx}{s}+\frac{\sin sx}{s^{2}}\right]_{0}^{1} +\left[	\frac{2\cos sx}{s}\right]_{1}^{2}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
--\left[-	\frac{x\cos sx}{s}+	\frac{\sin sx}{s^{2}}\right]_{1}^{2}
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-=\left[-\frac{\cos s}{s}+\frac{\sin s}{s^{2}}\right]-\frac{2}{s}\cos 2s+\frac{2}{s}\cos s 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-+\frac{2\cos 2s-\cos s}{s}-	\left[\frac{\sin 2s-\sin s}{s^{2}}\right]
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-= \frac{2\sin s-2\sin s\cos s}{s^{2}}= \frac{2(1-\cos s)\sin s}{s^{2}}.
+= \int\limits_{0}^{a}1.\cos sx \,dx = \left[-\frac{\sin sx}{s}\right]_{0}^{a} = \frac{\sin as}{s}.
 \end{equation*}
 </div>
 </div>

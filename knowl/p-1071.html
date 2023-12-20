@@ -13,44 +13,34 @@
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
 <div class="para logical">
-<div class="para">Taking Laplace transform, we have -</div>
-<div class="displaymath process-math">
+<div class="para">Therefore from equation <a href="" class="xref" data-knowl="./knowl/eqn-ssf_LT1.html" title="Equation 6.6.4">(6.6.4)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ssf_LT1.html">
 \begin{equation*}
-\mathscr{L}[\ddot{x}+(k/m)x]=0
+i(t) = \frac{E}{R}\left[1-e^{-(R/L)t}\right]-\frac{E}{R}\left[1-e^{-(R/L)(t-a)}\right]u(t-a)  
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ssf_LT1.html">
 \begin{equation*}
-s^{2}x(s) -sx(0) -x'(0)+(k/m)x(s) =0
+i(t) =\frac{E}{R}\left[1-e^{-(R/L)t}\right], 
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math">
+<div class="para">for <span class="process-math">\(0 \lt t \lt a; u(t-a) =0\text{,}\)</span> and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ssf_LT1.html">
 \begin{equation*}
-\{s^{2}+(k/m)\}x(s) =1
+i(t) = 
+\frac{E}{R}\left[1-e^{-(R/L)t}\right]-\frac{E}{R}\left[1-e^{-(R/L)(t-a)}\right].1, 
 \end{equation*}
 </div>
-<div class="displaymath process-math">
+<div class="para">for <span class="process-math">\(t \gt a; u(t-a) = 1 \text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ssf_LT1.html">
 \begin{equation*}
-\therefore x(s) = \frac{1}{\{s^{2}+(k/m)\}}=\frac{1}{s^{2}+a^{2}}
+=\frac{E}{R}\left[e^{-(R/L)(t-a)}-e^{-(R/L)t}\right] 
 \end{equation*}
 </div>
-<div class="para">we know that</div>
-<div class="displaymath process-math">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-ssf_LT1.html">
 \begin{equation*}
-\mathscr{L}[\sin at] =\frac{a}{s^{2}+a^{2}}
-\end{equation*}
-</div>
-<div class="para">Hence,</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\mathscr{L}^{-1}[x(s)] =x(t)=\mathscr{L}^{-1}[\frac{1}{s^{2}+a^{2}}] = \frac{1}{a}\sin at 
-\end{equation*}
-</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\therefore   x(t) = \frac{1}{\sqrt{k/m}}\sin (k/m)t.
+= \frac{E}{R}\left[e^{(Ra/L)}-1\right]e^{-(R/L)t}.
 \end{equation*}
 </div>
 </div>

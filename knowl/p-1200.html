@@ -13,104 +13,84 @@
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
 <div class="para logical">
-<div class="para">This is a homogenous linear differential equation. Its solution can be found by putting <span class="process-math">\(r=e^{z}\)</span> or, <span class="process-math">\(\log r=z\)</span> or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-\frac{1}{r}\frac{\partial r}{\partial z} =1.
-\end{equation*}
-</div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">Let the solution of this problem is</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation}
-\frac{\partial r}{\partial z} =r\tag{7.3.77}
+u=\left(C_{1}\cos px+C_{2}\sin px\right)\left(C_{3}e^{py}+C_{4}e^{-py}\right)\tag{7.3.67}
 \end{equation}
 </div>
-<div class="para">Also,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">putting <span class="process-math">\(x=0\)</span> and <span class="process-math">\(u=0\)</span> in eqn. <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn9.html" title="Equation 7.3.67">(7.3.67)</a>, we have</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation*}
-\frac{\partial R}{\partial r} =\frac{\partial R}{\partial z}\cdot\frac{\partial z}{\partial r} = \frac{1}{r}\frac{\partial R}{\partial z}
+0=C_{1}\left(C_{3}e^{py}+C_{4}e^{-py}\right) \quad \Rightarrow  C_{1} =0 
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">hence eqn. <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn9.html" title="Equation 7.3.67">(7.3.67)</a> reduces to</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation}
-r\frac{\partial R}{\partial r}=\frac{\partial R}{\partial z}= DR   \tag{7.3.78}
+u=C_{2}\sin px\left(C_{3}e^{py}+C_{4}e^{-py}\right)	\tag{7.3.68}
 \end{equation}
 </div>
-<div class="para">assume</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">on putting <span class="process-math">\(x=\lambda\)</span> and <span class="process-math">\(u=0\text{,}\)</span> we have -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation*}
-D\equiv \frac{\partial }{\partial z}.
-\end{equation*}
-</div>
-<div class="para">again,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-\frac{\partial^{2}R}{\partial r^{2}} = \frac{\partial }{\partial r}\left(\frac{\partial R}{\partial r}\right)  = \frac{\partial }{\partial z}\left(\frac{1}{r}\frac{\partial R}{\partial z}\right)\frac{\partial z}{\partial z}	
-\end{equation*}
-</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-= \frac{1}{r}\left[\frac{1}{r}\frac{\partial^{2}R}{\partial z^{2}}- \frac{1}{r^{2}}\frac{\partial r}{\partial z}\frac{\partial R}{\partial z}\right]  = \frac{1}{r}\left[\frac{1}{r}D^{2}R- \frac{1}{r^{2}}\cdot r\cdot DR\right]
+0=C_{2}\sin p\lambda\left(C_{3}e^{py}+C_{4}e^{-py}\right)
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation*}
-r^{2}\frac{\partial^{2}R}{\partial r^{2}}=D^{2}R-DR=D(D-1)R 
-\end{equation*}
-</div>
-<div class="para">from eqn.<a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_ccylnd5.html" title="Equation 7.3.76">(7.3.76)</a>,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation*}
-D(D-1)R+DR-n^{2}R =0
+\sin p\lambda =0=\sin n\pi	\quad \text{as}\quad  C_{2} \neq 0 
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation*}
-D^{2}R -DR+DR-n^{2}R =0
+p=\frac{n\pi}{\lambda},	\quad n=1,2,3,\cdots 
 \end{equation*}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">Now equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn10.html" title="Equation 7.3.68">(7.3.68)</a> becomes -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation}
-(D^{2}-n^{2})R=0\tag{7.3.79}
+u=C_{2}\sin\frac{n\pi x}{\lambda}\left(C_{3}e^{\frac{n\pi y}{\lambda}}+C_{4}e^{-\frac{n\pi y}{\lambda}}\right)\tag{7.3.69}
 \end{equation}
 </div>
-<div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">on putting <span class="process-math">\(u=0\)</span> and <span class="process-math">\(y=0\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn11.html" title="Equation 7.3.69">(7.3.69)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation*}
-D=\pm n
+0= C_{2}\sin\frac{n\pi x}{\lambda}(C_{3}+C_{4}) \quad  \Rightarrow  C_{3}+C_{4} =0 
+\end{equation*}
+</div>
+<div class="para">or, <span class="process-math">\(C_{4} =-C_{3}\)</span> therefore, equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn11.html" title="Equation 7.3.69">(7.3.69)</a> becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
+\begin{equation*}
+u=C_{2}C_{3}\sin\frac{n\pi x}{\lambda}\left(e^{\frac{n\pi y}{\lambda}}-e^{-\frac{n\pi y}{\lambda}}\right)
 \end{equation*}
 </div>
 <div class="para">or,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation*}
-R=C_{1}e^{nz} +C_{2}e^{-nz}
+u=\sum\limits_{n=1}^{\infty}b_{n}\sin\frac{n\pi x}{\lambda}\left(e^{\frac{n\pi y}{\lambda}}-e^{-\frac{n\pi y}{\lambda}}\right)\times\frac{2}{2}
 \end{equation*}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation}
-\therefore  R=C_{1}r^{n}+C_{2}r^{-n} \tag{7.3.80}
+u=\sum\limits_{n=1}^{\infty}c_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}  \tag{7.3.70}
 \end{equation}
 </div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
+<div class="para">
+<span class="process-math">\([\because  \quad 2b_{n} =c_{n}]\text{.}\)</span> on putting <span class="process-math">\(y=a\)</span> and <span class="process-math">\(u=f(x)\)</span> in equation <a href="" class="xref" data-knowl="./knowl/eqn-2DLapl_cartsn12.html" title="Equation 7.3.70">(7.3.70)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
+\begin{equation}
+f(x) =\sum\limits_{n=1}^{\infty}c_{n}\sin\frac{n\pi x}{\lambda}\sin\frac{n\pi y}{\lambda}\tag{7.3.71}
+\end{equation}
+</div>
+<div class="para">where</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn9.html ./knowl/eqn-2DLapl_cartsn10.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn11.html ./knowl/eqn-2DLapl_cartsn12.html">
 \begin{equation*}
-[e^{nz}=e^{n\log r}=e^{\log r^{n}} = r^{n}].
+c_{n}\sinh \frac{n\pi a}{\lambda} = \frac{2}{\lambda}\int\limits_{0}^{\lambda}f(x)\sin\frac{n\pi x}{\lambda}\,dx.
 \end{equation*}
-</div>
-<div class="para">and</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation}
-\frac{\partial^{2}\Theta}{\partial \theta^{2}}+n^{2}\Theta =0 \quad  \Rightarrow  \Theta =C_{3}\cos n\theta + C_{4}\sin n\theta \tag{7.3.81}
-\end{equation}
-</div>
-<div class="para">Hence,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/eqn-2DLapl_ccylnd5.html">
-\begin{equation}
-u_{n}=\left(C_{1}r^{n}+C_{2}r^{-n}\right)\left(C_{3}\cos n\theta+C_{4}\sin n\theta\right)\tag{7.3.82}
-\end{equation}
 </div>
 </div>
 <span class="incontext"><a href="subsec-2D_lapleqn.html#p-1200" class="internal">in-context</a></span>
