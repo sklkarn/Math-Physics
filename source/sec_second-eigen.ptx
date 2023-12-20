@@ -4,14 +4,32 @@
   <title>Eigen Value Problem</title>
 
   <introduction>
-   <p>
+      <p>
    When an operator <m>A</m> acts on a vector <m>X</m> then the resulting vector <m>AX</m> is different 
    from <m>X</m>. However there may exist certain non-zero vectors for which <m>AX</m> is 
    just multiplied by a constant <m>\lambda</m>. i.e., 
    <me>
     AX=\lambda X
    </me>
-   is known as an eigen value problem. Now,  
+   is known as an eigen value problem. 
+  </p>
+  <p>
+     Let's first understand the <term>eigen function</term> and <term>eigen value</term>. 
+     Suppose we differentiate <m>\sinx </m> with respect to <m>x</m>, we get <m>\cosx</m>, then 
+     <m>\sinx </m> is not an eigen function, because <m>\cos x</m> is different function then <m>\sin x.</m> 
+     Now, differentiate <m>\sin ax</m>, we will get <m>a\cos ax</m>, again <m>\sin ax</m> is not an eigenfunction. 
+     Howabout, if we differentiate <m>e^{ax}</m>, now we have <m>ae^{ax}</m>, here a constant <m>a</m> is multiplied 
+     by the same function <m>e^{ax}</m>. Hence, <m>e^{ax}</m> is an eigen function and an yield constant, <m>a</m> 
+     after the operation (differentiation) is known as eigen value. Also, 
+     <me>
+      \frac{d^2}{\,dx^2} [\sin \,ax] = -a^2[\sin \,ax]
+     </me>
+     Here, the form of equation looks like <m>AX = \lambda X</m>, hence <m>\sin \,ax</m> is an 
+     eigen function for the operator <m>\frac{d^2}{\,dx^2} </m> and <m>-a^2</m> is an eigen value for 
+     the function <m>\sin \,ax</m>.
+  </p>
+  <p>
+   Now,  
    <me>
     AX=\lambda X =(\lambda I)X
    </me>
@@ -49,8 +67,7 @@
         \end{bmatrix}.
        </me>
        In this case the vector <m>AX</m> is transformed into a new vector <xref ref="fig-eigen"/>. 
-       The vector may gets 
-       elongated or shortened or rotated in the transformation process. For a given square matrix, 
+       The vector may gets elongated or shortened or rotated in the transformation process. For a given square matrix, 
        <m>A</m> there always exits special vector/s which retain/s their original direction, 
        such vectors are called eigen vectors. The vector which scaled but will not change 
        its direction is called an eigen vector and its scaled factor is known as eigen value. 
