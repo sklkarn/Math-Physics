@@ -15,12 +15,12 @@
   </p>
   <p>
      Let's first understand the <term>eigen function</term> and <term>eigen value</term>. 
-     Suppose we differentiate <m>\sinx </m> with respect to <m>x</m>, we get <m>\cosx</m>, then 
-     <m>\sinx </m> is not an eigen function, because <m>\cos x</m> is different function then <m>\sin x.</m> 
+     Suppose we differentiate <m>\sin x </m> with respect to <m>x</m>, we get <m>\cos x</m>, then 
+     <m>\sin x </m> is not an eigen function, because <m>\cos x</m> is different function then <m>\sin x.</m> 
      Now, differentiate <m>\sin ax</m>, we will get <m>a\cos ax</m>, again <m>\sin ax</m> is not an eigenfunction. 
-     Howabout, if we differentiate <m>e^{ax}</m>, now we have <m>ae^{ax}</m>, here a constant <m>a</m> is multiplied 
+     Howabout, if we differentiate <m>e^{ax}</m>, now we have <m>ae^{ax}</m>, here a constant, <m>a</m> is multiplied 
      by the same function <m>e^{ax}</m>. Hence, <m>e^{ax}</m> is an eigen function and an yield constant, <m>a</m> 
-     after the operation (differentiation) is known as eigen value. Also, 
+     after the operation (differentiation) is known as an eigen value. Also, 
      <me>
       \frac{d^2}{\,dx^2} [\sin \,ax] = -a^2[\sin \,ax]
      </me>
