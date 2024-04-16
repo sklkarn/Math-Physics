@@ -1,0 +1,13 @@
+INFO    : PreTeXt-CLI version: 2.3.9
+
+INFO    : PreTeXt project found in `/home/sk/Desktop/my_book/MathPhys/mathphys_ptx`.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Staging latest build located in `/home/sk/Desktop/my_book/MathPhys/mathphys_ptx/output/web` at `/home/sk/Desktop/my_book/MathPhys/mathphys_ptx/output/stage`.
+INFO    : 
+INFO    : Deployment is now staged at `/home/sk/Desktop/my_book/MathPhys/mathphys_ptx/output/stage`.
+INFO    : Preparing to deploy from active `main` git branch.
+INFO    : 
+INFO    : Changes to project source since last commit detected.
+INFO    : Add/committing these changes to local Git repository.
+INFO    : 

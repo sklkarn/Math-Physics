@@ -32,7 +32,7 @@
         <author>
           <personname>Sunil Karna</personname>
           <department>Natural Science</department>
-          <institution>Union College Barbourville, KY</institution>
+          <institution>Union Commonwealth University, Barbourville, KY</institution>
           <email>skarna@unionky.edu</email>
         </author>
         <date>
@@ -43,10 +43,7 @@
       <colophon>
 
         <website>
-          <name>
-            <c>http://my.unionky.edu</c>
-          </name>
-          <address></address>
+          <url href="http://my.unionky.edu"/>
         </website>
 
         <copyright>

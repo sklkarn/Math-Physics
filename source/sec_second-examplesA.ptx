@@ -197,10 +197,12 @@
         ABCD + \lambda D = 0 \quad \Rightarrow  s^{-1}A(s s^{-1})B(s s^{-1})Cs+ s^{-1}\lambda D s = 0
       </me>
       <me>
-        \text{	or,}\quad	A'B'C'+\lambda D' = 0.
+        \text{or,}\quad	A'B'C'+\lambda D' = 0.
       </me>
       
     </p>
   </solution>
 </example>
+
+
 </section>
