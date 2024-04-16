@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<article class="example example-like"><h2 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.6.4</span><span class="period">.</span>
+</h2>
+<div class="para logical">
+<div class="para">Find the eigen values and eigen vector for the matrix,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+A=\begin{pmatrix} 
+3 &amp; 1\\2 &amp; 2 
+\end{pmatrix}
+\end{equation*}
+</div>
+</div>
+<div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical">
+<div class="para">To find the eigen value, the secular equation is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\vert A-\lambda I\vert=0
+\end{equation*}
+</div>
+<div class="para">That is,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{vmatrix}
+\begin{pmatrix} 
+3 &amp; 1\\2 &amp; 2 
+\end{pmatrix} - \lambda \begin{pmatrix} 
+1 &amp; 0\\0 &amp; 1 
+\end{pmatrix}
+\end{vmatrix}  = 0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{vmatrix} 
+3-\lambda &amp; 1\\ 2 &amp; 2-\lambda 
+\end{vmatrix} =0
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{align*}
+or, (3-\lambda)(2-\lambda)-2 \amp  = 0\\
+or, \quad 6-2\lambda -3 \lambda + \lambda^{2} \amp =0\\
+or,  \lambda^{2} -5\lambda +4  \amp =0\\
+or, (\lambda -1)(\lambda -4)  \amp =0 \\
+\Rightarrow  \lambda \amp = 1, 4 
+\end{align*}
+</div>
+<div class="para">Hence the eigen values are <span class="process-math">\(\lambda_{1} = 1\text{,}\)</span> and <span class="process-math">\(\lambda_{2} = 4\text{.}\)</span>
+</div>
+</div> <div class="para logical">
+<div class="para">The eigen vector associated with <span class="process-math">\(\lambda_{1}\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(A-\lambda I)X =0\text{.}
+\end{equation*}
+</div>
+<div class="para">i.e.,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{bmatrix} 
+3-1 &amp; 1\\2 &amp; 2-1 
+\end{bmatrix} \begin{bmatrix} 
+x_{1}\\x_{2} 
+\end{bmatrix} = \begin{bmatrix} 
+0\\0 \end{bmatrix} \quad  \text{for}\quad  \lambda = 1
+\end{equation*}
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\text{or,}  \quad \begin{bmatrix} 
+2 &amp; 1\\2 &amp; 1 
+\end{bmatrix} \begin{bmatrix} 
+x_{1}\\x_{2} 
+\end{bmatrix} = \begin{bmatrix} 
+0\\0  \end{bmatrix} 
+\end{equation*}
+</div>
+<div class="para">This gives</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2x_{1} + x_{2} = 0 \Rightarrow x_{1} = -x_{2}/2
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+2x_{1} + x_{2} = 0 \Rightarrow x_{1} = -x_{2}/2
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{x_{1}}{1} = -\frac{x_{2}}{2} = k_{1} \quad \text{(say)}
+\end{equation*}
+</div>
+<div class="para">Hence the required eigen vector corresponding to the eigen value <span class="process-math">\(\lambda_{1} = 1\text{,}\)</span> is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+X= \begin{bmatrix} 
+x_{1}\\x_{2} 
+\end{bmatrix} = \begin{bmatrix} 
+k_{1}\\-2k_{1} 
+\end{bmatrix}  = \begin{bmatrix} 
+1\\-2 
+\end{bmatrix}
+\end{equation*}
+</div>
+<div class="para">by choosing <span class="process-math">\(k_{1}=1\text{.}\)</span>
+</div>
+</div> <div class="para">Similarly, eigen vector for eigen value <span class="process-math">\(\lambda_{2} =4\)</span> can also be found.</div>
+</div></details></div></article><span class="incontext"><a class="internal" href="sec_second-examplesC.html#prob-eigvect1">in-context</a></span>
+</body>
+</html>

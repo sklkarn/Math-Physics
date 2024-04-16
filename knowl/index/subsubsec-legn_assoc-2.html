@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h4 class="heading"><span class="type">Paragraph</span></h4>
+<div class="para logical">
+<div class="para"> Laplace’s equation in spherical polar coordinates is given by	<span class="process-math">\(\nabla^{2}\psi=0\text{.}\)</span> Or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation*}
+\frac{1}{r^{2}\sin\theta}\left[\sin\theta\frac{\partial}{\partial r}\left(r^{2}\frac{\partial\psi}{\partial r}\right)+\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial\psi}{\partial \theta}\right)+\frac{1}{\sin\theta}\frac{\partial^{2}\psi}{\partial\phi^{2}}\right]=0
+\end{equation*}
+</div>
+<div class="para">[see Laplacian in spherical curvilinear coordinates <a href="subsec-spher_cord.html" class="internal" title="Subsection 1.6.6: Spherical  Orthogonal Curvilinear  Coordinates">Subsection 1.6.6</a>] or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation*}
+\frac{1}{r^{2}}\frac{\partial}{\partial r}\left(r^{2}\frac{\partial\psi}{\partial r}\right)+\frac{1}{r^{2}}\left[\frac{1}{\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial\psi}{\partial \theta}\right)+\frac{1}{\sin^{2}\theta}\frac{\partial^{2}\psi}{\partial\phi^{2}}\right]=0	
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation}
+\left[\nabla_{r}^{2}+\frac{1}{r^{2}}\nabla^{2}_{\theta,\phi}\right]\psi(r,\theta,\phi) =0\tag{4.5.32}
+\end{equation}
+</div>
+<div class="para">On solving the potential problems some solution yields to relate the Legendre’s Polynomials called associated Legendre’s polynomials. Let</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation}
+\psi(r,\theta,\phi)=R(r)Y(\theta,\phi)\tag{4.5.33}
+\end{equation}
+</div>
+<div class="para">be the solution of equation <a href="subsec-Legnd_eq.html#eqn-assoc_legn1" class="xref" data-knowl="./knowl/xref/eqn-assoc_legn1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.32">(4.5.32)</a>. Then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation*}
+\nabla_{r}^{2}\left[R(r)Y(\theta,\phi)\right]+\frac{1}{r^{2}}\nabla^{2}_{\theta,\phi}\left[R(r)Y(\theta,\phi)\right]=0 
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation*}
+r^{2}\nabla_{r}^{2}\left[R(r)Y(\theta,\phi)\right]=-\nabla^{2}_{\theta,\phi}\left[R(r)Y(\theta,\phi)\right]
+\end{equation*}
+</div>
+<div class="para">Dividing by <span class="process-math">\(R(r)Y(\theta,\phi)\)</span> on both sides, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation}
+\frac{r^{2}}{R}\nabla_{r}^{2}R(r)=-\frac{1}{Y}\nabla^{2}_{\theta,\phi}Y(\theta,\phi) =\lambda \quad \text{(say)}\tag{4.5.34}
+\end{equation}
+</div>
+<div class="para">In equation <a href="subsec-Legnd_eq.html#eqn-assoc_legn3" class="xref" data-knowl="./knowl/xref/eqn-assoc_legn3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.34">(4.5.34)</a> Left Hand Side (LHS) is a function of <span class="process-math">\(r\)</span> only and Right Hand Side (RHS) is a function of <span class="process-math">\((\theta,\phi)\)</span> only hence such an equation must be equal to some constant, say <span class="process-math">\(\lambda \text{.}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation}
+\nabla^{2}_{\theta,\phi}Y(\theta,\phi)+\lambda Y(\theta,\phi) =0\tag{4.5.35}
+\end{equation}
+</div>
+<div class="para">Assume</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation}
+Y(\theta,\phi) = \Theta(\theta)\Phi(\phi) \tag{4.5.36}
+\end{equation}
+</div>
+<div class="para">be the solution of equation <a href="subsec-Legnd_eq.html#eqn-assoc_legn4" class="xref" data-knowl="./knowl/xref/eqn-assoc_legn4.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 4.5.35">(4.5.35)</a>, then</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation*}
+\nabla^{2}_{\theta,\phi}\Theta(\theta)\Phi(\phi)+\lambda \Theta(\theta)\Phi(\phi) =0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation*}
+\left[\frac{1}{\sin\theta}\frac{\partial}{\partial \theta}\left(\sin\theta\frac{\partial}{\partial \theta}\right)+\frac{1}{\sin^{2}\theta}\frac{\partial^{2}}{\partial \phi^{2}}\right]\Theta(\theta)\Phi(\phi)+\lambda \Theta(\theta)\Phi(\phi)=0
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation*}
+\left[\nabla^{2}_{\theta}+\lambda\right]\Theta\cdot\Phi =-\frac{1}{\sin^{2}\theta}\nabla^{2}_{\phi}(\Theta\cdot\Phi)
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation*}
+\sin^{2}\theta\left[\nabla^{2}_{\theta}+\lambda\right]\Theta\cdot\Phi=-\nabla^{2}_{\phi}(\Theta\cdot\Phi)
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/subsec-spher_cord.html ./knowl/xref/eqn-assoc_legn1.html ./knowl/xref/eqn-assoc_legn3.html ./knowl/xref/eqn-assoc_legn4.html">
+\begin{equation}
+\sin^{2}\theta\frac{\nabla^{2}_{\theta}\Theta}{\Theta}+\sin^{2}\theta\lambda=-\frac{\nabla^{2}_{\phi}\Phi}{\Phi}=m^{2}\quad\text{(say)}\tag{4.5.37}
+\end{equation}
+</div>
+</div>
+<span class="incontext"><a class="internal" href="subsec-Legnd_eq.html#subsubsec-legn_assoc-2">in-context</a></span>
+</body>
+</html>

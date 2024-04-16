@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para"> Fourier series of a periodic function <span class="process-math">\(f(x)\)</span> in the interval [-l,l]  is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation}
+f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos \left(\frac{n\pi x}{l}\right) + b_{n}\sin \left(\frac{n\pi x}{l}\right)\right] \tag{5.5.4}
+\end{equation}
+</div>
+<div class="para">where,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation*}
+a_{0}=\frac{1}{l}\int\limits_{-l}^{l}f(t) \,dt,
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation*}
+a_{n} = \frac{1}{l}\int\limits_{-l}^{l}f(t) \cos \left(\frac{n\pi t}{l}\right)\,dt, 
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation*}
+b_{n} = \frac{1}{l}\int\limits_{-l}^{l}f(t) \sin \left(\frac{n\pi t}{l}\right)\,dt.
+\end{equation*}
+</div>
+<div class="para">Substituting these values in equation <a href="subsec-fourier_intg.html#eqn-fourier_intg1" class="xref" data-knowl="./knowl/xref/eqn-fourier_intg1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.5.4">(5.5.4)</a>, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation*}
+f(x) = \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation*}
++ \frac{1}{l}\sum\limits_{n=1}^{\infty}\left[\int\limits_{-l}^{l}f(t)\left\{\cos \left(\frac{n\pi x}{l}\right) \cos \left(\frac{n\pi t}{l}\right)\right.
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation*}
+\left.+ \sin \left(\frac{n\pi x}{l}\right)\sin \left(\frac{n\pi t}{l}\right)\right\}\,dt \right]
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation}
+f(x) = \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt+ \frac{1}{l}\sum\limits_{n=1}^{\infty}f(t) \cos \left[\frac{n\pi}{l}(x-t)\right]\,dt\tag{5.5.5}
+\end{equation}
+</div>
+<div class="para">If we set <span class="process-math">\(u=\frac{n\pi}{l} \)</span>  so that  <span class="process-math">\(\bigtriangleup u= \frac{\bigtriangleup n\pi}{l}, \)</span> where  <span class="process-math">\(\bigtriangleup n = 1  \)</span>  and <span class="process-math">\(\frac{1}{l}=\frac{\bigtriangleup u} {\pi}.\)</span> Hence, equation <a href="subsec-fourier_intg.html#eqn-fourier_intg2" class="xref" data-knowl="./knowl/xref/eqn-fourier_intg2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.5.5">(5.5.5)</a> becomes</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation*}
+f(x) = \frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt+ \frac{1}{\pi}\sum\limits_{u=\pi/l}^{\infty}\bigtriangleup u \int\limits_{-l}^{l}f(t) \cos \left[u(x-t)\right]\,dt  
+\end{equation*}
+</div>
+<div class="para">or,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation}
+f(x) = \frac{1}{\pi}\int\limits_{0}^{\infty}\, du \int\limits_{-\infty}^{\infty}[u(x-t)]\,dt \tag{5.5.6}
+\end{equation}
+</div>
+<div class="para">Since</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation*}
+\frac{1}{2l}\int\limits_{-l}^{l}f(t) \,dt \rightarrow 0,
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-fourier_intg1.html ./knowl/xref/eqn-fourier_intg2.html ./knowl/xref/eqn-fourier_intg3.html">
+\begin{equation*}
+\sum\limits_{u=\pi/l}^{\infty}\bigtriangleup u \rightarrow   \int\limits_{0}^{\infty} \,du 
+\end{equation*}
+</div>
+<div class="para">[as <span class="process-math">\(l\rightarrow \infty\)</span>]. Equation <a href="subsec-fourier_intg.html#eqn-fourier_intg3" class="xref" data-knowl="./knowl/xref/eqn-fourier_intg3.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.5.6">(5.5.6)</a> is called the Fourier integral formula.</div>
+</div>
+<span class="incontext"><a class="internal" href="subsec-fourier_intg.html#subsec-fourier_intg-2">in-context</a></span>
+</body>
+</html>

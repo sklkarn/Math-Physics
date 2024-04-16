@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para"> The complex form of Fourier series is obtained by expressing  <span class="process-math">\(\cos nx\)</span> and <span class="process-math">\(\sin nx\)</span> in the exponential form, i.e.,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation*}
+f(x) = \frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[a_{n}\cos nx + b_{n}\sin nx\right]
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation*}
+=\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}a_{n}\left[\frac{e^{inx}+e^{-inx}}{2}\right] + \sum\limits_{n=1}^{\infty}b_{n}\left[\frac{e^{inx}-e^{-inx}}{2i}\right]	
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation*}
+=\frac{a_{o}}{2} + \sum\limits_{n=1}^{\infty}\left[\frac{a_{n}}{2}-\frac{ib_{n}}{2}\right]e^{inx}+\sum\limits_{n=1}^{\infty}\left[\frac{a_{n}}{2}+\frac{ib_{n}}{2}\right]e^{-inx} 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation*}
+=c_{0}+\sum\limits_{n=1}^{\infty}c_{n}e^{inx}+\sum\limits_{n=1}^{\infty}c_{-n}e^{-inx}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation}
+\therefore  \quad f(x) = \sum\limits_{n=-\infty}^{\infty}c_{n}e^{inx};\tag{5.5.3}
+\end{equation}
+</div>
+<div class="para">where,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation*}
+\begin{cases} 
+c_{0} = \frac{a_{0}}{2}\\
+c_{n} = \frac{1}{2}(a_{n}-ib_{n})\\ 
+c_{-n} = \frac{1}{2}(a_{n}+ib_{n}) 
+\end{cases}	
+\end{equation*}
+</div>
+<div class="para">Equation <a href="subsec-fourier_complex.html#eqn-comp_fourier1" class="xref" data-knowl="./knowl/xref/eqn-comp_fourier1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.5.3">(5.5.3)</a> is a complex form of Fourier series. On multiplying both sides of equation <a href="subsec-fourier_complex.html#eqn-comp_fourier1" class="xref" data-knowl="./knowl/xref/eqn-comp_fourier1.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 5.5.3">(5.5.3)</a> by <span class="process-math">\(e^{-imx}\)</span> and integrating w.r.t. ’x’, we get -</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation*}
+\int\limits_{c}^{c+2\pi}f(x)e^{-imx} \,dx = \sum\limits_{n=-\infty}^{\infty}c_{n}\int\limits_{c}^{c+2\pi}e^{i(n-mx)} \,dx 
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation*}
+= \sum\limits_{n=-\infty}^{\infty}c_{n}2\pi \delta_{mn}=2\pi c_{m}
+\end{equation*}
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation*}
+\therefore  c_{n}	=\frac{1}{2\pi}\int\limits_{c}^{c+2\pi}f(x)e^{-inx} \,dx.
+\end{equation*}
+</div>
+<div class="para">The function <span class="process-math">\(f(x)\)</span> is being defined in the interval <span class="process-math">\([c, c+2\pi]\text{.}\)</span> Hence,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eqn-comp_fourier1.html ./knowl/xref/eqn-comp_fourier1.html">
+\begin{equation*}
+c_{0}=\frac{1}{2\pi}\int\limits_{c}^{c+2\pi}f(x) \,dx = \frac{a_{0}}{2}.
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a class="internal" href="subsec-fourier_complex.html#subsec-fourier_complex-2">in-context</a></span>
+</body>
+</html>
